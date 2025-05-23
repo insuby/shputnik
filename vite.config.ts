@@ -6,6 +6,10 @@ import nodePath from 'node:path';
 const pathResolve = (path: string) => nodePath.resolve(__dirname, path);
 
 export default defineConfig({
+  server: {
+    host: '0.0.0.0', // Добавьте эту строку
+    port: 5173
+  },
   plugins: [react()],
   base: "./",
   css: {
