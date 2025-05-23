@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Sputnik</title>
+  <meta name="viewport" content="width=1440, initial-scale=1">
+  <style>
+      @import url("https://fonts.googleapis.com/css?family=Inter:var(--body-2-r-font-weight),500,400,var(--body-1-r-font-weight),700,var(--body-3-r-font-weight)|Poppins:500");
+      @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+      * {
+          -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+      }
+
+      html,
+      body {
+          margin: 0px;
+          height: 100%;
+      }
+
+      /* a blue color as a generic focus style */
+      button:focus-visible {
+          outline: 2px solid #4a90e2 !important;
+          outline: -webkit-focus-ring-color auto 5px !important;
+      }
+
+      a {
+          text-decoration: none;
+      }
+
+      #app {
+          /*background-color: #161b25;*/
+      }
+  </style>
+  <link href="tailwind.css" rel="stylesheet" />
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="./src/index.tsx"></script>
+</body>
+</html>
