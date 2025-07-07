@@ -25,7 +25,7 @@ export const HeaderSection = () => {
   };
 
   return (
-    <header className="flex items-center justify-between w-full py-4 px-6">
+    <header className="flex items-center justify-between w-full py-4">
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
