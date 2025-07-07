@@ -25,7 +25,7 @@ export const HeaderSection = () => {
   };
 
   return (
-    <header className="flex items-center justify-between w-full bg-white py-4 px-6">
+    <header className="flex items-center justify-between w-full py-4 px-6">
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
@@ -57,12 +57,30 @@ export const HeaderSection = () => {
         </NavigationMenuList>
       </NavigationMenu>
 
-      <Button
-        className="px-6 py-2.5 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)] text-white font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]"
-        onClick={onClick}
-      >
-        Связаться с нами
-      </Button>
+      {/*<Button*/}
+      {/*  className="all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center relative">*/}
+      {/*  <div*/}
+      {/*    onClick={onClick}*/}
+      {/*    className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#3573fc] text-base tracking-[0] leading-6 whitespace-nowrap">*/}
+      {/*    Связаться с нами*/}
+      {/*  </div>*/}
+      {/*</Button>*/}
+
+      <button
+        className="all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center relative">
+        <div
+          onClick={onClick}
+          className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#3573fc] text-base tracking-[0] leading-6 whitespace-nowrap">
+          Связаться с нами
+        </div>
+      </button>
+
+      {/*<Button*/}
+      {/*  className="px-6 py-2.5 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)] text-white font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]"*/}
+      {/*  onClick={onClick}*/}
+      {/*>*/}
+      {/*  Связаться с нами*/}
+      {/*</Button>*/}
     </header>
   );
 };
