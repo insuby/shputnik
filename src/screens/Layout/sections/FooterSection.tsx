@@ -10,7 +10,7 @@ const footerData = {
       "Банковское кредитование",
       "Автокредитование",
       "Кредитование бизнеса",
-      "Исламское кредитование",
+      "Исламское финансирование",
       "POS-кредитование",
       "P2P-кредитование",
     ],
@@ -18,8 +18,8 @@ const footerData = {
   additionalSoftware: {
     title: "Программное обеспечение",
     links: [
-      "Выгрузка данных в КБ",
-      "Принятие решений",
+      "Выгрузка данных в кредитные бюро",
+      "Модуль принятия решений",
       "Учет вкладов и инвестиций",
     ],
   },
@@ -245,7 +245,7 @@ export const FooterSection = () => {
 
               <div
                 className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                Исламское кредитование
+                Исламское финансирование
               </div>
 
               <div
@@ -276,7 +276,7 @@ export const FooterSection = () => {
 
                 <div
                   className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                  Принятие решений
+                  Модуль принятия решений
                 </div>
 
                 <div

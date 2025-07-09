@@ -11,7 +11,7 @@ export const Frame1 = () => {
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
         <div className="flex items-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden bg-[url(https://c.animaapp.com/mctfcob4oizbca/img/vector-1-3.svg)] bg-[100%_100%]">
               <div className="relative w-[560px] h-[372px] top-[-49px] left-[59px]">
                 <img
@@ -125,9 +125,7 @@ export const Frame1 = () => {
                 </p>
 
                 <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Предоставление банком денежных средств физическим или
-                  юридическим лицам. Предоставление банком денежных средств
-                  физическим или юридическим лицам
+                  Решение для выгрузки данных в кредитные бюро. Подходит для МФО, лизинговых и коллекторских компаний и других участников рынка, обязанных передавать данные по требованиям законодательства.
                 </p>
               </div>
 
@@ -141,7 +139,7 @@ export const Frame1 = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
               <div className="relative w-[678px] h-[446px]">
                 <div className="flex flex-col w-[300px] items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]">
@@ -291,13 +289,11 @@ export const Frame1 = () => {
             <div className="flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
               <div className="flex flex-col items-start gap-2 relative flex-1 grow">
                 <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
-                  Настраиваемый модуль принятия решений
+                  Модуль принятия решений
                 </div>
 
                 <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Предоставление банком денежных средств физическим или
-                  юридическим лицам. Предоставление банком денежных средств
-                  физическим или юридическим лицам
+                  Полностью настраиваемый процесс принятия проверки физлиц и юрлиц. Интеграции с десятками внешних сервисов для проверки и обогащения данных.
                 </p>
               </div>
 

@@ -4,19 +4,19 @@ export const Div = () => {
   return (
     <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
       <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
-        <span className="font-medium text-[#1c222f] leading-[0.1px]">
-          Точечное и потребительское
+        <span className="font-medium text-[#9ea7bb] leading-[0.1px]">
+         Кредитование
           <br />
         </span>
 
-        <span className="font-medium text-[#9ea7bb] leading-[48px]">
-          кредитование
+        <span className="font-medium text-[#1c222f] leading-[48px]">
+          в точке продаж и онлайн
         </span>
       </p>
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
         <div className="flex items-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
               <div className="relative w-[678px] h-[401px]">
                 <img
@@ -116,9 +116,7 @@ export const Div = () => {
                 </div>
 
                 <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Предоставление банком денежных средств физическим или
-                  юридическим лицам. Предоставление банком денежных средств
-                  физическим или юридическим лицам
+                  Программное обеспечение для быстрого запуска BNPL-рассрочки (покупай сейчас — плати позже) на этапе оформления покупки — как в онлайн-магазинах, так и в розничных точках.
                 </p>
               </div>
 
@@ -132,7 +130,7 @@ export const Div = () => {
             </div>
           </div>
 
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
               <div className="relative w-[543px] h-[416px] top-6 left-[67px]">
                 <img
@@ -260,9 +258,7 @@ export const Div = () => {
                 </div>
 
                 <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Предоставление банком денежных средств физическим или
-                  юридическим лицам. Предоставление банком денежных средств
-                  физическим или юридическим лицам
+                  Программный продукт для POS-кредитования — помогает запускать оформление займов прямо во время покупки, как в физических точках продаж, так и онлайн.
                 </p>
               </div>
 

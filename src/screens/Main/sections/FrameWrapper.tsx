@@ -10,16 +10,16 @@ export const FrameWrapper = () => {
 
         <p className="w-[1376px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-6xl text-center leading-[68px] relative tracking-[0]">
           <span className="text-[#1c222f]">
-            Программное обеспечение
+            на программном обеспечении
             <br />
           </span>
 
-          <span className="text-[#9ea7bb]">для кейсов</span>
+          <span className="text-[#9ea7bb]">для кредитования</span>
         </p>
       </div>
 
       <div className="flex w-[1392px] h-[520px] items-start gap-4 relative">
-        <div className="flex flex-col w-[686px] items-start justify-between p-12 relative self-stretch bg-[#f9fafc] rounded-[32px] overflow-hidden">
+        <div className="flex flex-col w-[686px] items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
             <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
               <span className="font-medium text-[#1c222f] leading-[0.1px]">
@@ -33,11 +33,7 @@ export const FrameWrapper = () => {
             </p>
 
             <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-              Вид деятельности, связанный с выдачей небольших займов гражданам и
-              малому бизнесу, который не имеет доступа к традиционному
-              банкингу. Микрозаймы, как правило, выдаются на короткие сроки и
-              имеют более высокие процентные ставки по сравнению с банковскими
-              кредитами.
+              Полный цикл автоматизации микрофинансового кредитования — от заявки до взыскания, с возможностью настройки сценариев и процессов под требования организации, включая полную цифровизацию всех этапов без ручного труда и с учётом регуляторных стандартов.
             </p>
           </div>
 

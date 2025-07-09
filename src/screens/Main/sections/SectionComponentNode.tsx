@@ -282,16 +282,14 @@ export const SectionComponentNode = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f5f7ff] border-2 border-solid border-[#3573fc] relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+          <div className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
                 P2P-кредитование
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление банком денежных средств физическим или
-                юридическим лицам. Предоставление банком денежных средств
-                физическим или юридическим лицам
+                Готовая платформа для запуска собственной P2P-площадки кредитования — для бизнеса и физических лиц. Поддерживает разные модели и автоматизирует полный цикл — от подачи заявки до возврата и учёта.
               </p>
             </div>
 
@@ -304,16 +302,14 @@ export const SectionComponentNode = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] rounded-3xl overflow-hidden">
+          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Исламское кредитование
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление финансирования банкам или другим финансовым
-                институтам. Предоставление банком денежных средств физическим
-                или юридическим лицам
+                Готовая платформа для запуска собственной P2P-площадки кредитования — для бизнеса и физических лиц. Поддерживает разные модели и автоматизирует полный цикл — от подачи заявки до возврата и учёта.
               </p>
             </div>
 

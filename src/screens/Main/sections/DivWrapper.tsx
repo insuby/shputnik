@@ -344,15 +344,14 @@ export const DivWrapper = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Кредитование бизнеса
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление финансирования банкам или другим финансовым
-                институтам
+                Программное обеспечение для автоматизации выдачи бизнес-кредитов (МФО и банки)
               </p>
             </div>
 
@@ -365,15 +364,14 @@ export const DivWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Банковское кредитование
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Разновидность потребительского кредита для приобретения
-                автотранспортных средств
+                Программное обеспечение для автоматизации банковского кредитования
               </p>
             </div>
 
@@ -386,15 +384,14 @@ export const DivWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f5f7ff] border-2 border-solid border-[#3573fc] relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+          <div className="flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Автокредитование
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление банком денежных средств физическим или
-                юридическим лицам
+                Программное обеспечение для автоматизации выдачи займов под залог автомобиля
               </p>
             </div>
 
