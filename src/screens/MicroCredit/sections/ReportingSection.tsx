@@ -28,7 +28,7 @@ export const ReportingSection = () => {
       <img
         className="absolute w-[843px] h-[742px] top-[37px] left-[508px]"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1-1.svg"
+        src="/img/vector-1-1.svg"
       />
 
       <h2 className="relative w-[912px] mt-[-1.00px] font-header-1-m font-[number:var(--header-1-m-font-weight)] text-white text-[length:var(--header-1-m-font-size)] tracking-[var(--header-1-m-letter-spacing)] leading-[var(--header-1-m-line-height)] [font-style:var(--header-1-m-font-style)]">

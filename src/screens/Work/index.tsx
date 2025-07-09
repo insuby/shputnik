@@ -108,7 +108,7 @@ export const Work = () => {
       <img
         className="absolute w-[1169px] h-[1192px] top-0 left-[223px]"
         alt="Vector"
-        src="https://c.animaapp.com/m8vqpr1mIKIPaL/img/vector-1-1.svg"
+        src="/img/vector-1-1.svg"
       />
 
       <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">

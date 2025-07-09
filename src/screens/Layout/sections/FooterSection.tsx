@@ -44,7 +44,7 @@ export const FooterSection = () => {
     //   <img
     //     className="absolute w-[926px] h-[851px] top-[-83px] right-0"
     //     alt="Vector"
-    //     src="https://c.animaapp.com/m8venh9r7flbae/img/vector-1-1.svg"
+    //     src="/img/vector-1-1.svg"
     //   />
     //
     //   <div className="flex items-start gap-12 relative w-full">
@@ -164,31 +164,31 @@ export const FooterSection = () => {
                       <img
                         className="absolute w-[19px] h-[23px] top-0 left-0"
                         alt="Group"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/group-3-2.png"
+                        src="/img/group-3-2.png"
                       />
 
                       <img
                         className="w-[18px] left-6 absolute h-[19px] top-0.5"
                         alt="Fill"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/fill-4.svg"
+                        src="/img/fill-4.svg"
                       />
 
                       <img
                         className="w-[17px] left-[47px] absolute h-[19px] top-0.5"
                         alt="Fill"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/fill-8.svg"
+                        src="/img/fill-8.svg"
                       />
 
                       <img
                         className="w-[18px] left-[69px] absolute h-[19px] top-0.5"
                         alt="Fill"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/fill-10.svg"
+                        src="/img/fill-10.svg"
                       />
 
                       <img
                         className="w-[19px] left-[92px] absolute h-[19px] top-0.5"
                         alt="Fill"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/fill-14.svg"
+                        src="/img/fill-14.svg"
                       />
                     </div>
                   </div>

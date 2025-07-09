@@ -29,7 +29,7 @@ export const FeaturesSection = () => {
       <img
         className="absolute w-[1204px] h-[1060px] top-[-115px] right-0"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1-4.svg"
+        src="/img/vector-1-4.svg"
       />
 
       <div className="flex items-center gap-[88px] p-11 relative w-full">
@@ -39,7 +39,7 @@ export const FeaturesSection = () => {
             <img
               className="w-8 h-8"
               alt="User focus"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/userfocus.svg"
+              src="/img/userfocus.svg"
             />
           </div>
 
@@ -82,7 +82,7 @@ export const FeaturesSection = () => {
             <img
               className="w-8 h-8"
               alt="Credit card"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/creditcard.svg"
+              src="/img/creditcard.svg"
             />
           </div>
 

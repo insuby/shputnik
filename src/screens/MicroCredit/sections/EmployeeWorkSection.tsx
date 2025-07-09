@@ -56,7 +56,7 @@ export const EmployeeWorkSection = () => {
         <img
           className="absolute w-[893px] h-[536px] top-[60px] left-[323px]"
           alt="Vector"
-          src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-2.svg"
+          src="/img/vector-2.svg"
         />
 
         <CardContent className="flex flex-col h-[596px] items-start gap-8 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
@@ -92,12 +92,12 @@ export const EmployeeWorkSection = () => {
                     <img
                       className="absolute w-[152px] h-[253px] top-0 left-[29px]"
                       alt="Subtract"
-                      src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/subtract-3.svg"
+                      src="/img/subtract-3.svg"
                     />
                     <img
                       className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
                       alt="Subtract"
-                      src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/subtract-2.svg"
+                      src="/img/subtract-2.svg"
                     />
 
                     {/* Balance display */}
@@ -126,7 +126,7 @@ export const EmployeeWorkSection = () => {
                   <img
                     className="absolute w-[53px] h-[94px] top-0 left-[295px]"
                     alt="Subtract"
-                    src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/subtract-1.svg"
+                    src="/img/subtract-1.svg"
                   />
                 </div>
 
@@ -134,7 +134,7 @@ export const EmployeeWorkSection = () => {
                   <img
                     className="absolute w-[145px] h-[60px] top-[18px] left-0"
                     alt="Subtract"
-                    src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/subtract-4.svg"
+                    src="/img/subtract-4.svg"
                   />
                   <div className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
                     <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -148,7 +148,7 @@ export const EmployeeWorkSection = () => {
                 <img
                   className="absolute w-[51px] h-[41px] top-4 left-0"
                   alt="Subtract"
-                  src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/subtract.svg"
+                  src="/img/subtract.svg"
                 />
                 <div className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
                   <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">

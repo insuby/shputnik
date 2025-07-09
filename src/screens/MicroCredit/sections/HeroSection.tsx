@@ -36,12 +36,12 @@ export const HeroSection = () => {
       <img
         className="absolute w-[1121px] h-[1030px] top-[-41px] left-[348px]"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1-2.svg"
+        src="/img/vector-1-2.svg"
       />
       <img
         className="absolute w-[935px] h-[460px] top-[140px] left-44"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-2-1.svg"
+        src="/img/vector-2-1.svg"
       />
       {/* Top navigation */}
       <div className="flex items-start justify-between relative self-stretch w-full">
@@ -92,7 +92,7 @@ export const HeroSection = () => {
             {/* User profile */}
             <div className="flex w-[139px] h-9 items-center gap-4">
               <div
-                className="w-9 h-9 rounded-xl [background:url(https://c.animaapp.com/m8vtn66s4ZWe7w/img/frame-1948755011.png)_50%_50%_/_cover]" />
+                className="w-9 h-9 rounded-xl [background:url(/img/frame-1948755011.png)_50%_50%_/_cover]" />
               <div className="flex flex-col items-start justify-center">
                 <span
                   className="opacity-50 [font-family:'Inter',Helvetica] font-medium text-white text-[8px] leading-3 whitespace-nowrap">
@@ -124,7 +124,7 @@ export const HeroSection = () => {
               <img
                 className="self-stretch w-full h-px"
                 alt="Divider"
-                src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-128.svg"
+                src="/img/vector-128.svg"
               />
               {sidebarMenuItems.slice(2, 5).map((item) => (
                 <div
@@ -144,7 +144,7 @@ export const HeroSection = () => {
               <img
                 className="self-stretch w-full h-px"
                 alt="Divider"
-                src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-128.svg"
+                src="/img/vector-128.svg"
               />
               <div className="flex items-center gap-3 p-2 self-stretch w-full rounded-[100px] opacity-50">
                 <div className="w-2 h-2 bg-white rounded" />
@@ -179,7 +179,7 @@ export const HeroSection = () => {
                   size="sm"
                   className="p-1.5 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)]"
                 >
-                  <img className="w-3 h-3" alt="Plus" src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/plus.svg" />
+                  <img className="w-3 h-3" alt="Plus" src="/img/plus.svg" />
                 </Button>
               </div>
               {/* Form fields */}
@@ -241,7 +241,7 @@ export const HeroSection = () => {
                   size="sm"
                   className="p-1.5 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)]"
                 >
-                  <img className="w-3 h-3" alt="Plus" src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/plus.svg" />
+                  <img className="w-3 h-3" alt="Plus" src="/img/plus.svg" />
                 </Button>
               </div>
               {/* Borrowers table */}

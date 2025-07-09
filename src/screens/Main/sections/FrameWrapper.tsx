@@ -41,7 +41,7 @@ export const FrameWrapper = () => {
             <img
               className="relative w-7 h-7"
               alt="Caret right"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+              src="/img/caretright-2.svg"
             />
           </div>
         </div>
@@ -51,7 +51,7 @@ export const FrameWrapper = () => {
             <img
               className="absolute w-[690px] h-[520px] top-0 left-0"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-7.svg"
+              src="/img/vector-1-7.svg"
             />
 
             <div className="flex flex-col w-[324px] items-center justify-center gap-6 p-4 absolute top-[69px] left-[75px] bg-white rounded-[32px]">
@@ -67,13 +67,13 @@ export const FrameWrapper = () => {
                         <img
                           className="absolute w-[260px] h-1 top-1 left-px"
                           alt="Vector"
-                          src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136.svg"
+                          src="/img/vector-136.svg"
                         />
 
                         <img
                           className="w-[169px] h-1.5 top-[3px] absolute left-0"
                           alt="Vector"
-                          src="https://c.animaapp.com/mctfcob4oizbca/img/vector-137-3.svg"
+                          src="/img/vector-137-3.svg"
                         />
 
                         <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -97,13 +97,13 @@ export const FrameWrapper = () => {
                         <img
                           className="absolute w-[260px] h-1 top-1 left-px"
                           alt="Vector"
-                          src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136-1.svg"
+                          src="/img/vector-136-1.svg"
                         />
 
                         <img
                           className="w-[95px] h-1.5 top-[3px] absolute left-0"
                           alt="Vector"
-                          src="https://c.animaapp.com/mctfcob4oizbca/img/vector-137-2.svg"
+                          src="/img/vector-137-2.svg"
                         />
 
                         <div className="absolute w-3 h-3 top-0 left-[86px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -165,7 +165,7 @@ export const FrameWrapper = () => {
             <img
               className="absolute w-[690px] h-[520px] top-0 left-0"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-3-1.svg"
+              src="/img/vector-3-1.svg"
             />
 
             <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[142px] left-[363px] bg-white rounded-[32px]">
@@ -182,19 +182,22 @@ export const FrameWrapper = () => {
                       <img
                         className="absolute w-[88px] h-[108px] top-[76px] left-24"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/subtract.svg"
+                        src="	https://c.animaapp.com/mctfcob4oizbca/img/subtract.svg"
                       />
 
                       <div className="inline-flex h-[62px] items-center absolute top-[61px] left-8 flex-col gap-0.5">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+                        <div
+                          className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
                           Вся сумма
                         </div>
 
-                        <div className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
+                        <div
+                          className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
                           122,000₽
                         </div>
                       </div>
                     </div>
+
 
                     <img
                       className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
@@ -211,11 +214,13 @@ export const FrameWrapper = () => {
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-start gap-2.5 p-5 relative flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
+              <div
+                className="inline-flex flex-col items-start gap-2.5 p-5 relative flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
                 <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
                   <div className="relative w-2 h-2 bg-blue-50 rounded" />
 
-                  <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
+                  <div
+                    className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
                     Текущее
                   </div>
 

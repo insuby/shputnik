@@ -32,7 +32,7 @@ export const OverviewSection = () => {
       <img
         className="absolute w-[843px] h-[742px] top-[37px] right-0"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1-6.svg"
+        src="/img/vector-1-6.svg"
       />
 
       <h2 className="relative w-[606px] font-tite-2-m font-[number:var(--tite-2-m-font-weight)] text-gray-90 text-[length:var(--tite-2-m-font-size)] tracking-[var(--tite-2-m-letter-spacing)] leading-[var(--tite-2-m-line-height)] [font-style:var(--tite-2-m-font-style)]">

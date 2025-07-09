@@ -14,7 +14,7 @@ export const ContactInfoSection = () => {
       <img
         className="absolute w-[843px] h-[742px] top-0 right-0"
         alt="Vector"
-        src="https://c.animaapp.com/m8venh9r7flbae/img/vector-1-2.svg"
+        src="/img/vector-1-2.svg"
       />
 
       <div className="flex flex-col items-center justify-center gap-12 p-[88px] relative z-10">
@@ -76,7 +76,7 @@ export const ContactInfoSection = () => {
                 <img
                   className="w-full h-full object-cover"
                   alt="Office photo"
-                  src="https://c.animaapp.com/m8venh9r7flbae/img/photo-2025-02-05-22-38-11-1.png"
+                  src="/img/photo-2025-02-05-22-38-11-1.png"
                 />
               </div>
             </CardContent>

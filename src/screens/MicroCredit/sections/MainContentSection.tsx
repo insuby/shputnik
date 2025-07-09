@@ -31,7 +31,7 @@ export const MainContentSection = () => {
       <img
         className="absolute w-[843px] h-[742px] top-[37px] right-0"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1-5.svg"
+        src="/img/vector-1-5.svg"
       />
 
       <div className="flex flex-col gap-12 relative z-10">

@@ -12,12 +12,12 @@ export const Frame1 = () => {
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
         <div className="flex items-center gap-5 relative flex-1 self-stretch grow">
           <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent rounded-[32px] overflow-hidden">
-            <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden bg-[url(https://c.animaapp.com/mctfcob4oizbca/img/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
               <div className="relative w-[560px] h-[372px] top-[-49px] left-[59px]">
                 <img
                   className="absolute w-[415px] h-[372px] top-0 left-[91px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-151.svg"
+                  src="/img/vector-151.svg"
                 />
 
                 <div className="inline-flex flex-col items-start gap-2.5 p-2 absolute top-[100px] left-[177px] bg-[#ffffff5c] rounded-[32px]">
@@ -30,31 +30,31 @@ export const Frame1 = () => {
                               <img
                                 className="absolute w-6 h-[29px] top-0 left-0"
                                 alt="Group"
-                                src="https://c.animaapp.com/mctfcob4oizbca/img/group-3-1.png"
+                                src="/img/group-3-1.png"
                               />
 
                               <img
                                 className="absolute w-[23px] h-[25px] top-0.5 left-[30px]"
                                 alt="Fill"
-                                src="https://c.animaapp.com/mctfcob4oizbca/img/fill-4.svg"
+                                src="/img/fill-4.svg"
                               />
 
                               <img
                                 className="absolute w-[22px] h-[25px] top-0.5 left-[60px]"
                                 alt="Fill"
-                                src="https://c.animaapp.com/mctfcob4oizbca/img/fill-8.svg"
+                                src="/img/fill-8.svg"
                               />
 
                               <img
                                 className="absolute w-[23px] h-[25px] top-0.5 left-[88px]"
                                 alt="Fill"
-                                src="https://c.animaapp.com/mctfcob4oizbca/img/fill-10.svg"
+                                src="/img/fill-10.svg"
                               />
 
                               <img
                                 className="absolute w-6 h-[25px] top-0.5 left-[117px]"
                                 alt="Fill"
-                                src="https://c.animaapp.com/mctfcob4oizbca/img/fill-14.svg"
+                                src="/img/fill-14.svg"
                               />
                             </div>
                           </div>
@@ -69,7 +69,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-[57.34px] h-[58px] mt-[-1.32px] mb-[-0.67px] ml-[-0.67px] mr-[-0.67px]"
                       alt="Group"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/group-32.png"
+                      src="/img/group-32.png"
                     />
                   </div>
 
@@ -77,14 +77,14 @@ export const Frame1 = () => {
                     <img
                       className="relative w-14 h-14"
                       alt="Clip path group"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/clip-path-group.png"
+                      src="/img/clip-path-group.png"
                     />
                   </div>
 
                   <div className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl">
                     <div className="relative w-14 h-14">
                       <div className="relative h-[53px] top-px">
-                        <div className="w-[55px] h-[53px] bg-[url(https://c.animaapp.com/mctfcob4oizbca/img/group.png)] bg-[100%_100%]" />
+                        <div className="w-[55px] h-[53px] bg-[url(/img/group.png)] bg-[100%_100%]" />
                       </div>
                     </div>
                   </div>
@@ -93,7 +93,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-14 h-14"
                       alt="Okb logo"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/okb-logo-1.png"
+                      src="/img/okb-logo-1.png"
                     />
                   </div>
                 </div>
@@ -101,19 +101,19 @@ export const Frame1 = () => {
                 <img
                   className="absolute w-0.5 h-10 top-[184px] left-[279px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-148.svg"
+                  src="/img/vector-148.svg"
                 />
 
                 <img
                   className="absolute w-[458px] h-[39px] top-[223px] left-[49px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-149.svg"
+                  src="/img/vector-149.svg"
                 />
 
                 <img
                   className="absolute w-[149px] h-[39px] top-[223px] left-[204px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-150.svg"
+                  src="/img/vector-150.svg"
                 />
               </div>
             </div>
@@ -133,7 +133,7 @@ export const Frame1 = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Caret right"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                  src="/img/caretright-2.svg"
                 />
               </div>
             </div>
@@ -158,7 +158,7 @@ export const Frame1 = () => {
                           <img
                             className="relative w-4 h-4 mt-[-4.00px] mb-[-4.00px] ml-[-4.00px] mr-[-4.00px]"
                             alt="Check"
-                            src="https://c.animaapp.com/mctfcob4oizbca/img/check-1.svg"
+                            src="/img/check-1.svg"
                           />
                         </div>
                       </div>
@@ -181,7 +181,7 @@ export const Frame1 = () => {
                     <img
                       className="relative flex-1 self-stretch grow"
                       alt="Frame"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/frame-31.svg"
+                      src="/img/frame-31.svg"
                     />
                   </div>
 
@@ -231,7 +231,7 @@ export const Frame1 = () => {
                 <img
                   className="absolute w-[678px] h-[368px] top-0 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-4.svg"
+                  src="/img/vector-1-4.svg"
                 />
 
                 <div className="flex flex-col w-80 items-start justify-center gap-3 p-6 absolute top-[38px] left-[312px] bg-white rounded-[32px]">
@@ -301,7 +301,7 @@ export const Frame1 = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Caret right"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                  src="/img/caretright-2.svg"
                 />
               </div>
             </div>

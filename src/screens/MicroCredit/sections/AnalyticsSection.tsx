@@ -6,26 +6,26 @@ import { Card, CardContent } from "../../../components/ui/card";
 const partnerLogos = {
   row1: [
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group.png",
+      src: "/img/group.png",
       alt: "Group",
       width: "100px",
       height: "20.51px",
       type: "background",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/odnoklassniki-ok.png",
+      src: "/img/odnoklassniki-ok.png",
       alt: "Odnoklassniki ok",
       width: "144.69px",
       height: "30.65px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-black.png",
+      src: "/img/logo-black.png",
       alt: "Logo black",
       width: "74.32px",
       height: "47.01px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/contact-log-cmyk.png",
+      src: "/img/contact-log-cmyk.png",
       alt: "Contact log CMYK",
       width: "75.62px",
       height: "45.86px",
@@ -33,7 +33,7 @@ const partnerLogos = {
   ],
   row2: [
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-17.png",
+      src: "/img/group-17.png",
       alt: "Group",
       width: "114.86px",
       height: "48px",
@@ -42,14 +42,14 @@ const partnerLogos = {
       type: "composite",
       elements: [
         {
-          src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-7.png",
+          src: "/img/group-7.png",
           alt: "Group",
           width: "26px",
           height: "27px",
           position: { top: 0, left: 0 },
         },
         {
-          src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-8.png",
+          src: "/img/group-8.png",
           alt: "Group",
           width: "125px",
           height: "13px",
@@ -60,19 +60,19 @@ const partnerLogos = {
       height: "26.79px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/visa-inc--logo.png",
+      src: "/img/visa-inc--logo.png",
       alt: "Visa inc logo",
       width: "59.59px",
       height: "19.28px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/vkcom.png",
+      src: "/img/vkcom.png",
       alt: "Vkcom",
       width: "32.71px",
       height: "19.21px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-full-eng.png",
+      src: "/img/logo-full-eng.png",
       alt: "Logo full eng",
       width: "80px",
       height: "43px",
@@ -83,7 +83,7 @@ const partnerLogos = {
       type: "composite",
       elements: [
         {
-          src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-23.png",
+          src: "/img/group-23.png",
           alt: "Group",
           width: "30px",
           height: "20px",
@@ -91,7 +91,7 @@ const partnerLogos = {
           isBackground: true,
         },
         {
-          src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/-------.svg",
+          src: "/img/-------.svg",
           alt: "Img",
           width: "57px",
           height: "10px",
@@ -102,26 +102,26 @@ const partnerLogos = {
       height: "37.01px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-18.png",
+      src: "/img/group-18.png",
       alt: "Group",
       width: "134.51px",
       height: "42.29px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/g12.png",
+      src: "/img/g12.png",
       alt: "G12",
       width: "108.59px",
       height: "21.07px",
       type: "background",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/master-card-logo.png",
+      src: "/img/master-card-logo.png",
       alt: "Master card logo",
       width: "64px",
       height: "38.19px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-qiwi-rgb--2-.png",
+      src: "/img/logo-qiwi-rgb--2-.png",
       alt: "Logo qiwi rgb",
       width: "83px",
       height: "36px",
@@ -129,25 +129,25 @@ const partnerLogos = {
   ],
   row4: [
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/zolotayakorona.png",
+      src: "/img/zolotayakorona.png",
       alt: "Zolotaya korona",
       width: "79.97px",
       height: "38.25px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-20.png",
+      src: "/img/group-20.png",
       alt: "Group",
       width: "137.39px",
       height: "22.69px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/yandex-pay-logo--1-.png",
+      src: "/img/yandex-pay-logo--1-.png",
       alt: "Yandex pay logo",
       width: "81.39px",
       height: "28.39px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo--1-.png",
+      src: "/img/logo--1-.png",
       alt: "Logo",
       width: "111.93px",
       height: "31.07px",
@@ -156,26 +156,26 @@ const partnerLogos = {
   ],
   row5: [
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-light.png",
+      src: "/img/logo-light.png",
       alt: "Logo light",
       width: "119.9px",
       height: "15.86px",
       type: "background",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-23-1.png",
+      src: "/img/group-23-1.png",
       alt: "Group",
       width: "117.78px",
       height: "33.38px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-21.png",
+      src: "/img/group-21.png",
       alt: "Group",
       width: "102.85px",
       height: "29.99px",
     },
     {
-      src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-25.png",
+      src: "/img/group-25.png",
       alt: "Group",
       width: "98.34px",
       height: "25.96px",
@@ -186,24 +186,24 @@ const partnerLogos = {
       type: "government",
       title: "Федеральная служба судебных приставов",
       icon: {
-        background: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-26.svg",
+        background: "/img/fill-26.svg",
         elements: [
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/rectangle.svg",
+            src: "/img/rectangle.svg",
             alt: "Rectangle",
             width: "2px",
             height: "5px",
             position: { top: "25px", left: "20px" },
           },
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/rectangle-2.png",
+            src: "/img/rectangle-2.png",
             alt: "Rectangle",
             width: "4px",
             height: "2px",
             position: { top: "28px", left: "19px" },
           },
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/oval-20.svg",
+            src: "/img/oval-20.svg",
             alt: "Oval",
             width: "2px",
             height: "2px",
@@ -218,17 +218,17 @@ const partnerLogos = {
       type: "government",
       title: "Федеральная миграционная служба",
       icon: {
-        background: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-26.svg",
+        background: "/img/fill-26.svg",
         elements: [
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/path-9-1.svg",
+            src: "/img/path-9-1.svg",
             alt: "Path",
             width: "10px",
             height: "10px",
             position: { top: "21px", left: "16px" },
           },
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/path-9.svg",
+            src: "/img/path-9.svg",
             alt: "Path",
             width: "11px",
             height: "11px",
@@ -245,14 +245,14 @@ const partnerLogos = {
       icon: {
         elements: [
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-26-copy-2.svg",
+            src: "/img/fill-26-copy-2.svg",
             alt: "Fill copy",
             width: "26px",
             height: "28px",
             position: { top: "9px", left: "10px" },
           },
           {
-            src: "https://c.animaapp.com/m8vtn66s4ZWe7w/img/oval.svg",
+            src: "/img/oval.svg",
             alt: "Oval",
             width: "46px",
             height: "46px",
@@ -272,7 +272,7 @@ export const AnalyticsSection = () => {
       <img
         className="absolute w-[1204px] h-[1060px] top-[143px] left-[109px]"
         alt="Vector"
-        src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/vector-1.svg"
+        src="/img/vector-1.svg"
       />
 
       <CardContent className="flex flex-col w-[500px] items-start gap-12 relative p-0">
@@ -535,7 +535,7 @@ export const AnalyticsSection = () => {
                   <img
                     className="absolute w-px h-5 top-[15px] left-[52px]"
                     alt="Line copy"
-                    src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/line-copy-2.svg"
+                    src="/img/line-copy-2.svg"
                   />
 
                   {/* Title */}

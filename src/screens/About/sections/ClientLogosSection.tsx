@@ -5,25 +5,25 @@ import { useFeedbackForm } from '../../../widgets/feedback-form';
 const clientLogosRows = [
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-31.png',
+      src: '/img/group-31.png',
       alt: 'Logo 1',
       width: 128.17,
       height: 37.74,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-32.png',
+      src: '/img/group-32.png',
       alt: 'Logo 2',
       width: 93.4,
       height: 42.18,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/mask-group.png',
+      src: '/img/mask-group.png',
       alt: 'Logo 3',
       width: 75.98,
       height: 51.98,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/mask-group-2.png',
+      src: '/img/mask-group-2.png',
       alt: 'Logo 4',
       width: 73.95,
       height: 43.99,
@@ -31,19 +31,19 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-21.png',
+      src: '/img/group-21.png',
       alt: 'Logo 5',
       width: 126.98,
       height: 29.77,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-5.png',
+      src: '/img/group-5.png',
       alt: 'Logo 6',
       width: 109.81,
       height: 27.02,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/eman-copy-4.png',
+      src: '/img/eman-copy-4.png',
       alt: 'Logo 7',
       width: 92.07,
       height: 26.05,
@@ -51,19 +51,19 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/centrofinans-copy-4.png',
+      src: '/img/centrofinans-copy-4.png',
       alt: 'Logo 8',
       width: 164.97,
       height: 26,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-2-copy-4.png',
+      src: '/img/group-2-copy-4.png',
       alt: 'Logo 9',
       width: 109.89,
       height: 29.48,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/logo-copy.png',
+      src: '/img/logo-copy.png',
       alt: 'Logo 10',
       width: 116.26,
       height: 44.13,
@@ -71,19 +71,19 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/shape.png',
+      src: '/img/shape.png',
       alt: 'Logo 11',
       width: 86.34,
       height: 31.04,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/page-1.png',
+      src: '/img/page-1.png',
       alt: 'Logo 12',
       width: 149.98,
       height: 30,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/mask-group-19.png',
+      src: '/img/mask-group-19.png',
       alt: 'Logo 13',
       width: 102.64,
       height: 30.58,
@@ -91,19 +91,19 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/logo-1.svg',
+      src: '/img/logo-1.svg',
       alt: 'Logo 14',
       width: 135,
       height: 25.96,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/logonew.svg',
+      src: '/img/logonew.svg',
       alt: 'Logo 15',
       width: 172,
       height: 29.99,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/clip-path-group.png',
+      src: '/img/clip-path-group.png',
       alt: 'Logo 16',
       width: 137,
       height: 26.1,
@@ -111,19 +111,19 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/------------.svg',
+      src: '/img/------------.svg',
       alt: 'Logo 17',
       width: 145.66,
       height: 29,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/clip-path-group-1.png',
+      src: '/img/clip-path-group-1.png',
       alt: 'Logo 18',
       width: 135,
       height: 36,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/svg.svg',
+      src: '/img/svg.svg',
       alt: 'Logo 19',
       width: 131,
       height: 29.98,
@@ -131,25 +131,25 @@ const clientLogosRows = [
   ],
   [
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/o7ua20ow3hm6uv7atj-1.svg',
+      src: '/img/o7ua20ow3hm6uv7atj-1.svg',
       alt: 'Logo 20',
       width: 100,
       height: 32.11,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/group-36.png',
+      src: '/img/group-36.png',
       alt: 'Logo 21',
       width: 128,
       height: 46.98,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/-----rgb-copy.png',
+      src: '/img/-----rgb-copy.png',
       alt: 'Logo 22',
       width: 114.52,
       height: 22.12,
     },
     {
-      src: 'https://c.animaapp.com/m8venh9r7flbae/img/fill-3.svg',
+      src: '/img/fill-3.svg',
       alt: 'Logo 23',
       width: 56.45,
       height: 27.29,

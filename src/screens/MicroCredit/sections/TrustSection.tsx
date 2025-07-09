@@ -10,56 +10,56 @@ const partnerLogos = [
       height: '37.74px',
       images: [
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-1.svg',
+          src: '/img/fill-1.svg',
           className: 'absolute w-3 h-2.5 top-[19px] left-[117px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-3.svg',
+          src: '/img/fill-3.svg',
           className: 'absolute w-[5px] h-[3px] top-4 left-[108px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-5.svg',
+          src: '/img/fill-5.svg',
           className: 'absolute w-2.5 h-[11px] top-[19px] left-[52px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-7.svg',
+          src: '/img/fill-7.svg',
           className: 'absolute w-[9px] h-[11px] top-[19px] left-[41px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-15.svg',
+          src: '/img/fill-15.svg',
           className: 'absolute w-[9px] h-2.5 top-[19px] left-[73px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-11-1.svg',
+          src: '/img/fill-11-1.svg',
           className: 'absolute w-2 h-[11px] top-[19px] left-16',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-13.svg',
+          src: '/img/fill-13.svg',
           className: 'absolute w-2 h-[11px] top-[19px] left-[86px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-15.svg',
+          src: '/img/fill-15.svg',
           className: 'absolute w-[9px] h-2.5 top-[19px] left-[106px]',
           alt: 'Fill',
         },
         {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-17.svg',
+          src: '/img/fill-17.svg',
           className: 'absolute w-2.5 h-2.5 top-[19px] left-[95px]',
           alt: 'Fill',
         },
       ],
       bgDiv: {
         className:
-          'absolute w-9 h-[38px] top-0 left-0 bg-[url(https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-31.png)] bg-[100%_100%]',
+          'absolute w-9 h-[38px] top-0 left-0 bg-[url(/img/group-31.png)] bg-[100%_100%]',
         image: {
-          src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-32.svg',
+          src: '/img/fill-32.svg',
           className: 'absolute w-[3px] h-[3px] top-[21px] left-[23px]',
           alt: 'Fill',
         },
@@ -74,17 +74,17 @@ const partnerLogos = [
           <img
             className="absolute w-[93px] h-9 top-0 left-0"
             alt="Group"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-32.png"
+            src="/img/group-32.png"
           />
           <img
             className="absolute w-6 h-[7px] top-[25px] left-[15px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-41.svg"
+            src="/img/fill-41.svg"
           />
           <img
             className="absolute w-[79px] h-[18px] top-6 left-[15px]"
             alt="Group"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-102.png"
+            src="/img/group-102.png"
           />
         </div>
       ),
@@ -95,18 +95,18 @@ const partnerLogos = [
       height: '51.98px',
       content: (
         <>
-          <div className="absolute w-[76px] h-[9px] top-[43px] left-0 bg-[url(https://c.animaapp.com/m8vtn66s4ZWe7w/img/clip-2.svg)] bg-[100%_100%]">
+          <div className="absolute w-[76px] h-[9px] top-[43px] left-0 bg-[url(/img/clip-2.svg)] bg-[100%_100%]">
             <img
               className="w-[76px] h-[9px] absolute top-0 left-0"
               alt="Mask group"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/mask-group.png"
+              src="/img/mask-group.png"
             />
           </div>
-          <div className="absolute w-[41px] h-10 top-0 left-[18px] bg-[url(https://c.animaapp.com/m8vtn66s4ZWe7w/img/clip-5.svg)] bg-[100%_100%]">
+          <div className="absolute w-[41px] h-10 top-0 left-[18px] bg-[url(/img/clip-5.svg)] bg-[100%_100%]">
             <img
               className="w-[41px] h-10 absolute top-0 left-0"
               alt="Mask group"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/mask-group-1.png"
+              src="/img/mask-group-1.png"
             />
           </div>
         </>
@@ -121,14 +121,14 @@ const partnerLogos = [
           <img
             className="absolute w-1 h-1.5 top-[31px] left-[55px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-1-1.svg"
+            src="/img/fill-1-1.svg"
           />
           {Array.from({ length: 17 }).map((_, index) => (
             <img
               key={`mask-${index}`}
               className="absolute w-[74px] h-11 top-0 left-0"
               alt="Mask group"
-              src={`https://c.animaapp.com/m8vtn66s4ZWe7w/img/mask-group-${
+              src={`/img/mask-group-${
                 index + 2
               }.png`}
             />
@@ -148,63 +148,63 @@ const partnerLogos = [
             <img
               className="absolute w-[27px] h-7 top-px left-px"
               alt="Fill"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-1-3.svg"
+              src="/img/fill-1-3.svg"
             />
             <img
               className="absolute w-[30px] h-[30px] top-0 left-0"
               alt="Group"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-5.png"
+              src="/img/group-5.png"
             />
           </div>
           <img
             className="absolute w-[11px] h-[17px] top-1.5 left-9"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-6.svg"
+            src="/img/fill-6.svg"
           />
           <img
             className="absolute w-[3px] h-[3px] top-1.5 left-[49px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-10-1.svg"
+            src="/img/fill-10-1.svg"
           />
           <img
             className="absolute w-[3px] h-3 top-[11px] left-[49px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-10-1.svg"
+            src="/img/fill-10-1.svg"
           />
           <img
             className="absolute w-[18px] h-3 top-[11px] left-[55px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-11.svg"
+            src="/img/fill-11.svg"
           />
           <img
             className="absolute w-[11px] h-[17px] top-[11px] left-[75px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-12.svg"
+            src="/img/fill-12.svg"
           />
           <img
             className="absolute w-1 h-4 top-1.5 left-[89px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-13-1.svg"
+            src="/img/fill-13-1.svg"
           />
           <img
             className="absolute w-3 h-4 top-[11px] left-[95px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-14-1.svg"
+            src="/img/fill-14-1.svg"
           />
           <img
             className="absolute w-[9px] h-4 top-1.5 left-[109px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-18.svg"
+            src="/img/fill-18.svg"
           />
           <img
             className="absolute w-[3px] h-[3px] top-1.5 left-[119px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-10-1.svg"
+            src="/img/fill-10-1.svg"
           />
           <img
             className="absolute w-[3px] h-3 top-[11px] left-[119px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-10-1.svg"
+            src="/img/fill-10-1.svg"
           />
         </>
       ),
@@ -218,29 +218,29 @@ const partnerLogos = [
           <img
             className="absolute w-3.5 h-3.5 top-[9px] left-[17px]"
             alt="Fill"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-1-2.svg"
+            src="/img/fill-1-2.svg"
           />
           <div className="absolute w-4 h-8 top-0 left-0">
             <img
               className="absolute w-3.5 h-3.5 top-[9px] left-px"
               alt="Fill"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-2.svg"
+              src="/img/fill-2.svg"
             />
             <img
               className="absolute w-3.5 h-3.5 top-0 left-0"
               alt="Fill"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-3-1.svg"
+              src="/img/fill-3-1.svg"
             />
             <img
               className="w-3.5 h-3.5 top-[18px] absolute left-0"
               alt="Fill"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/fill-4-1.svg"
+              src="/img/fill-4-1.svg"
             />
           </div>
           <img
             className="absolute w-[93px] h-[17px] top-2 left-11"
             alt="Group"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-21-1.png"
+            src="/img/group-21-1.png"
           />
         </>
       ),
@@ -250,7 +250,7 @@ const partnerLogos = [
       width: '106.05px',
       height: '30px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/eman-copy-4.png',
+        src: '/img/eman-copy-4.png',
         alt: 'Eman copy',
       },
     },
@@ -261,7 +261,7 @@ const partnerLogos = [
       width: '164.97px',
       height: '26px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/centrofinans-copy-4.png',
+        src: '/img/centrofinans-copy-4.png',
         alt: 'Centrofinans copy',
       },
     },
@@ -270,7 +270,7 @@ const partnerLogos = [
       width: '109.89px',
       height: '29.48px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/group-2-copy-4.png',
+        src: '/img/group-2-copy-4.png',
         alt: 'Group copy',
       },
     },
@@ -279,7 +279,7 @@ const partnerLogos = [
       width: '116.26px',
       height: '44.13px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-copy.png',
+        src: '/img/logo-copy.png',
         alt: 'Logo copy',
       },
     },
@@ -295,12 +295,12 @@ const partnerLogos = [
             <img
               className="absolute w-[86px] h-[19px] top-0 left-0"
               alt="Shape"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/shape.png"
+              src="/img/shape.png"
             />
             <img
               className="absolute w-[84px] h-[7px] top-6 left-px"
               alt="Shape"
-              src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/shape-1.png"
+              src="/img/shape-1.png"
             />
           </div>
         </div>
@@ -315,12 +315,12 @@ const partnerLogos = [
           <img
             className="absolute w-11 h-[30px] top-0 left-0"
             alt="Page"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/page-1.png"
+            src="/img/page-1.png"
           />
           <img
             className="absolute w-[95px] h-3 top-2.5 left-[55px]"
             alt="Migmoney"
-            src="https://c.animaapp.com/m8vtn66s4ZWe7w/img/migmoney.svg"
+            src="/img/migmoney.svg"
           />
         </>
       ),
@@ -330,9 +330,9 @@ const partnerLogos = [
       width: '102.64px',
       height: '30.58px',
       className:
-        'bg-[url(https://c.animaapp.com/m8vtn66s4ZWe7w/img/mask-group-18.png)] bg-[100%_100%]',
+        'bg-[url(/img/mask-group-18.png)] bg-[100%_100%]',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/mask-group-19.png',
+        src: '/img/mask-group-19.png',
         className: 'w-[103px] h-[31px] absolute top-0 left-0',
         alt: 'Mask group',
       },
@@ -344,7 +344,7 @@ const partnerLogos = [
       width: '135px',
       height: '25.96px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/logo-1.svg',
+        src: '/img/logo-1.svg',
         alt: 'Logo',
         className: 'relative',
       },
@@ -354,7 +354,7 @@ const partnerLogos = [
       width: '172px',
       height: '1px',
       image: {
-        src: 'https://c.animaapp.com/m8vtn66s4ZWe7w/img/logonew.svg',
+        src: '/img/logonew.svg',
         alt: 'Logonew',
         className: 'relative',
       },

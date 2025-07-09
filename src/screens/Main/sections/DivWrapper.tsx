@@ -17,13 +17,13 @@ export const DivWrapper = () => {
             <img
               className="absolute w-[611px] h-[571px] top-[333px] left-0"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-8.svg"
+              src="/img/vector-1-8.svg"
             />
 
             <img
               className="absolute w-[716px] h-[682px] top-0 left-[398px]"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-4.svg"
+              src="/img/vector-4.svg"
             />
 
             <div className="inline-flex items-center absolute top-[317px] left-[284px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden">
@@ -46,7 +46,7 @@ export const DivWrapper = () => {
                   <img
                     className="relative w-[17.94px] h-[17.94px]"
                     alt="Caret right"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                    src="/img/caretright.svg"
                   />
                 </div>
 
@@ -95,7 +95,7 @@ export const DivWrapper = () => {
                     <img
                       className="relative w-[17.94px] h-[17.94px]"
                       alt="Caret right"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                      src="/img/caretright.svg"
                     />
                   </div>
 
@@ -113,7 +113,7 @@ export const DivWrapper = () => {
                     <img
                       className="relative w-[17.94px] h-[17.94px]"
                       alt="Caret right"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                      src="/img/caretright.svg"
                     />
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export const DivWrapper = () => {
                     <img
                       className="relative w-[17.94px] h-[17.94px]"
                       alt="Caret right"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                      src="/img/caretright.svg"
                     />
                   </div>
 
@@ -151,7 +151,7 @@ export const DivWrapper = () => {
                     <img
                       className="relative w-[17.94px] h-[17.94px]"
                       alt="Caret right"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                      src="/img/caretright.svg"
                     />
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export const DivWrapper = () => {
                     <img
                       className="relative w-[17.94px] h-[17.94px]"
                       alt="Caret right"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/caretright.svg"
+                      src="/img/caretright.svg"
                     />
                   </div>
 
@@ -210,7 +210,7 @@ export const DivWrapper = () => {
                         <img
                           className="relative w-[20.93px] h-[20.93px] mt-[-2590.75px] mr-[-603.96px]"
                           alt="Check"
-                          src="https://c.animaapp.com/mctfcob4oizbca/img/check.svg"
+                          src="/img/check.svg"
                         />
                       </div>
 
@@ -338,7 +338,7 @@ export const DivWrapper = () => {
             <img
               className="absolute w-[511px] h-[532px] top-[359px] left-[754px]"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-3.svg"
+              src="/img/vector-3.svg"
             />
           </div>
         </div>
@@ -359,7 +359,7 @@ export const DivWrapper = () => {
               <img
                 className="relative w-8 h-8"
                 alt="Caret right"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                src="/img/caretright-2.svg"
               />
             </div>
           </div>
@@ -379,7 +379,7 @@ export const DivWrapper = () => {
               <img
                 className="relative w-8 h-8"
                 alt="Caret right"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                src="/img/caretright-2.svg"
               />
             </div>
           </div>
@@ -399,7 +399,7 @@ export const DivWrapper = () => {
               <img
                 className="relative w-8 h-8"
                 alt="Caret right"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                src="/img/caretright-2.svg"
               />
             </div>
           </div>

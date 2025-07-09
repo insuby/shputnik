@@ -22,13 +22,13 @@ export const Div = () => {
                 <img
                   className="absolute w-[388px] h-[371px] top-[30px] left-[145px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1.svg"
+                  src="/img/vector-1.svg"
                 />
 
                 <div className="inline-flex items-center p-4 absolute top-12 left-12 bg-white rounded-[32px]">
                   <div className="inline-flex flex-col items-start justify-center gap-2.5 p-3 relative flex-[0_0_auto]">
                     <div className="flex w-40 h-40 items-start gap-3 relative">
-                      <div className="relative w-[148px] h-[148px] [background:url(https://c.animaapp.com/mctfcob4oizbca/img/frame-1948755020.png)_50%_50%_/_cover]" />
+                      <div className="relative w-[148px] h-[148px] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
                     </div>
                   </div>
 
@@ -84,7 +84,7 @@ export const Div = () => {
                 <img
                   className="absolute w-[678px] h-[368px] top-0 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-4-1.svg"
+                  src="/img/vector-4-1.svg"
                 />
 
                 <div className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[238px] left-[363px] bg-white rounded-[32px]">
@@ -92,7 +92,7 @@ export const Div = () => {
                     <img
                       className="relative w-8 h-8"
                       alt="Money"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/money.svg"
+                      src="/img/money.svg"
                     />
                   </div>
 
@@ -124,7 +124,7 @@ export const Div = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Caret right"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                  src="/img/caretright-2.svg"
                 />
               </div>
             </div>
@@ -136,7 +136,7 @@ export const Div = () => {
                 <img
                   className="absolute w-[388px] h-[371px] top-1.5 left-[78px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-1.svg"
+                  src="/img/vector-1-1.svg"
                 />
 
                 <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[26px] left-[215px] bg-white rounded-[32px]">
@@ -203,7 +203,7 @@ export const Div = () => {
                   <img
                     className="absolute w-[328px] h-24 top-[109px] left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/vector-147.svg"
+                    src="/img/vector-147.svg"
                   />
 
                   <div className="absolute w-3 h-3 top-[133px] left-[156px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
@@ -212,7 +212,7 @@ export const Div = () => {
                 <img
                   className="w-[388px] h-[416px] left-3 absolute top-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-4-2.svg"
+                  src="/img/vector-4-2.svg"
                 />
 
                 <div className="inline-flex gap-3 p-4 top-14 left-0 bg-white rounded-[32px_32px_0px_0px] flex-col items-center justify-center absolute">
@@ -233,7 +233,7 @@ export const Div = () => {
                       <img
                         className="absolute w-[198px] h-[198px] top-0 left-0"
                         alt="Ellipse"
-                        src="https://c.animaapp.com/mctfcob4oizbca/img/ellipse-32.svg"
+                        src="/img/ellipse-32.svg"
                       />
                     </div>
                   </div>
@@ -266,7 +266,7 @@ export const Div = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Caret right"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                  src="/img/caretright-2.svg"
                 />
               </div>
             </div>

@@ -18,7 +18,7 @@ export const SectionComponentNode = () => {
             <img
               className="absolute w-[686px] h-[520px] top-0 left-0"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-5.svg"
+              src="/img/vector-1-5.svg"
             />
 
             <div className="flex w-[304px] top-[66px] left-[62px] bg-green-50 rounded-[32px] overflow-hidden flex-col items-center justify-center absolute">
@@ -26,7 +26,7 @@ export const SectionComponentNode = () => {
                 <img
                   className="absolute w-[345px] h-[330px] top-3 left-[-49px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-2.svg"
+                  src="/img/vector-1-2.svg"
                 />
 
                 <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -36,7 +36,7 @@ export const SectionComponentNode = () => {
                     <span className="text-[#1c222f] leading-6"> Давид</span>
                   </p>
 
-                  <div className="relative w-8 h-8 rounded-3xl [background:url(https://c.animaapp.com/mctfcob4oizbca/img/frame-1948755022.png)_50%_50%_/_cover]" />
+                  <div className="relative w-8 h-8 rounded-3xl [background:url(/img/frame-1948755022.png)_50%_50%_/_cover]" />
                 </div>
 
                 <div className="inline-flex flex-col items-center relative flex-[0_0_auto]">
@@ -54,7 +54,7 @@ export const SectionComponentNode = () => {
                     <img
                       className="relative w-3.5 h-3.5"
                       alt="Arrow line down"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/arrowlinedown-1.svg"
+                      src="/img/arrowlinedown-1.svg"
                     />
 
                     <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] text-white text-xs leading-4 whitespace-nowrap relative font-normal tracking-[0]">
@@ -66,7 +66,7 @@ export const SectionComponentNode = () => {
                     <img
                       className="relative w-3.5 h-3.5"
                       alt="Arrow line down"
-                      src="https://c.animaapp.com/mctfcob4oizbca/img/arrowlinedown.svg"
+                      src="/img/arrowlinedown.svg"
                     />
 
                     <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] text-white text-xs leading-4 whitespace-nowrap relative font-normal tracking-[0]">
@@ -206,7 +206,7 @@ export const SectionComponentNode = () => {
             <img
               className="w-[629px] h-[520px] left-[57px] absolute top-0"
               alt="Vector"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/vector-4-3.svg"
+              src="/img/vector-4-3.svg"
             />
 
             <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[138px] left-[298px] bg-white rounded-[32px]">
@@ -273,7 +273,7 @@ export const SectionComponentNode = () => {
               <img
                 className="absolute w-[328px] h-[104px] top-[106px] left-0"
                 alt="Vector"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/vector-147-1.svg"
+                src="/img/vector-147-1.svg"
               />
 
               <div className="absolute w-3 h-3 top-[131px] left-[180px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
@@ -297,7 +297,7 @@ export const SectionComponentNode = () => {
               <img
                 className="relative w-8 h-8"
                 alt="Caret right"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                src="/img/caretright-2.svg"
               />
             </div>
           </div>
@@ -317,7 +317,7 @@ export const SectionComponentNode = () => {
               <img
                 className="relative w-8 h-8"
                 alt="Caret right"
-                src="https://c.animaapp.com/mctfcob4oizbca/img/caretright-2.svg"
+                src="/img/caretright-2.svg"
               />
             </div>
           </div>

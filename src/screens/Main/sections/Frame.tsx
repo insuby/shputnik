@@ -5,7 +5,7 @@ export const Frame = () => {
         <img
           className="absolute w-[1108px] h-[1060px] top-[272px] left-[113px]"
           alt="Vector"
-          src="https://c.animaapp.com/mctfcob4oizbca/img/vector-1-6.svg"
+          src="/img/vector-1-6.svg"
         />
 
         <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
@@ -31,7 +31,7 @@ export const Frame = () => {
         <img
           className="relative w-[412px] flex-[0_0_auto]"
           alt="Iphone pro max"
-          src="https://c.animaapp.com/mctfcob4oizbca/img/iphone-16-pro-max---3.png"
+          src="/img/iphone-16-pro-max---3.png"
         />
 
         <div className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[730px] left-[854px] bg-white rounded-[32px]">
@@ -39,7 +39,7 @@ export const Frame = () => {
             <img
               className="relative w-8 h-8"
               alt="Money"
-              src="https://c.animaapp.com/mctfcob4oizbca/img/money.svg"
+              src="/img/money.svg"
             />
           </div>
 
@@ -68,15 +68,17 @@ export const Frame = () => {
                   <img
                     className="absolute w-[88px] h-[108px] top-[76px] left-24"
                     alt="Subtract"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/subtract.svg"
+                    src="	https://c.animaapp.com/mctfcob4oizbca/img/subtract.svg"
                   />
 
                   <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-[39px]">
-                    <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+                    <div
+                      className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
                       Вся сумма
                     </div>
 
-                    <div className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
+                    <div
+                      className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
                       42,000₽
                     </div>
                   </div>
@@ -97,7 +99,8 @@ export const Frame = () => {
             </div>
           </div>
 
-          <div className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
+          <div
+            className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
             <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
               <div className="relative w-2 h-2 bg-blue-50 rounded" />
 
@@ -168,13 +171,13 @@ export const Frame = () => {
                   <img
                     className="absolute w-[260px] h-1 top-1 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136.svg"
+                    src="/img/vector-136.svg"
                   />
 
                   <img
                     className="absolute w-[167px] h-1 top-1 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136.svg"
+                    src="/img/vector-136.svg"
                   />
 
                   <div className="absolute w-3 h-3 top-0 left-[157px] bg-blue-50 rounded-md" />
@@ -198,13 +201,13 @@ export const Frame = () => {
                   <img
                     className="absolute w-[260px] h-1 top-1 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136-1.svg"
+                    src="/img/vector-136-1.svg"
                   />
 
                   <img
                     className="w-[93px] h-1 top-1 absolute left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/vector-136-1.svg"
+                    src="/img/vector-136-1.svg"
                   />
 
                   <div className="absolute w-3 h-3 top-0 left-[85px] bg-blue-50 rounded-md" />
