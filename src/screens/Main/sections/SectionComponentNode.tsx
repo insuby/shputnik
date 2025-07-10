@@ -1,6 +1,6 @@
 export const SectionComponentNode = () => {
   return (
-    <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto] ml-[-8.00px] mr-[-8.00px]">
+    <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
       <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
         <span className="font-medium text-[#9ea7bb] leading-[0.1px]">
           Альтернативные
@@ -12,7 +12,7 @@ export const SectionComponentNode = () => {
         </span>
       </p>
 
-      <div className="flex w-[1392px] h-[520px] items-start gap-4 relative">
+      <div className="flex w-full h-[520px] items-start gap-4 relative">
         <div className="relative self-stretch w-[686px] bg-[#f9fafd] rounded-[32px] overflow-hidden">
           <div className="relative h-[682px]">
             <img

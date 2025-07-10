@@ -7,7 +7,7 @@ import { SectionComponentNode } from "./sections/SectionComponentNode";
 
 export const Main = () => {
   return (
-      <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] relative flex-[0_0_auto]">
+      <div className="flex flex-col w-full items-center gap-[136px] pt-8 pb-[136px] relative flex-[0_0_auto]">
         <Frame />
         <FrameWrapper />
         <DivWrapper />

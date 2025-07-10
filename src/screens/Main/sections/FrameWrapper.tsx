@@ -2,7 +2,7 @@
 
 export const FrameWrapper = () => {
   return (
-    <div className="inline-flex flex-col items-center gap-[88px] relative flex-[0_0_auto] ml-[-8.00px] mr-[-8.00px]">
+    <div className="inline-flex flex-col w-full items-center gap-[88px] relative flex-[0_0_auto]">
       <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
         <div className="w-[590px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
           Специализируемся
@@ -18,8 +18,8 @@ export const FrameWrapper = () => {
         </p>
       </div>
 
-      <div className="flex w-[1392px] h-[520px] items-start gap-4 relative">
-        <div className="flex flex-col w-[686px] items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
+      <div className="flex w-full h-[520px] items-start gap-4 relative">
+        <div className="flex flex-col items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
             <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
               <span className="font-medium text-[#1c222f] leading-[0.1px]">

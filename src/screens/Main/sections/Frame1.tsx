@@ -141,8 +141,8 @@ export const Frame1 = () => {
 
           <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
-              <div className="relative w-[678px] h-[446px]">
-                <div className="flex flex-col w-[300px] items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]">
+              <div className="relative w-full h-[446px]">
+                <div className="flex flex-col items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]">
                   <div className="inline-flex items-end justify-end gap-1 p-4 relative flex-[0_0_auto]">
                     <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
                       <div className="relative w-[180px] mt-[-1.00px] font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">

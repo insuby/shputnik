@@ -1,7 +1,7 @@
 export const Frame = () => {
   return (
-    <div className="bg-[#ffffff] rounded-[32px] overflow-hidden">
-      <div className="flex-col w-[1392px] h-[900px] gap-20 pt-[88px] pb-0 px-20 mr-[-16.00px] rounded-[32px] overflow-hidden flex items-center relative">
+    <div className="w-full bg-[#ffffff] rounded-[32px] overflow-hidden">
+      <div className="flex-col w-full h-[900px] gap-20 pt-[88px] pb-0 px-20 mr-[-16.00px] rounded-[32px] overflow-hidden flex items-center relative">
         <img
           className="absolute w-[1108px] h-[1060px] top-[272px] left-[113px]"
           alt="Vector"
