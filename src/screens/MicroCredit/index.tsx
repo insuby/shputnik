@@ -8,7 +8,7 @@ export const MicroCredit = () => {
             <img
               className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
               alt="Vector"
-              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-5.svg"
+              src="/img/vector-1-5.svg"
             />
 
             <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -23,7 +23,7 @@ export const MicroCredit = () => {
                   <img
                     className="relative w-5 h-5"
                     alt="File text"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/filetext.svg"
+                    src="/img/filetext.svg"
                   />
 
                   <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
@@ -66,13 +66,13 @@ export const MicroCredit = () => {
                         <img
                           className="absolute w-[260px] h-1 top-1 left-px"
                           alt="Vector"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-136-1.svg"
+                          src="/img/vector-136-1.svg"
                         />
 
                         <img
                           className="absolute w-[169px] h-1.5 top-[3px] left-0"
                           alt="Vector"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-137.svg"
+                          src="/img/vector-137.svg"
                         />
 
                         <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -96,13 +96,13 @@ export const MicroCredit = () => {
                         <img
                           className="absolute w-[260px] h-1 top-1 left-px"
                           alt="Vector"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-136.svg"
+                          src="/img/vector-136.svg"
                         />
 
                         <img
                           className="absolute w-[95px] h-1.5 top-[3px] left-0"
                           alt="Vector"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-137-2.svg"
+                          src="/img/vector-137-2.svg"
                         />
 
                         <div className="absolute w-3 h-3 top-0 left-[86px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -164,7 +164,7 @@ export const MicroCredit = () => {
             <img
               className="absolute w-[817px] h-[600px] top-0 left-[559px]"
               alt="Vector"
-              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-3.svg"
+              src="/img/vector-3.svg"
             />
 
             <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[254px] left-[1062px] bg-[#ffffff] rounded-[32px]">
@@ -175,13 +175,13 @@ export const MicroCredit = () => {
                       <img
                         className="absolute w-[88px] h-[184px] top-0 left-0"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-8.svg"
+                        src="/img/subtract-8.svg"
                       />
 
                       <img
                         className="absolute w-[88px] h-[108px] top-[76px] left-24"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-7.svg"
+                        src="/img/subtract-7.svg"
                       />
 
                       <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
@@ -198,13 +198,13 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
                       alt="Subtract"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-9.svg"
+                      src="/img/subtract-9.svg"
                     />
 
                     <img
                       className="absolute w-[59px] h-[31px] top-0 left-24"
                       alt="Subtract"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-10.svg"
+                      src="/img/subtract-10.svg"
                     />
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Sliders horizontal"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/slidershorizontal.svg"
+                  src="/img/slidershorizontal.svg"
                 />
               </div>
 
@@ -302,7 +302,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Cpu"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/cpu.svg"
+                  src="/img/cpu.svg"
                 />
               </div>
 
@@ -323,7 +323,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Chart donut"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/chartdonut.svg"
+                  src="/img/chartdonut.svg"
                 />
               </div>
 
@@ -360,7 +360,7 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[443px] h-[467px] top-0 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-6.svg"
+                  src="/img/vector-1-6.svg"
                 />
 
                 <div className="relative flex-1 self-stretch w-full grow">
@@ -372,13 +372,13 @@ export const MicroCredit = () => {
                             <img
                               className="absolute w-[202px] h-1 top-1 left-px"
                               alt="Vector"
-                              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-136-1.svg"
+                              src="/img/vector-136-1.svg"
                             />
 
                             <img
                               className="absolute w-[169px] h-1.5 top-[3px] left-0"
                               alt="Vector"
-                              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-137.svg"
+                              src="/img/vector-137.svg"
                             />
 
                             <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -417,7 +417,7 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[443px] h-[467px] top-0 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-7.svg"
+                  src="/img/vector-1-7.svg"
                 />
 
                 <div className="relative flex-1 self-stretch w-full grow">
@@ -440,7 +440,7 @@ export const MicroCredit = () => {
                         <img
                           className="relative w-6 h-6"
                           alt="Bell"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/bell.svg"
+                          src="/img/bell.svg"
                         />
                       </div>
 
@@ -454,7 +454,7 @@ export const MicroCredit = () => {
                         <img
                           className="relative w-6 h-6"
                           alt="Bell"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/bell.svg"
+                          src="/img/bell.svg"
                         />
                       </div>
 
@@ -482,7 +482,7 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[238px] h-[281px] -top-3.5 left-[102px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-8.svg"
+                  src="/img/vector-1-8.svg"
                 />
 
                 <div className="relative flex-1 self-stretch w-full grow">
@@ -505,7 +505,7 @@ export const MicroCredit = () => {
                         <img
                           className="relative w-6 h-6"
                           alt="Bell"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/bell.svg"
+                          src="/img/bell.svg"
                         />
                       </div>
 
@@ -519,7 +519,7 @@ export const MicroCredit = () => {
                         <img
                           className="relative w-6 h-6"
                           alt="Bell"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/bell.svg"
+                          src="/img/bell.svg"
                         />
                       </div>
 
@@ -550,7 +550,7 @@ export const MicroCredit = () => {
               <img
                 className="relative w-6 h-6"
                 alt="Arrow left"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/arrowleft.svg"
+                src="/img/arrowleft.svg"
               />
             </div>
 
@@ -558,7 +558,7 @@ export const MicroCredit = () => {
               <img
                 className="relative w-6 h-6"
                 alt="Arrow right"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/arrowright.svg"
+                src="/img/arrowright.svg"
               />
             </div>
           </div>
@@ -568,7 +568,7 @@ export const MicroCredit = () => {
           <img
             className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
             alt="Vector"
-            src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1.svg"
+            src="/img/vector-1.svg"
           />
 
           <div className="flex items-center gap-[88px] p-12 relative self-stretch w-full flex-[0_0_auto]">
@@ -577,7 +577,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="User focus"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/userfocus.svg"
+                  src="/img/userfocus.svg"
                 />
               </div>
 
@@ -661,7 +661,7 @@ export const MicroCredit = () => {
             <img
               className="relative w-px h-[528px]"
               alt="Vector"
-              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-129.svg"
+              src="/img/vector-129.svg"
             />
 
             <div className="flex flex-col w-[520px] items-start justify-center gap-8 relative">
@@ -669,7 +669,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Credit card"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/creditcard.svg"
+                  src="/img/creditcard.svg"
                 />
               </div>
 
@@ -756,7 +756,7 @@ export const MicroCredit = () => {
             <img
               className="absolute w-[1108px] h-[1060px] top-[-385px] left-[420px]"
               alt="Vector"
-              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-1.svg"
+              src="/img/vector-1-1.svg"
             />
 
             <div className="flex flex-col items-start gap-3 relative flex-1 grow">
@@ -792,7 +792,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Pencil"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/pencil.svg"
+                  src="/img/pencil.svg"
                 />
               </div>
 
@@ -813,7 +813,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Plus circle"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/pluscircle.svg"
+                  src="/img/pluscircle.svg"
                 />
               </div>
 
@@ -834,7 +834,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-8 h-8"
                   alt="Percent"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/percent.svg"
+                  src="/img/percent.svg"
                 />
               </div>
 
@@ -863,7 +863,7 @@ export const MicroCredit = () => {
             <img
               className="absolute w-[926px] h-[668px] top-0 left-[450px]"
               alt="Vector"
-              src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-2.svg"
+              src="/img/vector-2.svg"
             />
 
             <div className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden">
@@ -927,13 +927,13 @@ export const MicroCredit = () => {
                         <img
                           className="absolute w-[152px] h-[253px] top-0 left-[29px]"
                           alt="Subtract"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-3.svg"
+                          src="/img/subtract-3.svg"
                         />
 
                         <img
                           className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
                           alt="Subtract"
-                          src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-2.svg"
+                          src="/img/subtract-2.svg"
                         />
 
                         <div className="inline-flex flex-col items-center gap-0.5 absolute top-[55px] left-[87px]">
@@ -962,7 +962,7 @@ export const MicroCredit = () => {
                       <img
                         className="absolute w-[53px] h-[94px] top-0 left-[295px]"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract.svg"
+                        src="/img/subtract.svg"
                       />
                     </div>
 
@@ -970,7 +970,7 @@ export const MicroCredit = () => {
                       <img
                         className="absolute w-[145px] h-[60px] top-[18px] left-0"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-1.svg"
+                        src="/img/subtract-1.svg"
                       />
 
                       <div className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
@@ -985,7 +985,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[51px] h-[41px] top-4 left-0"
                       alt="Subtract"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-4.svg"
+                      src="/img/subtract-4.svg"
                     />
 
                     <div className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
@@ -1030,7 +1030,7 @@ export const MicroCredit = () => {
           <img
             className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
             alt="Vector"
-            src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-2.svg"
+            src="/img/vector-1-2.svg"
           />
 
           <div className="flex flex-col w-[432px] items-start gap-12 relative">
@@ -1055,24 +1055,24 @@ export const MicroCredit = () => {
 
           <div className="relative flex-1 grow flex flex-col items-start gap-12 opacity-50">
             <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-[100px] h-[20.51px] bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/group.png)] bg-[100%_100%]" />
+              <div className="relative w-[100px] h-[20.51px] bg-[url(/img/group.png)] bg-[100%_100%]" />
 
               <img
                 className="relative w-[144.69px] h-[30.65px]"
                 alt="Odnoklassniki ok"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/odnoklassniki-ok.png"
+                src="/img/odnoklassniki-ok.png"
               />
 
               <img
                 className="relative w-[74.32px] h-[47.01px]"
                 alt="Logo black"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-black.png"
+                src="/img/logo-black.png"
               />
 
               <img
                 className="relative w-[75.62px] h-[45.86px]"
                 alt="Contact log CMYK"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/contact-log-cmyk.png"
+                src="/img/contact-log-cmyk.png"
               />
             </div>
 
@@ -1080,71 +1080,71 @@ export const MicroCredit = () => {
               <img
                 className="relative w-[114.86px] h-12"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-17.png"
+                src="/img/group-17.png"
               />
 
               <div className="relative w-[159.77px] h-[26.79px]">
                 <img
                   className="absolute w-[26px] h-[27px] top-0 left-0"
                   alt="Group"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-7.png"
+                  src="/img/group-7.png"
                 />
 
                 <img
                   className="absolute w-[125px] h-[13px] top-2 left-[35px]"
                   alt="Group"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-8.png"
+                  src="/img/group-8.png"
                 />
               </div>
 
               <img
                 className="relative w-[59.59px] h-[19.28px]"
                 alt="Visa inc logo"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/visa-inc--logo.png"
+                src="/img/visa-inc--logo.png"
               />
 
               <img
                 className="relative w-[32.71px] h-[19.21px]"
                 alt="Vkcom"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vkcom.png"
+                src="/img/vkcom.png"
               />
 
               <img
                 className="relative w-20 h-[43px]"
                 alt="Logo full eng"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-full-eng.png"
+                src="/img/logo-full-eng.png"
               />
             </div>
 
             <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
               <div className="relative w-[57.08px] h-[37.01px]">
-                <div className="absolute w-[30px] h-5 top-0 left-[13px] bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/group-23.png)] bg-[100%_100%]" />
+                <div className="absolute w-[30px] h-5 top-0 left-[13px] bg-[url(/img/group-23.png)] bg-[100%_100%]" />
 
                 <img
                   className="absolute w-[57px] h-2.5 top-[27px] left-0"
                   alt="Img"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/-------.svg"
+                  src="/img/-------.svg"
                 />
               </div>
 
               <img
                 className="relative w-[134.51px] h-[42.29px] mt-[-1.73px] mb-[-1.73px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-18.png"
+                src="/img/group-18.png"
               />
 
-              <div className="relative w-[108.59px] h-[21.07px] bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/g12.png)] bg-[100%_100%]" />
+              <div className="relative w-[108.59px] h-[21.07px] bg-[url(/img/g12.png)] bg-[100%_100%]" />
 
               <img
                 className="relative w-16 h-[38.19px]"
                 alt="Master card logo"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/master-card-logo.png"
+                src="/img/master-card-logo.png"
               />
 
               <img
                 className="relative w-[83px] h-9"
                 alt="Logo qiwi rgb"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-qiwi-rgb--2-.png"
+                src="/img/logo-qiwi-rgb--2-.png"
               />
             </div>
 
@@ -1152,67 +1152,67 @@ export const MicroCredit = () => {
               <img
                 className="relative w-[79.97px] h-[38.25px]"
                 alt="Zolotaya korona"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/zolotayakorona.png"
+                src="/img/zolotayakorona.png"
               />
 
               <img
                 className="relative w-[137.39px] h-[22.69px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-20.png"
+                src="/img/group-20.png"
               />
 
               <img
                 className="relative w-[81.39px] h-[28.39px]"
                 alt="Yandex pay logo"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/yandex-pay-logo--1-.png"
+                src="/img/yandex-pay-logo--1-.png"
               />
 
-              <div className="relative w-[111.93px] h-[31.07px] bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/logo--1-.png)] bg-[100%_100%]" />
+              <div className="relative w-[111.93px] h-[31.07px] bg-[url(/img/logo--1-.png)] bg-[100%_100%]" />
             </div>
 
             <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-[119.9px] h-[15.86px] bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-light.png)] bg-[100%_100%]" />
+              <div className="relative w-[119.9px] h-[15.86px] bg-[url(/img/logo-light.png)] bg-[100%_100%]" />
 
               <img
                 className="relative w-[117.78px] h-[33.38px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-23-1.png"
+                src="/img/group-23-1.png"
               />
 
               <img
                 className="relative w-[102.85px] h-[29.99px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-21.png"
+                src="/img/group-21.png"
               />
 
               <img
                 className="relative w-[98.34px] h-[25.96px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-25.png"
+                src="/img/group-25.png"
               />
             </div>
 
             <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
               <div className="relative w-[177px] h-[49px]">
-                <div className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/fill-26-copy.svg)] bg-[100%_100%]">
+                <div className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/fill-26-copy.svg)] bg-[100%_100%]">
                   <div className="absolute w-1 h-1.5 top-[25px] left-[19px]">
                     <img
                       className="absolute w-0.5 h-[5px] top-0 left-px"
                       alt="Rectangle"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/rectangle.svg"
+                      src="/img/rectangle.svg"
                     />
 
                     <img
                       className="absolute w-1 h-0.5 top-1 left-0"
                       alt="Rectangle"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/rectangle-2.png"
+                      src="/img/rectangle-2.png"
                     />
                   </div>
 
                   <img
                     className="absolute w-0.5 h-0.5 top-[22px] left-5"
                     alt="Oval"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/oval-20.svg"
+                    src="/img/oval-20.svg"
                   />
                 </div>
 
@@ -1235,29 +1235,29 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-px h-5 top-[15px] left-[52px]"
                   alt="Line"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/line-copy.svg"
+                  src="/img/line-copy.svg"
                 />
               </div>
 
               <div className="relative w-[157px] h-[49px]">
-                <div className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(https://c.animaapp.com/mcxsiiuabnafJ7/img/fill-26-copy.svg)] bg-[100%_100%]">
+                <div className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/fill-26-copy.svg)] bg-[100%_100%]">
                   <img
                     className="absolute w-2.5 h-2.5 top-[21px] left-4"
                     alt="Path"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/path-9-1.svg"
+                    src="/img/path-9-1.svg"
                   />
 
                   <img
                     className="absolute w-[11px] h-[11px] top-5 left-4"
                     alt="Path"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/path-9.svg"
+                    src="/img/path-9.svg"
                   />
                 </div>
 
                 <img
                   className="absolute w-px h-5 top-[15px] left-[52px]"
                   alt="Line copy"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/line-copy.svg"
+                  src="/img/line-copy.svg"
                 />
 
                 <div className="absolute w-[99px] h-[47px] top-0.5 left-16">
@@ -1282,20 +1282,20 @@ export const MicroCredit = () => {
                   <img
                     className="absolute w-[26px] h-7 top-[9px] left-2.5"
                     alt="Fill copy"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/fill-26-copy-2.svg"
+                    src="/img/fill-26-copy-2.svg"
                   />
 
                   <img
                     className="absolute w-[46px] h-[46px] top-0 left-0"
                     alt="Oval"
-                    src="https://c.animaapp.com/mcxsiiuabnafJ7/img/oval.svg"
+                    src="/img/oval.svg"
                   />
                 </div>
 
                 <img
                   className="absolute w-px h-5 top-[15px] left-[52px]"
                   alt="Line copy"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/line-copy.svg"
+                  src="/img/line-copy.svg"
                 />
 
                 <div className="absolute w-[95px] h-[47px] top-0 left-16">
@@ -1337,7 +1337,7 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[623px] h-[448px] top-0 left-[53px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-3.svg"
+                  src="/img/vector-1-3.svg"
                 />
 
                 <div className="relative self-stretch w-full h-[210px]">
@@ -1353,7 +1353,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[26px] h-[26px] top-[61px] left-[11px]"
                       alt="User"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/user.svg"
+                      src="/img/user.svg"
                     />
 
                     <div className="absolute w-12 h-12 top-[151px] left-[74px] bg-[#ffffff] rounded-3xl" />
@@ -1361,7 +1361,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[26px] h-[26px] top-[162px] left-[85px]"
                       alt="User"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/user.svg"
+                      src="/img/user.svg"
                     />
 
                     <div className="absolute w-12 h-12 top-[70px] left-[122px] bg-blue-50 rounded-3xl" />
@@ -1369,7 +1369,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[26px] h-[26px] top-[81px] left-[133px]"
                       alt="User"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/user.svg"
+                      src="/img/user.svg"
                     />
 
                     <div className="absolute w-12 h-12 top-[22px] left-[198px] bg-[#ffffff] rounded-3xl" />
@@ -1377,7 +1377,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[26px] h-[26px] top-[33px] left-[209px]"
                       alt="User"
-                      src="https://c.animaapp.com/mcxsiiuabnafJ7/img/user.svg"
+                      src="/img/user.svg"
                     />
                   </div>
                 </div>
@@ -1480,7 +1480,7 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[608px] h-[488px] top-0 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vector-1-4.svg"
+                  src="/img/vector-1-4.svg"
                 />
 
                 <div className="relative self-stretch w-full h-[210px]">
@@ -1501,17 +1501,17 @@ export const MicroCredit = () => {
                       <img
                         className="relative w-3 h-3"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-6.svg"
+                        src="/img/subtract-6.svg"
                       />
                     </div>
 
                     <div className="flex items-end pl-2 pr-20 py-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="inline-flex items-center justify-center gap-2 p-2.5 relative flex-[0_0_auto] rounded-[100px] [background:url(https://c.animaapp.com/mcxsiiuabnafJ7/img/frame-3.png)_50%_50%_/_cover]" />
+                      <div className="inline-flex items-center justify-center gap-2 p-2.5 relative flex-[0_0_auto] rounded-[100px] [background:url(/img/frame-3.png)_50%_50%_/_cover]" />
 
                       <img
                         className="relative w-3 h-3"
                         alt="Subtract"
-                        src="https://c.animaapp.com/mcxsiiuabnafJ7/img/subtract-5.svg"
+                        src="/img/subtract-5.svg"
                       />
 
                       <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">
@@ -1596,7 +1596,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-7 h-7"
                   alt="User"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/user-4.svg"
+                  src="/img/user-4.svg"
                 />
               </div>
 
@@ -1610,7 +1610,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-7 h-7"
                   alt="Circles four"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/circlesfour.svg"
+                  src="/img/circlesfour.svg"
                 />
               </div>
 
@@ -1624,7 +1624,7 @@ export const MicroCredit = () => {
                 <img
                   className="relative w-7 h-7"
                   alt="Nut"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/nut.svg"
+                  src="/img/nut.svg"
                 />
               </div>
 
@@ -1655,64 +1655,64 @@ export const MicroCredit = () => {
                 <img
                   className="absolute w-[114px] h-[31px] top-0 left-9"
                   alt="Group"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-1.png"
+                  src="/img/group-1.png"
                 />
               </div>
 
               <img
                 className="relative w-[217.03px] h-[45.97px]"
                 alt="Odnoklassniki ok"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/odnoklassniki-ok-1.png"
+                src="/img/odnoklassniki-ok-1.png"
               />
 
               <img
                 className="relative w-[111.48px] h-[70.52px]"
                 alt="Logo black"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-black-1.png"
+                src="/img/logo-black-1.png"
               />
 
               <img
                 className="relative w-[113.43px] h-[68.79px]"
                 alt="Contact log CMYK"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/contact-log-cmyk-1.png"
+                src="/img/contact-log-cmyk-1.png"
               />
 
               <img
                 className="relative w-[49.06px] h-[28.81px]"
                 alt="Vkcom"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/vkcom-1.png"
+                src="/img/vkcom-1.png"
               />
 
               <img
                 className="relative w-[120px] h-[64.5px]"
                 alt="Logo full eng"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/logo-full-eng-1.png"
+                src="/img/logo-full-eng-1.png"
               />
 
               <img
                 className="relative w-24 h-[57.29px]"
                 alt="Master card logo"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/master-card-logo-1.png"
+                src="/img/master-card-logo-1.png"
               />
 
               <div className="relative w-[239.66px] h-[40.18px]">
                 <img
                   className="absolute w-10 h-10 top-0 left-0"
                   alt="Group"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-7-1.png"
+                  src="/img/group-7-1.png"
                 />
 
                 <img
                   className="absolute w-[188px] h-[19px] top-3 left-[52px]"
                   alt="Group"
-                  src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-8-1.png"
+                  src="/img/group-8-1.png"
                 />
               </div>
 
               <img
                 className="relative w-[126.29px] h-[72px]"
                 alt="Group"
-                src="https://c.animaapp.com/mcxsiiuabnafJ7/img/group-17-1.png"
+                src="/img/group-17-1.png"
               />
             </div>
           </div>
