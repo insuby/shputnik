@@ -81,15 +81,17 @@ export const Frame1 = () => {
                     />
                   </div>
 
-                  <div className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl">
-                    <div className="relative w-14 h-14">
-                      <div className="relative h-[53px] top-px">
-                        <div className="w-[55px] h-[53px] bg-[url(/img/group.png)] bg-[100%_100%]" />
-                      </div>
-                    </div>
+                  <div
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl">
+                    <img
+                      className="relative w-14 h-14"
+                      alt="Clip path group"
+                      src="/img/frame-1948755067.png"
+                    />
                   </div>
 
-                  <div className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[304px] bg-[#ffffff] rounded-3xl">
+                  <div
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[304px] bg-[#ffffff] rounded-3xl">
                     <img
                       className="relative w-14 h-14"
                       alt="Okb logo"
