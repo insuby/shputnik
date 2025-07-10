@@ -41,7 +41,7 @@ const footerData = {
 
 export const FooterSection = () => {
   return (
-    <footer className="flex flex-col items-start gap-[60px] p-12 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[32px] overflow-hidden">
+    <footer className="flex flex-col items-start gap-[60px] pt-[136px] p-12 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[32px] overflow-hidden">
       <div className="flex items-start gap-12 relative self-stretch w-full flex-[0_0_auto]">
         <div className="h-[324px] items-start justify-between flex flex-col w-[268px] relative">
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
