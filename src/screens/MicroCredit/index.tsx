@@ -1,6 +1,14 @@
 import { Check15 } from '../../components/ui/check15.tsx';
+import Marquee from 'react-fast-marquee';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 
 export const MicroCredit = () => {
+    const { setIsOpen } = useFeedbackForm();
+
+    const onClick = () => {
+        setIsOpen(true);
+    };
+
     return (
       <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
         <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
@@ -46,7 +54,7 @@ export const MicroCredit = () => {
                 </p>
               </div>
 
-              <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center">
+              <button onClick={onClick} className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
                 <div className="[font-family:'Roboto',Helvetica] text-gray-90 text-xl leading-7 relative w-fit mt-[-1.00px] font-normal tracking-[0] whitespace-nowrap">
                   Демо-версия
                 </div>
@@ -154,7 +162,7 @@ export const MicroCredit = () => {
                 </div>
               </div>
 
-              <button className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center">
+              <button onClick={onClick} className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
                 <div className="self-stretch w-[164px] mt-[-1.00px] font-medium text-[#ffffff] text-base text-center leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
                   Оформить займ
                 </div>
@@ -771,7 +779,7 @@ export const MicroCredit = () => {
               </p>
             </div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center">
+            <button onClick={onClick} className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Демонстрация
               </div>
@@ -1046,7 +1054,7 @@ export const MicroCredit = () => {
               </p>
             </div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center">
+            <button onClick={onClick} className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Попробовать
               </div>
@@ -1509,9 +1517,9 @@ export const MicroCredit = () => {
                       <div className="inline-flex items-center justify-center gap-2 p-2.5 relative flex-[0_0_auto] rounded-[100px] [background:url(/img/frame-3.png)_50%_50%_/_cover]" />
 
                       <img
-                        className="relative w-3 h-3"
+                        className="relative size-11 mr-2"
                         alt="Subtract"
-                        src="/img/subtract-5.svg"
+                        src="/img/fsubtract-5.png"
                       />
 
                       <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">
@@ -1583,7 +1591,7 @@ export const MicroCredit = () => {
               </div>
             </div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center">
+            <button onClick={onClick} className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Демо-версия
               </div>
@@ -1649,75 +1657,76 @@ export const MicroCredit = () => {
             </div>
           </div>
 
-          <div className="w-[2002px] absolute top-[292px] left-[-308px] flex flex-col items-start gap-12 opacity-50">
-            <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative w-[150px] h-[30.76px]">
+          <div className="absolute top-[292px] left-0 right-0 h-[72px] opacity-50">
+            <Marquee speed={30} gradient={false} pauseOnHover={true}>
+              <div className="flex items-center gap-16 mx-8">
+                <div className="relative w-[150px] h-[30.76px] flex items-center justify-center">
+                  <img
+                    className="w-[114px] h-[31px]"
+                    alt="Group"
+                    src="/img/group-1.png"
+                  />
+                </div>
+
                 <img
-                  className="absolute w-[114px] h-[31px] top-0 left-9"
+                  className="w-[217.03px] h-[45.97px] object-contain"
+                  alt="Odnoklassniki ok"
+                  src="/img/odnoklassniki-ok-1.png"
+                />
+
+                <img
+                  className="w-[111.48px] h-[70.52px] object-contain"
+                  alt="Logo black"
+                  src="/img/logo-black-1.png"
+                />
+
+                <img
+                  className="w-[113.43px] h-[68.79px] object-contain"
+                  alt="Contact log CMYK"
+                  src="/img/contact-log-cmyk-1.png"
+                />
+
+                <img
+                  className="w-[49.06px] h-[28.81px] object-contain"
+                  alt="Vkcom"
+                  src="/img/vkcom-1.png"
+                />
+
+                <img
+                  className="w-[120px] h-[64.5px] object-contain"
+                  alt="Logo full eng"
+                  src="/img/logo-full-eng-1.png"
+                />
+
+                <img
+                  className="w-24 h-[57.29px] object-contain"
+                  alt="Master card logo"
+                  src="/img/master-card-logo-1.png"
+                />
+
+                <div className="relative w-[239.66px] h-[40.18px] flex items-center">
+                  <img
+                    className="w-10 h-10"
+                    alt="Group"
+                    src="/img/group-7-1.png"
+                  />
+                  <img
+                    className="w-[188px] h-[19px] ml-3"
+                    alt="Group"
+                    src="/img/group-8-1.png"
+                  />
+                </div>
+
+                <img
+                  className="w-[126.29px] h-[72px] object-contain"
                   alt="Group"
-                  src="/img/group-1.png"
+                  src="/img/group-17-1.png"
                 />
               </div>
-
-              <img
-                className="relative w-[217.03px] h-[45.97px]"
-                alt="Odnoklassniki ok"
-                src="/img/odnoklassniki-ok-1.png"
-              />
-
-              <img
-                className="relative w-[111.48px] h-[70.52px]"
-                alt="Logo black"
-                src="/img/logo-black-1.png"
-              />
-
-              <img
-                className="relative w-[113.43px] h-[68.79px]"
-                alt="Contact log CMYK"
-                src="/img/contact-log-cmyk-1.png"
-              />
-
-              <img
-                className="relative w-[49.06px] h-[28.81px]"
-                alt="Vkcom"
-                src="/img/vkcom-1.png"
-              />
-
-              <img
-                className="relative w-[120px] h-[64.5px]"
-                alt="Logo full eng"
-                src="/img/logo-full-eng-1.png"
-              />
-
-              <img
-                className="relative w-24 h-[57.29px]"
-                alt="Master card logo"
-                src="/img/master-card-logo-1.png"
-              />
-
-              <div className="relative w-[239.66px] h-[40.18px]">
-                <img
-                  className="absolute w-10 h-10 top-0 left-0"
-                  alt="Group"
-                  src="/img/group-7-1.png"
-                />
-
-                <img
-                  className="absolute w-[188px] h-[19px] top-3 left-[52px]"
-                  alt="Group"
-                  src="/img/group-8-1.png"
-                />
-              </div>
-
-              <img
-                className="relative w-[126.29px] h-[72px]"
-                alt="Group"
-                src="/img/group-17-1.png"
-              />
-            </div>
+            </Marquee>
           </div>
 
-          <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 absolute top-[444px] left-[543px] bg-blue-50 rounded-[100px] items-center justify-center">
+          <button onClick={onClick} className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 absolute top-[444px] left-[543px] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
             <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
               Начать сотрудничество
             </div>

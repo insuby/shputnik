@@ -1,5 +1,6 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useEffect, useState } from 'react';
 
 import { useForm } from 'react-hook-form';
 // @ts-ignore
@@ -15,6 +16,7 @@ const schema = yup.object({
 
 export const FeedbackForm = () => {
   const { setIsOpen } = useFeedbackForm();
+  const [isVisible, setIsVisible] = useState(false);
 
   const {
     register,
@@ -25,17 +27,30 @@ export const FeedbackForm = () => {
     resolver: yupResolver(schema),
   });
 
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   const onSubmit = (data: any) => {
     console.log(data);
   };
 
   const onClick = () => {
-    setIsOpen(false);
+    setIsVisible(false);
+    setTimeout(() => {
+      setIsOpen(false);
+    }, 300);
+  };
+
+  const onBackdropClick = (e: React.MouseEvent) => {
+    if (e.target === e.currentTarget) {
+      onClick();
+    }
   };
 
   return (
-    <div className="fixed z-50 inset-0 w-screen h-screen flex justify-center items-center bg-[#000000CA] p-[40px]">
-      <div className="flex rounded-2xl flex-col h-fit w-fit items-start gap-6 p-6 relative bg-blue-50 overflow-hidden">
+    <div onClick={onBackdropClick} className={`fixed z-50 inset-0 w-screen h-screen flex justify-center items-center p-[40px] transition-all duration-300 ease-in-out ${isVisible ? 'bg-[#000000CA] opacity-100' : 'bg-transparent opacity-0'}`}>
+      <div className={`flex rounded-2xl flex-col h-fit w-fit items-start gap-6 p-6 relative bg-blue-50 overflow-hidden transition-all duration-300 ease-in-out transform ${isVisible ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4'}`}>
         <img
           className="absolute w-[1336px] h-[1234px] top-[500px] -left-40"
           alt="Vector"
@@ -90,7 +105,7 @@ export const FeedbackForm = () => {
           </div>
 
           <div
-            className="inline-flex items-center justify-center gap-2.5 p-3 relative flex-[0_0_auto] mt-[-8.00px] mb-[-8.00px] bg-[#ffffff14] rounded-[100px]"
+            className="inline-flex items-center justify-center gap-2.5 p-3 relative flex-[0_0_auto] mt-[-8.00px] mb-[-8.00px] bg-[#ffffff14] rounded-[100px] cursor-pointer hover:bg-[#ffffff20] transition-colors duration-200"
             onClick={onClick}
           >
             <img className="relative w-8 h-8" alt="X" src="/img/x.svg" />
