@@ -2,12 +2,12 @@ export const SectionComponentNode = () => {
   return (
     <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
       <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
-        <span className="font-medium text-[#9ea7bb] leading-[0.1px]">
+        <span id="animate_32" className="font-medium text-[#9ea7bb] leading-[0.1px]">
           Альтернативные
           <br />
         </span>
 
-        <span className="font-medium text-[#1c222f] leading-[48px]">
+        <span id="animate_33" className="font-medium text-[#1c222f] leading-[48px]">
           и этичные модели
         </span>
       </p>
@@ -21,7 +21,7 @@ export const SectionComponentNode = () => {
               src="/img/vector-1-5.svg"
             />
 
-            <div className="flex w-[304px] top-[66px] left-[62px] bg-green-50 rounded-[32px] overflow-hidden flex-col items-center justify-center absolute">
+            <div id="animate_33" className="flex w-[304px] top-[66px] left-[62px] bg-green-50 rounded-[32px] overflow-hidden flex-col items-center justify-center absolute">
               <div className="flex-col items-center justify-center gap-5 p-5 self-stretch w-full flex-[0_0_auto] flex relative">
                 <img
                   className="absolute w-[345px] h-[330px] top-3 left-[-49px]"
@@ -209,7 +209,7 @@ export const SectionComponentNode = () => {
               src="/img/vector-4-3.svg"
             />
 
-            <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[138px] left-[298px] bg-white rounded-[32px]">
+            <div id="animate_34_right" className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[138px] left-[298px] bg-white rounded-[32px]">
               <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
                 <div className="w-[180px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
                   Общий доход
@@ -282,7 +282,7 @@ export const SectionComponentNode = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+          <div id="animate_35_left" className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
                 P2P-кредитование
@@ -302,7 +302,7 @@ export const SectionComponentNode = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden">
+          <div id="animate_36_right" className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Исламское кредитование

@@ -1,12 +1,13 @@
-
-
 export const Frame1 = () => {
   return (
     <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
       <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] whitespace-nowrap relative tracking-[0]">
-        <span className="text-[#1c222f]">Другое </span>
-
-        <span className="text-[#9ea7bb]">программное обеспечение</span>
+        <span id="animate_37_left" className="text-[#1c222f]">
+          Другое{' '}
+        </span>
+        <span id="animate_37_right" className="text-[#9ea7bb]">
+          программное обеспечение
+        </span>
       </p>
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
@@ -20,7 +21,10 @@ export const Frame1 = () => {
                   src="/img/vector-151.svg"
                 />
 
-                <div className="inline-flex flex-col items-start gap-2.5 p-2 absolute top-[100px] left-[177px] bg-[#ffffff5c] rounded-[32px]">
+                <div
+                  id="animate_40"
+                  className="inline-flex flex-col items-start gap-2.5 p-2 absolute top-[100px] left-[177px] bg-[#ffffff5c] rounded-[32px]"
+                >
                   <div className="flex flex-col items-start gap-2.5 p-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl">
                     <div className="relative w-[142.55px] h-7">
                       <div className="w-[143px] h-7">
@@ -65,7 +69,10 @@ export const Frame1 = () => {
                 </div>
 
                 <div className="absolute w-[560px] h-[104px] top-[262px] left-0">
-                  <div className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-0 bg-[#ffffff] rounded-3xl">
+                  <div
+                    id="animate_41_left"
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-0 bg-[#ffffff] rounded-3xl"
+                  >
                     <img
                       className="relative w-[57.34px] h-[58px] mt-[-1.32px] mb-[-0.67px] ml-[-0.67px] mr-[-0.67px]"
                       alt="Group"
@@ -73,7 +80,10 @@ export const Frame1 = () => {
                     />
                   </div>
 
-                  <div className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[152px] bg-[#ffffff] rounded-3xl">
+                  <div
+                    id="animate_41"
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[152px] bg-[#ffffff] rounded-3xl"
+                  >
                     <img
                       className="relative w-14 h-14"
                       alt="Clip path group"
@@ -82,7 +92,9 @@ export const Frame1 = () => {
                   </div>
 
                   <div
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl">
+                    id="animate_42"
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl"
+                  >
                     <img
                       className="relative w-14 h-14"
                       alt="Clip path group"
@@ -91,7 +103,9 @@ export const Frame1 = () => {
                   </div>
 
                   <div
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[304px] bg-[#ffffff] rounded-3xl">
+                    id="animate_42_right"
+                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[304px] bg-[#ffffff] rounded-3xl"
+                  >
                     <img
                       className="relative w-14 h-14"
                       alt="Okb logo"
@@ -122,12 +136,21 @@ export const Frame1 = () => {
 
             <div className="flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd]">
               <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-                <p className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <p
+                  id="animate_38"
+                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                >
                   Выгрузка данных в кредитные бюро
                 </p>
 
-                <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Решение для выгрузки данных в кредитные бюро. Подходит для МФО, лизинговых и коллекторских компаний и других участников рынка, обязанных передавать данные по требованиям законодательства.
+                <p
+                  id="animate_39"
+                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                >
+                  Решение для выгрузки данных в кредитные бюро. Подходит для
+                  МФО, лизинговых и коллекторских компаний и других участников
+                  рынка, обязанных передавать данные по требованиям
+                  законодательства.
                 </p>
               </div>
 
@@ -140,11 +163,10 @@ export const Frame1 = () => {
               </div>
             </div>
           </div>
-
           <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
               <div className="relative w-full h-[446px]">
-                <div className="flex flex-col items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]">
+                <div id="animate_44" className="flex flex-col items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]">
                   <div className="inline-flex items-end justify-end gap-1 p-4 relative flex-[0_0_auto]">
                     <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
                       <div className="relative w-[180px] mt-[-1.00px] font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
@@ -236,7 +258,7 @@ export const Frame1 = () => {
                   src="/img/vector-1-4.svg"
                 />
 
-                <div className="flex flex-col w-80 items-start justify-center gap-3 p-6 absolute top-[38px] left-[312px] bg-white rounded-[32px]">
+                <div id="animate_43_right" className="flex flex-col w-80 items-start justify-center gap-3 p-6 absolute top-[38px] left-[312px] bg-white rounded-[32px]">
                   <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
                     <div className="relative w-[68px] h-[148px] bg-green-50 rounded-[20px] overflow-hidden">
                       <div className="absolute top-[57px] left-3.5 font-medium text-white text-2xl leading-8 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
@@ -290,12 +312,14 @@ export const Frame1 = () => {
 
             <div className="flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
               <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-                <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <div id="animate_46_left" className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                   Модуль принятия решений
                 </div>
 
-                <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                  Полностью настраиваемый процесс принятия проверки физлиц и юрлиц. Интеграции с десятками внешних сервисов для проверки и обогащения данных.
+                <p  id="animate_47_right" className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+                  Полностью настраиваемый процесс принятия проверки физлиц и
+                  юрлиц. Интеграции с десятками внешних сервисов для проверки и
+                  обогащения данных.
                 </p>
               </div>
 
