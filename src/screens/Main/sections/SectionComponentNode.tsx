@@ -1,15 +1,43 @@
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
 export const SectionComponentNode = () => {
+  const ref32 = useRef<HTMLSpanElement>(null);
+  const ref33 = useRef<HTMLSpanElement>(null);
+  const ref34 = useRef<HTMLDivElement>(null);
+  const ref34r = useRef<HTMLDivElement>(null);
+  const ref35 = useRef<HTMLDivElement>(null);
+  const ref36 = useRef<HTMLDivElement>(null);
+  const inView32 = useInView(ref32, { once: true, margin: '-100px' });
+  const inView33 = useInView(ref33, { once: true, margin: '-100px' });
+  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
+  const inView34r = useInView(ref34r, { once: true, margin: '-100px' });
+  const inView35 = useInView(ref35, { once: true, margin: '-100px' });
+  const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   return (
     <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
       <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
-        <span id="animate_32" className="font-medium text-[#9ea7bb] leading-[0.1px]">
+        <motion.span
+          id="animate_32"
+          ref={ref32}
+          initial={{ opacity: 0, x: -40 }}
+          animate={inView32 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="font-medium text-[#9ea7bb] leading-[0.1px]"
+        >
           Альтернативные
           <br />
-        </span>
-
-        <span id="animate_33" className="font-medium text-[#1c222f] leading-[48px]">
+        </motion.span>
+        <motion.span
+          id="animate_33"
+          ref={ref33}
+          initial={{ opacity: 0, x: 40 }}
+          animate={inView33 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="font-medium text-[#1c222f] leading-[48px]"
+        >
           и этичные модели
-        </span>
+        </motion.span>
       </p>
 
       <div className="flex w-full h-[520px] items-start gap-4 relative">
@@ -21,7 +49,14 @@ export const SectionComponentNode = () => {
               src="/img/vector-1-5.svg"
             />
 
-            <div id="animate_33" className="flex w-[304px] top-[66px] left-[62px] bg-green-50 rounded-[32px] overflow-hidden flex-col items-center justify-center absolute">
+            <motion.div
+              id="animate_33"
+              ref={ref34}
+              initial={{ opacity: 0, y: 40 }}
+              animate={inView34 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="flex w-[304px] top-[66px] left-[62px] bg-green-50 rounded-[32px] overflow-hidden flex-col items-center justify-center absolute"
+            >
               <div className="flex-col items-center justify-center gap-5 p-5 self-stretch w-full flex-[0_0_auto] flex relative">
                 <img
                   className="absolute w-[345px] h-[330px] top-3 left-[-49px]"
@@ -201,7 +236,7 @@ export const SectionComponentNode = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <img
               className="w-[629px] h-[520px] left-[57px] absolute top-0"
@@ -209,7 +244,14 @@ export const SectionComponentNode = () => {
               src="/img/vector-4-3.svg"
             />
 
-            <div id="animate_34_right" className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[138px] left-[298px] bg-white rounded-[32px]">
+            <motion.div
+              id="animate_34_right"
+              ref={ref34r}
+              initial={{ opacity: 0, x: 40 }}
+              animate={inView34r ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[138px] left-[298px] bg-white rounded-[32px]"
+            >
               <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
                 <div className="w-[180px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
                   Общий доход
@@ -277,12 +319,19 @@ export const SectionComponentNode = () => {
               />
 
               <div className="absolute w-3 h-3 top-[131px] left-[180px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
-            </div>
+            </motion.div>
           </div>
         </div>
 
         <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
-          <div id="animate_35_left" className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+          <motion.div
+            id="animate_35_left"
+            ref={ref35}
+            initial={{ opacity: 0, x: -40 }}
+            animate={inView35 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
+          >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
                 P2P-кредитование
@@ -300,12 +349,19 @@ export const SectionComponentNode = () => {
                 src="/img/caretright-2.svg"
               />
             </div>
-          </div>
+          </motion.div>
 
-          <div id="animate_36_right" className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden">
+          <motion.div
+            id="animate_36_right"
+            ref={ref36}
+            initial={{ opacity: 0, x: 40 }}
+            animate={inView36 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden"
+          >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
-                Исламское кредитование
+                Исламское финансирование
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
@@ -320,7 +376,7 @@ export const SectionComponentNode = () => {
                 src="/img/caretright-2.svg"
               />
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
