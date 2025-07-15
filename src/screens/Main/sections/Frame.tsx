@@ -9,7 +9,7 @@ export const Frame = () => {
         />
 
         <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
-          <p className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-6xl text-center tracking-[0] leading-[60px]">
+          <p id="animate_1" className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-6xl text-center tracking-[0] leading-[60px]">
             <span className="font-medium text-[#1c222f] leading-[68px]">
               Программное обеспечение  для{" "}
             </span>
@@ -23,18 +23,19 @@ export const Frame = () => {
             </span>
           </p>
 
-          <p className="w-[600px] text-[#929cb3] text-[length:var(--body-2-r-font-size)] text-center leading-[var(--body-2-r-line-height)] relative font-body-2-r font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+          <p id="animate_2" className="w-[600px] text-[#929cb3] text-[length:var(--body-2-r-font-size)] text-center leading-[var(--body-2-r-line-height)] relative font-body-2-r font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
             Помогаем микрофинансовым организациям, банкам, fintech-стартапам, брокерам и другим финансовым институтам автоматизировать процесс выдачи займа или кредита, производить регулярные расчёты по кредитным продуктам, принимать платежи, а также эффективно выстраивать работу с клиентами на всех этапах.
           </p>
         </div>
 
         <img
+          id="animate_3"
           className="relative w-[412px] flex-[0_0_auto]"
           alt="Iphone pro max"
           src="/img/iphone-16-pro-max---3.png"
         />
 
-        <div className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[730px] left-[854px] bg-white rounded-[32px]">
+        <div id="animate_6" className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[730px] left-[854px] bg-white rounded-[32px]">
           <div className="inline-flex items-center justify-center gap-8 p-4 relative flex-[0_0_auto] bg-[#f2f5ff] rounded-3xl">
             <img
               className="relative w-8 h-8"
@@ -54,7 +55,7 @@ export const Frame = () => {
           </div>
         </div>
 
-        <div className="flex w-[472px] items-center justify-center gap-5 p-4 absolute top-[559px] left-[94px] bg-white rounded-[32px]">
+        <div id="animate_4" className="flex w-[472px] items-center justify-center gap-5 p-4 absolute top-[559px] left-[94px] bg-white rounded-[32px]">
           <div className="inline-flex flex-col items-start gap-2.5 px-3 py-0 relative flex-[0_0_auto] ml-[-4.00px]">
             <div className="relative w-[184px] h-[184px]">
               <div className="relative h-[184px]">
@@ -152,7 +153,7 @@ export const Frame = () => {
         </div>
       </div>
 
-      <div className="flex flex-col w-[324px] items-center justify-center gap-5 p-4 absolute top-[458px] left-[957px] bg-white rounded-[32px]">
+      <div id="animate_5" className="flex flex-col w-[324px] items-center justify-center gap-5 p-4 absolute top-[458px] left-[957px] bg-white rounded-[32px]">
         <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex flex-col items-start gap-6 p-4 relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
