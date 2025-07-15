@@ -60,7 +60,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
+            className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px]">
               <div className="relative w-[678px] h-[401px]">
@@ -174,16 +174,25 @@ export const Div = () => {
               >
                 <p className="w-10/12">
                   Программное обеспечение для быстрого запуска BNPL-рассрочки
-                  (покупай сейчас — плати позже) на этапе оформления покупки — как
-                  в онлайн-магазинах, так и в розничных точках.
+                  (покупай сейчас — плати позже) на этапе оформления покупки —
+                  как в онлайн-магазинах, так и в розничных точках.
                 </p>
-                <div
-                  className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
-                  <img
-                    className="relative w-8 h-8"
-                    alt="Caret right"
-                    src="/img/caretright-2.svg"
-                  />
+                <div className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  >
+                    <path
+                      d="M12 6L22 16L12 26"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </motion.p>
             </div>
@@ -194,7 +203,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
+            className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px]">
               <div className="relative w-[543px] h-[416px] top-6 left-[67px]">
@@ -331,11 +340,21 @@ export const Div = () => {
                   точках продаж, так и онлайн.
                 </p>
                 <div className="inline-flex items-center gap-2.5 p-4  flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
-                  <img
-                    className="relative w-8 h-8"
-                    alt="Caret right"
-                    src="/img/caretright-2.svg"
-                  />
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  >
+                    <path
+                      d="M12 6L22 16L12 26"
+                      stroke-width="2"
+                      stroke-linecap="square"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </motion.p>
             </div>

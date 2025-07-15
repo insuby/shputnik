@@ -37,7 +37,7 @@ export const FrameWrapper = () => {
         </motion.p>
       </div>
 
-      <div className="flex w-full h-[520px] items-start gap-4 relative">
+      <div className="group flex w-full h-[520px] items-start gap-4 relative">
         <motion.div
           id="animate_9_left"
           ref={refs[2]}
@@ -64,11 +64,21 @@ export const FrameWrapper = () => {
           </div>
 
           <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
-            <img
-              className="relative w-7 h-7"
-              alt="Caret right"
-              src="/img/caretright-2.svg"
-            />
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+            >
+              <path
+                d="M12 6L22 16L12 26"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
         </motion.div>
 

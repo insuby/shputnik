@@ -330,7 +330,7 @@ export const SectionComponentNode = () => {
             initial={{ opacity: 0, x: -40 }}
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
+            className="group flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
@@ -343,11 +343,21 @@ export const SectionComponentNode = () => {
             </div>
 
             <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
-              <img
-                className="relative w-8 h-8"
-                alt="Caret right"
-                src="/img/caretright-2.svg"
-              />
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+              >
+                <path
+                  d="M12 6L22 16L12 26"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </motion.div>
 
@@ -357,7 +367,7 @@ export const SectionComponentNode = () => {
             initial={{ opacity: 0, x: 40 }}
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden"
+            className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
@@ -370,11 +380,21 @@ export const SectionComponentNode = () => {
             </div>
 
             <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
-              <img
-                className="relative w-8 h-8"
-                alt="Caret right"
-                src="/img/caretright-2.svg"
-              />
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+              >
+                <path
+                  d="M12 6L22 16L12 26"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </div>
           </motion.div>
         </div>

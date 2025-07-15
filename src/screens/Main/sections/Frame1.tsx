@@ -1,5 +1,6 @@
-import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+
+import { useRef } from 'react';
 
 export const Frame1 = () => {
   const ref37l = useRef<HTMLSpanElement>(null);
@@ -55,7 +56,7 @@ export const Frame1 = () => {
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
         <div className="flex items-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent rounded-[32px] overflow-hidden">
+          <div className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent rounded-[32px] overflow-hidden">
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
               <div className="relative w-[560px] h-[372px] top-[-49px] left-[59px]">
                 <img
@@ -226,11 +227,21 @@ export const Frame1 = () => {
               </div>
 
               <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
-                <img
-                  className="relative w-8 h-8"
-                  alt="Caret right"
-                  src="/img/caretright-2.svg"
-                />
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                >
+                  <path
+                    d="M12 6L22 16L12 26"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -395,7 +406,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
+            <div className="group flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
               <div className="flex flex-col items-start gap-2 relative flex-1 grow">
                 <motion.div
                   id="animate_46_left"
@@ -423,11 +434,21 @@ export const Frame1 = () => {
               </div>
 
               <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
-                <img
-                  className="relative w-8 h-8"
-                  alt="Caret right"
-                  src="/img/caretright-2.svg"
-                />
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                >
+                  <path
+                    d="M12 6L22 16L12 26"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
           </div>
