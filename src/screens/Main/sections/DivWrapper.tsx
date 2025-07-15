@@ -13,7 +13,7 @@ export const DivWrapper = () => {
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
         <div className="bg-blue-50 relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
-          <div className="relative w-[1265px] h-[904px] top-[-255px] left-[-222px]">
+          <div className="relative w-[1265px] h-[904px] top-[-254px] left-[-222px]">
             <img
               className="absolute w-[611px] h-[571px] top-[333px] left-0"
               alt="Vector"

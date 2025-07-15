@@ -1,27 +1,53 @@
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 
 
 export const FrameWrapper = () => {
+  const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
+  const inViews = refs.map((ref) => useInView(ref, { once: true, margin: '-100px' }));
+  const delays = [0, 0.15, 0.3, 0.45, 0.6];
+
   return (
     <div className="inline-flex flex-col w-full items-center gap-[88px] relative flex-[0_0_auto]">
       <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-        <div className="w-[590px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+        <motion.div
+          id="animate_7"
+          ref={refs[0]}
+          initial={{ opacity: 0, y: 40 }}
+          animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
+          className="w-[590px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]"
+        >
           Специализируемся
-        </div>
+        </motion.div>
 
-        <p className="w-[1376px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-6xl text-center leading-[68px] relative tracking-[0]">
+        <motion.p
+          id="animate_8"
+          ref={refs[1]}
+          initial={{ opacity: 0, y: 40 }}
+          animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
+          className="w-[1376px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-6xl text-center leading-[68px] relative tracking-[0]"
+        >
           <span className="text-[#1c222f]">
             на программном обеспечении
             <br />
           </span>
-
           <span className="text-[#9ea7bb]">для кредитования</span>
-        </p>
+        </motion.p>
       </div>
 
       <div className="flex w-full h-[520px] items-start gap-4 relative">
-        <div className="flex flex-col items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
+        <motion.div
+          id="animate_9_left"
+          ref={refs[2]}
+          initial={{ opacity: 0, x: -60 }}
+          animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
+          className="flex flex-col items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
+        >
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-            <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
+            <p id="animate_12_left" className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 relative tracking-[0]">
               <span className="font-medium text-[#1c222f] leading-[0.1px]">
                 Микрофинансовое
                 <br />
@@ -32,7 +58,7 @@ export const FrameWrapper = () => {
               </span>
             </p>
 
-            <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+            <p  id="animate_13_left" className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
               Полный цикл автоматизации микрофинансового кредитования — от заявки до взыскания, с возможностью настройки сценариев и процессов под требования организации, включая полную цифровизацию всех этапов без ручного труда и с учётом регуляторных стандартов.
             </p>
           </div>
@@ -44,7 +70,7 @@ export const FrameWrapper = () => {
               src="/img/caretright-2.svg"
             />
           </div>
-        </div>
+        </motion.div>
 
         <div className="relative flex-1 self-stretch grow bg-[#f9fafc] rounded-[32px] overflow-hidden">
           <div className="relative w-[690px] h-[548px]">
@@ -54,7 +80,14 @@ export const FrameWrapper = () => {
               src="/img/vector-1-7.svg"
             />
 
-            <div className="flex flex-col w-[324px] items-center justify-center gap-6 p-4 absolute top-[69px] left-[75px] bg-white rounded-[32px]">
+            <motion.div
+              id="animate_10"
+              ref={refs[3]}
+              initial={{ opacity: 0, y: 40 }}
+              animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
+              className="flex flex-col w-[324px] items-center justify-center gap-6 p-4 absolute top-[69px] left-[75px] bg-white rounded-[32px]"
+            >
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex flex-col items-start gap-5 pt-3 pb-4 px-4 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
@@ -160,7 +193,7 @@ export const FrameWrapper = () => {
                   Оформить займ
                 </div>
               </button>
-            </div>
+            </motion.div>
 
             <img
               className="absolute w-[690px] h-[520px] top-0 left-0"
@@ -168,7 +201,14 @@ export const FrameWrapper = () => {
               src="/img/vector-3-1.svg"
             />
 
-            <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[142px] left-[363px] bg-white rounded-[32px]">
+            <motion.div
+              id="animate_11"
+              ref={refs[4]}
+              initial={{ opacity: 0, y: 40 }}
+              animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
+              className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[142px] left-[363px] bg-white rounded-[32px]"
+            >
               <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] rounded-[100px]">
                 <div className="relative w-[184px] h-[184px]">
                   <div className="relative h-[184px]">
@@ -265,7 +305,7 @@ export const FrameWrapper = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
