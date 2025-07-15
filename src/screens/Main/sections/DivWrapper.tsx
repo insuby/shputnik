@@ -3,7 +3,7 @@
 export const DivWrapper = () => {
   return (
     <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-      <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 whitespace-nowrap relative tracking-[0]">
+      <p id="animate_14_left" className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 whitespace-nowrap relative tracking-[0]">
         <span className="font-medium text-[#1c222f] leading-[0.1px]">К</span>
 
         <span className="font-medium text-[#1c222f] leading-[48px]">
@@ -12,7 +12,7 @@ export const DivWrapper = () => {
       </p>
 
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
-        <div className="bg-blue-50 relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+        <div id="animate_15" className="bg-blue-50 relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
           <div className="relative w-[1265px] h-[904px] top-[-254px] left-[-222px]">
             <img
               className="absolute w-[611px] h-[571px] top-[333px] left-0"
@@ -26,7 +26,7 @@ export const DivWrapper = () => {
               src="/img/vector-4.svg"
             />
 
-            <div className="inline-flex items-center absolute top-[317px] left-[284px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden">
+            <div id="animate_16" className="inline-flex items-center absolute top-[317px] left-[284px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden">
               <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative bg-[#ffffff]">
                 <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
                   Калькулятор
@@ -344,7 +344,7 @@ export const DivWrapper = () => {
         </div>
 
         <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
+          <div id="animate_17" className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Кредитование бизнеса
@@ -364,7 +364,7 @@ export const DivWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
+          <div id="animate_18" className="flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Банковское кредитование
@@ -384,7 +384,7 @@ export const DivWrapper = () => {
             </div>
           </div>
 
-          <div className="flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
+          <div id="animate_19" className="flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  relative flex-1 self-stretch grow rounded-[32px] overflow-hidden">
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Автокредитование
