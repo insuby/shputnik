@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
@@ -12,6 +12,7 @@ import { Zaim } from '../../widgets/zaim.tsx';
 
 export const MicroCredit = () => {
   const { setIsOpen } = useFeedbackForm();
+  const [currentSlide, setCurrentSlide] = useState(0);
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
@@ -21,7 +22,10 @@ export const MicroCredit = () => {
   const ref7 = useRef<HTMLDivElement>(null);
   const ref8 = useRef<HTMLDivElement>(null);
   const ref9 = useRef<HTMLDivElement>(null);
-
+  const ref10 = useRef<HTMLDivElement>(null);
+  const ref11 = useRef<HTMLDivElement>(null);
+  const ref12 = useRef<HTMLDivElement>(null);
+  const ref13 = useRef<HTMLDivElement>(null);
   const ref14 = useRef<HTMLDivElement>(null);
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
@@ -36,11 +40,105 @@ export const MicroCredit = () => {
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
   const inView8 = useInView(ref8, { once: true, margin: '-100px' });
   const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-
+  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
   const inView16 = useInView(ref16, { once: true, margin: '-100px' });
   const inView17 = useInView(ref17, { once: true, margin: '-100px' });
+
+  const slides = [
+    {
+      title: 'Подача заявок',
+      description: 'Клиент может самостоятельно пройти регистрацию и подать заявку на займ через сайт, менеджер может сделать эти действия через специальный интерфейс. Если клиент ушел со страницы он всегда может продолжить заполнение заявки.',
+      image: '/img/vector-1-6.svg',
+      content: (
+        <div className="inline-flex relative top-[27px] left-10 flex-col items-center justify-center gap-6 p-4 bg-[#ffffff] rounded-[32px]">
+          <div className="flex flex-col w-[230px] items-start gap-5 pt-3 pb-0 px-4 relative flex-[0_0_auto]">
+            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative self-stretch w-full h-3.5">
+                <div className="relative w-[203px] h-3 top-px left-[-3px]">
+                  <img
+                    className="absolute w-[202px] h-1 top-1 left-px"
+                    alt="Vector"
+                    src="/img/vector-136-1.svg"
+                  />
+                  <img
+                    className="absolute w-[169px] h-1.5 top-[3px] left-0"
+                    alt="Vector"
+                    src="/img/vector-137.svg"
+                  />
+                  <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
+                </div>
+              </div>
+              <div className="relative self-stretch w-full h-6">
+                <div className="left-0 font-normal text-[#7a86a2] absolute -top-px [font-family:'Roboto',Helvetica] text-base tracking-[0] leading-6 whitespace-nowrap">
+                  0
+                </div>
+                <div className="absolute -top-px left-[131px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
+                  122 000
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    {
+      title: 'Уведомления',
+      description: 'Система автоматически отправляет уведомления клиентам о статусе заявки, одобрении, выдаче займа и напоминания о платежах.',
+      image: '/img/vector-1-7.svg',
+      content: (
+        <div className="relative w-[290px] h-24 top-[26px] left-7">
+          <div className="flex w-[235px] items-center justify-center gap-4 p-2 absolute top-7 left-7 bg-[#ffffff] rounded-[32px] opacity-[0.24]">
+            <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+              <img
+                className="mt-[-1895.00px] ml-[-3703.00px] relative w-6 h-6"
+                alt="Bell"
+              />
+            </div>
+            <div className="relative flex-1 opacity-0 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
+              Ваша заявка одобрена
+            </div>
+          </div>
+          <div className="flex w-[266px] items-center justify-center gap-4 p-2 absolute top-4 left-3 bg-[#ffffff] rounded-[32px] opacity-50">
+            <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+              <img
+                className="relative w-6 h-6"
+                alt="Bell"
+                src="/img/bell.svg"
+              />
+            </div>
+            <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
+              Ваша заявка одобрена
+            </div>
+          </div>
+          <div className="flex w-[290px] items-center justify-center gap-4 p-2 absolute top-0 left-0 bg-[#ffffff] rounded-[32px]">
+            <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+              <img
+                className="relative w-6 h-6"
+                alt="Bell"
+                src="/img/bell.svg"
+              />
+            </div>
+            <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
+              Ваша заявка одобрена
+            </div>
+          </div>
+        </div>
+      )
+    }
+  ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
   const onClick = () => {
     setIsOpen(true);
@@ -359,147 +457,65 @@ export const MicroCredit = () => {
               Основные механизмы работы <br />с клиентами
             </p>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center">
+            <button 
+              onClick={onClick}
+              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+            >
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Попробовать
               </div>
             </button>
           </div>
 
-          <div className="inline-flex items-center gap-6 relative flex-[0_0_auto] mr-[-468.00px]">
-            <motion.div
-              ref={ref7}
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView7 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-              className="flex flex-col w-[442.67px] h-[560px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-3xl overflow-hidden"
+          <div className="relative flex items-center gap-6">
+            <button
+              onClick={prevSlide}
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img
-                className="absolute w-[443px] h-[467px] top-0 left-0"
-                alt="Vector"
-                src="/img/vector-1-6.svg"
-              />
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
 
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="inline-flex relative top-[27px] left-10 flex-col items-center justify-center gap-6 p-4 bg-[#ffffff] rounded-[32px]">
-                  <div className="flex flex-col w-[230px] items-start gap-5 pt-3 pb-0 px-4 relative flex-[0_0_auto]">
-                    <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative self-stretch w-full h-3.5">
-                        <div className="relative w-[203px] h-3 top-px left-[-3px]">
-                          <img
-                            className="absolute w-[202px] h-1 top-1 left-px"
-                            alt="Vector"
-                            src="/img/vector-136-1.svg"
-                          />
+            <div className="relative w-[442.67px] h-[560px] overflow-hidden">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5, ease: 'easeInOut' }}
+                className="flex flex-col w-[442.67px] h-[560px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-3xl"
+              >
+                <img
+                  className="absolute w-[443px] h-[467px] top-0 left-0"
+                  alt="Vector"
+                  src={slides[currentSlide].image}
+                />
 
-                          <img
-                            className="absolute w-[169px] h-1.5 top-[3px] left-0"
-                            alt="Vector"
-                            src="/img/vector-137.svg"
-                          />
+                <div className="relative flex-1 self-stretch w-full grow">
+                  {slides[currentSlide].content}
+                </div>
 
-                          <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
-                        </div>
-                      </div>
-
-                      <div className="relative self-stretch w-full h-6">
-                        <div className="left-0 font-normal text-[#7a86a2] absolute -top-px [font-family:'Roboto',Helvetica] text-base tracking-[0] leading-6 whitespace-nowrap">
-                          0
-                        </div>
-
-                        <div className="absolute -top-px left-[131px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
-                          122 000
-                        </div>
-                      </div>
-                    </div>
+                <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                  <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                    {slides[currentSlide].title}
                   </div>
+
+                  <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                    {slides[currentSlide].description}
+                  </p>
                 </div>
-              </div>
+              </motion.div>
+            </div>
 
-              <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Подача заявок
-                </div>
-
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
-                  Клиент может самостоятельно пройти регистрацию и подать заявку
-                  на займ через сайт, менеджер может сделать эти действия через
-                  специальный интерфейс. Если клиент ушел со страницы он всегда
-                  может продолжить заполнение заявки.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              ref={ref8}
-              initial={{ opacity: 0, x: 50 }}
-              animate={inView8 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="flex flex-col w-[442.67px] h-[560px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-3xl overflow-hidden"
+            <button
+              onClick={nextSlide}
+              className="flex items-center justify-center w-12 h-12 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow"
             >
-              <img
-                className="absolute w-[443px] h-[467px] top-0 left-0"
-                alt="Vector"
-                src="/img/vector-1-7.svg"
-              />
-
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="relative w-[290px] h-24 top-[26px] left-7">
-                  <div className="flex w-[235px] items-center justify-center gap-4 p-2 absolute top-7 left-7 bg-[#ffffff] rounded-[32px] opacity-[0.24]">
-                    <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
-                      <img
-                        className="mt-[-1895.00px] ml-[-3703.00px] relative w-6 h-6"
-                        alt="Bell"
-                      />
-                    </div>
-
-                    <div className="relative flex-1 opacity-0 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
-                      Ваша заявка одобрена
-                    </div>
-                  </div>
-
-                  <div className="flex w-[266px] items-center justify-center gap-4 p-2 absolute top-4 left-3 bg-[#ffffff] rounded-[32px] opacity-50">
-                    <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
-                      <img
-                        className="relative w-6 h-6"
-                        alt="Bell"
-                        src="/img/bell.svg"
-                      />
-                    </div>
-
-                    <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
-                      Ваша заявка одобрена
-                    </div>
-                  </div>
-
-                  <div className="flex w-[290px] items-center justify-center gap-4 p-2 absolute top-0 left-0 bg-[#ffffff] rounded-[32px]">
-                    <div className="inline-flex items-center justify-center gap-2.5 p-2.5 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
-                      <img
-                        className="relative w-6 h-6"
-                        alt="Bell"
-                        src="/img/bell.svg"
-                      />
-                    </div>
-
-                    <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6">
-                      Ваша заявка одобрена
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Уведомления
-                </div>
-
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
-                  Система автоматически отправляет уведомления клиентам о
-                  статусе заявки, одобрении, выдаче займа и напоминания о
-                  платежах.
-                </p>
-              </div>
-            </motion.div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
           </div>
         </div>
       </motion.div>
