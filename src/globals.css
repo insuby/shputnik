@@ -18,3 +18,21 @@ button:focus-visible {
 a {
     text-decoration: none;
 }
+
+/* Отключение hover поведения для navigation menu */
+[data-radix-navigation-menu-trigger] {
+    pointer-events: auto;
+}
+
+[data-radix-navigation-menu-content] {
+    pointer-events: auto;
+}
+
+/* Убираем hover эффекты */
+[data-radix-navigation-menu-trigger]:hover {
+    background: none !important;
+}
+
+[data-radix-navigation-menu-content]:hover {
+    background: none !important;
+}

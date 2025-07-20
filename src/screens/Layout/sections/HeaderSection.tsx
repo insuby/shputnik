@@ -73,63 +73,61 @@ export const HeaderSection = () => {
         </Link>
       </div>
 
-      <NavigationMenu className="max-w-none">
-        <NavigationMenuList className="relative flex items-center gap-16" ref={navRef}>
-          <NavigationMenuItem>
-            <NavigationMenuTrigger 
-              className={`transition-colors duration-200 ease-in-out hover:text-blue-50 w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] ${
-                isProductActive ? 'text-blue-50' : 'text-gray-90'
-              }`}
-              data-pathname="products"
-            >
-              Продукты
-            </NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <div className="flex flex-col w-[200px] p-2 bg-white rounded-lg shadow-lg border">
-                {productItems.map((item) => (
-                  <Link
-                    key={item.pathname}
-                    to={item.pathname}
-                    className={`px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-gray-50 ${
-                      pathname === item.pathname ? 'bg-blue-50 text-blue-600' : 'text-gray-700'
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-          
-          {navItems.map((item) => (
-            <Link 
-              key={item.pathname} 
-              to={item.pathname} 
-              className='flex flex-col items-center'
-              data-pathname={item.pathname}
-            >
-              <div className="relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5">
-                <div
-                  className={`transition-colors duration-200 ease-in-out hover:text-blue-50 w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] ${
-                    pathname === item.pathname ? 'text-gray-90' : 'text-gray-90'
-                  }`}>
-                  {item.label}
+      <div className="relative">
+        <NavigationMenu className="max-w-none" delayDuration={0}>
+          <NavigationMenuList className="relative flex items-center gap-16" ref={navRef}>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger 
+                className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
+                data-pathname="products"
+              >
+                Продукты
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="flex flex-col w-[200px] p-2 bg-white rounded-lg">
+                  {productItems.map((item) => (
+                    <Link
+                      key={item.pathname}
+                      to={item.pathname}
+                      className={`px-4 py-2 text-gray-90 ${
+                        pathname === item.pathname ? 'text-gray-90' : 'text-gray-90'
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
                 </div>
-              </div>
-            </Link>
-          ))}
-          <div
-            className="absolute bottom-0.5 h-0.5 bg-blue-50 rounded-[20px_20px_0px_0px] transition-all duration-300 ease-in-out !ml-0"
-            style={{
-              left: `${indicatorStyle.left}px`,
-              width: `${indicatorStyle.width}px`,
-            }}
-          />
-        </NavigationMenuList>
-      </NavigationMenu>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            
+            {navItems.map((item) => (
+              <Link 
+                key={item.pathname} 
+                to={item.pathname} 
+                className='flex flex-col items-center'
+                data-pathname={item.pathname}
+              >
+                <div className="relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5">
+                  <div
+                    className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}>
+                    {item.label}
+                  </div>
+                </div>
+              </Link>
+            ))}
+            <div
+              className="absolute bottom-0.5 h-0.5 bg-blue-50 rounded-[20px_20px_0px_0px] transition-all duration-300 ease-in-out !ml-0"
+              style={{
+                left: `${indicatorStyle.left}px`,
+                width: `${indicatorStyle.width}px`,
+              }}
+            />
+          </NavigationMenuList>
+        </NavigationMenu>
+      </div>
       <button
         onClick={onClick}
-        className="all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center relative cursor-pointer hover:bg-gray-50 hover:shadow-md transition-all duration-200 ease-in-out">
+        className="all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center relative cursor-pointer">
         <div
           className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#3573fc] text-base tracking-[0] leading-6 whitespace-nowrap">
           Связаться с нами
