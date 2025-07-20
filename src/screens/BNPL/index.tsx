@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Marquee } from '@devnomic/marquee';
 
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -9,6 +13,39 @@ import { Trust } from '../../widgets/trust.tsx';
 
 export const BNPL = () => {
   const { setIsOpen } = useFeedbackForm();
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
+  const ref10 = useRef(null);
+  const ref11 = useRef(null);
+  const ref12 = useRef(null);
+  const ref13 = useRef(null);
+  const ref14 = useRef(null);
+  const ref15 = useRef(null);
+  const ref16 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -16,7 +53,13 @@ export const BNPL = () => {
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+      <motion.div 
+        ref={ref1}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView1 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
+      >
         <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-green-50 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
@@ -48,25 +91,49 @@ export const BNPL = () => {
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
+              <motion.div 
+                ref={ref2}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+              >
                 Автоматизация BNPL и PoS-кредитования
-              </div>
+              </motion.div>
 
-              <p className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+              <motion.p 
+                ref={ref3}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+              >
                 Мы предлагаем готовые инструменты для автоматизации процессов
                 BNPL (Buy Now, Pay Later) и POS-кредитования. Решения подойдут
                 для банков, МФО, финтех-компаний и розничных сетей.
-              </p>
+              </motion.p>
             </div>
 
-            <button className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] items-center justify-center gap-2.5 rounded-[100px]">
+            <motion.button 
+              ref={ref4}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+              className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] items-center justify-center gap-2.5 rounded-[100px]"
+            >
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Записаться на презентацию
               </div>
-            </button>
+            </motion.button>
           </div>
 
-          <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[168px] left-[968px] bg-[#ffffff] rounded-[32px]">
+          <motion.div 
+            ref={ref5}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView5 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[168px] left-[968px] bg-[#ffffff] rounded-[32px]"
+          >
             <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
               <div className="relative w-[264px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7">
                 График платежей
@@ -134,7 +201,7 @@ export const BNPL = () => {
             />
 
             <div className="absolute w-3 h-3 top-[156px] left-[156px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
-          </div>
+          </motion.div>
 
           <img
             className="absolute w-[761px] h-[628px] top-0 left-[615px]"
@@ -188,17 +255,41 @@ export const BNPL = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+      <motion.div 
+        ref={ref6}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView6 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
+      >
+        <motion.div 
+          ref={ref7}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView7 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        >
           <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
             Подойдет для
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+        <motion.div 
+          ref={ref8}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView8 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+        >
+          <motion.div 
+            ref={ref9}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView9 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
@@ -217,9 +308,15 @@ export const BNPL = () => {
                 предлагать BNPL-платформу магазинам-партнёрам.
               </p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div 
+            ref={ref10}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView10 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
@@ -237,30 +334,66 @@ export const BNPL = () => {
                 прямо на кассе, в офисе или через онлайн-форму.
               </p>
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
-      <div className="h-[400px] items-center gap-6 rounded-3xl flex relative self-stretch w-full">
-        <div className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+      <motion.div 
+        ref={ref11}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView11 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="h-[400px] items-center gap-6 rounded-3xl flex relative self-stretch w-full"
+      >
+        <motion.div 
+          ref={ref12}
+          initial={{ opacity: 0, x: -50 }}
+          animate={inView12 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden"
+        >
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-            <div className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+            <motion.div 
+              ref={ref13}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView13 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+            >
               Цифровая адаптация
-            </div>
+            </motion.div>
 
-            <div className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+            <motion.div 
+              ref={ref14}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView14 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+            >
               Увеличьте продажи
-            </div>
+            </motion.div>
           </div>
 
-          <p className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+          <motion.p 
+            ref={ref15}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView15 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+          >
             С помощью программного обеспечения BNPL увеличьте средний чек,
             повысьте частоту транзакций и улучшите обслуживание клиентов с
             интеграцией BNPL-решения в вашу точку продаж.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
+        <motion.div 
+          ref={ref16}
+          initial={{ opacity: 0, x: 50 }}
+          animate={inView16 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+          className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden"
+        >
           <Marquee fade>
             <div className="relative w-[752px] h-[400px] left-1">
               <div className="inline-flex items-center gap-4 absolute top-[39px] left-0">
@@ -314,8 +447,8 @@ export const BNPL = () => {
               </div>
             </div>
           </Marquee>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl overflow-hidden">
         <div className="flex flex-col w-[676px] items-start gap-2.5 p-6 relative rounded-[32px] overflow-hidden">

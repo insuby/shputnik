@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Marquee } from '@devnomic/marquee';
 
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -11,6 +15,27 @@ import { Zaim } from '../../widgets/zaim.tsx';
 
 export const Autocredit = () => {
   const { setIsOpen } = useFeedbackForm();
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
+  const ref10 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -18,7 +43,13 @@ export const Autocredit = () => {
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+      <motion.div 
+        ref={ref1}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView1 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
+      >
         <div
           className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden">
           <img
@@ -55,29 +86,49 @@ export const Autocredit = () => {
 
           <div className="flex-col w-[624px] justify-center gap-12 flex-[0_0_auto] flex items-start relative">
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div
-                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
+              <motion.div 
+                ref={ref2}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+              >
                 Займ под залог автомобиля
-              </div>
+              </motion.div>
 
-              <p
-                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7">
+              <motion.p 
+                ref={ref3}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+              >
                 Программное обеспечение для автоматизации залоговых займов.
                 Программное обеспечение для автоматизации залоговых займов.
-              </p>
+              </motion.p>
             </div>
 
-            <button
-              className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] inline-flex items-center justify-center gap-2.5 rounded-[100px]">
+            <motion.button 
+              ref={ref4}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+              className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] inline-flex items-center justify-center gap-2.5 rounded-[100px]"
+            >
               <div
                 className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Записаться на презентацию
               </div>
-            </button>
+            </motion.button>
           </div>
 
-          <div
-            className="inline-flex items-center absolute top-[154px] left-[704px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden">
+          <motion.div 
+            ref={ref5}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView5 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="inline-flex items-center absolute top-[154px] left-[704px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden"
+          >
             <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative bg-[#ffffff]">
               <div
                 className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
@@ -504,7 +555,7 @@ export const Autocredit = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <img
             className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
@@ -512,25 +563,53 @@ export const Autocredit = () => {
             src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-4-3.svg"
           />
         </div>
-      </div>
+      </motion.div>
 
       <Advantages />
 
-      <div className="flex flex-col items-start gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <p
-            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+      <motion.div 
+        ref={ref6}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView6 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col items-start gap-12 relative self-stretch w-full flex-[0_0_auto]"
+      >
+        <motion.div 
+          ref={ref7}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView7 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="flex flex-col items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]"
+        >
+          <motion.p 
+            ref={ref8}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView8 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+          >
             Управление, учёт <br />и проверка залоговых объектов
-          </p>
+          </motion.p>
 
-          <p
-            className="w-[704px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center leading-7 relative tracking-[0]">
+          <motion.p 
+            ref={ref9}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView9 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="w-[704px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center leading-7 relative tracking-[0]"
+          >
             Отдельный интерфейс позволяет контролировать весь жизненный цикл
             залогов — от проверки до снятия с учёта.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="w-[1376px] items-center gap-6 flex-[0_0_auto] rounded-3xl flex relative">
+        <motion.div 
+          ref={ref10}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView10 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+          className="w-[1376px] items-center gap-6 flex-[0_0_auto] rounded-3xl flex relative"
+        >
           <div className="relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
             <div className="relative w-[792px]">
               <img
@@ -661,8 +740,8 @@ export const Autocredit = () => {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <Feedback />
       <Analytics />
