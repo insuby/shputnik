@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 import { Check26 } from '../../icons/Check26.tsx';
+import { CheckIcon } from '../../components/ui/check-icon.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
@@ -800,9 +801,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView15 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 0.8 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -822,9 +822,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView17 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 0.9 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -844,9 +843,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView19 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 1.0 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -866,9 +864,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView21 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 1.1 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -888,9 +885,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView23 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 1.2 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -910,9 +906,8 @@ export const IslamFinance = () => {
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView25 ? { opacity: 1, scale: 1 } : {}}
                       transition={{ duration: 0.3, ease: 'easeOut', delay: 1.3 }}
-                      className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
                     >
-                      <Check26 className="!relative !w-4 !h-4" />
+                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -964,62 +959,44 @@ export const IslamFinance = () => {
 
               <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Антимошеннические сервисы
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Идентификация клиента
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Бюро кредитных историй
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
-                    Государственные сервисы
+                    Проверка документов
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
-                    Социальные сети
+                    Проверка адреса
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#725dd614] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#725dd614" iconColor="#725DD6" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
-                    Дополнительные источники информации
+                    Проверка телефона
                   </div>
                 </div>
               </div>
@@ -1055,60 +1032,42 @@ export const IslamFinance = () => {
 
               <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <div className="text-gray-90 relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-xl tracking-[0] leading-7">
                     Выдача online
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <p className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Погашение займа через личный кабинет
                   </p>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Проверка статусов платежей
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Отмена платежей
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Работа с наличными
                   </div>
                 </div>
 
                 <div className="flex w-[520px] h-7 items-center justify-center gap-6 relative">
-                  <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                    <Check26 className="!relative !w-4 !h-4" />
-                  </div>
-
+                  <CheckIcon bgColor="#00cb8214" iconColor="#00CB82" />
                   <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl leading-7 relative tracking-[0]">
                     Интеграция с расчетным счетом
                   </div>
