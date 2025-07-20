@@ -11,6 +11,7 @@ import { MicroCredit } from './screens/MicroCredit';
 import { BNPL } from './screens/BNPL';
 import { Reviews } from './screens/reviews';
 import { Autocredit } from './screens/Autocredit';
+import { IslamFinance } from './screens/IslamFinans';
 
 export const App = () => {
   return (
@@ -32,6 +33,7 @@ const Pages = () => {
         <Route path={RoutesPath.PRODUCTS} element={<MicroCredit />} />
         <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
         <Route path={RoutesPath.AUTOCREDIT} element={<Autocredit />} />
+        <Route path={RoutesPath.ISLAMFINANCE} element={<IslamFinance />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
       </Route>
     </Routes>

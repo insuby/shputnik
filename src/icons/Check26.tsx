@@ -1,9 +1,8 @@
 interface Props {
   className: any;
-  color?: string;
 }
 
-export const Check10 = ({ className, color = '#3573FC' }: Props): JSX.Element => {
+export const Check26 = ({ className }: Props): JSX.Element => {
   return (
     <svg
       className={`${className}`}
@@ -15,7 +14,7 @@ export const Check10 = ({ className, color = '#3573FC' }: Props): JSX.Element =>
     >
       <path
         d="M2.5 9L6 12.5L14 4.5"
-        stroke={color}
+        stroke="#E74951"
         strokeLinecap="square"
         strokeLinejoin="round"
         strokeWidth="2"
