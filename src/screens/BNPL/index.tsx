@@ -1195,7 +1195,7 @@ export const BNPL = () => {
       <Advantages />
       <Integrations />
 
-      <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl overflow-hidden">
+      <div className="dhidden hidden items-start gap-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl overflow-hidden">
         <div className="flex flex-col items-center justify-center p-6 relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
           <div className="flex flex-col items-center justify-center relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex items-center gap-5 p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
