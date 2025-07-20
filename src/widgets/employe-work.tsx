@@ -154,7 +154,7 @@ export const EmployeeWork = () => {
                 </div>
 
                 <div className="flex items-end pl-2 pr-20 py-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="inline-flex items-center justify-center gap-2 p-2.5 relative flex-[0_0_auto] rounded-[100px] [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-3.png)_50%_50%_/_cover]" />
+                  <div className="inline-flex items-center justify-center gap-2 p-5 relative flex-[0_0_auto] rounded-[100px] [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-3.png)_50%_50%_/_cover]" />
 
                   <img
                     className="relative w-3 h-3"
