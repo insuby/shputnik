@@ -46,6 +46,10 @@ export const BNPL = () => {
   const ref31 = useRef(null);
   const ref32 = useRef(null);
   const ref33 = useRef(null);
+  const ref34 = useRef(null);
+  const ref35 = useRef(null);
+  const ref36 = useRef(null);
+  const ref37 = useRef(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
@@ -80,6 +84,10 @@ export const BNPL = () => {
   const inView31 = useInView(ref31, { once: true, margin: '-100px' });
   const inView32 = useInView(ref32, { once: true, margin: '-100px' });
   const inView33 = useInView(ref33, { once: true, margin: '-100px' });
+  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
+  const inView35 = useInView(ref35, { once: true, margin: '-100px' });
+  const inView36 = useInView(ref36, { once: true, margin: '-100px' });
+  const inView37 = useInView(ref37, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -656,7 +664,13 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
-            <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
+            <motion.div 
+              ref={ref34}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={inView34 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]"
+            >
               <div className="mt-[-3208.00px] ml-[-9786.00px] relative w-7 h-7 bg-[100%_100%]">
                 <div className="relative w-[23px] h-[22px] top-[3px] left-[3px]">
                   <img
@@ -672,7 +686,7 @@ export const BNPL = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Персональная информация
@@ -686,7 +700,13 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
-            <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
+            <motion.div 
+              ref={ref35}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={inView35 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
+            >
               <div className="relative w-7 h-7">
                 <div className="relative w-[22px] h-[21px] top-1 left-[3px]">
                   <img
@@ -708,7 +728,7 @@ export const BNPL = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               История предыдущих выдач
@@ -722,7 +742,13 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
             className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
-            <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]">
+            <motion.div 
+              ref={ref36}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={inView36 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
+            >
               <div className="relative w-7 h-7">
                 <img
                   className="absolute w-[21px] h-3.5 top-2.5 left-1"
@@ -742,7 +768,7 @@ export const BNPL = () => {
                   src="/img/bnpl/vector.svg"
                 />
               </div>
-            </div>
+            </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Данные из сторонних сервисов
@@ -756,7 +782,13 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
             className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
-            <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+            <motion.div 
+              ref={ref37}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={inView37 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]"
+            >
               <div className="relative w-7 h-7 mt-[-3208.00px] ml-[-10836.00px] bg-[100%_100%]">
                 <div className="relative w-[23px] h-[23px] top-[3px] left-[3px]">
                   <img
@@ -772,7 +804,7 @@ export const BNPL = () => {
                   />
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Проверка документов
