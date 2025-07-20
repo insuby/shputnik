@@ -1,12 +1,656 @@
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Trust } from '../../widgets/trust.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
+import { Marquee } from '@devnomic/marquee';
 
 export const BNPL = () => {
+  const { setIsOpen } = useFeedbackForm();
+
+  const onClick = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
+      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+        <div
+          className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-green-50 rounded-[32px] overflow-hidden">
+          <img
+            className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
+            alt="Vector"
+            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-5.svg"
+          />
+
+          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+            <div
+              className="inline-flex gap-2.5 px-5 py-2.5 bg-[#ffffff14] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
+              <div
+                className="w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] whitespace-nowrap relative tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
+                О продукте
+              </div>
+            </div>
+
+            <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
+              <div
+                className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
+                <div className="relative w-5 h-5 mt-[-556.00px] ml-[-10907.00px] bg-[100%_100%]">
+                  <div
+                    className="relative w-3.5 h-4 top-0.5 left-[3px] bg-[url(https://c.animaapp.com/md4w76oyYhfa1O/img/vector-37.svg)] bg-[100%_100%]">
+                    <img
+                      className="absolute w-1.5 h-1.5 top-0 left-2"
+                      alt="Vector"
+                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-38.svg"
+                    />
+
+                    <img
+                      className="absolute w-1.5 h-px top-2 left-1"
+                      alt="Vector"
+                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-36.svg"
+                    />
+
+                    <img
+                      className="absolute w-1.5 h-px top-[11px] left-1"
+                      alt="Vector"
+                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-36.svg"
+                    />
+                  </div>
+                </div>
+
+                <div
+                  className="w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] whitespace-nowrap relative tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
+                  Спецификация
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
+            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+              <div
+                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
+                Автоматизация BNPL и PoS-кредитования
+              </div>
+
+              <p
+                className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                Мы предлагаем готовые инструменты для автоматизации процессов BNPL
+                (Buy Now, Pay Later) и POS-кредитования. Решения подойдут для
+                банков, МФО, финтех-компаний и розничных сетей.
+              </p>
+            </div>
+
+            <button
+              className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] items-center justify-center gap-2.5 rounded-[100px]">
+              <div
+                className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
+                Записаться на презентацию
+              </div>
+            </button>
+          </div>
+
+          <div
+            className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[168px] left-[968px] bg-[#ffffff] rounded-[32px]">
+            <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
+              <div
+                className="relative w-[264px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7">
+                График платежей
+              </div>
+
+              <div
+                className="w-[180px] font-normal text-[#7a86a2] text-sm leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                Договор: 12345456322
+              </div>
+            </div>
+
+            <div className="inline-flex h-[175px] items-end relative">
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div
+                  className="relative w-2 h-[92px] rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  март
+                </div>
+              </div>
+
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div
+                  className="h-[104px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  апр
+                </div>
+              </div>
+
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div
+                  className="h-[127px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  май
+                </div>
+              </div>
+
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div className="h-[145px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  июнь
+                </div>
+              </div>
+
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div className="h-[110px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  июль
+                </div>
+              </div>
+
+              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+                <div className="h-[98px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+
+                <div
+                  className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                  авг
+                </div>
+              </div>
+            </div>
+
+            <img
+              className="absolute w-[328px] h-24 top-[132px] left-0"
+              alt="Vector"
+              src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-147.svg"
+            />
+
+            <div
+              className="absolute w-3 h-3 top-[156px] left-[156px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
+          </div>
+
+          <img
+            className="absolute w-[761px] h-[628px] top-0 left-[615px]"
+            alt="Vector"
+            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-3-1.svg"
+          />
+
+          <div
+            className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[286px] left-[800px] bg-[#ffffff] rounded-[32px_32px_0px_0px]">
+            <div className="relative w-[212px] h-[212px] rounded-[100px]">
+              <div className="relative w-[198px] h-[198px] top-[7px] left-[7px]">
+                <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[68px] left-10">
+                  <div
+                    className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm tracking-[0] leading-5 whitespace-nowrap">
+                    Текущий остаток
+                  </div>
+
+                  <div
+                    className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center tracking-[0] leading-10 whitespace-nowrap">
+                    44,000₽
+                  </div>
+                </div>
+
+                <div
+                  className="absolute w-[198px] h-[198px] top-0 left-0 rounded-[99px] border-[10px] border-solid border-neutral-50" />
+
+                <img
+                  className="absolute w-[198px] h-[198px] top-0 left-0"
+                  alt="Ellipse"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/ellipse-32.svg"
+                />
+              </div>
+            </div>
+
+            <div
+              className="flex flex-col items-start gap-3 px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
+              <div className="flex w-[180px] items-center justify-between relative flex-[0_0_auto]">
+                <div
+                  className="w-fit [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+                  Сумма займа
+                </div>
+
+                <div
+                  className="w-fit font-medium text-gray-90 text-base leading-6 whitespace-nowrap relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]">
+                  122, 000₽
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
+                <div
+                  className="flex-1 [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 relative tracking-[0]">
+                  Проценты
+                </div>
+
+                <div
+                  className="w-fit font-medium text-gray-90 text-base leading-6 whitespace-nowrap relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]">
+                  4, 000₽
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
+        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
+          <div
+            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+            Подойдет для
+          </div>
+        </div>
+
+        <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <img
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18-2.svg"
+            />
+
+            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div
+                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+                E-commerce (BNPL)
+              </div>
+
+              <p
+                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+                Программное обеспечение для запуска BNPL в интернет-магазинах.
+                Позволяет покупателям оплачивать товары в рассрочку. Подходит для
+                e-commerce-площадок и финансовых организаций, которые хотят
+                предлагать BNPL-платформу магазинам-партнёрам.
+              </p>
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <img
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18-3.svg"
+            />
+
+            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div
+                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+                PoS-кредитование
+              </div>
+
+              <p
+                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+                Программный продукт для автоматизации кредитования online и в
+                точках продаж. Позволяет оформлять займы с процентной ставкой
+                прямо на кассе, в офисе или через онлайн-форму.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-[400px] items-center gap-6 rounded-3xl flex relative self-stretch w-full">
+        <div
+          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
+            <div
+              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              Цифровая адаптация
+            </div>
+
+            <div
+              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              Увеличьте продажи
+            </div>
+          </div>
+
+          <p
+            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+            С помощью программного обеспечения BNPL увеличьте средний чек,
+            повысьте частоту транзакций и улучшите обслуживание клиентов с
+            интеграцией BNPL-решения в вашу точку продаж.
+          </p>
+        </div>
+
+        <div className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
+          <Marquee fade>
+            <div className="relative w-[752px] h-[400px] left-1">
+              <div className="inline-flex items-center gap-4 absolute top-[39px] left-0">
+                <div
+                  className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
+                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-3.png)_50%_50%_/_cover]" />
+
+                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
+                      <div
+                        className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                        Наушники Beyerdynamic Amiron
+                      </div>
+
+                      <div
+                        className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        85 950₽
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
+                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-2.png)_50%_50%_/_cover]" />
+
+                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
+                      <div
+                        className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                        Наушники Kennerton Gjallarhorn JM
+                      </div>
+
+                      <div
+                        className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        74 000₽
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
+                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-2.png)_50%_50%_/_cover]" />
+
+                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
+                      <div
+                        className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                        Наушники Kennerton Gjallarhorn JM
+                      </div>
+
+                      <div
+                        className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        74 000₽
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Marquee>
+        </div>
+      </div>
+
+      <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl overflow-hidden">
+        <div className="flex flex-col w-[676px] items-start gap-2.5 p-6 relative rounded-[32px] overflow-hidden">
+          <div
+            className="flex items-center gap-3 p-8 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
+            <div className="flex items-start gap-3 relative flex-1 grow">
+              <div
+                className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-3.png)_50%_50%_/_cover]" />
+
+              <div className="flex flex-col items-start gap-5 p-3 relative flex-1 grow">
+                <div
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-xl tracking-[0] leading-[26px]">
+                  Наушники Beyerdynamic Amiron
+                </div>
+
+                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                  <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      Стоимость
+                    </div>
+
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      85 950₽
+                    </div>
+                  </div>
+
+                  <img
+                    className="relative self-stretch w-full h-px object-cover"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                  />
+
+                  <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      Авансовый платеж
+                    </div>
+
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      14 500 ₽
+                    </div>
+                  </div>
+
+                  <img
+                    className="relative self-stretch w-full h-px object-cover"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                  />
+
+                  <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      Срок
+                    </div>
+
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      10 месяцев
+                    </div>
+                  </div>
+
+                  <img
+                    className="relative self-stretch w-full h-px object-cover"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                  />
+
+                  <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="flex-1 mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      Следующий платеж
+                    </div>
+
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      2 500 ₽
+                    </div>
+                  </div>
+
+                  <img
+                    className="relative self-stretch w-full h-px object-cover"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                  />
+
+                  <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="flex-1 mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      Дата
+                    </div>
+
+                    <div
+                      className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      20 февраля 2025
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  className="all-[unset] box-border flex px-6 py-3 relative self-stretch w-full flex-[0_0_auto] bg-gray-90 items-center justify-center gap-2.5 rounded-[100px]">
+                  <div
+                    className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-semibold text-[#ffffff] text-base leading-6 whitespace-nowrap relative tracking-[0]">
+                    Внести всю сумму
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
+            <div
+              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              Портал заемщика
+            </div>
+
+            <p
+              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              Одно место <br />
+              для всех деталей
+            </p>
+          </div>
+
+          <p
+            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+            Клиенты плавно переходят на портал заемщика, где они могут получить
+            доступ к информации о своих платежах и вносить платежи — все из одного
+            удобного места.
+          </p>
+        </div>
+      </div>
+
+      <div
+        className="flex flex-col items-center justify-center gap-12 px-0 py-20 relative self-stretch w-full flex-[0_0_auto]">
+        <div
+          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+          Настраиваемые параметры
+        </div>
+
+        <div className="flex h-[228px] items-start justify-center gap-6 relative self-stretch w-full">
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <div
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
+              <div className="mt-[-3208.00px] ml-[-9786.00px] relative w-7 h-7 bg-[100%_100%]">
+                <div className="relative w-[23px] h-[22px] top-[3px] left-[3px]">
+                  <img
+                    className="absolute w-4 h-4 top-0 left-1"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-7.svg"
+                  />
+
+                  <img
+                    className="absolute w-[23px] h-2 top-3.5 left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-32.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              Персональная информация
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <div
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
+              <div className="relative w-7 h-7">
+                <div className="relative w-[22px] h-[21px] top-1 left-[3px]">
+                  <img
+                    className="absolute w-1.5 h-[9px] top-1 left-2.5"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-42.svg"
+                  />
+
+                  <img
+                    className="absolute w-1.5 h-1.5 top-[3px] left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-43.svg"
+                  />
+
+                  <img
+                    className="absolute w-[22px] h-[21px] top-0 left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-44.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              История предыдущих выдач
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <div
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]">
+              <div className="relative w-7 h-7">
+                <img
+                  className="absolute w-[21px] h-3.5 top-2.5 left-1"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-9.svg"
+                />
+
+                <img
+                  className="absolute w-[17px] h-0.5 top-1.5 left-[5px]"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector.svg"
+                />
+
+                <img
+                  className="absolute w-3.5 h-0.5 top-[3px] left-[7px]"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector.svg"
+                />
+              </div>
+            </div>
+
+            <div
+              className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              Данные из сторонних сервисов
+            </div>
+          </div>
+
+          <div
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <div
+              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+              <div className="relative w-7 h-7 mt-[-3208.00px] ml-[-10836.00px] bg-[100%_100%]">
+                <div className="relative w-[23px] h-[23px] top-[3px] left-[3px]">
+                  <img
+                    className="absolute w-[19px] h-[19px] top-0 left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-7.svg"
+                  />
+
+                  <img
+                    className="absolute w-2 h-2 top-[15px] left-[15px]"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-2.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              Проверка документов
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div
         className="flex items-center gap-[88px] px-[88px] py-12 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px] overflow-hidden">
         <img
@@ -502,213 +1146,186 @@ export const BNPL = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
+      <Analytics />
+      <Advantages />
+      <Integrations />
+
+      <div
+        className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl overflow-hidden">
         <div
-          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]">
-          Отчётность и аналитика
+          className="flex flex-col items-center justify-center p-6 relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
+          <div className="flex flex-col items-center justify-center relative self-stretch w-full flex-[0_0_auto]">
+            <div
+              className="flex items-center gap-5 p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
+              <div
+                className="relative self-stretch w-48 rounded-3xl [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+
+              <div className="flex flex-col items-start gap-4 p-3 relative flex-1 grow">
+                <div
+                  className="w-[293px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
+                  Социальные параметры
+                </div>
+
+                <div className="flex flex-col w-[293px] items-start gap-2 relative flex-[0_0_auto]">
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                    </div>
+
+                    <div
+                      className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Персональная информация
+                    </div>
+                  </div>
+
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                    </div>
+
+                    <div
+                      className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Банк и адрес
+                    </div>
+                  </div>
+
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                    </div>
+
+                    <div
+                      className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Банк и адрес
+                    </div>
+                  </div>
+
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                    </div>
+
+                    <div
+                      className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Документы
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
+              <div className="relative w-4 h-[18px] top-[3px] left-1">
+                <img
+                  className="absolute w-0.5 h-[18px] top-0 left-[7px]"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-26.svg"
+                />
+
+                <img
+                  className="absolute w-4 h-[9px] top-2.5 left-0"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-28.svg"
+                />
+              </div>
+            </div>
+
+            <div
+              className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
+              <div
+                className="inline-flex gap-2.5 p-4 bg-[#ffffff] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
+                <div className="relative w-6 h-6 mt-[-6988.00px] ml-[-9794.00px] bg-[100%_100%]">
+                  <div className="relative w-5 h-5 top-0.5 left-0.5">
+                    <img
+                      className="absolute w-[17px] h-[17px] top-0 left-0"
+                      alt="Vector"
+                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-25.svg"
+                    />
+
+                    <img
+                      className="absolute w-[7px] h-[7px] top-[13px] left-[13px]"
+                      alt="Vector"
+                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-29.svg"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
+                Проверка кредитной истории
+              </div>
+            </div>
+
+            <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
+              <div className="relative w-4 h-[18px] top-[3px] left-1">
+                <img
+                  className="absolute w-0.5 h-[18px] top-0 left-[7px]"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-26.svg"
+                />
+
+                <img
+                  className="absolute w-4 h-[9px] top-2.5 left-0"
+                  alt="Vector"
+                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-28.svg"
+                />
+              </div>
+            </div>
+
+            <div
+              className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px]">
+              <div
+                className="inline-flex gap-2.5 p-4 bg-[#ffffff29] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
+                <div className="relative w-6 h-6 mt-[-7116.00px] ml-[-9794.00px] bg-[100%_100%]">
+                  <img
+                    className="absolute w-[19px] h-3.5 top-1.5 left-[3px]"
+                    alt="Vector"
+                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-30.svg"
+                  />
+                </div>
+              </div>
+
+              <div
+                className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-2xl leading-8 relative tracking-[0]">
+                Одобрение заявки
+              </div>
+            </div>
+          </div>
         </div>
 
         <div
-          className="items-start flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden flex relative self-stretch w-full">
+          className="flex flex-col items-start justify-center gap-9 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+          <p
+            className="w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[40px] leading-[48px] relative tracking-[0]">
+            Многофункциональный <br />
+            бэк-офис для кредитных менеджеров
+          </p>
+
           <img
-            className="absolute w-[926px] h-[668px] top-0 left-[450px]"
+            className="relative self-stretch w-full h-px object-cover"
             alt="Vector"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-2-1.svg"
+            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
           />
 
-          <div className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden">
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div
-                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
-                Отчеты и статистика
-              </div>
-
-              <p
-                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                Более 25 отчетов, которые покрывают основные потребности
-                организации.
-              </p>
+          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
+            <div
+              className="w-[500px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-2xl leading-8 relative tracking-[0]">
+              Автоматизированное принятие решений
             </div>
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div
-                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
-                Аналитические сервисы
-              </div>
-
-              <p
-                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                Описание базы данных для работы с Tableau, Microsoft Power BI,
-                Deductor и др.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div
-                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
-                Интеграция с 1С
-              </div>
-
-              <p
-                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                Позволяет полностью автоматизировать процесс обмена данными с
-                программой 1С для ведения бухгалтерского учета.
-              </p>
-            </div>
-
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div
-                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
-                ЕПС ready
-              </div>
-
-              <p
-                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                Система готова к переходу бухгалтерского учета на единый план
-                счетов (ЕПС).
-              </p>
-            </div>
-          </div>
-
-          <div className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
-            <div className="relative w-[574px] h-[574px] top-[17px] left-[57px] rounded-[287px]">
-              <div
-                className="absolute w-[294px] h-[294px] top-[140px] left-[140px] bg-[#ffffff] rounded-[147px] blur-[6px]" />
-
-              <div
-                className="absolute w-[444px] h-[444px] top-[65px] left-[65px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />
-
-              <div
-                className="absolute w-[574px] h-[574px] top-0 left-0 rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
-
-              <div className="absolute w-[319px] h-[319px] top-[127px] left-32">
-                <div className="absolute w-[356px] h-[337px] top-[-18px] left-[-29px]">
-                  <div className="absolute w-[356px] h-[260px] top-[76px] left-0">
-                    <div className="absolute w-[356px] h-[253px] top-[7px] left-0">
-                      <img
-                        className="absolute w-[152px] h-[253px] top-0 left-[29px]"
-                        alt="Subtract"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract.svg"
-                      />
-
-                      <img
-                        className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
-                        alt="Subtract"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-1.svg"
-                      />
-
-                      <div className="inline-flex flex-col items-center gap-0.5 absolute top-[55px] left-[87px]">
-                        <div
-                          className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6 whitespace-nowrap">
-                          Баланс
-                        </div>
-
-                        <div
-                          className="w-fit [font-family:'Poppins',Helvetica] font-normal text-[#1c222f] text-[40px] leading-[52px] whitespace-nowrap relative tracking-[0]">
-                          4,385.40 ₽
-                        </div>
-                      </div>
-
-                      <div
-                        className="inline-flex px-3 py-1.5 absolute top-[188px] left-[298px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                        <div
-                          className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                          24%
-                        </div>
-                      </div>
-
-                      <div
-                        className="inline-flex px-3 py-1.5 absolute top-40 left-0 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                        <div
-                          className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                          36%
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className="absolute w-[53px] h-[94px] top-0 left-[295px]"
-                      alt="Subtract"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-2.svg"
-                    />
-                  </div>
-
-                  <div className="absolute w-[145px] h-[78px] top-0 left-[81px]">
-                    <img
-                      className="absolute w-[145px] h-[60px] top-[18px] left-0"
-                      alt="Subtract"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-4.svg"
-                    />
-
-                    <div
-                      className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                      <div
-                        className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                        20%
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="absolute w-[70px] h-[57px] -top-0.5 left-[211px]">
-                  <img
-                    className="absolute w-[51px] h-[41px] top-4 left-0"
-                    alt="Subtract"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-3.svg"
-                  />
-
-                  <div
-                    className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                    <div
-                      className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                      8%
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                className="inline-flex px-3 py-1.5 absolute top-[204px] left-[427px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                <div
-                  className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                  12%
-                </div>
-              </div>
-
-              <div className="flex w-72 items-start p-1 absolute top-[497px] left-[143px] bg-[#ffffff] rounded-[100px]">
-                <div
-                  className="flex px-3 py-2 relative flex-1 grow bg-[#1c222f] items-center justify-center gap-2 rounded-[100px]">
-                  <div
-                    className="w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#ffffff] text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] whitespace-nowrap relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                    Неделя
-                  </div>
-                </div>
-
-                <div className="flex px-3 py-2 relative flex-1 grow items-center justify-center gap-2 rounded-[100px]">
-                  <div
-                    className="relative w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#9ea7bb] text-[length:var(--body-2-r-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] whitespace-nowrap [font-style:var(--body-2-r-font-style)]">
-                    Месяц
-                  </div>
-                </div>
-
-                <div className="flex px-3 py-2 relative flex-1 grow items-center justify-center gap-2 rounded-[100px]">
-                  <div
-                    className="relative w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#9ea7bb] text-[length:var(--body-2-r-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] whitespace-nowrap [font-style:var(--body-2-r-font-style)]">
-                    Год
-                  </div>
-                </div>
-              </div>
-            </div>
+            <p
+              className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              Программное обеспечение Buy Now Pay Later устраняет ручные процессы,
+              специальные запросы и бумажные следы. Получите единый плавный
+              автоматизированный рабочий процесс, который отвечает потребностям
+              заемщиков* и повышает операционную эффективность.
+            </p>
           </div>
         </div>
       </div>
 
-
-      <Advantages/>
-      <Analytics />
-      <Integrations />
       <EmployeeWork />
-
       <Trust />
     </div>
   );

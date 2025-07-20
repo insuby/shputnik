@@ -1,5 +1,5 @@
 import { useFeedbackForm } from './feedback-form';
-import Marquee from 'react-fast-marquee';
+import { Marquee } from '@devnomic/marquee';
 
 export const Trust = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -26,7 +26,7 @@ export const Trust = () => {
       </div>
 
       <div className="absolute top-[292px] left-0 right-0 h-[72px] opacity-50">
-        <Marquee speed={30} gradient={false} pauseOnHover={true}>
+        <Marquee fade>
           <div className="flex items-center gap-16 mx-8">
             <div className="relative w-[150px] h-[30.76px] flex items-center justify-center">
               <img

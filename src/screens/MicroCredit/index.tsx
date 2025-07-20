@@ -1,4 +1,4 @@
-import Marquee from 'react-fast-marquee';
+
 
 import { Check15 } from '../../components/ui/check15.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';

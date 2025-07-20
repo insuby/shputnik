@@ -111,12 +111,25 @@ const NavigationMenuIndicator = React.forwardRef<
 NavigationMenuIndicator.displayName =
   NavigationMenuPrimitive.Indicator.displayName;
 
+const NavigationMenuItem = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Item>
+>(({ className, ...props }, ref) => (
+  <NavigationMenuPrimitive.Item
+    ref={ref}
+    className={cn("", className)}
+    {...props}
+  />
+));
+NavigationMenuItem.displayName = NavigationMenuPrimitive.Item.displayName;
+
 export {
   navigationMenuTriggerStyle,
   NavigationMenu,
   NavigationMenuList,
   NavigationMenuContent,
   NavigationMenuTrigger,
+  NavigationMenuItem,
   NavigationMenuIndicator,
   NavigationMenuViewport,
 };

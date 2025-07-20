@@ -4,6 +4,9 @@ import { useEffect, useRef, useState } from 'react';
 import {
   NavigationMenu,
   NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuItem,
 } from '../../../components/ui/navigation-menu';
 import { RoutesPath } from '../../../routes-path.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
@@ -15,16 +18,28 @@ export const HeaderSection = () => {
   const navRef = useRef<HTMLUListElement>(null);
 
   const navItems = [
-    { id: 1, label: 'Продукты', pathname: RoutesPath.PRODUCTS },
     { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
     { id: 3, label: 'Отзывы', pathname: RoutesPath.REVIEWS },
     { id: 4, label: 'Вакансии', pathname: RoutesPath.WORK },
-    // { id: 5, label: 'Блог', pathname: RoutesPath.BLOG },
   ];
+
+  const productItems = [
+    { label: 'Микрокредит', pathname: RoutesPath.MICROCREDIT },
+    { label: 'BNPL', pathname: RoutesPath.BNPL },
+  ];
+
+  const isProductActive = pathname === RoutesPath.MICROCREDIT || pathname === RoutesPath.BNPL;
 
   useEffect(() => {
     if (navRef.current) {
-      const activeLink = navRef.current.querySelector(`[data-pathname="${pathname}"]`) as HTMLElement;
+      let activeLink: HTMLElement | null = null;
+      
+      if (isProductActive) {
+        activeLink = navRef.current.querySelector('[data-pathname="products"]') as HTMLElement;
+      } else {
+        activeLink = navRef.current.querySelector(`[data-pathname="${pathname}"]`) as HTMLElement;
+      }
+      
       if (activeLink) {
         const textElement = activeLink.querySelector('div > div') as HTMLElement;
         if (textElement) {
@@ -37,7 +52,7 @@ export const HeaderSection = () => {
         }
       }
     }
-  }, [pathname]);
+  }, [pathname, isProductActive]);
 
   const onClick = () => {
     setIsOpen(true);
@@ -59,6 +74,32 @@ export const HeaderSection = () => {
 
       <NavigationMenu className="max-w-none">
         <NavigationMenuList className="relative flex items-center gap-16" ref={navRef}>
+          <NavigationMenuItem>
+            <NavigationMenuTrigger 
+              className={`transition-colors duration-200 ease-in-out hover:text-blue-50 w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] ${
+                isProductActive ? 'text-blue-50' : 'text-gray-90'
+              }`}
+              data-pathname="products"
+            >
+              Продукты
+            </NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <div className="flex flex-col w-[200px] p-2 bg-white rounded-lg shadow-lg border">
+                {productItems.map((item) => (
+                  <Link
+                    key={item.pathname}
+                    to={item.pathname}
+                    className={`px-4 py-2 rounded-md transition-colors duration-200 ease-in-out hover:bg-gray-50 ${
+                      pathname === item.pathname ? 'bg-blue-50 text-blue-600' : 'text-gray-700'
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+          
           {navItems.map((item) => (
             <Link 
               key={item.pathname} 

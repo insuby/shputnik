@@ -1,3 +1,5 @@
+// @ts-ignore
+import "@devnomic/marquee/dist/index.css";
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 import { RoutesPath } from './routes-path';
@@ -6,6 +8,7 @@ import { About } from './screens/About';
 import { Main } from './screens/Main';
 import { Work } from './screens/Work';
 import { MicroCredit } from './screens/MicroCredit';
+import { BNPL } from './screens/BNPL';
 import { Reviews } from './screens/reviews';
 
 export const App = () => {
@@ -26,6 +29,8 @@ const Pages = () => {
         <Route path={RoutesPath.WORK} element={<Work />} />
         <Route path={RoutesPath.REVIEWS} element={<Reviews />} />
         <Route path={RoutesPath.PRODUCTS} element={<MicroCredit />} />
+        <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
+        <Route path={RoutesPath.BNPL} element={<BNPL />} />
       </Route>
     </Routes>
   );
