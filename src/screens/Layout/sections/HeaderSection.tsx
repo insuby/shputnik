@@ -26,6 +26,7 @@ export const HeaderSection = () => {
   const productItems = [
     { label: 'Микрокредит', pathname: RoutesPath.MICROCREDIT },
     { label: 'BNPL', pathname: RoutesPath.BNPL },
+    { label: 'Автокредит', pathname: RoutesPath.AUTOCREDIT },
   ];
 
   const isProductActive = pathname === RoutesPath.MICROCREDIT || pathname === RoutesPath.BNPL;

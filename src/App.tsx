@@ -10,6 +10,7 @@ import { Work } from './screens/Work';
 import { MicroCredit } from './screens/MicroCredit';
 import { BNPL } from './screens/BNPL';
 import { Reviews } from './screens/reviews';
+import { Autocredit } from './screens/Autocredit';
 
 export const App = () => {
   return (
@@ -30,6 +31,7 @@ const Pages = () => {
         <Route path={RoutesPath.REVIEWS} element={<Reviews />} />
         <Route path={RoutesPath.PRODUCTS} element={<MicroCredit />} />
         <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
+        <Route path={RoutesPath.AUTOCREDIT} element={<Autocredit />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
       </Route>
     </Routes>
