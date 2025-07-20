@@ -39,31 +39,14 @@ export const Autocredit = () => {
             <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
               <div
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <div className="relative w-5 h-5 mt-[-556.00px] ml-[-13887.00px] bg-[100%_100%]">
-                  <div
-                    className="relative w-3.5 h-4 top-0.5 left-[3px] bg-[url(https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-10.svg)] bg-[100%_100%]">
-                    <img
-                      className="absolute w-1.5 h-1.5 top-0 left-2"
-                      alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-11.svg"
-                    />
-
-                    <img
-                      className="absolute w-1.5 h-px top-2 left-1"
-                      alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-12.svg"
-                    />
-
-                    <img
-                      className="absolute w-1.5 h-px top-[11px] left-1"
-                      alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-12.svg"
-                    />
-                  </div>
-                </div>
+                <img
+                  className="relative w-5 h-5"
+                  alt="File text"
+                  src="/img/filetext.svg"
+                />
 
                 <div
-                  className="w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] whitespace-nowrap relative tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
+                  className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
                   Спецификация
                 </div>
               </div>
