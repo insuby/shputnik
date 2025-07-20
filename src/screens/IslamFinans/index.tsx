@@ -12,8 +12,14 @@ import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 
 export const IslamFinance = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const onClick = () => {
+    setIsOpen(true);
+  };
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -297,6 +303,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView6 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
+              onClick={onClick}
               className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] inline-flex items-center justify-center gap-2.5 rounded-[100px]"
             >
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
@@ -482,7 +489,7 @@ export const IslamFinance = () => {
 
             <div className="flex flex-col items-start gap-5 p-6 relative flex-1 self-stretch grow">
               <div className="inline-flex items-center gap-4 relative flex-[0_0_auto]">
-                <div className="relative w-12 h-12 rounded-3xl overflow-hidden [background:url(https://c.animaapp.com/mdbz7w7uO4dbSg/img/frame-1948755022-1.png)_50%_50%_/_cover]">
+                <div className="relative w-12 h-12 rounded-3xl overflow-hidden [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]">
                   <img
                     className="absolute w-12 h-12 top-0 left-0 object-cover"
                     alt="Side view business"
@@ -918,7 +925,7 @@ export const IslamFinance = () => {
               </motion.div>
             </motion.div>
 
-            <div className="relative flex-1 self-stretch grow rounded-[32px] [background:url(https://c.animaapp.com/mdbz7w7uO4dbSg/img/frame-21.png)_50%_50%_/_cover]" />
+            <div className="relative flex-1 self-stretch grow rounded-[32px] [background:url(/img/frame-21.png)_50%_50%_/_cover]" />
           </motion.div>
         </motion.div>
       </motion.div>

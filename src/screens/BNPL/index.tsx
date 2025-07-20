@@ -579,7 +579,7 @@ export const BNPL = () => {
                   </div>
                 </div>
 
-                <button className="all-[unset] box-border flex px-6 py-3 relative self-stretch w-full flex-[0_0_auto] bg-gray-90 items-center justify-center gap-2.5 rounded-[100px]">
+                <button onClick={onClick} className="all-[unset] box-border flex px-6 py-3 relative self-stretch w-full flex-[0_0_auto] bg-gray-90 items-center justify-center gap-2.5 rounded-[100px]">
                   <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-semibold text-[#ffffff] text-base leading-6 whitespace-nowrap relative tracking-[0]">
                     Внести всю сумму
                   </div>

@@ -548,7 +548,7 @@ export const Autocredit = () => {
                 <img
                   className="relative self-stretch w-full h-[120px]"
                   alt="Screenshot"
-                  src="https://c.animaapp.com/mdbwdb25WGmSiu/img/screenshot-11.png"
+                  src="/img/screenshot-11.png"
                 />
 
                 <div className="flex-col gap-3 p-2 self-stretch w-full flex-[0_0_auto] flex items-start relative">
@@ -568,7 +568,7 @@ export const Autocredit = () => {
                 <img
                   className="relative self-stretch w-full h-[120px]"
                   alt="Screenshot"
-                  src="https://c.animaapp.com/mdbwdb25WGmSiu/img/screenshot-13.png"
+                  src="/img/screenshot-13.png"
                 />
 
                 <div className="flex-col gap-3 p-2 self-stretch w-full flex-[0_0_auto] flex items-start relative">
@@ -588,7 +588,7 @@ export const Autocredit = () => {
                 <img
                   className="relative self-stretch w-full h-[120px]"
                   alt="Screenshot"
-                  src="https://c.animaapp.com/mdbwdb25WGmSiu/img/screenshot-12.png"
+                  src="/img/screenshot-12.png"
                 />
 
                 <div className="flex-col gap-3 p-2 self-stretch w-full flex-[0_0_auto] flex items-start relative">

@@ -1,7 +1,13 @@
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 
 export const About = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const onClick = () => {
+    setIsOpen(true);
+  };
   return (
     <div
       className="inline-flex flex-col items-start justify-center relative"
@@ -119,7 +125,7 @@ export const About = () => {
                           <img
                             className="absolute w-12 h-12 top-0 left-0 object-cover"
                             alt="Woman with tablet"
-                            src="https://c.animaapp.com/mdbvk8mczCRqJy/img/woman-with-tablet-device-illustrating-1.png"
+                            src="/img/woman-tablet.png"
                           />
                         </div>
 
@@ -127,13 +133,13 @@ export const About = () => {
                           <img
                             className="absolute w-12 h-12 top-0 left-0 object-cover"
                             alt="Woman with tablet"
-                            src="https://c.animaapp.com/mdbvk8mczCRqJy/img/woman-with-tablet-device-illustrating-1-1.png"
+                            src="/img/woman-tablet-2.png"
                           />
                         </div>
 
-                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(https://c.animaapp.com/mdbvk8mczCRqJy/img/frame-2.png)_50%_50%_/_cover]" />
+                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-2.png)_50%_50%_/_cover]" />
 
-                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(https://c.animaapp.com/mdbvk8mczCRqJy/img/frame-6.png)_50%_50%_/_cover]" />
+                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-6.png)_50%_50%_/_cover]" />
 
                         <div className="flex w-[54px] h-[54px] items-center justify-center gap-2.5 p-2 relative mt-[-3.00px] mb-[-3.00px] mr-[-3.00px] -ml-1 bg-[#f7f8f9] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                           <div className="w-fit [font-family:'Inter',Helvetica] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative tracking-[0]">
@@ -189,7 +195,7 @@ export const About = () => {
                 </p>
               </div>
 
-              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]">
+              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]" onClick={onClick}>
                 <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
                   Связаться
                 </div>
@@ -223,7 +229,7 @@ export const About = () => {
                 </p>
               </div>
 
-              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]">
+              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]" onClick={onClick}>
                 <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
                   Связаться
                 </div>

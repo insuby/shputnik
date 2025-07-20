@@ -1,7 +1,15 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
+import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
 
 export const Frame = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const onClick = () => {
+    setIsOpen(true);
+  };
+
   const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const inViews = refs.map((ref) => useInView(ref, { once: true, margin: '-100px' }));
   const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
@@ -25,7 +33,7 @@ export const Frame = () => {
             className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-6xl text-center tracking-[0] leading-[60px]"
           >
             <span className="font-medium text-[#1c222f] leading-[68px]">
-              Программное обеспечение  для{" "}
+              Программное обеспечение для{" "}
             </span>
 
             <span className="font-medium text-[#3573fc] leading-[68px]">
@@ -112,13 +120,11 @@ export const Frame = () => {
                   />
 
                   <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-[39px]">
-                    <div
-                      className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+                    <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
                       Вся сумма
                     </div>
 
-                    <div
-                      className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
+                    <div className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
                       42,000₽
                     </div>
                   </div>
@@ -139,8 +145,7 @@ export const Frame = () => {
             </div>
           </div>
 
-          <div
-            className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
+          <div className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
             <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
               <div className="relative w-2 h-2 bg-blue-50 rounded" />
 
@@ -273,7 +278,7 @@ export const Frame = () => {
             </div>
           </div>
 
-          <button className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center relative">
+          <button onClick={onClick} className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center relative">
             <div className="self-stretch w-[164px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-base text-center leading-6 whitespace-nowrap relative tracking-[0]">
               Оформить
             </div>
@@ -282,4 +287,4 @@ export const Frame = () => {
       </div>
     </div>
   );
-};
+}; 

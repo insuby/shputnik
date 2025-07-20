@@ -7,6 +7,7 @@ import {
 import { Badge } from '../../components/ui/badge';
 import { Button } from '../../components/ui/button';
 import { Card, CardContent } from '../../components/ui/card';
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 
 const jobListings = [
   {
@@ -94,6 +95,12 @@ const jobListings = [
 ];
 
 export const Work = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const onClick = () => {
+    setIsOpen(true);
+  };
+
   return (
     <main className="flex flex-col items-start gap-12 p-[88px] relative self-stretch w-full flex-[0_0_auto] bg-gray-10 rounded-[32px] overflow-hidden">
       <div className="flex flex-col w-[560px] items-start gap-4 relative flex-[0_0_auto]">
@@ -195,7 +202,7 @@ export const Work = () => {
                       </div>
 
                       <div className="flex items-center gap-6">
-                        <Button className="px-6 py-3 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)]">
+                        <Button className="px-6 py-3 rounded-[100px] [background:linear-gradient(43deg,rgba(28,34,47,1)_0%,rgba(34,53,98,1)_100%)]" onClick={onClick}>
                           <span className="w-fit mt-[-1.00px] text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] whitespace-nowrap relative font-body-2-r font-[number:var(--body-2-r-font-weight)] text-white tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
                             Откликнуться
                           </span>

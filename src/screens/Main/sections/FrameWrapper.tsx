@@ -1,8 +1,15 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { motion, useInView } from 'framer-motion';
-
+import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
 
 export const FrameWrapper = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const onClick = () => {
+    setIsOpen(true);
+  };
+
   const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
   const inViews = refs.map((ref) => useInView(ref, { once: true, margin: '-100px' }));
   const delays = [0, 0.15, 0.3, 0.45, 0.6];
@@ -198,7 +205,7 @@ export const FrameWrapper = () => {
                 </div>
               </div>
 
-              <button className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center relative">
+              <button onClick={onClick} className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center relative">
                 <div className="self-stretch w-[164px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-base text-center leading-6 whitespace-nowrap relative tracking-[0]">
                   Оформить займ
                 </div>
