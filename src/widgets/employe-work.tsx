@@ -21,13 +21,13 @@ export const EmployeeWork = () => {
             <img
               className="absolute w-[623px] h-[448px] top-0 left-[53px]"
               alt="Vector"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-3.svg"
+              src="/img/widgets/vector-1-3.svg"
             />
 
             <img
               className="h-[222px] mt-[-11.00px] relative self-stretch w-full"
               alt="Frame"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755086.svg"
+              src="/img/widgets/frame-1948755086.svg"
             />
 
             <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
@@ -128,7 +128,7 @@ export const EmployeeWork = () => {
             <img
               className="absolute w-[608px] h-[488px] top-0 left-0"
               alt="Vector"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-4.svg"
+              src="/img/widgets/vector-1-4.svg"
             />
 
             <div className="h-[210px] relative self-stretch w-full">
@@ -149,17 +149,17 @@ export const EmployeeWork = () => {
                   <img
                     className="relative w-3 h-3"
                     alt="Subtract"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-5.svg"
+                    src="/img/widgets/subtract-5.svg"
                   />
                 </div>
 
                 <div className="flex items-end pl-2 pr-20 py-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="inline-flex items-center justify-center gap-2 p-5 relative flex-[0_0_auto] rounded-[100px] [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-3.png)_50%_50%_/_cover]" />
+                  <div className="inline-flex items-center justify-center gap-2 p-5 relative flex-[0_0_auto] rounded-[100px] [background:url(/img/widgets/frame-3.png)_50%_50%_/_cover]" />
 
                   <img
                     className="relative w-3 h-3"
                     alt="Subtract"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-6.svg"
+                    src="/img/widgets/subtract-6.svg"
                   />
 
                   <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">

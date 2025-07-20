@@ -21,7 +21,7 @@ export const BNPL = () => {
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
             alt="Vector"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-5.svg"
+            src="/img/bnpl/vector-1-5.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -38,23 +38,23 @@ export const BNPL = () => {
                 className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
                 <div className="relative w-5 h-5 mt-[-556.00px] ml-[-10907.00px] bg-[100%_100%]">
                   <div
-                    className="relative w-3.5 h-4 top-0.5 left-[3px] bg-[url(https://c.animaapp.com/md4w76oyYhfa1O/img/vector-37.svg)] bg-[100%_100%]">
+                    className="relative w-3.5 h-4 top-0.5 left-[3px] bg-[url(/img/bnpl/vector-37.svg)] bg-[100%_100%]">
                     <img
                       className="absolute w-1.5 h-1.5 top-0 left-2"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-38.svg"
+                      src="/img/bnpl/vector-38.svg"
                     />
 
                     <img
                       className="absolute w-1.5 h-px top-2 left-1"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-36.svg"
+                      src="/img/bnpl/vector-36.svg"
                     />
 
                     <img
                       className="absolute w-1.5 h-px top-[11px] left-1"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-36.svg"
+                      src="/img/bnpl/vector-36.svg"
                     />
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export const BNPL = () => {
             <img
               className="absolute w-[328px] h-24 top-[132px] left-0"
               alt="Vector"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-147.svg"
+              src="/img/bnpl/vector-147.svg"
             />
 
             <div
@@ -177,7 +177,7 @@ export const BNPL = () => {
           <img
             className="absolute w-[761px] h-[628px] top-0 left-[615px]"
             alt="Vector"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-3-1.svg"
+            src="/img/bnpl/vector-3-1.svg"
           />
 
           <div
@@ -202,7 +202,7 @@ export const BNPL = () => {
                 <img
                   className="absolute w-[198px] h-[198px] top-0 left-0"
                   alt="Ellipse"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/ellipse-32.svg"
+                  src="/img/bnpl/ellipse-32.svg"
                 />
               </div>
             </div>
@@ -251,7 +251,7 @@ export const BNPL = () => {
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18-2.svg"
+              src="/img/bnpl/frame-18-2.svg"
             />
 
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -275,7 +275,7 @@ export const BNPL = () => {
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18-3.svg"
+              src="/img/bnpl/frame-18-3.svg"
             />
 
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -326,7 +326,7 @@ export const BNPL = () => {
                   className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
                   <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
                     <div
-                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-3.png)_50%_50%_/_cover]" />
+                      className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]" />
 
                     <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
                       <div
@@ -346,7 +346,7 @@ export const BNPL = () => {
                   className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
                   <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
                     <div
-                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-2.png)_50%_50%_/_cover]" />
+                      className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
 
                     <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
                       <div
@@ -366,7 +366,7 @@ export const BNPL = () => {
                   className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
                   <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
                     <div
-                      className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-2.png)_50%_50%_/_cover]" />
+                      className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
 
                     <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
                       <div
@@ -393,7 +393,7 @@ export const BNPL = () => {
             className="flex items-center gap-3 p-8 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
             <div className="flex items-start gap-3 relative flex-1 grow">
               <div
-                className="relative w-40 h-40 [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755020-3.png)_50%_50%_/_cover]" />
+                className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]" />
 
               <div className="flex flex-col items-start gap-5 p-3 relative flex-1 grow">
                 <div
@@ -417,7 +417,7 @@ export const BNPL = () => {
                   <img
                     className="relative self-stretch w-full h-px object-cover"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                    src="/img/bnpl/vector-140.svg"
                   />
 
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -435,7 +435,7 @@ export const BNPL = () => {
                   <img
                     className="relative self-stretch w-full h-px object-cover"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                    src="/img/bnpl/vector-140.svg"
                   />
 
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -453,7 +453,7 @@ export const BNPL = () => {
                   <img
                     className="relative self-stretch w-full h-px object-cover"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                    src="/img/bnpl/vector-140.svg"
                   />
 
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -471,7 +471,7 @@ export const BNPL = () => {
                   <img
                     className="relative self-stretch w-full h-px object-cover"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                    src="/img/bnpl/vector-140.svg"
                   />
 
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -540,13 +540,13 @@ export const BNPL = () => {
                   <img
                     className="absolute w-4 h-4 top-0 left-1"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-7.svg"
+                    src="/img/bnpl/vector-7.svg"
                   />
 
                   <img
                     className="absolute w-[23px] h-2 top-3.5 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-32.svg"
+                    src="/img/bnpl/vector-32.svg"
                   />
                 </div>
               </div>
@@ -567,19 +567,19 @@ export const BNPL = () => {
                   <img
                     className="absolute w-1.5 h-[9px] top-1 left-2.5"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-42.svg"
+                    src="/img/bnpl/vector-42.svg"
                   />
 
                   <img
                     className="absolute w-1.5 h-1.5 top-[3px] left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-43.svg"
+                    src="/img/bnpl/vector-43.svg"
                   />
 
                   <img
                     className="absolute w-[22px] h-[21px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-44.svg"
+                    src="/img/bnpl/vector-44.svg"
                   />
                 </div>
               </div>
@@ -599,19 +599,19 @@ export const BNPL = () => {
                 <img
                   className="absolute w-[21px] h-3.5 top-2.5 left-1"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-9.svg"
+                  src="/img/bnpl/vector-9.svg"
                 />
 
                 <img
                   className="absolute w-[17px] h-0.5 top-1.5 left-[5px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector.svg"
+                  src="/img/bnpl/vector.svg"
                 />
 
                 <img
                   className="absolute w-3.5 h-0.5 top-[3px] left-[7px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector.svg"
+                  src="/img/bnpl/vector.svg"
                 />
               </div>
             </div>
@@ -631,13 +631,13 @@ export const BNPL = () => {
                   <img
                     className="absolute w-[19px] h-[19px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-7.svg"
+                    src="/img/bnpl/vector-7.svg"
                   />
 
                   <img
                     className="absolute w-2 h-2 top-[15px] left-[15px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-2.svg"
+                    src="/img/bnpl/vector-2.svg"
                   />
                 </div>
               </div>
@@ -656,7 +656,7 @@ export const BNPL = () => {
         <img
           className="absolute w-[1204px] h-[1060px] top-[76px] left-[199px]"
           alt="Vector"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-1.svg"
+          src="/img/bnpl/vector-1-1.svg"
         />
 
         <div className="flex flex-col w-[530px] items-start gap-8 relative">
@@ -698,7 +698,7 @@ export const BNPL = () => {
                   <img
                     className="absolute w-[15px] h-4 top-0.5 left-[3px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-14.svg"
+                    src="/img/bnpl/vector-14.svg"
                   />
                 </div>
 
@@ -715,37 +715,37 @@ export const BNPL = () => {
                     <img
                       className="absolute w-1.5 h-1.5 top-0.5 left-1.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                      src="/img/bnpl/vector-11.svg"
                     />
 
                     <img
                       className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-4.svg"
+                      src="/img/bnpl/vector-4.svg"
                     />
 
                     <img
                       className="absolute w-1 h-1 top-0 left-3.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-8.svg"
+                      src="/img/bnpl/vector-8.svg"
                     />
 
                     <img
                       className="absolute w-1 h-1 top-[7px] left-3.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-5.svg"
+                      src="/img/bnpl/vector-5.svg"
                     />
 
                     <img
                       className="absolute w-1 h-1 top-[7px] left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-10.svg"
+                      src="/img/bnpl/vector-10.svg"
                     />
 
                     <img
                       className="absolute w-1 h-1 top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-3.svg"
+                      src="/img/bnpl/vector-3.svg"
                     />
                   </div>
                 </div>
@@ -762,19 +762,19 @@ export const BNPL = () => {
                     <img
                       className="absolute w-px h-1.5 top-[11px] left-2"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-19.svg"
+                      src="/img/bnpl/vector-19.svg"
                     />
 
                     <img
                       className="absolute w-4 h-4 top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1.svg"
+                      src="/img/bnpl/vector-1.svg"
                     />
 
                     <img
                       className="absolute w-[5px] h-0.5 top-2 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-16.svg"
+                      src="/img/bnpl/vector-16.svg"
                     />
                   </div>
                 </div>
@@ -790,25 +790,25 @@ export const BNPL = () => {
                   <img
                     className="absolute w-1.5 h-1.5 top-[3px] left-[3px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                    src="/img/bnpl/vector-11.svg"
                   />
 
                   <img
                     className="absolute w-1.5 h-1.5 top-[3px] left-[11px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                    src="/img/bnpl/vector-11.svg"
                   />
 
                   <img
                     className="absolute w-1.5 h-1.5 top-[11px] left-[3px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                    src="/img/bnpl/vector-11.svg"
                   />
 
                   <img
                     className="absolute w-1.5 h-1.5 top-[11px] left-[11px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                    src="/img/bnpl/vector-11.svg"
                   />
                 </div>
 
@@ -824,13 +824,13 @@ export const BNPL = () => {
                     <img
                       className="absolute w-1.5 h-1 top-3 left-1"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-21.svg"
+                      src="/img/bnpl/vector-21.svg"
                     />
 
                     <img
                       className="absolute w-[15px] h-3.5 top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-15.svg"
+                      src="/img/bnpl/vector-15.svg"
                     />
                   </div>
                 </div>
@@ -847,13 +847,13 @@ export const BNPL = () => {
                     <img
                       className="absolute w-[7px] h-[7px] top-[5px] left-1"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-11.svg"
+                      src="/img/bnpl/vector-11.svg"
                     />
 
                     <img
                       className="absolute w-4 h-[17px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-20.svg"
+                      src="/img/bnpl/vector-20.svg"
                     />
                   </div>
                 </div>
@@ -869,7 +869,7 @@ export const BNPL = () => {
           <div className="flex flex-col items-start gap-5 p-6 relative flex-1 self-stretch grow">
             <div className="inline-flex items-center gap-4 relative flex-[0_0_auto]">
               <div
-                className="relative w-12 h-12 rounded-3xl [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                className="relative w-12 h-12 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
               <p
                 className="w-fit [font-family:'Inter',Helvetica] font-semibold text-gray-90 text-xl leading-5 whitespace-nowrap relative tracking-[0]">
@@ -977,7 +977,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -995,7 +995,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1013,7 +1013,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1031,7 +1031,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1049,7 +1049,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1081,7 +1081,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1099,7 +1099,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1117,7 +1117,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
 
                       <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -1135,7 +1135,7 @@ export const BNPL = () => {
                       <img
                         className="relative self-stretch w-full h-px mb-[-1.00px] object-cover"
                         alt="Vector"
-                        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+                        src="/img/bnpl/vector-140.svg"
                       />
                     </div>
                   </div>
@@ -1158,7 +1158,7 @@ export const BNPL = () => {
             <div
               className="flex items-center gap-5 p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
               <div
-                className="relative self-stretch w-48 rounded-3xl [background:url(https://c.animaapp.com/md4w76oyYhfa1O/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                className="relative self-stretch w-48 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
               <div className="flex flex-col items-start gap-4 p-3 relative flex-1 grow">
                 <div
@@ -1219,13 +1219,13 @@ export const BNPL = () => {
                 <img
                   className="absolute w-0.5 h-[18px] top-0 left-[7px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-26.svg"
+                  src="/img/bnpl/vector-26.svg"
                 />
 
                 <img
                   className="absolute w-4 h-[9px] top-2.5 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-28.svg"
+                  src="/img/bnpl/vector-28.svg"
                 />
               </div>
             </div>
@@ -1239,13 +1239,13 @@ export const BNPL = () => {
                     <img
                       className="absolute w-[17px] h-[17px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-25.svg"
+                      src="/img/bnpl/vector-25.svg"
                     />
 
                     <img
                       className="absolute w-[7px] h-[7px] top-[13px] left-[13px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-29.svg"
+                      src="/img/bnpl/vector-29.svg"
                     />
                   </div>
                 </div>
@@ -1262,13 +1262,13 @@ export const BNPL = () => {
                 <img
                   className="absolute w-0.5 h-[18px] top-0 left-[7px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-26.svg"
+                  src="/img/bnpl/vector-26.svg"
                 />
 
                 <img
                   className="absolute w-4 h-[9px] top-2.5 left-0"
                   alt="Vector"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-28.svg"
+                  src="/img/bnpl/vector-28.svg"
                 />
               </div>
             </div>
@@ -1281,7 +1281,7 @@ export const BNPL = () => {
                   <img
                     className="absolute w-[19px] h-3.5 top-1.5 left-[3px]"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-30.svg"
+                    src="/img/bnpl/vector-30.svg"
                   />
                 </div>
               </div>
@@ -1305,7 +1305,7 @@ export const BNPL = () => {
           <img
             className="relative self-stretch w-full h-px object-cover"
             alt="Vector"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-140.svg"
+            src="/img/bnpl/vector-140.svg"
           />
 
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">

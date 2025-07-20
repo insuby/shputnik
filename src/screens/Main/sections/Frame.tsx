@@ -102,13 +102,13 @@ export const Frame = () => {
                   <img
                     className="absolute w-[88px] h-[184px] top-0 left-0"
                     alt="Subtract"
-                    src="https://c.animaapp.com/mctfcob4oizbca/img/subtract-3.svg"
+                    src="/img/main/subtract-3.svg"
                   />
 
                   <img
                     className="absolute w-[88px] h-[108px] top-[76px] left-24"
                     alt="Subtract"
-                    src="	https://c.animaapp.com/mctfcob4oizbca/img/subtract.svg"
+                    src="/img/main/subtract.svg"
                   />
 
                   <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-[39px]">
@@ -127,13 +127,13 @@ export const Frame = () => {
                 <img
                   className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
                   alt="Subtract"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/subtract-1.svg"
+                  src="/img/main/subtract-1.svg"
                 />
 
                 <img
                   className="absolute w-[59px] h-[31px] top-0 left-24"
                   alt="Subtract"
-                  src="https://c.animaapp.com/mctfcob4oizbca/img/subtract-2.svg"
+                  src="/img/main/subtract-2.svg"
                 />
               </div>
             </div>

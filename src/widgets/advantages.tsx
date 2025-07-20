@@ -20,7 +20,7 @@ export const Advantages = () => {
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18.svg"
+            src="/img/widgets/frame-18.svg"
           />
 
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -42,7 +42,7 @@ export const Advantages = () => {
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-18-1.svg"
+            src="/img/widgets/frame-18-1.svg"
           />
 
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -64,7 +64,7 @@ export const Advantages = () => {
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
-            src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-19.svg"
+            src="/img/widgets/frame-19.svg"
           />
 
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">

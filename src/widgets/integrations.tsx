@@ -5,7 +5,7 @@ export const Integrations = () =>  {
       <img
         className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
         alt="Vector"
-        src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-1-2.svg"
+        src="/img/widgets/vector-1-2.svg"
       />
 
       <div className="flex flex-col w-[432px] items-start gap-12 relative">
@@ -36,50 +36,50 @@ export const Integrations = () =>  {
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-17.svg"
+          src="/img/widgets/frame-17.svg"
         />
 
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-24.svg"
+          src="/img/widgets/frame-24.svg"
         />
 
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-25.svg"
+          src="/img/widgets/frame-25.svg"
         />
 
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-26.svg"
+          src="/img/widgets/frame-26.svg"
         />
 
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/frame-27.svg"
+          src="/img/widgets/frame-27.svg"
         />
 
         <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
           <div className="relative w-[177px] h-[49px]">
             <div
-              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(https://c.animaapp.com/md4w76oyYhfa1O/img/fill-26-copy.svg)] bg-[100%_100%]">
+              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
               <div className="absolute w-1 h-1.5 top-[25px] left-[19px]">
                 <img
                   className="absolute w-0.5 h-[5px] top-0 left-px"
                   alt="Rectangle"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-22.svg"
+                  src="/img/widgets/vector-22.svg"
                 />
 
                 <div
-                  className="absolute w-1 h-0.5 top-1 left-0 bg-[url(https://c.animaapp.com/md4w76oyYhfa1O/img/vector-22.svg)] bg-[100%_100%]">
+                  className="absolute w-1 h-0.5 top-1 left-0 bg-[url(/img/widgets/vector-22.svg)] bg-[100%_100%]">
                   <img
                     className="absolute w-1 h-0.5 top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-24.svg"
+                    src="/img/widgets/vector-24.svg"
                   />
                 </div>
               </div>
@@ -87,7 +87,7 @@ export const Integrations = () =>  {
               <img
                 className="absolute w-0.5 h-0.5 top-[22px] left-5"
                 alt="Oval"
-                src="https://c.animaapp.com/md4w76oyYhfa1O/img/oval-20.svg"
+                src="/img/widgets/oval-20.svg"
               />
             </div>
 
@@ -113,30 +113,30 @@ export const Integrations = () =>  {
             <img
               className="absolute w-px h-5 top-[15px] left-[52px]"
               alt="Line"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/line-copy.svg"
+              src="/img/widgets/line-copy.svg"
             />
           </div>
 
           <div className="relative w-[157px] h-[49px]">
             <div
-              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(https://c.animaapp.com/md4w76oyYhfa1O/img/fill-26-copy.svg)] bg-[100%_100%]">
+              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
               <img
                 className="absolute w-2.5 h-2.5 top-[21px] left-4"
                 alt="Path"
-                src="https://c.animaapp.com/md4w76oyYhfa1O/img/path-9-1.svg"
+                src="/img/widgets/path-9-1.svg"
               />
 
               <img
                 className="absolute w-[11px] h-[11px] top-5 left-4"
                 alt="Path"
-                src="https://c.animaapp.com/md4w76oyYhfa1O/img/path-9.svg"
+                src="/img/widgets/path-9.svg"
               />
             </div>
 
             <img
               className="absolute w-px h-5 top-[15px] left-[52px]"
               alt="Line copy"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/line-copy.svg"
+              src="/img/widgets/line-copy.svg"
             />
 
             <div className="w-[99px] top-0.5 absolute h-[47px] left-16">
@@ -164,20 +164,20 @@ export const Integrations = () =>  {
               <img
                 className="absolute w-[26px] h-7 top-[9px] left-2.5"
                 alt="Fill copy"
-                src="https://c.animaapp.com/md4w76oyYhfa1O/img/fill-26-copy-2.svg"
+                src="/img/widgets/fill-26-copy-2.svg"
               />
 
               <img
                 className="absolute w-[46px] h-[46px] top-0 left-0"
                 alt="Oval"
-                src="https://c.animaapp.com/md4w76oyYhfa1O/img/oval.svg"
+                src="/img/widgets/oval.svg"
               />
             </div>
 
             <img
               className="absolute w-px h-5 top-[15px] left-[52px]"
               alt="Line copy"
-              src="https://c.animaapp.com/md4w76oyYhfa1O/img/line-copy.svg"
+              src="/img/widgets/line-copy.svg"
             />
 
             <div className="w-[95px] top-0 absolute h-[47px] left-16">

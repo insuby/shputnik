@@ -9,7 +9,7 @@ export const Analytics = () => {
         <img
           className="absolute w-[926px] h-[668px] top-0 left-[450px]"
           alt="Vector"
-          src="https://c.animaapp.com/md4w76oyYhfa1O/img/vector-2-1.svg"
+          src="/img/widgets/vector-2-1.svg"
         />
 
         <div className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden">
@@ -73,13 +73,13 @@ export const Analytics = () => {
                     <img
                       className="absolute w-[152px] h-[253px] top-0 left-[29px]"
                       alt="Subtract"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract.svg"
+                      src="/img/widgets/subtract.svg"
                     />
 
                     <img
                       className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
                       alt="Subtract"
-                      src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-1.svg"
+                      src="/img/widgets/subtract-1.svg"
                     />
 
                     <div className="inline-flex flex-col items-center gap-0.5 absolute top-[55px] left-[87px]">
@@ -108,7 +108,7 @@ export const Analytics = () => {
                   <img
                     className="absolute w-[53px] h-[94px] top-0 left-[295px]"
                     alt="Subtract"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-2.svg"
+                    src="/img/widgets/subtract-2.svg"
                   />
                 </div>
 
@@ -116,7 +116,7 @@ export const Analytics = () => {
                   <img
                     className="absolute w-[145px] h-[60px] top-[18px] left-0"
                     alt="Subtract"
-                    src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-4.svg"
+                    src="/img/widgets/subtract-4.svg"
                   />
 
                   <div className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
@@ -131,7 +131,7 @@ export const Analytics = () => {
                 <img
                   className="absolute w-[51px] h-[41px] top-4 left-0"
                   alt="Subtract"
-                  src="https://c.animaapp.com/md4w76oyYhfa1O/img/subtract-3.svg"
+                  src="/img/widgets/subtract-3.svg"
                 />
 
                 <div className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
