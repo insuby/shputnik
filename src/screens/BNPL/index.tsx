@@ -29,6 +29,23 @@ export const BNPL = () => {
   const ref14 = useRef(null);
   const ref15 = useRef(null);
   const ref16 = useRef(null);
+  const ref17 = useRef(null);
+  const ref18 = useRef(null);
+  const ref19 = useRef(null);
+  const ref20 = useRef(null);
+  const ref21 = useRef(null);
+  const ref22 = useRef(null);
+  const ref23 = useRef(null);
+  const ref24 = useRef(null);
+  const ref25 = useRef(null);
+  const ref26 = useRef(null);
+  const ref27 = useRef(null);
+  const ref28 = useRef(null);
+  const ref29 = useRef(null);
+  const ref30 = useRef(null);
+  const ref31 = useRef(null);
+  const ref32 = useRef(null);
+  const ref33 = useRef(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
@@ -46,6 +63,23 @@ export const BNPL = () => {
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
   const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-100px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-100px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-100px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-100px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-100px' });
+  const inView28 = useInView(ref28, { once: true, margin: '-100px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-100px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-100px' });
+  const inView31 = useInView(ref31, { once: true, margin: '-100px' });
+  const inView32 = useInView(ref32, { once: true, margin: '-100px' });
+  const inView33 = useInView(ref33, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -547,33 +581,81 @@ export const BNPL = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+        <motion.div 
+          ref={ref17}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView17 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden"
+        >
           <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-            <div className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+            <motion.div 
+              ref={ref18}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView18 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+            >
               Портал заемщика
-            </div>
+            </motion.div>
 
-            <p className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+            <motion.p 
+              ref={ref19}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView19 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+            >
               Одно место <br />
               для всех деталей
-            </p>
+            </motion.p>
           </div>
 
-          <p className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+          <motion.p 
+            ref={ref20}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView20 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+          >
             Клиенты плавно переходят на портал заемщика, где они могут получить
             доступ к информации о своих платежах и вносить платежи — все из
             одного удобного места.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
       </div>
 
-      <div className="flex flex-col items-center justify-center gap-12 px-0 py-20 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+      <motion.div 
+        ref={ref21}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView21 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col items-center justify-center gap-12 px-0 py-20 relative self-stretch w-full flex-[0_0_auto]"
+      >
+        <motion.div 
+          ref={ref22}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView22 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+        >
           Настраиваемые параметры
-        </div>
+        </motion.div>
 
-        <div className="flex h-[228px] items-start justify-center gap-6 relative self-stretch w-full">
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+        <motion.div 
+          ref={ref23}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView23 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          className="flex h-[228px] items-start justify-center gap-6 relative self-stretch w-full"
+        >
+          <motion.div 
+            ref={ref24}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView24 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
               <div className="mt-[-3208.00px] ml-[-9786.00px] relative w-7 h-7 bg-[100%_100%]">
                 <div className="relative w-[23px] h-[22px] top-[3px] left-[3px]">
@@ -595,9 +677,15 @@ export const BNPL = () => {
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Персональная информация
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div 
+            ref={ref25}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView25 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
               <div className="relative w-7 h-7">
                 <div className="relative w-[22px] h-[21px] top-1 left-[3px]">
@@ -625,9 +713,15 @@ export const BNPL = () => {
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               История предыдущих выдач
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div 
+            ref={ref26}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView26 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]">
               <div className="relative w-7 h-7">
                 <img
@@ -653,9 +747,15 @@ export const BNPL = () => {
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Данные из сторонних сервисов
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div 
+            ref={ref27}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView27 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
               <div className="relative w-7 h-7 mt-[-3208.00px] ml-[-10836.00px] bg-[100%_100%]">
                 <div className="relative w-[23px] h-[23px] top-[3px] left-[3px]">
@@ -677,38 +777,74 @@ export const BNPL = () => {
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Проверка документов
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
+        </motion.div>
+      </motion.div>
 
-      <div className="flex items-center gap-[88px] px-[88px] py-12 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px] overflow-hidden">
+      <motion.div 
+        ref={ref28}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView28 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex items-center gap-[88px] px-[88px] py-12 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px] overflow-hidden"
+      >
         <img
           className="absolute w-[1204px] h-[1060px] top-[76px] left-[199px]"
           alt="Vector"
           src="/img/bnpl/vector-1-1.svg"
         />
 
-        <div className="flex flex-col w-[530px] items-start gap-8 relative">
+        <motion.div 
+          ref={ref29}
+          initial={{ opacity: 0, x: -50 }}
+          animate={inView29 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="flex flex-col w-[530px] items-start gap-8 relative"
+        >
           <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl leading-7 relative tracking-[0]">
+            <motion.div 
+              ref={ref30}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView30 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+              className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl leading-7 relative tracking-[0]"
+            >
               Бэк-офис
-            </div>
+            </motion.div>
 
-            <p className="w-[530px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-5xl leading-[60px] relative tracking-[0]">
+            <motion.p 
+              ref={ref31}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView31 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+              className="w-[530px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-5xl leading-[60px] relative tracking-[0]"
+            >
               Управляйте <br />
               всеми платежами <br />в одном месте
-            </p>
+            </motion.p>
           </div>
 
-          <p className="self-stretch text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+          <motion.p 
+            ref={ref32}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView32 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            className="self-stretch text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+          >
             Мониторинг и управление каждым приложением с единой панели
             управления. Этот централизованный контроль упрощает отслеживание
             планов рассрочки atl, обеспечивая эффективную работу и оптимальное
             финансовое управление.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="flex w-[871px] h-[538px] items-center relative mr-[-88.00px] bg-[#f6f8fd] rounded-3xl overflow-hidden">
+        <motion.div 
+          ref={ref33}
+          initial={{ opacity: 0, x: 50 }}
+          animate={inView33 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+          className="flex w-[871px] h-[538px] items-center relative mr-[-88.00px] bg-[#f6f8fd] rounded-3xl overflow-hidden"
+        >
           <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
             <p className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
               <span className="text-[#1c222f]">Ваш</span>
@@ -747,137 +883,65 @@ export const BNPL = () => {
                     />
 
                     <img
-                      className="absolute w-1 h-1 top-0 left-3.5"
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
                       src="/img/bnpl/vector-8.svg"
                     />
+                  </div>
+                </div>
 
+                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                  Заявки
+                </div>
+              </div>
+
+              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
+                <div className="relative w-5 h-5">
+                  <div className="relative w-[19px] h-[11px] top-1 left-px">
                     <img
-                      className="absolute w-1 h-1 top-[7px] left-3.5"
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
                       src="/img/bnpl/vector-5.svg"
                     />
 
                     <img
-                      className="absolute w-1 h-1 top-[7px] left-0"
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
                       src="/img/bnpl/vector-10.svg"
                     />
 
                     <img
-                      className="absolute w-1 h-1 top-0 left-0"
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
                       src="/img/bnpl/vector-3.svg"
                     />
                   </div>
                 </div>
 
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                  Займы
+                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                  Клиенты
                 </div>
               </div>
 
               <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
                 <div className="relative w-5 h-5">
-                  <div className="relative w-4 h-4 top-0.5 left-0.5">
+                  <div className="relative w-[19px] h-[11px] top-1 left-px">
                     <img
-                      className="absolute w-px h-1.5 top-[11px] left-2"
-                      alt="Vector"
-                      src="/img/bnpl/vector-19.svg"
-                    />
-
-                    <img
-                      className="absolute w-4 h-4 top-0 left-0"
-                      alt="Vector"
-                      src="/img/bnpl/vector-1.svg"
-                    />
-
-                    <img
-                      className="absolute w-[5px] h-0.5 top-2 left-0"
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
                       alt="Vector"
                       src="/img/bnpl/vector-16.svg"
+                    />
+
+                    <img
+                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      alt="Vector"
+                      src="/img/bnpl/vector-1.svg"
                     />
                   </div>
                 </div>
 
                 <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
                   Отчеты
-                </div>
-              </div>
-
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5 mt-[-3878.67px] ml-[-10470.00px] bg-[100%_100%]">
-                  <img
-                    className="absolute w-1.5 h-1.5 top-[3px] left-[3px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-11.svg"
-                  />
-
-                  <img
-                    className="absolute w-1.5 h-1.5 top-[3px] left-[11px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-11.svg"
-                  />
-
-                  <img
-                    className="absolute w-1.5 h-1.5 top-[11px] left-[3px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-11.svg"
-                  />
-
-                  <img
-                    className="absolute w-1.5 h-1.5 top-[11px] left-[11px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-11.svg"
-                  />
-                </div>
-
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                  Продукты
-                </div>
-              </div>
-
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5 mt-[-3927.59px] ml-[-10470.00px] bg-[100%_100%]">
-                  <div className="relative w-[15px] h-4 top-0.5 left-[3px]">
-                    <img
-                      className="absolute w-1.5 h-1 top-3 left-1"
-                      alt="Vector"
-                      src="/img/bnpl/vector-21.svg"
-                    />
-
-                    <img
-                      className="absolute w-[15px] h-3.5 top-0 left-0"
-                      alt="Vector"
-                      src="/img/bnpl/vector-15.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                  Уведомления
-                </div>
-              </div>
-
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5">
-                  <div className="relative w-4 h-[17px] top-px left-0.5">
-                    <img
-                      className="absolute w-[7px] h-[7px] top-[5px] left-1"
-                      alt="Vector"
-                      src="/img/bnpl/vector-11.svg"
-                    />
-
-                    <img
-                      className="absolute w-4 h-[17px] top-0 left-0"
-                      alt="Vector"
-                      src="/img/bnpl/vector-20.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                  Настройки
                 </div>
               </div>
             </div>
@@ -1124,8 +1188,8 @@ export const BNPL = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
       <Analytics />
       <Advantages />

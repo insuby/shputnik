@@ -1,22 +1,75 @@
-export const Advantages = () => {
-  return (
-    <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto] mx-auto text-center">
-      <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-        <div
-          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
-          Преимущества
-        </div>
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 
-        <p
-          className="self-stretch text-[#9ea7bb] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+export const Advantages = () => {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
+
+  return (
+    <motion.div 
+      ref={ref1}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView1 ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto] mx-auto text-center"
+    >
+      <motion.div 
+        ref={ref2}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView2 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+        className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+      >
+        <motion.div 
+          ref={ref3}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView3 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+        >
+          Преимущества
+        </motion.div>
+
+        <motion.p 
+          ref={ref4}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView4 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+          className="self-stretch text-[#9ea7bb] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+        >
           Упрощение процессов выдачи займов online и в точках продаж благодаря
           полнофункциональной автоматизации
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
-      <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-        <div
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+      <motion.div 
+        ref={ref5}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView5 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+        className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+      >
+        <motion.div 
+          ref={ref6}
+          initial={{ opacity: 0, x: -50 }}
+          animate={inView6 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+        >
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
@@ -35,7 +88,7 @@ export const Advantages = () => {
               ваши бизнес-процессы
             </p>
           </div>
-        </div>
+        </motion.div>
 
         <div
           className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
@@ -59,8 +112,13 @@ export const Advantages = () => {
           </div>
         </div>
 
-        <div
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+        <motion.div 
+          ref={ref7}
+          initial={{ opacity: 0, x: 50 }}
+          animate={inView7 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+        >
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
@@ -79,8 +137,8 @@ export const Advantages = () => {
               бизнес-процессов
             </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </motion.div>
+      </motion.div>
+    </motion.div>
   )
 }
