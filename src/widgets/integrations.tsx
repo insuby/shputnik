@@ -1,14 +1,37 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 export const Integrations = () =>  {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+
   return (
-    <div
-      className="flex w-[1376px] items-start gap-20 p-20 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden">
+    <motion.div
+      ref={ref1}
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView1 ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      className="flex w-[1376px] items-start gap-20 p-20 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
+    >
       <img
         className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
         alt="Vector"
         src="/img/widgets/vector-1-2.svg"
       />
 
-      <div className="flex flex-col w-[432px] items-start gap-12 relative">
+      <motion.div 
+        ref={ref2}
+        initial={{ opacity: 0, x: -50 }}
+        animate={inView2 ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+        className="flex flex-col w-[432px] items-start gap-12 relative"
+      >
         <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
           <div
             className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]">
@@ -30,9 +53,15 @@ export const Integrations = () =>  {
             Попробовать
           </div>
         </button>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col h-[496px] items-start gap-12 relative flex-1 grow opacity-50">
+      <motion.div 
+        ref={ref3}
+        initial={{ opacity: 0, x: 50 }}
+        animate={inView3 ? { opacity: 1, x: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+        className="flex flex-col h-[496px] items-start gap-12 relative flex-1 grow opacity-50"
+      >
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
@@ -200,7 +229,7 @@ export const Integrations = () =>  {
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };

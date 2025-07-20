@@ -1,10 +1,32 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Check10 } from '../components/ui/check10.tsx';
 
 export const EmployeeWork = () => {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+
   return (
     <div className="flex flex-col items-center justify-center gap-9 relative self-stretch w-full flex-[0_0_auto]">
       <div className="flex-col items-center justify-center gap-[68px] flex-[0_0_auto] flex relative self-stretch w-full">
-        <div className="flex flex-col items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
+        <motion.div 
+          ref={ref1}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView1 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="flex flex-col items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]"
+        >
           <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
             Работа сотрудников
           </div>
@@ -14,10 +36,22 @@ export const EmployeeWork = () => {
             совершать любые действия через кабинет сотрудника, контактировать{" "}
             <br />с клиентом через СМС, email или по телефону
           </p>
-        </div>
+        </motion.div>
 
-        <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-center gap-12 p-12 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+        <motion.div 
+          ref={ref2}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView2 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+          className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+        >
+          <motion.div 
+            ref={ref3}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView3 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            className="flex flex-col items-center gap-12 p-12 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <img
               className="absolute w-[623px] h-[448px] top-0 left-[53px]"
               alt="Vector"
@@ -122,9 +156,15 @@ export const EmployeeWork = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center gap-12 p-12 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div 
+            ref={ref4}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView4 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex flex-col items-center gap-12 p-12 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <img
               className="absolute w-[608px] h-[488px] top-0 left-0"
               alt="Vector"
@@ -178,7 +218,13 @@ export const EmployeeWork = () => {
               </div>
             </div>
 
-            <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+            <motion.div 
+              ref={ref5}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView5 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
+            >
               <p className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
                 Сохранение действий сотрудников, <br />
                 контактов с клиентами и других операций
@@ -234,9 +280,9 @@ export const EmployeeWork = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
+        </motion.div>
       </div>
     </div>
   );

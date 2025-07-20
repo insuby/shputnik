@@ -1,18 +1,52 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 export const Analytics = () => {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+
   return (
     <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-      <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]">
+      <motion.div 
+        ref={ref1}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView1 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]"
+      >
         Отчётность и аналитика
-      </div>
+      </motion.div>
 
-      <div className="items-start flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden flex relative self-stretch w-full">
+      <motion.div 
+        ref={ref2}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView2 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+        className="items-start flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden flex relative self-stretch w-full"
+      >
         <img
           className="absolute w-[926px] h-[668px] top-0 left-[450px]"
           alt="Vector"
           src="/img/widgets/vector-2-1.svg"
         />
 
-        <div className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden">
+        <motion.div 
+          ref={ref3}
+          initial={{ opacity: 0, x: -50 }}
+          animate={inView3 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden"
+        >
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
             <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
               Отчеты и статистика
@@ -56,9 +90,15 @@ export const Analytics = () => {
               счетов (ЕПС).
             </p>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
+        <motion.div 
+          ref={ref4}
+          initial={{ opacity: 0, x: 50 }}
+          animate={inView4 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+          className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden"
+        >
           <div className="relative w-[574px] h-[574px] top-[17px] left-[57px] rounded-[287px]">
             <div className="absolute w-[294px] h-[294px] top-[140px] left-[140px] bg-[#ffffff] rounded-[147px] blur-[6px]" />
 
@@ -148,7 +188,13 @@ export const Analytics = () => {
               </div>
             </div>
 
-            <div className="flex w-72 items-start p-1 absolute top-[497px] left-[143px] bg-[#ffffff] rounded-[100px]">
+            <motion.div 
+              ref={ref5}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView5 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              className="flex w-72 items-start p-1 absolute top-[497px] left-[143px] bg-[#ffffff] rounded-[100px]"
+            >
               <div className="flex px-3 py-2 relative flex-1 grow bg-[#1c222f] items-center justify-center gap-2 rounded-[100px]">
                 <div className="w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#ffffff] text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] whitespace-nowrap relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
                   Неделя
@@ -166,10 +212,10 @@ export const Analytics = () => {
                   Год
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
