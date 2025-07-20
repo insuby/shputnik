@@ -85,28 +85,28 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
   return (
     <div className="flex flex-col items-center justify-center gap-9 relative self-stretch w-full flex-[0_0_auto]">
       <div className="flex-col items-center justify-center gap-[68px] flex-[0_0_auto] flex relative self-stretch w-full">
-        <motion.div
+        <motion.div 
           ref={ref1}
           initial={{ opacity: 0, y: 50 }}
           animate={inView1 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease: 'easeOut' }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
           className="flex flex-col items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]"
         >
-          <motion.div
+          <motion.div 
             ref={ref6}
             initial={{ opacity: 0, y: 50 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
             className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
           >
             Работа сотрудников
           </motion.div>
 
-          <motion.p
+          <motion.p 
             ref={ref7}
             initial={{ opacity: 0, y: 50 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
             className="w-[704px] text-[#9ea7bb] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
           >
             Гибкая настройка прав для всех категорий сотрудников, возможность
@@ -115,18 +115,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
           </motion.p>
         </motion.div>
 
-        <motion.div
+        <motion.div 
           ref={ref2}
           initial={{ opacity: 0, y: 50 }}
           animate={inView2 ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+          transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
         >
-          <motion.div
+          <motion.div 
             ref={ref3}
             initial={{ opacity: 0, x: -50 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
             className="flex flex-col items-center gap-12 p-12 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
             <img
@@ -141,54 +141,50 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               src="/img/widgets/frame-1948755086.svg"
             />
 
-            <motion.div
+            <motion.div 
               ref={ref8}
               initial={{ opacity: 0, y: 50 }}
               animate={inView8 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
               className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
             >
-              <motion.p
+              <motion.p 
                 ref={ref9}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView9 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.35 }}
                 className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
               >
                 Индивидуальная политика доступа для всех категорий сотрудников,
                 возможность настройки ролей
               </motion.p>
 
-              <motion.div
+              <motion.div 
                 ref={ref10}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
                 className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
               >
-                <motion.div
+                <motion.div 
                   ref={ref11}
                   initial={{ opacity: 0, x: -50 }}
                   animate={inView11 ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
                   className="flex flex-col items-start gap-4 relative flex-1 grow"
                 >
-                  <motion.div
+                  <motion.div 
                     ref={ref12}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView12 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref13}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView13 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.0,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.55 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -199,22 +195,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref14}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView14 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref15}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView15 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.2,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.65 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -225,22 +217,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref16}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView16 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref17}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView17 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.4,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.75 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -251,22 +239,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref18}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView18 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.5 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref19}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView19 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.6,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.85 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -278,29 +262,25 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                   </motion.div>
                 </motion.div>
 
-                <motion.div
+                <motion.div 
                   ref={ref20}
                   initial={{ opacity: 0, x: 50 }}
                   animate={inView20 ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
                   className="flex flex-col items-start gap-4 relative flex-1 grow"
                 >
-                  <motion.div
+                  <motion.div 
                     ref={ref21}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView21 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref22}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView22 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.0,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.55 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -311,22 +291,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref23}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView23 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref24}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView24 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.2,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.65 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -337,22 +313,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref25}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView25 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref26}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView26 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.4,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.75 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
@@ -363,22 +335,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </motion.div>
 
-                  <motion.div
+                  <motion.div 
                     ref={ref27}
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView27 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.5 }}
+                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
                     className="flex h-7 items-center justify-center gap-6 relative self-stretch w-full"
                   >
-                    <motion.div
+                    <motion.div 
                       ref={ref28}
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView28 ? { opacity: 1, scale: 1 } : {}}
-                      transition={{
-                        duration: 0.5,
-                        ease: 'easeOut',
-                        delay: 1.6,
-                      }}
+                      transition={{ duration: 0.3, ease: 'easeOut', delay: 0.85 }}
                       className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
                     >
                       <Check10 className="!relative !w-4 !h-4" color={color} />
