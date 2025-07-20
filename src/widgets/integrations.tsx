@@ -99,7 +99,7 @@ export const Integrations = () =>  {
                 </div>
 
                 <div
-                  className="top-[15px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                  className="top-[15px] whitespace-nowrap absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
                   служба судебных
                 </div>
 
