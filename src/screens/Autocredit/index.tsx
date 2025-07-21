@@ -542,6 +542,7 @@ export const Autocredit = () => {
           <Marquee
             fade
             className="h-[609px] flex gap-1 w-full relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px]"
+            innerClassName="!w-full"
           >
             <div className="flex flex-col w-60 items-center justify-center gap-5 px-4 py-6 absolute top-44 left-10 bg-[#ffffff] rounded-[32px]">
               <div className="flex flex-col items-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
@@ -605,42 +606,87 @@ export const Autocredit = () => {
           </Marquee>
 
           <div className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
-            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
+              className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
+                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+              >
                 Проверка
-              </div>
+              </motion.div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
+                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+              >
                 Система подключается к внешним источникам и автоматически
                 запрашивает до 100 параметров. Включены данные о регистрации,
                 ДТП, страховке и ограничениях. Проверка проходит быстро и без
                 участия оператора.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
+              className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.9 }}
+                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+              >
                 Контроль
-              </div>
+              </motion.div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 1.0 }}
+                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+              >
                 Модуль отслеживает постановку и снятие объектов с учёта. Видно,
                 какие активы находятся в залоге, на каком этапе они находятся.
                 Вся информация обновляется в режиме реального времени.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
+              className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 1.2 }}
+                className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+              >
                 Управление
-              </div>
+              </motion.div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={inView10 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 1.3 }}
+                className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+              >
                 Интерфейс позволяет управлять залогами, назначать ответственных
                 и повторно запускать проверки. Доступна история действий,
                 формирование отчётов и полный контроль за статусом объектов.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
           </div>
         </motion.div>
       </motion.div>
