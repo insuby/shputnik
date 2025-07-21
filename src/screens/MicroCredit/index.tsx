@@ -193,7 +193,7 @@ export const MicroCredit = () => {
               className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
             >
               <div className="[font-family:'Roboto',Helvetica] text-gray-90 text-xl leading-7 relative w-fit mt-[-1.00px] font-normal tracking-[0] whitespace-nowrap">
-                Демо-версия
+                Узнать больше
               </div>
             </button>
           </motion.div>

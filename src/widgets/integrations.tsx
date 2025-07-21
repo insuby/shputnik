@@ -55,12 +55,12 @@ export const Integrations = () =>  {
         </button>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         ref={ref3}
         initial={{ opacity: 0, x: 50 }}
         animate={inView3 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-        className="flex flex-col h-[496px] items-start gap-12 relative flex-1 grow opacity-50"
+        className="flex flex-col items-start gap-12 relative flex-1 grow opacity-50"
       >
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
@@ -71,13 +71,19 @@ export const Integrations = () =>  {
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="/img/widgets/frame-24.svg"
+          src="/img/widgets/frame-30.svg"
         />
 
         <img
           className="relative self-stretch w-full flex-[0_0_auto]"
           alt="Frame"
-          src="/img/widgets/frame-25.svg"
+          src="/img/widgets/frame-29.svg"
+        />
+
+        <img
+          className="relative self-stretch w-full flex-[0_0_auto]"
+          alt="Frame"
+          src="/img/widgets/frame-24.svg"
         />
 
         <img
