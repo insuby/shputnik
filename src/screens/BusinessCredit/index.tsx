@@ -1,3 +1,7 @@
+import { motion } from 'framer-motion';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
@@ -6,8 +10,27 @@ import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 
-export const BusinessLending = () => {
+export const BusinessCredit = () => {
+  const { setIsOpen } = useFeedbackForm();
+  
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+
+  const onClick = () => {
+    setIsOpen(true);
+  };
+
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
       <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
@@ -41,22 +64,46 @@ export const BusinessLending = () => {
           </div>
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
+            <motion.div 
+              ref={ref1}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView1 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut' }}
+              className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
+            >
+              <motion.div 
+                ref={ref2}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+              >
                 Кредитование бизнеса
-              </div>
+              </motion.div>
 
-              <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
-                Полная автоматизация кредитования юридических лиц. <br />
+              <motion.p 
+                ref={ref3}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7"
+              >
                 Полная автоматизация кредитования юридических лиц.
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center">
+            <motion.button 
+              ref={ref4}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
+              onClick={onClick}
+              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center"
+            >
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Демо-версия
               </div>
-            </button>
+            </motion.button>
           </div>
 
           <img
@@ -65,7 +112,13 @@ export const BusinessLending = () => {
             src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-3.svg"
           />
 
-          <div className="absolute w-[583px] h-[583px] top-[139px] left-[745px]">
+          <motion.div 
+            ref={ref5}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView5 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+            className="absolute w-[583px] h-[583px] top-[139px] left-[745px]"
+          >
             <div className="relative w-[631px] h-[583px]">
               <div className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-0 left-[108px] bg-[#ffffff] rounded-[32px]">
                 <div className="flex flex-col items-center justify-center gap-[14.04px] relative flex-1 grow">
@@ -259,7 +312,7 @@ export const BusinessLending = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
 

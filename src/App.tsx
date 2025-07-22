@@ -13,7 +13,8 @@ import { Reviews } from './screens/reviews';
 import { Autocredit } from './screens/Autocredit';
 import { IslamFinance } from './screens/IslamFinans';
 import { P2P } from './screens/P2P';
-import { BusinessLending } from './screens/BusinessLending';
+import { BusinessCredit } from './screens/BusinessCredit';
+import { BankCredit } from './screens/BankCredit';
 
 export const App = () => {
   return (
@@ -36,7 +37,8 @@ const Pages = () => {
         <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
         <Route path={RoutesPath.AUTOCREDIT} element={<Autocredit />} />
         <Route path={RoutesPath.ISLAMFINANCE} element={<IslamFinance />} />
-        <Route path={RoutesPath.BUSINESSLENDING} element={<BusinessLending />} />
+        <Route path={RoutesPath.BUSINESSCREDIT} element={<BusinessCredit />} />
+        <Route path={RoutesPath.BANKCREDIT} element={<BankCredit />} />
         <Route path={RoutesPath.P2P} element={<P2P />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
       </Route>

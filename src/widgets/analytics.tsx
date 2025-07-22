@@ -211,7 +211,7 @@ export const Analytics = () => {
         ref={ref1}
         initial={{ opacity: 0, y: 50 }}
         animate={inView1 ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
+        transition={{ duration: 0.4, ease: 'easeOut' }}
         className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]"
       >
         Отчётность и аналитика
@@ -221,7 +221,7 @@ export const Analytics = () => {
         ref={ref2}
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                  transition={{ duration: 0.4, ease: 'easeOut', delay: 0.1 }}
         className="items-start flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden flex relative self-stretch w-full"
       >
         <img
@@ -234,21 +234,21 @@ export const Analytics = () => {
           ref={ref3}
           initial={{ opacity: 0, x: -50 }}
           animate={inView3 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
           className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden"
         >
           <motion.div 
             ref={ref6}
             initial={{ opacity: 0, y: 50 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            transition={{ duration: 0.4, ease: 'easeOut', delay: 0.3 }}
             className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
           >
             <motion.div 
               ref={ref7}
               initial={{ opacity: 0, y: 50 }}
               animate={inView7 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              transition={{ duration: 0.4, ease: 'easeOut', delay: 0.4 }}
               className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
             >
               Отчеты и статистика
@@ -258,7 +258,7 @@ export const Analytics = () => {
               ref={ref8}
               initial={{ opacity: 0, y: 50 }}
               animate={inView8 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+              transition={{ duration: 0.4, ease: 'easeOut', delay: 0.5 }}
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
             >
               Более 25 отчетов, которые покрывают основные потребности
@@ -270,14 +270,14 @@ export const Analytics = () => {
             ref={ref9}
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+            transition={{ duration: 0.4, ease: 'easeOut', delay: 0.6 }}
             className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
           >
             <motion.div 
               ref={ref10}
               initial={{ opacity: 0, y: 50 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+              transition={{ duration: 0.4, ease: 'easeOut', delay: 0.7 }}
               className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
             >
               Аналитические сервисы
@@ -287,7 +287,7 @@ export const Analytics = () => {
               ref={ref11}
               initial={{ opacity: 0, y: 50 }}
               animate={inView11 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+              transition={{ duration: 0.4, ease: 'easeOut', delay: 0.8 }}
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
             >
               Описание базы данных для работы с Tableau, Microsoft Power BI,
@@ -299,14 +299,14 @@ export const Analytics = () => {
             ref={ref12}
             initial={{ opacity: 0, y: 50 }}
             animate={inView12 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+            transition={{ duration: 0.4, ease: 'easeOut', delay: 0.9 }}
             className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
           >
             <motion.div 
               ref={ref13}
               initial={{ opacity: 0, y: 50 }}
               animate={inView13 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
+              transition={{ duration: 0.4, ease: 'easeOut', delay: 1.0 }}
               className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
             >
               Интеграция с 1С

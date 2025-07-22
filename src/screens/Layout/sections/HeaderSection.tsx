@@ -29,7 +29,8 @@ export const HeaderSection = () => {
     { label: 'Автокредит', pathname: RoutesPath.AUTOCREDIT },
     { label: 'Исламское финансирование', pathname: RoutesPath.ISLAMFINANCE },
     { label: 'P2P-кредитование', pathname: RoutesPath.P2P },
-    { label: 'Кредитование бизнеса', pathname: RoutesPath.BUSINESSLENDING },
+    { label: 'Кредитование бизнеса', pathname: RoutesPath.BUSINESSCREDIT },
+    { label: 'Банковское кредитование', pathname: RoutesPath.BANKCREDIT },
   ];
 
   const isProductActive = pathname === RoutesPath.MICROCREDIT || pathname === RoutesPath.BNPL;
