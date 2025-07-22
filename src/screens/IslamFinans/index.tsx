@@ -82,7 +82,7 @@ export const IslamFinance = () => {
         transition={{ duration: 0.5, ease: 'easeOut' }}
         className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
       >
-        <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-red-50 rounded-[32px] overflow-hidden">
+        <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-green-60 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[954px] h-[842px] top-12 left-[539px]"
             alt="Vector"
@@ -168,7 +168,7 @@ export const IslamFinance = () => {
               <p className="self-stretch mt-[-0.75px] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
                 <span className="text-[#1c222f]">Ваш</span>
 
-                <span className="text-[#e64850]">Лого</span>
+                <span className="text-[#00CB82]">Лого</span>
               </p>
 
               <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
@@ -664,7 +664,7 @@ export const IslamFinance = () => {
                         delay: 0.8,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -689,7 +689,7 @@ export const IslamFinance = () => {
                         delay: 0.9,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -714,7 +714,7 @@ export const IslamFinance = () => {
                         delay: 1.0,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -739,7 +739,7 @@ export const IslamFinance = () => {
                         delay: 1.1,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -764,7 +764,7 @@ export const IslamFinance = () => {
                         delay: 1.2,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -789,7 +789,7 @@ export const IslamFinance = () => {
                         delay: 1.3,
                       }}
                     >
-                      <CheckIcon bgColor="#e6485014" iconColor="#E74951" />
+                      <CheckIcon bgColor="#00CB8214" iconColor="#00CB82" />
                     </motion.div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
@@ -806,7 +806,7 @@ export const IslamFinance = () => {
       </motion.div>
 
       <Advantages />
-      <EmployeeWork color="#E74951" />
+      <EmployeeWork />
       <Zaim />
       <Feedback />
       <Analytics />
