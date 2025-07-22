@@ -14,7 +14,7 @@ export const P2P = () => {
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-5.svg"
+            src="/img/p2p/vector-1-5.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -65,7 +65,7 @@ export const P2P = () => {
               <img
                 className="absolute w-[345px] h-[330px] top-1.5 left-[-13px]"
                 alt="Vector"
-                src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-1.svg"
+                src="/img/p2p/vector-1-1.svg"
               />
 
               <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -75,7 +75,7 @@ export const P2P = () => {
                   <span className="text-[#1c222f] leading-6"> Давид</span>
                 </p>
 
-                <div className="relative w-8 h-8 rounded-3xl [background:url(https://c.animaapp.com/mdewjqqsHhwSma/img/frame-1948755022.png)_50%_50%_/_cover]" />
+                <div className="relative w-8 h-8 rounded-3xl [background:url(/img/p2p/frame-1948755022.png)_50%_50%_/_cover]" />
               </div>
 
               <div className="inline-flex flex-col items-center relative flex-[0_0_auto]">
@@ -95,20 +95,20 @@ export const P2P = () => {
                       <img
                         className="absolute w-px h-2.5 top-0 left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-8.svg"
+                        src="/img/p2p/vector-8.svg"
                       />
 
                       <img
                         className="absolute w-[9px] h-[5px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-5.svg"
+                        src="/img/p2p/vector-5.svg"
                       />
                     </div>
 
                     <img
                       className="absolute w-[11px] h-px top-0.5 left-0.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector.svg"
+                      src="/img/p2p/vector.svg"
                     />
                   </div>
 
@@ -123,20 +123,20 @@ export const P2P = () => {
                       <img
                         className="absolute w-px h-2.5 top-0 left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-21.svg"
+                        src="/img/p2p/vector-21.svg"
                       />
 
                       <img
                         className="absolute w-[9px] h-[5px] top-1 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-7.svg"
+                        src="/img/p2p/vector-7.svg"
                       />
                     </div>
 
                     <img
                       className="absolute w-[11px] h-px top-[11px] left-0.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector.svg"
+                      src="/img/p2p/vector.svg"
                     />
                   </div>
 
@@ -277,7 +277,7 @@ export const P2P = () => {
           <img
             className="absolute w-[637px] h-[554px] top-[46px] left-[739px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-4-1.svg"
+            src="/img/p2p/vector-4-1.svg"
           />
 
           <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[262px] left-[1000px] bg-white rounded-[32px]">
@@ -344,7 +344,7 @@ export const P2P = () => {
             <img
               className="absolute w-[328px] h-[104px] top-[106px] left-0"
               alt="Vector"
-              src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-147.svg"
+              src="/img/p2p/vector-147.svg"
             />
 
             <div className="absolute w-3 h-3 top-[131px] left-[180px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
@@ -373,7 +373,7 @@ export const P2P = () => {
               <img
                 className="absolute w-[443px] h-[406px] top-0 left-0"
                 alt="Vector"
-                src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-3.svg"
+                src="/img/p2p/vector-1-3.svg"
               />
 
               <div className="relative flex-1 self-stretch w-full grow">
@@ -382,7 +382,7 @@ export const P2P = () => {
                     <img
                       className="relative flex-[0_0_auto]"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-19-4.svg"
+                      src="/img/p2p/frame-19-4.svg"
                     />
 
                     <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -393,14 +393,14 @@ export const P2P = () => {
                   <img
                     className="absolute w-[443px] h-[352px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-4-4.svg"
+                    src="/img/p2p/vector-4-4.svg"
                   />
 
                   <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[115px] left-[100px] bg-white rounded-[32px]">
                     <img
                       className="relative flex-[0_0_auto]"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-19-5.svg"
+                      src="/img/p2p/frame-19-5.svg"
                     />
 
                     <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -427,7 +427,7 @@ export const P2P = () => {
               <img
                 className="absolute w-[377px] h-[406px] top-0 left-0"
                 alt="Vector"
-                src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-10.svg"
+                src="/img/p2p/vector-1-10.svg"
               />
 
               <div className="relative flex-1 self-stretch w-full grow">
@@ -436,68 +436,68 @@ export const P2P = () => {
                     <img
                       className="relative w-px h-28 ml-[-0.50px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
 
                     <img
                       className="relative w-px h-28 mr-[-0.50px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-152.svg"
+                      src="/img/p2p/vector-152.svg"
                     />
                   </div>
 
                   <img
                     className="absolute w-[311px] h-[102px] top-3 left-px"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-160.svg"
+                    src="/img/p2p/vector-160.svg"
                   />
 
                   <img
                     className="absolute w-[313px] h-[76px] top-[11px] left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-161.svg"
+                    src="/img/p2p/vector-161.svg"
                   />
 
                   <div className="absolute w-2 h-2 top-[42px] left-[62px] bg-[#efeefa] rounded border-2 border-solid border-[#3573fc]" />
@@ -512,7 +512,7 @@ export const P2P = () => {
                     <img
                       className="relative w-2 h-1.5"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-162.svg"
+                      src="/img/p2p/vector-162.svg"
                     />
                   </div>
                 </div>
@@ -535,7 +535,7 @@ export const P2P = () => {
         <img
           className="absolute w-[120px] h-14 top-[512px] left-[725px]"
           alt="Frame"
-          src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-17.svg"
+          src="/img/p2p/frame-17.svg"
         />
       </div>
 
@@ -550,7 +550,7 @@ export const P2P = () => {
           <img
             className="relative self-stretch w-full h-px object-cover"
             alt="Vector"
-            src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-138.svg"
+            src="/img/p2p/vector-138.svg"
           />
 
           <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
@@ -577,7 +577,7 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 self-stretch grow bg-[#f9fafd] rounded-3xl overflow-hidden">
-          <div className="relative w-[688px] h-[714px] top-5 left-[33px] bg-[url(https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-6.svg)] bg-[100%_100%]">
+          <div className="relative w-[688px] h-[714px] top-5 left-[33px] bg-[url(/img/p2p/vector-1-6.svg)] bg-[100%_100%]">
             <div className="inline-flex flex-col items-center justify-center gap-1 p-2 relative top-4 left-[153px] bg-[#ffffff] rounded-[32px_32px_0px_0px] overflow-hidden">
               <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
                 <div className="flex-col w-[284px] items-center justify-center gap-5 pt-3 pb-2 px-4 flex-[0_0_auto] flex relative">
@@ -590,19 +590,19 @@ export const P2P = () => {
                       <img
                         className="absolute w-[18px] h-0.5 top-[11px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
 
                       <img
                         className="absolute w-[18px] h-0.5 top-[5px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
 
                       <img
                         className="absolute w-[18px] h-0.5 top-[17px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
                     </div>
                   </div>
@@ -625,7 +625,7 @@ export const P2P = () => {
                         <img
                           className="relative w-[232px] h-[30px] mt-[-6.00px]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-83-4.svg"
+                          src="/img/p2p/frame-83-4.svg"
                         />
 
                         <div className="flex w-[232px] h-4 items-start justify-between relative">
@@ -655,7 +655,7 @@ export const P2P = () => {
                         <img
                           className="relative w-[232px] h-[30px] mt-[-6.00px]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-83-5.svg"
+                          src="/img/p2p/frame-83-5.svg"
                         />
 
                         <div className="flex w-[232px] h-4 items-start justify-between relative">
@@ -685,7 +685,7 @@ export const P2P = () => {
                         <img
                           className="relative w-[232px] h-[30px] mt-[-6.00px]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-83-6.svg"
+                          src="/img/p2p/frame-83-6.svg"
                         />
 
                         <div className="flex w-[232px] h-4 items-start justify-between relative">
@@ -715,7 +715,7 @@ export const P2P = () => {
 
       <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
         <div className="relative flex-1 self-stretch grow bg-[#f9fafd] rounded-3xl overflow-hidden">
-          <div className="relative w-[688px] h-[714px] top-5 left-[33px] bg-[url(https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-7.svg)] bg-[100%_100%]">
+          <div className="relative w-[688px] h-[714px] top-5 left-[33px] bg-[url(/img/p2p/vector-1-7.svg)] bg-[100%_100%]">
             <div className="inline-flex flex-col items-center justify-center gap-1 p-2 relative top-5 left-[153px] bg-[#ffffff] rounded-[32px_32px_0px_0px] overflow-hidden">
               <div className="inline-flex flex-col items-start relative flex-[0_0_auto]">
                 <div className="flex-col w-[284px] items-center justify-center gap-5 px-4 py-3 flex-[0_0_auto] flex relative">
@@ -728,19 +728,19 @@ export const P2P = () => {
                       <img
                         className="absolute w-[18px] h-0.5 top-[11px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
 
                       <img
                         className="absolute w-[18px] h-0.5 top-[5px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
 
                       <img
                         className="absolute w-[18px] h-0.5 top-[17px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-9.svg"
+                        src="/img/p2p/vector-9.svg"
                       />
                     </div>
                   </div>
@@ -854,7 +854,7 @@ export const P2P = () => {
           <img
             className="relative self-stretch w-full h-px object-cover"
             alt="Vector"
-            src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-138.svg"
+            src="/img/p2p/vector-138.svg"
           />
 
           <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
@@ -890,7 +890,7 @@ export const P2P = () => {
         <img
           className="absolute w-[1204px] h-[1060px] top-[15px] left-[386px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-1-11.svg"
+          src="/img/p2p/vector-1-11.svg"
         />
 
         <div className="flex flex-col w-[640px] items-start gap-8 relative">
@@ -985,13 +985,13 @@ export const P2P = () => {
                     <img
                       className="absolute w-[260px] h-1 top-1 left-px"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-136-1.svg"
+                      src="/img/p2p/vector-136-1.svg"
                     />
 
                     <img
                       className="absolute w-[169px] h-1.5 top-[3px] left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-137.svg"
+                      src="/img/p2p/vector-137.svg"
                     />
 
                     <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -1015,13 +1015,13 @@ export const P2P = () => {
                     <img
                       className="absolute w-[260px] h-1 top-1 left-px"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-136.svg"
+                      src="/img/p2p/vector-136.svg"
                     />
 
                     <img
                       className="absolute w-[95px] h-1.5 top-[3px] left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-137-1.svg"
+                      src="/img/p2p/vector-137-1.svg"
                     />
 
                     <div className="absolute w-3 h-3 top-0 left-[86px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -1083,7 +1083,7 @@ export const P2P = () => {
         <img
           className="absolute w-[805px] h-[656px] top-0 left-[571px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdewjqqsHhwSma/img/vector-3-1.svg"
+          src="/img/p2p/vector-3-1.svg"
         />
 
         <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[165px] left-[1054px] bg-white rounded-[32px]">
@@ -1094,13 +1094,13 @@ export const P2P = () => {
                   <img
                     className="absolute w-[88px] h-[184px] top-0 left-0"
                     alt="Subtract"
-                    src="https://c.animaapp.com/mdewjqqsHhwSma/img/subtract.svg"
+                    src="/img/p2p/subtract.svg"
                   />
 
                   <img
                     className="absolute w-[88px] h-[108px] top-[76px] left-24"
                     alt="Subtract"
-                    src="https://c.animaapp.com/mdewjqqsHhwSma/img/subtract-2.svg"
+                    src="/img/p2p/subtract-2.svg"
                   />
 
                   <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
@@ -1117,13 +1117,13 @@ export const P2P = () => {
                 <img
                   className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
                   alt="Subtract"
-                  src="https://c.animaapp.com/mdewjqqsHhwSma/img/subtract-1.svg"
+                  src="/img/p2p/subtract-1.svg"
                 />
 
                 <img
                   className="absolute w-[59px] h-[31px] top-0 left-24"
                   alt="Subtract"
-                  src="https://c.animaapp.com/mdewjqqsHhwSma/img/subtract-3.svg"
+                  src="/img/p2p/subtract-3.svg"
                 />
               </div>
             </div>

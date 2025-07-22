@@ -19,7 +19,7 @@ export const About = () => {
             <img
               className="absolute w-[1108px] h-[1060px] top-[37px] left-[143px]"
               alt="Vector"
-              src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-1-1.svg"
+              src="/img/about/vector-1-1.svg"
             />
 
             <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
@@ -41,13 +41,13 @@ export const About = () => {
                 <img
                   className="absolute w-[409px] h-[386px] top-[-141px] left-[-157px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-3.svg"
+                  src="/img/about/vector-3.svg"
                 />
 
                 <img
                   className="absolute w-[476px] h-[442px] -top-2 left-[189px]"
                   alt="Vector"
-                  src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-2.svg"
+                  src="/img/about/vector-2.svg"
                 />
 
                 <div className="flex-col w-[340px] gap-4 flex items-start relative">
@@ -104,7 +104,7 @@ export const About = () => {
                 <img
                   className="relative self-stretch w-px"
                   alt="Vector"
-                  src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-3-1.svg"
+                  src="/img/about/vector-3-1.svg"
                 />
 
                 <div className="flex flex-col items-start justify-between relative flex-1 self-stretch grow">
@@ -178,7 +178,7 @@ export const About = () => {
                   <img
                     className="relative w-10 h-12"
                     alt="Coat of arms of"
-                    src="https://c.animaapp.com/mdbvk8mczCRqJy/img/coat-of-arms-of-moscow.svg"
+                    src="/img/about/coat-of-arms-of-moscow.svg"
                   />
                 </div>
 
@@ -212,7 +212,7 @@ export const About = () => {
                   <img
                     className="relative w-[37px] h-12"
                     alt="Rus murmansk COA"
-                    src="https://c.animaapp.com/mdbvk8mczCRqJy/img/rus-murmansk-coa.svg"
+                    src="/img/about/rus-murmansk-coa.svg"
                   />
                 </div>
 

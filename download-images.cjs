@@ -13,7 +13,7 @@ const imagesToDownload = [
     localPath: 'public/img/business-man.png'
   },
   {
-    url: 'https://c.animaapp.com/mdbz7w7uO4dbSg/img/frame-21.png',
+    url: 'https://c.animaapp.com/mdbvk8mczCRqJy/img/frame-21.png',
     localPath: 'public/img/frame-21.png'
   },
   {
@@ -44,7 +44,7 @@ const imagesToDownload = [
     url: 'https://c.animaapp.com/mdbwdb25WGmSiu/img/screenshot-12.png',
     localPath: 'public/img/screenshot-12.png'
   },
-  // Дополнительные изображения из background
+  // Дополнительные изображения из background:url()
   {
     url: 'https://c.animaapp.com/mdbvk8mczCRqJy/img/frame-2.png',
     localPath: 'public/img/about-frame-2.png'

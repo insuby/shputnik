@@ -7,13 +7,13 @@ export const Feedback = () => {
         <img
           className="absolute w-[625px] h-[590px] top-[-306px] left-14"
           alt="Vector"
-          src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-1.svg"
+          src="/img/feedback/vector-1.svg"
         />
 
         <img
           className="absolute w-[727px] h-[675px] top-[-109px] left-[666px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-2-1.svg"
+          src="/img/feedback/vector-2-1.svg"
         />
 
         <div className="flex flex-col w-[696px] items-start gap-8 relative">
@@ -115,7 +115,7 @@ export const Feedback = () => {
           <img
             className="absolute w-[328px] h-24 top-[109px] left-0"
             alt="Vector"
-            src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-147.svg"
+            src="/img/feedback/vector-147.svg"
           />
 
           <div
@@ -125,7 +125,7 @@ export const Feedback = () => {
         <img
           className="absolute w-[426px] h-[403px] top-6 left-[874px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdbvk8mczCRqJy/img/vector-4.svg"
+          src="/img/feedback/vector-4.svg"
         />
 
         <div
@@ -150,7 +150,7 @@ export const Feedback = () => {
               <img
                 className="absolute w-[198px] h-[198px] top-0 left-0"
                 alt="Ellipse"
-                src="https://c.animaapp.com/mdbvk8mczCRqJy/img/ellipse-32.svg"
+                src="/img/feedback/ellipse-32.svg"
               />
             </div>
           </div>

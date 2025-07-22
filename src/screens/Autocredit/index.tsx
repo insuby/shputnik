@@ -54,7 +54,7 @@ export const Autocredit = () => {
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-1-9.svg"
+            src="/img/autocredit/vector-1-9.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -148,7 +148,7 @@ export const Autocredit = () => {
                   <img
                     className="absolute w-[13px] h-[7px] top-[5px] left-[3px] -rotate-90"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                    src="/img/autocredit/vector.svg"
                   />
                 </div>
               </div>
@@ -204,7 +204,7 @@ export const Autocredit = () => {
                     <img
                       className="absolute w-[13px] h-[7px] top-[5px] left-[3px] -rotate-90"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                      src="/img/autocredit/vector.svg"
                     />
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export const Autocredit = () => {
                     <img
                       className="absolute w-[13px] h-[7px] top-[5px] left-[3px] -rotate-90"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                      src="/img/autocredit/vector.svg"
                     />
                   </div>
                 </div>
@@ -256,7 +256,7 @@ export const Autocredit = () => {
                     <img
                       className="absolute w-[13px] h-[7px] top-[5px] left-[3px] -rotate-90"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                      src="/img/autocredit/vector.svg"
                     />
                   </div>
                 </div>
@@ -281,7 +281,7 @@ export const Autocredit = () => {
                     <img
                       className="absolute w-[13px] h-[7px] top-[5px] left-[3px] -rotate-90"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                      src="/img/autocredit/vector.svg"
                     />
                   </div>
                 </div>
@@ -309,7 +309,7 @@ export const Autocredit = () => {
                       <img
                         className="absolute w-1.5 h-[11px] top-2.5 left-[3px] -rotate-90"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector.svg"
+                        src="/img/autocredit/vector.svg"
                       />
                     </div>
                   </div>
@@ -360,7 +360,7 @@ export const Autocredit = () => {
                         <img
                           className="absolute w-[15px] h-2.5 top-[-754px] left-[-14133px]"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-7.svg"
+                          src="/img/autocredit/vector-7.svg"
                         />
                       </div>
                     </div>
@@ -489,7 +489,7 @@ export const Autocredit = () => {
           <img
             className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdbwdb25WGmSiu/img/vector-4-3.svg"
+            src="/img/autocredit/vector-4-3.svg"
           />
         </div>
       </motion.div>

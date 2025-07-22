@@ -26,13 +26,17 @@ pngFiles.forEach((filePath, index) => {
     if (fs.existsSync(filePath)) {
       console.log(`[${index + 1}/${pngFiles.length}] Обрабатываем: ${filePath}`);
       
-      // Команда для удаления белого фона с помощью ImageMagick
-      const command = `magick "${filePath}" -fuzz 10% -transparent white "${filePath}"`;
+      // Создаем временный файл
+      const tempFile = filePath.replace('.png', '_temp.png');
       
-      execSync(command, { 
+      // Применяем прозрачность к белому фону с помощью ImageMagick
+      execSync(`magick "${filePath}" -fuzz 10% -transparent white "${tempFile}"`, {
         stdio: 'inherit',
         cwd: process.cwd()
       });
+      
+      // Заменяем оригинальный файл
+      fs.renameSync(tempFile, filePath);
       
       console.log(`✅ Успешно обработан: ${filePath}`);
     } else {

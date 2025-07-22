@@ -16,7 +16,7 @@ export const BankCredit = () => {
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-9.svg"
+            src="/img/bankcredit/vector-1-9.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -75,7 +75,7 @@ export const BankCredit = () => {
                     <img
                       className="absolute w-[15px] h-4 top-0.5 left-[3px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-10.svg"
+                      src="/img/bankcredit/vector-10.svg"
                     />
                   </div>
 
@@ -90,37 +90,37 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-1.5 h-1.5 top-[3px] left-1.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-7.svg"
+                        src="/img/bankcredit/vector-7.svg"
                       />
 
                       <img
                         className="absolute w-[19px] h-[11px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-11.svg"
+                        src="/img/bankcredit/vector-11.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-0 left-3.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-8.svg"
+                        src="/img/bankcredit/vector-8.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-[7px] left-3.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-44.svg"
+                        src="/img/bankcredit/vector-44.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-[7px] left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-21.svg"
+                        src="/img/bankcredit/vector-21.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-15.svg"
+                        src="/img/bankcredit/vector-15.svg"
                       />
                     </div>
                   </div>
@@ -132,11 +132,11 @@ export const BankCredit = () => {
 
                 <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
                   <div className="relative w-5 h-5">
-                    <div className="relative w-[17px] h-3 top-1 left-px bg-[url(https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-14.svg)] bg-[100%_100%]">
+                    <div className="relative w-[17px] h-3 top-1 left-px bg-[url(/img/bankcredit/vector-14.svg)] bg-[100%_100%]">
                       <img
                         className="absolute w-1 h-px top-[9px] left-[11px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-5.svg"
+                        src="/img/bankcredit/vector-5.svg"
                       />
 
                       <img
@@ -192,7 +192,7 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-4 h-3 top-0.5 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-14.svg"
+                        src="/img/bankcredit/vector-14.svg"
                       />
 
                       <img
@@ -210,7 +210,7 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-1 h-px top-1.5 left-1.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-5.svg"
+                        src="/img/bankcredit/vector-5.svg"
                       />
                     </div>
                   </div>
@@ -226,7 +226,7 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-[7px] h-[7px] top-[5px] left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-7.svg"
+                        src="/img/bankcredit/vector-7.svg"
                       />
 
                       <img
@@ -246,7 +246,7 @@ export const BankCredit = () => {
 
             <div className="flex flex-col items-start gap-5 p-6 relative flex-1 self-stretch grow overflow-hidden">
               <div className="inline-flex items-center gap-4 relative flex-[0_0_auto]">
-                <div className="relative w-12 h-12 rounded-3xl [background:url(https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                <div className="relative w-12 h-12 rounded-3xl [background:url(/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
                 <p className="relative w-fit [font-family:'Inter',Helvetica] font-semibold text-gray-90 text-xl tracking-[0] leading-5 whitespace-nowrap">
                   <span className="text-[#9ea7bb] leading-6">Привет,</span>

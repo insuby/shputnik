@@ -6,7 +6,7 @@ export const ZaimChecker = () => {
       <img
         className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
         alt="Vector"
-        src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1.svg"
+        src="/img/zain-checker/vector-1.svg"
       />
 
       <div className="flex items-center gap-[88px] p-12 relative self-stretch w-full flex-[0_0_auto]">
@@ -14,7 +14,7 @@ export const ZaimChecker = () => {
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
-            src="https://c.animaapp.com/mdextfbtMdhAnq/img/frame-18-2.svg"
+            src="/img/zain-checker/frame-18-2.svg"
           />
 
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
@@ -97,14 +97,14 @@ export const ZaimChecker = () => {
         <img
           className="relative w-px h-[528px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-129.svg"
+          src="/img/zain-checker/vector-129.svg"
         />
 
         <div className="flex flex-col w-[520px] items-start justify-center gap-8 relative">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
-            src="https://c.animaapp.com/mdextfbtMdhAnq/img/frame-18-4.svg"
+            src="/img/zain-checker/frame-18-4.svg"
           />
 
           <div className="flex flex-col w-[520px] items-start gap-6 relative flex-[0_0_auto]">
@@ -190,7 +190,7 @@ export const ZaimChecker = () => {
         <img
           className="absolute w-[1108px] h-[1060px] top-[-385px] left-[420px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-1.svg"
+          src="/img/zain-checker/vector-1-1.svg"
         />
 
         <div className="flex flex-col items-start gap-3 relative flex-1 grow">

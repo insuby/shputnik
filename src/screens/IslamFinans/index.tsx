@@ -86,7 +86,7 @@ export const IslamFinance = () => {
           <img
             className="absolute w-[954px] h-[842px] top-12 left-[539px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1-7.svg"
+            src="/img/islamfinans/vector-1-7.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -177,7 +177,7 @@ export const IslamFinance = () => {
                     <img
                       className="absolute w-[15px] h-4 top-0.5 left-[3px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector.svg"
+                      src="/img/islamfinans/vector.svg"
                     />
                   </div>
 
@@ -192,37 +192,37 @@ export const IslamFinance = () => {
                       <img
                         className="absolute w-1.5 h-1.5 top-[3px] left-1.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                        src="/img/islamfinans/vector-1.svg"
                       />
 
                       <img
                         className="absolute w-[19px] h-[11px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-19.svg"
+                        src="/img/islamfinans/vector-19.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-0 left-3.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-17.svg"
+                        src="/img/islamfinans/vector-17.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-[7px] left-3.5"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-6.svg"
+                        src="/img/islamfinans/vector-6.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-[7px] left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-20.svg"
+                        src="/img/islamfinans/vector-20.svg"
                       />
 
                       <img
                         className="absolute w-1 h-1 top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-8.svg"
+                        src="/img/islamfinans/vector-8.svg"
                       />
                     </div>
                   </div>
@@ -238,19 +238,19 @@ export const IslamFinance = () => {
                       <img
                         className="absolute w-px h-1.5 top-[11px] left-2"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-18.svg"
+                        src="/img/islamfinans/vector-18.svg"
                       />
 
                       <img
                         className="absolute w-4 h-4 top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-16.svg"
+                        src="/img/islamfinans/vector-16.svg"
                       />
 
                       <img
                         className="absolute w-[5px] h-0.5 top-2 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-7.svg"
+                        src="/img/islamfinans/vector-7.svg"
                       />
                     </div>
                   </div>
@@ -265,25 +265,25 @@ export const IslamFinance = () => {
                     <img
                       className="absolute w-1.5 h-1.5 top-[3px] left-[3px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                      src="/img/islamfinans/vector-1.svg"
                     />
 
                     <img
                       className="absolute w-1.5 h-1.5 top-[3px] left-[11px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                      src="/img/islamfinans/vector-1.svg"
                     />
 
                     <img
                       className="absolute w-1.5 h-1.5 top-[11px] left-[3px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                      src="/img/islamfinans/vector-1.svg"
                     />
 
                     <img
                       className="absolute w-1.5 h-1.5 top-[11px] left-[11px]"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                      src="/img/islamfinans/vector-1.svg"
                     />
                   </div>
 
@@ -298,13 +298,13 @@ export const IslamFinance = () => {
                       <img
                         className="absolute w-1.5 h-1 top-3 left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-5.svg"
+                        src="/img/islamfinans/vector-5.svg"
                       />
 
                       <img
                         className="absolute w-[15px] h-3.5 top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-13.svg"
+                        src="/img/islamfinans/vector-13.svg"
                       />
                     </div>
                   </div>
@@ -320,13 +320,13 @@ export const IslamFinance = () => {
                       <img
                         className="absolute w-[7px] h-[7px] top-[5px] left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-1.svg"
+                        src="/img/islamfinans/vector-1.svg"
                       />
 
                       <img
                         className="absolute w-4 h-[17px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-4.svg"
+                        src="/img/islamfinans/vector-4.svg"
                       />
                     </div>
                   </div>
@@ -344,7 +344,7 @@ export const IslamFinance = () => {
                   <img
                     className="absolute w-12 h-12 top-0 left-0 object-cover"
                     alt="Side view business"
-                    src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/side-view-business-man-outdoor-1.png"
+                    src="/img/islamfinans/business-man.png"
                   />
                 </div>
 
@@ -437,7 +437,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -453,7 +453,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -469,7 +469,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -485,7 +485,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -501,7 +501,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -529,7 +529,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -545,7 +545,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -561,7 +561,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
 
                         <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -577,7 +577,7 @@ export const IslamFinance = () => {
                         <img
                           className="relative self-stretch w-full h-px mb-[-1.00px] object-cover"
                           alt="Vector"
-                          src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-141.svg"
+                          src="/img/islamfinans/vector-141.svg"
                         />
                       </div>
                     </div>
@@ -590,7 +590,7 @@ export const IslamFinance = () => {
           <img
             className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdbz7w7uO4dbSg/img/vector-4-3.svg"
+            src="/img/islamfinans/vector-4-3.svg"
           />
         </div>
       </motion.div>

@@ -29,7 +29,7 @@ export const Trust = () => {
         <Marquee fade>
           <img
             alt="Frame"
-            src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-17-1.svg"
+            src="/img/trust/frame-17-1.svg"
           />
         </Marquee>
       </div>
