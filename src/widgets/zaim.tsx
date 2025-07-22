@@ -23,7 +23,7 @@ export const Zaim = () => {
       <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
         <div
           className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl tracking-[0] leading-[60px]">
-          Управление займами
+          Управление кредитами
         </div>
       </div>
 
@@ -52,7 +52,7 @@ export const Zaim = () => {
 
             <p
               className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
-              Расчёт условий выдачи займа и при необходимости предложение
+              Расчёт условий выдачи кредита и при необходимости предложение
               альтернативных.
             </p>
           </div>

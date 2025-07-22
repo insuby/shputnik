@@ -16,10 +16,13 @@ module.exports = {
         "gray-90": "var(--gray-90)",
         "green-50": "var(--green-50)",
         "red-40": "var(--red-40)",
+        "green-60": "var(--green-60)",
         "red-50": "var(--red-50)",
         "violet-50": "var(--violet-50)",
         white: "var(--white)",
         "yellow-50": "var(--yellow-50)",
+        "blue-30": "var(--blue-30)",
+        "gray-60": "var(--gray-60)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -62,6 +65,9 @@ module.exports = {
         "tite-2-m": "var(--tite-2-m-font-family)",
         "title-1-m": "var(--title-1-m-font-family)",
         "title-1-r": "var(--title-1-r-font-family)",
+        "body-body-3-regular": "var(--body-body-3-regular-font-family)",
+        "caption-caption-1-regular":
+          "var(--caption-caption-1-regular-font-family)",
         sans: [
           "ui-sans-serif",
           "system-ui",

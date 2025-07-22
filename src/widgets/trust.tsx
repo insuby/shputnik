@@ -27,70 +27,10 @@ export const Trust = () => {
 
       <div className="absolute top-[292px] left-0 right-0 h-[72px] opacity-50">
         <Marquee fade>
-          <div className="flex items-center gap-16 mx-8">
-            <div className="relative w-[150px] h-[30.76px] flex items-center justify-center">
-              <img
-                className="w-[114px] h-[31px]"
-                alt="Group"
-                src="/img/group-1.png"
-              />
-            </div>
-
-            <img
-              className="w-[217.03px] h-[45.97px] object-contain"
-              alt="Odnoklassniki ok"
-              src="/img/odnoklassniki-ok-1.png"
-            />
-
-            <img
-              className="w-[111.48px] h-[70.52px] object-contain"
-              alt="Logo black"
-              src="/img/logo-black-1.png"
-            />
-
-            <img
-              className="w-[113.43px] h-[68.79px] object-contain"
-              alt="Contact log CMYK"
-              src="/img/contact-log-cmyk-1.png"
-            />
-
-            <img
-              className="w-[49.06px] h-[28.81px] object-contain"
-              alt="Vkcom"
-              src="/img/vkcom-1.png"
-            />
-
-            <img
-              className="w-[120px] h-[64.5px] object-contain"
-              alt="Logo full eng"
-              src="/img/logo-full-eng-1.png"
-            />
-
-            <img
-              className="w-24 h-[57.29px] object-contain"
-              alt="Master card logo"
-              src="/img/master-card-logo-1.png"
-            />
-
-            <div className="relative w-[239.66px] h-[40.18px] flex items-center">
-              <img
-                className="w-10 h-10"
-                alt="Group"
-                src="/img/group-7-1.png"
-              />
-              <img
-                className="w-[188px] h-[19px] ml-3"
-                alt="Group"
-                src="/img/group-8-1.png"
-              />
-            </div>
-
-            <img
-              className="w-[126.29px] h-[72px] object-contain"
-              alt="Group"
-              src="/img/group-17-1.png"
-            />
-          </div>
+          <img
+            alt="Frame"
+            src="https://c.animaapp.com/mdewjqqsHhwSma/img/frame-17-1.svg"
+          />
         </Marquee>
       </div>
 
