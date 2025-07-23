@@ -17,13 +17,28 @@ export const BankCredit = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
+  // Добавляем отдельные refs для каждого блока в секции "Настройте свой процесс"
+  const ref1 = useRef<HTMLDivElement>(null);
+  const ref2 = useRef<HTMLDivElement>(null);
+  const ref3 = useRef<HTMLDivElement>(null);
+  const ref4 = useRef<HTMLDivElement>(null);
+  const ref5 = useRef<HTMLDivElement>(null);
+  const ref6 = useRef<HTMLDivElement>(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
       },
     },
   };
@@ -88,6 +103,30 @@ export const BankCredit = () => {
     },
   };
 
+  const slideInTop = {
+    hidden: { opacity: 0, y: -80 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: 'easeOut',
+      },
+    },
+  };
+
+  const slideInBottom = {
+    hidden: { opacity: 0, y: 80 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: 'easeOut',
+      },
+    },
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -97,7 +136,7 @@ export const BankCredit = () => {
       className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]"
     >
       <motion.div
-        variants={itemVariants}
+        variants={slideInTop}
         className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
       >
         <motion.div
@@ -603,10 +642,12 @@ export const BankCredit = () => {
         </motion.div>
       </motion.div>
 
-      <Advantages />
+      <motion.div variants={slideInLeft}>
+        <Advantages />
+      </motion.div>
 
       <motion.div
-        variants={fadeInUp}
+        variants={slideInRight}
         className="flex flex-col w-[1376px] items-center justify-center gap-9 relative flex-[0_0_auto] bg-[#ffffff]"
       >
         <div className="flex flex-col items-center justify-center gap-[68px] relative self-stretch w-full flex-[0_0_auto]">
@@ -874,10 +915,12 @@ export const BankCredit = () => {
         </div>
       </motion.div>
 
-      <Analytics />
+      <motion.div variants={slideInTop}>
+        <Analytics />
+      </motion.div>
 
       <motion.div
-        variants={itemVariants}
+        variants={slideInBottom}
         className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
       >
         <motion.div
@@ -903,22 +946,15 @@ export const BankCredit = () => {
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-                  <div className="mt-[-3592.00px] ml-[-27281.00px] bg-[100%_100%] relative w-7 h-7">
-                    <div className="relative w-[23px] h-[22px] top-[3px] left-[3px]">
-                      <img
-                        className="absolute w-4 h-4 top-0 left-1"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-25.svg"
-                      />
-
-                      <img
-                        className="absolute w-[23px] h-2 top-3.5 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-26.svg"
-                      />
-                    </div>
-                  </div>
+                <div
+                  className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                    <path
+                      d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z"
+                      stroke="#00CB82" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3.5 23.625C5.61859 19.9642 9.46641 17.5 14 17.5C18.5336 17.5 22.3814 19.9642 24.5 23.625"
+                          stroke="#00CB82" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
                 </div>
 
                 <motion.div
@@ -995,10 +1031,12 @@ export const BankCredit = () => {
         </motion.div>
       </motion.div>
 
-      <ZaimChecker />
+      <motion.div variants={slideInLeft}>
+        <ZaimChecker />
+      </motion.div>
 
       <motion.div
-        variants={itemVariants}
+        variants={slideInRight}
         className="flex flex-col w-[1376px] items-center justify-center gap-12 relative flex-[0_0_auto] bg-[#ffffff]"
       >
         <motion.div
@@ -1013,7 +1051,10 @@ export const BankCredit = () => {
         <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
             <motion.div
-              variants={scaleIn}
+              ref={ref1}
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView1 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1092,7 +1133,10 @@ export const BankCredit = () => {
             </motion.div>
 
             <motion.div
-              variants={scaleIn}
+              ref={ref2}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView2 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1136,7 +1180,10 @@ export const BankCredit = () => {
             </motion.div>
 
             <motion.div
-              variants={scaleIn}
+              ref={ref3}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inView3 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1162,7 +1209,10 @@ export const BankCredit = () => {
 
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
             <motion.div
-              variants={scaleIn}
+              ref={ref4}
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView4 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-start justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1184,7 +1234,10 @@ export const BankCredit = () => {
             </motion.div>
 
             <motion.div
-              variants={scaleIn}
+              ref={ref5}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView5 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1206,7 +1259,10 @@ export const BankCredit = () => {
             </motion.div>
 
             <motion.div
-              variants={scaleIn}
+              ref={ref6}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inView6 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -1230,12 +1286,24 @@ export const BankCredit = () => {
         </div>
       </motion.div>
 
-      <Zaim />
-      <Feedback />
-      <Integrations />
-      <RoleStructure />
-      <EmployeeWork />
-      <Trust />
+      <motion.div variants={slideInTop}>
+        <Zaim />
+      </motion.div>
+      <motion.div variants={slideInLeft}>
+        <Feedback />
+      </motion.div>
+      <motion.div variants={slideInRight}>
+        <Integrations />
+      </motion.div>
+      <motion.div variants={slideInBottom}>
+        <RoleStructure />
+      </motion.div>
+      <motion.div variants={slideInTop}>
+        <EmployeeWork />
+      </motion.div>
+      <motion.div variants={slideInLeft}>
+        <Trust />
+      </motion.div>
     </motion.div>
   );
 };
