@@ -32,6 +32,28 @@ export const BankCredit = () => {
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
   const inView6 = useInView(ref6, { once: true, margin: '-100px' });
 
+  // Добавляем refs для секции "Автоматизация различных кредитных продуктов"
+  const refAuto1 = useRef<HTMLDivElement>(null);
+  const refAuto2 = useRef<HTMLDivElement>(null);
+  const refAuto3 = useRef<HTMLDivElement>(null);
+  const refAuto4 = useRef<HTMLDivElement>(null);
+
+  const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-100px' });
+  const inViewAuto2 = useInView(refAuto2, { once: true, margin: '-100px' });
+  const inViewAuto3 = useInView(refAuto3, { once: true, margin: '-100px' });
+  const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-100px' });
+
+  // Добавляем refs для секций "Система управления" и "Транзакции"
+  const refSystem1 = useRef<HTMLDivElement>(null);
+  const refSystem2 = useRef<HTMLDivElement>(null);
+  const refSystem3 = useRef<HTMLDivElement>(null);
+  const refSystem4 = useRef<HTMLDivElement>(null);
+
+  const inViewSystem1 = useInView(refSystem1, { once: true, margin: '-100px' });
+  const inViewSystem2 = useInView(refSystem2, { once: true, margin: '-100px' });
+  const inViewSystem3 = useInView(refSystem3, { once: true, margin: '-100px' });
+  const inViewSystem4 = useInView(refSystem4, { once: true, margin: '-100px' });
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -920,15 +942,24 @@ export const BankCredit = () => {
       </motion.div>
 
       <motion.div
-        variants={slideInBottom}
+        ref={refAuto1}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inViewAuto1 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
         className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
       >
         <motion.div
-          variants={fadeInUp}
+          ref={refAuto2}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inViewAuto2 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
           className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
         >
           <motion.div
-            variants={fadeInUp}
+            ref={refAuto3}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inViewAuto3 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]"
           >
             Автоматизация различных кредитных продуктов
@@ -936,12 +967,17 @@ export const BankCredit = () => {
         </motion.div>
 
         <motion.div
-          variants={itemVariants}
+          ref={refAuto4}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inViewAuto4 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
           className="flex items-start justify-center gap-6 relative self-stretch w-full flex-[0_0_auto]"
         >
           <div className="flex items-start gap-6 relative flex-1 grow">
             <motion.div
-              variants={scaleIn}
+              initial={{ opacity: 0, x: -50 }}
+              animate={inViewAuto4 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
@@ -958,7 +994,9 @@ export const BankCredit = () => {
                 </div>
 
                 <motion.div
-                  variants={fadeInUp}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inViewAuto4 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
                   className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
                 >
                   Потребительские кредиты
@@ -966,20 +1004,26 @@ export const BankCredit = () => {
               </div>
             </motion.div>
             <motion.div
-              variants={scaleIn}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inViewAuto4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
                 <motion.img
-                  variants={scaleIn}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={inViewAuto4 ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-1.svg"
                 />
 
                 <motion.div
-                  variants={fadeInUp}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inViewAuto4 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
                 >
                   Кредитная линия
@@ -990,20 +1034,26 @@ export const BankCredit = () => {
 
           <div className="flex items-start gap-6 relative flex-1 grow">
             <motion.div
-              variants={scaleIn}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inViewAuto4 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
                 <motion.img
-                  variants={scaleIn}
+                  initial={{ opacity: 0, scale: 0 }}
+                  animate={inViewAuto4 ? { opacity: 1, scale: 1 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-3.svg"
                 />
 
                 <motion.div
-                  variants={fadeInUp}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inViewAuto4 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
                   className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
                 >
                   Кредиты под залог имущества
@@ -1011,7 +1061,9 @@ export const BankCredit = () => {
               </div>
             </motion.div>
             <motion.div
-              variants={scaleIn}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inViewAuto4 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
               whileHover={{ scale: 1.02 }}
               className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
             >
