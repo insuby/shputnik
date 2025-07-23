@@ -1,15 +1,17 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+
 import { useRef } from 'react';
+
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
-import { Zaim } from '../../widgets/zaim.tsx';
-import { ZaimChecker } from '../../widgets/zain-checker.tsx';
+import { EmployeeWork } from '../../widgets/employe-work.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
-import { EmployeeWork } from '../../widgets/employe-work.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import { Zaim } from '../../widgets/zaim.tsx';
+import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const BankCredit = () => {
   const ref = useRef(null);
@@ -21,9 +23,9 @@ export const BankCredit = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.2
-      }
-    }
+        delayChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -33,9 +35,9 @@ export const BankCredit = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const fadeInUp = {
@@ -45,9 +47,9 @@ export const BankCredit = () => {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const scaleIn = {
@@ -57,9 +59,9 @@ export const BankCredit = () => {
       scale: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const slideInLeft = {
@@ -69,9 +71,9 @@ export const BankCredit = () => {
       x: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   const slideInRight = {
@@ -81,24 +83,24 @@ export const BankCredit = () => {
       x: 0,
       transition: {
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: 'easeOut',
+      },
+    },
   };
 
   return (
-    <motion.div 
+    <motion.div
       ref={ref}
       variants={containerVariants}
       initial="hidden"
-      animate={isInView ? "visible" : "hidden"}
+      animate={isInView ? 'visible' : 'hidden'}
       className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]"
     >
-      <motion.div 
+      <motion.div
         variants={itemVariants}
         className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
       >
-        <motion.div 
+        <motion.div
           variants={fadeInUp}
           className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden"
         >
@@ -108,11 +110,11 @@ export const BankCredit = () => {
             src="/img/bankcredit/vector-1-9.svg"
           />
 
-          <motion.div 
+          <motion.div
             variants={itemVariants}
             className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
           >
-            <motion.div 
+            <motion.div
               variants={scaleIn}
               className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]"
             >
@@ -121,7 +123,7 @@ export const BankCredit = () => {
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               variants={scaleIn}
               className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]"
             >
@@ -139,22 +141,22 @@ export const BankCredit = () => {
             </motion.div>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={slideInLeft}
             className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
           >
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
             >
-              <motion.div 
+              <motion.div
                 variants={fadeInUp}
                 className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
               >
                 Банковское кредитование
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 variants={fadeInUp}
                 className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
               >
@@ -164,7 +166,7 @@ export const BankCredit = () => {
               </motion.p>
             </motion.div>
 
-            <motion.button 
+            <motion.button
               variants={scaleIn}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -176,7 +178,7 @@ export const BankCredit = () => {
             </motion.button>
           </motion.div>
 
-          <motion.div 
+          <motion.div
             variants={slideInRight}
             className="flex w-[669px] h-[538px] items-center absolute top-[152px] left-[720px] bg-[#f6f8fd] rounded-[24px_0px_0px_0px] overflow-hidden"
           >
@@ -603,7 +605,7 @@ export const BankCredit = () => {
 
       <Advantages />
 
-      <motion.div 
+      <motion.div
         variants={fadeInUp}
         className="flex flex-col w-[1376px] items-center justify-center gap-9 relative flex-[0_0_auto] bg-[#ffffff]"
       >
@@ -874,19 +876,32 @@ export const BankCredit = () => {
 
       <Analytics />
 
-      <motion.div 
-        variants={fadeInUp}
+      <motion.div
+        variants={itemVariants}
         className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
       >
-        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-          <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
+        <motion.div
+          variants={fadeInUp}
+          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        >
+          <motion.div
+            variants={fadeInUp}
+            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]"
+          >
             Автоматизация различных кредитных продуктов
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
-        <div className="flex items-start justify-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
+        <motion.div
+          variants={itemVariants}
+          className="flex items-start justify-center gap-6 relative self-stretch w-full flex-[0_0_auto]"
+        >
           <div className="flex items-start gap-6 relative flex-1 grow">
-            <div className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
                 <div className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
                   <div className="mt-[-3592.00px] ml-[-27281.00px] bg-[100%_100%] relative w-7 h-7">
@@ -906,41 +921,64 @@ export const BankCredit = () => {
                   </div>
                 </div>
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Потребительские кредиты
-                </div>
+                </motion.div>
               </div>
-            </div>
-            <div className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            </motion.div>
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-1.svg"
                 />
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Кредитная линия
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex items-start gap-6 relative flex-1 grow">
-            <div className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-3.svg"
                 />
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Кредиты под залог имущества
-                </div>
+                </motion.div>
               </div>
-            </div>
-            <div className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            </motion.div>
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
                 <img
                   className="relative flex-[0_0_auto]"
@@ -952,26 +990,38 @@ export const BankCredit = () => {
                   Ипотечное кредитование
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
 
       <ZaimChecker />
 
-      <div className="flex flex-col w-[1376px] items-center justify-center gap-12 relative flex-[0_0_auto] bg-[#ffffff]">
-        <div className="relative w-[832px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
+      <motion.div
+        variants={itemVariants}
+        className="flex flex-col w-[1376px] items-center justify-center gap-12 relative flex-[0_0_auto] bg-[#ffffff]"
+      >
+        <motion.div
+          variants={fadeInUp}
+          className="relative w-[832px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]"
+        >
           Настройте свой процесс
           <br />
           принятия решения
-        </div>
+        </motion.div>
 
         <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <div
-                  className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
+                <motion.div
+                  variants={scaleIn}
+                  className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]"
+                >
                   <svg
                     className={`!relative !w-7 !h-7`}
                     fill="none"
@@ -1028,109 +1078,157 @@ export const BankCredit = () => {
                       strokeWidth="1.6"
                     />
                   </svg>
-                </div>
+                </motion.div>
 
-                <div
-                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Верификация
                   <br />
                   пользователя
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
-            <div
-              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <div
-                  className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-[#e6485014] rounded-[100px] justify-center relative">
-                  <div className="relative w-7 h-7 mt-[-5240.00px] ml-[-27806.00px] bg-[100%_100%]">
-                    <div className="relative w-[23px] h-[23px] top-[3px] left-[3px]">
-                      <img
-                        className="absolute w-4 h-4 top-[3px] left-[3px]"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-29.svg"
-                      />
+                <motion.div
+                  variants={scaleIn}
+                  className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-[#e6485014] rounded-[100px] justify-center relative"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    viewBox="0 0 28 28"
+                    fill="none"
+                    className="m-auto"
+                  >
+                    <path
+                      d="M21.4249 21.4244L6.57617 6.57568"
+                      stroke="#E74951"
+                      stroke-width="1.6"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M14 24.5C19.799 24.5 24.5 19.799 24.5 14C24.5 8.20101 19.799 3.5 14 3.5C8.20101 3.5 3.5 8.20101 3.5 14C3.5 19.799 8.20101 24.5 14 24.5Z"
+                      stroke="#E74951"
+                      stroke-width="1.6"
+                      stroke-miterlimit="10"
+                    />
+                  </svg>
+                </motion.div>
 
-                      <img
-                        className="absolute w-[23px] h-[23px] top-0 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-41.svg"
-                      />
-                    </div>
-                  </div>
-                </div>
-
-                <div
-                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Чёрный список
                   <br />и стоп-факторы
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-6.svg"
                 />
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Обогащение
                   <br />
                   данных
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex items-start justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-start justify-center gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-10.svg"
                 />
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.p
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Внутренняя, внешняя и итоговая скоринговая оценка
-                </p>
+                </motion.p>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-5.svg"
                 />
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Подбор/предложение кредитного продукта
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <motion.div
+              variants={scaleIn}
+              whileHover={{ scale: 1.02 }}
+              className="flex items-start justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            >
               <div className="flex flex-col items-center justify-center gap-8 relative flex-1 grow">
-                <img
+                <motion.img
+                  variants={scaleIn}
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
                   src="/img/bankcredit/frame-19-4.svg"
                 />
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                <motion.div
+                  variants={fadeInUp}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8 min-h-[64px] flex items-center justify-center"
+                >
                   Андеррайтинг
-                </div>
+                </motion.div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
       <Zaim />
       <Feedback />
