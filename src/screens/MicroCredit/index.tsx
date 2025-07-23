@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion';
 
 import { useRef, useState } from 'react';
 
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
@@ -127,7 +128,7 @@ export const MicroCredit = () => {
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+                   <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col h-[600px] items-start gap-20 p-12 relative self-stretch w-full bg-violet-50 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
@@ -135,39 +136,7 @@ export const MicroCredit = () => {
             src="/img/vector-1-5.svg"
           />
 
-          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-            <motion.div
-              ref={ref1}
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView1 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]"
-            >
-              <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </motion.div>
-
-            <motion.div
-              ref={ref2}
-              initial={{ opacity: 0, x: 50 }}
-              animate={inView2 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]"
-            >
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
-                </div>
-              </div>
-            </motion.div>
-          </div>
+          <HeroButtons buttonText="Узнать больше" />
 
           <motion.div
             ref={ref3}
@@ -187,15 +156,6 @@ export const MicroCredit = () => {
                 МФО онлайн и в точках продаж.
               </p>
             </div>
-
-            <button
-              onClick={onClick}
-              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
-            >
-              <div className="[font-family:'Roboto',Helvetica] text-gray-90 text-xl leading-7 relative w-fit mt-[-1.00px] font-normal tracking-[0] whitespace-nowrap">
-                Узнать больше
-              </div>
-            </button>
           </motion.div>
 
           <motion.div
@@ -303,16 +263,16 @@ export const MicroCredit = () => {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <button
-              onClick={onClick}
-              className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
-            >
-              <div className="self-stretch w-[164px] mt-[-1.00px] font-medium text-[#ffffff] text-base text-center leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                Оформить займ
-              </div>
-            </button>
+              <button
+                onClick={onClick}
+                className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+              >
+                <div className="self-stretch w-[164px] mt-[-1.00px] font-medium text-[#ffffff] text-base text-center leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                  Оформить займ
+                </div>
+              </button>
+            </div>
           </motion.div>
 
           <img

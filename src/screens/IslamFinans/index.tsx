@@ -4,6 +4,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 import { CheckIcon } from '../../components/ui/check-icon.tsx';
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
@@ -89,27 +90,7 @@ export const IslamFinance = () => {
             src="/img/islamfinans/vector-1-7.svg"
           />
 
-          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-            <div className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-              <div className="w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] whitespace-nowrap relative tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroButtons />
 
           <motion.div
             ref={ref2}
@@ -149,18 +130,7 @@ export const IslamFinance = () => {
               </motion.p>
             </motion.div>
 
-            <motion.button
-              ref={ref6}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView6 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
-              onClick={onClick}
-              className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] inline-flex items-center justify-center gap-2.5 rounded-[100px]"
-            >
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
-                Записаться на презентацию
-              </div>
-            </motion.button>
+                        <HeroButtons />
           </motion.div>
 
           <div className="flex w-[871px] h-[538px] items-center absolute top-[136px] left-[745px] bg-[#f6f8fd] rounded-3xl overflow-hidden">

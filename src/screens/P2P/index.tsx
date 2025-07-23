@@ -1,4 +1,5 @@
 import { Check10 } from '../../components/ui/check10.tsx';
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
@@ -17,27 +18,7 @@ export const P2P = () => {
             src="/img/p2p/vector-1-5.svg"
           />
 
-          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-            <div className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-              <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroButtons />
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
@@ -52,12 +33,6 @@ export const P2P = () => {
                 бизнеса.
               </p>
             </div>
-
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center">
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
-                Записаться на презентацию
-              </div>
-            </button>
           </div>
 
           <div className="flex flex-col w-[304px] items-center justify-center absolute top-[108px] left-[802px] bg-green-50 rounded-[32px] overflow-hidden">

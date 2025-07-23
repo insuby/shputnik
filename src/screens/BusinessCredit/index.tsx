@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
@@ -41,27 +42,7 @@ export const BusinessCredit = () => {
             src="/img/businesscredit/vector-1-8.svg"
           />
 
-          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-            <div className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-              <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </div>
-
-            <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
-                </div>
-              </div>
-            </div>
-          </div>
+          <HeroButtons />
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
             <motion.div 
@@ -92,18 +73,6 @@ export const BusinessCredit = () => {
               </motion.p>
             </motion.div>
 
-            <motion.button 
-              ref={ref4}
-              initial={{ opacity: 0, y: 20 }}
-              animate={inView4 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
-              onClick={onClick}
-              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center"
-            >
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
-                Демо-версия
-              </div>
-            </motion.button>
           </div>
 
           <img

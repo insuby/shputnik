@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
@@ -158,11 +159,17 @@ export const BankCredit = () => {
       className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]"
     >
       <motion.div
-        variants={slideInTop}
+        ref={ref}
+        variants={containerVariants}
+        initial="hidden"
+        animate={isInView ? 'visible' : 'hidden'}
         className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
       >
         <motion.div
-          variants={fadeInUp}
+          ref={ref1}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView1 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden"
         >
           <img
@@ -171,36 +178,7 @@ export const BankCredit = () => {
             src="/img/bankcredit/vector-1-9.svg"
           />
 
-          <motion.div
-            variants={itemVariants}
-            className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
-          >
-            <motion.div
-              variants={scaleIn}
-              className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]"
-            >
-              <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </motion.div>
-
-            <motion.div
-              variants={scaleIn}
-              className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]"
-            >
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
+          <HeroButtons />
 
           <motion.div
             variants={slideInLeft}
@@ -226,17 +204,6 @@ export const BankCredit = () => {
                 банковского кредитования.
               </motion.p>
             </motion.div>
-
-            <motion.button
-              variants={scaleIn}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center"
-            >
-              <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
-                Записаться на презентацию
-              </div>
-            </motion.button>
           </motion.div>
 
           <motion.div
@@ -246,421 +213,10 @@ export const BankCredit = () => {
             <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
               <p className="relative self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] tracking-[0] leading-[29.9px]">
                 <span className="text-[#1c222f]">Ваш</span>
-
                 <span className="text-[#3573fc]">Банк</span>
               </p>
-
-              <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
-                  <div className="relative w-5 h-5 mt-[-737.92px] ml-[-27886.00px] bg-[100%_100%]">
-                    <img
-                      className="absolute w-[15px] h-4 top-0.5 left-[3px]"
-                      alt="Vector"
-                      src="/img/bankcredit/vector-10.svg"
-                    />
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Главная
-                  </div>
-                </div>
-
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5">
-                    <div className="relative w-[19px] h-[11px] top-1 left-px">
-                      <img
-                        className="absolute w-1.5 h-1.5 top-[3px] left-1.5"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-7.svg"
-                      />
-
-                      <img
-                        className="absolute w-[19px] h-[11px] top-0 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-11.svg"
-                      />
-
-                      <img
-                        className="absolute w-1 h-1 top-0 left-3.5"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-8.svg"
-                      />
-
-                      <img
-                        className="absolute w-1 h-1 top-[7px] left-3.5"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-44.svg"
-                      />
-
-                      <img
-                        className="absolute w-1 h-1 top-[7px] left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-21.svg"
-                      />
-
-                      <img
-                        className="absolute w-1 h-1 top-0 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-15.svg"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Финансы
-                  </div>
-                </div>
-
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5">
-                    <div className="relative w-[17px] h-3 top-1 left-px bg-[url(/img/bankcredit/vector-14.svg)] bg-[100%_100%]">
-                      <img
-                        className="absolute w-1 h-px top-[9px] left-[11px]"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-5.svg"
-                      />
-
-                      <img
-                        className="absolute w-0.5 h-px top-[9px] left-2"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-23.svg"
-                      />
-
-                      <img
-                        className="absolute w-[17px] h-px top-[3px] left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-18.svg"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Кредитные карты
-                  </div>
-                </div>
-
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5">
-                    <div className="relative w-4 h-4 top-0.5 left-0.5">
-                      <img
-                        className="absolute w-px h-1.5 top-[11px] left-2"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-16.svg"
-                      />
-
-                      <img
-                        className="absolute w-4 h-4 top-0 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-43.svg"
-                      />
-
-                      <img
-                        className="absolute w-[5px] h-0.5 top-2 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-17.svg"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Отчеты
-                  </div>
-                </div>
-
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5">
-                    <div className="relative w-4 h-[15px] top-0.5 left-0.5">
-                      <img
-                        className="absolute w-4 h-3 top-0.5 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-14.svg"
-                      />
-
-                      <img
-                        className="absolute w-[7px] h-1 top-0 left-1"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-24.svg"
-                      />
-
-                      <img
-                        className="absolute w-4 h-[3px] top-[7px] left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-19.svg"
-                      />
-
-                      <img
-                        className="absolute w-1 h-px top-1.5 left-1.5"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-5.svg"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Бизнес
-                  </div>
-                </div>
-
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5">
-                    <div className="relative w-4 h-[17px] top-px left-0.5">
-                      <img
-                        className="absolute w-[7px] h-[7px] top-[5px] left-1"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-7.svg"
-                      />
-
-                      <img
-                        className="absolute w-4 h-[17px] top-0 left-0"
-                        alt="Vector"
-                        src="/img/bankcredit/vector-20.svg"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] tracking-[0] leading-[20.9px]">
-                    Настройки
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-start gap-5 p-6 relative flex-1 self-stretch grow overflow-hidden">
-              <div className="inline-flex items-center gap-4 relative flex-[0_0_auto]">
-                <div className="relative w-12 h-12 rounded-3xl [background:url(/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
-
-                <p className="relative w-fit [font-family:'Inter',Helvetica] font-semibold text-gray-90 text-xl tracking-[0] leading-5 whitespace-nowrap">
-                  <span className="text-[#9ea7bb] leading-6">Привет,</span>
-
-                  <span className="text-[#1c222f] leading-6"> Давид</span>
-                </p>
-              </div>
-
-              <div className="flex flex-col w-[429px] items-start gap-[20.5px] relative flex-[0_0_auto] mb-[-24.00px] mr-[-50.00px]">
-                <div className="flex items-start justify-end gap-[11.96px] p-[17.94px] relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px]">
-                  <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                    <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                        Рекомендуемый оффер
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="relative self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] tracking-[0] leading-[14.9px]">
-                          Ставка
-                        </div>
-
-                        <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                          187, 000 ₽
-                        </div>
-                      </div>
-
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="relative self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] tracking-[0] leading-[14.9px]">
-                          Заработок
-                        </div>
-
-                        <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                          2, 560, 000 ₽
-                        </div>
-                      </div>
-
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="relative self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] tracking-[0] leading-[14.9px]">
-                          Окупаемость
-                        </div>
-
-                        <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                          6 - 8 месяцев
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-start justify-end gap-[11.96px] p-[17.94px] relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px]">
-                  <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                    <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                        Расходы
-                      </div>
-                    </div>
-
-                    <div className="h-40 items-end justify-between self-stretch w-full flex relative">
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[19px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-[86px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          01
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-4 relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          02
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-[95px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          03
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-12 relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          04
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[43px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          05
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-[87px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          06
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[18px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          07
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[21px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-[93px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          08
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          09
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[52px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-
-                          <div className="h-11 relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          10
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex items-start justify-end gap-[11.96px] p-[17.94px] relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px]">
-                  <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                    <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                        Персональный кредит
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="self-stretch mt-[-0.75px] font-normal text-[#9ea7bb] text-[10.5px] leading-[14.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                          Сумма
-                        </div>
-
-                        <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                          2, 640, 000 ₽
-                        </div>
-                      </div>
-
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="self-stretch mt-[-0.75px] font-normal text-[#9ea7bb] text-[10.5px] leading-[14.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                          Платеж
-                        </div>
-
-                        <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
-                          96, 000 ₽
-                        </div>
-                      </div>
-
-                      <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                        <div className="self-stretch mt-[-0.75px] font-normal text-[#9ea7bb] text-[10.5px] leading-[14.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                          Ставка
-                        </div>
-
-                        <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[14.9px] leading-[20.9px] relative text-gray-90 tracking-[0]">
-                          3,6%
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </motion.div>
-
-          <img
-            className="absolute w-[619px] h-[568px] top-[236px] left-[1049px]"
-            alt="Vector"
-            src="/img/bankcredit/vector-4-1.svg"
-          />
         </motion.div>
       </motion.div>
 
