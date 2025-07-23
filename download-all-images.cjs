@@ -269,6 +269,95 @@ const imagesToDownload = [
     url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-5.svg',
     localPath: 'public/img/bankcredit/vector-5.svg'
   },
+  // Дополнительные BankCredit изображения
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-23.svg',
+    localPath: 'public/img/bankcredit/vector-23.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-18.svg',
+    localPath: 'public/img/bankcredit/vector-18.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-16.svg',
+    localPath: 'public/img/bankcredit/vector-16.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-43.svg',
+    localPath: 'public/img/bankcredit/vector-43.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-17.svg',
+    localPath: 'public/img/bankcredit/vector-17.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-24.svg',
+    localPath: 'public/img/bankcredit/vector-24.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-19.svg',
+    localPath: 'public/img/bankcredit/vector-19.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-20.svg',
+    localPath: 'public/img/bankcredit/vector-20.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-4-1.svg',
+    localPath: 'public/img/bankcredit/vector-4-1.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-3.svg',
+    localPath: 'public/img/bankcredit/vector-1-3.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-4.svg',
+    localPath: 'public/img/bankcredit/vector-1-4.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-25.svg',
+    localPath: 'public/img/bankcredit/vector-25.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-26.svg',
+    localPath: 'public/img/bankcredit/vector-26.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-1.svg',
+    localPath: 'public/img/bankcredit/frame-19-1.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-3.svg',
+    localPath: 'public/img/bankcredit/frame-19-3.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-2.svg',
+    localPath: 'public/img/bankcredit/frame-19-2.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-29.svg',
+    localPath: 'public/img/bankcredit/vector-29.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-41.svg',
+    localPath: 'public/img/bankcredit/vector-41.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-6.svg',
+    localPath: 'public/img/bankcredit/frame-19-6.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-10.svg',
+    localPath: 'public/img/bankcredit/frame-19-10.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-5.svg',
+    localPath: 'public/img/bankcredit/frame-19-5.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-4.svg',
+    localPath: 'public/img/bankcredit/frame-19-4.svg'
+  },
 
   // Autocredit страница
   {
@@ -362,6 +451,28 @@ const imagesToDownload = [
   {
     url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-1.svg',
     localPath: 'public/img/zain-checker/vector-1-1.svg'
+  },
+
+  // BusinessCredit страница
+  {
+    url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-8.svg',
+    localPath: 'public/img/businesscredit/vector-1-8.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-3.svg',
+    localPath: 'public/img/businesscredit/vector-3.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-5.svg',
+    localPath: 'public/img/businesscredit/vector-5.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-6-1.svg',
+    localPath: 'public/img/businesscredit/vector-6-1.svg'
+  },
+  {
+    url: 'https://c.animaapp.com/mdextfbtMdhAnq/img/frame-18.svg',
+    localPath: 'public/img/businesscredit/frame-18.svg'
   }
 ];
 

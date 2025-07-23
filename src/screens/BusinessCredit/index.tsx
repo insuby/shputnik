@@ -38,7 +38,7 @@ export const BusinessCredit = () => {
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-8.svg"
+            src="/img/businesscredit/vector-1-8.svg"
           />
 
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
@@ -109,7 +109,7 @@ export const BusinessCredit = () => {
           <img
             className="absolute w-[817px] h-[600px] top-0 left-[559px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-3.svg"
+            src="/img/businesscredit/vector-3.svg"
           />
 
           <motion.div 
@@ -243,7 +243,7 @@ export const BusinessCredit = () => {
               <img
                 className="absolute w-[494px] h-[500px] top-[83px] left-[45px]"
                 alt="Vector"
-                src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-5.svg"
+                src="/img/businesscredit/vector-5.svg"
               />
 
               <div className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-[213px] left-0 bg-[#ffffff] rounded-[32px]">
@@ -291,14 +291,14 @@ export const BusinessCredit = () => {
               <img
                 className="absolute w-[540px] h-[313px] top-[148px] left-[91px]"
                 alt="Vector"
-                src="https://c.animaapp.com/mdextfbtMdhAnq/img/vector-6-1.svg"
+                src="/img/businesscredit/vector-6-1.svg"
               />
 
               <div className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[307px] left-[272px] bg-[#ffffff] rounded-[32px]">
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdextfbtMdhAnq/img/frame-18.svg"
+                  src="/img/businesscredit/frame-18.svg"
                 />
 
                 <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">

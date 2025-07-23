@@ -82,6 +82,29 @@ function replaceUrlsInFile(filePath) {
       { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-15.svg', to: '/img/bankcredit/vector-15.svg' },
       { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-14.svg', to: '/img/bankcredit/vector-14.svg' },
       { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-5.svg', to: '/img/bankcredit/vector-5.svg' },
+      // Дополнительные BankCredit изображения
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-23.svg', to: '/img/bankcredit/vector-23.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-18.svg', to: '/img/bankcredit/vector-18.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-16.svg', to: '/img/bankcredit/vector-16.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-43.svg', to: '/img/bankcredit/vector-43.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-17.svg', to: '/img/bankcredit/vector-17.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-24.svg', to: '/img/bankcredit/vector-24.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-19.svg', to: '/img/bankcredit/vector-19.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-20.svg', to: '/img/bankcredit/vector-20.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-4-1.svg', to: '/img/bankcredit/vector-4-1.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-3.svg', to: '/img/bankcredit/vector-1-3.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-4.svg', to: '/img/bankcredit/vector-1-4.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-25.svg', to: '/img/bankcredit/vector-25.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-26.svg', to: '/img/bankcredit/vector-26.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-1.svg', to: '/img/bankcredit/frame-19-1.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-3.svg', to: '/img/bankcredit/frame-19-3.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-2.svg', to: '/img/bankcredit/frame-19-2.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-29.svg', to: '/img/bankcredit/vector-29.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-41.svg', to: '/img/bankcredit/vector-41.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-6.svg', to: '/img/bankcredit/frame-19-6.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-10.svg', to: '/img/bankcredit/frame-19-10.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-5.svg', to: '/img/bankcredit/frame-19-5.svg' },
+      { from: 'https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-4.svg', to: '/img/bankcredit/frame-19-4.svg' },
     ];
 
     // Autocredit страница
@@ -125,6 +148,15 @@ function replaceUrlsInFile(filePath) {
       { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-1.svg', to: '/img/zain-checker/vector-1-1.svg' },
     ];
 
+    // BusinessCredit страница
+    const businesscreditReplacements = [
+      { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-1-8.svg', to: '/img/businesscredit/vector-1-8.svg' },
+      { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-3.svg', to: '/img/businesscredit/vector-3.svg' },
+      { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-5.svg', to: '/img/businesscredit/vector-5.svg' },
+      { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/vector-6-1.svg', to: '/img/businesscredit/vector-6-1.svg' },
+      { from: 'https://c.animaapp.com/mdextfbtMdhAnq/img/frame-18.svg', to: '/img/businesscredit/frame-18.svg' },
+    ];
+
     // Объединяем все замены
     const allReplacements = [
       ...p2pReplacements,
@@ -134,7 +166,8 @@ function replaceUrlsInFile(filePath) {
       ...feedbackReplacements,
       ...aboutReplacements,
       ...trustReplacements,
-      ...zainCheckerReplacements
+      ...zainCheckerReplacements,
+      ...businesscreditReplacements
     ];
 
     // Выполняем замены
@@ -177,7 +210,8 @@ const filesToProcess = [
   'src/widgets/feedback.tsx',
   'src/screens/About/index.tsx',
   'src/widgets/trust.tsx',
-  'src/widgets/zain-checker.tsx'
+  'src/widgets/zain-checker.tsx',
+  'src/screens/BusinessCredit/index.tsx'
 ];
 
 console.log('Начинаем замену внешних URL на локальные пути...');

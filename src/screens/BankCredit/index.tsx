@@ -142,13 +142,13 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-0.5 h-px top-[9px] left-2"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-23.svg"
+                        src="/img/bankcredit/vector-23.svg"
                       />
 
                       <img
                         className="absolute w-[17px] h-px top-[3px] left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-18.svg"
+                        src="/img/bankcredit/vector-18.svg"
                       />
                     </div>
                   </div>
@@ -164,19 +164,19 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-px h-1.5 top-[11px] left-2"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-16.svg"
+                        src="/img/bankcredit/vector-16.svg"
                       />
 
                       <img
                         className="absolute w-4 h-4 top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-43.svg"
+                        src="/img/bankcredit/vector-43.svg"
                       />
 
                       <img
                         className="absolute w-[5px] h-0.5 top-2 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-17.svg"
+                        src="/img/bankcredit/vector-17.svg"
                       />
                     </div>
                   </div>
@@ -198,13 +198,13 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-[7px] h-1 top-0 left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-24.svg"
+                        src="/img/bankcredit/vector-24.svg"
                       />
 
                       <img
                         className="absolute w-4 h-[3px] top-[7px] left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-19.svg"
+                        src="/img/bankcredit/vector-19.svg"
                       />
 
                       <img
@@ -232,7 +232,7 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-4 h-[17px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-20.svg"
+                        src="/img/bankcredit/vector-20.svg"
                       />
                     </div>
                   </div>
@@ -478,7 +478,7 @@ export const BankCredit = () => {
           <img
             className="absolute w-[619px] h-[568px] top-[236px] left-[1049px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-4-1.svg"
+            src="/img/bankcredit/vector-4-1.svg"
           />
         </div>
       </div>
@@ -492,7 +492,7 @@ export const BankCredit = () => {
               <img
                 className="absolute w-[623px] h-[448px] top-0 left-[53px]"
                 alt="Vector"
-                src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-3.svg"
+                src="/img/bankcredit/vector-1-3.svg"
               />
 
               <div className="relative self-stretch w-full h-80">
@@ -623,7 +623,7 @@ export const BankCredit = () => {
               <img
                 className="absolute w-[608px] h-[488px] top-0 left-0"
                 alt="Vector"
-                src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-1-4.svg"
+                src="/img/bankcredit/vector-1-4.svg"
               />
 
               <div className="relative self-stretch w-full h-80">
@@ -770,13 +770,13 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-4 h-4 top-0 left-1"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-25.svg"
+                        src="/img/bankcredit/vector-25.svg"
                       />
 
                       <img
                         className="absolute w-[23px] h-2 top-3.5 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-26.svg"
+                        src="/img/bankcredit/vector-26.svg"
                       />
                     </div>
                   </div>
@@ -792,7 +792,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-1.svg"
+                  src="/img/bankcredit/frame-19-1.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -808,7 +808,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-3.svg"
+                  src="/img/bankcredit/frame-19-3.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -821,7 +821,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-2.svg"
+                  src="/img/bankcredit/frame-19-2.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -925,13 +925,13 @@ export const BankCredit = () => {
                       <img
                         className="absolute w-4 h-4 top-[3px] left-[3px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-29.svg"
+                        src="/img/bankcredit/vector-29.svg"
                       />
 
                       <img
                         className="absolute w-[23px] h-[23px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdezuaqhB7xfWK/img/vector-41.svg"
+                        src="/img/bankcredit/vector-41.svg"
                       />
                     </div>
                   </div>
@@ -950,7 +950,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-6.svg"
+                  src="/img/bankcredit/frame-19-6.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -968,7 +968,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-10.svg"
+                  src="/img/bankcredit/frame-19-10.svg"
                 />
 
                 <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -982,7 +982,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-5.svg"
+                  src="/img/bankcredit/frame-19-5.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
@@ -996,7 +996,7 @@ export const BankCredit = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdezuaqhB7xfWK/img/frame-19-4.svg"
+                  src="/img/bankcredit/frame-19-4.svg"
                 />
 
                 <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
