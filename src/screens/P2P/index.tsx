@@ -1,3 +1,6 @@
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+
 import { Check10 } from '../../components/ui/check10.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -8,6 +11,12 @@ import { Zaim } from '../../widgets/zaim.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 
 export const P2P = () => {
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+
+  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
       <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
@@ -22,16 +31,28 @@ export const P2P = () => {
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]">
+              <motion.div
+                ref={ref1}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView1 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]"
+              >
                 P2P-кредитование
-              </div>
+              </motion.div>
 
-              <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7">
+              <motion.p
+                ref={ref2}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+              >
                 Ядро, интеграции с сервисами и источниками информации, готовые
                 модули и библиотеки - все это позволяет быстро развернуть
                 P2P-площадку кредитования заточенную под требования вашего
                 бизнеса.
-              </p>
+              </motion.p>
             </div>
           </div>
 
