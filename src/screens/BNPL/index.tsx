@@ -104,11 +104,11 @@ export const BNPL = () => {
         className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
       >
         <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-green-50 rounded-[32px] overflow-hidden">
-          <img
+        <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
-            alt="Vector"
+          alt="Vector"
             src="/img/bnpl/vector-1-5.svg"
-          />
+        />
 
           <HeroButtons />
 
@@ -136,7 +136,7 @@ export const BNPL = () => {
                 для банков, МФО, финтех-компаний и розничных сетей.
               </motion.p>
             </div>
-          </div>
+            </div>
 
           <motion.div 
             ref={ref5}
@@ -148,7 +148,7 @@ export const BNPL = () => {
             <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
               <div className="relative w-[264px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7">
                 График платежей
-              </div>
+          </div>
 
               <div className="w-[180px] font-normal text-[#7a86a2] text-sm leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
                 Договор: 12345456322
@@ -317,8 +317,8 @@ export const BNPL = () => {
                 Позволяет покупателям оплачивать товары в рассрочку. Подходит
                 для e-commerce-площадок и финансовых организаций, которые хотят
                 предлагать BNPL-платформу магазинам-партнёрам.
-              </p>
-            </div>
+          </p>
+        </div>
           </motion.div>
 
           <motion.div 
@@ -492,18 +492,18 @@ export const BNPL = () => {
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
                     <div className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
                       Авансовый платеж
-                    </div>
+                </div>
 
                     <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
                       14 500 ₽
-                    </div>
-                  </div>
+                </div>
+              </div>
 
-                  <img
+                    <img
                     className="relative self-stretch w-full h-px object-cover"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-140.svg"
-                  />
+                    />
 
                   <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
                     <div className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
@@ -517,7 +517,7 @@ export const BNPL = () => {
 
                   <img
                     className="relative self-stretch w-full h-px object-cover"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
 
@@ -531,9 +531,9 @@ export const BNPL = () => {
                     </div>
                   </div>
 
-                  <img
+                    <img
                     className="relative self-stretch w-full h-px object-cover"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
 
@@ -644,13 +644,13 @@ export const BNPL = () => {
                 <div className="relative w-[23px] h-[22px] top-[3px] left-[3px]">
                   <img
                     className="absolute w-4 h-4 top-0 left-1"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-7.svg"
-                  />
+                    />
 
-                  <img
+                    <img
                     className="absolute w-[23px] h-2 top-3.5 left-0"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-32.svg"
                   />
                 </div>
@@ -678,9 +678,9 @@ export const BNPL = () => {
             >
               <div className="relative w-7 h-7">
                 <div className="relative w-[22px] h-[21px] top-1 left-[3px]">
-                  <img
+                    <img
                     className="absolute w-1.5 h-[9px] top-1 left-2.5"
-                    alt="Vector"
+                      alt="Vector"
                     src="/img/bnpl/vector-42.svg"
                   />
 
@@ -694,14 +694,14 @@ export const BNPL = () => {
                     className="absolute w-[22px] h-[21px] top-0 left-0"
                     alt="Vector"
                     src="/img/bnpl/vector-44.svg"
-                  />
+                    />
+                  </div>
                 </div>
-              </div>
             </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               История предыдущих выдач
-            </div>
+                </div>
           </motion.div>
 
           <motion.div 
@@ -719,29 +719,29 @@ export const BNPL = () => {
               className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
             >
               <div className="relative w-7 h-7">
-                <img
+                    <img
                   className="absolute w-[21px] h-3.5 top-2.5 left-1"
-                  alt="Vector"
+                      alt="Vector"
                   src="/img/bnpl/vector-9.svg"
-                />
+                    />
 
-                <img
+                    <img
                   className="absolute w-[17px] h-0.5 top-1.5 left-[5px]"
-                  alt="Vector"
+                      alt="Vector"
                   src="/img/bnpl/vector.svg"
-                />
+                    />
 
-                <img
+                    <img
                   className="absolute w-3.5 h-0.5 top-[3px] left-[7px]"
-                  alt="Vector"
+                      alt="Vector"
                   src="/img/bnpl/vector.svg"
-                />
-              </div>
+                    />
+                  </div>
             </motion.div>
 
             <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
               Данные из сторонних сервисов
-            </div>
+                </div>
           </motion.div>
 
           <motion.div 
@@ -871,23 +871,23 @@ export const BNPL = () => {
               <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
                 <div className="relative w-5 h-5">
                   <div className="relative w-[19px] h-[11px] top-1 left-px">
-                    <img
+                  <img
                       className="absolute w-1.5 h-1.5 top-0.5 left-1.5"
-                      alt="Vector"
+                    alt="Vector"
                       src="/img/bnpl/vector-11.svg"
-                    />
+                  />
 
-                    <img
+                  <img
                       className="absolute w-[19px] h-[11px] top-0 left-0"
-                      alt="Vector"
+                    alt="Vector"
                       src="/img/bnpl/vector-4.svg"
-                    />
+                  />
 
-                    <img
+                  <img
                       className="absolute w-[19px] h-[11px] top-0 left-0"
-                      alt="Vector"
+                    alt="Vector"
                       src="/img/bnpl/vector-8.svg"
-                    />
+                  />
                   </div>
                 </div>
 
@@ -1205,67 +1205,67 @@ export const BNPL = () => {
               <div className="flex flex-col items-start gap-4 p-3 relative flex-1 grow">
                 <div className="w-[293px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
                   Социальные параметры
-                </div>
+              </div>
 
                 <div className="flex flex-col w-[293px] items-start gap-2 relative flex-[0_0_auto]">
                   <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
                     <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
                       <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
-                    </div>
+            </div>
 
                     <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
                       Персональная информация
-                    </div>
-                  </div>
-
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
-                    </div>
-
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
-                      Банк и адрес
-                    </div>
-                  </div>
-
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
-                    </div>
-
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
-                      Банк и адрес
-                    </div>
-                  </div>
-
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
-                    </div>
-
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
-                      Документы
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+              </div>
+
+                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Банк и адрес
+                    </div>
+            </div>
+
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+              </div>
+
+                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Банк и адрес
+            </div>
+          </div>
+
+                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
+                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
+                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                        </div>
+
+                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                      Документы
+                        </div>
+                      </div>
+                        </div>
+                      </div>
+                    </div>
+
             <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
               <div className="relative w-4 h-[18px] top-[3px] left-1">
-                <img
+                    <img
                   className="absolute w-0.5 h-[18px] top-0 left-[7px]"
                   alt="Vector"
                   src="/img/bnpl/vector-26.svg"
-                />
+                    />
 
                 <img
                   className="absolute w-4 h-[9px] top-2.5 left-0"
                   alt="Vector"
                   src="/img/bnpl/vector-28.svg"
                 />
-              </div>
-            </div>
+                  </div>
+                </div>
 
             <div className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
               <div className="inline-flex gap-2.5 p-4 bg-[#ffffff] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
@@ -1288,8 +1288,8 @@ export const BNPL = () => {
 
               <div className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
                 Проверка кредитной истории
+                </div>
               </div>
-            </div>
 
             <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
               <div className="relative w-4 h-[18px] top-[3px] left-1">
@@ -1304,8 +1304,8 @@ export const BNPL = () => {
                   alt="Vector"
                   src="/img/bnpl/vector-28.svg"
                 />
-              </div>
-            </div>
+                  </div>
+                </div>
 
             <div className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px]">
               <div className="inline-flex gap-2.5 p-4 bg-[#ffffff29] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
@@ -1315,15 +1315,15 @@ export const BNPL = () => {
                     alt="Vector"
                     src="/img/bnpl/vector-30.svg"
                   />
+                  </div>
                 </div>
-              </div>
 
               <div className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-2xl leading-8 relative tracking-[0]">
                 Одобрение заявки
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
         <div className="flex flex-col items-start justify-center gap-9 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
           <p className="w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[40px] leading-[48px] relative tracking-[0]">
