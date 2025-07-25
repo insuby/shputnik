@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 import Slider from 'react-slick';
 
@@ -14,10 +15,46 @@ import { Zaim } from '../../widgets/zaim.tsx';
 export const P2P = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
+  const ref10 = useRef(null);
+  const ref11 = useRef(null);
+  const ref12 = useRef(null);
+  const ref13 = useRef(null);
+  const ref14 = useRef(null);
+  const ref15 = useRef(null);
+  const ref16 = useRef(null);
+  const ref17 = useRef(null);
+  const ref18 = useRef(null);
+  const ref19 = useRef(null);
+  const ref20 = useRef(null);
   const sliderRef = useRef<Slider>(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();
@@ -573,11 +610,27 @@ export const P2P = () => {
             onClick={goToPrev}
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.25 12H3.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
-                    stroke-linejoin="round" />
-              <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
-                    stroke-linejoin="round" />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.25 12H3.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5 5.25L3.75 12L10.5 18.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
 
@@ -585,11 +638,27 @@ export const P2P = () => {
             onClick={goToNext}
             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
           >
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.75 12H20.25" stroke="#55607A" stroke-width="2" stroke-linecap="square"
-                    stroke-linejoin="round" />
-              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
-                    stroke-linejoin="round" />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.75 12H20.25"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.5 5.25L20.25 12L13.5 18.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
             </svg>
           </button>
         </div>
@@ -598,10 +667,8 @@ export const P2P = () => {
       <Feedback />
 
       <div className="h-[544px] gap-6 relative self-stretch w-full rounded-3xl flex items-center">
-        <div
-          className="flex flex-col items-start gap-8 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
-          <div
-            className="relative w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
+        <div className="flex flex-col items-start gap-8 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+          <div className="relative w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
             Готовый модуль расчетов
           </div>
 
@@ -952,85 +1019,218 @@ export const P2P = () => {
         />
 
         <div className="flex flex-col w-[640px] items-start gap-8 relative">
-          <div className="relative w-[530px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-5xl tracking-[0] leading-[60px]">
+          <motion.div
+            ref={ref3}
+            initial={{ opacity: 0, x: 80 }}
+            animate={inView3 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="relative w-[530px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-5xl tracking-[0] leading-[60px]"
+          >
             Гибкая настройка системы
-          </div>
+          </motion.div>
 
           <div className="flex flex-col items-start gap-5 self-stretch w-full relative flex-[0_0_auto]">
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref4}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView4 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref5}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView5 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <p className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.p
+                ref={ref6}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView6 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Бизнес-процессы под потребности вашего бизнеса
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref7}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView7 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref8}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView8 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <div className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.div
+                ref={ref9}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView9 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Правила расчета рейтинга
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref10}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref11}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView11 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <div className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.div
+                ref={ref12}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView12 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Условия выдачи займа
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref13}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView13 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref14}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView14 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <div className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.div
+                ref={ref15}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView15 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Автоматические сообщения
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref16}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView16 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref17}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView17 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <div className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.div
+                ref={ref18}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView18 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Интеллектуальная система формирования документов
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              ref={ref19}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView19 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref20}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView20 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <div className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView20 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Роли сотрудников в системе
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView20 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
+              className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={inView20 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
+                className="inline-flex items-center gap-2.5 p-1.5 relative flex-[0_0_auto] bg-[#ffffff1f] rounded-[100px]"
+              >
                 <Check10 className="!relative !w-4 !h-4" color="#ffffff" />
-              </div>
+              </motion.div>
 
-              <p className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <motion.p
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView20 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
+                className="flex-1 mt-[-1.00px] font-normal text-white text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              >
                 Управление правилами организации, контроль действий
                 пользователей, работа с черными списками
-              </p>
-            </div>
+              </motion.p>
+            </motion.div>
           </div>
         </div>
 
-        <div className="flex flex-col w-[324px] items-center justify-center gap-6 p-4 absolute top-[102px] left-[810px] bg-white rounded-[32px]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={inView20 ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+          className="flex flex-col w-[324px] items-center justify-center gap-6 p-4 absolute top-[102px] left-[810px] bg-white rounded-[32px]"
+        >
           <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
             <div className="flex flex-col items-start gap-5 pt-3 pb-4 px-4 relative self-stretch w-full flex-[0_0_auto]">
               <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
@@ -1136,7 +1336,7 @@ export const P2P = () => {
               Оформить займ
             </div>
           </button>
-        </div>
+        </motion.div>
 
         <img
           className="absolute w-[805px] h-[656px] top-0 left-[571px]"
@@ -1144,7 +1344,12 @@ export const P2P = () => {
           src="/img/p2p/vector-3-1.svg"
         />
 
-        <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[165px] left-[1054px] bg-white rounded-[32px]">
+        <motion.div
+          initial={{ opacity: 0, x: 50}}
+          animate={inView20 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.25 }}
+          className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[165px] left-[1054px] bg-white rounded-[32px]"
+        >
           <div className="inline-flex items-center gap-2.5 p-3 relative flex-[0_0_auto] rounded-[100px]">
             <div className="relative w-[184px] h-[184px]">
               <div className="relative h-[184px]">
@@ -1236,7 +1441,7 @@ export const P2P = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <RoleStructure />

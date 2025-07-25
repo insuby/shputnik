@@ -40,8 +40,6 @@ export const BankCredit = () => {
   const refAuto4 = useRef<HTMLDivElement>(null);
 
   const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-100px' });
-  const inViewAuto2 = useInView(refAuto2, { once: true, margin: '-100px' });
-  const inViewAuto3 = useInView(refAuto3, { once: true, margin: '-100px' });
   const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-100px' });
 
   // Добавляем refs для секций "Система управления" и "Транзакции"
@@ -50,8 +48,6 @@ export const BankCredit = () => {
   const refSystem3 = useRef<HTMLDivElement>(null);
   const refSystem4 = useRef<HTMLDivElement>(null);
   const inViewSystem1 = useInView(refSystem1, { once: true, margin: '-100px' });
-  const inViewSystem2 = useInView(refSystem2, { once: true, margin: '-100px' });
-  const inViewSystem3 = useInView(refSystem3, { once: true, margin: '-100px' });
   const inViewSystem4 = useInView(refSystem4, { once: true, margin: '-100px' });
 
   const containerVariants = {
@@ -143,43 +139,47 @@ export const BankCredit = () => {
             src="/img/bankcredit/vector-1-9.svg"
           />
 
-          <HeroButtons />
+          <HeroButtons>
+            <motion.div
+              variants={slideInLeft}
+              className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+            >
+              <div
+                className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  variants={slideInLeft}
+                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+                >
+                  Банковское кредитование
+                </motion.div>
+
+                <motion.p
+                  variants={fadeInUp}
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+                >
+                  Программное обеспечение для автоматизации банковского
+                  кредитования. Программное обеспечение для автоматизации
+                  банковского кредитования.
+                </motion.p>
+              </div>
+            </motion.div>
+          </HeroButtons>
+
 
           <motion.div
-            variants={slideInLeft}
-            className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
-          >
-            <motion.div
-              variants={itemVariants}
-              className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
-            >
-              <motion.div
-                variants={fadeInUp}
-                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
-              >
-                Банковское кредитование
-              </motion.div>
-
-              <motion.p
-                variants={fadeInUp}
-                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
-              >
-                Программное обеспечение для автоматизации банковского
-                кредитования. Программное обеспечение для автоматизации
-                банковского кредитования.
-              </motion.p>
-            </motion.div>
-          </motion.div>
-
-          <div className="flex w-[669px] h-[538px] items-center absolute top-[152px] left-[720px] bg-[#f6f8fd] rounded-[24px_0px_0px_0px] overflow-hidden">
+            variants={slideInRight}
+            className="flex w-[669px] h-[538px] items-center absolute top-[152px] left-[720px] bg-[#f6f8fd] rounded-[24px_0px_0px_0px] overflow-hidden">
             <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
-              <p className="relative self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] tracking-[0] leading-[29.9px]">
+              <p
+                className="relative self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] tracking-[0] leading-[29.9px]">
                 <span className="text-[#1c222f]">Ваш</span>
                 <span className="text-[#3573fc]">Банк</span>
               </p>
 
               <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
+                <div
+                  className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
                   <div className="relative w-5 h-5 bg-[100%_100%]">
                     <img
                       className="absolute w-[15px] h-4 top-0.5 left-[3px]"
@@ -510,7 +510,7 @@ export const BankCredit = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
 
