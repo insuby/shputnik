@@ -136,27 +136,32 @@ export const MicroCredit = () => {
             src="/img/vector-1-5.svg"
           />
 
-          <HeroButtons buttonText="Узнать больше" />
+          <HeroButtons buttonText="Узнать больше">
 
-          <motion.div
-            ref={ref3}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView3 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
-          >
-            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <div className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
-                Микрофинансовое кредитование
+            <motion.div
+              ref={ref3}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView3 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+            >
+              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+                <div
+                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]">
+                  Микрофинансовое кредитование
+                </div>
+
+                <p
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
+                  Программа для автоматизации всех бизнес-процессов МФО онлайн и в
+                  точках продаж. Программа для автоматизации всех бизнес-процессов
+                  МФО онлайн и в точках продаж.
+                </p>
               </div>
+            </motion.div>
 
-              <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
-                Программа для автоматизации всех бизнес-процессов МФО онлайн и в
-                точках продаж. Программа для автоматизации всех бизнес-процессов
-                МФО онлайн и в точках продаж.
-              </p>
-            </div>
-          </motion.div>
+          </HeroButtons>
+
 
           <motion.div
             ref={ref4}
@@ -166,8 +171,10 @@ export const MicroCredit = () => {
             className="flex w-[324px] absolute top-[142px] left-[786px] flex-col items-center justify-center gap-6 p-4 bg-[#ffffff] rounded-[32px]"
           >
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex flex-col items-start gap-5 pt-3 pb-4 px-4 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              <div
+                className="flex flex-col items-start gap-5 pt-3 pb-4 px-4 relative self-stretch w-full flex-[0_0_auto]">
+                <div
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
                   Оформить заявку
                 </div>
 

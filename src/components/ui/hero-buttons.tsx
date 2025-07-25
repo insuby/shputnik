@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+
+import { ReactNode, useRef } from 'react';
 
 import { useFeedbackForm } from '../../widgets/feedback-form';
 
@@ -7,7 +8,12 @@ type HeroButtonsProps = {
   buttonText?: string;
 };
 
-export const HeroButtons = ({ buttonText = 'Записаться на презентацию' }: HeroButtonsProps) => {
+export const HeroButtons = ({
+  buttonText = 'Записаться на презентацию',
+  children,
+}: HeroButtonsProps & {
+  children: ReactNode;
+}) => {
   const { setIsOpen } = useFeedbackForm();
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
@@ -57,6 +63,8 @@ export const HeroButtons = ({ buttonText = 'Записаться на презе
         </motion.div>
       </div>
 
+      {children}
+
       <motion.button
         ref={ref3}
         initial={{ opacity: 0, scale: 0.8 }}
@@ -73,4 +81,4 @@ export const HeroButtons = ({ buttonText = 'Записаться на презе
       </motion.button>
     </>
   );
-}; 
+};

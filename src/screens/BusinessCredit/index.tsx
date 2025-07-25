@@ -45,37 +45,37 @@ export const BusinessCredit = () => {
             src="/img/businesscredit/vector-1-8.svg"
           />
 
-          <HeroButtons />
-
-          <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-            <motion.div
-              ref={ref1}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView1 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
-            >
+          <HeroButtons>
+            <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
               <motion.div
-                ref={ref2}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView2 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+                ref={ref1}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView1 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
               >
-                Кредитование бизнеса
-              </motion.div>
+                <motion.div
+                  ref={ref2}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+                >
+                  Кредитование бизнеса
+                </motion.div>
 
-              <motion.p
-                ref={ref3}
-                initial={{ opacity: 0, y: 30 }}
-                animate={inView3 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7"
-              >
-                Полная автоматизация кредитования юридических лиц.
-              </motion.p>
-            </motion.div>
-          </div>
+                <motion.p
+                  ref={ref3}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7"
+                >
+                  Полная автоматизация кредитования юридических лиц.
+                </motion.p>
+              </motion.div>
+            </div>
+          </HeroButtons>
 
           <img
             className="absolute w-[817px] h-[600px] top-0 left-[559px]"
@@ -89,20 +89,23 @@ export const BusinessCredit = () => {
             <div className="relative w-[631px] h-[583px]">
               <motion.div
                 ref={ref4}
-                initial={{ x: 500 }}
-                animate={inView4 ? { x: 0 } : {}}
-                transition={{ duration: 0.225, ease: 'easeOut' }}
+                initial={{ opacity: 0, x: 50 }}
+                animate={inView4 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
                 className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-0 left-[108px] bg-[#ffffff] rounded-[32px]"
               >
                 <div className="flex flex-col items-center justify-center gap-[14.04px] relative flex-1 grow">
-                  <div className="flex items-center justify-center gap-[8.78px] relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative flex-1 mt-[-0.88px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[17.6px] tracking-[0] leading-[24.6px]">
+                  <div
+                    className="flex items-center justify-center gap-[8.78px] relative self-stretch w-full flex-[0_0_auto]">
+                    <div
+                      className="relative flex-1 mt-[-0.88px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[17.6px] tracking-[0] leading-[24.6px]">
                       Расходы
                     </div>
                   </div>
 
                   <div className="flex h-[187.85px] items-end justify-between relative self-stretch w-full">
-                    <div className="inline-flex flex-col items-center justify-end gap-[9.39px] relative self-stretch flex-[0_0_auto]">
+                    <div
+                      className="inline-flex flex-col items-center justify-end gap-[9.39px] relative self-stretch flex-[0_0_auto]">
                       <div className="flex flex-col w-[9.39px] items-start justify-end gap-[2.35px] relative flex-1 grow bg-gray-10 rounded-[117.41px] overflow-hidden">
                         <div className="h-[22.31px] relative self-stretch w-full bg-[#cbc1f8] rounded-[117.41px]" />
 
@@ -214,16 +217,16 @@ export const BusinessCredit = () => {
               </motion.div>
 
               <img
-                className="absolute w-[494px] h-[500px] top-[83px] left-[45px]"
+                className="absolute w-[494px] h-[50px] top-[83px] left-[45px]"
                 alt="Vector"
                 src="/img/businesscredit/vector-5.svg"
               />
 
               <motion.div
-                ref={ref4}
-                initial={{ x: -500 }}
-                animate={inView4 ? { x: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+                ref={ref5}
+                initial={{ opacity: 0, x: -50 }}
+                animate={inView5 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
                 className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-[213px] left-0 bg-[#ffffff] rounded-[32px]"
               >
                 <div className="flex flex-col items-center justify-center gap-[14.04px] relative flex-1 grow">
@@ -275,9 +278,9 @@ export const BusinessCredit = () => {
 
               <motion.div
                 ref={ref6}
-                initial={{ y: 500 }}
-                animate={inView6 ? { y: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut' }}
+                initial={{ opacity: 0, x: 50 }}
+                animate={inView6 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4   }}
                 className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[307px] left-[272px] bg-[#ffffff] rounded-[32px]"
               >
                 <img
