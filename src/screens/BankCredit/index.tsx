@@ -15,9 +15,6 @@ import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const BankCredit = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
-
   // Добавляем отдельные refs для каждого блока в секции "Настройте свой процесс"
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
@@ -25,6 +22,8 @@ export const BankCredit = () => {
   const ref4 = useRef<HTMLDivElement>(null);
   const ref5 = useRef<HTMLDivElement>(null);
   const ref6 = useRef<HTMLDivElement>(null);
+  const ref15 = useRef<HTMLDivElement>(null);
+  const ref16 = useRef<HTMLDivElement>(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
@@ -32,6 +31,8 @@ export const BankCredit = () => {
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
   const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
 
   // Добавляем refs для секции "Автоматизация различных кредитных продуктов"
   const refAuto1 = useRef<HTMLDivElement>(null);
@@ -132,20 +133,25 @@ export const BankCredit = () => {
           />
 
           <HeroButtons>
-            <motion.div
-              variants={slideInLeft}
+            <div
               className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
             >
               <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
                 <motion.div
-                  variants={slideInLeft}
+                  ref={ref15}
+                  initial={{ opacity: 0, x: -40 }}
+                  animate={inView15 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
                   className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
                 >
                   Банковское кредитование
                 </motion.div>
 
                 <motion.p
-                  variants={fadeInUp}
+                  ref={ref16}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.4, ease: 'easeOut' }}
                   className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
                 >
                   Программное обеспечение для автоматизации банковского
@@ -153,7 +159,7 @@ export const BankCredit = () => {
                   банковского кредитования.
                 </motion.p>
               </div>
-            </motion.div>
+            </div>
           </HeroButtons>
 
           <motion.div

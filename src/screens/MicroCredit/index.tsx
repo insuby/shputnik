@@ -552,7 +552,6 @@ export const MicroCredit = () => {
               </svg>
             </button>
           </div>
-          ;
         </div>
       </motion.div>
       <motion.div
@@ -589,13 +588,12 @@ export const MicroCredit = () => {
           </div>
         </button>
       </motion.div>
-      ;
-      <Zaim />;
-      <Analytics />;
-      <Integrations />;
-      <EmployeeWork />;
-      <RoleStructure />;
-      <Trust />;
+      <Zaim />
+      <Analytics />
+      <Integrations />
+      <EmployeeWork />
+      <RoleStructure />
+      <Trust />
     </div>
   );
 };
