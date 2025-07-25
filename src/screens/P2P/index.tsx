@@ -14,9 +14,18 @@ import { Zaim } from '../../widgets/zaim.tsx';
 export const P2P = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
+  const sliderRef = useRef<Slider>(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
+
+  const goToPrev = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  const goToNext = () => {
+    sliderRef.current?.slickNext();
+  };
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
@@ -379,6 +388,7 @@ export const P2P = () => {
 
           <div className="w-[915px]">
             <Slider
+              ref={sliderRef}
               dots={false}
               infinite={true}
               speed={500}
@@ -386,6 +396,7 @@ export const P2P = () => {
               slidesToScroll={1}
               centerMode={true}
               centerPadding="0px"
+              arrows={false}
               className="p2p-slider"
             >
               <div className="px-3">
@@ -556,18 +567,40 @@ export const P2P = () => {
           </div>
         </div>
 
-        <img
-          className="absolute w-[120px] h-14 top-[512px] left-[725px]"
-          alt="Frame"
-          src="/img/p2p/frame-17.svg"
-        />
+        <div className="absolute w-[120px] h-14 top-[512px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
+          <button
+            onClick={goToPrev}
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.25 12H3.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+              <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <button
+            onClick={goToNext}
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.75 12H20.25" stroke="#55607A" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+              <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#55607A" stroke-width="2" stroke-linecap="square"
+                    stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
       </div>
 
       <Feedback />
 
       <div className="h-[544px] gap-6 relative self-stretch w-full rounded-3xl flex items-center">
-        <div className="flex flex-col items-start gap-8 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
-          <div className="relative w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
+        <div
+          className="flex flex-col items-start gap-8 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+          <div
+            className="relative w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
             Готовый модуль расчетов
           </div>
 
