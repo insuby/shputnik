@@ -495,7 +495,7 @@ export const Autocredit = () => {
           <Marquee
             fade
             className="h-[609px] flex gap-1 w-full relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px]"
-            innerClassName="!w-full"
+            innerClassName="!w-[750px]"
           >
             <div className="flex flex-col w-60 items-center justify-center gap-5 px-4 py-6 absolute top-44 left-0 bg-[#ffffff] rounded-[32px]">
               <div className="flex flex-col items-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
