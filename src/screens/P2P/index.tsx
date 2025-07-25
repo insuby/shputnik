@@ -431,8 +431,7 @@ export const P2P = () => {
                 </p>
               </div>
             </div>
-
-            <div className="flex flex-col w-[442px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+            <div className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
               <img
                 className="absolute w-[377px] h-[406px] top-0 left-0"
                 alt="Vector"
