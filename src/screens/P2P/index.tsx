@@ -370,6 +370,7 @@ export const P2P = () => {
         </div>
       </div>
       <Advantages />
+
       <div className="relative w-[1376px] h-[568px]">
         <div className="w-[1472px] gap-[68px] absolute top-0 left-0 flex items-center">
           <div className="flex flex-col w-[496px] items-start justify-center gap-8 relative">
