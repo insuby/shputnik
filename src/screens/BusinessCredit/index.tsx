@@ -6,7 +6,6 @@ import { useRef } from 'react';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
@@ -15,8 +14,6 @@ import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const BusinessCredit = () => {
-  const { setIsOpen } = useFeedbackForm();
-
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -30,10 +27,6 @@ export const BusinessCredit = () => {
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
   const inView6 = useInView(ref5, { once: true, margin: '-100px' });
-
-  const onClick = () => {
-    setIsOpen(true);
-  };
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">

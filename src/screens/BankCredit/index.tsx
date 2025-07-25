@@ -122,16 +122,8 @@ export const BankCredit = () => {
   };
 
   return (
-    <div
-      className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]"
-    >
-      <motion.div
-        ref={ref}
-        variants={containerVariants}
-        initial="hidden"
-        animate={isInView ? 'visible' : 'hidden'}
-        className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
-      >
+    <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
+      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
@@ -144,9 +136,7 @@ export const BankCredit = () => {
               variants={slideInLeft}
               className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
             >
-              <div
-                className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
-              >
+              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
                 <motion.div
                   variants={slideInLeft}
                   className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
@@ -166,20 +156,18 @@ export const BankCredit = () => {
             </motion.div>
           </HeroButtons>
 
-
           <motion.div
             variants={slideInRight}
-            className="flex w-[669px] h-[538px] items-center absolute top-[152px] left-[720px] bg-[#f6f8fd] rounded-[24px_0px_0px_0px] overflow-hidden">
+            className="flex w-[669px] h-[538px] items-center absolute top-[152px] left-[720px] bg-[#f6f8fd] rounded-[24px_0px_0px_0px] overflow-hidden"
+          >
             <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
-              <p
-                className="relative self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] tracking-[0] leading-[29.9px]">
+              <p className="relative self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] tracking-[0] leading-[29.9px]">
                 <span className="text-[#1c222f]">Ваш</span>
                 <span className="text-[#3573fc]">Банк</span>
               </p>
 
               <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div
-                  className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
+                <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
                   <div className="relative w-5 h-5 bg-[100%_100%]">
                     <img
                       className="absolute w-[15px] h-4 top-0.5 left-[3px]"
@@ -512,14 +500,14 @@ export const BankCredit = () => {
             </div>
           </motion.div>
         </div>
-      </motion.div>
+      </div>
 
       <Advantages />
 
       <div className="flex flex-col w-[1376px] items-center justify-center gap-9 relative flex-[0_0_auto] bg-[#ffffff]">
         <div className="flex flex-col items-center justify-center gap-[68px] relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-            <motion.div 
+            <motion.div
               ref={refSystem1}
               variants={slideInLeft}
               initial="hidden"
@@ -670,7 +658,7 @@ export const BankCredit = () => {
                 </motion.div>
               </div>
             </motion.div>
-            <motion.div 
+            <motion.div
               ref={refSystem4}
               variants={slideInRight}
               initial="hidden"

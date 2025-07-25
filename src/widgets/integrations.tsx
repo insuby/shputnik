@@ -1,9 +1,15 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
 
 export const Integrations = () =>  {
   const ref1 = useRef(null);
+  const { setIsOpen } = useFeedbackForm();
+
+  const handleTryClick = () => {
+    setIsOpen(true);
+  };
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
@@ -241,7 +247,8 @@ export const Integrations = () =>  {
         </div>
 
         <button
-          className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-blue-50 items-center justify-center gap-2.5 rounded-[100px]">
+          onClick={handleTryClick}
+          className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-blue-50 items-center justify-center gap-2.5 rounded-[100px] cursor-pointer">
           <div
             className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
             Попробовать

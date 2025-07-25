@@ -8,18 +8,14 @@ import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
 
 export const Autocredit = () => {
-  const { setIsOpen } = useFeedbackForm();
-  const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
   const ref7 = useRef(null);
@@ -27,10 +23,8 @@ export const Autocredit = () => {
   const ref9 = useRef(null);
   const ref10 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
   const inView6 = useInView(ref6, { once: true, margin: '-100px' });
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
@@ -38,19 +32,9 @@ export const Autocredit = () => {
   const inView9 = useInView(ref9, { once: true, margin: '-100px' });
   const inView10 = useInView(ref10, { once: true, margin: '-100px' });
 
-  const onClick = () => {
-    setIsOpen(true);
-  };
-
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <motion.div
-        ref={ref1}
-        initial={{ opacity: 0, y: 50 }}
-        animate={inView1 ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]"
-      >
+      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col h-[628px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
@@ -461,7 +445,7 @@ export const Autocredit = () => {
             src="/img/autocredit/vector-4-3.svg"
           />
         </div>
-      </motion.div>
+      </div>
 
       <Advantages />
 

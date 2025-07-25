@@ -1,5 +1,7 @@
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
+
 import { Check10 } from '../components/ui/check10.tsx';
 
 export const ZaimChecker = () => {
@@ -271,7 +273,7 @@ export const ZaimChecker = () => {
 
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
             <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-              <motion.div 
+              <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, x: 80 }}
                 animate={inView1 ? { opacity: 1, x: 0 } : {}}
@@ -281,7 +283,7 @@ export const ZaimChecker = () => {
                 Проверка заемщика
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 ref={ref2}
                 initial={{ opacity: 0, y: 80 }}
                 animate={inView2 ? { opacity: 1, y: 0 } : {}}
@@ -295,14 +297,14 @@ export const ZaimChecker = () => {
             </div>
 
             <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-              <motion.div 
+              <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref4}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView4 ? { opacity: 1, scale: 1 } : {}}
@@ -317,14 +319,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref5}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView5 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref6}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView6 ? { opacity: 1, scale: 1 } : {}}
@@ -339,14 +341,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref7}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView7 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref8}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView8 ? { opacity: 1, scale: 1 } : {}}
@@ -361,14 +363,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref9}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView9 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref10}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView10 ? { opacity: 1, scale: 1 } : {}}
@@ -383,14 +385,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref11}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView11 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref12}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView12 ? { opacity: 1, scale: 1 } : {}}
@@ -405,14 +407,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref13}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView13 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref14}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
@@ -445,7 +447,7 @@ export const ZaimChecker = () => {
 
           <div className="flex flex-col w-[520px] items-start gap-6 relative flex-[0_0_auto]">
             <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-              <motion.div 
+              <motion.div
                 ref={ref15}
                 initial={{ opacity: 0, x: -80 }}
                 animate={inView15 ? { opacity: 1, x: 0 } : {}}
@@ -455,7 +457,7 @@ export const ZaimChecker = () => {
                 Платежные системы
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 ref={ref16}
                 initial={{ opacity: 0, y: -80 }}
                 animate={inView16 ? { opacity: 1, y: 0 } : {}}
@@ -470,14 +472,14 @@ export const ZaimChecker = () => {
             </div>
 
             <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-              <motion.div 
+              <motion.div
                 ref={ref17}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView17 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref18}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView18 ? { opacity: 1, scale: 1 } : {}}
@@ -492,14 +494,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref19}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView19 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref20}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView20 ? { opacity: 1, scale: 1 } : {}}
@@ -514,14 +516,14 @@ export const ZaimChecker = () => {
                 </p>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref21}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView21 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref22}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView22 ? { opacity: 1, scale: 1 } : {}}
@@ -536,14 +538,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref23}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView23 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref24}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView24 ? { opacity: 1, scale: 1 } : {}}
@@ -558,14 +560,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref25}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView25 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref26}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView26 ? { opacity: 1, scale: 1 } : {}}
@@ -580,14 +582,14 @@ export const ZaimChecker = () => {
                 </div>
               </motion.div>
 
-              <motion.div 
+              <motion.div
                 ref={ref27}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView27 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
                 className="flex w-[520px] h-7 items-center justify-center gap-6 relative"
               >
-                <motion.div 
+                <motion.div
                   ref={ref28}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView28 ? { opacity: 1, scale: 1 } : {}}
