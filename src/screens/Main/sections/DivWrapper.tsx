@@ -1,8 +1,20 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { RoutesPath } from '../../../routes-path.tsx';
 
 
 export const DivWrapper = () => {
+  const navigate = useNavigate();
+  
+  const handleBankCreditClick = () => {
+    navigate(RoutesPath.BANKCREDIT);
+  };
+
+  const handleAutocreditClick = () => {
+    navigate(RoutesPath.AUTOCREDIT);
+  };
+
   const ref14 = useRef<HTMLParagraphElement>(null);
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
@@ -25,9 +37,8 @@ export const DivWrapper = () => {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 whitespace-nowrap relative tracking-[0]"
       >
-        <span className="font-medium text-[#1c222f] leading-[0.1px]">К</span>
         <span className="font-medium text-[#1c222f] leading-[48px]">
-          лассическое кредитование
+          Классическое кредитование
         </span>
       </motion.p>
       <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
@@ -381,6 +392,7 @@ export const DivWrapper = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
             className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
@@ -418,6 +430,7 @@ export const DivWrapper = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleBankCreditClick}
             className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
@@ -455,6 +468,7 @@ export const DivWrapper = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleAutocreditClick}
             className="group flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">

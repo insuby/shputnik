@@ -1,8 +1,15 @@
 import { motion, useInView } from 'framer-motion';
-
 import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { RoutesPath } from '../../../routes-path.tsx';
 
 export const Div = () => {
+  const navigate = useNavigate();
+  
+  const handleBNPLClick = () => {
+    navigate(RoutesPath.BNPL);
+  };
+
   const ref20 = useRef<HTMLSpanElement>(null);
   const ref21 = useRef<HTMLSpanElement>(null);
   const ref22 = useRef<HTMLDivElement>(null);
@@ -60,6 +67,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleBNPLClick}
             className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px]">
@@ -160,6 +168,7 @@ export const Div = () => {
                 initial={{ opacity: 0, x: -40 }}
                 animate={inView28 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
+
                 className="mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-2xl leading-8 relative self-stretch text-gray-90 tracking-[0]"
               >
                 BNPL
@@ -203,6 +212,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleBNPLClick}
             className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
           >
             <div className="relative flex-1 self-stretch w-full grow rounded-[32px]">

@@ -2,12 +2,19 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
+import { useNavigate } from 'react-router-dom';
+import { RoutesPath } from '../../../routes-path.tsx';
 
 export const FrameWrapper = () => {
   const { setIsOpen } = useFeedbackForm();
+  const navigate = useNavigate();
   
   const onClick = () => {
     setIsOpen(true);
+  };
+
+  const handleMicroCreditClick = () => {
+    navigate(RoutesPath.MICROCREDIT);
   };
 
   const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
@@ -51,6 +58,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
+          onClick={handleMicroCreditClick}
           className="flex flex-col items-start justify-between p-12 relative self-stretch bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
         >
           <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">

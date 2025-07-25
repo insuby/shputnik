@@ -1,7 +1,19 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { RoutesPath } from '../../../routes-path.tsx';
 
 export const SectionComponentNode = () => {
+  const navigate = useNavigate();
+  
+  const handleP2PClick = () => {
+    navigate(RoutesPath.P2P);
+  };
+
+  const handleIslamFinansClick = () => {
+    navigate(RoutesPath.ISLAMFINANCE);
+  };
+
   const ref32 = useRef<HTMLSpanElement>(null);
   const ref33 = useRef<HTMLSpanElement>(null);
   const ref34 = useRef<HTMLDivElement>(null);
@@ -330,6 +342,7 @@ export const SectionComponentNode = () => {
             initial={{ opacity: 0, x: -40 }}
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleP2PClick}
             className="group flex items-center gap-8 p-10 w-full mt-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
@@ -367,6 +380,7 @@ export const SectionComponentNode = () => {
             initial={{ opacity: 0, x: 40 }}
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
+            onClick={handleIslamFinansClick}
             className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-3xl overflow-hidden"
           >
             <div className="flex flex-col items-start gap-2 relative flex-1 grow">
