@@ -447,9 +447,9 @@ export const ZaimChecker = () => {
             <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
               <motion.div 
                 ref={ref15}
-                initial={{ opacity: 0, x: 80 }}
+                initial={{ opacity: 0, x: -80 }}
                 animate={inView15 ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.8, ease: 'easeOut' }}
+                transition={{ duration: 0.9, ease: 'easeOut' }}
                 className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]"
               >
                 Платежные системы
@@ -457,9 +457,9 @@ export const ZaimChecker = () => {
 
               <motion.p 
                 ref={ref16}
-                initial={{ opacity: 0, y: 80 }}
+                initial={{ opacity: 0, y: -80 }}
                 animate={inView16 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
+                transition={{ duration: 0.9, ease: 'easeOut', delay: 0.1 }}
                 className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7"
               >
                 Интеграции с большинством платежных систем полностью
