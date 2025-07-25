@@ -49,7 +49,6 @@ export const BankCredit = () => {
   const refSystem2 = useRef<HTMLDivElement>(null);
   const refSystem3 = useRef<HTMLDivElement>(null);
   const refSystem4 = useRef<HTMLDivElement>(null);
-
   const inViewSystem1 = useInView(refSystem1, { once: true, margin: '-100px' });
   const inViewSystem2 = useInView(refSystem2, { once: true, margin: '-100px' });
   const inViewSystem3 = useInView(refSystem3, { once: true, margin: '-100px' });
@@ -213,7 +212,7 @@ export const BankCredit = () => {
 
               <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
                 <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
-                  <div className="relative w-5 h-5 mt-[-737.92px] ml-[-27886.00px] bg-[100%_100%]">
+                  <div className="relative w-5 h-5 bg-[100%_100%]">
                     <img
                       className="absolute w-[15px] h-4 top-0.5 left-[3px]"
                       alt="Vector"
@@ -441,65 +440,123 @@ export const BankCredit = () => {
 
                 <div className="flex items-start justify-end gap-[11.96px] p-[17.94px] relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px]">
                   <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                    <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
+                    <div
+                      className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
+                      <div
+                        className="relative flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
                         Расходы
                       </div>
                     </div>
 
                     <div className="h-40 items-end justify-between self-stretch w-full flex relative">
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[19px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-                          <div className="h-[86px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-[19px] relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-[86px] relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
                         </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          01
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-4 relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          02
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">01
                         </div>
                       </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-                          <div className="h-[95px] relative self-stretch w-full bg-blue-50 rounded-[100px]" />
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-4 relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]"></div>
                         </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          03
-                        </div>
-                      </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]" />
-                          <div className="h-12 relative self-stretch w-full bg-blue-50 rounded-[100px]" />
-                        </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          04
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">02
                         </div>
                       </div>
-
-                      <div className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
-                        <div className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
-                          <div className="h-[43px] relative self-stretch w-full bg-blue-30 rounded-[100px]" />
-                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]" />
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-[95px] relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
                         </div>
-
-                        <div className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">
-                          05
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">03
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-12 relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">04
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-[43px] relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">05
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-[87px] relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">06
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-[18px] relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">07
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-[21px] relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-[93px] relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">08
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="relative self-stretch w-full h-[29px] bg-blue-30 rounded-[100px]"></div>
+                          <div className="relative self-stretch w-full h-[67px] bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">09
+                        </div>
+                      </div>
+                      <div
+                        className="inline-flex flex-col items-center justify-end gap-2 relative self-stretch flex-[0_0_auto]">
+                        <div
+                          className="flex flex-col w-2 items-start justify-end gap-0.5 relative flex-1 grow bg-gray-10 rounded-[100px] overflow-hidden">
+                          <div className="h-[52px] relative self-stretch w-full bg-blue-30 rounded-[100px]"></div>
+                          <div className="h-11 relative self-stretch w-full bg-blue-50 rounded-[100px]"></div>
+                        </div>
+                        <div
+                          className="w-4 opacity-50 text-[10.5px] text-center leading-[14.9px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 tracking-[0]">10
                         </div>
                       </div>
                     </div>
@@ -519,9 +576,11 @@ export const BankCredit = () => {
         variants={slideInRight}
         className="flex flex-col w-[1376px] items-center justify-center gap-9 relative flex-[0_0_auto] bg-[#ffffff]"
       >
-        <div className="flex flex-col items-center justify-center gap-[68px] relative self-stretch w-full flex-[0_0_auto]">
+        <div
+          className="flex flex-col items-center justify-center gap-[68px] relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="items-center p-12 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden flex flex-col gap-12">
+            <div
+              className="items-center p-12 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden flex flex-col gap-12">
               <img
                 className="absolute w-[623px] h-[448px] top-0 left-[53px]"
                 alt="Vector"
@@ -529,68 +588,87 @@ export const BankCredit = () => {
               />
 
               <div className="relative self-stretch w-full h-80">
-                <div className="flex flex-col w-96 items-center justify-center gap-1 p-2 relative top-[29px] left-[98px] bg-[#ffffff] rounded-[32px] overflow-hidden">
-                  <div className="flex flex-col items-start gap-4 p-2 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
+                <div
+                  className="flex flex-col w-96 items-center justify-center gap-1 p-2 relative top-[29px] left-[98px] bg-[#ffffff] rounded-[32px] overflow-hidden">
+                  <div
+                    className="flex flex-col items-start gap-4 p-2 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
                     <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="flex items-center justify-between p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-2xl overflow-hidden">
+                      <div
+                        className="flex items-center justify-between p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-2xl overflow-hidden">
                         <div className="inline-flex flex-col items-start gap-1.5 relative flex-[0_0_auto]">
                           <div className="inline-flex items-start gap-1 relative flex-[0_0_auto]">
-                            <div className="w-fit mt-[-1.00px] opacity-50 font-normal text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
+                            <div
+                              className="w-fit mt-[-1.00px] opacity-50 font-normal text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
                               #123234555
                             </div>
 
-                            <div className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            <div
+                              className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
                               •
                             </div>
 
-                            <div className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            <div
+                              className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
                               Иван Петров
                             </div>
                           </div>
 
-                          <div className="gap-2.5 px-2 py-1 bg-[#00cb8214] inline-flex items-center justify-center relative flex-[0_0_auto] rounded-[100px]">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#00ac6e] text-xs tracking-[0] leading-4 whitespace-nowrap">
+                          <div
+                            className="gap-2.5 px-2 py-1 bg-[#00cb8214] inline-flex items-center justify-center relative flex-[0_0_auto] rounded-[100px]">
+                            <div
+                              className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#00ac6e] text-xs tracking-[0] leading-4 whitespace-nowrap">
                               Погашен
                             </div>
                           </div>
                         </div>
 
-                        <div className="inline-flex flex-col items-end justify-between relative self-stretch flex-[0_0_auto]">
-                          <div className="w-fit mt-[-1.00px] opacity-50 font-normal text-gray-90 text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div
+                          className="inline-flex flex-col items-end justify-between relative self-stretch flex-[0_0_auto]">
+                          <div
+                            className="w-fit mt-[-1.00px] opacity-50 font-normal text-gray-90 text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
                             2 месяца
                           </div>
 
-                          <div className="w-[120px] font-medium text-base text-right leading-6 relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
+                          <div
+                            className="w-[120px] font-medium text-base text-right leading-6 relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
                             30 580 ₽
                           </div>
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-between p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-2xl overflow-hidden">
+                      <div
+                        className="flex items-center justify-between p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-2xl overflow-hidden">
                         <div className="inline-flex flex-col items-start gap-1.5 relative flex-[0_0_auto]">
                           <div className="inline-flex items-start gap-1 relative flex-[0_0_auto]">
-                            <div className="w-fit mt-[-1.00px] opacity-50 font-normal text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
+                            <div
+                              className="w-fit mt-[-1.00px] opacity-50 font-normal text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] text-gray-90 tracking-[0]">
                               #123234555
                             </div>
 
-                            <div className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            <div
+                              className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
                               •
                             </div>
 
-                            <div className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            <div
+                              className="relative w-fit mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
                               Иван Петров
                             </div>
                           </div>
 
-                          <div className="inline-flex items-center justify-center gap-2.5 px-2 py-1 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
-                            <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#3573fc] text-xs tracking-[0] leading-4 whitespace-nowrap">
+                          <div
+                            className="inline-flex items-center justify-center gap-2.5 px-2 py-1 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
+                            <div
+                              className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#3573fc] text-xs tracking-[0] leading-4 whitespace-nowrap">
                               Рефинансирование
                             </div>
                           </div>
                         </div>
 
-                        <div className="inline-flex flex-col items-end justify-between relative self-stretch flex-[0_0_auto]">
-                          <div className="w-fit mt-[-1.00px] opacity-50 font-normal text-gray-90 text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div
+                          className="inline-flex flex-col items-end justify-between relative self-stretch flex-[0_0_auto]">
+                          <div
+                            className="w-fit mt-[-1.00px] opacity-50 font-normal text-gray-90 text-xs leading-4 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
                             2 месяца
                           </div>
 
