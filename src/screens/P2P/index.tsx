@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
-
 import { useRef } from 'react';
+import Slider from 'react-slick';
 
 import { Check10 } from '../../components/ui/check10.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
@@ -377,166 +377,182 @@ export const P2P = () => {
             </button>
           </div>
 
-          <div className="inline-flex items-center gap-6 relative flex-[0_0_auto] mr-[-1.00px]">
-            <div className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
-              <img
-                className="absolute w-[443px] h-[406px] top-0 left-0"
-                alt="Vector"
-                src="/img/p2p/vector-1-3.svg"
-              />
-
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="relative w-[443px] -top-12 -left-12">
-                  <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[69px] left-[58px] bg-white rounded-[32px]">
-                    <img
-                      className="relative flex-[0_0_auto]"
-                      alt="Frame"
-                      src="/img/p2p/frame-19-4.svg"
-                    />
-
-                    <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
-                      Ваша заявка одобрена
-                    </div>
-                  </div>
-
+          <div className="w-[915px]">
+            <Slider
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={2}
+              slidesToScroll={1}
+              centerMode={true}
+              centerPadding="0px"
+              className="p2p-slider"
+            >
+              <div className="px-3">
+                <div className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
                   <img
-                    className="absolute w-[443px] h-[352px] top-0 left-0"
+                    className="absolute w-[443px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="/img/p2p/vector-4-4.svg"
+                    src="/img/p2p/vector-1-3.svg"
                   />
 
-                  <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[115px] left-[100px] bg-white rounded-[32px]">
-                    <img
-                      className="relative flex-[0_0_auto]"
-                      alt="Frame"
-                      src="/img/p2p/frame-19-5.svg"
-                    />
+                  <div className="relative flex-1 self-stretch w-full grow">
+                    <div className="relative w-[443px] -top-12 -left-12">
+                      <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[69px] left-[58px] bg-white rounded-[32px]">
+                        <img
+                          className="relative flex-[0_0_auto]"
+                          alt="Frame"
+                          src="/img/p2p/frame-19-4.svg"
+                        />
 
-                    <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
-                      Ваш пароль был изменен
-                    </div>
-                  </div>
-                </div>
-              </div>
+                        <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
+                          Ваша заявка одобрена
+                        </div>
+                      </div>
 
-              <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Сервисы и интеграции
-                </div>
+                      <img
+                        className="absolute w-[443px] h-[352px] top-0 left-0"
+                        alt="Vector"
+                        src="/img/p2p/vector-4-4.svg"
+                      />
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7">
-                  Прием и учет заявок от инвесторов и заемщиков, кабинет
-                  клиента, кабинет специалиста, CRM-система, интеграция с
-                  телефонией, SMS и email-сервисами
-                </p>
-              </div>
-            </div>
-            <div className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
-              <img
-                className="absolute w-[377px] h-[406px] top-0 left-0"
-                alt="Vector"
-                src="/img/p2p/vector-1-10.svg"
-              />
+                      <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[115px] left-[100px] bg-white rounded-[32px]">
+                        <img
+                          className="relative flex-[0_0_auto]"
+                          alt="Frame"
+                          src="/img/p2p/frame-19-5.svg"
+                        />
 
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="relative w-[313px] h-[114px] top-5 left-4">
-                  <div className="flex w-[311px] items-center justify-between absolute top-0 left-px opacity-[0.08]">
-                    <img
-                      className="relative w-px h-28 ml-[-0.50px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-
-                    <img
-                      className="relative w-px h-28 mr-[-0.50px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-152.svg"
-                    />
-                  </div>
-
-                  <img
-                    className="absolute w-[311px] h-[102px] top-3 left-px"
-                    alt="Vector"
-                    src="/img/p2p/vector-160.svg"
-                  />
-
-                  <img
-                    className="absolute w-[313px] h-[76px] top-[11px] left-0"
-                    alt="Vector"
-                    src="/img/p2p/vector-161.svg"
-                  />
-
-                  <div className="absolute w-2 h-2 top-[42px] left-[62px] bg-[#efeefa] rounded border-2 border-solid border-[#3573fc]" />
-
-                  <div className="flex flex-col w-[46px] items-center absolute top-2.5 left-[43px]">
-                    <div className="flex items-center justify-center gap-2.5 px-2 py-1 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[100px]">
-                      <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
-                        5,674
+                        <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
+                          Ваш пароль был изменен
+                        </div>
                       </div>
                     </div>
+                  </div>
 
-                    <img
-                      className="relative w-2 h-1.5"
-                      alt="Vector"
-                      src="/img/p2p/vector-162.svg"
-                    />
+                  <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto]">
+                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                      Сервисы и интеграции
+                    </div>
+
+                    <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7">
+                      Прием и учет заявок от инвесторов и заемщиков, кабинет
+                      клиента, кабинет специалиста, CRM-система, интеграция с
+                      телефонией, SMS и email-сервисами
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Функции инвестора
-                </div>
+              <div className="px-3">
+                <div className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                  <img
+                    className="absolute w-[377px] h-[406px] top-0 left-0"
+                    alt="Vector"
+                    src="/img/p2p/vector-1-10.svg"
+                  />
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7">
-                  Простое или пакетное инвестирование, торги, рейтинг,
-                  пополнение счета, вывод денег со счета
-                </p>
+                  <div className="relative flex-1 self-stretch w-full grow">
+                    <div className="relative w-[313px] h-[114px] top-5 left-4">
+                      <div className="flex w-[311px] items-center justify-between absolute top-0 left-px opacity-[0.08]">
+                        <img
+                          className="relative w-px h-28 ml-[-0.50px]"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+
+                        <img
+                          className="relative w-px h-28 mr-[-0.50px]"
+                          alt="Vector"
+                          src="/img/p2p/vector-152.svg"
+                        />
+                      </div>
+
+                      <img
+                        className="absolute w-[311px] h-[102px] top-3 left-px"
+                        alt="Vector"
+                        src="/img/p2p/vector-160.svg"
+                      />
+
+                      <img
+                        className="absolute w-[313px] h-[76px] top-[11px] left-0"
+                        alt="Vector"
+                        src="/img/p2p/vector-161.svg"
+                      />
+
+                      <div className="absolute w-2 h-2 top-[42px] left-[62px] bg-[#efeefa] rounded border-2 border-solid border-[#3573fc]" />
+
+                      <div className="flex flex-col w-[46px] items-center absolute top-2.5 left-[43px]">
+                        <div className="flex items-center justify-center gap-2.5 px-2 py-1 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[100px]">
+                          <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            5,674
+                          </div>
+                        </div>
+
+                        <img
+                          className="relative w-2 h-1.5"
+                          alt="Vector"
+                          src="/img/p2p/vector-162.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-col items-start gap-3 self-stretch w-full relative flex-[0_0_auto]">
+                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                      Функции инвестора
+                    </div>
+
+                    <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7">
+                      Простое или пакетное инвестирование, торги, рейтинг,
+                      пополнение счета, вывод денег со счета
+                    </p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </Slider>
           </div>
         </div>
 
