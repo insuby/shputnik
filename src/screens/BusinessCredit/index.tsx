@@ -1,32 +1,35 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form';
 
 export const BusinessCredit = () => {
   const { setIsOpen } = useFeedbackForm();
-  
+
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
   const ref5 = useRef(null);
+  const ref6 = useRef(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
+  const inView6 = useInView(ref5, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -45,14 +48,14 @@ export const BusinessCredit = () => {
           <HeroButtons />
 
           <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-            <motion.div 
+            <motion.div
               ref={ref1}
               initial={{ opacity: 0, y: 50 }}
               animate={inView1 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
             >
-              <motion.div 
+              <motion.div
                 ref={ref2}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView2 ? { opacity: 1, y: 0 } : {}}
@@ -62,7 +65,7 @@ export const BusinessCredit = () => {
                 Кредитование бизнеса
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 ref={ref3}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
@@ -72,7 +75,6 @@ export const BusinessCredit = () => {
                 Полная автоматизация кредитования юридических лиц.
               </motion.p>
             </motion.div>
-
           </div>
 
           <img
@@ -81,15 +83,17 @@ export const BusinessCredit = () => {
             src="/img/businesscredit/vector-3.svg"
           />
 
-          <motion.div 
-            ref={ref5}
-            initial={{ opacity: 0, x: 50 }}
-            animate={inView5 ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+          <div
             className="absolute w-[583px] h-[583px] top-[139px] left-[745px]"
           >
             <div className="relative w-[631px] h-[583px]">
-              <div className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-0 left-[108px] bg-[#ffffff] rounded-[32px]">
+              <motion.div
+                ref={ref4}
+                initial={{ x: 500 }}
+                animate={inView4 ? { x: 0 } : {}}
+                transition={{ duration: 0.225, ease: 'easeOut' }}
+                className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-0 left-[108px] bg-[#ffffff] rounded-[32px]"
+              >
                 <div className="flex flex-col items-center justify-center gap-[14.04px] relative flex-1 grow">
                   <div className="flex items-center justify-center gap-[8.78px] relative self-stretch w-full flex-[0_0_auto]">
                     <div className="relative flex-1 mt-[-0.88px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[17.6px] tracking-[0] leading-[24.6px]">
@@ -207,7 +211,7 @@ export const BusinessCredit = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               <img
                 className="absolute w-[494px] h-[500px] top-[83px] left-[45px]"
@@ -215,7 +219,13 @@ export const BusinessCredit = () => {
                 src="/img/businesscredit/vector-5.svg"
               />
 
-              <div className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-[213px] left-0 bg-[#ffffff] rounded-[32px]">
+              <motion.div
+                ref={ref4}
+                initial={{ x: -500 }}
+                animate={inView4 ? { x: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+                className="flex w-[443px] items-start justify-end gap-[14.04px] p-8 absolute top-[213px] left-0 bg-[#ffffff] rounded-[32px]"
+              >
                 <div className="flex flex-col items-center justify-center gap-[14.04px] relative flex-1 grow">
                   <div className="flex items-center justify-center gap-[8.78px] relative self-stretch w-full flex-[0_0_auto]">
                     <div className="relative flex-1 mt-[-0.88px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[17.6px] tracking-[0] leading-[24.6px]">
@@ -255,7 +265,7 @@ export const BusinessCredit = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               <img
                 className="absolute w-[540px] h-[313px] top-[148px] left-[91px]"
@@ -263,7 +273,13 @@ export const BusinessCredit = () => {
                 src="/img/businesscredit/vector-6-1.svg"
               />
 
-              <div className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[307px] left-[272px] bg-[#ffffff] rounded-[32px]">
+              <motion.div
+                ref={ref6}
+                initial={{ y: 500 }}
+                animate={inView6 ? { y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[307px] left-[272px] bg-[#ffffff] rounded-[32px]"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -279,9 +295,9 @@ export const BusinessCredit = () => {
                     1 345 000₽
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
