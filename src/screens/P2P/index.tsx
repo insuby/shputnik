@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 
 import { Check10 } from '../../components/ui/check10.tsx';
@@ -7,8 +8,8 @@ import { Advantages } from '../../widgets/advantages.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
-import { Zaim } from '../../widgets/zaim.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import { Zaim } from '../../widgets/zaim.tsx';
 
 export const P2P = () => {
   const ref1 = useRef(null);
@@ -27,36 +28,42 @@ export const P2P = () => {
             src="/img/p2p/vector-1-5.svg"
           />
 
-          <HeroButtons />
+          <HeroButtons>
+            <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
+              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+                <motion.div
+                  ref={ref1}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView1 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]"
+                >
+                  P2P-кредитование
+                </motion.div>
 
-          <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <motion.div
-                ref={ref1}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView1 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]"
-              >
-                P2P-кредитование
-              </motion.div>
-
-              <motion.p
-                ref={ref2}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView2 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
-              >
-                Ядро, интеграции с сервисами и источниками информации, готовые
-                модули и библиотеки - все это позволяет быстро развернуть
-                P2P-площадку кредитования заточенную под требования вашего
-                бизнеса.
-              </motion.p>
+                <motion.p
+                  ref={ref2}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+                >
+                  Ядро, интеграции с сервисами и источниками информации, готовые
+                  модули и библиотеки - все это позволяет быстро развернуть
+                  P2P-площадку кредитования заточенную под требования вашего
+                  бизнеса.
+                </motion.p>
+              </div>
             </div>
-          </div>
+          </HeroButtons>
 
-          <div className="flex flex-col w-[304px] items-center justify-center absolute top-[108px] left-[802px] bg-green-50 rounded-[32px] overflow-hidden">
+          <motion.div
+            ref={ref2}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex flex-col w-[304px] items-center justify-center absolute top-[108px] left-[802px] bg-green-50 rounded-[32px] overflow-hidden"
+          >
             <div className="flex flex-col items-center justify-center gap-5 p-5 relative self-stretch w-full flex-[0_0_auto]">
               <img
                 className="absolute w-[345px] h-[330px] top-1.5 left-[-13px]"
@@ -268,7 +275,7 @@ export const P2P = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <img
             className="absolute w-[637px] h-[554px] top-[46px] left-[739px]"
@@ -276,7 +283,13 @@ export const P2P = () => {
             src="/img/p2p/vector-4-1.svg"
           />
 
-          <div className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[262px] left-[1000px] bg-white rounded-[32px]">
+          <motion.div
+            ref={ref2}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[262px] left-[1000px] bg-white rounded-[32px]"
+          >
             <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
               <div className="relative w-[180px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm tracking-[0] leading-5">
                 Общий доход
@@ -344,7 +357,7 @@ export const P2P = () => {
             />
 
             <div className="absolute w-3 h-3 top-[131px] left-[180px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
-          </div>
+          </motion.div>
         </div>
       </div>
       <Advantages />
@@ -1178,7 +1191,7 @@ export const P2P = () => {
       </div>
 
       <RoleStructure />
-      <Trust/>
+      <Trust />
     </div>
   );
 };

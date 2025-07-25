@@ -90,50 +90,54 @@ export const IslamFinance = () => {
             src="/img/islamfinans/vector-1-7.svg"
           />
 
-          <HeroButtons />
+          <HeroButtons>
+            <motion.div
+              ref={ref2}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView2 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
+              className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+            >
+              <motion.div
+                ref={ref3}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
+                className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  ref={ref4}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView4 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
+                  className="w-[624px] font-medium text-[#ffffff] text-6xl leading-[68px] relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]"
+                >
+                  Исламское финансирование
+                </motion.div>
+
+                <motion.p
+                  ref={ref5}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView5 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
+                  className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+                >
+                  Предоставление исламским финансовым институтам первоклассных
+                  систем управления кредитами. <br />
+                  Предоставление исламским финансовым институтам первоклассных
+                  систем управления кредитами.
+                </motion.p>
+              </motion.div>
+            </motion.div>
+          </HeroButtons>
 
           <motion.div
             ref={ref2}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView2 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-            className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView2 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+            className="flex w-[871px] h-[538px] items-center absolute top-[136px] left-[745px] bg-[#f6f8fd] rounded-3xl overflow-hidden"
           >
-            <motion.div
-              ref={ref3}
-              initial={{ opacity: 0, y: 50 }}
-              animate={inView3 ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
-              className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
-            >
-              <motion.div
-                ref={ref4}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView4 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="w-[624px] font-medium text-[#ffffff] text-6xl leading-[68px] relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]"
-              >
-                Исламское финансирование
-              </motion.div>
-
-              <motion.p
-                ref={ref5}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView5 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
-              >
-                Предоставление исламским финансовым институтам первоклассных
-                систем управления кредитами. <br />
-                Предоставление исламским финансовым институтам первоклассных
-                систем управления кредитами.
-              </motion.p>
-            </motion.div>
-
-                        <HeroButtons />
-          </motion.div>
-
-          <div className="flex w-[871px] h-[538px] items-center absolute top-[136px] left-[745px] bg-[#f6f8fd] rounded-3xl overflow-hidden">
             <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
               <p className="self-stretch mt-[-0.75px] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
                 <span className="text-[#1c222f]">Ваш</span>
@@ -231,7 +235,7 @@ export const IslamFinance = () => {
                 </div>
 
                 <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5 mt-[-868.67px] ml-[-18572.00px] bg-[100%_100%]">
+                  <div className="relative w-5 h-5 bg-[100%_100%]">
                     <img
                       className="absolute w-1.5 h-1.5 top-[3px] left-[3px]"
                       alt="Vector"
@@ -263,7 +267,7 @@ export const IslamFinance = () => {
                 </div>
 
                 <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                  <div className="relative w-5 h-5 mt-[-917.59px] ml-[-18572.00px] bg-[100%_100%]">
+                  <div className="relative w-5 h-5 bg-[100%_100%]">
                     <div className="relative w-[15px] h-4 top-0.5 left-[3px]">
                       <img
                         className="absolute w-1.5 h-1 top-3 left-1"
@@ -555,7 +559,7 @@ export const IslamFinance = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <img
             className="absolute w-[619px] h-[568px] top-44 left-[1053px]"

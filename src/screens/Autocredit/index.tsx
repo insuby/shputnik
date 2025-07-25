@@ -58,32 +58,32 @@ export const Autocredit = () => {
             src="/img/autocredit/vector-1-9.svg"
           />
 
-          <HeroButtons />
+          <HeroButtons>
+            <div className="flex-col w-[624px] justify-center gap-12 flex-[0_0_auto] flex items-start relative">
+              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+                <motion.div
+                  ref={ref2}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView2 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+                >
+                  Займ под залог автомобиля
+                </motion.div>
 
-          <div className="flex-col w-[624px] justify-center gap-12 flex-[0_0_auto] flex items-start relative">
-            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <motion.div
-                ref={ref2}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView2 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
-              >
-                Займ под залог автомобиля
-              </motion.div>
-
-              <motion.p
-                ref={ref3}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView3 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
-              >
-                Программное обеспечение для автоматизации залоговых займов.
-                Программное обеспечение для автоматизации залоговых займов.
-              </motion.p>
+                <motion.p
+                  ref={ref3}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+                >
+                  Программное обеспечение для автоматизации залоговых займов.
+                  Программное обеспечение для автоматизации залоговых займов.
+                </motion.p>
+              </div>
             </div>
-          </div>
+          </HeroButtons>
 
           <motion.div
             ref={ref5}
@@ -575,13 +575,13 @@ export const Autocredit = () => {
           </Marquee>
 
           <div className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
               className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
             >
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
@@ -590,7 +590,7 @@ export const Autocredit = () => {
                 Проверка
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
@@ -603,13 +603,13 @@ export const Autocredit = () => {
               </motion.p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
               className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
             >
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.9 }}
@@ -618,7 +618,7 @@ export const Autocredit = () => {
                 Контроль
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.0 }}
@@ -630,13 +630,13 @@ export const Autocredit = () => {
               </motion.p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
               className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]"
             >
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.2 }}
@@ -645,7 +645,7 @@ export const Autocredit = () => {
                 Управление
               </motion.div>
 
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.3 }}
