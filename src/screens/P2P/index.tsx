@@ -11,6 +11,7 @@ import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form.ts';
 
 export const P2P = () => {
   const ref1 = useRef(null);
@@ -62,6 +63,12 @@ export const P2P = () => {
 
   const goToNext = () => {
     sliderRef.current?.slickNext();
+  };
+
+  const { setIsOpen } = useFeedbackForm();
+
+  const handleTryClick = () => {
+    setIsOpen(true);
   };
 
   return (
@@ -275,11 +282,14 @@ export const P2P = () => {
                         </div>
                       </div>
 
-                      <div className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-gray-90 rounded-2xl">
+                      <button 
+                        onClick={handleTryClick}
+                        className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-gray-90 rounded-2xl cursor-pointer"
+                      >
                         <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-white text-xs tracking-[0] leading-4 whitespace-nowrap">
                           Вложить
                         </div>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -311,11 +321,14 @@ export const P2P = () => {
                         </div>
                       </div>
 
-                      <div className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-gray-90 rounded-2xl">
+                      <button 
+                        onClick={handleTryClick}
+                        className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-gray-90 rounded-2xl cursor-pointer"
+                      >
                         <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-white text-xs tracking-[0] leading-4 whitespace-nowrap">
                           Вложить
                         </div>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -417,7 +430,10 @@ export const P2P = () => {
               под ваши запросы
             </div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center">
+            <button 
+              onClick={handleTryClick}
+              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer"
+            >
               <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
                 Попробовать
               </div>
@@ -826,7 +842,10 @@ export const P2P = () => {
                     </div>
                   </div>
 
-                  <button className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center">
+                  <button 
+                    onClick={handleTryClick}
+                    className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center cursor-pointer"
+                  >
                     <div className="relative self-stretch w-[164px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-base text-center tracking-[0] leading-6 whitespace-nowrap">
                       Создать продукт
                     </div>
@@ -1331,7 +1350,10 @@ export const P2P = () => {
             </div>
           </div>
 
-          <button className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center">
+          <button 
+            onClick={handleTryClick}
+            className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 relative self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center cursor-pointer"
+          >
             <div className="relative self-stretch w-[164px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-base text-center tracking-[0] leading-6 whitespace-nowrap">
               Оформить займ
             </div>
