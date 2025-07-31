@@ -7,6 +7,7 @@ export const enum RoutesPath {
   ISLAMFINANCE = '/products/islam-finance',
   BUSINESSCREDIT = '/products/business-credit',
   BANKCREDIT = '/products/bank-credit',
+  DEVELOPMENT = '/products/development',
   P2P = '/products/p2p',
   BNPL = '/products/bnpl',
   REVIEWS = '/reviews',
