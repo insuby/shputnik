@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { RoutesPath } from '../../../routes-path.tsx';
@@ -27,7 +27,6 @@ export const HeaderSection = () => {
     pathname === RoutesPath.DATAUNLOAD ||
     pathname === RoutesPath.FDATA;
 
-
   useEffect(() => {
     setIsMenuOpen(false);
   }, [pathname]);
@@ -37,7 +36,11 @@ export const HeaderSection = () => {
   };
 
   return (
-    <header className={`flex items-center justify-between w-full py-4 px-8 mt-4 !rounded-[32px_32px_0_0] ${isMenuOpen ? '!bg-white' : ''}`}>
+    <header
+      className={`flex items-center justify-between w-full py-4 px-8 mt-4 !rounded-[32px_32px_0_0] ${
+        isMenuOpen ? '!bg-white' : ''
+      }`}
+    >
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
@@ -53,7 +56,9 @@ export const HeaderSection = () => {
         <div className="relative flex items-center gap-16">
           <div className="relative">
             <button
-              className={`hover:text-[#3573FC] w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center border-transparent border-b-2 py-2.5 border-solid ${isProductActive ? `border-[#3573FC]` : ''}`}
+              className={`hover:text-[#3573FC] w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center border-transparent border-b-2 py-2.5 border-solid ${
+                isProductActive ? `border-[#3573FC]` : ''
+              }`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               Продукты
@@ -291,7 +296,11 @@ export const HeaderSection = () => {
               className="group flex flex-col items-center rounded-[32px] cursor-pointer "
               data-pathname={item.pathname}
             >
-              <div className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-transparent border-solid ${location.pathname === item.pathname ? `border-[#3573FC]` : ''}`}>
+              <div
+                className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-transparent border-solid ${
+                  location.pathname === item.pathname ? `border-[#3573FC]` : ''
+                }`}
+              >
                 <div
                   className={`group-hover:text-[#3573FC] w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
                 >
