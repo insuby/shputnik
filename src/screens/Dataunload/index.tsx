@@ -17,6 +17,36 @@ export const Dataunload = () => {
   const ref8 = useRef(null);
   const ref9 = useRef(null);
   const ref10 = useRef(null);
+  const ref11 = useRef(null);
+  const ref12 = useRef(null);
+  const ref13 = useRef(null);
+  const ref14 = useRef(null);
+  const ref15 = useRef(null);
+  const ref16 = useRef(null);
+  const ref17 = useRef(null);
+  const ref18 = useRef(null);
+  const ref19 = useRef(null);
+  const ref20 = useRef(null);
+  const ref21 = useRef(null);
+  const ref22 = useRef(null);
+  const ref23 = useRef(null);
+  const ref24 = useRef(null);
+  const ref25 = useRef(null);
+  const ref26 = useRef(null);
+  const ref27 = useRef(null);
+  const ref28 = useRef(null);
+  const ref29 = useRef(null);
+  const ref30 = useRef(null);
+  const ref31 = useRef(null);
+  const ref32 = useRef(null);
+  const ref33 = useRef(null);
+  const ref34 = useRef(null);
+  const ref35 = useRef(null);
+  const ref36 = useRef(null);
+  const ref37 = useRef(null);
+  const ref38 = useRef(null);
+  const ref39 = useRef(null);
+  const ref40 = useRef(null);
 
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
@@ -27,6 +57,36 @@ export const Dataunload = () => {
   const inView8 = useInView(ref8, { once: true, margin: '-100px' });
   const inView9 = useInView(ref9, { once: true, margin: '-100px' });
   const inView10 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-100px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-100px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-100px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-100px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-100px' });
+  const inView28 = useInView(ref28, { once: true, margin: '-100px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-100px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-100px' });
+  const inView31 = useInView(ref31, { once: true, margin: '-100px' });
+  const inView32 = useInView(ref32, { once: true, margin: '-100px' });
+  const inView33 = useInView(ref33, { once: true, margin: '-100px' });
+  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
+  const inView35 = useInView(ref35, { once: true, margin: '-100px' });
+  const inView36 = useInView(ref36, { once: true, margin: '-100px' });
+  const inView37 = useInView(ref37, { once: true, margin: '-100px' });
+  const inView38 = useInView(ref38, { once: true, margin: '-100px' });
+  const inView39 = useInView(ref39, { once: true, margin: '-100px' });
+  const inView40 = useInView(ref40, { once: true, margin: '-100px' });
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
@@ -192,131 +252,305 @@ export const Dataunload = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-          <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
+        <motion.div
+          ref={ref11}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView11 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        >
+          <motion.div
+            ref={ref12}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView12 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]"
+          >
             Преимущества
-          </div>
+          </motion.div>
 
-          <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7">
+          <motion.p
+            ref={ref13}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView13 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center tracking-[0] leading-7"
+          >
             Система автоматически сконвертирует данные для отправки в кредитные
             бюро с учетом актуальных требований.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
-        <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden">
-            <img
-              className="relative flex-[0_0_auto]"
-              alt="Frame"
-              src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-3.svg"
-            />
+                  <motion.div
+            ref={ref14}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView14 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+          >
+            <motion.div
+              ref={ref15}
+              initial={{ opacity: 0, x: -50 }}
+              animate={inView15 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+            >
+              <motion.img
+                ref={ref16}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView16 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-3.svg"
+              />
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
-                Единый формат обмена
+              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                <motion.div
+                  ref={ref17}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView17 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
+                  Единый формат обмена
+                </motion.div>
+
+                <motion.p
+                  ref={ref18}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView18 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
+                  Загружая файл одного формата вы <br />
+                  выгружаете данные во все кредитные бюро.
+                </motion.p>
               </div>
+            </motion.div>
 
-              <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
-                Загружая файл одного формата вы <br />
-                выгружаете данные во все кредитные бюро.
-              </p>
-            </div>
-          </div>
+            <motion.div
+              ref={ref19}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView19 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+            >
+              <motion.img
+                ref={ref20}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView20 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18.svg"
+              />
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden">
-            <img
-              className="relative flex-[0_0_auto]"
-              alt="Frame"
-              src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18.svg"
-            />
+              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                <motion.div
+                  ref={ref21}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView21 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
+                  Удобное решение
+                </motion.div>
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
-                Удобное решение
+                <motion.p
+                  ref={ref22}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView22 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
+                  Программа позволяет выгружать данные как файлом, так и через
+                  АРІ.
+                </motion.p>
               </div>
+            </motion.div>
 
-              <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
-                Программа позволяет выгружать данные как файлом, так и через
-                АРІ.
-              </p>
-            </div>
-          </div>
+            <motion.div
+              ref={ref23}
+              initial={{ opacity: 0, x: 50 }}
+              animate={inView23 ? { opacity: 1, x: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
+              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+            >
+              <motion.img
+                ref={ref24}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView24 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-19.svg"
+              />
 
-          <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden">
-            <img
-              className="relative flex-[0_0_auto]"
-              alt="Frame"
-              src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-19.svg"
-            />
+              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                <motion.div
+                  ref={ref25}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView25 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.4 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
+                  Регулярные обновления
+                </motion.div>
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
-                Регулярные обновления
+                <motion.p
+                  ref={ref26}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView26 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.5 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
+                  Программа регулярно обновляется, вам не потребуется следить за
+                  изменениями формата обмена.
+                </motion.p>
               </div>
-
-              <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
-                Программа регулярно обновляется, вам не потребуется следить за
-                изменениями формата обмена.
-              </p>
-            </div>
-          </div>
-        </div>
+            </motion.div>
+          </motion.div>
       </div>
       ;
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-          <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
+        <motion.div
+          ref={ref27}
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView27 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        >
+          <motion.div
+            ref={ref28}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView28 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]"
+          >
             Функциональные возможности
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         <div className="w-[1376px] gap-6 flex-[0_0_auto] rounded-3xl flex items-center relative">
           <div className="flex flex-col items-start gap-12 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
             <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
-              <div className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              <motion.div
+                ref={ref29}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView29 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+                className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  ref={ref30}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView30 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
                   Контроль
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  ref={ref31}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView31 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   Контролируйте статус вашей загрузки, получило ли конкретное
                   кредитное бюро ваши данные.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
 
-              <div className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              <motion.div
+                ref={ref32}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView32 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+                className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  ref={ref33}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView33 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
                   Актуальные данные
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  ref={ref34}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView34 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   Как прошла выгрузка, есть ли в ней ошибки и если есть то
                   какие.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
 
-              <div className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              <motion.div
+                ref={ref35}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView35 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+                className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  ref={ref36}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView36 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
                   Экономия времени
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  ref={ref37}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView37 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   Используя данный интерфейс, вы существенно сокращаете время на
                   процедуру выгрузки данных в КБ.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
 
-              <div className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+              <motion.div
+                ref={ref38}
+                initial={{ opacity: 0, y: 50 }}
+                animate={inView38 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
+                className="flex flex-col w-[560px] items-center justify-center gap-3 relative flex-[0_0_auto]"
+              >
+                <motion.div
+                  ref={ref39}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView39 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"
+                >
                   Автоматизация процессов
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  ref={ref40}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView40 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   Настраивайте автоматическую выгрузку во все кредитные бюро раз
                   в 5 дней, и вам не потребуется дальше контролировать процедуру
                   выгрузки.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
           </div>
 
@@ -495,10 +729,9 @@ export const Dataunload = () => {
           </button>
         </div>
       </div>
-      ;
-      <Integrations />;
-      <Feedback />;
-      <Trust />;
+      <Integrations />
+      <Feedback />
+      <Trust />
     </div>
   );
 };
