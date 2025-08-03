@@ -17,21 +17,6 @@ export const HeaderSection = () => {
     { id: 4, label: 'Вакансии', pathname: RoutesPath.WORK },
   ];
 
-  const productItems = [
-    { label: 'Микрокредит', pathname: RoutesPath.MICROCREDIT },
-    { label: 'BNPL', pathname: RoutesPath.BNPL },
-    { label: 'Автокредит', pathname: RoutesPath.AUTOCREDIT },
-    { label: 'Исламское финансирование', pathname: RoutesPath.ISLAMFINANCE },
-    { label: 'P2P-кредитование', pathname: RoutesPath.P2P },
-    { label: 'Кредитование бизнеса', pathname: RoutesPath.BUSINESSCREDIT },
-    { label: 'Банковское кредитование', pathname: RoutesPath.BANKCREDIT },
-    {
-      label: 'Выгрузка данных\nв кредитные бюро',
-      pathname: RoutesPath.DATAUNLOAD,
-    },
-    { label: 'F-data', pathname: RoutesPath.FDATA },
-  ];
-
   const isProductActive =
     pathname === RoutesPath.MICROCREDIT || pathname === RoutesPath.BNPL;
 
