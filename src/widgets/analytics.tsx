@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Subtract from '../icons/Subtract';
 
 export const Analytics = () => {
   const ref1 = useRef(null);
@@ -206,16 +207,14 @@ export const Analytics = () => {
               <div className="absolute w-[356px] h-[337px] top-[-18px] left-[-29px]">
                 <div className="absolute w-[356px] h-[260px] top-[76px] left-0">
                   <div className="absolute w-[356px] h-[253px] top-[7px] left-0">
-                    <img
+                    <Subtract
                       className="absolute w-[152px] h-[253px] top-0 left-[29px]"
-                      alt="Subtract"
-                      src="/img/widgets/subtract.svg"
+                      color="#00CB82"
                     />
 
-                    <img
+                    <Subtract
                       className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
-                      alt="Subtract"
-                      src="/img/widgets/subtract-1.svg"
+                      color="#00CB82"
                     />
 
                     <div className="inline-flex flex-col items-center gap-0.5 absolute top-[55px] left-[87px]">
@@ -241,18 +240,16 @@ export const Analytics = () => {
                     </div>
                   </div>
 
-                  <img
+                  <Subtract
                     className="absolute w-[53px] h-[94px] top-0 left-[295px]"
-                    alt="Subtract"
-                    src="/img/widgets/subtract-2.svg"
+                    color="#00CB82"
                   />
                 </div>
 
                 <div className="absolute w-[145px] h-[78px] top-0 left-[81px]">
-                  <img
+                  <Subtract
                     className="absolute w-[145px] h-[60px] top-[18px] left-0"
-                    alt="Subtract"
-                    src="/img/widgets/subtract-4.svg"
+                    color="#00CB82"
                   />
 
                   <div className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
@@ -264,10 +261,9 @@ export const Analytics = () => {
               </div>
 
               <div className="absolute w-[70px] h-[57px] -top-0.5 left-[211px]">
-                <img
+                <Subtract
                   className="absolute w-[51px] h-[41px] top-4 left-0"
-                  alt="Subtract"
-                  src="/img/widgets/subtract-3.svg"
+                  color="#00CB82"
                 />
 
                 <div className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">

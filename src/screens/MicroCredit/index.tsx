@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion';
 
 import { useRef, useState } from 'react';
 import Slider from 'react-slick';
+import Subtract from '../../icons/Subtract';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -208,16 +209,14 @@ export const MicroCredit = () => {
               <div className="relative w-[184px] h-[184px]">
                 <div className="relative h-[184px]">
                   <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                    <img
+                    <Subtract
                       className="absolute w-[88px] h-[184px] top-0 left-0"
-                      alt="Subtract"
-                      src="/img/subtract-8.svg"
+                      color="#00CB82"
                     />
 
-                    <img
+                    <Subtract
                       className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                      alt="Subtract"
-                      src="/img/subtract-7.svg"
+                      color="#00CB82"
                     />
 
                     <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
@@ -231,16 +230,14 @@ export const MicroCredit = () => {
                     </div>
                   </div>
 
-                  <img
+                  <Subtract
                     className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                    alt="Subtract"
-                    src="/img/subtract-9.svg"
+                    color="#00CB82"
                   />
 
-                  <img
+                  <Subtract
                     className="absolute w-[59px] h-[31px] top-0 left-24"
-                    alt="Subtract"
-                    src="/img/subtract-10.svg"
+                    color="#00CB82"
                   />
                 </div>
               </div>

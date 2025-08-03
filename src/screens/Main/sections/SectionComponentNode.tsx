@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import ArrowLineDown from '../../../icons/ArrowLineDown';
 import { RoutesPath } from '../../../routes-path.tsx';
 
 export const SectionComponentNode = () => {
@@ -98,10 +99,10 @@ export const SectionComponentNode = () => {
 
                 <div className="inline-flex items-start gap-3 relative flex-[0_0_auto]">
                   <div className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-[#ffffff29] rounded-2xl">
-                    <img
+                    <ArrowLineDown
                       className="relative w-3.5 h-3.5"
-                      alt="Arrow line down"
-                      src="/img/arrowlinedown-1.svg"
+                      direction="up"
+                      color="white"
                     />
 
                     <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] text-white text-xs leading-4 whitespace-nowrap relative font-normal tracking-[0]">
@@ -110,10 +111,10 @@ export const SectionComponentNode = () => {
                   </div>
 
                   <div className="inline-flex items-center justify-center gap-2 px-2.5 py-1.5 relative flex-[0_0_auto] bg-[#ffffff29] rounded-2xl">
-                    <img
+                    <ArrowLineDown
                       className="relative w-3.5 h-3.5"
-                      alt="Arrow line down"
-                      src="/img/arrowlinedown.svg"
+                      direction="down"
+                      color="white"
                     />
 
                     <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] text-white text-xs leading-4 whitespace-nowrap relative font-normal tracking-[0]">

@@ -2,6 +2,7 @@ import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 import Slider from 'react-slick';
+import Subtract from '../../icons/Subtract';
 
 import { Check10 } from '../../components/ui/check10.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
@@ -1376,16 +1377,14 @@ export const P2P = () => {
             <div className="relative w-[184px] h-[184px]">
               <div className="relative h-[184px]">
                 <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                  <img
+                  <Subtract
                     className="absolute w-[88px] h-[184px] top-0 left-0"
-                    alt="Subtract"
-                    src="/img/p2p/subtract.svg"
+                    color="#00CB82"
                   />
 
-                  <img
+                  <Subtract
                     className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                    alt="Subtract"
-                    src="/img/p2p/subtract-2.svg"
+                    color="#00CB82"
                   />
 
                   <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
@@ -1399,16 +1398,14 @@ export const P2P = () => {
                   </div>
                 </div>
 
-                <img
+                <Subtract
                   className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                  alt="Subtract"
-                  src="/img/p2p/subtract-1.svg"
+                  color="#00CB82"
                 />
 
-                <img
+                <Subtract
                   className="absolute w-[59px] h-[31px] top-0 left-24"
-                  alt="Subtract"
-                  src="/img/p2p/subtract-3.svg"
+                  color="#00CB82"
                 />
               </div>
             </div>
