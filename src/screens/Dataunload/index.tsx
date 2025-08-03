@@ -41,6 +41,15 @@ export const Dataunload = () => {
   const ref39 = useRef(null);
   const ref40 = useRef(null);
   const ref41 = useRef(null);
+  const ref42 = useRef(null);
+  const ref43 = useRef(null);
+  const ref44 = useRef(null);
+  const ref45 = useRef(null);
+  const ref46 = useRef(null);
+  const ref47 = useRef(null);
+  const ref48 = useRef(null);
+  const ref49 = useRef(null);
+  const ref50 = useRef(null);
 
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
   const inView11 = useInView(ref11, { once: true, margin: '-100px' });
@@ -74,6 +83,15 @@ export const Dataunload = () => {
   const inView39 = useInView(ref39, { once: true, margin: '-100px' });
   const inView40 = useInView(ref40, { once: true, margin: '-100px' });
   const inView41 = useInView(ref41, { once: true, margin: '-100px' });
+  const inView42 = useInView(ref42, { once: true, margin: '-100px' });
+  const inView43 = useInView(ref43, { once: true, margin: '-100px' });
+  const inView44 = useInView(ref44, { once: true, margin: '-100px' });
+  const inView45 = useInView(ref45, { once: true, margin: '-100px' });
+  const inView46 = useInView(ref46, { once: true, margin: '-100px' });
+  const inView47 = useInView(ref47, { once: true, margin: '-100px' });
+  const inView48 = useInView(ref48, { once: true, margin: '-100px' });
+  const inView49 = useInView(ref49, { once: true, margin: '-100px' });
+  const inView50 = useInView(ref50, { once: true, margin: '-100px' });
 
   const { setIsOpen } = useFeedbackForm();
 
@@ -557,16 +575,36 @@ export const Dataunload = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col w-[1376px] items-center justify-center gap-9 p-8 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden">
-        <img
+      <motion.div
+        ref={ref42}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView42 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="flex flex-col w-[1376px] items-center justify-center gap-9 p-8 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
+      >
+        <motion.img
+          ref={ref43}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={inView43 ? { opacity: 1, scale: 1 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
           alt="Vector"
           src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-1-1.svg"
         />
 
         <div className="flex items-start gap-[88px] p-12 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col w-[520px] items-start gap-8 relative">
-            <img
+          <motion.div
+            ref={ref44}
+            initial={{ opacity: 0, x: -50 }}
+            animate={inView44 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+            className="flex flex-col w-[520px] items-start gap-8 relative"
+          >
+            <motion.img
+              ref={ref45}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView45 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
               src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-6.svg"
@@ -574,15 +612,27 @@ export const Dataunload = () => {
 
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
               <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-                <div className="relative w-[520px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
+                <motion.div
+                  ref={ref46}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView46 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+                  className="relative w-[520px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]"
+                >
                   Выгрузка во все КБ
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  ref={ref47}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView47 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   Программа позволяет выгружать данные <br />
                   через API и интерфейс в четыре кредитных <br />
                   бюро.
-                </p>
+                </motion.p>
               </div>
 
               <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
@@ -629,7 +679,7 @@ export const Dataunload = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <img
             className="relative self-stretch w-px"
@@ -637,8 +687,18 @@ export const Dataunload = () => {
             src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-129.svg"
           />
 
-          <div className="flex flex-col w-[520px] items-start justify-center gap-8 relative">
-            <img
+          <motion.div
+            ref={ref48}
+            initial={{ opacity: 0, x: 50 }}
+            animate={inView48 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+            className="flex flex-col w-[520px] items-start justify-center gap-8 relative"
+          >
+            <motion.img
+              ref={ref49}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView49 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
               src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-2.svg"
@@ -646,11 +706,22 @@ export const Dataunload = () => {
 
             <div className="flex flex-col w-[520px] items-start gap-6 relative flex-[0_0_auto]">
               <div className="gap-4 flex flex-col items-start relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]">
+                <motion.div
+                  ref={ref50}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView50 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+                  className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] tracking-[0] leading-[48px]"
+                >
                   Стоимость использования
-                </div>
+                </motion.div>
 
-                <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <motion.p
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={inView50 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+                  className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7"
+                >
                   <span className="[font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
                     Программа поставляется в формате{' '}
                   </span>
@@ -667,7 +738,7 @@ export const Dataunload = () => {
                     {'  '}без любых дополнительных платежей за настройку или
                     лицензию.
                   </span>
-                </p>
+                </motion.p>
               </div>
 
               <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
@@ -696,25 +767,43 @@ export const Dataunload = () => {
                 /месяц
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="flex items-center gap-2.5 p-12 relative self-stretch w-full flex-[0_0_auto] bg-violet-50 rounded-[32px] overflow-hidden">
-          <img
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView42 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
+          className="flex items-center gap-2.5 p-12 relative self-stretch w-full flex-[0_0_auto] bg-violet-50 rounded-[32px] overflow-hidden"
+        >
+          <motion.img
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inView42 ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
             className="absolute w-[1108px] h-[1060px] top-[-385px] left-[420px]"
             alt="Vector"
             src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-1-3.svg"
           />
 
           <div className="flex flex-col items-start gap-3 relative flex-1 grow">
-            <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-[32px] tracking-[0] leading-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView42 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
+              className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-[32px] tracking-[0] leading-10"
+            >
               Воспользоваться сервисом
-            </div>
+            </motion.div>
 
-            <p className="relative w-[752px] opacity-60 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-xl tracking-[0] leading-7">
+            <motion.p
+              initial={{ opacity: 0, y: 30 }}
+              animate={inView42 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+              className="relative w-[752px] opacity-60 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-xl tracking-[0] leading-7"
+            >
               Программа регулярно обновляет формат обмена в соответствие <br />с
               актуальными требованиями каждого КБ.
-            </p>
+            </motion.p>
           </div>
 
           <button 
@@ -725,8 +814,8 @@ export const Dataunload = () => {
               Связаться с нами
             </div>
           </button>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
       <Integrations />
       <Feedback />
       <Trust />
