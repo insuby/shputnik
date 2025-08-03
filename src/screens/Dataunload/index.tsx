@@ -6,6 +6,7 @@ import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 
 export const Dataunload = () => {
   const ref2 = useRef(null);
@@ -47,6 +48,7 @@ export const Dataunload = () => {
   const ref38 = useRef(null);
   const ref39 = useRef(null);
   const ref40 = useRef(null);
+  const ref41 = useRef(null);
 
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
@@ -87,6 +89,13 @@ export const Dataunload = () => {
   const inView38 = useInView(ref38, { once: true, margin: '-100px' });
   const inView39 = useInView(ref39, { once: true, margin: '-100px' });
   const inView40 = useInView(ref40, { once: true, margin: '-100px' });
+  const inView41 = useInView(ref41, { once: true, margin: '-100px' });
+
+  const { setIsOpen } = useFeedbackForm();
+
+  const handleContactClick = () => {
+    setIsOpen(true);
+  };
 
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
@@ -554,7 +563,11 @@ export const Dataunload = () => {
             </div>
           </div>
 
-          <img
+          <motion.img
+            ref={ref41}
+            initial={{ opacity: 0, x: 100 }}
+            animate={inView41 ? { opacity: 1, x: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 1.4 }}
             className="relative flex-1 self-stretch grow"
             alt="Frame"
             src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-21.svg"
@@ -722,7 +735,10 @@ export const Dataunload = () => {
             </p>
           </div>
 
-          <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center">
+          <button 
+            onClick={handleContactClick}
+            className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center cursor-pointer"
+          >
             <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
               Связаться с нами
             </div>
