@@ -1,6 +1,16 @@
+import { motion, useInView } from 'framer-motion';
+
+import { useRef } from 'react';
+
+import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
+import { Feedback } from '../../widgets/feedback.tsx';
+import { Integrations } from '../../widgets/integrations.tsx';
+import { Trust } from '../../widgets/trust.tsx';
+
 export const Dataunload = () => {
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const ref4 = useRef(null);
   const ref5 = useRef(null);
   const ref6 = useRef(null);
   const ref7 = useRef(null);
@@ -10,6 +20,7 @@ export const Dataunload = () => {
 
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
   const inView5 = useInView(ref5, { once: true, margin: '-100px' });
   const inView6 = useInView(ref6, { once: true, margin: '-100px' });
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
@@ -24,59 +35,48 @@ export const Dataunload = () => {
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-1-6.svg"
+            src="/img/vector-1-5.svg"
           />
 
-          <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-            <div className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-              <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                О продукте
-              </div>
-            </div>
+          <HeroButtons buttonText="Узнать больше">
+            <motion.div
+              ref={ref3}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView3 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+            >
+              <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
+                <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+                  <p className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]">
+                    Выгрузка данных <br />в кредитные бюро
+                  </p>
 
-            <div className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]">
-              <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
-                <img
-                  className="relative w-5 h-5"
-                  alt="File text"
-                  src="https://c.animaapp.com/mdvh9jkbMPb4br/img/filetext.svg"
-                />
-
-                <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
-                  Спецификация
+                  <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
+                    Программа для конвертации и выгрузки данных в кредитные
+                    бюро. Программа для конвертации и выгрузки данных в
+                    кредитные бюро.
+                  </p>
                 </div>
+
+                <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center">
+                  <div className="w-fit mt-[-1.00px] whitespace-nowrap relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                    Связаться с нами
+                  </div>
+                </button>
               </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-            <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-              <p className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-6xl tracking-[0] leading-[68px]">
-                Выгрузка данных <br />в кредитные бюро
-              </p>
-
-              <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
-                Программа для конвертации и выгрузки данных в кредитные бюро.
-                Программа для конвертации и выгрузки данных в кредитные бюро.
-              </p>
-            </div>
-
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center">
-              <div className="w-fit mt-[-1.00px] whitespace-nowrap relative [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                Связаться с нами
-              </div>
-            </button>
-          </div>
-
-          <img
-            className="absolute w-[817px] h-[600px] top-0 left-[559px]"
-            alt="Vector"
-            src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-3.svg"
-          />
+            </motion.div>
+          </HeroButtons>
 
           <div className="absolute w-[540px] h-[462px] top-20 left-[768px]">
             <div className="relative w-[606px] h-[527px] top-[-65px] left-[-33px]">
-              <div className="flex w-[372px] items-center gap-4 pl-4 pr-6 py-4 absolute top-[152px] left-[31px] bg-white rounded-[32px]">
+              <motion.div
+                ref={ref3}
+                initial={{ opacity: 0, x: -150 }}
+                animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className="flex w-[372px] items-center gap-4 pl-4 pr-6 py-4 absolute top-[152px] left-[31px] bg-white rounded-[32px]"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -92,7 +92,7 @@ export const Dataunload = () => {
                     450 KB
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
               <img
                 className="absolute w-[606px] h-[503px] top-0 left-0"
@@ -100,14 +100,26 @@ export const Dataunload = () => {
                 src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-5.svg"
               />
 
-              <div className="flex w-[400px] items-start justify-end gap-[14.04px] p-8 absolute top-[219px] left-[173px] bg-white rounded-[32px]">
+              <motion.div
+                ref={ref3}
+                initial={{ opacity: 0, y: -150 }}
+                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, ease: 'easeOut' }}
+                className="flex w-[400px] items-start justify-end gap-[14.04px] p-8 absolute top-[219px] left-[173px] bg-white rounded-[32px]"
+              >
                 <div className="flex flex-col items-center justify-center gap-4 relative flex-1 grow">
                   <div className="relative self-stretch mt-[-0.88px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-sm tracking-[0] leading-5">
                     Кредитные бюро
                   </div>
 
                   <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
-                    <div className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl">
+                    <motion.div
+                      ref={ref3}
+                      initial={{ opacity: 0, x: 150 }}
+                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.5, ease: 'easeOut', delay: .4 }}
+                      className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl"
+                    >
                       <img
                         className="relative w-8 h-8"
                         alt="Clip path group"
@@ -123,9 +135,15 @@ export const Dataunload = () => {
                         alt="Frame"
                         src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-1.svg"
                       />
-                    </div>
+                    </motion.div>
 
-                    <div className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl">
+                    <motion.div
+                      ref={ref3}
+                      initial={{ opacity: 0, x: 150 }}
+                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.5, ease: 'easeOut', delay: .5 }}
+                      className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl"
+                    >
                       <img
                         className="relative w-8 h-8"
                         alt="Okb logo"
@@ -141,9 +159,15 @@ export const Dataunload = () => {
                         alt="Frame"
                         src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-1.svg"
                       />
-                    </div>
+                    </motion.div>
 
-                    <div className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl">
+                    <motion.div
+                      ref={ref3}
+                      initial={{ opacity: 0, x: 150 }}
+                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      transition={{ duration: 0.5, ease: 'easeOut', delay: .6 }}
+                      className="flex w-[336px] h-16 items-center justify-center gap-5 p-4 relative bg-[#f9fafd] rounded-2xl"
+                    >
                       <img
                         className="relative w-8 h-8"
                         alt="Frame"
@@ -155,19 +179,18 @@ export const Dataunload = () => {
                       </div>
 
                       <img
-                        className="relative w-8 h-8"
+                        className="relative w-8 h-8 animate-spin"
                         alt="Frame"
                         src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-1948755106.svg"
                       />
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </div>
-
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
           <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
@@ -239,7 +262,7 @@ export const Dataunload = () => {
           </div>
         </div>
       </div>
-
+      ;
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
         <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
           <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
@@ -304,7 +327,7 @@ export const Dataunload = () => {
           />
         </div>
       </div>
-
+      ;
       <div className="flex flex-col w-[1376px] items-center justify-center gap-9 p-8 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden">
         <img
           className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
@@ -472,10 +495,10 @@ export const Dataunload = () => {
           </button>
         </div>
       </div>
-
-      <Integrations />
-      <Feedback />
-      <Trust />
+      ;
+      <Integrations />;
+      <Feedback />;
+      <Trust />;
     </div>
   );
 };
