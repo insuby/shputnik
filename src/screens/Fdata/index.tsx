@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import Slider from 'react-slick';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
@@ -8,11 +9,20 @@ import { Cta } from './Cta.tsx';
 
 export const Fdata = () => {
   const { setIsOpen } = useFeedbackForm();
+  const sliderRef = useRef<Slider>(null);
 
   const ref3 = useRef(null);
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
 
-  const handleContactClick = () => {
+  const goToPrev = () => {
+    sliderRef.current?.slickPrev();
+  };
+
+  const goToNext = () => {
+    sliderRef.current?.slickNext();
+  };
+
+  const onClick = () => {
     setIsOpen(true);
   };
 
@@ -530,137 +540,208 @@ export const Fdata = () => {
               для вашего бизнеса
             </div>
 
-            <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center">
+            <button
+              onClick={onClick}
+              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center"
+            >
               <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
                 Попробовать
               </div>
             </button>
           </div>
 
-          <div className="inline-flex items-center gap-6 relative flex-[0_0_auto] mr-[-1.00px]">
-            <div className="flex flex-col w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
-              <img
-                className="absolute w-[443px] h-[406px] top-0 left-0"
-                alt="Vector"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-1.svg"
-              />
+          <div className="w-[915px]">
+            <Slider
+              ref={sliderRef}
+              dots={false}
+              infinite={true}
+              speed={500}
+              slidesToShow={2}
+              slidesToScroll={1}
+              centerMode={true}
+              centerPadding="0px"
+              arrows={false}
+              className="p2p-slider"
+            >
+              <div className="px-3">
+                <div className="flex flex-col w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+                  <img
+                    className="absolute w-[443px] h-[406px] top-0 left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-1.svg"
+                  />
 
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="flex flex-col w-[299px] items-center justify-center gap-2.5 p-6 relative top-1 left-6 bg-white rounded-[32px]">
-                  <div className="self-stretch [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 relative tracking-[0]">
-                    Настройка правил
-                  </div>
+                  <div className="relative flex-1 self-stretch w-full grow">
+                    <div className="flex flex-col w-[299px] items-center justify-center gap-2.5 p-6 relative top-1 left-6 bg-white rounded-[32px]">
+                      <div className="self-stretch [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 relative tracking-[0]">
+                        Настройка правил
+                      </div>
 
-                  <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
-                      Автоматическая загрузка
-                    </div>
+                      <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
+                        <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
+                          Автоматическая загрузка
+                        </div>
 
-                    <div className="relative w-7 h-4 bg-[#e8ebf4] rounded-[100px] overflow-hidden">
-                      <div className="relative w-3 h-3 top-0.5 left-0.5 bg-[#ffffff] rounded-md" />
-                    </div>
-                  </div>
-
-                  <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
-                      Хранение файлов
-                    </div>
-
-                    <div className="relative w-7 h-4 bg-green-50 rounded-[100px] overflow-hidden">
-                      <div className="relative w-3 h-3 top-0.5 left-3.5 bg-[#ffffff] rounded-md" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Загрузка и реконсиляция данных
-                </div>
-
-                <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
-                  Поддержка любых форматов интеграций и файлов, гибкая настройка
-                  правил обработки данных
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col w-[442px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
-              <img
-                className="absolute w-[377px] h-[406px] top-0 left-0"
-                alt="Vector"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-4.svg"
-              />
-
-              <div className="relative flex-1 self-stretch w-full grow">
-                <div className="inline-flex items-center gap-2.5 p-3 absolute top-1 left-[23px] bg-[#ffffff] rounded-[32px]">
-                  <div className="relative w-[120px] h-[120px]">
-                    <div className="relative w-[120px] h-[120px]">
-                      <div className="absolute w-[120px] h-[120px] top-0 left-0">
-                        <img
-                          className="absolute w-[57px] h-[120px] top-0 left-0"
-                          alt="Subtract"
-                          src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-2.svg"
-                        />
-
-                        <img
-                          className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
-                          alt="Subtract"
-                          src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract.svg"
-                        />
-
-                        <div className="inline-flex flex-col items-center absolute top-[37px] left-[29px]">
-                          <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-xs tracking-[0] leading-4 whitespace-nowrap">
-                            Total
-                          </div>
-
-                          <div className="w-fit -mt-0.5 [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-xl text-center leading-8 whitespace-nowrap relative tracking-[0]">
-                            88,000
-                          </div>
+                        <div className="relative w-7 h-4 bg-[#e8ebf4] rounded-[100px] overflow-hidden">
+                          <div className="relative w-3 h-3 top-0.5 left-0.5 bg-[#ffffff] rounded-md" />
                         </div>
                       </div>
 
-                      <img
-                        className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
-                        alt="Subtract"
-                        src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-1.svg"
-                      />
+                      <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
+                        <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
+                          Хранение файлов
+                        </div>
 
-                      <img
-                        className="absolute w-[39px] h-5 top-0 left-[63px]"
-                        alt="Subtract"
-                        src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-3.svg"
-                      />
+                        <div className="relative w-7 h-4 bg-green-50 rounded-[100px] overflow-hidden">
+                          <div className="relative w-3 h-3 top-0.5 left-3.5 bg-[#ffffff] rounded-md" />
+                        </div>
+                      </div>
                     </div>
                   </div>
+
+                  <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                      Загрузка и реконсиляция данных
+                    </div>
+
+                    <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+                      Поддержка любых форматов интеграций и файлов, гибкая
+                      настройка правил обработки данных
+                    </p>
+                  </div>
                 </div>
-
-                <img
-                  className="absolute w-36 h-36 top-1 left-[179px]"
-                  alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-31.svg"
-                />
               </div>
+              <div className="px-3">
+                <div className="flex flex-col w-[442px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+                  <img
+                    className="absolute w-[377px] h-[406px] top-0 left-0"
+                    alt="Vector"
+                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-4.svg"
+                  />
 
-              <div className="flex-col h-[188px] items-start gap-3 self-stretch w-full flex relative">
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
-                  Отчетность
+                  <div className="relative flex-1 self-stretch w-full grow">
+                    <div className="inline-flex items-center gap-2.5 p-3 absolute top-1 left-[23px] bg-[#ffffff] rounded-[32px]">
+                      <div className="relative w-[120px] h-[120px]">
+                        <div className="relative w-[120px] h-[120px]">
+                          <div className="absolute w-[120px] h-[120px] top-0 left-0">
+                            <img
+                              className="absolute w-[57px] h-[120px] top-0 left-0"
+                              alt="Subtract"
+                              src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-2.svg"
+                            />
+
+                            <img
+                              className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
+                              alt="Subtract"
+                              src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract.svg"
+                            />
+
+                            <div className="inline-flex flex-col items-center absolute top-[37px] left-[29px]">
+                              <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-xs tracking-[0] leading-4 whitespace-nowrap">
+                                Total
+                              </div>
+
+                              <div className="w-fit -mt-0.5 [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-xl text-center leading-8 whitespace-nowrap relative tracking-[0]">
+                                88,000
+                              </div>
+                            </div>
+                          </div>
+
+                          <img
+                            className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
+                            alt="Subtract"
+                            src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-1.svg"
+                          />
+
+                          <img
+                            className="absolute w-[39px] h-5 top-0 left-[63px]"
+                            alt="Subtract"
+                            src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-3.svg"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <img
+                      className="absolute w-36 h-36 top-1 left-[179px]"
+                      alt="Frame"
+                      src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-31.svg"
+                    />
+                  </div>
+
+                  <div className="flex-col h-[188px] items-start gap-3 self-stretch w-full flex relative">
+                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                      Отчетность
+                    </div>
+
+                    <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+                      Легко создавать отчеты и дашборды используя данные из всех
+                      подключенных источников
+                    </p>
+                  </div>
                 </div>
-
-                <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
-                  Легко создавать отчеты и дашборды используя данные из всех
-                  подключенных источников
-                </p>
               </div>
-            </div>
+            </Slider>
           </div>
         </div>
 
-        <img
-          className="absolute w-[120px] h-14 top-[512px] left-[725px]"
-          alt="Frame"
-          src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-17-2.svg"
-        />
+        <div className="absolute w-[120px] h-14 top-[512px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
+          <button
+            onClick={goToPrev}
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.25 12H3.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10.5 5.25L3.75 12L10.5 18.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <button
+            onClick={goToNext}
+            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.75 12H20.25"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.5 5.25L20.25 12L13.5 18.75"
+                stroke="#55607A"
+                stroke-width="2"
+                stroke-linecap="square"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
 
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">

@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Slider from 'react-slick';
 import Subtract from '../../icons/Subtract';
 
