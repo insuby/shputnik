@@ -60,7 +60,7 @@ export const HeaderSection = () => {
   };
 
   return (
-    <header className={`flex items-center justify-between w-full p-4 transition-colors duration-300 ${isMenuOpen ? '!bg-white !rounded-[32px_32px_0_0]' : ''}`}>
+    <header className={`flex items-center justify-between w-full p-4 !rounded-[32px_32px_0_0] ${isMenuOpen ? '!bg-white' : ''}`}>
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
@@ -119,8 +119,8 @@ export const HeaderSection = () => {
                           />
 
                           <p className="flex-1 text-gray-90 text-xl leading-5 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                            <span className="text-[#1c222f] leading-7">
-                              Микрофинансовое  кредитование
+                            <span className="text-[#1c222f] leading-7 whitespace-pre-wrap">
+                              {`Микрофинансовое\nкредитование`}
                             </span>
                           </p>
                         </Link>

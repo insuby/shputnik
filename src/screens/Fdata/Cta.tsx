@@ -17,7 +17,7 @@ export const Cta = ({
     >
       <div className="flex items-center gap-2.5 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-blue-50 rounded-[32px] overflow-hidden">
         <img
-          className="absolute w-[625px] h-[590px] top-[-306px] left-14"
+          className="absolute w-[620px] h-[590px] top-[-306px] left-14"
           alt="Vector"
           src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1.svg"
         />
