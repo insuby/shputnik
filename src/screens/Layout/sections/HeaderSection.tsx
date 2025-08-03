@@ -1,13 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from '../../../components/ui/navigation-menu';
 import { RoutesPath } from '../../../routes-path.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
 
@@ -15,6 +8,7 @@ export const HeaderSection = () => {
   const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navRef = useRef<HTMLUListElement>(null);
 
   const navItems = [
@@ -71,12 +65,17 @@ export const HeaderSection = () => {
     }
   }, [pathname, isProductActive]);
 
+  // Автоматически закрывать меню при смене маршрута
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
   const onClick = () => {
     setIsOpen(true);
   };
 
   return (
-    <header className="flex items-center justify-between w-full p-4">
+    <header className={`flex items-center justify-between w-full p-4 transition-colors duration-300 ${isMenuOpen ? '!bg-white !rounded-[32px_32px_0_0]' : ''}`}>
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
@@ -90,264 +89,277 @@ export const HeaderSection = () => {
       </div>
 
       <div className="relative">
-        <NavigationMenu className="max-w-none" delayDuration={0}>
-          <NavigationMenuList
-            className="relative flex items-center gap-16"
-            ref={navRef}
-          >
-            <NavigationMenuItem>
-              <NavigationMenuTrigger
-                className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
-                data-pathname="products"
+        <div className="relative flex items-center gap-16">
+          <div className="relative">
+            <button
+              className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center gap-1`}
+              data-pathname="products"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              Продукты
+              <svg
+                className={`relative top-[1px] ml-1 h-3 w-3 transition duration-300 ${isMenuOpen ? 'rotate-180' : ''}`}
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                Продукты
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="flex flex-col items-start gap-6 pt-10 pb-6 px-6 relative self-stretch w-full flex-[0_0_auto] bg-white !rounded-[0px_0px_32px_32px] overflow-hidden ">
-                  <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
-                    <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
-                      <div className="w-[590px] mt-[-1.00px] text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                        Кредитование
-                      </div>
-                    </div>
+                <polyline points="6,9 12,15 18,9"></polyline>
+              </svg>
+            </button>
 
-                    <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
-                      <Link
-                        to={RoutesPath.MICROCREDIT}
-                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-2.svg"
-                        />
-
-                        <p className="flex-1 text-gray-90 text-xl leading-5 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                          <span className="text-[#1c222f] leading-7">
-                            Микрофинансовое  кредитование
-                          </span>
-                        </p>
-                      </Link>
-
-                      <Link
-                        to={RoutesPath.BUSINESSCREDIT}
-                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-10.svg"
-                        />
-
-                        <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+            {isMenuOpen && (
+              <div className="fixed z-50 top-20 left-0 right-0 flex justify-center py-2 px-4 max-w-[1440px] mx-auto border-t border-[#f9fafd]">
+                <div className="origin-top-center relative w-full overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90">
+                  <div className="flex flex-col items-start gap-6 pt-10 pb-6 px-6 relative self-stretch w-full flex-[0_0_auto] bg-white !rounded-[0px_0px_32px_32px] overflow-hidden border border-t border-[#F3F4F7]">
+                    <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
+                      <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
+                        <div className="w-[590px] mt-[-1.00px] text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
                           Кредитование
-                          <br />
-                          бизнеса
                         </div>
-                      </Link>
+                      </div>
 
-                      <Link
-                        to={RoutesPath.BANKCREDIT}
-                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-4.svg"
-                        />
+                      <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
+                        <Link
+                          to={RoutesPath.MICROCREDIT}
+                          className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-2.svg"
+                          />
 
-                        <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                          Банковское
-                          <br />
-                          кредитование
-                        </div>
-                      </Link>
-                    </div>
+                          <p className="flex-1 text-gray-90 text-xl leading-5 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                            <span className="text-[#1c222f] leading-7">
+                              Микрофинансовое  кредитование
+                            </span>
+                          </p>
+                        </Link>
 
-                    <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <Link
-                        to={RoutesPath.BNPL}
-                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84.svg"
-                        />
+                        <Link
+                          to={RoutesPath.BUSINESSCREDIT}
+                          className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-10.svg"
+                          />
 
-                        <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          BNPL
-                        </div>
-                      </Link>
+                          <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                            Кредитование
+                            <br />
+                            бизнеса
+                          </div>
+                        </Link>
 
-                      <Link
-                        to={RoutesPath.BNPL}
-                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-3.svg"
-                        />
+                        <Link
+                          to={RoutesPath.BANKCREDIT}
+                          className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-4.svg"
+                          />
 
-                        <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          POS-кредитование
-                        </div>
-                      </Link>
+                          <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                            Банковское
+                            <br />
+                            кредитование
+                          </div>
+                        </Link>
+                      </div>
 
-                      <Link
-                        to={RoutesPath.AUTOCREDIT}
-                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-20.svg"
-                        />
+                      <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
+                        <Link
+                          to={RoutesPath.BNPL}
+                          className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84.svg"
+                          />
 
-                        <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                          Автокредитование
-                        </div>
-                      </Link>
-                    </div>
+                          <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            BNPL
+                          </div>
+                        </Link>
 
-                    <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <Link
-                        to={RoutesPath.P2P}
-                        className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-7.svg"
-                        />
+                        <Link
+                          to={RoutesPath.BNPL}
+                          className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-3.svg"
+                          />
 
-                        <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          P2P-кредитование
-                        </div>
-                      </Link>
+                          <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            POS-кредитование
+                          </div>
+                        </Link>
 
-                      <Link
-                        to={RoutesPath.ISLAMFINANCE}
-                        className="w-[448px] gap-8 p-5 flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-1.svg"
-                        />
+                        <Link
+                          to={RoutesPath.AUTOCREDIT}
+                          className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-20.svg"
+                          />
 
-                        <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                          Исламское
-                          <br />
-                          финансирование
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
+                          <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                            Автокредитование
+                          </div>
+                        </Link>
+                      </div>
 
-                  <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
-                    <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
-                      <div className="w-[590px] mt-[-1.00px] font-normal text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                        Другое программное обеспечение
+                      <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
+                        <Link
+                          to={RoutesPath.P2P}
+                          className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-7.svg"
+                          />
+
+                          <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            P2P-кредитование
+                          </div>
+                        </Link>
+
+                        <Link
+                          to={RoutesPath.ISLAMFINANCE}
+                          className="w-[448px] gap-8 p-5 flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-1.svg"
+                          />
+
+                          <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                            Исламское
+                            <br />
+                            финансирование
+                          </div>
+                        </Link>
                       </div>
                     </div>
 
-                    <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <Link
-                        to={RoutesPath.DATAUNLOAD}
-                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-8.svg"
-                        />
-
-                        <p className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          Выгрузка данных <br />в кредитные бюро
-                        </p>
-                      </Link>
-
-                      <Link
-                        to={RoutesPath.FDATA}
-                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
-                      >
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-6.svg"
-                        />
-
-                        <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          Настраиваемый модуль принятия решений
+                    <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
+                      <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
+                        <div className="w-[590px] mt-[-1.00px] font-normal text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                          Другое программное обеспечение
                         </div>
-                      </Link>
+                      </div>
 
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-15.svg"
-                        />
+                      <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
+                        <Link
+                          to={RoutesPath.DATAUNLOAD}
+                          className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-8.svg"
+                          />
 
-                        <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                          F-datа
+                          <p className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            Выгрузка данных <br />в кредитные бюро
+                          </p>
+                        </Link>
+
+                        <Link
+                          to={RoutesPath.FDATA}
+                          className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                        >
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-6.svg"
+                          />
+
+                          <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            Настраиваемый модуль принятия решений
+                          </div>
+                        </Link>
+
+                        <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-15.svg"
+                          />
+
+                          <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
+                            F-datа
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
-                    <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
-                      <div className="w-[590px] mt-[-1.00px] text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
-                        Услуги
+                    <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
+                      <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
+                        <div className="w-[590px] mt-[-1.00px] text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
+                          Услуги
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
-                      <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
-                        <img
-                          className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-14.svg"
-                        />
+                      <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
+                        <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
+                          <img
+                            className="relative flex-[0_0_auto]"
+                            alt="Frame"
+                            src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-14.svg"
+                          />
 
-                        <div className="flex-1 font-normal text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                          Разработка на заказ
+                          <div className="flex-1 font-normal text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                            Разработка на заказ
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+              </div>
+            )}
+          </div>
 
-            {navItems.map((item) => (
-              <Link
-                key={item.pathname}
-                to={item.pathname}
-                className="flex flex-col items-center"
-                data-pathname={item.pathname}
-              >
-                <div className="relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5">
-                  <div
-                    className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
-                  >
-                    {item.label}
-                  </div>
+          {navItems.map((item) => (
+            <Link
+              key={item.pathname}
+              to={item.pathname}
+              className="flex flex-col items-center"
+              data-pathname={item.pathname}
+            >
+              <div className="relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5">
+                <div
+                  className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
+                >
+                  {item.label}
                 </div>
-              </Link>
-            ))}
-            <div
-              className="absolute bottom-0.5 h-0.5 bg-blue-50 rounded-[20px_20px_0px_0px] transition-all duration-300 ease-in-out !ml-0"
-              style={{
-                left: `${indicatorStyle.left}px`,
-                width: `${indicatorStyle.width}px`,
-              }}
-            />
-          </NavigationMenuList>
-        </NavigationMenu>
+              </div>
+            </Link>
+          ))}
+          <div
+            className="absolute bottom-0.5 h-0.5 bg-blue-50 rounded-[20px_20px_0px_0px] transition-all duration-300 ease-in-out !ml-0"
+            style={{
+              left: `${indicatorStyle.left}px`,
+              width: `${indicatorStyle.width}px`,
+            }}
+          />
+        </div>
       </div>
       <button
         onClick={onClick}

@@ -146,3 +146,21 @@ a {
 .p2p-slider .slick-slide.slick-center {
     opacity: 1;
 }
+
+/* Отключение hover эффектов для NavigationMenu */
+[data-radix-navigation-menu-trigger] {
+  pointer-events: auto !important;
+}
+
+[data-radix-navigation-menu-content] {
+  pointer-events: none !important;
+}
+
+[data-radix-navigation-menu-viewport] {
+  pointer-events: auto !important;
+}
+
+/* Отключение hover открытия меню */
+[data-radix-navigation-menu-root] {
+  --radix-navigation-menu-trigger-delay: 999999ms !important;
+}
