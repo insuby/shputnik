@@ -112,7 +112,10 @@ export const HeaderSection = () => {
                     </div>
 
                     <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
-                      <div className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.MICROCREDIT}
+                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -124,9 +127,12 @@ export const HeaderSection = () => {
                             Микрофинансовое  кредитование
                           </span>
                         </p>
-                      </div>
+                      </Link>
 
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.BUSINESSCREDIT}
+                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -138,9 +144,12 @@ export const HeaderSection = () => {
                           <br />
                           бизнеса
                         </div>
-                      </div>
+                      </Link>
 
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.BANKCREDIT}
+                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -152,11 +161,14 @@ export const HeaderSection = () => {
                           <br />
                           кредитование
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.BNPL}
+                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -166,9 +178,12 @@ export const HeaderSection = () => {
                         <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
                           BNPL
                         </div>
-                      </div>
+                      </Link>
 
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.BNPL}
+                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -178,9 +193,12 @@ export const HeaderSection = () => {
                         <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
                           POS-кредитование
                         </div>
-                      </div>
+                      </Link>
 
-                      <div className="flex items-center gap-8 p-5 relative flex-1 grow">
+                      <Link
+                        to={RoutesPath.AUTOCREDIT}
+                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -190,11 +208,14 @@ export const HeaderSection = () => {
                         <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
                           Автокредитование
                         </div>
-                      </div>
+                      </Link>
                     </div>
 
                     <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.P2P}
+                        className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -204,9 +225,12 @@ export const HeaderSection = () => {
                         <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
                           P2P-кредитование
                         </div>
-                      </div>
+                      </Link>
 
-                      <div className="w-[448px] gap-8 p-5 flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.ISLAMFINANCE}
+                        className="w-[448px] gap-8 p-5 flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -218,7 +242,7 @@ export const HeaderSection = () => {
                           <br />
                           финансирование
                         </div>
-                      </div>
+                      </Link>
                     </div>
                   </div>
 
@@ -230,7 +254,10 @@ export const HeaderSection = () => {
                     </div>
 
                     <div className="w-[1392px] gap-6 flex-[0_0_auto] bg-[#ffffff] flex items-center relative">
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <Link
+                        to={RoutesPath.DATAUNLOAD}
+                        className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -240,9 +267,12 @@ export const HeaderSection = () => {
                         <p className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
                           Выгрузка данных <br />в кредитные бюро
                         </p>
-                      </div>
+                      </Link>
 
-                      <div className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd]">
+                      <Link
+                        to={RoutesPath.FDATA}
+                        className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
+                      >
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -252,9 +282,9 @@ export const HeaderSection = () => {
                         <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
                           Настраиваемый модуль принятия решений
                         </div>
-                      </div>
+                      </Link>
 
-                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
@@ -276,7 +306,7 @@ export const HeaderSection = () => {
                     </div>
 
                     <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
-                      <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px]">
+                      <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
