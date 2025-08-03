@@ -18,7 +18,15 @@ export const HeaderSection = () => {
   ];
 
   const isProductActive =
-    pathname === RoutesPath.MICROCREDIT || pathname === RoutesPath.BNPL;
+    pathname === RoutesPath.MICROCREDIT || 
+    pathname === RoutesPath.BNPL ||
+    pathname === RoutesPath.AUTOCREDIT ||
+    pathname === RoutesPath.ISLAMFINANCE ||
+    pathname === RoutesPath.P2P ||
+    pathname === RoutesPath.BUSINESSCREDIT ||
+    pathname === RoutesPath.BANKCREDIT ||
+    pathname === RoutesPath.DATAUNLOAD ||
+    pathname === RoutesPath.FDATA;
 
   useEffect(() => {
     if (navRef.current) {
@@ -315,7 +323,7 @@ export const HeaderSection = () => {
               className="flex flex-col items-center"
               data-pathname={item.pathname}
             >
-              <div className="relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5">
+              <div className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-transparent border-solid ${location.pathname === item.pathname ? `border-[#3573FC]` : ''}`}>
                 <div
                   className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
                 >
