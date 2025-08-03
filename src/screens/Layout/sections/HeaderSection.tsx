@@ -113,7 +113,7 @@ export const HeaderSection = () => {
                           className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-2.svg"
                           />
@@ -130,7 +130,7 @@ export const HeaderSection = () => {
                           className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-10.svg"
                           />
@@ -147,7 +147,7 @@ export const HeaderSection = () => {
                           className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-4.svg"
                           />
@@ -166,7 +166,7 @@ export const HeaderSection = () => {
                           className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84.svg"
                           />
@@ -181,7 +181,7 @@ export const HeaderSection = () => {
                           className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-3.svg"
                           />
@@ -196,7 +196,7 @@ export const HeaderSection = () => {
                           className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-20.svg"
                           />
@@ -213,7 +213,7 @@ export const HeaderSection = () => {
                           className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-7.svg"
                           />
@@ -228,7 +228,7 @@ export const HeaderSection = () => {
                           className="w-[448px] gap-8 p-5 flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-1.svg"
                           />
@@ -255,7 +255,7 @@ export const HeaderSection = () => {
                           className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-8.svg"
                           />
@@ -270,7 +270,7 @@ export const HeaderSection = () => {
                           className="flex items-center gap-8 p-5 relative flex-1 grow hover:bg-[#f9fafd] rounded-[32px] cursor-pointer"
                         >
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-6.svg"
                           />
@@ -282,7 +282,7 @@ export const HeaderSection = () => {
 
                         <div className="gap-8 p-5 flex-1 grow flex items-center relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-15.svg"
                           />
@@ -304,7 +304,7 @@ export const HeaderSection = () => {
                       <div className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
                         <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
                           <img
-                            className="relative flex-[0_0_auto]"
+                            className="relative flex-[0_0_auto] size-16"
                             alt="Frame"
                             src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-14.svg"
                           />
