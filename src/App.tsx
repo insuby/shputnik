@@ -16,6 +16,7 @@ import { P2P } from './screens/P2P';
 import { BusinessCredit } from './screens/BusinessCredit';
 import { BankCredit } from './screens/BankCredit';
 import { Dataunload } from './screens/Dataunload';
+import { Fdata } from './screens/Fdata';
 
 export const App = () => {
   return (
@@ -41,6 +42,7 @@ const Pages = () => {
         <Route path={RoutesPath.BUSINESSCREDIT} element={<BusinessCredit />} />
         <Route path={RoutesPath.BANKCREDIT} element={<BankCredit />} />
         <Route path={RoutesPath.DATAUNLOAD} element={<Dataunload />} />
+        <Route path={RoutesPath.FADATA} element={<Fdata />} />
         <Route path={RoutesPath.P2P} element={<P2P />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
       </Route>

@@ -32,6 +32,7 @@ export const HeaderSection = () => {
     { label: 'Кредитование бизнеса', pathname: RoutesPath.BUSINESSCREDIT },
     { label: 'Банковское кредитование', pathname: RoutesPath.BANKCREDIT },
     { label: 'Выгрузка данных\nв кредитные бюро', pathname: RoutesPath.DATAUNLOAD },
+    { label: 'F-data', pathname: RoutesPath.FADATA },
 
   ];
 

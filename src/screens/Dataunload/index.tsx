@@ -6,18 +6,10 @@ import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { Trust } from '../../widgets/trust.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 
 export const Dataunload = () => {
-  const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const ref6 = useRef(null);
-  const ref7 = useRef(null);
-  const ref8 = useRef(null);
-  const ref9 = useRef(null);
-  const ref10 = useRef(null);
   const ref11 = useRef(null);
   const ref12 = useRef(null);
   const ref13 = useRef(null);
@@ -50,15 +42,7 @@ export const Dataunload = () => {
   const ref40 = useRef(null);
   const ref41 = useRef(null);
 
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
   const inView11 = useInView(ref11, { once: true, margin: '-100px' });
   const inView12 = useInView(ref12, { once: true, margin: '-100px' });
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
@@ -421,7 +405,6 @@ export const Dataunload = () => {
             </motion.div>
           </motion.div>
       </div>
-      ;
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
         <motion.div
           ref={ref27}
@@ -574,7 +557,6 @@ export const Dataunload = () => {
           />
         </div>
       </div>
-      ;
       <div className="flex flex-col w-[1376px] items-center justify-center gap-9 p-8 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden">
         <img
           className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
