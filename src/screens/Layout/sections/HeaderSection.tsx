@@ -7,9 +7,8 @@ import { useFeedbackForm } from '../../../widgets/feedback-form';
 export const HeaderSection = () => {
   const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
-  const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0 });
+  const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navRef = useRef<HTMLUListElement>(null);
 
   const navItems = [
     { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
@@ -18,7 +17,7 @@ export const HeaderSection = () => {
   ];
 
   const isProductActive =
-    pathname === RoutesPath.MICROCREDIT || 
+    pathname === RoutesPath.MICROCREDIT ||
     pathname === RoutesPath.BNPL ||
     pathname === RoutesPath.AUTOCREDIT ||
     pathname === RoutesPath.ISLAMFINANCE ||
@@ -28,37 +27,7 @@ export const HeaderSection = () => {
     pathname === RoutesPath.DATAUNLOAD ||
     pathname === RoutesPath.FDATA;
 
-  useEffect(() => {
-    if (navRef.current) {
-      let activeLink: HTMLElement | null = null;
 
-      if (isProductActive) {
-        activeLink = navRef.current.querySelector(
-          '[data-pathname="products"]',
-        ) as HTMLElement;
-      } else {
-        activeLink = navRef.current.querySelector(
-          `[data-pathname="${pathname}"]`,
-        ) as HTMLElement;
-      }
-
-      if (activeLink) {
-        const textElement = activeLink.querySelector(
-          'div > div',
-        ) as HTMLElement;
-        if (textElement) {
-          const navRect = navRef.current.getBoundingClientRect();
-          const textRect = textElement.getBoundingClientRect();
-          setIndicatorStyle({
-            left: textRect.left - navRect.left,
-            width: textRect.width,
-          });
-        }
-      }
-    }
-  }, [pathname, isProductActive]);
-
-  // Автоматически закрывать меню при смене маршрута
   useEffect(() => {
     setIsMenuOpen(false);
   }, [pathname]);
@@ -84,8 +53,7 @@ export const HeaderSection = () => {
         <div className="relative flex items-center gap-16">
           <div className="relative">
             <button
-              className={`w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center`}
-              data-pathname="products"
+              className={`hover:text-[#3573FC] w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center border-transparent border-b-2 py-2.5 border-solid ${isProductActive ? `border-[#3573FC]` : ''}`}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               Продукты
@@ -320,12 +288,12 @@ export const HeaderSection = () => {
             <Link
               key={item.pathname}
               to={item.pathname}
-              className="flex flex-col items-center"
+              className="group flex flex-col items-center rounded-[32px] cursor-pointer "
               data-pathname={item.pathname}
             >
               <div className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-transparent border-solid ${location.pathname === item.pathname ? `border-[#3573FC]` : ''}`}>
                 <div
-                  className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
+                  className={`group-hover:text-[#3573FC] w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
                 >
                   {item.label}
                 </div>
