@@ -60,7 +60,7 @@ export const HeaderSection = () => {
   };
 
   return (
-    <header className={`flex items-center justify-between w-full p-4 !rounded-[32px_32px_0_0] ${isMenuOpen ? '!bg-white' : ''}`}>
+    <header className={`flex items-center justify-between w-full py-4 px-8 mt-4 !rounded-[32px_32px_0_0] ${isMenuOpen ? '!bg-white' : ''}`}>
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="w-28 h-[22px]">
           <div className="relative w-[170px] h-[23px]">
@@ -72,7 +72,6 @@ export const HeaderSection = () => {
           </div>
         </Link>
       </div>
-
       <div className="relative">
         <div className="relative flex items-center gap-16">
           <div className="relative">
@@ -97,7 +96,7 @@ export const HeaderSection = () => {
             </button>
 
             {isMenuOpen && (
-              <div className="fixed z-50 top-20 left-0 right-0 flex justify-center py-2 px-4 max-w-[1440px] mx-auto border-t border-[#f9fafd]">
+              <div className="fixed z-50 top-20 left-0 right-0 flex justify-center py-2 max-w-[1440px] mx-auto border-t border-[#f9fafd]">
                 <div className="origin-top-center relative w-full overflow-hidden data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90">
                   <div className="flex flex-col items-start gap-6 pt-10 pb-6 px-6 relative self-stretch w-full flex-[0_0_auto] bg-white !rounded-[0px_0px_32px_32px] overflow-hidden border border-t border-[#F3F4F7]">
                     <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
