@@ -136,7 +136,7 @@ export const Fdata = () => {
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-5.svg"
+            src="/img/fdata/vector-1-5.svg"
           />
 
           <HeroButtons buttonText="Узнать больше">
@@ -173,7 +173,7 @@ export const Fdata = () => {
           <img
             className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-4-2.svg"
+            src="/img/fdata/vector-4-2.svg"
           />
 
           <motion.div
@@ -193,13 +193,13 @@ export const Fdata = () => {
                   <img
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-84.svg"
+                    src="/img/fdata/frame-84.svg"
                   />
 
                   <img
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-85.svg"
+                    src="/img/fdata/frame-85.svg"
                   />
                 </div>
 
@@ -211,7 +211,7 @@ export const Fdata = () => {
                   <img
                     className="relative w-4 h-4"
                     alt="Magnifying glass"
-                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/magnifyingglass.svg"
+                    src="/img/fdata/magnifyingglass.svg"
                   />
                 </div>
               </div>
@@ -351,7 +351,7 @@ export const Fdata = () => {
           <img
             className="absolute w-[601px] h-[464px] top-[172px] left-[775px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-5.svg"
+            src="/img/fdata/vector-5.svg"
           />
 
           <motion.div
@@ -483,7 +483,7 @@ export const Fdata = () => {
           <img
             className="absolute w-[410px] h-[401px] top-[454px] left-[980px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-6.svg"
+            src="/img/fdata/vector-6.svg"
           />
         </div>
       </div>
@@ -509,7 +509,7 @@ export const Fdata = () => {
           <img
             className="relative flex-1 self-stretch grow h-[404px]"
             alt="Frame"
-            src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-21.svg"
+            src="/img/fdata/frame-21.svg"
           />
         </div>
       </div>
@@ -577,7 +577,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18-4.svg"
+                src="/img/fdata/frame-18-4.svg"
               />
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <motion.div
@@ -617,7 +617,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-20.svg"
+                src="/img/fdata/frame-20.svg"
               />
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <motion.div
@@ -664,7 +664,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-19.svg"
+                src="/img/fdata/frame-19.svg"
               />
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <motion.div
@@ -703,7 +703,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-19-2.svg"
+                src="/img/fdata/frame-19-2.svg"
               />
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <motion.div
@@ -742,7 +742,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18-5.svg"
+                src="/img/fdata/frame-18-5.svg"
               />
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                 <motion.div
@@ -812,7 +812,7 @@ export const Fdata = () => {
                   <img
                     className="absolute w-[443px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-1.svg"
+                    src="/img/fdata/vector-1-1.svg"
                   />
 
                   <div className="relative flex-1 self-stretch w-full grow">
@@ -860,7 +860,7 @@ export const Fdata = () => {
                   <img
                     className="absolute w-[377px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-4.svg"
+                    src="/img/fdata/vector-1-4.svg"
                   />
 
                   <div className="relative flex-1 self-stretch w-full grow">
@@ -871,13 +871,13 @@ export const Fdata = () => {
                             <img
                               className="absolute w-[57px] h-[120px] top-0 left-0"
                               alt="Subtract"
-                              src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-2.svg"
+                              src="/img/fdata/subtract-2.svg"
                             />
 
                             <img
                               className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
                               alt="Subtract"
-                              src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract.svg"
+                              src="/img/fdata/subtract.svg"
                             />
 
                             <div className="inline-flex flex-col items-center absolute top-[37px] left-[29px]">
@@ -894,13 +894,13 @@ export const Fdata = () => {
                           <img
                             className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
                             alt="Subtract"
-                            src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-1.svg"
+                            src="/img/fdata/subtract-1.svg"
                           />
 
                           <img
                             className="absolute w-[39px] h-5 top-0 left-[63px]"
                             alt="Subtract"
-                            src="https://c.animaapp.com/mdvl6goomkbGpL/img/subtract-3.svg"
+                            src="/img/fdata/subtract-3.svg"
                           />
                         </div>
                       </div>
@@ -909,7 +909,7 @@ export const Fdata = () => {
                     <img
                       className="absolute w-36 h-36 top-1 left-[179px]"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-31.svg"
+                      src="/img/fdata/frame-31.svg"
                     />
                   </div>
 
@@ -1011,7 +1011,7 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="flex items-center gap-8 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
           >
-            <div className="relative w-[140px] h-[140px] rounded-[100px] [background:url(https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18.png)_50%_50%_/_cover]" />
+            <div className="relative w-[140px] h-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
 
             <motion.div className="items-center gap-12 flex-1 grow flex relative">
               <div className="flex-col w-[421px] gap-4 flex items-start relative">
@@ -1029,7 +1029,7 @@ export const Fdata = () => {
               <img
                 className="relative self-stretch w-px"
                 alt="Vector"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-166.svg"
+                src="/img/fdata/vector-166.svg"
               />
 
               <p className="flex-1 mt-[-1.00px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
@@ -1044,13 +1044,13 @@ export const Fdata = () => {
             <img
               className="absolute w-[323px] h-[348px] top-[-105px] left-[178px]"
               alt="Vector"
-              src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1-2.svg"
+              src="/img/fdata/vector-1-2.svg"
             />
 
             <img
               className="absolute w-[323px] h-[348px] top-[11px] left-[1005px]"
               alt="Vector"
-              src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-2-1.svg"
+              src="/img/fdata/vector-2-1.svg"
             />
           </motion.div>
 
@@ -1066,7 +1066,7 @@ export const Fdata = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-19.svg"
+                  src="/img/fdata/frame-19.svg"
                 />
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -1093,7 +1093,7 @@ export const Fdata = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18-2.svg"
+                  src="/img/fdata/frame-18-2.svg"
                 />
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -1120,7 +1120,7 @@ export const Fdata = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18-3.svg"
+                  src="/img/fdata/frame-18-3.svg"
                 />
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -1144,7 +1144,7 @@ export const Fdata = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18-1.svg"
+                  src="/img/fdata/frame-18-1.svg"
                 />
 
                 <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">

@@ -339,7 +339,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[443px] h-[467px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-1-1.svg"
+                      src="/img/microcredit/vector-1-1.svg"
                     />
 
                     <div className="relative flex-1 self-stretch w-full grow">
@@ -351,13 +351,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-[202px] h-1 top-1 left-px"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-136.svg"
+                                  src="/img/microcredit/vector-136.svg"
                                 />
 
                                 <img
                                   className="absolute w-[169px] h-1.5 top-[3px] left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-137.svg"
+                                  src="/img/microcredit/vector-137.svg"
                                 />
 
                                 <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -398,7 +398,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[377px] h-[467px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-1-6.svg"
+                      src="/img/microcredit/vector-1-6.svg"
                     />
 
                     <div className="relative flex-1 self-stretch w-full grow">
@@ -432,13 +432,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-2 h-[5px] top-[15px] left-[5px]"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector.svg"
+                                  src="/img/microcredit/vector.svg"
                                 />
 
                                 <img
                                   className="absolute w-[18px] h-[17px] top-0 left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-2.svg"
+                                  src="/img/microcredit/vector-2.svg"
                                 />
                               </div>
                             </div>
@@ -456,13 +456,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-2 h-[5px] top-[15px] left-[5px]"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector.svg"
+                                  src="/img/microcredit/vector.svg"
                                 />
 
                                 <img
                                   className="absolute w-[18px] h-[17px] top-0 left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-2.svg"
+                                  src="/img/microcredit/vector-2.svg"
                                 />
                               </div>
                             </div>

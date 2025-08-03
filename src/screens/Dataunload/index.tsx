@@ -151,7 +151,7 @@ export const Dataunload = () => {
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-5.svg"
+                  src="/img/dataunload/frame-18-5.svg"
                 />
 
                 <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
@@ -168,7 +168,7 @@ export const Dataunload = () => {
               <img
                 className="absolute w-[606px] h-[503px] top-0 left-0"
                 alt="Vector"
-                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-5.svg"
+                src="/img/dataunload/vector-5.svg"
               />
 
               <motion.div
@@ -194,7 +194,7 @@ export const Dataunload = () => {
                       <img
                         className="relative w-8 h-8"
                         alt="Clip path group"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/clip-path-group.png"
+                        src="/img/dataunload/clip-path-group.png"
                       />
 
                       <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -204,7 +204,7 @@ export const Dataunload = () => {
                       <img
                         className="relative flex-[0_0_auto]"
                         alt="Frame"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-1.svg"
+                        src="/img/dataunload/frame-18-1.svg"
                       />
                     </motion.div>
 
@@ -218,7 +218,7 @@ export const Dataunload = () => {
                       <img
                         className="relative w-8 h-8"
                         alt="Okb logo"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/okb-logo-1.png"
+                        src="/img/dataunload/okb-logo-1.png"
                       />
 
                       <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -228,7 +228,7 @@ export const Dataunload = () => {
                       <img
                         className="relative flex-[0_0_auto]"
                         alt="Frame"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-1.svg"
+                        src="/img/dataunload/frame-18-1.svg"
                       />
                     </motion.div>
 
@@ -242,7 +242,7 @@ export const Dataunload = () => {
                       <img
                         className="relative w-8 h-8"
                         alt="Frame"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-1948755067.svg"
+                        src="/img/dataunload/frame-1948755067.svg"
                       />
 
                       <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -252,7 +252,7 @@ export const Dataunload = () => {
                       <img
                         className="relative w-8 h-8 animate-spin"
                         alt="Frame"
-                        src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-1948755106.svg"
+                        src="/img/dataunload/frame-1948755106.svg"
                       />
                     </motion.div>
                   </div>
@@ -313,7 +313,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-3.svg"
+                src="/img/dataunload/frame-18-3.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -354,7 +354,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18.svg"
+                src="/img/dataunload/frame-18.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -395,7 +395,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-19.svg"
+                src="/img/dataunload/frame-19.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -571,7 +571,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 1.4 }}
             className="relative flex-1 self-stretch grow"
             alt="Frame"
-            src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-21.svg"
+            src="/img/dataunload/frame-21.svg"
           />
         </div>
       </div>
@@ -589,7 +589,7 @@ export const Dataunload = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-1-1.svg"
+          src="/img/dataunload/vector-1-1.svg"
         />
 
         <div className="flex items-start gap-[88px] p-12 relative self-stretch w-full flex-[0_0_auto]">
@@ -607,7 +607,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-6.svg"
+              src="/img/dataunload/frame-18-6.svg"
             />
 
             <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
@@ -641,7 +641,7 @@ export const Dataunload = () => {
                     <img
                       className="relative w-4 h-4"
                       alt="Check"
-                      src="https://c.animaapp.com/mdvh9jkbMPb4br/img/check.svg"
+                      src="/img/dataunload/check.svg"
                     />
                   </div>
 
@@ -655,7 +655,7 @@ export const Dataunload = () => {
                     <img
                       className="relative w-4 h-4"
                       alt="Check"
-                      src="https://c.animaapp.com/mdvh9jkbMPb4br/img/check.svg"
+                      src="/img/dataunload/check.svg"
                     />
                   </div>
 
@@ -669,7 +669,7 @@ export const Dataunload = () => {
                     <img
                       className="relative w-4 h-4"
                       alt="Check"
-                      src="https://c.animaapp.com/mdvh9jkbMPb4br/img/check.svg"
+                      src="/img/dataunload/check.svg"
                     />
                   </div>
 
@@ -684,7 +684,7 @@ export const Dataunload = () => {
           <img
             className="relative self-stretch w-px"
             alt="Vector"
-            src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-129.svg"
+            src="/img/dataunload/vector-129.svg"
           />
 
           <motion.div
@@ -701,7 +701,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/mdvh9jkbMPb4br/img/frame-18-2.svg"
+              src="/img/dataunload/frame-18-2.svg"
             />
 
             <div className="flex flex-col w-[520px] items-start gap-6 relative flex-[0_0_auto]">
@@ -747,7 +747,7 @@ export const Dataunload = () => {
                     <img
                       className="relative w-4 h-4"
                       alt="Check"
-                      src="https://c.animaapp.com/mdvh9jkbMPb4br/img/check.svg"
+                      src="/img/dataunload/check.svg"
                     />
                   </div>
 
@@ -782,7 +782,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
             className="absolute w-[1108px] h-[1060px] top-[-385px] left-[420px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdvh9jkbMPb4br/img/vector-1-3.svg"
+            src="/img/dataunload/vector-1-3.svg"
           />
 
           <div className="flex flex-col items-start gap-3 relative flex-1 grow">

@@ -19,13 +19,13 @@ export const Cta = ({
         <img
           className="absolute w-[620px] h-[590px] top-[-306px] left-14"
           alt="Vector"
-          src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-1.svg"
+          src="/img/fdata/vector-1.svg"
         />
 
         <img
           className="absolute w-[727px] h-[675px] top-[-109px] left-[666px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-2.svg"
+          src="/img/fdata/vector-2.svg"
         />
 
         <div className="flex-col w-[696px] gap-8 flex items-start relative">
@@ -70,7 +70,7 @@ export const Cta = ({
                 <img
                   className="relative self-stretch w-full h-[30px] mt-[-6.00px]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-83.svg"
+                  src="/img/fdata/frame-83.svg"
                 />
 
                 <div className="h-4 justify-between self-stretch w-full flex items-start relative">
@@ -100,7 +100,7 @@ export const Cta = ({
                 <img
                   className="mb-[-10.00px] relative self-stretch w-full h-[30px] mt-[-6.00px]"
                   alt="Frame"
-                  src="https://c.animaapp.com/mdvl6goomkbGpL/img/frame-83-1.svg"
+                  src="/img/fdata/frame-83-1.svg"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ export const Cta = ({
         <img
           className="absolute w-[426px] h-[403px] top-6 left-[874px]"
           alt="Vector"
-          src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-4.svg"
+          src="/img/fdata/vector-4.svg"
         />
 
         <div className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[90px] left-[1044px] bg-white rounded-[32px_32px_0px_0px]">
@@ -137,7 +137,7 @@ export const Cta = ({
               <img
                 className="absolute w-[198px] h-[198px] top-0 left-0"
                 alt="Ellipse"
-                src="https://c.animaapp.com/mdvl6goomkbGpL/img/ellipse-32.svg"
+                src="/img/fdata/ellipse-32.svg"
               />
             </div>
           </div>
