@@ -76,23 +76,11 @@ export const HeaderSection = () => {
         <div className="relative flex items-center gap-16">
           <div className="relative">
             <button
-              className={`w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center gap-1`}
+              className={`w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center`}
               data-pathname="products"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               Продукты
-              <svg
-                className={`relative top-[1px] ml-1 h-3 w-3 transition duration-300 ${isMenuOpen ? 'rotate-180' : ''}`}
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="6,9 12,15 18,9"></polyline>
-              </svg>
             </button>
 
             {isMenuOpen && (
