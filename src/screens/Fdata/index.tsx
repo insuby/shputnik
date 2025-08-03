@@ -59,6 +59,10 @@ export const Fdata = () => {
   const ref48 = useRef(null);
   const ref49 = useRef(null);
   const ref50 = useRef(null);
+  const ref51 = useRef(null);
+  const ref52 = useRef(null);
+  const ref53 = useRef(null);
+  const ref54 = useRef(null);
 
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
@@ -108,6 +112,10 @@ export const Fdata = () => {
   const inView48 = useInView(ref48, { once: true, margin: '-100px' });
   const inView49 = useInView(ref49, { once: true, margin: '-100px' });
   const inView50 = useInView(ref50, { once: true, margin: '-100px' });
+  const inView51 = useInView(ref51, { once: true, margin: '-100px' });
+  const inView52 = useInView(ref52, { once: true, margin: '-100px' });
+  const inView53 = useInView(ref53, { once: true, margin: '-100px' });
+  const inView54 = useInView(ref54, { once: true, margin: '-100px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();
@@ -169,9 +177,9 @@ export const Fdata = () => {
           />
 
           <motion.div
-            ref={ref3}
+            ref={ref51}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView3 ? { opacity: 1, x: 0 } : {}}
+            animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
             className="flex w-[576px] items-start justify-end gap-[11.96px] p-6 absolute top-[168px] left-[704px] bg-white rounded-[32px]"
           >
@@ -347,9 +355,9 @@ export const Fdata = () => {
           />
 
           <motion.div
-            ref={ref3}
+            ref={ref52}
             initial={{ opacity: 0, y: 50 }}
-            animate={inView3 ? { opacity: 1, y: 0 } : {}}
+            animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="flex w-[368px] items-start justify-end gap-[11.96px] p-6 absolute top-[364px] left-[960px] bg-white rounded-[32px_32px_0px_0px]"
           >
@@ -980,17 +988,32 @@ export const Fdata = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-          <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+        <div
+          ref={ref53}
+          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        >
+          <motion.div
+            ref={ref54}
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView54 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
+            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+          >
             Нашим клиентам
-          </div>
+          </motion.div>
         </div>
 
         <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex items-center gap-8 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden">
+          <motion.div
+            ref={ref53}
+            initial={{ opacity: 0, y: -100 }}
+            animate={inView53 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="flex items-center gap-8 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          >
             <div className="relative w-[140px] h-[140px] rounded-[100px] [background:url(https://c.animaapp.com/mdvl6goomkbGpL/img/frame-18.png)_50%_50%_/_cover]" />
 
-            <div className="items-center gap-12 flex-1 grow flex relative">
+            <motion.div className="items-center gap-12 flex-1 grow flex relative">
               <div className="flex-col w-[421px] gap-4 flex items-start relative">
                 <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] relative tracking-[0]">
                   Константин Гризов
@@ -1016,7 +1039,7 @@ export const Fdata = () => {
                 провайдерах, биржах, брокерах так
                 <br />и в традиционном и онлайн ритейле.
               </p>
-            </div>
+            </motion.div>
 
             <img
               className="absolute w-[323px] h-[348px] top-[-105px] left-[178px]"
@@ -1029,11 +1052,17 @@ export const Fdata = () => {
               alt="Vector"
               src="https://c.animaapp.com/mdvl6goomkbGpL/img/vector-2-1.svg"
             />
-          </div>
+          </motion.div>
 
           <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
             <div className="gap-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-              <div className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+              <motion.div
+                ref={ref54}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView54 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+                className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -1052,9 +1081,15 @@ export const Fdata = () => {
                     проверок
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+              <motion.div
+                ref={ref54}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView54 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -1071,11 +1106,17 @@ export const Fdata = () => {
                     сотруднику
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
 
             <div className="gap-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-              <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+              <motion.div
+                ref={ref54}
+                initial={{ opacity: 0, x: 50 }}
+                animate={inView54 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -1091,9 +1132,15 @@ export const Fdata = () => {
                     Процессы с f.Data выполняются до 100 раз быстрее
                   </p>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+              <motion.div
+                ref={ref54}
+                initial={{ opacity: 0, x: -50 }}
+                animate={inView54 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              >
                 <img
                   className="relative flex-[0_0_auto]"
                   alt="Frame"
@@ -1111,7 +1158,7 @@ export const Fdata = () => {
                     на всех этапах
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
