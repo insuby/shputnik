@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import Subtract from '../icons/Subtract';
 
 import { Check10 } from '../components/ui/check10.tsx';
 
@@ -389,20 +390,18 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </div>
                   </div>
 
-                  <img
+                  <Subtract
                     className="relative w-3 h-3"
-                    alt="Subtract"
-                    src="/img/widgets/subtract-5.svg"
+                    color="#00CB82"
                   />
                 </div>
 
                 <div className="flex items-end pl-2 pr-20 py-2 relative self-stretch w-full flex-[0_0_auto]">
                   <div className="inline-flex items-center justify-center gap-2 p-5 relative flex-[0_0_auto] rounded-[100px] [background:url(/img/widgets/frame-3.png)_50%_50%_/_cover]" />
 
-                  <img
+                  <Subtract
                     className="relative w-3 h-3"
-                    alt="Subtract"
-                    src="/img/widgets/subtract-6.svg"
+                    color="#00CB82"
                   />
 
                   <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">

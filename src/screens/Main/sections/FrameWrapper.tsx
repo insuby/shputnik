@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
 import { useNavigate } from 'react-router-dom';
+import Subtract from '../../../icons/Subtract';
 import { RoutesPath } from '../../../routes-path.tsx';
 
 export const FrameWrapper = () => {
@@ -238,16 +239,14 @@ export const FrameWrapper = () => {
                 <div className="relative w-[184px] h-[184px]">
                   <div className="relative h-[184px]">
                     <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                      <img
+                      <Subtract
                         className="absolute w-[88px] h-[184px] top-0 left-0"
-                        alt="Subtract"
-                        src="/img/main/subtract-3.svg"
+                        color="#00CB82"
                       />
 
-                      <img
+                      <Subtract
                         className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                        alt="Subtract"
-                        src="/img/main/subtract.svg"
+                        color="#00CB82"
                       />
 
                       <div className="inline-flex h-[62px] items-center absolute top-[61px] left-8 flex-col gap-0.5">
@@ -264,16 +263,14 @@ export const FrameWrapper = () => {
                     </div>
 
 
-                    <img
+                    <Subtract
                       className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                      alt="Subtract"
-                      src="/img/main/subtract-1.svg"
+                      color="#00CB82"
                     />
 
-                    <img
+                    <Subtract
                       className="absolute w-[59px] h-[31px] top-0 left-24"
-                      alt="Subtract"
-                      src="/img/main/subtract-2.svg"
+                      color="#00CB82"
                     />
                   </div>
                 </div>

@@ -1,7 +1,8 @@
 import { motion, useInView } from 'framer-motion';
 
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import Slider from 'react-slick';
+import Subtract from '../../icons/Subtract';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -208,16 +209,14 @@ export const MicroCredit = () => {
               <div className="relative w-[184px] h-[184px]">
                 <div className="relative h-[184px]">
                   <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                    <img
+                    <Subtract
                       className="absolute w-[88px] h-[184px] top-0 left-0"
-                      alt="Subtract"
-                      src="/img/subtract-8.svg"
+                      color="#00CB82"
                     />
 
-                    <img
+                    <Subtract
                       className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                      alt="Subtract"
-                      src="/img/subtract-7.svg"
+                      color="#00CB82"
                     />
 
                     <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
@@ -231,16 +230,14 @@ export const MicroCredit = () => {
                     </div>
                   </div>
 
-                  <img
+                  <Subtract
                     className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                    alt="Subtract"
-                    src="/img/subtract-9.svg"
+                    color="#00CB82"
                   />
 
-                  <img
+                  <Subtract
                     className="absolute w-[59px] h-[31px] top-0 left-24"
-                    alt="Subtract"
-                    src="/img/subtract-10.svg"
+                    color="#00CB82"
                   />
                 </div>
               </div>
@@ -342,7 +339,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[443px] h-[467px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-1-1.svg"
+                      src="/img/microcredit/vector-1-1.svg"
                     />
 
                     <div className="relative flex-1 self-stretch w-full grow">
@@ -354,13 +351,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-[202px] h-1 top-1 left-px"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-136.svg"
+                                  src="/img/microcredit/vector-136.svg"
                                 />
 
                                 <img
                                   className="absolute w-[169px] h-1.5 top-[3px] left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-137.svg"
+                                  src="/img/microcredit/vector-137.svg"
                                 />
 
                                 <div className="absolute w-3 h-3 top-0 left-[158px] bg-green-50 rounded-md shadow-[0px_4px_8px_#04ca8333]" />
@@ -401,7 +398,7 @@ export const MicroCredit = () => {
                     <img
                       className="absolute w-[377px] h-[467px] top-0 left-0"
                       alt="Vector"
-                      src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-1-6.svg"
+                      src="/img/microcredit/vector-1-6.svg"
                     />
 
                     <div className="relative flex-1 self-stretch w-full grow">
@@ -435,13 +432,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-2 h-[5px] top-[15px] left-[5px]"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector.svg"
+                                  src="/img/microcredit/vector.svg"
                                 />
 
                                 <img
                                   className="absolute w-[18px] h-[17px] top-0 left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-2.svg"
+                                  src="/img/microcredit/vector-2.svg"
                                 />
                               </div>
                             </div>
@@ -459,13 +456,13 @@ export const MicroCredit = () => {
                                 <img
                                   className="absolute w-2 h-[5px] top-[15px] left-[5px]"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector.svg"
+                                  src="/img/microcredit/vector.svg"
                                 />
 
                                 <img
                                   className="absolute w-[18px] h-[17px] top-0 left-0"
                                   alt="Vector"
-                                  src="https://c.animaapp.com/mdjatawb8n1lvi/img/vector-2.svg"
+                                  src="/img/microcredit/vector-2.svg"
                                 />
                               </div>
                             </div>

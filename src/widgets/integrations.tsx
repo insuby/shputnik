@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
+import LineCopy from '../icons/LineCopy';
 
 export const Integrations = () =>  {
   const ref1 = useRef(null);
@@ -196,10 +197,9 @@ export const Integrations = () =>  {
               </div>
             </div>
 
-            <img
+            <LineCopy
               className="absolute w-px h-5 top-[15px] left-[52px]"
-              alt="Line"
-              src="/img/widgets/line-copy.svg"
+              color="#55607A"
             />
           </div>
 
@@ -219,10 +219,9 @@ export const Integrations = () =>  {
               />
             </div>
 
-            <img
+            <LineCopy
               className="absolute w-px h-5 top-[15px] left-[52px]"
-              alt="Line copy"
-              src="/img/widgets/line-copy.svg"
+              color="#55607A"
             />
 
             <div className="w-[99px] top-0.5 absolute h-[47px] left-16">
@@ -260,10 +259,9 @@ export const Integrations = () =>  {
               />
             </div>
 
-            <img
+            <LineCopy
               className="absolute w-px h-5 top-[15px] left-[52px]"
-              alt="Line copy"
-              src="/img/widgets/line-copy.svg"
+              color="#55607A"
             />
 
             <div className="w-[95px] top-0 absolute h-[47px] left-16">
