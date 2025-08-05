@@ -563,6 +563,8 @@ export const IslamFinance = () => {
         </div>
       </div>
 
+      <Advantages />
+
       <motion.div
         ref={ref7}
         initial={{ opacity: 0, y: 50 }}
@@ -773,7 +775,6 @@ export const IslamFinance = () => {
         </motion.div>
       </motion.div>
 
-      <Advantages />
       <EmployeeWork />
       <Zaim />
       <Feedback />

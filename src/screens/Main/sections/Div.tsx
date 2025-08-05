@@ -182,9 +182,7 @@ export const Div = () => {
                 className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
               >
                 <p className="w-10/12">
-                  Программное обеспечение для быстрого запуска BNPL-рассрочки
-                  (покупай сейчас — плати позже) на этапе оформления покупки —
-                  как в онлайн-магазинах, так и в розничных точках.
+                  Предоставление банком денежных средств физическим или юридическим лицам. Предоставление банком денежных средств физическим или юридическим лицам
                 </p>
                 <div className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
                   <svg
@@ -345,9 +343,7 @@ export const Div = () => {
                 className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
               >
                 <p className="w-10/12">
-                  Программный продукт для POS-кредитования — помогает запускать
-                  оформление займов прямо во время покупки, как в физических
-                  точках продаж, так и онлайн.
+                  Предоставление банком денежных средств физическим или юридическим лицам. Предоставление банком денежных средств физическим или юридическим лицам
                 </p>
                 <div className="inline-flex items-center gap-2.5 p-4  flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
                   <svg

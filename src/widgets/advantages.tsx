@@ -25,7 +25,7 @@ export const Advantages = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto] mx-auto text-center"
+      className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto] mx-auto"
     >
       <motion.div 
         ref={ref2}
@@ -39,7 +39,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-center text-gray-90 text-5xl leading-[60px] relative tracking-[0]"
         >
           Преимущества
         </motion.div>
@@ -49,7 +49,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView4 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="self-stretch text-[#9ea7bb] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+          className="self-stretch text-[#9ea7bb] text-xl leading-7  text-center relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
         >
           Упрощение процессов выдачи займов online и в точках продаж благодаря
           полнофункциональной автоматизации

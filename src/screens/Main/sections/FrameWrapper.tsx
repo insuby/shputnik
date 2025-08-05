@@ -45,10 +45,10 @@ export const FrameWrapper = () => {
           className="w-[1376px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-6xl text-center leading-[68px] relative tracking-[0]"
         >
           <span className="text-[#1c222f]">
-            на программном обеспечении
+           Программное обеспечение
             <br />
           </span>
-          <span className="text-[#9ea7bb]">для кредитования</span>
+          <span className="text-[#9ea7bb]">для кейсов</span>
         </motion.p>
       </div>
 
@@ -75,7 +75,7 @@ export const FrameWrapper = () => {
             </p>
 
             <p  id="animate_13_left" className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-              Полный цикл автоматизации микрофинансового кредитования — от заявки до взыскания, с возможностью настройки сценариев и процессов под требования организации, включая полную цифровизацию всех этапов без ручного труда и с учётом регуляторных стандартов.
+              Вид деятельности, связанный с выдачей небольших займов гражданам и малому бизнесу, который не имеет доступа к традиционному банкингу. Микрозаймы, как правило, выдаются на короткие сроки и имеют более высокие процентные ставки по сравнению с банковскими кредитами.
             </p>
           </div>
 

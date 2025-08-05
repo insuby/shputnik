@@ -12,6 +12,7 @@ import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
+import {EmployeeWork} from "../../widgets/employe-work.tsx";
 
 export const BusinessCredit = () => {
   const ref1 = useRef(null);
@@ -303,6 +304,7 @@ export const BusinessCredit = () => {
       <Zaim />
       <Feedback />
       <Analytics />
+      <EmployeeWork />
       <RoleStructure />
       <Trust />
     </div>

@@ -11,6 +11,8 @@ import { EmployeeWork } from '../../widgets/employe-work.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import {Zaim} from "../../widgets/zaim.tsx";
+import {RoleStructure} from "../../widgets/role-structure.tsx";
 
 export const BNPL = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -99,7 +101,7 @@ export const BNPL = () => {
   return (
     <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
       <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col h-[620px] items-start gap-20 p-12 relative self-stretch w-full bg-green-50 rounded-[32px] overflow-hidden">
+        <div className="flex flex-col h-[620px] items-start gap-20 p-12 relative self-stretch w-full bg-green-60 rounded-[32px] overflow-hidden">
           <img
             className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
             alt="Vector"
@@ -373,7 +375,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
             >
-              Цифровая адаптация
+              BNPL-процесс
             </motion.div>
 
             <motion.div
@@ -383,7 +385,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
             >
-              Увеличьте продажи
+              Готовое программное обеспечения  для BNPL-сценария
             </motion.div>
           </div>
 
@@ -394,9 +396,7 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
           >
-            С помощью программного обеспечения BNPL увеличьте средний чек,
-            повысьте частоту транзакций и улучшите обслуживание клиентов с
-            интеграцией BNPL-решения в вашу точку продаж.
+            Предоставьте партнёрским магазинам и точкам продаж возможность подключать рассрочку —  с помощью настраиваемого нашего BNPL-софта.
           </motion.p>
         </motion.div>
 
@@ -624,7 +624,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
               className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
             >
-              Портал заемщика
+              POS-процесс
             </motion.div>
 
             <motion.p
@@ -634,8 +634,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
             >
-              Одно место <br />
-              для всех деталей
+              Готовое программное обеспечения  для PoS-сценария
             </motion.p>
           </div>
 
@@ -646,9 +645,7 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
           >
-            Клиенты плавно переходят на портал заемщика, где они могут получить
-            доступ к информации о своих платежах и вносить платежи — все из
-            одного удобного места.
+            Наше решение легко интегрируется в e-commerce и PoS-сценарии, позволяет управлять лимитами, графиками платежей и автоматизировать весь кредитный процесс.
           </motion.p>
         </motion.div>
       </div>
@@ -1272,6 +1269,7 @@ export const BNPL = () => {
       <Analytics />
       <Advantages />
       <Integrations />
+      <Zaim/>
 
       <div className="dhidden hidden items-start gap-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl overflow-hidden">
         <div className="flex flex-col items-center justify-center p-6 relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
@@ -1430,6 +1428,7 @@ export const BNPL = () => {
       </div>
 
       <EmployeeWork />
+      <RoleStructure/>
       <Trust />
     </div>
   );
