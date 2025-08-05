@@ -137,7 +137,7 @@ export const Work = () => {
                                             {job.tags.map((tag, index) => (
                                                 <Badge
                                                     key={index}
-                                                    className="h-8 px-3 py-2 bg-blue-10 text-blue-50 rounded-[52px] font-medium hover:bg-blue-10 hover:text-blue-50"
+                                                    className="h-8 px-3 py-2 bg-blue-10 shadow-none text-blue-50 rounded-[52px] font-medium [font-family:var(--font-family)] hover:bg-blue-10 hover:text-blue-50"
                                                 >
                                                     {tag}
                                                 </Badge>
@@ -148,7 +148,7 @@ export const Work = () => {
 
                                 <AccordionContent>
                                     <CardContent
-                                        className="flex flex-col items-start gap-8 p-6 bg-gray-10 rounded-b-[32px] mb-4 border-t border-gray-40 border-solid">
+                                        className="flex flex-col items-start gap-8 p-6 bg-gray-10 rounded-b-[32px] mb-4 border-t border-gray-20 border-solid">
                                         <div className="flex flex-col items-start gap-6">
                                             <div className="flex flex-col items-start gap-3">
                                                 <h3 className="w-full [font-family:'Inter',Helvetica] font-normal text-gray-40 text-base leading-6 tracking-[0]">

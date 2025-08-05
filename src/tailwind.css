@@ -9,6 +9,7 @@
 }
 
 :root {
+    --font-family: "Roboto", sans-serif;
     --blue-10: rgba(242, 245, 255, 1);
     --blue-50: rgba(53, 115, 252, 1);
     --body-1-r-font-family: "Inter", Helvetica;
