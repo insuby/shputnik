@@ -18,6 +18,7 @@ import { BankCredit } from './screens/BankCredit';
 import {Development} from "./screens/Development";
 import { Dataunload } from './screens/Dataunload';
 import { Fdata } from './screens/Fdata';
+import { BlogTemplate } from './screens/BlogTemplate';
 
 export const App = () => {
   return (
@@ -47,6 +48,7 @@ const Pages = () => {
         <Route path={RoutesPath.FDATA} element={<Fdata />} />
         <Route path={RoutesPath.P2P} element={<P2P />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
+        <Route path={RoutesPath.BLOG} element={<BlogTemplate />} />
       </Route>
     </Routes>
   );

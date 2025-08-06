@@ -14,6 +14,7 @@ export const HeaderSection = () => {
     { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
     { id: 3, label: 'Отзывы', pathname: RoutesPath.REVIEWS },
     { id: 4, label: 'Вакансии', pathname: RoutesPath.WORK },
+    { id: 4, label: 'Блог', pathname: RoutesPath.BLOG },
   ];
 
   const isProductActive =

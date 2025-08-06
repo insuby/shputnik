@@ -14,4 +14,5 @@ export const enum RoutesPath {
   BNPL = '/products/bnpl',
   REVIEWS = '/reviews',
   WORK = '/work',
+  BLOG = '/blog',
 }
