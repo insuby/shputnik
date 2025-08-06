@@ -1,12 +1,12 @@
-import {Analytics} from '../../widgets/analytics.tsx';
-import {EmployeeWork} from '../../widgets/employe-work.tsx';
 import {Feedback} from '../../widgets/feedback.tsx';
-import {Integrations} from '../../widgets/integrations.tsx';
 import {Trust} from '../../widgets/trust.tsx';
-import {Zaim} from '../../widgets/zaim.tsx';
 import Slider from "react-slick";
 import {useRef} from "react";
 import {Technoligies} from "./technoligies.tsx";
+import {Works} from "./works.tsx";
+
+import code from './images/code.png';
+import vector from './images/Vector 1.png';
 
 export const Development = () => {
     const sliderRef = useRef<Slider>(null);
@@ -70,7 +70,7 @@ export const Development = () => {
                     <img
                         className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdrkpgfjDQCyYi/img/vector-4-2.svg"
+                        src={vector}
                     />
 
                     <div
@@ -84,126 +84,11 @@ export const Development = () => {
                         </div>
 
                         <div className="flex flex-col w-[464px] items-start absolute top-12 left-0">
-                            <div
-                                className="flex items-center justify-center gap-2.5 px-4 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    1
-                                </div>
-
-                                <p className="text-gray-90 relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                <span
-                    className="text-[#1c222f] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                    <span
-                                        className="text-[#9983ff] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                </p>
-                            </div>
-
-                            <div
-                                className="flex items-center justify-center gap-10 px-4 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    2
-                                </div>
-
-                                <div
-                                    className="relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-gray-90 text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                                </div>
-                            </div>
-
-                            <div
-                                className="flex items-center justify-center gap-10 px-4 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    3
-                                </div>
-
-                                <p className="text-gray-90 relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                <span
-                    className="text-[#1c222f] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                    <span
-                                        className="text-[#00cb82] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                  calc_region
-                </span>
-                                    <span
-                                        className="text-[#1c222f] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                </p>
-                            </div>
-
-                            <div
-                                className="items-center justify-center gap-[68px] px-4 py-1 flex relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    4
-                                </div>
-
-                                <div
-                                    className="relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-gray-90 text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                                    Выберите регион
-                                </div>
-                            </div>
-
-                            <div
-                                className="items-center justify-center gap-[68px] px-4 py-1 flex relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    5
-                                </div>
-
-                                <div
-                                    className="relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-gray-90 text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                                    Москва
-                                </div>
-                            </div>
-
-                            <div
-                                className="items-center justify-center gap-[68px] px-4 py-1 flex relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    6
-                                </div>
-
-                                <p className="relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-gray-90 text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                <span
-                    className="text-[#1c222f] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                    <span
-                                        className="text-[#ff8068] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                  Вся Россия
-                </span>
-                                    <span
-                                        className="text-[#1c222f] font-body-3-r [font-style:var(--body-3-r-font-style)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] text-[length:var(--body-3-r-font-size)]">
-                </span>
-                                </p>
-                            </div>
-
-                            <div
-                                className="flex items-center justify-center gap-10 px-4 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    7
-                                </div>
-
-                                <div
-                                    className="text-gray-90 relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                                </div>
-                            </div>
-
-                            <div
-                                className="flex items-center justify-center gap-2.5 px-4 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                                <div
-                                    className="w-6 font-body-3-r text-[#9ea7bb] text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] relative mt-[-1.00px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] [font-style:var(--body-3-r-font-style)]">
-                                    8
-                                </div>
-
-                                <div
-                                    className="text-gray-90 relative flex-1 mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] [font-style:var(--body-3-r-font-style)]">
-                                </div>
-                            </div>
+                            <img
+                                className="size-full"
+                                alt="Vector"
+                                src={code}
+                            />
                         </div>
                     </div>
                 </div>
@@ -841,7 +726,7 @@ export const Development = () => {
                 </div>
             </div>
 
-
+            <Works/>
             <Trust/>
         </div>
     );
