@@ -823,7 +823,7 @@ export const P2P = () => {
                     className="absolute w-[120px] h-14 top-[512px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
                     <button
                         onClick={goToPrev}
-                        className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                        className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
                     >
                         <svg
                             width="24"
@@ -851,7 +851,7 @@ export const P2P = () => {
 
                     <button
                         onClick={goToNext}
-                        className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+                        className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
                     >
                         <svg
                             width="24"

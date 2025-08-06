@@ -25,16 +25,7 @@ export const HeaderSection = () => {
     { id: 4, label: 'Блог', pathname: RoutesPath.BLOG },
   ];
 
-  const isProductActive =
-    pathname === RoutesPath.MICROCREDIT ||
-    pathname === RoutesPath.BNPL ||
-    pathname === RoutesPath.AUTOCREDIT ||
-    pathname === RoutesPath.ISLAMFINANCE ||
-    pathname === RoutesPath.P2P ||
-    pathname === RoutesPath.BUSINESSCREDIT ||
-    pathname === RoutesPath.BANKCREDIT ||
-    pathname === RoutesPath.DATAUNLOAD ||
-    pathname === RoutesPath.FDATA;
+  const isProductActive = pathname.includes('product');
 
   useEffect(() => {
     setIsMenuOpen(false);
@@ -43,8 +34,6 @@ export const HeaderSection = () => {
   const onClick = () => {
     setIsOpen(true);
   };
-
-  console.log(isProductActive);
 
   return (
     <header
@@ -85,7 +74,9 @@ export const HeaderSection = () => {
           >
             <div
               className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-solid transition-colors ${
-                pathname === item.pathname ? 'border-[#3573FC]' : 'border-transparent'
+                pathname === item.pathname
+                  ? 'border-[#3573FC]'
+                  : 'border-transparent'
               }`}
             >
               <div
@@ -107,7 +98,9 @@ export const HeaderSection = () => {
 
       <button
         onClick={onClick}
-        className={`all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] ${!isMenuOpen ? 'bg-[#ffffff]' : 'bg-gray-10'} rounded-[100px] items-center justify-center relative cursor-pointer`}
+        className={`all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] ${
+          !isMenuOpen ? 'bg-[#ffffff]' : 'bg-gray-10'
+        } rounded-[100px] items-center justify-center relative cursor-pointer`}
       >
         <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#3573fc] text-base tracking-[0] leading-6 whitespace-nowrap">
           Связаться с нами
@@ -318,7 +311,10 @@ export const HeaderSection = () => {
                   </div>
                 </div>
 
-                <Link to={RoutesPath.DEVELOPMENT} className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]">
+                <Link
+                  to={RoutesPath.DEVELOPMENT}
+                  className="flex w-[1392px] items-center gap-6 relative flex-[0_0_auto] bg-[#ffffff]"
+                >
                   <div className="flex w-[448px] items-center gap-8 p-5 relative hover:bg-[#f9fafd] rounded-[32px] cursor-pointer">
                     <img
                       className="relative flex-[0_0_auto] size-16"
