@@ -10,6 +10,14 @@ export const HeaderSection = () => {
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isMenuOpen]);
+
   const navItems = [
     { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
     { id: 3, label: 'Отзывы', pathname: RoutesPath.REVIEWS },
@@ -36,6 +44,8 @@ export const HeaderSection = () => {
     setIsOpen(true);
   };
 
+  console.log(isProductActive);
+
   return (
     <header
       className={`flex items-center justify-between w-full py-4 px-8 mt-4 !rounded-[32px_32px_0_0] ${
@@ -57,8 +67,8 @@ export const HeaderSection = () => {
       <div className="relative flex items-center gap-16">
         <div className="relative">
           <button
-            className={`hover:text-[#3573FC] w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center border-transparent border-b-2 py-2.5 border-solid ${
-              isProductActive ? `border-[#3573FC]` : ''
+            className={`hover:text-[#3573FC] w-fit mt-[-1.00px] outline-0 font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 cursor-pointer flex items-center border-b-2 py-2.5 border-solid ${
+              isProductActive ? 'border-[#3573FC]' : 'border-transparent'
             }`}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -70,16 +80,16 @@ export const HeaderSection = () => {
           <Link
             key={item.pathname}
             to={item.pathname}
-            className="group flex flex-col items-center rounded-[32px] cursor-pointer "
+            className="group flex flex-col items-center rounded-[32px] cursor-pointer"
             data-pathname={item.pathname}
           >
             <div
-              className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-transparent border-solid ${
-                location.pathname === item.pathname ? `border-[#3573FC]` : ''
+              className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 border-b-2 border-solid transition-colors ${
+                pathname === item.pathname ? 'border-[#3573FC]' : 'border-transparent'
               }`}
             >
               <div
-                className={`group-hover:text-[#3573FC] w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90`}
+                className={`group-hover:text-[#3573FC] w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)] text-gray-90 transition-colors`}
               >
                 {item.label}
               </div>
@@ -97,17 +107,16 @@ export const HeaderSection = () => {
 
       <button
         onClick={onClick}
-        className="all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center relative cursor-pointer"
+        className={`all-[unset] box-border inline-flex gap-2.5 px-6 py-2.5 flex-[0_0_auto] ${!isMenuOpen ? 'bg-[#ffffff]' : 'bg-gray-10'} rounded-[100px] items-center justify-center relative cursor-pointer`}
       >
         <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#3573fc] text-base tracking-[0] leading-6 whitespace-nowrap">
           Связаться с нами
         </div>
       </button>
       {isMenuOpen && (
-        <div className="fixed z-50 top-20 left-0 right-0 flex justify-center py-2 max-w-[1440px] mx-auto">
-          <div className="origin-top-center relative w-full overflow-hidden data-[state=open]:animate-indata-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90">
-            <div className="flex flex-col items-start gap-6 pt-10 pb-6 px-6 relative self-stretch w-full flex-[0_0_auto] bg-white !rounded-[0px_0px_32px_32px] overflow-hidden border border-t border-[#F3F4F7]">
-              <div className="w-full h-[1px] -mt-4 border-t border-solid border-[#f9fafd] "></div>
+        <div className="fixed z-50 top-20 left-0 right-0 flex justify-center py-2 max-w-[1440px] mx-auto mt-1">
+          <div className="shadow-xl border-b-[32px] rounded-b-[32px] origin-top-center relative w-full overflow-hidden data-[state=open]:animate-indata-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90">
+            <div className="flex flex-col items-start gap-6 pt-10 pb-6 px-6 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[0px_0px_32px_32px] overflow-hidden border border-t border-[#F3F4F7]">
               <div className="inline-flex flex-col items-start gap-2 relative flex-[0_0_auto]">
                 <div className="inline-flex items-center justify-center gap-2.5 px-5 py-0 relative flex-[0_0_auto]">
                   <div className="w-[590px] mt-[-1.00px] text-gray-40 text-base leading-6 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">

@@ -5,6 +5,26 @@
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
 }
+
+/* Скрытие скроллбара */
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Скрытие скроллбара для всех элементов */
+* {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
 html,
 body {
     margin: 0;

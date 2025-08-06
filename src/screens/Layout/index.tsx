@@ -17,7 +17,7 @@ export const Layout = () => {
   }, [isOpen])
 
   return (
-    <div className="flex flex-col w-full items-center max-w-[1440px] m-auto rounded-3xl">
+    <div className="flex flex-col w-full items-center max-w-[1440px] m-auto rounded-3xl overflow-hidden">
       <HeaderSection />
       <Outlet />
       <FooterSection />
