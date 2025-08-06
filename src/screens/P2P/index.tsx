@@ -695,6 +695,126 @@ export const P2P = () => {
                                     </div>
                                 </div>
                             </div>
+
+                            <div className="px-3">
+                                <div
+                                    className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                    <div className="relative flex-1 self-stretch w-full grow">
+                                        <div
+                                            className="inline-flex flex-col gap-6 p-4 relative top-[27px] left-10 items-center justify-center bg-[#ffffff] rounded-[32px]">
+                                            <div
+                                                className="flex flex-col w-[230px] items-start gap-5 pt-3 pb-0 px-4 relative flex-[0_0_auto]">
+                                                <div
+                                                    className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                                                    <img
+                                                        className="relative self-stretch w-full h-7 mt-[-3.00px] ml-[-3.00px] mr-[-2.00px]"
+                                                        alt="Frame"
+                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-83-4.svg"
+                                                    />
+
+                                                    <div className="relative self-stretch w-full h-6">
+                                                        <div
+                                                            className="left-0 font-normal text-[#7a86a2] absolute -top-px [font-family:'Roboto',Helvetica] text-base tracking-[0] leading-6 whitespace-nowrap">
+                                                            0
+                                                        </div>
+
+                                                        <div
+                                                            className="absolute -top-px left-[131px] font-medium text-gray-90 text-base leading-6 [font-family:'Roboto',Helvetica] tracking-[0] whitespace-nowrap">
+                                                            122 000
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                                        <div
+                                            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                                            Функции заёмщика
+                                        </div>
+
+                                        <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                                            Подача заявки на займ, торги, рейтинг, погашение займа, получение
+                                            займа
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="px-3">
+                                <div
+                                    className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                    <div className="flex flex-col w-[442px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+                                        <img
+                                            className="absolute w-[442px] h-[406px] top-0 left-0"
+                                            alt="Vector"
+                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-11.svg"
+                                        />
+
+                                        <div className="relative flex-1 self-stretch w-full grow">
+                                            <div className="inline-flex items-center gap-2.5 p-3 absolute top-1 left-[23px] bg-[#ffffff] rounded-[32px]">
+                                                <div className="relative w-[120px] h-[120px]">
+                                                    <div className="relative w-[120px] h-[120px]">
+                                                        <div className="absolute w-[120px] h-[120px] top-0 left-0">
+                                                            <img
+                                                                className="absolute w-[57px] h-[120px] top-0 left-0"
+                                                                alt="Subtract"
+                                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-5.svg"
+                                                            />
+
+                                                            <img
+                                                                className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
+                                                                alt="Subtract"
+                                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-9.svg"
+                                                            />
+
+                                                            <div className="top-[37px] left-[22px] inline-flex flex-col items-center absolute">
+                                                                <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-xs tracking-[0] leading-4 whitespace-nowrap">
+                                                                    Вся сумма
+                                                                </div>
+
+                                                                <div className="relative w-fit -mt-0.5 [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-xl text-center tracking-[0] leading-8 whitespace-nowrap">
+                                                                    88,000₽
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <img
+                                                            className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
+                                                            alt="Subtract"
+                                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-7.svg"
+                                                        />
+
+                                                        <img
+                                                            className="absolute w-[39px] h-5 top-0 left-[63px]"
+                                                            alt="Subtract"
+                                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-8.svg"
+                                                        />
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <img
+                                                className="absolute w-36 h-36 top-1 left-[179px]"
+                                                alt="Frame"
+                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-31.svg"
+                                            />
+                                        </div>
+
+                                        <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                                            <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                                                Модули
+                                            </div>
+
+                                            <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                                                Автоинвестирование, формирования статистики, история, рейтингование
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </Slider>
                     </div>
                 </div>

@@ -603,7 +603,7 @@ export const MicroCredit = () => {
                                     <div
                                         className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
                                         <div className="relative flex-1 self-stretch w-full grow">
-                                            <div className="relative w-[443px] h-[339px] -top-12 -left-12">
+                                            <div className="relative w-[443px] -top-12 -left-12">
                                                 <div
                                                     className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[55px] left-[77px] bg-[#ffffff] rounded-[32px]">
                                                     <img
