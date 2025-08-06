@@ -229,7 +229,7 @@ export const MicroCredit = () => {
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[254px] left-[1062px] bg-[#ffffff] rounded-[32px]"
                     >
-                        <Graph />
+                        <Graph/>
 
                         <div
                             className="inline-flex flex-col items-start gap-2.5 p-5 bg-[#f6f8ff] rounded-[20px] relative flex-[0_0_auto]">
@@ -335,7 +335,7 @@ export const MicroCredit = () => {
                             >
                                 <div className="px-3">
                                     <div
-                                        className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                        className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
                                         <img
                                             className="absolute w-[443px] h-[467px] top-0 left-0"
                                             alt="Vector"
@@ -403,7 +403,7 @@ export const MicroCredit = () => {
                                 </div>
                                 <div className="px-3">
                                     <div
-                                        className="w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                        className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
                                         <img
                                             className="absolute w-[377px] h-[467px] top-0 left-0"
                                             alt="Vector"
@@ -513,11 +513,154 @@ export const MicroCredit = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="px-3">
+                                    <div
+                                        className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                        <img
+                                            className="absolute w-[443px] h-[467px] top-0 left-0"
+                                            alt="Vector"
+                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-6.svg"
+                                        />
+
+                                        <img
+                                            className="relative flex-1 self-stretch w-full grow"
+                                            alt="Frame"
+                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755086-2.svg"
+                                        />
+
+                                        <div
+                                            className="flex flex-col h-[300px] items-start gap-3 relative self-stretch w-full">
+                                            <div
+                                                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                                                Бонусная система
+                                            </div>
+
+                                            <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                                                Система начисления, списания <br/>и учета бонусов, бонусные
+                                                программы, возможность начисления бонусов вручную, формирование
+                                                промокодов.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="px-3">
+                                    <div
+                                        className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                        <img
+                                            className="absolute w-[443px] h-[467px] top-0 left-0"
+                                            alt="Vector"
+                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-9.svg"
+                                        />
+
+                                        <div className="relative flex-1 self-stretch w-full grow">
+                                            <div
+                                                className="flex w-[264px] items-center gap-4 relative top-1.5 left-[42px]">
+                                                <div
+                                                    className="relative w-[124px] h-[124px] rounded-3xl [background:url(https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755022.png)_50%_50%_/_cover]"/>
+
+                                                <div
+                                                    className="flex w-[124px] h-[124px] items-center gap-[53px] px-4 py-6 relative bg-[#ffffff] rounded-3xl">
+                                                    <div
+                                                        className="flex flex-col items-start justify-between relative flex-1 self-stretch grow">
+                                                        <div
+                                                            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-sm text-center tracking-[0] leading-5">
+                                                            Заявка одобрена
+                                                        </div>
+
+                                                        <div
+                                                            className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-2xl text-center tracking-[0] leading-8">
+                                                            42,000₽
+                                                        </div>
+                                                    </div>
+
+                                                    <img
+                                                        className="absolute w-8 h-8 -top-2 left-[100px]"
+                                                        alt="Frame"
+                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-18-4.svg"
+                                                    />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="flex flex-col h-[300px] items-start gap-3 relative self-stretch w-full">
+                                            <div
+                                                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                                                Личный кабинет
+                                            </div>
+
+                                            <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                                                У клиента есть личный кабинет, через который он может подавать
+                                                заявки на займ (без заполнения анкетных данных), просматривать
+                                                историю взаимодействия с системой, пролонгировать, погашать и
+                                                рефинансировать займ.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="px-3">
+                                    <div
+                                        className="w-[443px] h-[580px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden flex flex-col">
+                                        <div className="relative flex-1 self-stretch w-full grow">
+                                            <div className="relative w-[443px] h-[339px] -top-12 -left-12">
+                                                <div
+                                                    className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[55px] left-[77px] bg-[#ffffff] rounded-[32px]">
+                                                    <img
+                                                        className="relative flex-[0_0_auto]"
+                                                        alt="Frame"
+                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-1.svg"
+                                                    />
+
+                                                    <div
+                                                        className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
+                                                        Заявка на займ
+                                                    </div>
+                                                </div>
+
+                                                <img
+                                                    className="absolute w-[443px] h-[339px] top-0 left-0"
+                                                    alt="Vector"
+                                                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-4-1.svg"
+                                                />
+
+                                                <div
+                                                    className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[101px] left-[119px] bg-[#ffffff] rounded-[32px]">
+                                                    <img
+                                                        className="relative flex-[0_0_auto]"
+                                                        alt="Frame"
+                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-6.svg"
+                                                    />
+
+                                                    <div
+                                                        className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
+                                                        Рефинансирование
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                                            <div
+                                                className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                                                Автоформирование документов
+                                            </div>
+
+                                            <p className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
+                                                Формирование клиентских документов и автоматизация процесса
+                                                подписания документов на всех этапах жизни займа, в том числе
+                                                РКО, ПКО, договор на предоставление займа, заявление о
+                                                пролонгации, рефинансировании, досудебное письмо и другое.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </Slider>
                         </div>
                     </div>
                     <div
-                        className="absolute w-[120px] h-14 top-[512px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
+                        className="absolute w-[120px] h-14 top-[592px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
                         <button
                             onClick={goToPrev}
                             className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
@@ -616,7 +759,7 @@ export const MicroCredit = () => {
             <ZaimChecker/>
             <Analytics/>
             <Integrations/>
-            <Feedback />
+            <Feedback/>
             <EmployeeWork/>
             <RoleStructure/>
             <Trust/>
