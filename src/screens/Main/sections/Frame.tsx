@@ -3,6 +3,7 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
 import Subtract from '../../../icons/Subtract';
+import {Graph} from "../../../components/ui/graph.tsx";
 
 export const Frame = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -104,43 +105,7 @@ export const Frame = () => {
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
           className="flex w-[472px] items-center justify-center gap-5 p-4 absolute top-[559px] left-[94px] bg-white rounded-[32px]"
         >
-          <div className="inline-flex flex-col items-start gap-2.5 px-3 py-0 relative flex-[0_0_auto] ml-[-4.00px]">
-            <div className="relative w-[184px] h-[184px]">
-              <div className="relative h-[184px]">
-                <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                  <Subtract
-                    className="absolute w-[88px] h-[184px] top-0 left-0"
-                    color="#00CB82"
-                  />
-
-                  <Subtract
-                    className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                    color="#00CB82"
-                  />
-
-                  <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-[39px]">
-                    <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
-                      Вся сумма
-                    </div>
-
-                    <div className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
-                      42,000₽
-                    </div>
-                  </div>
-                </div>
-
-                <Subtract
-                  className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                  color="#00CB82"
-                />
-
-                <Subtract
-                  className="absolute w-[59px] h-[31px] top-0 left-24"
-                  color="#00CB82"
-                />
-              </div>
-            </div>
-          </div>
+          <Graph />
 
           <div className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
             <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">

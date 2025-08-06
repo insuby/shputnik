@@ -15,6 +15,7 @@ import {Trust} from '../../widgets/trust.tsx';
 import {Zaim} from '../../widgets/zaim.tsx';
 import {ZaimChecker} from "../../widgets/zain-checker.tsx";
 import {Feedback} from "../../widgets/feedback.tsx";
+import {Graph} from "../../components/ui/graph.tsx";
 
 export const MicroCredit = () => {
     const {setIsOpen} = useFeedbackForm();
@@ -228,46 +229,7 @@ export const MicroCredit = () => {
                         transition={{duration: 0.7, ease: 'easeOut'}}
                         className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[254px] left-[1062px] bg-[#ffffff] rounded-[32px]"
                     >
-                        <div className="inline-flex items-center gap-2.5 p-3 rounded-[100px] relative flex-[0_0_auto]">
-                            <div className="relative w-[184px] h-[184px]">
-                                <div className="relative h-[184px]">
-                                    <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                                        <Subtract
-                                            className="absolute w-[88px] h-[184px] top-0 left-0"
-                                            color="#00CB82"
-                                        />
-
-                                        <Subtract
-                                            className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                                            color="#00CB82"
-                                        />
-
-                                        <div
-                                            className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-8">
-                                            <div
-                                                className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm tracking-[0] leading-5 whitespace-nowrap">
-                                                Вся сумма
-                                            </div>
-
-                                            <div
-                                                className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[28px] text-center tracking-[0] leading-10 whitespace-nowrap">
-                                                122,000₽
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <Subtract
-                                        className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                                        color="#00CB82"
-                                    />
-
-                                    <Subtract
-                                        className="absolute w-[59px] h-[31px] top-0 left-24"
-                                        color="#00CB82"
-                                    />
-                                </div>
-                            </div>
-                        </div>
+                        <Graph />
 
                         <div
                             className="inline-flex flex-col items-start gap-2.5 p-5 bg-[#f6f8ff] rounded-[20px] relative flex-[0_0_auto]">

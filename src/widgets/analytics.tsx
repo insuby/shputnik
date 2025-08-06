@@ -18,9 +18,6 @@ export const Analytics = () => {
   const ref12 = useRef(null);
   const ref13 = useRef(null);
   const ref14 = useRef(null);
-  const ref15 = useRef(null);
-  const ref16 = useRef(null);
-  const ref17 = useRef(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
@@ -36,9 +33,6 @@ export const Analytics = () => {
   const inView12 = useInView(ref12, { once: true, margin: '-100px' });
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
 
   return (
     <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
@@ -158,35 +152,6 @@ export const Analytics = () => {
               программой 1С для ведения бухгалтерского учета.
             </motion.p>
           </motion.div>
-
-          {/*<motion.div */}
-          {/*  ref={ref15}*/}
-          {/*  initial={{ opacity: 0, y: 50 }}*/}
-          {/*  animate={inView15 ? { opacity: 1, y: 0 } : {}}*/}
-          {/*  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}*/}
-          {/*  className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"*/}
-          {/*>*/}
-          {/*  <motion.div */}
-          {/*    ref={ref16}*/}
-          {/*    initial={{ opacity: 0, y: 50 }}*/}
-          {/*    animate={inView16 ? { opacity: 1, y: 0 } : {}}*/}
-          {/*    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}*/}
-          {/*    className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8"*/}
-          {/*  >*/}
-          {/*    ЕПС ready*/}
-          {/*  </motion.div>*/}
-
-          {/*  <motion.p */}
-          {/*    ref={ref17}*/}
-          {/*    initial={{ opacity: 0, y: 50 }}*/}
-          {/*    animate={inView17 ? { opacity: 1, y: 0 } : {}}*/}
-          {/*    transition={{ duration: 0.7, ease: 'easeOut', delay: 1.4 }}*/}
-          {/*    className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"*/}
-          {/*  >*/}
-          {/*    Система готова к переходу бухгалтерского учета на единый план*/}
-          {/*    счетов (ЕПС).*/}
-          {/*  </motion.p>*/}
-          {/*</motion.div>*/}
         </motion.div>
 
         <motion.div 
