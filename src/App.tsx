@@ -19,10 +19,13 @@ import {Development} from "./screens/Development";
 import { Dataunload } from './screens/Dataunload';
 import { Fdata } from './screens/Fdata';
 import { BlogTemplate } from './screens/BlogTemplate';
+import { Privacy } from './screens/Privacy';
+import { ScrollToTop } from './ScrollToTop';
 
 export const App = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Pages />
     </BrowserRouter>
   );
@@ -49,6 +52,7 @@ const Pages = () => {
         <Route path={RoutesPath.P2P} element={<P2P />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
         <Route path={RoutesPath.BLOG} element={<BlogTemplate />} />
+        <Route path={RoutesPath.PRIVACY} element={<Privacy />} />
       </Route>
     </Routes>
   );

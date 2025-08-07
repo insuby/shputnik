@@ -76,8 +76,8 @@ export const Autocredit = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="inline-flex items-center absolute top-[154px] left-[704px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden"
           >
-            <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative bg-[#ffffff]">
-              <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
+            <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative bg-[#ffffff] mt-2">
+              <div className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
                 Калькулятор
               </div>
 
@@ -297,7 +297,7 @@ export const Autocredit = () => {
             </div>
 
             <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative self-stretch">
-              <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
+              <div className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
                 Выберите условия
               </div>
 

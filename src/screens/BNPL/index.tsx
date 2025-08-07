@@ -921,7 +921,7 @@ export const BNPL = () => {
           className="flex w-[871px] h-[538px] items-center relative mr-[-88.00px] bg-[#f6f8fd] rounded-3xl overflow-hidden"
         >
           <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
-            <p className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
+            <p className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
               <span className="text-[#1c222f]">Ваш</span>
 
               <span className="text-[#00cb82]">Лого</span>

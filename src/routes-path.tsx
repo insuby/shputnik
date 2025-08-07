@@ -15,4 +15,5 @@ export const enum RoutesPath {
   REVIEWS = '/reviews',
   WORK = '/work',
   BLOG = '/blog',
+  PRIVACY = '/privacy',
 }

@@ -47,13 +47,13 @@ export const FooterSection = () => {
                 <div className="h-[324px] items-start justify-between flex flex-col w-[268px] relative">
                     <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
                         <div className="relative w-28 h-[22px]">
-                            <div className="relative w-[170px] h-[23px]">
+                            <Link to={RoutesPath.MAIN} className="relative w-[170px] h-[23px] block">
                                 <img
                                     className="absolute size-full top-0 left-0"
                                     alt="Group"
                                     src="/img/logo.png"
                                 />
-                            </div>
+                            </Link>
                         </div>
 
                         <div
@@ -77,32 +77,42 @@ export const FooterSection = () => {
                         Программное обеспечение
                     </div>
 
-                    <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                        <div
-                            className="self-stretch whitespace-pre-wrap mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                            Микрофинансовое<br/>кредитование
-                        </div>
+                        <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
+                            <Link
+                                to={RoutesPath.MICROCREDIT}
+                                className="self-stretch whitespace-pre-wrap mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
+                                Микрофинансовое<br/>кредитование
+                            </Link>
 
-                        <div
-                            className="font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative self-stretch text-gray-90 tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                            Кредитование бизнеса
-                        </div>
+                            <Link
+                                to={RoutesPath.BUSINESSCREDIT}
+                                className="font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative self-stretch text-gray-90 tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
+                                Кредитование бизнеса
+                            </Link>
 
-                        <div
-                            className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                            Банковское кредитование
-                        </div>
+                            <Link
+                                to={RoutesPath.BANKCREDIT}
+                                className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
+                                Банковское кредитование
+                            </Link>
 
-                        <div
-                            className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                            Автокредитование
-                        </div>
+                            <Link
+                                to={RoutesPath.AUTOCREDIT}
+                                className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
+                                Автокредитование
+                            </Link>
 
-                        <div
-                            className="self-stretch [font-family:'Inter',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
-                            BNPL
+                            <Link
+                                to={RoutesPath.BNPL}
+                                className="self-stretch [font-family:'Inter',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0] hover:text-[#3573FC]"
+                            >
+                                BNPL
+                            </Link>
                         </div>
-                    </div>
                 </div>
 
                 <div className="flex flex-col w-[268px] items-start gap-8 relative">
@@ -114,24 +124,33 @@ export const FooterSection = () => {
                         </div>
 
                         <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                            <p className="self-stretch mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.DATAUNLOAD}
+                                className="self-stretch mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 Выгрузка данных в кредитные бюро
-                            </p>
+                            </Link>
 
-                            <div
-                                className="font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative self-stretch text-gray-90 tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.BNPL}
+                                className="font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative self-stretch text-gray-90 tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 POS-кредитование
-                            </div>
+                            </Link>
 
-                            <div
-                                className="relative self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.P2P}
+                                className="relative self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 P2P-кредитование
-                            </div>
+                            </Link>
 
-                            <div
-                                className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.FDATA}
+                                className="self-stretch font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 Принятие решений
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -144,25 +163,33 @@ export const FooterSection = () => {
                         </div>
 
                         <div className="items-start gap-3 flex-[0_0_auto] flex flex-col w-[268px] relative">
-                            <div
-                                className="w-[233px] mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.ABOUT}
+                                className="w-[233px] mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 О компании
-                            </div>
+                            </Link>
 
-                            <div
-                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.REVIEWS}
+                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 Отзывы
-                            </div>
+                            </Link>
 
-                            <div
-                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.WORK}
+                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 Вакансии
-                            </div>
+                            </Link>
 
-                            <div
-                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
+                            <Link
+                                to={RoutesPath.PRIVACY}
+                                className="w-[233px] font-body-2-r text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                            >
                                 Конфиденциальность
-                            </div>
+                            </Link>
                         </div>
                     </div>
 
@@ -174,10 +201,12 @@ export const FooterSection = () => {
                         </div>
 
                         <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                            <div
-                                className="w-[233px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-gray-90 text-xl leading-7 relative tracking-[0]">
+                            <a
+                                href="tel:+74950062157"
+                                className="w-[233px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-bold text-gray-90 text-xl leading-7 relative tracking-[0] hover:text-[#3573FC]"
+                            >
                                 +7 (495) 006-21-57
-                            </div>
+                            </a>
 
                             <p className="self-stretch opacity-40 font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
                                 183038, Мурманск,

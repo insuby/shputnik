@@ -86,13 +86,12 @@ export const FeedbackForm = () => {
                         <div className="flex flex-col w-[560px] items-start gap-4 relative flex-[0_0_auto]">
                             <div
                                 className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[60px] leading-[60px] relative tracking-[0]">
-                                Связаться с нами
+                                Свяжитесь с нами
                             </div>
 
                             <p className="self-stretch font-body-1-r font-[number:var(--body-1-r-font-weight)] text-gray-40 text-[length:var(--body-1-r-font-size)] leading-[var(--body-1-r-line-height)] relative tracking-[var(--body-1-r-letter-spacing)] [font-style:var(--body-1-r-font-style)]">
-                                Напишите нам, чтобы начать сотрудничество. <br/>
-                                Мы с удовольствием ответим на ваши вопросы <br/>и подберем
-                                наиболее подходящий для вас продукт.
+                                Свяжитесь с нами, чтобы обсудить возможное сотрудничество. <br/>
+                                Мы с радостью ответим на ваши вопросы и подберем решение, наилучшим образом соответствующее вашим задачам
                             </p>
                         </div>
 

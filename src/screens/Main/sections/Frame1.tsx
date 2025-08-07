@@ -128,7 +128,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-[57.34px] h-[58px] mt-[-1.32px] mb-[-0.67px] ml-[-0.67px] mr-[-0.67px]"
                       alt="Group"
-                      src="/img/group-32.png"
+                      src="/img/Group%2032.svg"
                     />
                   </motion.div>
 
@@ -143,7 +143,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-14 h-14"
                       alt="Clip path group"
-                      src="/img/clip-path-group.png"
+                      src="/img/OKB_logo%201.svg"
                     />
                   </motion.div>
 
@@ -158,7 +158,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-14 h-14"
                       alt="Clip path group"
-                      src="/img/frame-1948755067.png"
+                      src="/img/Clip%20path%20group.svg"
                     />
                   </motion.div>
 
@@ -173,7 +173,7 @@ export const Frame1 = () => {
                     <img
                       className="relative w-14 h-14"
                       alt="Okb logo"
-                      src="/img/okb-logo-1.png"
+                      src="/img/nbki-logo%201.svg"
                     />
                   </motion.div>
                 </div>
@@ -219,10 +219,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
                 >
-                  Решение для выгрузки данных в кредитные бюро. Подходит для
-                  МФО, лизинговых и коллекторских компаний и других участников
-                  рынка, обязанных передавать данные по требованиям
-                  законодательства.
+                  Готовое решение для передачи данных в кредитные бюро. Подходит для МФО, лизинговых, коллекторских и других компаний, обязанных направлять информацию в соответствии с требованиями законодательства
                 </motion.p>
               </div>
 
@@ -427,9 +424,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
                 >
-                  Полностью настраиваемый процесс принятия проверки физлиц и
-                  юрлиц. Интеграции с десятками внешних сервисов для проверки и
-                  обогащения данных.
+                  Гибкое ПО для скоринга и проверки физлиц и юрлиц — с подключением десятков внешних источников для верификации и обогащения данных
                 </motion.p>
               </div>
 

@@ -182,7 +182,7 @@ export const Div = () => {
                 className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
               >
                 <p className="w-10/12">
-                  Предоставление банком денежных средств физическим или юридическим лицам. Предоставление банком денежных средств физическим или юридическим лицам
+                  Программное обеспечение для быстрого запуска BNPL-рассрочки (Buy Now, Pay Later) на этапе оформления покупки — как онлайн, так и в розничных точках
                 </p>
                 <div className="inline-flex items-center gap-2.5 p-4 flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
                   <svg
@@ -343,7 +343,7 @@ export const Div = () => {
                 className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
               >
                 <p className="w-10/12">
-                  Предоставление банком денежных средств физическим или юридическим лицам. Предоставление банком денежных средств физическим или юридическим лицам
+                  Программное обеспечение для запуска POS-займов на этапе оформления покупки — как в онлайн-магазинах, так и в розничных точках продаж
                 </p>
                 <div className="inline-flex items-center gap-2.5 p-4  flex-[0_0_auto] bg-white rounded-[100px] absolute bottom-0 h-[-99px] right-0">
                   <svg

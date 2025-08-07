@@ -51,8 +51,7 @@ export const Advantages = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="self-stretch text-[#9ea7bb] text-xl leading-7  text-center relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
         >
-          Упрощение процессов выдачи займов online и в точках продаж благодаря
-          полнофункциональной автоматизации
+          Автоматизация процессов выдачи займов с учётом задач и масштаба вашего бизнеса
         </motion.p>
       </motion.div>
 
@@ -84,8 +83,7 @@ export const Advantages = () => {
 
             <p
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Вы можете использовать типовое решение или настроить систему под
-              ваши бизнес-процессы
+              Используйте готовое решение или адаптируйте систему под ваши уникальные процессы и регламенты
             </p>
           </div>
         </motion.div>
@@ -106,8 +104,7 @@ export const Advantages = () => {
 
             <p
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Автоматизация бизнес-процессов, наличие большого количества
-              интеграций и сервисов
+              Автоматизация всех этапов работы с возможностью подключения внешних сервисов и систем
             </p>
           </div>
         </div>
@@ -133,8 +130,7 @@ export const Advantages = () => {
 
             <p
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Сокращение ключевых расходов организации за счет оптимизации
-              бизнес-процессов
+              Снижайте издержки за счёт автоматизации ключевых операций и повышения операционной эффективности
             </p>
           </div>
         </motion.div>
