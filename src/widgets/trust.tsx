@@ -19,8 +19,7 @@ export const Trust = () => {
 
           <p
             className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
-            Нашими клиентами являются крупные кредитные и некредитные
-            организации, работающие online и в точках продаж
+              Наши клиенты — крупные кредитные и некредитные организации, работающие как онлайн, так и в розничных точках продаж.
           </p>
         </div>
       </div>

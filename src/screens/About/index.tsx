@@ -24,15 +24,11 @@ export const About = () => {
 
             <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
               <div className="self-stretch mt-[-1.00px] font-medium text-gray-90 text-6xl text-center leading-[68px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                Специализируемся
-                <br />
-                на разработке Fintech-решений
+                Разработка передового программного обеспечения для Fintech.
               </div>
 
               <p className="w-[786px] text-[#929cb3] text-center relative [font-family:'Roboto',Helvetica] font-normal text-xl tracking-[0] leading-7">
-                Мы разрабатываем ПО не только для российских компаний, кредитных
-                и не кредитных организаций, но и для компаний Европы и стран
-                СНГ.
+                Наша команда занимается разработкой программного обеспечения. Мы создаём решения, адаптированные под специфику местного рынка, бизнес-потребности и технические требования наших партнёров.
               </p>
             </div>
 
@@ -52,11 +48,11 @@ export const About = () => {
 
                 <div className="flex-col w-[340px] gap-4 flex items-start relative">
                   <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-white text-[68px] tracking-[0] leading-[72px]">
-                    5
+                    12
                   </div>
 
                   <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-white text-xl tracking-[0] leading-7">
-                    Лет на рынке разработки
+                    лет на рынке разработки
                     <br />
                     fintech-решений
                   </div>
@@ -66,11 +62,11 @@ export const About = () => {
               <div className="gap-[60px] p-10 flex-1 grow bg-[#ffffff] rounded-[32px] flex items-start relative">
                 <div className="flex-col gap-4 flex-1 grow flex items-start relative">
                   <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#1c222f] text-[68px] tracking-[0] leading-[72px]">
-                    40+
+                    200+
                   </div>
 
                   <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                    Реализованных проектов
+                    реализованных проектов
                     <br />в России, Казахстане и Испании
                   </p>
 
@@ -78,12 +74,6 @@ export const About = () => {
                     <div className="inline-flex h-8 items-center justify-center gap-2.5 px-3 py-2 relative flex-[0_0_auto] bg-[#ff8068] rounded-[52px] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                       <div className="relative w-fit mt-[-2.50px] mb-[-1.50px] [font-family:'Inter',Helvetica] font-medium text-[#ffffff] text-sm tracking-[0] leading-5 whitespace-nowrap">
                         Java
-                      </div>
-                    </div>
-
-                    <div className="inline-flex h-8 items-center justify-center gap-2.5 px-3 py-2 relative flex-[0_0_auto] bg-[#3573fc] rounded-[52px] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
-                      <div className="relative w-fit mt-[-2.50px] mb-[-1.50px] [font-family:'Inter',Helvetica] font-medium text-[#ffffff] text-sm tracking-[0] leading-5 whitespace-nowrap">
-                        WildFly
                       </div>
                     </div>
 
@@ -114,7 +104,7 @@ export const About = () => {
                     </div>
 
                     <div className="relative w-[286px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
-                      In-house разработчиков
+                      in-house разработчиков
                     </div>
                   </div>
 
@@ -162,8 +152,8 @@ export const About = () => {
             </div>
 
             <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
-              По любым вопросам Вы можете обратиться в одно <br />
-              из наших представительств в России
+              По любым вопросам вы можете обратиться в один <br />
+              из наших офисов или связаться с нашей командой
             </p>
           </div>
 
@@ -185,11 +175,10 @@ export const About = () => {
                 <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
                   183038, Москва,
                   <br />
-                  улица Ленина,
+                  Рубцовская набережная,
                   <br />
-                  дом 2а, офис 2
+                  3с1, офис 1008.
                 </p>
-
                 <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
                   + 7 (495) 006 21 57
                 </p>
@@ -221,9 +210,8 @@ export const About = () => {
                   <br />
                   улица Октябрьская,
                   <br />
-                  дом 2а, офис 2
+                  2а, офис 2.
                 </p>
-
                 <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
                   + 7 (495) 006 21 57
                 </p>
