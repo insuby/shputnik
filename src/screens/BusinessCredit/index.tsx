@@ -65,7 +65,7 @@ export const BusinessCredit = () => {
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
                   className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7"
                 >
-                  Полная автоматизация кредитования юридических лиц.
+                  Полная автоматизация кредитования юридических лиц
                 </motion.p>
               </motion.div>
             </div>

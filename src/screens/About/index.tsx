@@ -24,11 +24,11 @@ export const About = () => {
 
             <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
               <div className="self-stretch mt-[-1.00px] font-medium text-gray-90 text-6xl text-center leading-[68px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                Разработка передового программного обеспечения для Fintech.
+                Разработка передового программного обеспечения для Fintech
               </div>
 
               <p className="w-[786px] text-[#929cb3] text-center relative [font-family:'Roboto',Helvetica] font-normal text-xl tracking-[0] leading-7">
-                Наша команда занимается разработкой программного обеспечения. Мы создаём решения, адаптированные под специфику местного рынка, бизнес-потребности и технические требования наших партнёров.
+                Наша команда занимается разработкой программного обеспечения. Мы создаём решения, адаптированные под специфику местного рынка, бизнес-потребности и технические требования наших партнёров
               </p>
             </div>
 
