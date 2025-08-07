@@ -155,8 +155,8 @@ export const BankCredit = () => {
                   className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
                 >
                   Программное обеспечение для автоматизации банковского
-                  кредитования. Программное обеспечение для автоматизации
-                  банковского кредитования.
+                  кредитования Программное обеспечение для автоматизации
+                  банковского кредитования
                 </motion.p>
               </div>
             </div>

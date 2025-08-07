@@ -25,7 +25,7 @@ export const Trust = () => {
       </div>
 
       <div className="absolute top-[292px] left-0 right-0 h-[72px] opacity-50">
-        <Marquee fade>
+        <Marquee fade innerClassName="!gap-32" className="!gap-32">
           <img
             alt="Frame"
             src="/img/trust/frame-17-1.svg"

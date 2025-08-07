@@ -104,12 +104,12 @@ export const P2P = () => {
                                     initial={{opacity: 0, y: 50}}
                                     animate={inView2 ? {opacity: 1, y: 0} : {}}
                                     transition={{duration: 0.7, ease: 'easeOut', delay: 0.2}}
-                                    className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
+                  className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
                                 >
                                     Ядро, интеграции с сервисами и источниками информации, готовые
                                     модули и библиотеки - все это позволяет быстро развернуть
                                     P2P-площадку кредитования заточенную под требования вашего
-                                    бизнеса.
+                  бизнеса
                                 </motion.p>
                             </div>
                         </div>

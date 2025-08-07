@@ -62,8 +62,8 @@ export const Autocredit = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
                   className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7"
                 >
-                  Программное обеспечение для автоматизации залоговых займов.
-                  Программное обеспечение для автоматизации залоговых займов.
+                  Программное обеспечение для автоматизации залоговых займов
+                  Программное обеспечение для автоматизации залоговых займов
                 </motion.p>
               </div>
             </div>

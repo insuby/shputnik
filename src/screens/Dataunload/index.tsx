@@ -125,8 +125,8 @@ export const Dataunload = () => {
 
                   <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffff99] text-xl tracking-[0] leading-7">
                     Программа для конвертации и выгрузки данных в кредитные
-                    бюро. Программа для конвертации и выгрузки данных в
-                    кредитные бюро.
+                    бюро Программа для конвертации и выгрузки данных в
+                    кредитные бюро
                   </p>
                 </div>
 
