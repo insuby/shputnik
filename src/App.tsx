@@ -18,9 +18,11 @@ import { BankCredit } from './screens/BankCredit';
 import {Development} from "./screens/Development";
 import { Dataunload } from './screens/Dataunload';
 import { Fdata } from './screens/Fdata';
-import { BlogTemplate } from './screens/BlogTemplate';
+// import { BlogTemplate } from './screens/BlogTemplate';
 import { Privacy } from './screens/Privacy';
 import { ScrollToTop } from './ScrollToTop';
+import { BlogList } from './screens/Blog';
+import { BlogPost } from './screens/Blog/Post';
 
 export const App = () => {
   return (
@@ -51,7 +53,8 @@ const Pages = () => {
         <Route path={RoutesPath.FDATA} element={<Fdata />} />
         <Route path={RoutesPath.P2P} element={<P2P />} />
         <Route path={RoutesPath.BNPL} element={<BNPL />} />
-        <Route path={RoutesPath.BLOG} element={<BlogTemplate />} />
+        <Route path={RoutesPath.BLOG} element={<BlogList />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path={RoutesPath.PRIVACY} element={<Privacy />} />
       </Route>
     </Routes>

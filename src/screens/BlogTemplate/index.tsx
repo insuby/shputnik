@@ -583,3 +583,5 @@ export const BlogTemplate = () => {
     </div>
   )
 }
+
+export default BlogTemplate;
