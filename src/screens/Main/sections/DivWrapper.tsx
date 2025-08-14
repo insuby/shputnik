@@ -401,7 +401,7 @@ export const DivWrapper = () => {
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление финансирования банкам или другим финансовым институтам
+                ПО для кредитования бизнеса автоматизирует цикл работы с корпоративными, средними и малыми заемщиками
               </p>
             </div>
 
@@ -439,7 +439,7 @@ export const DivWrapper = () => {
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Разновидность потребительского кредита для приобретения автотранспортных средств
+                Готовое решение для автоматизации процессов выдачи и сопровождения займов частным и корпоративным клиентам
               </p>
             </div>
 
@@ -477,7 +477,7 @@ export const DivWrapper = () => {
               </div>
 
               <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Предоставление банком денежных средств физическим или юридическим лицам
+                Полное управление всеми процессами автокредитования и выдачи займов под залог автомобилей
               </p>
             </div>
 

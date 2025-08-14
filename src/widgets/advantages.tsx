@@ -130,7 +130,7 @@ export const Advantages = () => {
 
             <p
               className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Снижайте издержки за счёт автоматизации ключевых операций и повышения операционной эффективности
+              Снижайте издержки за счёт автоматизации ключевых операций и повышения эффективности
             </p>
           </div>
         </motion.div>

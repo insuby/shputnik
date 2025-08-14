@@ -67,7 +67,7 @@ export const About = () => {
 
                   <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
                     реализованных проектов
-                    <br />в России, Казахстане и Испании
+                    {/*<br />в России, Казахстане и Испании*/}
                   </p>
 
                   <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mr-[-3.00px]">
@@ -177,7 +177,7 @@ export const About = () => {
                   <br />
                   Рубцовская набережная,
                   <br />
-                  3с1, офис 1008.
+                  3с1, офис 1008
                 </p>
                 <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
                   + 7 (495) 006 21 57
@@ -210,7 +210,7 @@ export const About = () => {
                   <br />
                   улица Октябрьская,
                   <br />
-                  2а, офис 2.
+                  2а, офис 2
                 </p>
                 <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
                   + 7 (495) 006 21 57

@@ -93,7 +93,7 @@ export const Feedback = () => {
               className="relative self-stretch opacity-60 [font-family:'Roboto',Helvetica] font-normal text-white text-xl tracking-[0] leading-7"
             >
               Оставьте заявку на демонстрацию — мы покажем, как работает
-              платформа и ответим на ваши вопросы.
+              платформа и ответим на ваши вопросы
             </motion.p>
           </div>
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import { RoutesPath } from '../../../routes-path.tsx';
@@ -9,14 +9,39 @@ export const HeaderSection = () => {
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const assetsPrefetchedRef = useRef(false);
+
+  const preloadAssets = useCallback(() => {
+    if (assetsPrefetchedRef.current) return;
+    const imageUrls = ['/img/trust/frame-17-1.svg'];
+
+    imageUrls.forEach((url) => {
+      const existing = document.head.querySelector(
+        `link[rel="prefetch"][href="${url}"]`
+      );
+      if (!existing) {
+        const link = document.createElement('link');
+        link.rel = 'prefetch';
+        link.as = 'image';
+        link.href = url;
+        document.head.appendChild(link);
+      }
+
+      const img = new Image();
+      img.src = url;
+    });
+
+    assetsPrefetchedRef.current = true;
+  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
+      preloadAssets();
     } else {
       document.body.style.overflow = 'auto';
     }
-  }, [isMenuOpen]);
+  }, [isMenuOpen, preloadAssets]);
 
   const navItems = [
     { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
@@ -298,7 +323,7 @@ export const HeaderSection = () => {
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
-                      F-datа
+                      Реконсиляция данных
                     </div>
                   </div>
                 </div>

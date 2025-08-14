@@ -90,8 +90,7 @@ export const FeedbackForm = () => {
                             </div>
 
                             <p className="self-stretch font-body-1-r font-[number:var(--body-1-r-font-weight)] text-gray-40 text-[length:var(--body-1-r-font-size)] leading-[var(--body-1-r-line-height)] relative tracking-[var(--body-1-r-letter-spacing)] [font-style:var(--body-1-r-font-style)]">
-                                Свяжитесь с нами, чтобы обсудить возможное сотрудничество. <br/>
-                                Мы с радостью ответим на ваши вопросы и подберем решение, наилучшим образом соответствующее вашим задачам
+                                Свяжитесь с нами, чтобы обсудить возможное сотрудничество. Мы с радостью ответим на ваши вопросы и подберем решение, наилучшим образом соответствующее вашим задачам
                             </p>
                         </div>
 

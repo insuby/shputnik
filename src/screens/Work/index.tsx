@@ -7,7 +7,7 @@ import {
 import {Badge} from '../../components/ui/badge';
 import {Button} from '../../components/ui/button';
 import {Card, CardContent} from '../../components/ui/card';
-import {useFeedbackForm} from '../../widgets/feedback-form/use-feedback-form';
+import {useFeedbackForm} from '../../widgets/feedback-form';
 
 const jobListings = [
     {

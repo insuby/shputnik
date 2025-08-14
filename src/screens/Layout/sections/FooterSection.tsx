@@ -2,43 +2,6 @@ import {Link} from 'react-router-dom';
 
 import {RoutesPath} from '../../../routes-path.tsx';
 
-const footerData = {
-    software: {
-        title: 'Программное обеспечение',
-        links: [
-            'Микрофинансовое кредитование',
-            'BNPL',
-            'Банковское кредитование',
-            'Автокредитование',
-            'Кредитование бизнеса',
-            'Исламское финансирование',
-            'POS-кредитование',
-            'P2P-кредитование',
-        ],
-    },
-    additionalSoftware: {
-        title: 'Программное обеспечение',
-        links: [
-            'Выгрузка данных в кредитные бюро',
-            'Модуль принятия решений',
-            'Учет вкладов и инвестиций',
-        ],
-    },
-    services: {
-        title: 'Услуги',
-        links: ['Заказная разработка'],
-    },
-    company: {
-        title: 'Компания',
-        links: ['О компании', 'Отзывы', 'Вакансии', 'Конфиденциальность'],
-    },
-    contacts: {
-        title: 'Контакты',
-        phone: '+7 (495) 006-21-57',
-        address: '183038, Мурманск,\nулица Октябрьская, 2а, офис 2',
-    },
-};
-
 export const FooterSection = () => {
     return (
         <footer
@@ -128,7 +91,7 @@ export const FooterSection = () => {
                                 to={RoutesPath.DATAUNLOAD}
                                 className="self-stretch mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-gray-90 text-[length:var(--body-2-r-footer-font-size)] leading-[var(--body-2-r-line-height)] relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Выгрузка данных в кредитные бюро
+                                Выгрузка данных в КБ
                             </Link>
 
                             <Link

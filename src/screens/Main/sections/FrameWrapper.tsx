@@ -1,9 +1,8 @@
 import {motion} from 'framer-motion';
 import {useInView} from 'framer-motion';
 import {useRef} from 'react';
-import {useFeedbackForm} from '../../../widgets/feedback-form/use-feedback-form';
+import {useFeedbackForm} from '../../../widgets/feedback-form';
 import {useNavigate} from 'react-router-dom';
-import Subtract from '../../../icons/Subtract';
 import {RoutesPath} from '../../../routes-path.tsx';
 import {Graph} from "../../../components/ui/graph.tsx";
 
@@ -34,7 +33,7 @@ export const FrameWrapper = () => {
                     transition={{duration: 0.7, delay: delays[0], ease: 'easeOut'}}
                     className="w-[590px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]"
                 >
-                    Специализируемся
+                    специализируемся на
                 </motion.div>
 
                 <motion.p
@@ -46,14 +45,14 @@ export const FrameWrapper = () => {
                     className="w-[1376px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-6xl text-center leading-[68px] relative tracking-[0]"
                 >
           <span className="text-[#1c222f]">
-           Программное обеспечение
+           программном обеспечении
             <br/>
           </span>
-                    <span className="text-[#9ea7bb]">для кейсов</span>
+                    <span className="text-[#9ea7bb]">для кредитования </span>
                 </motion.p>
             </div>
 
-            <div className="group flex w-full h-[520px] items-start gap-4 relative">
+            <div className="group flex w-full items-start gap-4 relative">
                 <motion.div
                     id="animate_9_left"
                     ref={refs[2]}
@@ -78,9 +77,9 @@ export const FrameWrapper = () => {
 
                         <p id="animate_13_left"
                            className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                            Вид деятельности, связанный с выдачей небольших займов гражданам и малому бизнесу, который
-                            не имеет доступа к традиционному банкингу. Микрозаймы, как правило, выдаются на короткие
-                            сроки и имеют более высокие процентные ставки по сравнению с банковскими кредитами
+                            Полный цикл автоматизации микрофинансового кредитования — от заявки до взыскания, с
+                            возможностью настройки сценариев и процессов под требования организации, включая полную
+                            цифровизацию всех этапов без ручного труда и с учётом регуляторных стандартов
                         </p>
                     </div>
 

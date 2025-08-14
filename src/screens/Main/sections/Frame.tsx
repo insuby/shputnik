@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { useFeedbackForm } from '../../../widgets/feedback-form/use-feedback-form';
-import Subtract from '../../../icons/Subtract';
+import { useFeedbackForm } from '../../../widgets/feedback-form';
 import {Graph} from "../../../components/ui/graph.tsx";
 
 export const Frame = () => {
@@ -55,7 +54,7 @@ export const Frame = () => {
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
             className="w-[600px] text-[#929cb3] text-[length:var(--body-2-r-font-size)] text-center leading-[var(--body-2-r-line-height)] relative font-body-2-r font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]"
           >
-            Помогаем микрофинансовым организациям, банкам, fintech-стартапам, брокерам и другим финансовым институтам автоматизировать процесс выдачи займа или кредита, производить регулярные расчёты по кредитным продуктам, принимать платежи, а также эффективно выстраивать работу с клиентами на всех этапах.
+            {/*Помогаем микрофинансовым организациям, банкам, fintech-стартапам, брокерам и другим финансовым институтам автоматизировать процесс выдачи займа или кредита, производить регулярные расчёты по кредитным продуктам, принимать платежи, а также эффективно выстраивать работу с клиентами на всех этапах*/}
           </motion.p>
         </div>
 
