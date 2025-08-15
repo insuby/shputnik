@@ -33,7 +33,7 @@ export const BlogList = () => {
     return (
         <div
             className="flex flex-col items-start gap-12 p-[88px] relative self-stretch w-full flex-[0_0_auto] rounded-[32px] overflow-hidden">
-            <div className="flex flex-col w-[560px] items-start gap-8 relative flex-[0_0_auto]">
+            <div className="flex flex-col items-start gap-8 relative flex-[0_0_auto]">
                 <h1
                     className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[60px] leading-[60px] relative tracking-[0]">
                     Блог
