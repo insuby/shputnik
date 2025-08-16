@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:500,400");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import "tailwind.css";
+@import "pagination.css";
+
 * {
     -webkit-font-smoothing: antialiased;
     scroll-behavior: smooth;
@@ -25,16 +27,19 @@ body::-webkit-scrollbar {
 *::-webkit-scrollbar {
     display: none;
 }
+
 html,
 body {
     margin: 0;
     height: 100%;
 }
+
 /* a blue color as a generic focus style */
 button:focus-visible {
     outline: 2px solid #4a90e2 !important;
     outline: -webkit-focus-ring-color auto 5px !important;
 }
+
 a {
     text-decoration: none;
 }
@@ -169,18 +174,18 @@ a {
 
 /* Отключение hover эффектов для NavigationMenu */
 [data-radix-navigation-menu-trigger] {
-  pointer-events: auto !important;
+    pointer-events: auto !important;
 }
 
 [data-radix-navigation-menu-content] {
-  pointer-events: none !important;
+    pointer-events: none !important;
 }
 
 [data-radix-navigation-menu-viewport] {
-  pointer-events: auto !important;
+    pointer-events: auto !important;
 }
 
 /* Отключение hover открытия меню */
 [data-radix-navigation-menu-root] {
-  --radix-navigation-menu-trigger-delay: 999999ms !important;
+    --radix-navigation-menu-trigger-delay: 999999ms !important;
 }

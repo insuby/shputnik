@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {format} from 'date-fns';
 
 import {buildMediaUrl, getCategories, getPosts, type Post} from '../../api/strapi';
+import {Pagination} from "../../components/ui/pagination.tsx";
 
 export const BlogList = () => {
     const [page, setPage] = useState(1);
@@ -85,21 +86,11 @@ export const BlogList = () => {
             </div>
 
             <div className="flex items-center justify-center gap-2 pt-4">
-                <button
-                    disabled={page <= 1}
-                    onClick={() => setPage((p) => Math.max(1, p - 1))}
-                    className="px-4 py-2 rounded-full bg-white text-[#55607a] disabled:opacity-50"
-                >
-                    Назад
-                </button>
-                <span className="text-[#55607a]">{page} / {pageCount}</span>
-                <button
-                    disabled={page >= pageCount}
-                    onClick={() => setPage((p) => Math.min(pageCount, p + 1))}
-                    className="px-4 py-2 rounded-full bg-white text-[#55607a] disabled:opacity-50"
-                >
-                    Вперёд
-                </button>
+                <Pagination
+                    pageIndex={page}
+                    pageCount={pageCount}
+                    onPageChange={(event) => setPage(event.selected)}
+                />
             </div>
         </div>
     );
