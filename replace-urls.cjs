@@ -97,7 +97,7 @@ const filesToProcess = [
   'src/screens/About/index.tsx',
   'src/widgets/trust.tsx',
   'src/widgets/zain-checker.tsx',
-  'src/screens/BusinessCredit/index.tsx'б
+  'src/screens/BusinessCredit/index.tsx'
 ];
 
 console.log('Начинаем замену внешних URL на локальные пути...');

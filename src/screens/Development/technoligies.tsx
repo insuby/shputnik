@@ -223,7 +223,7 @@ export const Technoligies = () => {
                 <img
                     className="relative flex-1 self-stretch grow"
                     alt="Frame"
-                    src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-21.svg"
+                    src="/img/development/frame-21.svg"
                 />
             </div>
         </div>

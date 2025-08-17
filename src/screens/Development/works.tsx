@@ -39,7 +39,7 @@ export const Works = () => {
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
             <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-1-3.svg)] bg-[100%_100%]">
+              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
                   className="absolute w-full h-[588px] top-[158px] left-[291px]"
                   alt="Image"
@@ -48,7 +48,7 @@ export const Works = () => {
               </div>
             </div>
             <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-1-3.svg)] bg-[100%_100%]">
+              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
                   className="absolute w-full h-[588px] top-[158px] left-[291px]"
                   alt="Image"
@@ -57,7 +57,7 @@ export const Works = () => {
               </div>
             </div>
             <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-1-3.svg)] bg-[100%_100%]">
+              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
                   className="absolute w-full h-[588px] top-[158px] left-[291px]"
                   alt="Image"

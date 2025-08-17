@@ -517,13 +517,13 @@ export const MicroCredit = () => {
                                         <img
                                             className="absolute w-[443px] h-[467px] top-0 left-0"
                                             alt="Vector"
-                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-6.svg"
+                                            src="/img/microcredit/vector-1-6-1.svg"
                                         />
 
                                         <img
                                             className="relative flex-1 self-stretch w-full grow"
                                             alt="Frame"
-                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755086-2.svg"
+                                            src="/img/microcredit/frame-1948755086-2.svg"
                                         />
 
                                         <div
@@ -547,14 +547,14 @@ export const MicroCredit = () => {
                                         <img
                                             className="absolute w-[443px] h-[467px] top-0 left-0"
                                             alt="Vector"
-                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-9.svg"
+                                            src="/img/microcredit/vector-1-9.svg"
                                         />
 
                                         <div className="relative flex-1 self-stretch w-full grow">
                                             <div
                                                 className="flex w-[264px] items-center gap-4 relative top-1.5 left-[42px]">
                                                 <div
-                                                    className="relative w-[124px] h-[124px] rounded-3xl [background:url(https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755022.png)_50%_50%_/_cover]"/>
+                                                    className="relative w-[124px] h-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]"/>
 
                                                 <div
                                                     className="flex w-[124px] h-[124px] items-center gap-[53px] px-4 py-6 relative bg-[#ffffff] rounded-3xl">
@@ -574,7 +574,7 @@ export const MicroCredit = () => {
                                                     <img
                                                         className="absolute w-8 h-8 -top-2 left-[100px]"
                                                         alt="Frame"
-                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-18-4.svg"
+                                                        src="/img/microcredit/frame-18-4.svg"
                                                     />
                                                 </div>
                                             </div>
@@ -607,7 +607,7 @@ export const MicroCredit = () => {
                                                     <img
                                                         className="relative flex-[0_0_auto]"
                                                         alt="Frame"
-                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-1.svg"
+                                                        src="/img/microcredit/frame-19-1.svg"
                                                     />
 
                                                     <div
@@ -619,7 +619,7 @@ export const MicroCredit = () => {
                                                 <img
                                                     className="absolute w-[443px] h-[339px] top-0 left-0"
                                                     alt="Vector"
-                                                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-4-1.svg"
+                                                    src="/img/microcredit/vector-4-1.svg"
                                                 />
 
                                                 <div
@@ -627,7 +627,7 @@ export const MicroCredit = () => {
                                                     <img
                                                         className="relative flex-[0_0_auto]"
                                                         alt="Frame"
-                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-6.svg"
+                                                        src="/img/microcredit/frame-19-6.svg"
                                                     />
 
                                                     <div

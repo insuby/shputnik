@@ -40,7 +40,7 @@ export const Development = () => {
           <img
             className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
             alt="Vector"
-            src="https://c.animaapp.com/mdrkpgfjDQCyYi/img/vector-1-5.svg"
+            src="/img/development/vector-1-5.svg"
           />
 
           <HeroButtons>
@@ -146,7 +146,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-20-3.svg"
+                src="/img/development/frame-20-3.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -166,7 +166,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-18-3.svg"
+                src="/img/development/frame-18-3.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -185,7 +185,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-19-2.svg"
+                src="/img/development/frame-19-2.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -207,7 +207,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-19-1.svg"
+                src="/img/development/frame-19-1.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -225,7 +225,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-18-2.svg"
+                src="/img/development/frame-18-2.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -244,7 +244,7 @@ export const Development = () => {
               <img
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="https://c.animaapp.com/mdrku0tgHodBr0/img/frame-20-1.svg"
+                src="/img/development/frame-20-1.svg"
               />
 
               <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
@@ -298,7 +298,7 @@ export const Development = () => {
                   <img
                     className="absolute w-[443px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-1-5.svg"
+                    src="/img/development/vector-1-5-1.svg"
                   />
 
                   <div className="relative flex-1 self-stretch w-full grow">
@@ -307,7 +307,7 @@ export const Development = () => {
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-19-3.svg"
+                          src="/img/development/frame-19-3.svg"
                         />
 
                         <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -318,14 +318,14 @@ export const Development = () => {
                       <img
                         className="absolute w-[443px] h-[349px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-4-3.svg"
+                        src="/img/development/vector-4-3.svg"
                       />
 
                       <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[92px] left-[58px] bg-[#ffffff] rounded-[32px]">
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-20.svg"
+                          src="/img/development/frame-20.svg"
                         />
 
                         <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -336,14 +336,14 @@ export const Development = () => {
                       <img
                         className="absolute w-[443px] h-[349px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-5.svg"
+                        src="/img/development/vector-5.svg"
                       />
 
                       <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[138px] left-32 bg-[#ffffff] rounded-[32px]">
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-20-2.svg"
+                          src="/img/development/frame-20-2.svg"
                         />
 
                         <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -371,7 +371,7 @@ export const Development = () => {
                   <img
                     className="absolute w-[377px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdzmydbo2FidHJ/img/vector-1.svg"
+                    src="/img/development/vector-1.svg"
                   />
 
                   <div className="relative flex-1 self-stretch w-full grow">
@@ -382,13 +382,13 @@ export const Development = () => {
                             <img
                               className="absolute w-[57px] h-[120px] top-0 left-0"
                               alt="Subtract"
-                              src="https://c.animaapp.com/mdzmydbo2FidHJ/img/subtract-2.svg"
+                              src="/img/development/subtract-2.svg"
                             />
 
                             <img
                               className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
                               alt="Subtract"
-                              src="https://c.animaapp.com/mdzmydbo2FidHJ/img/subtract.svg"
+                              src="/img/development/subtract.svg"
                             />
 
                             <div className="inline-flex flex-col items-center absolute top-[37px] left-[22px]">
@@ -405,13 +405,13 @@ export const Development = () => {
                           <img
                             className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
                             alt="Subtract"
-                            src="https://c.animaapp.com/mdzmydbo2FidHJ/img/subtract-1.svg"
+                            src="/img/development/subtract-1.svg"
                           />
 
                           <img
                             className="absolute w-[39px] h-5 top-0 left-[63px]"
                             alt="Subtract"
-                            src="https://c.animaapp.com/mdzmydbo2FidHJ/img/subtract-3.svg"
+                            src="/img/development/subtract-3.svg"
                           />
                         </div>
                       </div>
@@ -420,7 +420,7 @@ export const Development = () => {
                     <img
                       className="absolute w-36 h-36 top-1 left-[179px]"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-31.svg"
+                      src="/img/development/frame-31.svg"
                     />
                   </div>
 
@@ -443,13 +443,13 @@ export const Development = () => {
                   <img
                     className="absolute w-[442px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-16.svg"
+                    src="/img/development/vector-1-16.svg"
                   />
 
                   <img
                     className="relative flex-1 self-stretch w-full grow"
                     alt="Frame"
-                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755086-4.svg"
+                    src="/img/development/frame-1948755086-4.svg"
                   />
 
                   <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
@@ -472,7 +472,7 @@ export const Development = () => {
                   <img
                     className="absolute w-[442px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-12.svg"
+                    src="/img/development/vector-1-12.svg"
                   />
 
                   <div className="relative flex-1 self-stretch w-full grow">
@@ -481,7 +481,7 @@ export const Development = () => {
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-5.svg"
+                          src="/img/development/frame-19-5.svg"
                         />
 
                         <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -492,14 +492,14 @@ export const Development = () => {
                       <img
                         className="absolute w-[442px] h-[339px] top-0 left-0"
                         alt="Vector"
-                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-4-2.svg"
+                        src="/img/development/vector-4-2.svg"
                       />
 
                       <div className="inline-flex items-center justify-center gap-4 pl-2 pr-5 py-2 absolute top-[101px] left-[119px] bg-[#ffffff] rounded-[32px]">
                         <img
                           className="relative flex-[0_0_auto]"
                           alt="Frame"
-                          src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-19-4.svg"
+                          src="/img/development/frame-19-4.svg"
                         />
 
                         <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap">
@@ -529,13 +529,13 @@ export const Development = () => {
                   <img
                     className="absolute w-[442px] h-[406px] top-0 left-0"
                     alt="Vector"
-                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-15.svg"
+                    src="/img/development/vector-1-15.svg"
                   />
 
                   <img
                     className="relative flex-1 self-stretch w-full grow"
                     alt="Frame"
-                    src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-1948755086-1.svg"
+                    src="/img/development/frame-1948755086-1.svg"
                   />
 
                   <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
@@ -628,7 +628,7 @@ export const Development = () => {
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-18-1.svg"
+              src="/img/development/frame-18-1.svg"
             />
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
@@ -644,7 +644,7 @@ export const Development = () => {
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-18.svg"
+              src="/img/development/frame-18.svg"
             />
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
@@ -660,7 +660,7 @@ export const Development = () => {
             <img
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="https://c.animaapp.com/mdzmydbo2FidHJ/img/frame-19.svg"
+              src="/img/development/frame-19.svg"
             />
             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
               <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">

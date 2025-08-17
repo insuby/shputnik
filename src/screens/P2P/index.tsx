@@ -709,7 +709,7 @@ export const P2P = () => {
                                                     <img
                                                         className="relative self-stretch w-full h-7 mt-[-3.00px] ml-[-3.00px] mr-[-2.00px]"
                                                         alt="Frame"
-                                                        src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-83-4.svg"
+                                                        src="/img/p2p/frame-83-4-1.svg"
                                                     />
 
                                                     <div className="relative self-stretch w-full h-6">
@@ -750,7 +750,7 @@ export const P2P = () => {
                                         <img
                                             className="absolute w-[442px] h-[406px] top-0 left-0"
                                             alt="Vector"
-                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/vector-1-11.svg"
+                                            src="/img/p2p/vector-1-11-1.svg"
                                         />
 
                                         <div className="relative flex-1 self-stretch w-full grow">
@@ -761,13 +761,13 @@ export const P2P = () => {
                                                             <img
                                                                 className="absolute w-[57px] h-[120px] top-0 left-0"
                                                                 alt="Subtract"
-                                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-5.svg"
+                                                                src="/img/p2p/subtract-5.svg"
                                                             />
 
                                                             <img
                                                                 className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
                                                                 alt="Subtract"
-                                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-9.svg"
+                                                                src="/img/p2p/subtract-9.svg"
                                                             />
 
                                                             <div className="top-[37px] left-[22px] inline-flex flex-col items-center absolute">
@@ -784,13 +784,13 @@ export const P2P = () => {
                                                         <img
                                                             className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
                                                             alt="Subtract"
-                                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-7.svg"
+                                                            src="/img/p2p/subtract-7.svg"
                                                         />
 
                                                         <img
                                                             className="absolute w-[39px] h-5 top-0 left-[63px]"
                                                             alt="Subtract"
-                                                            src="https://c.animaapp.com/mdzluxd3Eqcds4/img/subtract-8.svg"
+                                                            src="/img/p2p/subtract-8.svg"
                                                         />
                                                     </div>
                                                 </div>
@@ -799,7 +799,7 @@ export const P2P = () => {
                                             <img
                                                 className="absolute w-36 h-36 top-1 left-[179px]"
                                                 alt="Frame"
-                                                src="https://c.animaapp.com/mdzluxd3Eqcds4/img/frame-31.svg"
+                                                src="/img/p2p/frame-31.svg"
                                             />
                                         </div>
 

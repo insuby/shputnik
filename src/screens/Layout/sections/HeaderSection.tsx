@@ -150,7 +150,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-2.svg"
+                      src="/img/trust/frame-84-2.svg"
                     />
 
                     <p className="flex-1 text-gray-90 text-xl leading-5 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
@@ -167,7 +167,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-10.svg"
+                      src="/img/trust/frame-84-10.svg"
                     />
 
                     <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
@@ -184,7 +184,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-4.svg"
+                      src="/img/trust/frame-84-4.svg"
                     />
 
                     <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
@@ -203,7 +203,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84.svg"
+                      src="/img/trust/frame-84.svg"
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -218,7 +218,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-3.svg"
+                      src="/img/trust/frame-84-3.svg"
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -233,7 +233,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-20.svg"
+                      src="/img/trust/frame-84-20.svg"
                     />
 
                     <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
@@ -250,7 +250,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-7.svg"
+                      src="/img/trust/frame-84-7.svg"
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -265,7 +265,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-1.svg"
+                      src="/img/trust/frame-84-1.svg"
                     />
 
                     <div className="flex-1 text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]">
@@ -292,7 +292,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-8.svg"
+                      src="/img/trust/frame-84-8.svg"
                     />
 
                     <p className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -307,7 +307,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-6.svg"
+                      src="/img/trust/frame-84-6.svg"
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -319,7 +319,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-15.svg"
+                      src="/img/trust/frame-84-15.svg"
                     />
 
                     <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7">
@@ -344,7 +344,7 @@ export const HeaderSection = () => {
                     <img
                       className="relative flex-[0_0_auto] size-16"
                       alt="Frame"
-                      src="https://c.animaapp.com/mdvyd6y7TcoReq/img/frame-84-14.svg"
+                      src="/img/trust/frame-84-14.svg"
                     />
 
                     <div className="flex-1 font-normal text-gray-90 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
