@@ -1,47 +1,57 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
+
+import { Graph } from '../../../components/ui/graph.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
-import {Graph} from "../../../components/ui/graph.tsx";
 
 export const Frame = () => {
   const { setIsOpen } = useFeedbackForm();
-  
+
   const onClick = () => {
     setIsOpen(true);
   };
 
-  const refs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
-  const inViews = refs.map((ref) => useInView(ref, { once: true, margin: '-100px' }));
+  const refs = [
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+  ];
+  const inViews = refs.map((ref) =>
+    useInView(ref, { once: true, margin: '-100px' }),
+  );
   const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
 
   return (
-    <div className="w-full bg-[#ffffff] rounded-[32px] overflow-hidden">
-      <div className="flex-col w-full h-[900px] gap-20 pt-[88px] pb-0 px-20 mr-[-16.00px] rounded-[32px] overflow-hidden flex items-center relative">
+    <div className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
+      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
         <img
-          className="absolute w-[1108px] h-[1060px] top-[272px] left-[113px]"
+          className="absolute left-1/2 top-[220px] hidden h-[560px] w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
           alt="Vector"
           src="/img/vector-1-6.svg"
         />
 
-        <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
+        <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-8 md:px-0">
           <motion.p
             id="animate_1"
             ref={refs[0]}
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
-            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-6xl text-center tracking-[0] leading-[60px]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[28px] font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-4xl md:leading-[48px] xl:text-6xl xl:leading-[60px]"
           >
-            <span className="font-medium text-[#1c222f] leading-[68px]">
-              Программное обеспечение для{" "}
+            <span className="font-medium text-[#1c222f] md:leading-[56px] xl:leading-[68px]">
+              Программное обеспечение для{' '}
             </span>
 
-            <span className="font-medium text-[#3573fc] leading-[68px]">
-              автоматизации{" "}
+            <span className="font-medium text-[#3573fc] md:leading-[56px] xl:leading-[68px]">
+              автоматизации{' '}
             </span>
 
-            <span className="font-medium text-[#1c222f] leading-[68px]">
+            <span className="font-medium text-[#1c222f] md:leading-[56px] xl:leading-[68px]">
               кредитования
             </span>
           </motion.p>
@@ -52,10 +62,8 @@ export const Frame = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-            className="w-[600px] text-[#929cb3] text-[length:var(--body-2-r-font-size)] text-center leading-[var(--body-2-r-line-height)] relative font-body-2-r font-[number:var(--body-2-r-font-weight)] tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]"
-          >
-            {/*Помогаем микрофинансовым организациям, банкам, fintech-стартапам, брокерам и другим финансовым институтам автоматизировать процесс выдачи займа или кредита, производить регулярные расчёты по кредитным продуктам, принимать платежи, а также эффективно выстраивать работу с клиентами на всех этапах*/}
-          </motion.p>
+            className="relative w-full text-center text-[#929cb3] [font-family:'Roboto',Helvetica] md:w-[600px]"
+          ></motion.p>
         </div>
 
         <motion.img
@@ -64,7 +72,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative w-[412px] flex-[0_0_auto]"
+          className="relative w-[220px] flex-[0_0_auto] md:w-[320px] xl:w-[412px]"
           alt="Iphone pro max"
           src="/img/iphone-16-pro-max---3.png"
         />
@@ -75,22 +83,18 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[5] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
-          className="inline-flex items-center gap-4 pl-4 pr-6 py-4 absolute top-[730px] left-[854px] bg-white rounded-[32px]"
+          className="absolute left-[854px] top-[730px] hidden items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 md:inline-flex"
         >
-          <div className="inline-flex items-center justify-center gap-8 p-4 relative flex-[0_0_auto] bg-[#f2f5ff] rounded-3xl">
-            <img
-              className="relative w-8 h-8"
-              alt="Money"
-              src="/img/money.svg"
-            />
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-8 rounded-3xl bg-[#f2f5ff] p-4">
+            <img className="relative size-8" alt="Money" src="/img/money.svg" />
           </div>
 
-          <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
-            <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               Ежемесячный платеж
             </div>
 
-            <div className="relative w-fit font-medium text-gray-90 text-xl leading-7 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
+            <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               4 950₽
             </div>
           </div>
@@ -102,55 +106,55 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-          className="flex w-[472px] items-center justify-center gap-5 p-4 absolute top-[559px] left-[94px] bg-white rounded-[32px]"
+          className="absolute left-[94px] top-[559px] hidden w-[472px] items-center justify-center gap-5 rounded-[32px] bg-white p-4 md:flex"
         >
           <Graph />
 
-          <div className="inline-flex flex-col items-start justify-between p-5 relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
-            <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
-              <div className="relative w-2 h-2 bg-blue-50 rounded" />
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-between self-stretch rounded-[20px] bg-[#f6f8ff] p-5">
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
+              <div className="relative size-2 rounded bg-blue-50" />
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Текущее
               </div>
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-sm text-right leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 23,456₽
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
-              <div className="relative w-2 h-2 bg-green-50 rounded" />
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
+              <div className="relative size-2 rounded bg-green-50" />
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Основная
               </div>
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-sm text-right leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 42,000₽
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
-              <div className="relative w-2 h-2 bg-yellow-50 rounded" />
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
+              <div className="relative size-2 rounded bg-yellow-50" />
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Проценты
               </div>
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-sm text-right leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 4,000₽
               </div>
             </div>
 
-            <div className="inline-flex items-center gap-3 relative flex-[0_0_auto]">
-              <div className="relative w-2 h-2 bg-red-50 rounded" />
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
+              <div className="relative size-2 rounded bg-red-50" />
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Штраф
               </div>
 
-              <div className="w-[72px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-sm text-right leading-5 relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 2,700₽
               </div>
             </div>
@@ -163,89 +167,84 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-          className="flex flex-col w-[324px] items-center justify-center gap-5 p-4 absolute top-[458px] left-[957px] bg-white rounded-[32px]"
+          className="absolute left-[957px] top-[458px] hidden w-[324px] flex-col items-center justify-center gap-5 rounded-[32px] bg-white p-4 md:flex"
         >
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex flex-col items-start gap-6 p-4 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex h-6 items-center justify-between relative self-stretch w-full">
-                  <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative tracking-[0]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-6 self-stretch p-4">
+              <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                <div className="w/full relative flex h-6 items-center justify-between self-stretch">
+                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Сумма
                   </div>
 
-                  <div className="relative w-fit mt-[-1.00px] font-medium text-gray-90 text-base leading-6 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     42 000₽
                   </div>
                 </div>
 
-                <div className="relative self-stretch w-full h-3.5">
-                  <div className="relative w-[260px] h-3 top-px -left-0.5">
+                <div className="w/full relative h-3.5 self-stretch">
+                  <div className="relative -left-0.5 top-px h-3 w-[260px]">
                     <img
-                      className="absolute w-[260px] h-1 top-1 left-0"
+                      className="absolute left-0 top-1 h-1 w-[260px]"
                       alt="Vector"
                       src="/img/vector-136.svg"
                     />
 
                     <img
-                      className="absolute w-[167px] h-1 top-1 left-0"
+                      className="absolute left-0 top-1 h-1 w-[167px]"
                       alt="Vector"
                       src="/img/vector-136.svg"
                     />
-
-                    <div className="absolute w-3 h-3 top-0 left-[157px] bg-blue-50 rounded-md" />
                   </div>
                 </div>
-              </div>
 
-              <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex h-6 items-center justify-between relative self-stretch w-full">
-                  <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative tracking-[0]">
+                <div className="w/full relative flex items-center justify-between self-stretch">
+                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Срок
                   </div>
 
-                  <div className="relative w-fit mt-[-1.00px] font-medium text-gray-90 text-base leading-6 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
-                    14 дней
+                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    18 месяцев
                   </div>
                 </div>
 
-                <div className="relative self-stretch w-full h-3.5">
-                  <div className="relative w-[260px] h-3 top-px -left-0.5">
+                <div className="w/full relative h-3.5 self-stretch">
+                  <div className="relative -left-0.5 top-px h-3 w-[260px]">
                     <img
-                      className="absolute w-[260px] h-1 top-1 left-0"
+                      className="absolute left-0 top-1 h-1 w-[260px]"
                       alt="Vector"
-                      src="/img/vector-136-1.svg"
+                      src="/img/vector-137-2.svg"
                     />
 
                     <img
-                      className="w-[93px] h-1 top-1 absolute left-0"
+                      className="w/[110px] absolute left-0 top-1 h-1"
                       alt="Vector"
-                      src="/img/vector-136-1.svg"
+                      src="/img/vector-137-3.svg"
                     />
+                  </div>
+                </div>
 
-                    <div className="absolute w-3 h-3 top-0 left-[85px] bg-blue-50 rounded-md" />
+                <div className="w/full relative flex items-center justify-between self-stretch">
+                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    Ставка
+                  </div>
+
+                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    8%
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
-              <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative tracking-[0]">
-                Ставка
-              </div>
-
-              <div className="w-fit mt-[-1.00px] font-medium text-gray-90 text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                2.5%
-              </div>
+              <button
+                onClick={onClick}
+                className="inline-flex items-center justify-center gap-2 rounded-[32px] bg-gray-90 px-4 py-3 text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]"
+              >
+                Рассчитать
+              </button>
             </div>
           </div>
-
-          <button onClick={onClick} className="all-[unset] box-border flex h-12 gap-8 px-8 py-3 self-stretch w-full bg-gray-90 rounded-3xl items-center justify-center relative">
-            <div className="self-stretch w-[164px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-white text-base text-center leading-6 whitespace-nowrap relative tracking-[0]">
-              Оформить
-            </div>
-          </button>
         </motion.div>
       </div>
     </div>
   );
-}; 
+};

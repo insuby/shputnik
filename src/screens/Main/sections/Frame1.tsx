@@ -30,8 +30,8 @@ export const Frame1 = () => {
   const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
   const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
   return (
-    <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-      <p className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] whitespace-nowrap relative tracking-[0]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+      <p className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_37_left"
           ref={ref37l}
@@ -54,13 +54,13 @@ export const Frame1 = () => {
         </motion.span>
       </p>
 
-      <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
-        <div className="flex items-center gap-5 relative flex-1 self-stretch grow">
-          <div className="group flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent rounded-[32px] overflow-hidden">
-            <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
-              <div className="relative w-[560px] h-[372px] top-[-49px] left-[59px]">
+      <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
+        <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
+          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]">
+            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
+              <div className="relative left-[59px] top-[-49px] h-[372px] w-[560px]">
                 <img
-                  className="absolute w-[415px] h-[372px] top-0 left-[91px]"
+                  className="absolute left-[91px] top-0 h-[372px] w-[415px]"
                   alt="Vector"
                   src="/img/vector-151.svg"
                 />
@@ -71,40 +71,40 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView40 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="inline-flex flex-col items-start gap-2.5 p-2 absolute top-[100px] left-[177px] bg-[#ffffff5c] rounded-[32px]"
+                  className="absolute left-[177px] top-[100px] inline-flex flex-col items-start gap-2.5 rounded-[32px] bg-[#ffffff5c] p-2"
                 >
-                  <div className="flex flex-col items-start gap-2.5 p-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl">
-                    <div className="relative w-[142.55px] h-7">
-                      <div className="w-[143px] h-7">
-                        <div className="w-[142px] h-[29px]">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
+                    <div className="relative h-7 w-[142.55px]">
+                      <div className="h-7 w-[143px]">
+                        <div className="h-[29px] w-[142px]">
                           <div className="h-[29px]">
-                            <div className="relative w-[142px] h-[29px]">
+                            <div className="relative h-[29px] w-[142px]">
                               <img
-                                className="absolute w-6 h-[29px] top-0 left-0"
+                                className="absolute left-0 top-0 h-[29px] w-6"
                                 alt="Group"
                                 src="/img/group-3-1.png"
                               />
 
                               <img
-                                className="absolute w-[23px] h-[25px] top-0.5 left-[30px]"
+                                className="absolute left-[30px] top-0.5 h-[25px] w-[23px]"
                                 alt="Fill"
                                 src="/img/fill-4.svg"
                               />
 
                               <img
-                                className="absolute w-[22px] h-[25px] top-0.5 left-[60px]"
+                                className="absolute left-[60px] top-0.5 h-[25px] w-[22px]"
                                 alt="Fill"
                                 src="/img/fill-8.svg"
                               />
 
                               <img
-                                className="absolute w-[23px] h-[25px] top-0.5 left-[88px]"
+                                className="absolute left-[88px] top-0.5 h-[25px] w-[23px]"
                                 alt="Fill"
                                 src="/img/fill-10.svg"
                               />
 
                               <img
-                                className="absolute w-6 h-[25px] top-0.5 left-[117px]"
+                                className="absolute left-[117px] top-0.5 h-[25px] w-6"
                                 alt="Fill"
                                 src="/img/fill-14.svg"
                               />
@@ -116,17 +116,17 @@ export const Frame1 = () => {
                   </div>
                 </motion.div>
 
-                <div className="absolute w-[560px] h-[104px] top-[262px] left-0">
+                <div className="absolute left-0 top-[262px] h-[104px] w-[560px]">
                   <motion.div
                     id="animate_41_left"
                     ref={ref41l}
                     initial={{ opacity: 0, x: -40 }}
                     animate={inView41l ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-0 bg-[#ffffff] rounded-3xl"
+                    className="absolute left-0 top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
                   >
                     <img
-                      className="relative w-[57.34px] h-[58px] mt-[-1.32px] mb-[-0.67px] ml-[-0.67px] mr-[-0.67px]"
+                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-[57.34px]"
                       alt="Group"
                       src="/img/Group%2032.svg"
                     />
@@ -138,10 +138,10 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, y: 40 }}
                     animate={inView41 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[152px] bg-[#ffffff] rounded-3xl"
+                    className="absolute left-[152px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
                   >
                     <img
-                      className="relative w-14 h-14"
+                      className="relative size-14"
                       alt="Clip path group"
                       src="/img/OKB_logo%201.svg"
                     />
@@ -153,10 +153,10 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, x: 40 }}
                     animate={inView42 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[456px] bg-[#ffffff] rounded-3xl"
+                    className="absolute left-[456px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
                   >
                     <img
-                      className="relative w-14 h-14"
+                      className="relative size-14"
                       alt="Clip path group"
                       src="/img/Clip%20path%20group.svg"
                     />
@@ -168,10 +168,10 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, x: 40 }}
                     animate={inView42r ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="inline-flex flex-col items-start gap-2.5 p-6 absolute top-0 left-[304px] bg-[#ffffff] rounded-3xl"
+                    className="absolute left-[304px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
                   >
                     <img
-                      className="relative w-14 h-14"
+                      className="relative size-14"
                       alt="Okb logo"
                       src="/img/nbki-logo%201.svg"
                     />
@@ -179,34 +179,34 @@ export const Frame1 = () => {
                 </div>
 
                 <img
-                  className="absolute w-0.5 h-10 top-[184px] left-[279px]"
+                  className="absolute left-[279px] top-[184px] h-10 w-0.5"
                   alt="Vector"
                   src="/img/vector-148.svg"
                 />
 
                 <img
-                  className="absolute w-[458px] h-[39px] top-[223px] left-[49px]"
+                  className="absolute left-[49px] top-[223px] h-[39px] w-[458px]"
                   alt="Vector"
                   src="/img/vector-149.svg"
                 />
 
                 <img
-                  className="absolute w-[149px] h-[39px] top-[223px] left-[204px]"
+                  className="absolute left-[204px] top-[223px] h-[39px] w-[149px]"
                   alt="Vector"
                   src="/img/vector-150.svg"
                 />
               </div>
             </div>
 
-            <div className="flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex flex-col items-start gap-2 relative flex-1 grow">
+            <div className="relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
+              <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.p
                   id="animate_38"
                   ref={ref38}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView38 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Выгрузка данных в кредитные бюро
                 </motion.p>
@@ -217,13 +217,16 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView39 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Готовое решение для передачи данных в кредитные бюро. Подходит для МФО, лизинговых, коллекторских и других компаний, обязанных направлять информацию в соответствии с требованиями законодательства
+                  Готовое решение для передачи данных в кредитные бюро. Подходит
+                  для МФО, лизинговых, коллекторских и других компаний,
+                  обязанных направлять информацию в соответствии с требованиями
+                  законодательства
                 </motion.p>
               </div>
 
-              <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
+              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                 <svg
                   width="32"
                   height="32"
@@ -234,39 +237,39 @@ export const Frame1 = () => {
                 >
                   <path
                     d="M12 6L22 16L12 26"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-start justify-center relative flex-1 self-stretch grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden">
-            <div className="relative flex-1 self-stretch w-full grow rounded-[32px] overflow-hidden">
-              <div className="relative w-full h-[446px]">
+          <div className="relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]">
+            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px]">
+              <div className="relative h-[446px] w-full">
                 <motion.div
                   id="animate_44"
                   ref={ref44}
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView44 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="flex flex-col items-start justify-center gap-1 p-3 absolute top-[84px] left-[49px] bg-white rounded-[32px]"
+                  className="absolute left-[49px] top-[84px] flex flex-col items-start justify-center gap-1 rounded-[32px] bg-white p-3"
                 >
-                  <div className="inline-flex items-end justify-end gap-1 p-4 relative flex-[0_0_auto]">
-                    <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
-                      <div className="relative w-[180px] mt-[-1.00px] font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
+                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+                      <div className="relative mt-[-1.00px] w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         ID 1232342345346
                       </div>
 
-                      <div className="inline-flex items-center justify-center gap-3 relative flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-3">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           Давид Иванов
                         </div>
 
-                        <div className="w-6 h-6 justify-center gap-2.5 p-2 bg-green-50 rounded-[20px] flex items-center relative">
+                        <div className="relative flex size-6 items-center justify-center gap-2.5 rounded-[20px] bg-green-50 p-2">
                           <img
-                            className="relative w-4 h-4 mt-[-4.00px] mb-[-4.00px] ml-[-4.00px] mr-[-4.00px]"
+                            className="relative m-[-4.00px] size-4"
                             alt="Check"
                             src="/img/check-1.svg"
                           />
@@ -275,63 +278,63 @@ export const Frame1 = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex items-center gap-[53px] p-4 relative flex-1 grow bg-blue-50 rounded-2xl">
-                      <div className="flex items-start relative flex-1 grow flex-col gap-0.5">
-                        <div className="self-stretch mt-[-1.00px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-white text-sm leading-5 relative tracking-[0]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-3 self-stretch">
+                    <div className="relative flex flex-1 grow items-center gap-[53px] rounded-2xl bg-blue-50 p-4">
+                      <div className="relative flex flex-1 grow flex-col items-start gap-0.5">
+                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-white opacity-50 [font-family:'Roboto',Helvetica]">
                           Балл
                         </div>
 
-                        <div className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-[28px] leading-10 relative tracking-[0]">
+                        <div className="relative self-stretch text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                           0.82
                         </div>
                       </div>
                     </div>
 
                     <img
-                      className="relative flex-1 self-stretch grow"
+                      className="relative flex-1 grow self-stretch"
                       alt="Frame"
                       src="/img/frame-31.svg"
                     />
                   </div>
 
-                  <div className="flex-col gap-3 p-4 flex-[0_0_auto] flex items-start relative self-stretch w-full">
-                    <div className="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-5">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-4">
+                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
+                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Пол
                       </div>
 
-                      <div className="w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-sm leading-5 relative tracking-[0]">
+                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Мужской
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-5">
+                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
+                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Дата рождения
                       </div>
 
-                      <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-sm tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         13.10.2025
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-5">
+                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
+                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Семейное положение
                       </div>
 
-                      <div className="w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-sm leading-5 relative tracking-[0]">
+                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Женат
                       </div>
                     </div>
 
-                    <div className="flex items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-5">
+                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
+                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Заработная плата
                       </div>
 
-                      <div className="w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-sm leading-5 relative tracking-[0]">
+                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         220,000₽
                       </div>
                     </div>
@@ -339,7 +342,7 @@ export const Frame1 = () => {
                 </motion.div>
 
                 <img
-                  className="absolute w-[678px] h-[368px] top-0 left-0"
+                  className="absolute left-0 top-0 h-[368px] w-[678px]"
                   alt="Vector"
                   src="/img/vector-1-4.svg"
                 />
@@ -350,50 +353,50 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView43r ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="flex flex-col w-80 items-start justify-center gap-3 p-6 absolute top-[38px] left-[312px] bg-white rounded-[32px]"
+                  className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
                 >
-                  <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
-                    <div className="relative w-[68px] h-[148px] bg-green-50 rounded-[20px] overflow-hidden">
-                      <div className="absolute top-[57px] left-3.5 font-medium text-white text-2xl leading-8 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
+                    <div className="relative h-[148px] w-[68px] overflow-hidden rounded-[20px] bg-green-50">
+                      <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>
                     </div>
 
-                    <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-                      <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Одобрение
                       </div>
 
-                      <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="relative self-stretch mt-[-1.00px] font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           850 будут возвращены
                         </div>
 
-                        <div className="relative self-stretch font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           50 не будут возвращены
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl">
-                    <div className="relative self-stretch w-[68px] bg-red-50 rounded-[20px] overflow-hidden">
-                      <div className="absolute top-[29px] left-[13px] font-medium text-white text-2xl leading-8 whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
+                    <div className="relative w-[68px] self-stretch overflow-hidden rounded-[20px] bg-red-50">
+                      <div className="absolute left-[13px] top-[29px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         100
                       </div>
                     </div>
 
-                    <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-                      <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Отказ
                       </div>
 
-                      <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="relative self-stretch mt-[-1.00px] font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           90 по умолчанию
                         </div>
 
-                        <div className="relative self-stretch font-normal text-[#7a86a2] text-sm leading-5 [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           10 положительных
                         </div>
                       </div>
@@ -403,15 +406,15 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="group flex items-end gap-8 p-10 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex flex-col items-start gap-2 relative flex-1 grow">
+            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
+              <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.div
                   id="animate_46_left"
                   ref={ref46l}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView46l ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Модуль принятия решений
                 </motion.div>
@@ -422,13 +425,15 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView47r ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Гибкое ПО для скоринга и проверки физлиц и юрлиц — с подключением десятков внешних источников для верификации и обогащения данных
+                  Гибкое ПО для скоринга и проверки физлиц и юрлиц — с
+                  подключением десятков внешних источников для верификации и
+                  обогащения данных
                 </motion.p>
               </div>
 
-              <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
+              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                 <svg
                   width="32"
                   height="32"
@@ -439,9 +444,9 @@ export const Frame1 = () => {
                 >
                   <path
                     d="M12 6L22 16L12 26"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>

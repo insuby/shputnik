@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 
 export const Advantages = () => {
@@ -20,54 +20,55 @@ export const Advantages = () => {
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
 
   return (
-    <motion.div 
+    <motion.div
       ref={ref1}
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto] mx-auto"
+      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch"
     >
-      <motion.div 
+      <motion.div
         ref={ref2}
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+        className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
       >
-        <motion.div 
+        <motion.div
           ref={ref3}
           initial={{ opacity: 0, y: 50 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-center text-gray-90 text-5xl leading-[60px] relative tracking-[0]"
+          className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
           Преимущества
         </motion.div>
 
-        <motion.p 
+        <motion.p
           ref={ref4}
           initial={{ opacity: 0, y: 50 }}
           animate={inView4 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="self-stretch text-[#9ea7bb] text-xl leading-7  text-center relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+          className="relative self-stretch text-center text-xl  font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
         >
-          Автоматизация процессов выдачи займов с учётом задач и масштаба вашего бизнеса
+          Автоматизация процессов выдачи займов с учётом задач и масштаба вашего
+          бизнеса
         </motion.p>
       </motion.div>
 
-      <motion.div 
+      <motion.div
         ref={ref5}
         initial={{ opacity: 0, y: 50 }}
         animate={inView5 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-        className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+        className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
       >
-        <motion.div 
+        <motion.div
           ref={ref6}
           initial={{ opacity: 0, x: -50 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
         >
           <img
             className="relative flex-[0_0_auto]"
@@ -75,46 +76,43 @@ export const Advantages = () => {
             src="/img/widgets/frame-18.svg"
           />
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Гибкая настройка
             </div>
 
-            <p
-              className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Используйте готовое решение или адаптируйте систему под ваши уникальные процессы и регламенты
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              Используйте готовое решение или адаптируйте систему под ваши
+              уникальные процессы и регламенты
             </p>
           </div>
         </motion.div>
 
-        <div
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+        <div className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
             src="/img/widgets/frame-18-1.svg"
           />
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Полная автоматизация
             </div>
 
-            <p
-              className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Автоматизация всех этапов работы с возможностью подключения внешних сервисов и систем
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              Автоматизация всех этапов работы с возможностью подключения
+              внешних сервисов и систем
             </p>
           </div>
         </div>
 
-        <motion.div 
+        <motion.div
           ref={ref7}
           initial={{ opacity: 0, x: 50 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
         >
           <img
             className="relative flex-[0_0_auto]"
@@ -122,19 +120,18 @@ export const Advantages = () => {
             src="/img/widgets/frame-19.svg"
           />
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Оптимизация затрат
             </div>
 
-            <p
-              className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-              Снижайте издержки за счёт автоматизации ключевых операций и повышения эффективности
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              Снижайте издержки за счёт автоматизации ключевых операций и
+              повышения эффективности
             </p>
           </div>
         </motion.div>
       </motion.div>
     </motion.div>
-  )
-}
+  );
+};

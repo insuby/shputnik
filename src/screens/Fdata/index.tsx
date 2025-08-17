@@ -130,11 +130,11 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col h-[636px] items-start gap-20 p-12 relative self-stretch w-full bg-blue-50 rounded-[32px] overflow-hidden">
+    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+        <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-12">
           <img
-            className="absolute w-[954px] h-[842px] -top-16 left-[430px]"
+            className="absolute -top-16 left-[430px] h-[842px] w-[954px]"
             alt="Vector"
             src="/img/fdata/vector-1-5.svg"
           />
@@ -145,24 +145,24 @@ export const Fdata = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]"
+              className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
             >
-              <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-                <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-                  <div className="w-[624px] mt-[-1.00px] font-medium text-white text-6xl leading-[68px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <div className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+                <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+                  <div className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     ПО для <br />
                     реконсиляции данных
                   </div>
 
-                  <p className="relative w-[624px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl tracking-[0] leading-7">
+                  <p className="relative w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]">
                     Автоматизация всех ваших процессов обработки <br />
                     финансовых данных с минимальной зависимостью <br />
                     от персонала
                   </p>
                 </div>
 
-                <button className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px] items-center justify-center">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
+                <button className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Связаться с нами
                   </div>
                 </button>
@@ -171,7 +171,7 @@ export const Fdata = () => {
           </HeroButtons>
 
           <img
-            className="absolute w-[619px] h-[568px] top-44 left-[1053px]"
+            className="absolute left-[1053px] top-44 h-[568px] w-[619px]"
             alt="Vector"
             src="/img/fdata/vector-4-2.svg"
           />
@@ -181,12 +181,12 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="flex w-[576px] items-start justify-end gap-[11.96px] p-6 absolute top-[168px] left-[704px] bg-white rounded-[32px]"
+            className="absolute left-[704px] top-[168px] flex w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
           >
-            <div className="flex flex-col items-start gap-6 relative flex-1 grow">
-              <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex h-8 items-center justify-center gap-3 relative self-stretch w-full">
-                  <div className="relative flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-base tracking-[0] leading-6">
+            <div className="relative flex flex-1 grow flex-col items-start gap-6">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                <div className="relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
+                  <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                     Dashboard
                   </div>
 
@@ -203,143 +203,143 @@ export const Fdata = () => {
                   />
                 </div>
 
-                <div className="flex h-9 items-center gap-4 pl-4 pr-3 py-2 relative self-stretch w-full rounded-[100px] border border-solid border-[#e3e4e7]">
-                  <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                <div className="relative flex h-9 w-full items-center gap-4 self-stretch rounded-[100px] border border-solid border-[#e3e4e7] py-2 pl-4 pr-3">
+                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Search
                   </div>
 
                   <img
-                    className="relative w-4 h-4"
+                    className="relative size-4"
                     alt="Magnifying glass"
                     src="/img/fdata/magnifyingglass.svg"
                   />
                 </div>
               </div>
 
-              <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex items-start gap-4 px-3 py-1 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="flex-1 relative mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch px-3 py-1">
+                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Status
                   </div>
 
-                  <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Reconciliation
                   </div>
 
-                  <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Operator
                   </div>
 
-                  <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Last run time
                   </div>
 
-                  <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs text-center tracking-[0] leading-5">
+                  <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Mismatches
                   </div>
                 </div>
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="flex h-11 items-start gap-4 p-3 relative self-stretch w-full bg-[#f9fafd] rounded-xl">
-                    <div className="flex items-center justify-center gap-2 relative flex-1 grow">
-                      <div className="relative w-2 h-2 bg-red-50 rounded" />
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       John Smith
                     </div>
 
-                    <div className="w-20 mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       25 may 07:16
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs text-center tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       54
                     </div>
                   </div>
 
-                  <div className="flex h-11 items-start gap-4 p-3 relative self-stretch w-full bg-[#f9fafd] rounded-xl">
-                    <div className="flex items-center justify-center gap-2 relative flex-1 grow">
-                      <div className="relative w-2 h-2 bg-green-50 rounded" />
+                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="relative size-2 rounded bg-green-50" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       John Smith
                     </div>
 
-                    <div className="w-20 mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       24 may 12:44
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs text-center tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       0
                     </div>
                   </div>
 
-                  <div className="flex h-11 items-start gap-4 p-3 relative self-stretch w-full bg-[#f9fafd] rounded-xl">
-                    <div className="flex items-center justify-center gap-2 relative flex-1 grow">
-                      <div className="relative w-2 h-2 bg-green-50 rounded" />
+                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="relative size-2 rounded bg-green-50" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       John Smith
                     </div>
 
-                    <div className="w-20 mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       23 may 05:38
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs text-center tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       2
                     </div>
                   </div>
 
-                  <div className="flex h-11 items-start gap-4 p-3 relative self-stretch w-full bg-[#f9fafd] rounded-xl">
-                    <div className="flex items-center justify-center gap-2 relative flex-1 grow">
-                      <div className="relative w-2 h-2 bg-red-50 rounded" />
+                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       John Smith
                     </div>
 
-                    <div className="w-20 mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       22 may 07:16
                     </div>
 
-                    <div className="relative w-20 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs text-center tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       12
                     </div>
                   </div>
@@ -349,7 +349,7 @@ export const Fdata = () => {
           </motion.div>
 
           <img
-            className="absolute w-[601px] h-[464px] top-[172px] left-[775px]"
+            className="absolute left-[775px] top-[172px] h-[464px] w-[601px]"
             alt="Vector"
             src="/img/fdata/vector-5.svg"
           />
@@ -359,118 +359,118 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="flex w-[368px] items-start justify-end gap-[11.96px] p-6 absolute top-[364px] left-[960px] bg-white rounded-[32px_32px_0px_0px]"
+            className="absolute left-[960px] top-[364px] flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6"
           >
-            <div className="flex-col gap-3 flex-1 self-stretch grow flex items-start relative">
-              <div className="flex items-center justify-center gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-base tracking-[0] leading-6">
+            <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
+              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
+                <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                   Filter
                 </div>
               </div>
 
-              <div className="gap-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
-                <div className="flex-col gap-2 flex-1 grow flex items-start relative">
-                  <div className="self-stretch relative mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+              <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+                <div className="relative flex flex-1 grow flex-col items-start gap-2">
+                  <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Status
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Waiting
                     </div>
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       In progress
                     </div>
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Reconciled
                     </div>
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Unreconciled
                     </div>
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Created
                     </div>
                   </div>
 
-                  <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                    <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Failed
                     </div>
                   </div>
                 </div>
 
-                <div className="flex-col justify-center gap-3 flex-1 grow flex items-start relative">
-                  <div className="flex flex-col w-44 h-[76px] items-start gap-2 relative mr-[-28.00px]">
-                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                <div className="relative flex flex-1 grow flex-col items-start justify-center gap-3">
+                  <div className="relative mr-[-28.00px] flex h-[76px] w-44 flex-col items-start gap-2">
+                    <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       Users
                     </div>
 
-                    <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                      <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By me
                       </div>
                     </div>
 
-                    <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                      <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By others
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex flex-col w-44 items-start gap-2 relative flex-[0_0_auto] mr-[-28.00px]">
-                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xs tracking-[0] leading-5">
+                  <div className="relative mr-[-28.00px] flex w-44 flex-[0_0_auto] flex-col items-start gap-2">
+                    <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       Projects
                     </div>
 
-                    <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                      <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Payments
                       </div>
                     </div>
 
-                    <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                      <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Finance
                       </div>
                     </div>
 
-                    <div className="h-5 items-center justify-center gap-2 flex relative self-stretch w-full">
-                      <div className="relative w-4 h-4 bg-[#ffffff] rounded border border-solid border-[#bdc7e0]" />
+                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5">
+                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Trading
                       </div>
                     </div>
@@ -481,21 +481,21 @@ export const Fdata = () => {
           </motion.div>
 
           <img
-            className="absolute w-[410px] h-[401px] top-[454px] left-[980px]"
+            className="absolute left-[980px] top-[454px] h-[401px] w-[410px]"
             alt="Vector"
             src="/img/fdata/vector-6.svg"
           />
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="w-[1376px] gap-6 relative flex-[0_0_auto] rounded-3xl flex items-center">
-          <div className="flex-col items-start gap-12 pl-12 pr-[68px] py-12 flex-1 grow rounded-3xl overflow-hidden flex relative">
-            <div className="flex flex-col w-[560px] items-center justify-center gap-6 relative flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl tracking-[0] leading-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
+        <div className="relative flex w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+          <div className="relative flex flex-1 grow flex-col items-start gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+            <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
+              <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 f.Data в деталях
               </div>
 
-              <p className="self-stretch relative [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 f.Data автоматизирует все ваши процессы обработки финансовых
                 данных с минимальной зависимостью от персонала. Наша
                 инновационная платформа загружает и реконсилирует данные,
@@ -507,7 +507,7 @@ export const Fdata = () => {
           </div>
 
           <img
-            className="relative flex-1 self-stretch grow h-[404px]"
+            className="relative h-[404px] flex-1 grow self-stretch"
             alt="Frame"
             src="/img/fdata/frame-21.svg"
           />
@@ -518,21 +518,21 @@ export const Fdata = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView4 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch"
       >
         <motion.div
           ref={ref5}
           initial={{ opacity: 0, y: 50 }}
           animate={inView5 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref6}
             initial={{ opacity: 0, y: 30 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+            className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Как мы помогаем финансам
           </motion.div>
@@ -541,7 +541,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]"
+            className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
           >
             Философия и архитектура f.Data позволяет нашим клиентам уверенно
             управлять финансовыми данными, делать это быстро
@@ -554,21 +554,21 @@ export const Fdata = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]"
+          className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="flex w-[1376px] items-start gap-6 relative flex-[0_0_auto]"
+            className="relative flex w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref10}
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
             >
               <motion.img
                 ref={ref11}
@@ -579,13 +579,13 @@ export const Fdata = () => {
                 alt="Frame"
                 src="/img/fdata/frame-18-4.svg"
               />
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref12}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView12 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Сокращение финансовых потерь
                 </motion.div>
@@ -594,7 +594,7 @@ export const Fdata = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView13 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="self-stretch font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   Собственники бизнеса, CFO, COO, CIO получают уверенность
                   <br />в корректности финансовых данных, передаваемых
@@ -608,7 +608,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView14 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
             >
               <motion.img
                 ref={ref15}
@@ -619,13 +619,13 @@ export const Fdata = () => {
                 alt="Frame"
                 src="/img/fdata/frame-20.svg"
               />
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref16}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView16 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Оптимизация ресурсов
                 </motion.div>
@@ -634,7 +634,7 @@ export const Fdata = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView17 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   Автоматизация экономит рабочее время
                   <br />и в разы увеличивает доступные ресурсы
@@ -648,14 +648,14 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="flex w-[1376px] items-start gap-6 relative flex-[0_0_auto]"
+            className="relative flex w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref19}
               initial={{ opacity: 0, x: -50 }}
               animate={inView19 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
             >
               <motion.img
                 ref={ref20}
@@ -666,13 +666,13 @@ export const Fdata = () => {
                 alt="Frame"
                 src="/img/fdata/frame-19.svg"
               />
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref21}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView21 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Прозрачная аналитика
                 </motion.div>
@@ -681,7 +681,7 @@ export const Fdata = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView22 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   Получайте точную картину состояния ваших финансовых данных за
                   считанные минуты
@@ -694,7 +694,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 0 }}
               animate={inView23 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
             >
               <motion.img
                 ref={ref24}
@@ -705,13 +705,13 @@ export const Fdata = () => {
                 alt="Frame"
                 src="/img/fdata/frame-19-2.svg"
               />
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref25}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView25 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Адаптивность
                 </motion.div>
@@ -720,7 +720,7 @@ export const Fdata = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView26 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   Теперь легко создавать и изменять процессы обработки
                   финансовых данных
@@ -733,7 +733,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView27 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
             >
               <motion.img
                 ref={ref28}
@@ -744,13 +744,13 @@ export const Fdata = () => {
                 alt="Frame"
                 src="/img/fdata/frame-18-5.svg"
               />
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref29}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView29 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Сокращение ошибок
                 </motion.div>
@@ -759,7 +759,7 @@ export const Fdata = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView30 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]"
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   Сокращайте количество ошибок
                   <br />и улучшайте качество финансовых данных
@@ -775,10 +775,10 @@ export const Fdata = () => {
         text="Защитите ваши финансовые данные сегодня"
         text1="Заказать демо"
       />
-      <div className="relative w-[1376px] h-[568px]">
-        <div className="w-[1472px] gap-[68px] absolute top-0 left-0 flex items-center">
-          <div className="flex flex-col w-[496px] items-start justify-center gap-8 relative">
-            <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]">
+      <div className="relative h-[568px] w-[1376px]">
+        <div className="absolute left-0 top-0 flex w-[1472px] items-center gap-[68px]">
+          <div className="relative flex w-[496px] flex-col items-start justify-center gap-8">
+            <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Инновационная технология
               <br />
               для вашего бизнеса
@@ -786,9 +786,9 @@ export const Fdata = () => {
 
             <button
               onClick={onClick}
-              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center"
+              className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
             >
-              <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Попробовать
               </div>
             </button>
@@ -808,47 +808,47 @@ export const Fdata = () => {
               className="p2p-slider"
             >
               <div className="px-3">
-                <div className="flex flex-col w-[443px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+                <div className="relative flex h-[480px] w-[443px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                   <img
-                    className="absolute w-[443px] h-[406px] top-0 left-0"
+                    className="absolute left-0 top-0 h-[406px] w-[443px]"
                     alt="Vector"
                     src="/img/fdata/vector-1-1.svg"
                   />
 
-                  <div className="relative flex-1 self-stretch w-full grow">
-                    <div className="flex flex-col w-[299px] items-center justify-center gap-2.5 p-6 relative top-1 left-6 bg-white rounded-[32px]">
-                      <div className="self-stretch [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 relative tracking-[0]">
+                  <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="relative left-6 top-1 flex w-[299px] flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6">
+                      <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         Настройка правил
                       </div>
 
-                      <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
+                        <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           Автоматическая загрузка
                         </div>
 
-                        <div className="relative w-7 h-4 bg-[#e8ebf4] rounded-[100px] overflow-hidden">
-                          <div className="relative w-3 h-3 top-0.5 left-0.5 bg-[#ffffff] rounded-md" />
+                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-[#e8ebf4]">
+                          <div className="relative left-0.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
                         </div>
                       </div>
 
-                      <div className="flex items-center justify-center gap-2.5 relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-base leading-6 relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
+                        <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           Хранение файлов
                         </div>
 
-                        <div className="relative w-7 h-4 bg-green-50 rounded-[100px] overflow-hidden">
-                          <div className="relative w-3 h-3 top-0.5 left-3.5 bg-[#ffffff] rounded-md" />
+                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-50">
+                          <div className="relative left-3.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-start gap-3 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Загрузка и реконсиляция данных
                     </div>
 
-                    <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+                    <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       Поддержка любых форматов интеграций и файлов, гибкая
                       настройка правил обработки данных
                     </p>
@@ -856,49 +856,49 @@ export const Fdata = () => {
                 </div>
               </div>
               <div className="px-3">
-                <div className="flex flex-col w-[442px] h-[480px] items-center gap-12 p-12 relative bg-[#f9fafd] rounded-[32px] overflow-hidden">
+                <div className="relative flex h-[480px] w-[442px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                   <img
-                    className="absolute w-[377px] h-[406px] top-0 left-0"
+                    className="absolute left-0 top-0 h-[406px] w-[377px]"
                     alt="Vector"
                     src="/img/fdata/vector-1-4.svg"
                   />
 
-                  <div className="relative flex-1 self-stretch w-full grow">
-                    <div className="inline-flex items-center gap-2.5 p-3 absolute top-1 left-[23px] bg-[#ffffff] rounded-[32px]">
-                      <div className="relative w-[120px] h-[120px]">
-                        <div className="relative w-[120px] h-[120px]">
-                          <div className="absolute w-[120px] h-[120px] top-0 left-0">
+                  <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="relative size-[120px]">
+                        <div className="relative size-[120px]">
+                          <div className="absolute left-0 top-0 size-[120px]">
                             <img
-                              className="absolute w-[57px] h-[120px] top-0 left-0"
+                              className="absolute left-0 top-0 h-[120px] w-[57px]"
                               alt="Subtract"
                               src="/img/fdata/subtract-2.svg"
                             />
 
                             <img
-                              className="absolute w-[57px] h-[71px] top-[49px] left-[63px]"
+                              className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
                               alt="Subtract"
                               src="/img/fdata/subtract.svg"
                             />
 
-                            <div className="inline-flex flex-col items-center absolute top-[37px] left-[29px]">
-                              <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-xs tracking-[0] leading-4 whitespace-nowrap">
+                            <div className="absolute left-[29px] top-[37px] inline-flex flex-col items-center">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                                 Total
                               </div>
 
-                              <div className="w-fit -mt-0.5 [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-xl text-center leading-8 whitespace-nowrap relative tracking-[0]">
+                              <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                                 88,000
                               </div>
                             </div>
                           </div>
 
                           <img
-                            className="absolute w-3.5 h-[22px] top-[22px] left-[103px]"
+                            className="absolute left-[103px] top-[22px] h-[22px] w-3.5"
                             alt="Subtract"
                             src="/img/fdata/subtract-1.svg"
                           />
 
                           <img
-                            className="absolute w-[39px] h-5 top-0 left-[63px]"
+                            className="absolute left-[63px] top-0 h-5 w-[39px]"
                             alt="Subtract"
                             src="/img/fdata/subtract-3.svg"
                           />
@@ -907,18 +907,18 @@ export const Fdata = () => {
                     </div>
 
                     <img
-                      className="absolute w-36 h-36 top-1 left-[179px]"
+                      className="absolute left-[179px] top-1 size-36"
                       alt="Frame"
                       src="/img/fdata/frame-31.svg"
                     />
                   </div>
 
-                  <div className="flex-col h-[188px] items-start gap-3 self-stretch w-full flex relative">
-                    <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+                  <div className="relative flex h-[188px] w-full flex-col items-start gap-3 self-stretch">
+                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Отчетность
                     </div>
 
-                    <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+                    <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       Легко создавать отчеты и дашборды используя данные из всех
                       подключенных источников
                     </p>
@@ -929,10 +929,10 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute w-[120px] h-14 top-[512px] p-1 left-[725px] flex items-center justify-between bg-[#f9fafd] rounded-full">
+        <div className="absolute left-[725px] top-[512px] flex h-14 w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
           <button
             onClick={goToPrev}
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
+            className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
             <svg
               width="24"
@@ -944,23 +944,23 @@ export const Fdata = () => {
               <path
                 d="M20.25 12H3.75"
                 stroke="#55607A"
-                stroke-width="2"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="square"
+                strokeLinejoin="round"
               />
               <path
                 d="M10.5 5.25L3.75 12L10.5 18.75"
                 stroke="#55607A"
-                stroke-width="2"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="square"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
 
           <button
             onClick={goToNext}
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
+            className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
             <svg
               width="24"
@@ -972,54 +972,54 @@ export const Fdata = () => {
               <path
                 d="M3.75 12H20.25"
                 stroke="#55607A"
-                stroke-width="2"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="square"
+                strokeLinejoin="round"
               />
               <path
                 d="M13.5 5.25L20.25 12L13.5 18.75"
                 stroke="#55607A"
-                stroke-width="2"
-                stroke-linecap="square"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeLinecap="square"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
         <div
           ref={ref53}
-          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref54}
             initial={{ opacity: 0, y: 30 }}
             animate={inView54 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+            className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Нашим клиентам
           </motion.div>
         </div>
 
-        <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
           <motion.div
             ref={ref53}
             initial={{ opacity: 0, y: -100 }}
             animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="flex items-center gap-8 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
-            <div className="relative w-[140px] h-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
+            <div className="relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
 
-            <motion.div className="items-center gap-12 flex-1 grow flex relative">
-              <div className="flex-col w-[421px] gap-4 flex items-start relative">
-                <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] relative tracking-[0]">
+            <motion.div className="relative flex flex-1 grow items-center gap-12">
+              <div className="relative flex w-[421px] flex-col items-start gap-4">
+                <div className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Константин Гризов
                 </div>
 
-                <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                <div className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   Управляющий партнер
                   <br />
                   PLUS Consulting
@@ -1027,12 +1027,12 @@ export const Fdata = () => {
               </div>
 
               <img
-                className="relative self-stretch w-px"
+                className="relative w-px self-stretch"
                 alt="Vector"
                 src="/img/fdata/vector-166.svg"
               />
 
-              <p className="flex-1 mt-[-1.00px] relative [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+              <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 f.Data легко масштабируется для бизнеса любого размера, <br />
                 что позволяет автоматизировать работу сфинансовыми данными как в
                 банках, страховых и инвестиционных компаниях, платежных
@@ -1042,26 +1042,26 @@ export const Fdata = () => {
             </motion.div>
 
             <img
-              className="absolute w-[323px] h-[348px] top-[-105px] left-[178px]"
+              className="absolute left-[178px] top-[-105px] h-[348px] w-[323px]"
               alt="Vector"
               src="/img/fdata/vector-1-2.svg"
             />
 
             <img
-              className="absolute w-[323px] h-[348px] top-[11px] left-[1005px]"
+              className="absolute left-[1005px] top-[11px] h-[348px] w-[323px]"
               alt="Vector"
               src="/img/fdata/vector-2-1.svg"
             />
           </motion.div>
 
-          <div className="flex flex-col items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-            <div className="gap-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+                className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1069,12 +1069,12 @@ export const Fdata = () => {
                   src="/img/fdata/frame-19.svg"
                 />
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <p className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <p className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Контролируйте финансы и будьте готовы к аудиту
                   </p>
 
-                  <p className="self-stretch font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Своевременно и без рутины выявляйте расхождения в финансовых
                     транзакциях и предотвращайте потери. Процессы в f.Data
                     документированы и могут быть использованы для аудиторских
@@ -1088,7 +1088,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1096,12 +1096,12 @@ export const Fdata = () => {
                   src="/img/fdata/frame-18-2.svg"
                 />
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Откажитесь от рисков персонала
                   </div>
 
-                  <p className="self-stretch font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Управление процессами в f.Data можно легко передать новому
                     сотруднику
                   </p>
@@ -1109,13 +1109,13 @@ export const Fdata = () => {
               </motion.div>
             </div>
 
-            <div className="gap-6 self-stretch w-full flex-[0_0_auto] flex items-start relative">
+            <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1123,12 +1123,12 @@ export const Fdata = () => {
                   src="/img/fdata/frame-18-3.svg"
                 />
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Работайте быстрее
                   </div>
 
-                  <p className="self-stretch relative [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Процессы с f.Data выполняются до 100 раз быстрее
                   </p>
                 </div>
@@ -1139,7 +1139,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1147,12 +1147,12 @@ export const Fdata = () => {
                   src="/img/fdata/frame-18-1.svg"
                 />
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Избавьтесь от ошибок
                   </div>
 
-                  <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Автоматические проверки качества и целостности данных
                     <br />
                     на всех этапах

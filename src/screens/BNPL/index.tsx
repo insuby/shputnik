@@ -1,6 +1,5 @@
 import { Marquee } from '@devnomic/marquee';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 
@@ -10,9 +9,9 @@ import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Integrations } from '../../widgets/integrations.tsx';
+import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
-import {Zaim} from "../../widgets/zaim.tsx";
-import {RoleStructure} from "../../widgets/role-structure.tsx";
+import { Zaim } from '../../widgets/zaim.tsx';
 
 export const BNPL = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -99,24 +98,24 @@ export const BNPL = () => {
   };
 
   return (
-    <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-      <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-        <div className="flex flex-col h-[620px] items-start gap-20 p-12 relative self-stretch w-full bg-green-60 rounded-[32px] overflow-hidden">
+    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-12">
           <img
-            className="absolute w-[1108px] h-[1060px] top-[-140px] left-[441px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px] w-[1108px]"
             alt="Vector"
             src="/img/bnpl/vector-1-5.svg"
           />
 
           <HeroButtons>
-            <div className="flex flex-col w-[624px] items-start justify-center gap-12 relative flex-[0_0_auto]">
-              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
+            <div className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.div
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative w-[624px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-6xl tracking-[0] leading-[68px]"
+                  className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Автоматизация BNPL и PoS-кредитования
                 </motion.div>
@@ -126,7 +125,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="w-[624px] text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+                  className="relative w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
                 >
                   Мы предлагаем готовые инструменты для автоматизации процессов
                   BNPL (Buy Now, Pay Later) и POS-кредитования. Решения подойдут
@@ -141,79 +140,79 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[168px] left-[968px] bg-[#ffffff] rounded-[32px]"
+            className="absolute left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-8"
           >
-            <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
-              <div className="relative w-[264px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+              <div className="relative mt-[-1.00px] w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 График платежей
               </div>
 
-              <div className="w-[180px] font-normal text-[#7a86a2] text-sm leading-5 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <div className="relative w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Договор: 12345456322
               </div>
             </div>
 
-            <div className="inline-flex h-[175px] items-end relative">
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="relative w-2 h-[92px] rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+            <div className="relative inline-flex h-[175px] items-end">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[92px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   март
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="h-[104px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[104px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   апр
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="h-[127px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[127px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   май
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="h-[145px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[145px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   июнь
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="h-[110px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[110px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   июль
                 </div>
               </div>
 
-              <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-                <div className="h-[98px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                <div className="w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center leading-4 relative tracking-[0]">
+                <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   авг
                 </div>
               </div>
             </div>
 
             <img
-              className="absolute w-[328px] h-24 top-[132px] left-0"
+              className="absolute left-0 top-[132px] h-24 w-[328px]"
               alt="Vector"
               src="/img/bnpl/vector-147.svg"
             />
 
-            <div className="absolute w-3 h-3 top-[156px] left-[156px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
+            <div className="absolute left-[156px] top-[156px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
           </motion.div>
 
           <img
-            className="absolute w-[761px] h-[620px] top-0 left-[615px]"
+            className="absolute left-[615px] top-0 h-[620px] w-[761px]"
             alt="Vector"
             src="/img/bnpl/vector-3-1.svg"
           />
@@ -223,47 +222,47 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[286px] left-[800px] bg-[#ffffff] rounded-[32px_32px_0px_0px]"
+            className="absolute left-[800px] top-[286px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4"
           >
-            <div className="relative w-[212px] h-[212px] rounded-[100px]">
-              <div className="relative w-[198px] h-[198px] top-[7px] left-[7px]">
-                <div className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[68px] left-10">
-                  <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm tracking-[0] leading-5 whitespace-nowrap">
+            <div className="relative size-[212px] rounded-[100px]">
+              <div className="relative left-[7px] top-[7px] size-[198px]">
+                <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                     Текущий остаток
                   </div>
 
-                  <div className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center tracking-[0] leading-10 whitespace-nowrap">
+                  <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                     44,000₽
                   </div>
                 </div>
 
-                <div className="absolute w-[198px] h-[198px] top-0 left-0 rounded-[99px] border-[10px] border-solid border-neutral-50" />
+                <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
                 <img
-                  className="absolute w-[198px] h-[198px] top-0 left-0"
+                  className="absolute left-0 top-0 size-[198px]"
                   alt="Ellipse"
                   src="/img/bnpl/ellipse-32.svg"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col items-start gap-3 px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]">
-              <div className="flex w-[180px] items-center justify-between relative flex-[0_0_auto]">
-                <div className="w-fit [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
+              <div className="relative flex w-[180px] flex-[0_0_auto] items-center justify-between">
+                <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                   Сумма займа
                 </div>
 
-                <div className="w-fit font-medium text-gray-90 text-base leading-6 whitespace-nowrap relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   122, 000₽
                 </div>
               </div>
 
-              <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-                <div className="flex-1 [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 relative tracking-[0]">
+              <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                <div className="relative flex-1 text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                   Проценты
                 </div>
 
-                <div className="w-fit font-medium text-gray-90 text-base leading-6 whitespace-nowrap relative mt-[-1.00px] [font-family:'Roboto',Helvetica] tracking-[0]">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   4, 000₽
                 </div>
               </div>
@@ -277,16 +276,16 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch"
       >
         <motion.div
           ref={ref7}
           initial={{ opacity: 0, y: 50 }}
           animate={inView7 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
-          <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Подойдет для
           </div>
         </motion.div>
@@ -296,14 +295,14 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]"
+          className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, x: -50 }}
             animate={inView9 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <img
               className="relative flex-[0_0_auto]"
@@ -311,12 +310,12 @@ export const BNPL = () => {
               src="/img/bnpl/frame-18-2.svg"
             />
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 E-commerce (BNPL)
               </div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Программное обеспечение для запуска BNPL в интернет-магазинах.
                 Позволяет покупателям оплачивать товары в рассрочку. Подходит
                 для e-commerce-площадок и финансовых организаций, которые хотят
@@ -330,7 +329,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView10 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <img
               className="relative flex-[0_0_auto]"
@@ -338,12 +337,12 @@ export const BNPL = () => {
               src="/img/bnpl/frame-18-3.svg"
             />
 
-            <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 PoS-кредитование
               </div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Программный продукт для автоматизации кредитования online и в
                 точках продаж. Позволяет оформлять займы с процентной ставкой
                 прямо на кассе, в офисе или через онлайн-форму.
@@ -358,22 +357,22 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView11 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="h-[400px] items-center gap-6 rounded-3xl flex relative self-stretch w-full"
+        className="relative flex h-[400px] w-full items-center gap-6 self-stretch rounded-3xl"
       >
         <motion.div
           ref={ref12}
           initial={{ opacity: 0, x: -50 }}
           animate={inView12 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]"
         >
-          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <motion.div
               ref={ref13}
               initial={{ opacity: 0, y: 50 }}
               animate={inView13 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              className="relative mt-[-1.00px] w-[480px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
               BNPL-процесс
             </motion.div>
@@ -383,7 +382,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView14 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              className="relative w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               Готовое программное обеспечения  для BNPL-сценария
             </motion.div>
@@ -394,9 +393,10 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView15 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+            className="relative w-[500px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
           >
-            Предоставьте партнёрским магазинам и точкам продаж возможность подключать рассрочку —  с помощью настраиваемого нашего BNPL-софта.
+            Предоставьте партнёрским магазинам и точкам продаж возможность
+            подключать рассрочку —  с помощью настраиваемого нашего BNPL-софта.
           </motion.p>
         </motion.div>
 
@@ -405,53 +405,53 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView16 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden"
+          className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
           <Marquee fade>
-            <div className="relative w-[752px] h-[400px] left-1">
-              <div className="inline-flex items-center gap-4 absolute top-[39px] left-0">
-                <div className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
-                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]" />
+            <div className="relative left-1 h-[400px] w-[752px]">
+              <div className="absolute left-0 top-[39px] inline-flex items-center gap-4">
+                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
+                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]" />
 
-                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Наушники Beyerdynamic Amiron
                       </div>
 
-                      <div className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         85 950₽
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
-                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
+                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
+                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
 
-                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Наушники Kennerton Gjallarhorn JM
                       </div>
 
-                      <div className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         74 000₽
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex flex-col w-60 items-center justify-center gap-3 p-4 relative bg-[#f9fafd] rounded-[32px]">
-                  <div className="flex flex-col items-center relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
+                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
+                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
 
-                    <div className="flex flex-col items-start gap-3 p-2 relative self-stretch w-full flex-[0_0_auto]">
-                      <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-70 text-xl tracking-[0] leading-[26px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         Наушники Kennerton Gjallarhorn JM
                       </div>
 
-                      <div className="self-stretch font-semibold text-[#9ea7bb] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         74 000₽
                       </div>
                     </div>
@@ -463,16 +463,16 @@ export const BNPL = () => {
         </motion.div>
       </motion.div>
 
-      <div className="flex items-center gap-6 relative self-stretch w-full flex-[0_0_auto] rounded-3xl overflow-hidden">
-        <div className="flex flex-col w-[676px] items-start gap-2.5 p-6 relative rounded-[32px] overflow-hidden">
-          <div className="flex items-center gap-3 p-8 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
-            <div className="flex items-start gap-3 relative flex-1 grow">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch overflow-hidden rounded-3xl">
+        <div className="relative flex w-[676px] flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6">
+          <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-8">
+            <div className="relative flex flex-1 grow items-start gap-3">
               <motion.div
                 ref={ref16}
                 initial={{ opacity: 0, scale: 0 }}
                 animate={inView16 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative w-40 h-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
+                className="relative size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
               />
 
               <motion.div
@@ -480,31 +480,31 @@ export const BNPL = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={inView16 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="flex flex-col items-start gap-5 p-3 relative flex-1 grow"
+                className="relative flex flex-1 grow flex-col items-start gap-5 p-3"
               >
-                <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-xl tracking-[0] leading-[26px]">
+                <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                   Наушники Beyerdynamic Amiron
                 </div>
 
-                <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <motion.div
                     ref={ref16}
                     initial={{ opacity: 0, x: 50 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                    className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
+                    className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Стоимость
                     </div>
 
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       85 950₽
                     </div>
                   </motion.div>
 
                   <img
-                    className="relative self-stretch w-full h-px object-cover"
+                    className="relative h-px w-full self-stretch object-cover"
                     alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
@@ -514,19 +514,19 @@ export const BNPL = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                    className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
+                    className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Авансовый платеж
                     </div>
 
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       14 500 ₽
                     </div>
                   </motion.div>
 
                   <img
-                    className="relative self-stretch w-full h-px object-cover"
+                    className="relative h-px w-full self-stretch object-cover"
                     alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
@@ -536,19 +536,19 @@ export const BNPL = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-                    className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
+                    className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Срок
                     </div>
 
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       10 месяцев
                     </div>
                   </motion.div>
 
                   <img
-                    className="relative self-stretch w-full h-px object-cover"
+                    className="relative h-px w-full self-stretch object-cover"
                     alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
@@ -558,19 +558,19 @@ export const BNPL = () => {
                     initial={{ opacity: 0, x: -50 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                    className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
+                    className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="flex-1 mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Следующий платеж
                     </div>
 
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       2 500 ₽
                     </div>
                   </motion.div>
 
                   <img
-                    className="relative self-stretch w-full h-px object-cover"
+                    className="relative h-px w-full self-stretch object-cover"
                     alt="Vector"
                     src="/img/bnpl/vector-140.svg"
                   />
@@ -580,13 +580,13 @@ export const BNPL = () => {
                     initial={{ opacity: 0, x: 50 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                    className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]"
+                    className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="flex-1 mt-[-1.00px] font-normal text-[#7a86a2] text-base leading-6 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Дата
                     </div>
 
-                    <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       20 февраля 2025
                     </div>
                   </motion.div>
@@ -598,9 +598,9 @@ export const BNPL = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView16 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.25 }}
-                  className="all-[unset] box-border flex px-6 py-3 relative self-stretch w-full flex-[0_0_auto] bg-gray-90 items-center justify-center gap-2.5 rounded-[100px]"
+                  className="all-[unset] relative box-border flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-gray-90 px-6 py-3"
                 >
-                  <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-semibold text-[#ffffff] text-base leading-6 whitespace-nowrap relative tracking-[0]">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-semibold leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                     Внести всю сумму
                   </div>
                 </motion.button>
@@ -614,15 +614,15 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView17 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="flex flex-col items-start gap-7 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]"
         >
-          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <motion.div
               ref={ref18}
               initial={{ opacity: 0, y: 50 }}
               animate={inView18 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-              className="w-[480px] mt-[-1.00px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              className="relative mt-[-1.00px] w-[480px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
               POS-процесс
             </motion.div>
@@ -632,7 +632,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView19 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="w-[480px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+              className="relative w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               Готовое программное обеспечения  для PoS-сценария
             </motion.p>
@@ -643,9 +643,11 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView20 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
+            className="relative w-[500px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
           >
-            Наше решение легко интегрируется в e-commerce и PoS-сценарии, позволяет управлять лимитами, графиками платежей и автоматизировать весь кредитный процесс.
+            Наше решение легко интегрируется в e-commerce и PoS-сценарии,
+            позволяет управлять лимитами, графиками платежей и автоматизировать
+            весь кредитный процесс.
           </motion.p>
         </motion.div>
       </div>
@@ -655,14 +657,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView21 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="flex flex-col items-center justify-center gap-12 px-0 py-20 relative self-stretch w-full flex-[0_0_auto]"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch px-0 py-20"
       >
         <motion.div
           ref={ref22}
           initial={{ opacity: 0, y: 50 }}
           animate={inView22 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]"
+          className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
           Настраиваемые параметры
         </motion.div>
@@ -672,21 +674,21 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView23 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="flex h-[228px] items-start justify-center gap-6 relative self-stretch w-full"
+          className="relative flex h-[228px] w-full items-start justify-center gap-6 self-stretch"
         >
           <motion.div
             ref={ref24}
             initial={{ opacity: 0, x: -50 }}
             animate={inView24 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <motion.div
               ref={ref34}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView34 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]"
+              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4"
             >
               <svg
                 width="28"
@@ -698,21 +700,21 @@ export const BNPL = () => {
                 <path
                   d="M14 17.5C17.866 17.5 21 14.366 21 10.5C21 6.63401 17.866 3.5 14 3.5C10.134 3.5 7 6.63401 7 10.5C7 14.366 10.134 17.5 14 17.5Z"
                   stroke="#00CB82"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M3.5 23.625C5.61859 19.9642 9.46641 17.5 14 17.5C18.5336 17.5 22.3814 19.9642 24.5 23.625"
                   stroke="#00CB82"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </motion.div>
 
-            <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Персональная информация
             </div>
           </motion.div>
@@ -722,14 +724,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView25 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <motion.div
               ref={ref35}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView35 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]"
+              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4"
             >
               <svg
                 width="28"
@@ -741,28 +743,28 @@ export const BNPL = () => {
                 <path
                   d="M14 8.75V14L18.375 16.625"
                   stroke="#3573FC"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M7.875 11.375H3.5V7"
                   stroke="#3573FC"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M7.39375 20.9999C8.76965 22.2982 10.4976 23.1623 12.3618 23.4842C14.226 23.806 16.1437 23.5714 17.8753 22.8096C19.6069 22.0479 21.0756 20.7927 22.0979 19.201C23.1202 17.6092 23.6508 15.7515 23.6234 13.86C23.596 11.9684 23.0117 10.1269 21.9437 8.56548C20.8757 7.00407 19.3712 5.792 17.6182 5.08073C15.8653 4.36947 13.9416 4.19054 12.0876 4.56631C10.2335 4.94207 8.53128 5.85587 7.19359 7.19353C5.90625 8.49728 4.84312 9.72665 3.5 11.3749"
                   stroke="#3573FC"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </motion.div>
 
-            <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               История предыдущих выдач
             </div>
           </motion.div>
@@ -772,14 +774,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView26 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <motion.div
               ref={ref36}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView36 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]"
+              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4"
             >
               <svg
                 width="28"
@@ -791,28 +793,28 @@ export const BNPL = () => {
                 <path
                   d="M22.75 10.5H5.25C4.76675 10.5 4.375 10.8918 4.375 11.375V21.875C4.375 22.3582 4.76675 22.75 5.25 22.75H22.75C23.2332 22.75 23.625 22.3582 23.625 21.875V11.375C23.625 10.8918 23.2332 10.5 22.75 10.5Z"
                   stroke="#E74951"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M6.125 7H21.875"
                   stroke="#E74951"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M7.875 3.5H20.125"
                   stroke="#E74951"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </motion.div>
 
-            <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Данные из сторонних сервисов
             </div>
           </motion.div>
@@ -822,14 +824,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView27 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className="flex flex-col items-start gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden"
+            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
           >
             <motion.div
               ref={ref37}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView37 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-              className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]"
+              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4"
             >
               <svg
                 width="28"
@@ -841,21 +843,21 @@ export const BNPL = () => {
                 <path
                   d="M12.25 21C17.0825 21 21 17.0825 21 12.25C21 7.41751 17.0825 3.5 12.25 3.5C7.41751 3.5 3.5 7.41751 3.5 12.25C3.5 17.0825 7.41751 21 12.25 21Z"
                   stroke="#FBAB00"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
                 <path
                   d="M18.4375 18.4373L24.5002 24.4999"
                   stroke="#FBAB00"
-                  stroke-width="1.6"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 />
               </svg>
             </motion.div>
 
-            <div className="relative self-stretch mb-[-7.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+            <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Проверка документов
             </div>
           </motion.div>
@@ -867,22 +869,22 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView28 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="flex items-center gap-[88px] px-[88px] py-12 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px] overflow-hidden"
+        className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-50 px-[88px] py-12"
       >
         <motion.div
           ref={ref29}
           initial={{ opacity: 0, x: -50 }}
           animate={inView29 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col w-[530px] items-start gap-8 relative"
+          className="relative flex w-[530px] flex-col items-start gap-8"
         >
-          <div className="flex flex-col items-center justify-center gap-3 relative self-stretch w-full flex-[0_0_auto]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <motion.div
               ref={ref30}
               initial={{ opacity: 0, y: 50 }}
               animate={inView30 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#ffffffcc] text-xl leading-7 relative tracking-[0]"
+              className="relative mt-[-1.00px] self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
             >
               Бэк-офис
             </motion.div>
@@ -892,7 +894,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView31 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="w-[530px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-5xl leading-[60px] relative tracking-[0]"
+              className="relative w-[530px] text-5xl font-medium leading-[60px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
             >
               Управляйте <br />
               всеми платежами <br />в одном месте
@@ -904,7 +906,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView32 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="self-stretch text-[#ffffffcc] text-xl leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+            className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
           >
             Мониторинг и управление каждым приложением с единой панели
             управления. Этот централизованный контроль упрощает отслеживание
@@ -918,173 +920,173 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="flex w-[871px] h-[538px] items-center relative mr-[-88.00px] bg-[#f6f8fd] rounded-3xl overflow-hidden"
+          className="relative mr-[-88.00px] flex h-[538px] w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
         >
-          <div className="flex flex-col w-[242px] items-start gap-[23.92px] p-6 relative self-stretch bg-[#ffffff]">
-            <p className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
+          <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+            <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               <span className="text-[#1c222f]">Ваш</span>
 
               <span className="text-[#00cb82]">Лого</span>
             </p>
 
-            <div className="flex flex-col items-start gap-1 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5 mt-[-3731.92px] ml-[-10470.00px] bg-[100%_100%]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+              <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                <div className="relative ml-[-10470.00px] mt-[-3731.92px] size-5 bg-[100%_100%]">
                   <img
-                    className="absolute w-[15px] h-4 top-0.5 left-[3px]"
+                    className="absolute left-[3px] top-0.5 h-4 w-[15px]"
                     alt="Vector"
                     src="/img/bnpl/vector-14.svg"
                   />
                 </div>
 
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                   Главная
                 </div>
               </div>
 
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full bg-gray-90 rounded-xl">
-                <div className="relative w-5 h-5">
-                  <div className="relative w-[19px] h-[11px] top-1 left-px">
+              <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
+                <div className="relative size-5">
+                  <div className="relative left-px top-1 h-[11px] w-[19px]">
                     <img
-                      className="absolute w-1.5 h-1.5 top-0.5 left-1.5"
+                      className="absolute left-1.5 top-0.5 size-1.5"
                       alt="Vector"
                       src="/img/bnpl/vector-11.svg"
                     />
 
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-4.svg"
                     />
 
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-8.svg"
                     />
                   </div>
                 </div>
 
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-[#ffffff] text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Заявки
                 </div>
               </div>
 
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5">
-                  <div className="relative w-[19px] h-[11px] top-1 left-px">
+              <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                <div className="relative size-5">
+                  <div className="relative left-px top-1 h-[11px] w-[19px]">
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-5.svg"
                     />
 
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-10.svg"
                     />
 
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-3.svg"
                     />
                   </div>
                 </div>
 
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                   Клиенты
                 </div>
               </div>
 
-              <div className="flex h-[44.92px] items-center gap-3 p-2.5 relative self-stretch w-full rounded-xl">
-                <div className="relative w-5 h-5">
-                  <div className="relative w-[19px] h-[11px] top-1 left-px">
+              <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                <div className="relative size-5">
+                  <div className="relative left-px top-1 h-[11px] w-[19px]">
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-16.svg"
                     />
 
                     <img
-                      className="absolute w-[19px] h-[11px] top-0 left-0"
+                      className="absolute left-0 top-0 h-[11px] w-[19px]"
                       alt="Vector"
                       src="/img/bnpl/vector-1.svg"
                     />
                   </div>
                 </div>
 
-                <div className="flex-1 [font-family:'Roboto',Helvetica] font-normal text-gray-70 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                   Отчеты
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-col items-start gap-5 p-6 relative flex-1 self-stretch grow">
-            <div className="inline-flex items-center gap-4 relative flex-[0_0_auto]">
-              <div className="relative w-12 h-12 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
+          <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch p-6">
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
+              <div className="relative size-12 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
-              <p className="w-fit [font-family:'Inter',Helvetica] font-semibold text-gray-90 text-xl leading-5 whitespace-nowrap relative tracking-[0]">
-                <span className="text-[#9ea7bb] leading-6">Привет,</span>
+              <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
+                <span className="leading-6 text-[#9ea7bb]">Привет,</span>
 
-                <span className="text-[#1c222f] leading-6"> Давид</span>
+                <span className="leading-6 text-[#1c222f]"> Давид</span>
               </p>
             </div>
 
-            <div className="flex flex-col items-start gap-[20.5px] relative self-stretch w-full flex-[0_0_auto]">
-              <div className="items-start justify-end gap-[11.96px] p-[17.94px] self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px] flex relative">
-                <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                  <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="relative w-fit mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px] whitespace-nowrap">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
+              <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                    <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Рассрочка SD45234
                     </div>
 
-                    <div className="inline-flex items-center justify-center gap-2.5 px-1.5 py-[3px] relative flex-[0_0_auto] bg-green-50 rounded-xl">
-                      <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-semibold text-[#ffffff] text-[10px] leading-[14px] whitespace-nowrap relative tracking-[0]">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-50 px-1.5 py-[3px]">
+                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                         Активный
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                      <div className="self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         Стоимость
                       </div>
 
-                      <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         187,000 ₽
                       </div>
                     </div>
 
-                    <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                      <div className="self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         Авансовый платеж
                       </div>
 
-                      <div className="self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         14 500 ₽
                       </div>
                     </div>
 
-                    <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                      <div className="self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         Срок
                       </div>
 
-                      <div className="self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         10 месяцев
                       </div>
                     </div>
 
-                    <div className="flex-col items-start gap-[1.49px] flex-1 grow flex relative">
-                      <div className="self-stretch mt-[-0.75px] opacity-50 [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         Следующий платеж
                       </div>
 
-                      <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         2,500 ₽
                       </div>
                     </div>
@@ -1092,168 +1094,168 @@ export const BNPL = () => {
                 </div>
               </div>
 
-              <div className="items-start justify-end gap-[11.96px] p-[17.94px] self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[11.96px] flex relative">
-                <div className="flex flex-col items-start gap-3 relative flex-1 grow">
-                  <div className="flex gap-4 self-stretch w-full items-center justify-center relative flex-[0_0_auto]">
-                    <div className="flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative tracking-[0]">
+              <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                <div className="relative flex flex-1 grow flex-col items-start gap-3">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                       Детали
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 self-stretch">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Стоимость
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           85 950₽
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Процентная ставка
                         </div>
 
-                        <div className="[font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs leading-5 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           12%
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
                           Срок
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           10 месяцев
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Баланс счета
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           2 500 ₽
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Просроченный основной долг
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           0 ₽
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Просроченный платеж
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           0 ₽
                         </div>
                       </div>
                     </div>
 
-                    <div className="flex flex-col items-start gap-1.5 relative flex-1 grow">
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                    <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Дата окончания рассрочки
                         </div>
 
-                        <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5 whitespace-nowrap">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           20.09.2025
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Дата следующего платежа
                         </div>
 
-                        <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs tracking-[0] leading-5 whitespace-nowrap">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           20.04.2025
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Наименование товара
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           Наушники
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px object-cover"
+                        className="relative h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
 
-                      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Заем
                         </div>
 
-                        <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#55607a] text-xs leading-5 whitespace-nowrap relative tracking-[0]">
+                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                           Первый
                         </div>
                       </div>
 
                       <img
-                        className="relative self-stretch w-full h-px mb-[-1.00px] object-cover"
+                        className="relative mb-[-1.00px] h-px w-full self-stretch object-cover"
                         alt="Vector"
                         src="/img/bnpl/vector-140.svg"
                       />
@@ -1269,56 +1271,56 @@ export const BNPL = () => {
       <Analytics />
       <Advantages />
       <Integrations />
-      <Zaim/>
+      <Zaim />
 
-      <div className="dhidden hidden items-start gap-6 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-3xl overflow-hidden">
-        <div className="flex flex-col items-center justify-center p-6 relative flex-1 self-stretch grow rounded-3xl overflow-hidden">
-          <div className="flex flex-col items-center justify-center relative self-stretch w-full flex-[0_0_auto]">
-            <div className="flex items-center gap-5 p-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
-              <div className="relative self-stretch w-48 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
+      <div className="dhidden relative hidden w-full flex-[0_0_auto] items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff]">
+        <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl p-6">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
+              <div className="relative w-48 self-stretch rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
-              <div className="flex flex-col items-start gap-4 p-3 relative flex-1 grow">
-                <div className="w-[293px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
+              <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
+                <div className="relative mt-[-1.00px] w-[293px] text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                   Социальные параметры
                 </div>
 
-                <div className="flex flex-col w-[293px] items-start gap-2 relative flex-[0_0_auto]">
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                <div className="relative flex w-[293px] flex-[0_0_auto] flex-col items-start gap-2">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                    <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
+                      <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Персональная информация
                     </div>
                   </div>
 
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                    <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
+                      <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Банк и адрес
                     </div>
                   </div>
 
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                    <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
+                      <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Банк и адрес
                     </div>
                   </div>
 
-                  <div className="items-center gap-4 self-stretch w-full flex-[0_0_auto] flex relative">
-                    <div className="relative w-[34px] h-5 bg-[#00cb82] rounded-[100px] overflow-hidden">
-                      <div className="relative w-4 h-4 top-0.5 left-4 bg-[#ffffff] rounded-lg" />
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                    <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
+                      <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
-                    <div className="relative flex-1 mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6">
+                    <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Документы
                     </div>
                   </div>
@@ -1326,34 +1328,34 @@ export const BNPL = () => {
               </div>
             </div>
 
-            <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
-              <div className="relative w-4 h-[18px] top-[3px] left-1">
+            <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
+              <div className="relative left-1 top-[3px] h-[18px] w-4">
                 <img
-                  className="absolute w-0.5 h-[18px] top-0 left-[7px]"
+                  className="absolute left-[7px] top-0 h-[18px] w-0.5"
                   alt="Vector"
                   src="/img/bnpl/vector-26.svg"
                 />
 
                 <img
-                  className="absolute w-4 h-[9px] top-2.5 left-0"
+                  className="absolute left-0 top-2.5 h-[9px] w-4"
                   alt="Vector"
                   src="/img/bnpl/vector-28.svg"
                 />
               </div>
             </div>
 
-            <div className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-[#f9fafd] rounded-[32px]">
-              <div className="inline-flex gap-2.5 p-4 bg-[#ffffff] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
-                <div className="relative w-6 h-6 mt-[-6988.00px] ml-[-9794.00px] bg-[100%_100%]">
-                  <div className="relative w-5 h-5 top-0.5 left-0.5">
+            <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
+              <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
+                <div className="relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
+                  <div className="relative left-0.5 top-0.5 size-5">
                     <img
-                      className="absolute w-[17px] h-[17px] top-0 left-0"
+                      className="absolute left-0 top-0 size-[17px]"
                       alt="Vector"
                       src="/img/bnpl/vector-25.svg"
                     />
 
                     <img
-                      className="absolute w-[7px] h-[7px] top-[13px] left-[13px]"
+                      className="absolute left-[13px] top-[13px] size-[7px]"
                       alt="Vector"
                       src="/img/bnpl/vector-29.svg"
                     />
@@ -1361,63 +1363,63 @@ export const BNPL = () => {
                 </div>
               </div>
 
-              <div className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#55607a] text-2xl leading-8 relative tracking-[0]">
+              <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                 Проверка кредитной истории
               </div>
             </div>
 
-            <div className="relative w-6 h-6 mt-[-6708.00px] ml-[-9754.00px] bg-[100%_100%]">
-              <div className="relative w-4 h-[18px] top-[3px] left-1">
+            <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
+              <div className="relative left-1 top-[3px] h-[18px] w-4">
                 <img
-                  className="absolute w-0.5 h-[18px] top-0 left-[7px]"
+                  className="absolute left-[7px] top-0 h-[18px] w-0.5"
                   alt="Vector"
                   src="/img/bnpl/vector-26.svg"
                 />
 
                 <img
-                  className="absolute w-4 h-[9px] top-2.5 left-0"
+                  className="absolute left-0 top-2.5 h-[9px] w-4"
                   alt="Vector"
                   src="/img/bnpl/vector-28.svg"
                 />
               </div>
             </div>
 
-            <div className="flex items-center gap-8 p-6 relative self-stretch w-full flex-[0_0_auto] bg-green-50 rounded-[32px]">
-              <div className="inline-flex gap-2.5 p-4 bg-[#ffffff29] rounded-[100px] items-center justify-center relative flex-[0_0_auto]">
-                <div className="relative w-6 h-6 mt-[-7116.00px] ml-[-9794.00px] bg-[100%_100%]">
+            <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6">
+              <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
+                <div className="relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
                   <img
-                    className="absolute w-[19px] h-3.5 top-1.5 left-[3px]"
+                    className="absolute left-[3px] top-1.5 h-3.5 w-[19px]"
                     alt="Vector"
                     src="/img/bnpl/vector-30.svg"
                   />
                 </div>
               </div>
 
-              <div className="flex-1 [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-2xl leading-8 relative tracking-[0]">
+              <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Одобрение заявки
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-col items-start justify-center gap-9 pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
-          <p className="w-[480px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[40px] leading-[48px] relative tracking-[0]">
+        <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+          <p className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
             Многофункциональный <br />
             бэк-офис для кредитных менеджеров
           </p>
 
           <img
-            className="relative self-stretch w-full h-px object-cover"
+            className="relative h-px w-full self-stretch object-cover"
             alt="Vector"
             src="/img/bnpl/vector-140.svg"
           />
 
-          <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-            <div className="w-[500px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-2xl leading-8 relative tracking-[0]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
+            <div className="relative mt-[-1.00px] w-[500px] text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
               Автоматизированное принятие решений
             </div>
 
-            <p className="w-[500px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+            <p className="relative w-[500px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               Программное обеспечение Buy Now Pay Later устраняет ручные
               процессы, специальные запросы и бумажные следы. Получите единый
               плавный автоматизированный рабочий процесс, который отвечает
@@ -1428,7 +1430,7 @@ export const BNPL = () => {
       </div>
 
       <EmployeeWork />
-      <RoleStructure/>
+      <RoleStructure />
       <Trust />
     </div>
   );

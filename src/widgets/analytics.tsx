@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 
 export const Analytics = () => {
@@ -206,249 +206,249 @@ export const Analytics = () => {
   const inView100 = useInView(ref100, { once: true, margin: '-100px' });
 
   return (
-      <div className="flex flex-col items-center justify-center gap-12 relative self-stretch w-full flex-[0_0_auto]">
-        <motion.div
-            ref={ref1}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView1 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]"
-        >
-          Отчётность и аналитика
-        </motion.div>
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
+      <motion.div
+        ref={ref1}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView1 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut' }}
+        className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+      >
+        Отчётность и аналитика
+      </motion.div>
+
+      <motion.div
+        ref={ref2}
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView2 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
+        className="relative flex w-full flex-[0_0_auto] items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]"
+      >
+        <img
+          className="absolute left-[450px] top-0 h-[668px] w-[926px]"
+          alt="Vector"
+          src="/img/widgets/vector-2-1.svg"
+        />
 
         <motion.div
-            ref={ref2}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView2 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="items-start flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden flex relative self-stretch w-full"
+          ref={ref3}
+          initial={{ opacity: 0, x: -50 }}
+          animate={inView3 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl p-20"
         >
-          <img
-              className="absolute w-[926px] h-[668px] top-0 left-[450px]"
-              alt="Vector"
-              src="/img/widgets/vector-2-1.svg"
-          />
-
           <motion.div
-              ref={ref3}
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView3 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="flex flex-col items-start gap-8 p-20 relative flex-1 grow rounded-3xl overflow-hidden"
+            ref={ref6}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView6 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch"
           >
             <motion.div
-                ref={ref6}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView6 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
+              ref={ref7}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView7 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
-              <motion.div
-                  ref={ref7}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView7 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
-              >
-                Отчеты и статистика
-              </motion.div>
-
-              <motion.p
-                  ref={ref8}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView8 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
-              >
-                Более 25 отчетов, которые покрывают основные потребности
-                организации.
-              </motion.p>
+              Отчеты и статистика
             </motion.div>
 
-            <motion.div
-                ref={ref9}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView9 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-                className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
+            <motion.p
+              ref={ref8}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView8 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
-              <motion.div
-                  ref={ref10}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView10 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
-              >
-                Аналитические сервисы
-              </motion.div>
-
-              <motion.p
-                  ref={ref11}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView11 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
-              >
-                Описание базы данных для работы с Tableau, Microsoft Power BI,
-                Deductor и др.
-              </motion.p>
-            </motion.div>
-
-            <motion.div
-                ref={ref12}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView12 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]"
-            >
-              <motion.div
-                  ref={ref13}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView13 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
-                  className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]"
-              >
-                Интеграция с 1С
-              </motion.div>
-
-              <motion.p
-                  ref={ref14}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={inView14 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
-                  className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]"
-              >
-                Позволяет полностью автоматизировать процесс обмена данными с
-                программой 1С для ведения бухгалтерского учета.
-              </motion.p>
-            </motion.div>
+              Более 25 отчетов, которые покрывают основные потребности
+              организации.
+            </motion.p>
           </motion.div>
 
           <motion.div
-              ref={ref4}
-              initial={{ opacity: 0, x: 50 }}
-              animate={inView4 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative flex-1 self-stretch grow rounded-3xl overflow-hidden"
+            ref={ref9}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView9 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch"
           >
-            <div className="relative w-[574px] h-[574px] top-[17px] left-[57px] rounded-[287px]">
-              <div className="absolute w-[294px] h-[294px] top-[140px] left-[140px] bg-[#ffffff] rounded-[147px] blur-[6px]" />
+            <motion.div
+              ref={ref10}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView10 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+              className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            >
+              Аналитические сервисы
+            </motion.div>
 
-              <div className="absolute w-[444px] h-[444px] top-[65px] left-[65px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />
+            <motion.p
+              ref={ref11}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView11 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
+              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+            >
+              Описание базы данных для работы с Tableau, Microsoft Power BI,
+              Deductor и др.
+            </motion.p>
+          </motion.div>
 
-              <div className="absolute w-[574px] h-[574px] top-0 left-0 rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
+          <motion.div
+            ref={ref12}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView12 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch"
+          >
+            <motion.div
+              ref={ref13}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView13 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
+              className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            >
+              Интеграция с 1С
+            </motion.div>
 
-              <div className="absolute w-[319px] h-[319px] top-[127px] left-32">
-                <div className="absolute w-[356px] h-[337px] top-[-18px] left-[-29px]">
-                  <div className="absolute w-[356px] h-[260px] top-[76px] left-0">
-                    <div className="absolute w-[356px] h-[253px] top-[7px] left-0">
-                      <img
-                          className="absolute w-[152px] h-[253px] top-0 left-[29px]"
-                          alt="Subtract"
-                          src="/img/graph-big/subtract.svg"
-                      />
+            <motion.p
+              ref={ref14}
+              initial={{ opacity: 0, y: 50 }}
+              animate={inView14 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
+              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+            >
+              Позволяет полностью автоматизировать процесс обмена данными с
+              программой 1С для ведения бухгалтерского учета.
+            </motion.p>
+          </motion.div>
+        </motion.div>
 
-                      <img
-                          className="absolute w-[151px] h-[151px] top-[103px] left-[197px]"
-                          alt="Subtract"
-                          src="/img/graph-big/subtract-1.svg"
-                      />
+        <motion.div
+          ref={ref4}
+          initial={{ opacity: 0, x: 50 }}
+          animate={inView4 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
+          className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
+        >
+          <div className="relative left-[57px] top-[17px] size-[574px] rounded-[287px]">
+            <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
 
-                      <div className="inline-flex flex-col items-center gap-0.5 absolute top-[55px] left-[87px]">
-                        <div className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-base tracking-[0] leading-6 whitespace-nowrap">
-                          Баланс
-                        </div>
+            <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />
 
-                        <div className="w-fit [font-family:'Poppins',Helvetica] font-normal text-[#1c222f] text-[40px] leading-[52px] whitespace-nowrap relative tracking-[0]">
-                          4,385.40 ₽
-                        </div>
+            <div className="absolute left-0 top-0 size-[574px] rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
+
+            <div className="absolute left-32 top-[127px] size-[319px]">
+              <div className="absolute left-[-29px] top-[-18px] h-[337px] w-[356px]">
+                <div className="absolute left-0 top-[76px] h-[260px] w-[356px]">
+                  <div className="absolute left-0 top-[7px] h-[253px] w-[356px]">
+                    <img
+                      className="absolute left-[29px] top-0 h-[253px] w-[152px]"
+                      alt="Subtract"
+                      src="/img/graph-big/subtract.svg"
+                    />
+
+                    <img
+                      className="absolute left-[197px] top-[103px] size-[151px]"
+                      alt="Subtract"
+                      src="/img/graph-big/subtract-1.svg"
+                    />
+
+                    <div className="absolute left-[87px] top-[55px] inline-flex flex-col items-center gap-0.5">
+                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                        Баланс
                       </div>
 
-                      <div className="inline-flex px-3 py-1.5 absolute top-[188px] left-[298px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                        <div className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                          24%
-                        </div>
-                      </div>
-
-                      <div className="inline-flex px-3 py-1.5 absolute top-40 left-0 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                        <div className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                          36%
-                        </div>
+                      <div className="relative w-fit whitespace-nowrap text-[40px] font-normal leading-[52px] tracking-normal text-[#1c222f] [font-family:'Poppins',Helvetica]">
+                        4,385.40 ₽
                       </div>
                     </div>
 
-                    <img
-                        className="absolute w-[53px] h-[94px] top-0 left-[295px]"
-                        alt="Subtract"
-                        src="/img/graph-big/subtract-2.svg"
-                    />
-                  </div>
+                    <div className="absolute left-[298px] top-[188px] inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
+                        24%
+                      </div>
+                    </div>
 
-                  <div className="absolute w-[145px] h-[78px] top-0 left-[81px]">
-                    <img
-                        className="absolute w-[145px] h-[60px] top-[18px] left-0"
-                        alt="Subtract"
-                        src="/img/graph-big/subtract-4.svg"
-                    />
-
-                    <div className="inline-flex px-3 py-1.5 absolute top-0 left-3.5 bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                      <div className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                        20%
+                    <div className="absolute left-0 top-40 inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
+                        36%
                       </div>
                     </div>
                   </div>
+
+                  <img
+                    className="absolute left-[295px] top-0 h-[94px] w-[53px]"
+                    alt="Subtract"
+                    src="/img/graph-big/subtract-2.svg"
+                  />
                 </div>
 
-                <div className="absolute w-[70px] h-[57px] -top-0.5 left-[211px]">
+                <div className="absolute left-[81px] top-0 h-[78px] w-[145px]">
                   <img
-                      className="absolute w-[51px] h-[41px] top-4 left-0"
-                      alt="Subtract"
-                      src="/img/graph-big/subtract-3.svg"
+                    className="absolute left-0 top-[18px] h-[60px] w-[145px]"
+                    alt="Subtract"
+                    src="/img/graph-big/subtract-4.svg"
                   />
 
-                  <div className="inline-flex px-3 py-1.5 absolute top-0 left-[22px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                    <div className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                      8%
+                  <div className="absolute left-3.5 top-0 inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
+                      20%
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="inline-flex px-3 py-1.5 absolute top-[204px] left-[427px] bg-[#ffffff33] border-[none] backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)] items-center justify-center gap-2 rounded-[100px]">
-                <div className="[font-family:'Inter',Helvetica] font-medium text-[#1c222f] text-base leading-6 relative w-fit mt-[-1.00px] tracking-[0] whitespace-nowrap">
-                  12%
+              <div className="absolute -top-0.5 left-[211px] h-[57px] w-[70px]">
+                <img
+                  className="absolute left-0 top-4 h-[41px] w-[51px]"
+                  alt="Subtract"
+                  src="/img/graph-big/subtract-3.svg"
+                />
+
+                <div className="absolute left-[22px] top-0 inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
+                    8%
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="absolute left-[427px] top-[204px] inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
+                12%
+              </div>
+            </div>
+
+            <motion.div
+              ref={ref5}
+              initial={{ opacity: 0, y: 20 }}
+              animate={inView5 ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
+              className="absolute left-[143px] top-[497px] flex w-72 items-start rounded-[100px] bg-[#ffffff] p-1"
+            >
+              <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] bg-[#1c222f] px-3 py-2">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-2-r-font-style)]">
+                  Неделя
                 </div>
               </div>
 
-              <motion.div
-                  ref={ref5}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={inView5 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                  className="flex w-72 items-start p-1 absolute top-[497px] left-[143px] bg-[#ffffff] rounded-[100px]"
-              >
-                <div className="flex px-3 py-2 relative flex-1 grow bg-[#1c222f] items-center justify-center gap-2 rounded-[100px]">
-                  <div className="w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#ffffff] text-[length:var(--body-2-r-font-size)] leading-[var(--body-2-r-line-height)] whitespace-nowrap relative tracking-[var(--body-2-r-letter-spacing)] [font-style:var(--body-2-r-font-style)]">
-                    Неделя
-                  </div>
+              <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] px-3 py-2">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#9ea7bb] [font-style:var(--body-2-r-font-style)]">
+                  Месяц
                 </div>
+              </div>
 
-                <div className="flex px-3 py-2 relative flex-1 grow items-center justify-center gap-2 rounded-[100px]">
-                  <div className="relative w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#9ea7bb] text-[length:var(--body-2-r-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] whitespace-nowrap [font-style:var(--body-2-r-font-style)]">
-                    Месяц
-                  </div>
+              <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] px-3 py-2">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#9ea7bb] [font-style:var(--body-2-r-font-style)]">
+                  Год
                 </div>
-
-                <div className="flex px-3 py-2 relative flex-1 grow items-center justify-center gap-2 rounded-[100px]">
-                  <div className="relative w-fit mt-[-1.00px] font-body-2-r font-[number:var(--body-2-r-font-weight)] text-[#9ea7bb] text-[length:var(--body-2-r-font-size)] tracking-[var(--body-2-r-letter-spacing)] leading-[var(--body-2-r-line-height)] whitespace-nowrap [font-style:var(--body-2-r-font-style)]">
-                    Год
-                  </div>
-                </div>
-              </motion.div>
-            </div>
-          </motion.div>
+              </div>
+            </motion.div>
+          </div>
         </motion.div>
-      </div>
+      </motion.div>
+    </div>
   );
 };

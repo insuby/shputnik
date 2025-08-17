@@ -1,12 +1,13 @@
-import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import { RoutesPath } from '../../../routes-path.tsx';
 
+import { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+import { RoutesPath } from '../../../routes-path.tsx';
 
 export const DivWrapper = () => {
   const navigate = useNavigate();
-  
+
   const handleBankCreditClick = () => {
     navigate(RoutesPath.BANKCREDIT);
   };
@@ -28,36 +29,36 @@ export const DivWrapper = () => {
   const inView18 = useInView(ref18, { once: true, margin: '-100px' });
   const inView19 = useInView(ref19, { once: true, margin: '-100px' });
   return (
-    <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-8 md:px-0">
       <motion.p
         id="animate_14_left"
         ref={ref14}
         initial={{ opacity: 0, x: -40 }}
         animate={inView14 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[40px] leading-10 whitespace-nowrap relative tracking-[0]"
+        className="relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-fit md:text-[40px] md:leading-10"
       >
-        <span className="font-medium text-[#1c222f] leading-[48px]">
+        <span className="font-medium text-[#1c222f] md:leading-[48px]">
           Классическое кредитование
         </span>
       </motion.p>
-      <div className="h-[600px] items-start gap-5 flex relative self-stretch w-full">
+      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch md:h-[600px] md:grid-cols-2">
         <motion.div
           id="animate_15"
           ref={ref15}
           initial={{ opacity: 0, y: 40 }}
           animate={inView15 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="bg-blue-50 relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
+          className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 md:rounded-[32px]"
         >
-          <div className="relative w-[1265px] h-[904px] top-[-254px] left-[-222px]">
+          <div className="relative left-[-222px] top-[-254px] hidden h-[904px] w-[1265px] md:block">
             <img
-              className="absolute w-[611px] h-[571px] top-[333px] left-0"
+              className="absolute left-0 top-[333px] h-[571px] w-[611px]"
               alt="Vector"
               src="/img/vector-1-8.svg"
             />
             <img
-              className="absolute w-[716px] h-[682px] top-0 left-[398px]"
+              className="absolute left-[398px] top-0 h-[682px] w-[716px]"
               alt="Vector"
               src="/img/vector-4.svg"
             />
@@ -67,325 +68,104 @@ export const DivWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView16 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="inline-flex items-center absolute top-[317px] left-[284px] bg-[#f6f8fd] rounded-[23.92px_23.92px_0px_0px] overflow-hidden"
+              className="absolute left-[284px] top-[317px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
             >
-              <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative bg-[#ffffff] mt-2">
-                <div className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
+              <div className="relative mt-2 flex w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
+                <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Калькулятор
                 </div>
 
-                <div className="flex items-center gap-[11.96px] p-[11.96px] relative self-stretch w-full flex-[0_0_auto] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                  <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow">
-                    <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] items-center gap-[11.96px] self-stretch rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                  <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                    <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       Дилер
                     </div>
 
-                    <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Макс Моторс
                     </div>
                   </div>
 
                   <img
-                    className="relative w-[17.94px] h-[17.94px]"
+                    className="relative size-[17.94px]"
                     alt="Caret right"
                     src="/img/caretright.svg"
                   />
                 </div>
 
-                <div className="inline-flex flex-col items-start gap-[11.96px] relative flex-[0_0_auto]">
-                  <div className="inline-flex items-start gap-[8.97px] relative flex-[0_0_auto]">
-                    <div className="inline-flex items-center justify-center gap-[7.47px] px-[14.95px] py-[7.47px] relative flex-[0_0_auto] bg-gray-90 rounded-[74.74px]">
-                      <div className="text-white relative w-fit mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-[14.9px] tracking-[0] leading-[20.9px] whitespace-nowrap">
+                <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[11.96px]">
+                  <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
+                      <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         Новая
                       </div>
                     </div>
 
-                    <div className="inline-flex items-center justify-center gap-[7.47px] px-[14.95px] py-[7.47px] relative flex-[0_0_auto] bg-[#f7f9ff] rounded-[74.74px]">
-                      <div className="text-gray-90 relative w-fit mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-[14.9px] tracking-[0] leading-[20.9px] whitespace-nowrap">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
+                      <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Подержанная
                       </div>
                     </div>
                   </div>
 
-                  <div className="inline-flex items-start gap-[8.97px] relative flex-[0_0_auto]">
-                    <div className="inline-flex items-center justify-center gap-[7.47px] px-[14.95px] py-[7.47px] relative flex-[0_0_auto] bg-[#f7f9ff] rounded-[74.74px]">
-                      <div className="text-gray-90 relative w-fit mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-[14.9px] tracking-[0] leading-[20.9px] whitespace-nowrap">
+                  <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
+                      <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         С залогом
                       </div>
                     </div>
 
-                    <div className="inline-flex items-center justify-center gap-[7.47px] px-[14.95px] py-[7.47px] relative flex-[0_0_auto] bg-gray-90 rounded-[74.74px]">
-                      <div className="text-white relative w-fit mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-[14.9px] tracking-[0] leading-[20.9px] whitespace-nowrap">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
+                      <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         Без залога
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-[14.95px] relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="flex h-[61.29px] items-center gap-[11.96px] p-[11.96px] relative flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                <div className="relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                         Марка
                       </div>
 
-                      <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Audi
                       </div>
                     </div>
 
                     <img
-                      className="relative w-[17.94px] h-[17.94px]"
+                      className="relative size-[17.94px]"
                       alt="Caret right"
                       src="/img/caretright.svg"
                     />
                   </div>
 
-                  <div className="flex h-[61.29px] items-center gap-[11.96px] p-[11.96px] relative flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                         Модель
                       </div>
 
-                      <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] tracking-[0] leading-[20.9px]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         A7 Sportback
                       </div>
                     </div>
 
                     <img
-                      className="relative w-[17.94px] h-[17.94px]"
+                      className="relative size-[17.94px]"
                       alt="Caret right"
                       src="/img/caretright.svg"
                     />
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-[14.95px] relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="flex h-[61.29px] items-center gap-[11.96px] p-[11.96px] relative flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                        Год выпуска
-                      </div>
-
-                      <div className="relative self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] [font-family:'Roboto',Helvetica] tracking-[0]">
-                        2004
-                      </div>
-                    </div>
-
-                    <img
-                      className="relative w-[17.94px] h-[17.94px]"
-                      alt="Caret right"
-                      src="/img/caretright.svg"
-                    />
-                  </div>
-
-                  <div className="flex h-[61.29px] items-center gap-[11.96px] p-[11.96px] relative flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                        Первый взнос (руб.)
-                      </div>
-
-                      <div className="relative self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] [font-family:'Roboto',Helvetica] tracking-[0]">
-                        150 000
-                      </div>
-                    </div>
-
-                    <img
-                      className="relative w-[17.94px] h-[17.94px]"
-                      alt="Caret right"
-                      src="/img/caretright.svg"
-                    />
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-[14.95px] relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="flex h-[61.29px] items-center gap-[11.96px] p-[11.96px] relative flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0]">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                        Срок (месяцы)
-                      </div>
-
-                      <div className="relative self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] [font-family:'Roboto',Helvetica] tracking-[0]">
-                        24
-                      </div>
-                    </div>
-
-                    <img
-                      className="relative w-[17.94px] h-[17.94px]"
-                      alt="Caret right"
-                      src="/img/caretright.svg"
-                    />
-                  </div>
-
-                  <div className="h-[61.29px] items-center gap-[11.96px] p-[11.96px] flex-1 grow rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] opacity-0 flex relative">
-                    <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow mt-[-0.06px] mb-[-0.06px]">
-                      <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                        Первый взнос (руб.)
-                      </div>
-
-                      <div className="relative self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] [font-family:'Roboto',Helvetica] tracking-[0]">
-                        150 000
-                      </div>
-                    </div>
-
-                    <img
-                      className="relative w-[17.94px] h-[17.94px] mt-[-2948.30px] mr-[-988.89px]"
-                      alt="Caret right"
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col w-[393.9px] items-start gap-[23.92px] p-[29.9px] relative self-stretch">
-                <div className="self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[23.9px] leading-[29.9px] relative tracking-[0]">
-                  Выберите условия
-                </div>
-
-                <div className="inline-flex flex-col items-start gap-[20.5px] relative flex-[0_0_auto]">
-                  <div className="flex w-[337.09px] items-start justify-end gap-[11.96px] p-[17.94px] relative flex-[0_0_auto] mt-[-1.49px] ml-[-1.49px] mr-[-1.49px] bg-white rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc]">
-                    <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 self-stretch grow">
-                      <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                          Ваши условия
-                        </div>
-
-                        <img
-                          className="relative w-[20.93px] h-[20.93px] mt-[-2590.75px] mr-[-603.96px]"
-                          alt="Check"
-                          src="/img/check.svg"
-                        />
-                      </div>
-
-                      <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ежемесячный платеж
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            187, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex flex-col w-[91.19px] items-start gap-[1.49px] relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Сумма
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            2, 560, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex-col w-[59.8px] items-start gap-[1.49px] flex relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ставка
-                          </div>
-
-                          <div className="self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                            3,5%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex w-[334.11px] items-start justify-end gap-[11.96px] p-[17.94px] relative flex-[0_0_auto] bg-white rounded-[11.96px]">
-                    <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                      <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                          Увеличенный первоначальный взнос
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ежемесячный платеж
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            166, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex flex-col w-[91.19px] items-start gap-[1.49px] relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Сумма
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            2, 450, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex-col w-[59.8px] items-start gap-[1.49px] flex relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ставка
-                          </div>
-
-                          <div className="self-stretch font-normal text-[#00b235] text-[14.9px] leading-[20.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                            3,2%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex w-[334.11px] items-start justify-end gap-[11.96px] p-[17.94px] relative flex-[0_0_auto] bg-white rounded-[11.96px]">
-                    <div className="flex flex-col items-center justify-center gap-[11.96px] relative flex-1 grow">
-                      <div className="flex items-center justify-center gap-[7.47px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex-1 mt-[-0.75px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                          Увеличенный срок
-                        </div>
-                      </div>
-
-                      <div className="flex items-start gap-[17.94px] relative self-stretch w-full flex-[0_0_auto]">
-                        <div className="flex flex-col items-start gap-[1.49px] relative flex-1 grow">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ежемесячный платеж
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            96, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex flex-col w-[91.19px] items-start gap-[1.49px] relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Сумма
-                          </div>
-
-                          <div className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative tracking-[0]">
-                            2, 640, 000 ₽
-                          </div>
-                        </div>
-
-                        <div className="flex-col w-[59.8px] items-start gap-[1.49px] flex relative">
-                          <div className="self-stretch mt-[-0.75px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-[10.5px] leading-[14.9px] relative tracking-[0]">
-                            Ставка
-                          </div>
-
-                          <div className="self-stretch font-normal text-gray-90 text-[14.9px] leading-[20.9px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
-                            3,6%
-                          </div>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </motion.div>
-
-            <img
-              className="absolute w-[511px] h-[532px] top-[359px] left-[754px]"
-              alt="Vector"
-              src="/img/vector-3.svg"
-            />
           </div>
         </motion.div>
 
-        <div className="flex flex-col items-start justify-center gap-5 relative flex-1 self-stretch grow">
+        <div className="relative flex w-full flex-col items-start justify-center gap-5 self-stretch">
           <motion.div
             id="animate_17"
             ref={ref17}
@@ -393,19 +173,20 @@ export const DivWrapper = () => {
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <div className="relative flex flex-1 grow flex-col items-start gap-2">
+              <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Кредитование бизнеса
               </div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                ПО для кредитования бизнеса автоматизирует цикл работы с корпоративными, средними и малыми заемщиками
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                ПО для кредитования бизнеса автоматизирует цикл работы с
+                корпоративными, средними и малыми заемщиками
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
@@ -416,9 +197,9 @@ export const DivWrapper = () => {
               >
                 <path
                   d="M12 6L22 16L12 26"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -431,19 +212,20 @@ export const DivWrapper = () => {
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group flex items-center gap-8 p-10 relative flex-1 self-stretch w-full grow bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  rounded-[32px] overflow-hidden"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <div className="relative flex flex-1 grow flex-col items-start gap-2">
+              <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Банковское кредитование
               </div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Готовое решение для автоматизации процессов выдачи и сопровождения займов частным и корпоративным клиентам
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                Готовое решение для автоматизации процессов выдачи и
+                сопровождения займов частным и корпоративным клиентам
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
@@ -454,9 +236,9 @@ export const DivWrapper = () => {
               >
                 <path
                   d="M12 6L22 16L12 26"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>
@@ -469,19 +251,20 @@ export const DivWrapper = () => {
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group flex items-center gap-8 p-10 w-full mb-[-2.00px] ml-[-2.00px] mr-[-2.00px] bg-[#f9fafd] hover:bg-[#f5f7ff] cursor-pointer border-2 border-solid hover:border-[#3573fc] border-transparent  relative flex-1 self-stretch grow rounded-[32px] overflow-hidden"
+            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-              <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl leading-8 relative tracking-[0]">
+            <div className="relative flex flex-1 grow flex-col items-start gap-2">
+              <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Автокредитование
               </div>
 
-              <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
-                Полное управление всеми процессами автокредитования и выдачи займов под залог автомобилей
+              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                Полное управление всеми процессами автокредитования и выдачи
+                займов под залог автомобилей
               </p>
             </div>
 
-            <div className="inline-flex items-center gap-2.5 p-4 relative flex-[0_0_auto] bg-white rounded-[100px]">
+            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
@@ -492,9 +275,9 @@ export const DivWrapper = () => {
               >
                 <path
                   d="M12 6L22 16L12 26"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="square"
+                  strokeLinejoin="round"
                 />
               </svg>
             </div>

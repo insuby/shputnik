@@ -13,7 +13,7 @@ export const CheckIcon = ({
 }: CheckIconProps) => {
   return (
     <div className={className} style={{ backgroundColor: bgColor }}>
-      <Check10 className="!relative !w-4 !h-4" color={iconColor} />
+      <Check10 className="!relative !h-4 !w-4" color={iconColor} />
     </div>
   );
 };

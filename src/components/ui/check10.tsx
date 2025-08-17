@@ -3,7 +3,10 @@ interface Props {
   color?: string;
 }
 
-export const Check10 = ({ className, color = '#3573FC' }: Props): JSX.Element => {
+export const Check10 = ({
+  className,
+  color = '#3573FC',
+}: Props): JSX.Element => {
   return (
     <svg
       className={`${className}`}

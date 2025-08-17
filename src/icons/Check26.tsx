@@ -19,7 +19,7 @@ export const Check26 = ({ className }: Props): JSX.Element => {
         strokeLinejoin="round"
         strokeWidth="2"
         style={{
-          stroke:"#E74951"
+          stroke: '#E74951',
         }}
       />
     </svg>

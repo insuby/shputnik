@@ -1,49 +1,45 @@
-export const Graph = ({sum = '42,000 '}) => {
-    return (
-        <div className="inline-flex flex-col items-start gap-2.5 px-3 py-0 relative flex-[0_0_auto] ml-[-4.00px]">
-            <div className="relative w-[184px] h-[184px]">
-                <div className="relative h-[184px]">
-                    <div className="absolute w-[184px] h-[184px] top-0 left-0">
-                        <img
-                            className="absolute w-[88px] h-[184px] top-0 left-0"
-                            alt="Subtract"
-                            src="/img/graph/subtract-3.svg"
-                        />
+export const Graph = ({ sum = '42,000 ' }) => {
+  return (
+    <div className="relative ml-[-4.00px] inline-flex flex-[0_0_auto] flex-col items-start gap-2.5 px-3 py-0">
+      <div className="relative size-[184px]">
+        <div className="relative h-[184px]">
+          <div className="absolute left-0 top-0 size-[184px]">
+            <img
+              className="absolute left-0 top-0 h-[184px] w-[88px]"
+              alt="Subtract"
+              src="/img/graph/subtract-3.svg"
+            />
 
-                        <img
-                            className="absolute w-[88px] h-[108px] top-[76px] left-24"
-                            alt="Subtract"
-                            src="/img/graph/subtract.svg"
-                        />
+            <img
+              className="absolute left-24 top-[76px] h-[108px] w-[88px]"
+              alt="Subtract"
+              src="/img/graph/subtract.svg"
+            />
 
-                        <div
-                            className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[61px] left-[39px]">
-                            <div
-                                className="w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm leading-5 whitespace-nowrap relative tracking-[0]">
-                                Вся сумма
-                            </div>
+            <div className="absolute left-[39px] top-[61px] inline-flex h-[62px] flex-col items-center gap-0.5">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                Вся сумма
+              </div>
 
-                            <div
-                                className="w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center leading-10 whitespace-nowrap relative tracking-[0]">
-                                {sum}₽
-                            </div>
-                        </div>
-                    </div>
-
-                    <img
-                        className="absolute w-[21px] h-[34px] top-[34px] left-[158px]"
-                        alt="Subtract"
-                        src="/img/graph/subtract-1.svg"
-                    />
-
-                    <img
-                        className="absolute w-[59px] h-[31px] top-0 left-24"
-                        alt="Subtract"
-                        src="/img/graph/subtract-2.svg"
-                    />
-                </div>
+              <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                {sum}₽
+              </div>
             </div>
-        </div>
+          </div>
 
-    )
-}
+          <img
+            className="absolute left-[158px] top-[34px] h-[34px] w-[21px]"
+            alt="Subtract"
+            src="/img/graph/subtract-1.svg"
+          />
+
+          <img
+            className="absolute left-24 top-0 h-[31px] w-[59px]"
+            alt="Subtract"
+            src="/img/graph/subtract-2.svg"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};

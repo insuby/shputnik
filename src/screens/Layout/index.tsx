@@ -1,9 +1,9 @@
+import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { FeedbackForm, useFeedbackForm } from '../../widgets/feedback-form';
 import { FooterSection } from './sections/FooterSection';
 import { HeaderSection } from './sections/HeaderSection';
-import { useEffect } from 'react';
 
 export const Layout = () => {
   const { isOpen } = useFeedbackForm();
@@ -11,13 +11,13 @@ export const Layout = () => {
   useEffect(() => {
     if (!isOpen) {
       document.body.style.overflow = 'auto';
-      return
+      return;
     }
     document.body.style.overflow = 'hidden';
-  }, [isOpen])
+  }, [isOpen]);
 
   return (
-    <div className="flex flex-col w-full items-center max-w-[1440px] m-auto rounded-3xl overflow-hidden">
+    <div className="m-auto flex w-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
       <HeaderSection />
       <Outlet />
       <FooterSection />

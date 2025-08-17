@@ -10,7 +10,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.json'],
+    project: ['./tsconfig.app.json'],
   },
   plugins: ['@typescript-eslint', 'import', 'react', 'prettier', 'unused-imports', 'tailwindcss'],
   root: true,
@@ -35,4 +35,4 @@ module.exports = {
     'prettier/prettier': ['error', { endOfLine: 'auto', semi: true }],
     'tailwindcss/no-custom-classname': 'off'
   },
-};
+}; 

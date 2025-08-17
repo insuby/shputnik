@@ -1,10 +1,10 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
-import LineCopy from '../icons/LineCopy';
+import { motion, useInView } from 'framer-motion';
 
-export const Integrations = () =>  {
+import { useRef } from 'react';
+
+import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
+
+export const Integrations = () => {
   const ref1 = useRef(null);
   const { setIsOpen } = useFeedbackForm();
 
@@ -38,29 +38,27 @@ export const Integrations = () =>  {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex w-[1376px] items-start gap-20 p-20 relative flex-[0_0_auto] bg-[#f9fafd] rounded-[32px] overflow-hidden"
+      className="relative flex w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-20"
     >
       <img
-        className="absolute w-[1204px] h-[1060px] top-[-115px] left-[339px]"
+        className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
         alt="Vector"
         src="/img/widgets/vector-1-2.svg"
       />
 
-      <motion.div 
+      <motion.div
         ref={ref2}
         initial={{ opacity: 0, x: -50 }}
         animate={inView2 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="flex flex-col w-[432px] items-start gap-12 relative"
+        className="relative flex w-[432px] flex-col items-start gap-12"
       >
-        <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div
-            className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl leading-[60px] relative tracking-[0]">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
+          <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Интеграции
           </div>
 
-          <p
-            className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+          <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
             Кредитный конвейер тесно интегрирован <br />с большим количеством
             источников информации, государственных служб, платежных систем,
             лидогенераторов, рекламных и других сервисов
@@ -69,9 +67,9 @@ export const Integrations = () =>  {
 
         <button
           onClick={handleTryClick}
-          className="all-[unset] box-border inline-flex px-8 py-4 relative flex-[0_0_auto] bg-blue-50 items-center justify-center gap-2.5 rounded-[100px] cursor-pointer">
-          <div
-            className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
+          className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+        >
+          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             Попробовать
           </div>
         </button>
@@ -82,14 +80,14 @@ export const Integrations = () =>  {
         initial={{ opacity: 0, x: 50 }}
         animate={inView3 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-        className="flex flex-col items-start gap-12 relative flex-1 grow opacity-50"
+        className="relative flex flex-1 grow flex-col items-start gap-12 opacity-50"
       >
         <motion.img
           ref={ref4}
           initial={{ opacity: 0, x: -80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-17.svg"
         />
@@ -99,7 +97,7 @@ export const Integrations = () =>  {
           initial={{ opacity: 0, x: 80 }}
           animate={inView5 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-30.svg"
         />
@@ -109,7 +107,7 @@ export const Integrations = () =>  {
           initial={{ opacity: 0, x: -80 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-29.svg"
         />
@@ -119,7 +117,7 @@ export const Integrations = () =>  {
           initial={{ opacity: 0, x: 80 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-24.svg"
         />
@@ -129,7 +127,7 @@ export const Integrations = () =>  {
           initial={{ opacity: 0, x: -80 }}
           animate={inView8 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-26.svg"
         />
@@ -139,32 +137,30 @@ export const Integrations = () =>  {
           initial={{ opacity: 0, x: 80 }}
           animate={inView9 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-          className="relative self-stretch w-full flex-[0_0_auto]"
+          className="relative w-full flex-[0_0_auto] self-stretch"
           alt="Frame"
           src="/img/widgets/frame-27.svg"
         />
 
-        <motion.div 
+        <motion.div
           ref={ref10}
           initial={{ opacity: 0, y: 50 }}
           animate={inView10 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-          className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]"
+          className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch"
         >
-          <div className="relative w-[177px] h-[49px]">
-            <div
-              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
-              <div className="absolute w-1 h-1.5 top-[25px] left-[19px]">
+          <div className="relative h-[49px] w-[177px]">
+            <div className="absolute left-0 top-0 h-[46px] w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
+              <div className="absolute left-[19px] top-[25px] h-1.5 w-1">
                 <img
-                  className="absolute w-0.5 h-[5px] top-0 left-px"
+                  className="absolute left-px top-0 h-[5px] w-0.5"
                   alt="Rectangle"
                   src="/img/widgets/vector-22.svg"
                 />
 
-                <div
-                  className="absolute w-1 h-0.5 top-1 left-0 bg-[url(/img/widgets/vector-22.svg)] bg-[100%_100%]">
+                <div className="absolute left-0 top-1 h-0.5 w-1 bg-[url(/img/widgets/vector-22.svg)] bg-[100%_100%]">
                   <img
-                    className="absolute w-1 h-0.5 top-0 left-0"
+                    className="absolute left-0 top-0 h-0.5 w-1"
                     alt="Vector"
                     src="/img/widgets/vector-24.svg"
                   />
@@ -172,112 +168,102 @@ export const Integrations = () =>  {
               </div>
 
               <img
-                className="absolute w-0.5 h-0.5 top-[22px] left-5"
+                className="absolute left-5 top-[22px] size-0.5"
                 alt="Oval"
                 src="/img/widgets/oval-20.svg"
               />
             </div>
 
-            <div className="w-[119px] top-0.5 absolute h-[47px] left-16">
-              <div className="relative w-[113px] h-[47px]">
-                <div
-                  className="top-0 absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+            <div className="absolute left-16 top-0.5 h-[47px] w-[119px]">
+              <div className="relative h-[47px] w-[113px]">
+                <div className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   Федеральная
                 </div>
 
-                <div
-                  className="top-[15px] whitespace-nowrap absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[15px] whitespace-nowrap text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   служба судебных
                 </div>
 
-                <div
-                  className="top-[30px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   приставов
                 </div>
               </div>
             </div>
 
             <LineCopy
-              className="absolute w-px h-5 top-[15px] left-[52px]"
+              className="absolute left-[52px] top-[15px] h-5 w-px"
               color="#55607A"
             />
           </div>
 
-          <div className="relative w-[157px] h-[49px]">
-            <div
-              className="absolute w-[42px] h-[46px] top-0 left-0 bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
+          <div className="relative h-[49px] w-[157px]">
+            <div className="absolute left-0 top-0 h-[46px] w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
               <img
-                className="absolute w-2.5 h-2.5 top-[21px] left-4"
+                className="absolute left-4 top-[21px] size-2.5"
                 alt="Path"
                 src="/img/widgets/path-9-1.svg"
               />
 
               <img
-                className="absolute w-[11px] h-[11px] top-5 left-4"
+                className="absolute left-4 top-5 size-[11px]"
                 alt="Path"
                 src="/img/widgets/path-9.svg"
               />
             </div>
 
             <LineCopy
-              className="absolute w-px h-5 top-[15px] left-[52px]"
+              className="absolute left-[52px] top-[15px] h-5 w-px"
               color="#55607A"
             />
 
-            <div className="w-[99px] top-0.5 absolute h-[47px] left-16">
-              <div className="relative w-[93px] h-[47px]">
-                <div
-                  className="top-0 absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+            <div className="absolute left-16 top-0.5 h-[47px] w-[99px]">
+              <div className="relative h-[47px] w-[93px]">
+                <div className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   Федеральная
                 </div>
 
-                <div
-                  className="top-[15px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[15px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   миграционная
                 </div>
 
-                <div
-                  className="top-[30px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   служба
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative w-[153.5px] h-[47px]">
-            <div className="absolute w-[46px] h-[46px] -top-px -left-0.5">
+          <div className="relative h-[47px] w-[153.5px]">
+            <div className="absolute -left-0.5 -top-px size-[46px]">
               <img
-                className="absolute w-[26px] h-7 top-[9px] left-2.5"
+                className="absolute left-2.5 top-[9px] h-7 w-[26px]"
                 alt="Fill copy"
                 src="/img/widgets/fill-26-copy-2.svg"
               />
 
               <img
-                className="absolute w-[46px] h-[46px] top-0 left-0"
+                className="absolute left-0 top-0 size-[46px]"
                 alt="Oval"
                 src="/img/widgets/oval.svg"
               />
             </div>
 
             <LineCopy
-              className="absolute w-px h-5 top-[15px] left-[52px]"
+              className="absolute left-[52px] top-[15px] h-5 w-px"
               color="#55607A"
             />
 
-            <div className="w-[95px] top-0 absolute h-[47px] left-16">
-              <div className="relative w-[89px] h-[47px]">
-                <div
-                  className="top-0 absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+            <div className="absolute left-16 top-0 h-[47px] w-[95px]">
+              <div className="relative h-[47px] w-[89px]">
+                <div className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   Федеральная
                 </div>
 
-                <div
-                  className="top-[15px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[15px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   налоговая
                 </div>
 
-                <div
-                  className="top-[30px] absolute left-0 [font-family:'Proxima_Nova-Regular',Helvetica] font-normal text-gray-70 text-sm tracking-[0] leading-[normal]">
+                <div className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                   служба
                 </div>
               </div>

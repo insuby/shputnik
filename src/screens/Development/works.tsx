@@ -20,13 +20,13 @@ export const Works = () => {
   };
 
   return (
-    <div className="flex flex-col items-start gap-12 relative self-stretch w-full flex-[0_0_auto]">
-      <div className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch">
+      <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         Примеры работ
       </div>
 
-      <div className="flex w-[1376px] h-[648px] items-center gap-6 relative flex-[0_0_auto] rounded-3xl">
-        <div className="relative flex-1 self-stretch grow bg-[#f9fafd] rounded-[32px] overflow-hidden">
+      <div className="relative flex h-[648px] w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+        <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
           <Slider
             ref={sliderRef}
             dots={false}
@@ -38,28 +38,28 @@ export const Works = () => {
             className="p2p-slider"
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden px-3">
+              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute w-full h-[588px] top-[158px] left-[291px]"
+                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
                   alt="Image"
                   src={slide1}
                 />
               </div>
             </div>
-            <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden px-3">
+              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute w-full h-[588px] top-[158px] left-[291px]"
+                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
                   alt="Image"
                   src={slide2}
                 />
               </div>
             </div>
-            <div className="px-3 overflow-hidden">
-              <div className="relative w-full h-[1035px] top-[-98px] left-[-231px] bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden px-3">
+              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute w-full h-[588px] top-[158px] left-[291px]"
+                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
                   alt="Image"
                   src={slide3}
                 />
@@ -68,18 +68,18 @@ export const Works = () => {
           </Slider>
         </div>
 
-        <div className="flex flex-col h-[648px] items-start justify-between pl-12 pr-[68px] py-12 relative flex-1 grow rounded-3xl overflow-hidden">
+        <div className="relative flex h-[648px] flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
           {currentSlideIndex + 1 === 3 && (
-            <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="w-[480px] mt-[-1.00px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 VPN-сервис
               </motion.p>
-              <p className="w-[560px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Создали мультиплатформенное VPN-решение с упором на
                 конфиденциальность, скорость и стабильность подключения.
                 Интеграция с крипто-оплатами, управление подписками, выбор стран
@@ -89,16 +89,16 @@ export const Works = () => {
             </div>
           )}
           {currentSlideIndex + 1 === 1 && (
-            <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="w-[480px] mt-[-1.00px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Pax
               </motion.div>
-              <p className="w-[560px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Платформа Pax помогает пациентам, врачам и аптекам соблюдать
                 назначенное лечение. Мы разработали, протестировали и внедрили
                 цифровую систему с персонализированной фасовкой препаратов,
@@ -107,16 +107,16 @@ export const Works = () => {
             </div>
           )}
           {currentSlideIndex + 1 === 2 && (
-            <div className="inline-flex flex-col items-start gap-8 relative flex-[0_0_auto]">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="w-[480px] mt-[-1.00px] font-medium text-gray-90 text-[40px] leading-[48px] relative [font-family:'Roboto',Helvetica] tracking-[0]"
+                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Ascro
               </motion.p>
-              <p className="w-[560px] font-normal text-[#9ea7bb] text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Децентрализованная платформа для безопасных сделок с
                 крипто-активами. Реализовали Web3-приложение с подключением
                 через TronLink, созданием сделок между пользователями и
@@ -125,11 +125,11 @@ export const Works = () => {
             </div>
           )}
 
-          <div className="flex items-center justify-between  self-stretch w-full flex-[0_0_auto] mt-20 bottom-[-80px] pr-10">
-            <div className="w-[120px] p-1 flex items-center justify-between bg-[#f9fafd] rounded-full">
+          <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
+            <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
-                className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
+                className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
               >
                 <svg
                   width="24"
@@ -141,23 +141,23 @@ export const Works = () => {
                   <path
                     d="M20.25 12H3.75"
                     stroke="#55607A"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M10.5 5.25L3.75 12L10.5 18.75"
                     stroke="#55607A"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
 
               <button
                 onClick={goToNext}
-                className="w-12 h-12 bg-white rounded-full flex items-center justify-center active:bg-white/90 transition-colors duration-200 cursor-pointer"
+                className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
               >
                 <svg
                   width="24"
@@ -169,30 +169,30 @@ export const Works = () => {
                   <path
                     d="M3.75 12H20.25"
                     stroke="#55607A"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M13.5 5.25L20.25 12L13.5 18.75"
                     stroke="#55607A"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
             </div>
-            <div className="inline-flex items-center justify-center gap-3 relative flex-[0_0_auto]">
-              <div className="w-fit [font-family:'Roboto',Helvetica] text-gray-90 text-xl leading-7 whitespace-nowrap relative mt-[-1.00px] font-normal tracking-[0]">
+            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-3">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {currentSlideIndex + 1}
               </div>
 
-              <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 /
               </div>
 
-              <div className="w-fit [font-family:'Roboto',Helvetica] text-[#9ea7bb] text-xl leading-7 whitespace-nowrap relative mt-[-1.00px] font-normal tracking-[0]">
+              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 3
               </div>
             </div>

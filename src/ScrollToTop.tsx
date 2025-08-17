@@ -13,4 +13,3 @@ export const ScrollToTop: FC = () => {
 };
 
 export default ScrollToTop;
-

@@ -1,5 +1,7 @@
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
+
 import { useFeedbackForm } from './feedback-form';
 
 export const RoleStructure = () => {
@@ -9,7 +11,6 @@ export const RoleStructure = () => {
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
   const ref17 = useRef<HTMLDivElement>(null);
-
 
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
@@ -26,46 +27,38 @@ export const RoleStructure = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView14 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex items-center gap-20 px-0 py-20 relative self-stretch w-full flex-[0_0_auto]"
+      className="relative flex w-full flex-[0_0_auto] items-center gap-20 self-stretch px-0 py-20"
     >
-      <div className="flex flex-col w-[432px] items-start gap-12 relative">
-        <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div
-            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl tracking-[0] leading-[60px]">
+      <div className="relative flex w-[432px] flex-col items-start gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
+          <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Ролевая структура программного обеспечения
           </div>
         </div>
 
         <button
           onClick={onClick}
-          className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+          className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90"
         >
-          <div
-            className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
+          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             Демо-версия
           </div>
         </button>
       </div>
 
-      <div className="flex items-start justify-center gap-6 relative flex-1 self-stretch grow">
+      <div className="relative flex flex-1 grow items-start justify-center gap-6 self-stretch">
         <motion.div
           ref={ref15}
           initial={{ opacity: 0, x: -50 }}
           animate={inView15 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col items-center justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-8 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#00cb8214] rounded-[100px]">
-            <img
-              className="relative w-7 h-7"
-              alt="User"
-              src="/img/user-4.svg"
-            />
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
+            <img className="relative size-7" alt="User" src="/img/user-4.svg" />
           </div>
 
-          <div
-            className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+          <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Личный кабинет клиента
           </div>
         </motion.div>
@@ -75,19 +68,17 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView16 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="flex flex-col items-center justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-8 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <img
-              className="relative w-7 h-7"
+              className="relative size-7"
               alt="Circles four"
               src="/img/circlesfour.svg"
             />
           </div>
 
-          <div
-            className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+          <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Мульткабинет сотрудника
           </div>
         </motion.div>
@@ -97,19 +88,17 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView17 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="flex flex-col items-center justify-center gap-8 p-10 relative flex-1 self-stretch grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-8 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]">
-            <img className="relative w-7 h-7" alt="Nut" src="/img/nut.svg" />
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
+            <img className="relative size-7" alt="Nut" src="/img/nut.svg" />
           </div>
 
-          <div
-            className="relative self-stretch [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl text-center tracking-[0] leading-8">
+          <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Кабинет супер- администратора
           </div>
         </motion.div>
       </div>
     </motion.div>
-  )
-}
+  );
+};

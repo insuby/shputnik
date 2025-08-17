@@ -1,5 +1,6 @@
-import { useFeedbackForm } from './feedback-form';
 import { Marquee } from '@devnomic/marquee';
+
+import { useFeedbackForm } from './feedback-form';
 
 export const Trust = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -9,22 +10,21 @@ export const Trust = () => {
   };
 
   return (
-    <div className="relative w-[1376px] h-[584px] rounded-[32px]">
-      <div className="w-[704px] items-start absolute top-20 left-[336px] flex flex-col gap-12">
-        <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-          <div
-            className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center tracking-[0] leading-[60px]">
+    <div className="relative h-[584px] w-[1376px] rounded-[32px]">
+      <div className="absolute left-[336px] top-20 flex w-[704px] flex-col items-start gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Нам доверяют
           </div>
 
-          <p
-            className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl text-center tracking-[0] leading-7">
-              Наши клиенты — крупные кредитные и некредитные организации, работающие как онлайн, так и в розничных точках продаж
+          <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            Наши клиенты — крупные кредитные и некредитные организации,
+            работающие как онлайн, так и в розничных точках продаж
           </p>
         </div>
       </div>
 
-      <div className="absolute top-[292px] left-0 right-0 h-[72px] opacity-50">
+      <div className="absolute inset-x-0 top-[292px] h-[72px] opacity-50">
         <Marquee fade innerClassName="!gap-32" className="!gap-32">
           <img
             alt="Frame"
@@ -35,13 +35,14 @@ export const Trust = () => {
         </Marquee>
       </div>
 
-      <button onClick={onClick}
-              className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 absolute top-[444px] left-[543px] bg-blue-50 rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity">
-        <div
-          className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl tracking-[0] leading-7 whitespace-nowrap">
+      <button
+        onClick={onClick}
+        className="all-[unset] absolute left-[543px] top-[444px] box-border inline-flex cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90"
+      >
+        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
           Начать сотрудничество
         </div>
       </button>
     </div>
-  )
-}
+  );
+};

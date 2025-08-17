@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 
 export const Zaim = () => {
@@ -18,40 +19,36 @@ export const Zaim = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView10 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="flex flex-col items-start gap-12 relative self-stretch w-full flex-[0_0_auto]"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch"
     >
-      <div className="flex flex-col w-[656px] items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-        <div
-          className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl tracking-[0] leading-[60px]">
+      <div className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+        <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Управление займами
         </div>
       </div>
 
-      <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
+      <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
         <motion.div
           ref={ref11}
           initial={{ opacity: 0, x: -50 }}
           animate={inView11 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#fbab0014] rounded-[100px]">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4">
             <img
-              className="relative w-8 h-8"
+              className="relative size-8"
               alt="Pencil"
               src="/img/pencil.svg"
             />
           </div>
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Редактирование условий
             </div>
 
-            <p
-              className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               Расчёт условий выдачи кредита и при необходимости предложение
               альтернативных.
             </p>
@@ -63,27 +60,24 @@ export const Zaim = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView12 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#3573fc14] rounded-[100px]">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <img
-              className="relative w-8 h-8"
+              className="relative size-8"
               alt="Plus circle"
               src="/img/pluscircle.svg"
             />
           </div>
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Создание и настройка
             </div>
 
-            <p
-              className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
-              Создание и редактирование кредитных продуктов, настройка ручных
-              и автоматических действий.
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              Создание и редактирование кредитных продуктов, настройка ручных и
+              автоматических действий.
             </p>
           </div>
         </motion.div>
@@ -93,25 +87,22 @@ export const Zaim = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView13 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="flex flex-col items-start gap-8 p-10 relative flex-1 grow bg-[#f9fafd] rounded-3xl overflow-hidden"
+          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
         >
-          <div
-            className="inline-flex items-center justify-center gap-2.5 p-4 relative flex-[0_0_auto] bg-[#e6485014] rounded-[100px]">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <img
-              className="relative w-8 h-8"
+              className="relative size-8"
               alt="Percent"
               src="/img/percent.svg"
             />
           </div>
 
-          <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
-            <div
-              className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-2xl tracking-[0] leading-8">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Проценты и штрафы
             </div>
 
-            <p
-              className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl tracking-[0] leading-7">
+            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               Автоматическое начисление процентов по займу и штрафов за
               нарушение сроков возврата.
             </p>
@@ -119,5 +110,5 @@ export const Zaim = () => {
         </motion.div>
       </div>
     </motion.div>
-  )
-}
+  );
+};

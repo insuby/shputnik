@@ -1,28 +1,29 @@
 // @ts-ignore
-import "@devnomic/marquee/dist/index.css";
+import '@devnomic/marquee/dist/index.css';
+
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
-import { RoutesPath } from './routes-path';
-import { Layout } from './screens/Layout';
-import { About } from './screens/About';
-import { Main } from './screens/Main';
-import { Work } from './screens/Work';
-import { MicroCredit } from './screens/MicroCredit';
-import { BNPL } from './screens/BNPL';
-import { Reviews } from './screens/reviews';
-import { Autocredit } from './screens/Autocredit';
-import { IslamFinance } from './screens/IslamFinans';
-import { P2P } from './screens/P2P';
-import { BusinessCredit } from './screens/BusinessCredit';
-import { BankCredit } from './screens/BankCredit';
-import {Development} from "./screens/Development";
-import { Dataunload } from './screens/Dataunload';
-import { Fdata } from './screens/Fdata';
-// import { BlogTemplate } from './screens/BlogTemplate';
-import { Privacy } from './screens/Privacy';
 import { ScrollToTop } from './ScrollToTop';
+import { RoutesPath } from './routes-path';
+import { About } from './screens/About';
+import { Autocredit } from './screens/Autocredit';
+import { BNPL } from './screens/BNPL';
+import { BankCredit } from './screens/BankCredit';
 import { BlogList } from './screens/Blog';
 import { BlogPost } from './screens/Blog/Post';
+import { BusinessCredit } from './screens/BusinessCredit';
+import { Dataunload } from './screens/Dataunload';
+import { Development } from './screens/Development';
+import { Fdata } from './screens/Fdata';
+import { IslamFinance } from './screens/IslamFinans';
+import { Layout } from './screens/Layout';
+import { Main } from './screens/Main';
+import { MicroCredit } from './screens/MicroCredit';
+import { P2P } from './screens/P2P';
+// import { BlogTemplate } from './screens/BlogTemplate';
+import { Privacy } from './screens/Privacy';
+import { Work } from './screens/Work';
+import { Reviews } from './screens/reviews';
 
 export const App = () => {
   return (

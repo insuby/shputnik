@@ -1,17 +1,12 @@
 import { motion, useInView } from 'framer-motion';
 
-
-
 import { useRef } from 'react';
-
-
 
 import { useFeedbackForm } from './feedback-form';
 
-
 export const Feedback = () => {
   const { setIsOpen } = useFeedbackForm();
-  
+
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -57,30 +52,28 @@ export const Feedback = () => {
   const inView21 = useInView(ref21, { once: true, margin: '-100px' });
 
   return (
-    <div
-      className="flex flex-col w-[1376px] items-start gap-2.5 p-3 relative bg-[#3573fc1f] rounded-[40px] !flex-[0_0_auto]">
-      <div
-        className="flex items-center gap-2.5 p-[60px] relative self-stretch w-full flex-[0_0_auto] bg-blue-50 rounded-[32px] overflow-hidden">
+    <div className="relative flex w-[1376px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-[60px]">
         <img
-          className="absolute w-[620px] h-[590px] top-[-306px] left-14"
+          className="absolute left-14 top-[-306px] h-[590px] w-[620px]"
           alt="Vector"
           src="/img/feedback/vector-1.svg"
         />
 
         <img
-          className="absolute w-[727px] h-[675px] top-[-109px] left-[666px]"
+          className="absolute left-[666px] top-[-109px] h-[675px] w-[727px]"
           alt="Vector"
           src="/img/feedback/vector-2-1.svg"
         />
 
-        <div className="flex flex-col w-[696px] items-start gap-8 relative">
-          <div className="flex flex-col h-[120px] items-start gap-4 relative self-stretch w-full">
+        <div className="relative flex w-[696px] flex-col items-start gap-8">
+          <div className="relative flex h-[120px] w-full flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
               initial={{ opacity: 0, x: 80 }}
               animate={inView1 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="self-stretch text-white text-[40px] leading-[48px] relative mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium tracking-[0]"
+              className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
             >
               Попробуйте, вам понравится!
             </motion.div>
@@ -90,7 +83,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 80 }}
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
-              className="relative self-stretch opacity-60 [font-family:'Roboto',Helvetica] font-normal text-white text-xl tracking-[0] leading-7"
+              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white opacity-60 [font-family:'Roboto',Helvetica]"
             >
               Оставьте заявку на демонстрацию — мы покажем, как работает
               платформа и ответим на ваши вопросы
@@ -103,10 +96,9 @@ export const Feedback = () => {
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="all-[unset] cursor-pointer box-border inline-flex items-center justify-center gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-white rounded-[100px]"
+            className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
           >
-            <div
-              className="w-fit text-gray-90 text-xl leading-7 whitespace-nowrap relative mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium tracking-[0]">
+            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Связаться с нами
             </div>
           </motion.button>
@@ -117,15 +109,15 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="inline-flex flex-col items-start justify-center gap-4 p-8 absolute top-[50px] left-[789px] bg-white rounded-[32px_32px_0px_0px]"
+          className="absolute left-[789px] top-[50px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-8"
         >
-          <div className="inline-flex flex-col items-start gap-1 relative flex-[0_0_auto]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
             <motion.div
               ref={ref5}
               initial={{ opacity: 0, y: 50 }}
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-              className="relative w-[264px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-xl tracking-[0] leading-7"
+              className="relative mt-[-1.00px] w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               График платежей
             </motion.div>
@@ -135,125 +127,115 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView6 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-              className="relative w-[180px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-sm tracking-[0] leading-5"
+              className="relative w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]"
             >
               Договор: 12345456322
             </motion.div>
           </div>
 
-          <motion.div 
+          <motion.div
             ref={ref7}
             initial={{ opacity: 0, y: 50 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-            className="inline-flex h-[154px] items-end relative"
+            className="relative inline-flex h-[154px] items-end"
           >
-            <motion.div 
+            <motion.div
               ref={ref8}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView8 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div
-                className="h-[76px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+              <div className="relative h-[76px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 март
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               ref={ref9}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView9 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div
-                className="h-[86px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+              <div className="relative h-[86px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 апр
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               ref={ref10}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView10 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div
-                className="h-[105px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-2 rounded-3xl" />
+              <div className="relative h-[105px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 май
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               ref={ref11}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView11 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div className="h-[120px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative h-[120px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 июнь
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               ref={ref12}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView12 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 1.1 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div className="h-[91px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative h-[91px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 июль
               </div>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               ref={ref13}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView13 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
-              className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]"
+              className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
             >
-              <div className="h-[98px] bg-[#f2f4fb] relative w-2 rounded-3xl" />
+              <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-              <div
-                className="relative w-11 [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-xs text-center tracking-[0] leading-4">
+              <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 авг
               </div>
             </motion.div>
           </motion.div>
 
           <img
-            className="absolute w-[328px] h-24 top-[109px] left-0"
+            className="absolute left-0 top-[109px] h-24 w-[328px]"
             alt="Vector"
             src="/img/feedback/vector-147.svg"
           />
 
-          <div
-            className="absolute w-3 h-3 top-[133px] left-[156px] bg-[#ffffff] rounded-md border-2 border-solid border-[#00cb82]" />
+          <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
         </motion.div>
 
         <img
-          className="absolute w-[426px] h-[403px] top-6 left-[874px]"
+          className="absolute left-[874px] top-6 h-[403px] w-[426px]"
           alt="Vector"
           src="/img/feedback/vector-4.svg"
         />
@@ -263,29 +245,29 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView14 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="inline-flex flex-col items-center justify-center gap-3 p-4 absolute top-[90px] left-[1046px] bg-white rounded-[32px_32px_0px_0px]"
+          className="absolute left-[1046px] top-[90px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
         >
-          <motion.div 
+          <motion.div
             ref={ref15}
             initial={{ opacity: 0, scale: 0 }}
             animate={inView15 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-            className="relative w-[212px] h-[212px] rounded-[100px]"
+            className="relative size-[212px] rounded-[100px]"
           >
-            <div className="relative w-[198px] h-[198px] top-[7px] left-[7px]">
-              <motion.div 
+            <div className="relative left-[7px] top-[7px] size-[198px]">
+              <motion.div
                 ref={ref16}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView16 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-                className="inline-flex flex-col h-[62px] items-center gap-0.5 absolute top-[68px] left-10"
+                className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5"
               >
                 <motion.div
                   ref={ref17}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView17 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-                  className="relative w-fit mt-[-1.00px] [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm tracking-[0] leading-5 whitespace-nowrap"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
                 >
                   Текущий остаток
                 </motion.div>
@@ -295,17 +277,16 @@ export const Feedback = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView18 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-                  className="relative w-fit [font-family:'Roboto',Helvetica] font-medium text-[#1c222f] text-[28px] text-center tracking-[0] leading-10 whitespace-nowrap"
+                  className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]"
                 >
                   44,000₽
                 </motion.div>
               </motion.div>
 
-              <div
-                className="absolute w-[198px] h-[198px] top-0 left-0 rounded-[99px] border-[10px] border-solid border-neutral-50" />
+              <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
               <img
-                className="absolute w-[198px] h-[198px] top-0 left-0"
+                className="absolute left-0 top-0 size-[198px]"
                 alt="Ellipse"
                 src="/img/feedback/ellipse-32.svg"
               />
@@ -317,14 +298,14 @@ export const Feedback = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-            className="flex items-center justify-between px-4 py-3 relative self-stretch w-full flex-[0_0_auto] bg-[#f6f8ff] rounded-[20px]"
+            className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3"
           >
             <motion.div
               ref={ref20}
               initial={{ opacity: 0, x: -50 }}
               animate={inView20 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-              className="relative w-fit [font-family:'Inter',Helvetica] font-normal text-[#9ea7bb] text-sm tracking-[0] leading-5 whitespace-nowrap"
+              className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
             >
               Сумма займа
             </motion.div>
@@ -334,7 +315,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView21 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-              className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-base tracking-[0] leading-6 whitespace-nowrap"
+              className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               122, 000₽
             </motion.div>
@@ -342,5 +323,5 @@ export const Feedback = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};

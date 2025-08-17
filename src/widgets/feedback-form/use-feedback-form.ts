@@ -7,5 +7,5 @@ type FeedbackFormState = {
 
 export const useFeedbackForm = create<FeedbackFormState>((set) => ({
   isOpen: false,
-  setIsOpen: (isOpen: boolean) => set({ isOpen })
+  setIsOpen: (isOpen: boolean) => set({ isOpen }),
 }));

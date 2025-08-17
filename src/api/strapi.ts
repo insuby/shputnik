@@ -19,9 +19,14 @@ export type Post = {
   relatedTo?: Post[];
 };
 
-const STRAPI_URL = (import.meta as any).env?.VITE_STRAPI_API_URL as string | undefined;
+const STRAPI_URL = (import.meta as any).env?.VITE_STRAPI_API_URL as
+  | string
+  | undefined;
 
-const buildUrl = (path: string, params?: Record<string, string | number | boolean | undefined>) => {
+const buildUrl = (
+  path: string,
+  params?: Record<string, string | number | boolean | undefined>,
+) => {
   const base = STRAPI_URL?.replace(/\/$/, '') ?? '';
   const url = new URL(`${base}${path}`);
 
@@ -43,7 +48,9 @@ export const fetchJson = async <T>(url: string): Promise<T> => {
 };
 
 export const getCategories = async () => {
-  const res = await fetchJson<{ data: Category[] }>(buildUrl('/api/categories'));
+  const res = await fetchJson<{ data: Category[] }>(
+    buildUrl('/api/categories'),
+  );
   return res.data;
 };
 
@@ -73,7 +80,9 @@ export const getPosts = (page: number, categoryId?: number | null) => {
 };
 
 export const getPostById = async (id: string) => {
-  const url = buildUrl(`/api/posts/${id}?populate=image&populate=category&populate=relatedTo`);
+  const url = buildUrl(
+    `/api/posts/${id}?populate=image&populate=category&populate=relatedTo`,
+  );
   const res = await fetchJson<{ data: Post }>(url);
   return res.data;
 };
@@ -83,4 +92,3 @@ export const buildMediaUrl = (relative?: string | null) => {
   const base = STRAPI_URL?.replace(/\/$/, '') ?? '';
   return `${base}${relative}`;
 };
-

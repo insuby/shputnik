@@ -1,57 +1,59 @@
+import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Trust } from '../../widgets/trust.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
 
 export const About = () => {
   const { setIsOpen } = useFeedbackForm();
-  
+
   const onClick = () => {
     setIsOpen(true);
   };
   return (
     <div
-      className="inline-flex flex-col items-start justify-center relative"
+      className="relative inline-flex flex-col items-start justify-center"
       data-model-id="9263:2719"
     >
-      <div className="flex flex-col w-[1440px] items-center gap-[136px] pt-8 pb-[136px] px-8 relative flex-[0_0_auto]">
-        <div className="flex flex-col items-start gap-8 relative self-stretch w-full flex-[0_0_auto]">
-          <div className="flex flex-col items-center gap-20 pt-[88px] pb-20 px-20 relative self-stretch w-full flex-[0_0_auto] bg-[#ffffff] rounded-[32px] overflow-hidden">
+      <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-20 pb-20 pt-[88px]">
             <img
-              className="absolute w-[1108px] h-[1060px] top-[37px] left-[143px]"
+              className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
               alt="Vector"
               src="/img/about/vector-1-1.svg"
             />
 
-            <div className="flex flex-col w-[980px] items-center justify-center gap-8 relative flex-[0_0_auto]">
-              <div className="self-stretch mt-[-1.00px] font-medium text-gray-90 text-6xl text-center leading-[68px] relative [font-family:'Roboto',Helvetica] tracking-[0]">
+            <div className="relative flex w-[980px] flex-[0_0_auto] flex-col items-center justify-center gap-8">
+              <div className="relative mt-[-1.00px] self-stretch text-center text-6xl font-medium leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Разработка передового программного обеспечения для Fintech
               </div>
 
-              <p className="w-[786px] text-[#929cb3] text-center relative [font-family:'Roboto',Helvetica] font-normal text-xl tracking-[0] leading-7">
-                Наша команда занимается разработкой программного обеспечения. Мы создаём решения, адаптированные под специфику местного рынка, бизнес-потребности и технические требования наших партнёров
+              <p className="relative w-[786px] text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
+                Наша команда занимается разработкой программного обеспечения. Мы
+                создаём решения, адаптированные под специфику местного рынка,
+                бизнес-потребности и технические требования наших партнёров
               </p>
             </div>
 
-            <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-              <div className="inline-flex items-start gap-8 p-10 relative self-stretch flex-[0_0_auto] bg-blue-50 rounded-[32px] overflow-hidden">
+            <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+              <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-10">
                 <img
-                  className="absolute w-[409px] h-[386px] top-[-141px] left-[-157px]"
+                  className="absolute left-[-157px] top-[-141px] h-[386px] w-[409px]"
                   alt="Vector"
                   src="/img/about/vector-3.svg"
                 />
 
                 <img
-                  className="absolute w-[476px] h-[442px] -top-2 left-[189px]"
+                  className="absolute -top-2 left-[189px] h-[442px] w-[476px]"
                   alt="Vector"
                   src="/img/about/vector-2.svg"
                 />
 
-                <div className="flex-col w-[340px] gap-4 flex items-start relative">
-                  <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-white text-[68px] tracking-[0] leading-[72px]">
+                <div className="relative flex w-[340px] flex-col items-start gap-4">
+                  <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     12
                   </div>
 
-                  <div className="relative self-stretch [font-family:'Roboto',Helvetica] font-normal text-white text-xl tracking-[0] leading-7">
+                  <div className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     лет на рынке разработки
                     <br />
                     fintech-решений
@@ -59,32 +61,32 @@ export const About = () => {
                 </div>
               </div>
 
-              <div className="gap-[60px] p-10 flex-1 grow bg-[#ffffff] rounded-[32px] flex items-start relative">
-                <div className="flex-col gap-4 flex-1 grow flex items-start relative">
-                  <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#1c222f] text-[68px] tracking-[0] leading-[72px]">
+              <div className="relative flex flex-1 grow items-start gap-[60px] rounded-[32px] bg-[#ffffff] p-10">
+                <div className="relative flex flex-1 grow flex-col items-start gap-4">
+                  <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                     200+
                   </div>
 
-                  <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     реализованных проектов
                     {/*<br />в России, Казахстане и Испании*/}
                   </p>
 
-                  <div className="inline-flex items-center gap-2 relative flex-[0_0_auto] mr-[-3.00px]">
-                    <div className="inline-flex h-8 items-center justify-center gap-2.5 px-3 py-2 relative flex-[0_0_auto] bg-[#ff8068] rounded-[52px] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
-                      <div className="relative w-fit mt-[-2.50px] mb-[-1.50px] [font-family:'Inter',Helvetica] font-medium text-[#ffffff] text-sm tracking-[0] leading-5 whitespace-nowrap">
+                  <div className="relative mr-[-3.00px] inline-flex flex-[0_0_auto] items-center gap-2">
+                    <div className="relative inline-flex h-8 flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[52px] bg-[#ff8068] px-3 py-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
+                      <div className="relative mb-[-1.50px] mt-[-2.50px] w-fit whitespace-nowrap text-sm font-medium leading-5 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                         Java
                       </div>
                     </div>
 
-                    <div className="inline-flex h-8 items-center justify-center gap-2.5 px-3 py-2 relative flex-[0_0_auto] bg-[#00cb82] rounded-[52px] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
-                      <div className="relative w-fit mt-[-2.50px] mb-[-1.50px] [font-family:'Inter',Helvetica] font-medium text-[#ffffff] text-sm tracking-[0] leading-5 whitespace-nowrap">
+                    <div className="relative inline-flex h-8 flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[52px] bg-[#00cb82] px-3 py-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
+                      <div className="relative mb-[-1.50px] mt-[-2.50px] w-fit whitespace-nowrap text-sm font-medium leading-5 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                         Python
                       </div>
                     </div>
 
-                    <div className="inline-flex h-8 items-center justify-center gap-2.5 px-3 py-2 relative flex-[0_0_auto] bg-[#fbab00] rounded-[52px] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
-                      <div className="relative w-fit mt-[-2.50px] mb-[-1.50px] [font-family:'Inter',Helvetica] font-medium text-[#ffffff] text-sm tracking-[0] leading-5 whitespace-nowrap">
+                    <div className="relative inline-flex h-8 flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[52px] bg-[#fbab00] px-3 py-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
+                      <div className="relative mb-[-1.50px] mt-[-2.50px] w-fit whitespace-nowrap text-sm font-medium leading-5 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                         React
                       </div>
                     </div>
@@ -92,47 +94,47 @@ export const About = () => {
                 </div>
 
                 <img
-                  className="relative self-stretch w-px"
+                  className="relative w-px self-stretch"
                   alt="Vector"
                   src="/img/about/vector-3-1.svg"
                 />
 
-                <div className="flex flex-col items-start justify-between relative flex-1 self-stretch grow">
-                  <div className="inline-flex flex-col items-start gap-4 relative flex-[0_0_auto]">
-                    <div className="w-[286px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-[#1c222f] text-[68px] leading-[72px] relative tracking-[0]">
+                <div className="relative flex flex-1 grow flex-col items-start justify-between self-stretch">
+                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
+                    <div className="relative mt-[-1.00px] w-[286px] text-[68px] font-normal leading-[72px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                       30+
                     </div>
 
-                    <div className="relative w-[286px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl tracking-[0] leading-7">
+                    <div className="relative w-[286px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       in-house разработчиков
                     </div>
                   </div>
 
-                  <div className="flex flex-col items-start gap-4 relative self-stretch w-full flex-[0_0_auto]">
-                    <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                      <div className="inline-flex items-center relative flex-[0_0_auto]">
-                        <div className="ml-[-3.00px] relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] rounded-3xl overflow-hidden border-[3px] border-solid border-[#ffffff]">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center gap-1">
+                      <div className="relative inline-flex flex-[0_0_auto] items-center">
+                        <div className="relative my-[-3.00px] ml-[-3.00px] size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
                           <img
-                            className="absolute w-12 h-12 top-0 left-0 object-cover"
+                            className="absolute left-0 top-0 size-12 object-cover"
                             alt="Woman with tablet"
                             src="/img/woman-tablet.png"
                           />
                         </div>
 
-                        <div className="-ml-1 relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] rounded-3xl overflow-hidden border-[3px] border-solid border-[#ffffff]">
+                        <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
                           <img
-                            className="absolute w-12 h-12 top-0 left-0 object-cover"
+                            className="absolute left-0 top-0 size-12 object-cover"
                             alt="Woman with tablet"
                             src="/img/woman-tablet-2.png"
                           />
                         </div>
 
-                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-2.png)_50%_50%_/_cover]" />
+                        <div className="relative my-[-3.00px] -ml-1 size-[54px] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-2.png)_50%_50%_/_cover]" />
 
-                        <div className="relative w-[54px] h-[54px] mt-[-3.00px] mb-[-3.00px] -ml-1 rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-6.png)_50%_50%_/_cover]" />
+                        <div className="relative my-[-3.00px] -ml-1 size-[54px] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-6.png)_50%_50%_/_cover]" />
 
-                        <div className="flex w-[54px] h-[54px] items-center justify-center gap-2.5 p-2 relative mt-[-3.00px] mb-[-3.00px] mr-[-3.00px] -ml-1 bg-[#f7f8f9] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
-                          <div className="w-fit [font-family:'Inter',Helvetica] font-normal text-[#55607a] text-base leading-6 whitespace-nowrap relative tracking-[0]">
+                        <div className="relative my-[-3.00px] -ml-1 mr-[-3.00px] flex size-[54px] items-center justify-center gap-2.5 rounded-[52px] border-[3px] border-solid border-[#ffffff] bg-[#f7f8f9] p-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
+                          <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Inter',Helvetica]">
                             +3
                           </div>
                         </div>
@@ -145,80 +147,86 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="inline-flex flex-col items-center gap-[88px] relative flex-[0_0_auto] ml-[-8.00px] mr-[-8.00px]">
-          <div className="inline-flex flex-col items-center justify-center gap-2.5 relative flex-[0_0_auto]">
-            <div className="w-[1376px] mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl text-center leading-[60px] relative tracking-[0]">
+        <div className="relative mx-[-8.00px] inline-flex flex-[0_0_auto] flex-col items-center gap-[88px]">
+          <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+            <div className="relative mt-[-1.00px] w-[1376px] text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Представительства
             </div>
 
-            <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl text-center leading-7 relative tracking-[0]">
+            <p className="relative w-[590px] text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               По любым вопросам вы можете обратиться в один <br />
               из наших офисов или связаться с нашей командой
             </p>
           </div>
 
-          <div className="flex w-[1392px] items-start gap-4 relative flex-[0_0_auto]">
-            <div className="flex flex-col w-[686px] items-start gap-12 p-12 relative bg-[#f9fafc] rounded-[32px] overflow-hidden">
-              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-                <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] whitespace-nowrap relative tracking-[0]">
+          <div className="relative flex w-[1392px] flex-[0_0_auto] items-start gap-4">
+            <div className="relative flex w-[686px] flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+                <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Москва
                   </div>
 
                   <img
-                    className="relative w-10 h-12"
+                    className="relative h-12 w-10"
                     alt="Coat of arms of"
                     src="/img/about/coat-of-arms-of-moscow.svg"
                   />
                 </div>
 
-                <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+                <p className="relative w-[590px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   183038, Москва,
                   <br />
                   Рубцовская набережная,
                   <br />
                   3с1, офис 1008
                 </p>
-                <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                <p className="relative w-[590px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   + 7 (495) 006 21 57
                 </p>
               </div>
 
-              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]" onClick={onClick}>
-                <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
+              <button
+                className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                onClick={onClick}
+              >
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Связаться
                 </div>
               </button>
             </div>
 
-            <div className="flex flex-col w-[686px] items-start gap-12 p-12 relative bg-[#f9fafc] rounded-[32px] overflow-hidden">
-              <div className="inline-flex flex-col items-start gap-6 relative flex-[0_0_auto]">
-                <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[40px] leading-[48px] whitespace-nowrap relative tracking-[0]">
+            <div className="relative flex w-[686px] flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+                <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Мурманск
                   </div>
 
                   <img
-                    className="relative w-[37px] h-12"
+                    className="relative h-12 w-[37px]"
                     alt="Rus murmansk COA"
                     src="/img/about/rus-murmansk-coa.svg"
                   />
                 </div>
 
-                <p className="w-[590px] [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-xl leading-7 relative tracking-[0]">
+                <p className="relative w-[590px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   183038, Мурманск,
                   <br />
                   улица Октябрьская,
                   <br />
                   2а, офис 2
                 </p>
-                <p className="w-[590px] font-normal text-gray-40 text-xl leading-7 relative [font-family:'Roboto',Helvetica] tracking-[0]">
+                <p className="relative w-[590px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   + 7 (495) 006 21 57
                 </p>
               </div>
 
-              <button className="all-[unset] box-border px-8 py-4 relative flex-[0_0_auto] bg-blue-50 inline-flex items-center justify-center gap-2.5 rounded-[100px]" onClick={onClick}>
-                <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-[#ffffff] text-xl leading-7 whitespace-nowrap relative tracking-[0]">
+              <button
+                className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                onClick={onClick}
+              >
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Связаться
                 </div>
               </button>

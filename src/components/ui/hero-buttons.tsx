@@ -29,15 +29,15 @@ export const HeroButtons = ({
 
   return (
     <>
-      <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
+      <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
         <motion.div
           ref={ref1}
           initial={{ opacity: 0, x: -50 }}
           animate={inView1 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="inline-flex items-center justify-center gap-2.5 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]"
+          className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] px-5 py-2.5"
         >
-          <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
+          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
             О продукте
           </div>
         </motion.div>
@@ -47,16 +47,16 @@ export const HeroButtons = ({
           initial={{ opacity: 0, x: 50 }}
           animate={inView2 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="inline-flex items-center gap-0.5 relative flex-[0_0_auto]"
+          className="relative inline-flex flex-[0_0_auto] items-center gap-0.5"
         >
-          <div className="inline-flex items-center justify-center gap-2 px-5 py-2.5 relative flex-[0_0_auto] bg-[#ffffff14] rounded-[100px]">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-[100px] bg-[#ffffff14] px-5 py-2.5">
             <img
-              className="relative w-5 h-5"
+              className="relative size-5"
               alt="File text"
               src="/img/filetext.svg"
             />
 
-            <div className="relative w-fit mt-[-1.00px] font-body-3-r font-[number:var(--body-3-r-font-weight)] text-[#ffffff] text-[length:var(--body-3-r-font-size)] tracking-[var(--body-3-r-letter-spacing)] leading-[var(--body-3-r-line-height)] whitespace-nowrap [font-style:var(--body-3-r-font-style)]">
+            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
               Спецификация
             </div>
           </div>
@@ -73,9 +73,9 @@ export const HeroButtons = ({
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={handleButtonClick}
-        className="all-[unset] box-border inline-flex gap-2.5 px-8 py-4 relative flex-[0_0_auto] bg-[#ffffff] rounded-[100px] items-center justify-center cursor-pointer hover:opacity-90 transition-opacity"
+        className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90"
       >
-        <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-xl tracking-[0] leading-7 whitespace-nowrap">
+        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           {buttonText}
         </div>
       </motion.button>
