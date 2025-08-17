@@ -1,7 +1,19 @@
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+
+import { RoutesPath } from '../../routes-path.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 
 export const MainMobile = () => {
   const { setIsOpen } = useFeedbackForm();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
 
   const onClick = () => {
     setIsOpen(true);
@@ -13,6 +25,23 @@ export const MainMobile = () => {
       data-model-id="9181:497"
     >
       <div className="relative flex h-[917px] w-[412px] flex-col items-start">
+        <button
+          aria-label="Открыть меню"
+          onClick={() => setIsMenuOpen(true)}
+          className="absolute right-4 top-4 z-10 inline-flex size-10 items-center justify-center rounded-full bg-gray-10"
+        >
+          <svg
+            width="20"
+            height="14"
+            viewBox="0 0 20 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect x="0" y="0" width="20" height="2" rx="1" fill="#1c222f" />
+            <rect x="0" y="6" width="20" height="2" rx="1" fill="#1c222f" />
+            <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f" />
+          </svg>
+        </button>
         <img
           className="relative w-[412px] flex-[0_0_auto]"
           alt="Header"
@@ -27,7 +56,7 @@ export const MainMobile = () => {
               src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1-6.svg"
             />
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 self-stretch">
+            <div className="w/full relative flex flex-[0_0_auto] flex-col items-center justify-center gap-6 self-stretch">
               <p className="relative mt-[-1.00px] self-stretch text-center text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="font-medium leading-[44px] text-[#1c222f]">
                   Программное обеспечение для{' '}
@@ -60,8 +89,346 @@ export const MainMobile = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-9 self-stretch p-4">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 self-stretch">
+      {isMenuOpen && (
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6">
+          <div className="mb-6 flex items-center justify-between">
+            <Link
+              to={RoutesPath.MAIN}
+              onClick={() => setIsMenuOpen(false)}
+              className="h-[22px] w-28"
+            >
+              <div className="relative h-[23px] w-[170px]">
+                <img
+                  className="absolute left-0 top-0 size-full"
+                  alt="Group"
+                  src="/img/logo.png"
+                />
+              </div>
+            </Link>
+            <button
+              aria-label="Закрыть меню"
+              onClick={() => setIsMenuOpen(false)}
+              className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5 5L15 15M15 5L5 15"
+                  stroke="#1c222f"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <nav className="space-y-8">
+            <div className="space-y-3">
+              <div className="text-base text-gray-40">Кредитование</div>
+              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <Link
+                  to={RoutesPath.MICROCREDIT}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl bg-[#F9FBFF] p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84-2.svg"
+                    />
+                    <span className="text-gray-90">
+                      Микрофинансовое кредитование
+                    </span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.BUSINESSCREDIT}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84-10.svg"
+                    />
+                    <span className="text-gray-90">Кредитование бизнеса</span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.BANKCREDIT}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84-4.svg"
+                    />
+                    <span className="text-gray-90">
+                      Банковское кредитование
+                    </span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.BNPL}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84.svg"
+                    />
+                    <span className="text-gray-90">BNPL</span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.AUTOCREDIT}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/trust/frame-84-20.svg"
+                    />
+                    <span className="text-gray-90">Автокредитование</span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.P2P}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/trust/frame-84-7.svg"
+                    />
+                    <span className="text-gray-90">P2P-кредитование</span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.ISLAMFINANCE}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/trust/frame-84-1.svg"
+                    />
+                    <span className="text-gray-90">
+                      Исламское финансирование
+                    </span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div className="text-base text-gray-40">
+                Другое программное обеспечение
+              </div>
+              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <Link
+                  to={RoutesPath.DATAUNLOAD}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84-8.svg"
+                    />
+                    <span className="text-gray-90">
+                      Выгрузка данных в кредитные бюро
+                    </span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <Link
+                  to={RoutesPath.FDATA}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                >
+                  <span className="flex items-center gap-3">
+                    <img
+                      className="size-5"
+                      alt="icon"
+                      src="/img/header/frame-84-6.svg"
+                    />
+                    <span className="text-gray-90">
+                      Модуль принятия решений
+                    </span>
+                  </span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+                <div className="flex items-center justify-between p-4">
+                  <span className="text-gray-90">Реконсиляция данных</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <div className="text-base text-gray-40">Услуги</div>
+              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <Link
+                  to={RoutesPath.DEVELOPMENT}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between p-4"
+                >
+                  <span className="text-gray-90">Разработка на заказ</span>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 4L13 10L7 16"
+                      stroke="#9FA7BC"
+                      strokeWidth="2"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          </nav>
+        </div>
+      )}
+
+      <div className="w/full relative flex flex-[0_0_auto] flex-col items-center gap-9 self-stretch p-4">
+        <div className="w/full relative flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 self-stretch">
           <div className="relative mt-[-1.00px] self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
             специализируемся на
           </div>
@@ -727,289 +1094,6 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-9 self-stretch p-4">
-        <p className="relative mt-[-1.00px] self-stretch text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-          <span className="font-medium leading-[0.1px] text-[#1c222f]">
-            Точечное и потребительское
-            <br />
-          </span>
-
-          <span className="font-medium leading-10 text-[#9ea7bb]">
-            кредитование
-          </span>
-        </p>
-
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-5 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
-              <div className="relative h-96 w-full self-stretch overflow-hidden rounded-[32px]">
-                <div className="relative left-[-19px] h-[401px] w-[552px]">
-                  <img
-                    className="absolute left-[164px] top-[30px] h-[371px] w-[388px]"
-                    alt="Vector"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1-2.svg"
-                  />
-
-                  <div className="absolute left-0 top-[57px] inline-flex items-center rounded-[24.8px] bg-white p-[12.4px]">
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-[7.75px] p-[9.3px]">
-                      <div className="relative flex size-[123.99px] items-start gap-[9.3px]">
-                        <div className="relative size-[114.69px] [background:url(https://c.animaapp.com/meg2uvv4WWYlvp/img/frame-1948755020.png)_50%_50%_/_cover]" />
-                      </div>
-                    </div>
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[12.4px] self-stretch rounded-[18.6px] bg-[#f6f8ff] p-[18.6px]">
-                      <div className="relative mt-[-0.77px] self-stretch text-[15.5px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Наушники Beyerdynamic Amiron
-                      </div>
-
-                      <div className="relative flex w-[167.42px] flex-[0_0_auto] flex-col items-start gap-[7.75px]">
-                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Стоимость
-                          </div>
-
-                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            23,456₽
-                          </div>
-                        </div>
-
-                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Авансовый платеж
-                          </div>
-
-                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            42,000₽
-                          </div>
-                        </div>
-
-                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Срок
-                          </div>
-
-                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            4,000₽
-                          </div>
-                        </div>
-
-                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Следующий платеж
-                          </div>
-
-                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            2,700₽
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <img
-                    className="absolute left-[19px] top-0 h-96 w-[380px]"
-                    alt="Vector"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-4-3.svg"
-                  />
-
-                  <div className="absolute left-[172px] top-[237px] inline-flex items-center gap-[14.72px] rounded-[29.43px] bg-white py-[14.72px] pl-[14.72px] pr-[22.08px]">
-                    <img
-                      className="relative flex-[0_0_auto]"
-                      alt="Frame"
-                      src="https://c.animaapp.com/meg2uvv4WWYlvp/img/frame-18.svg"
-                    />
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[3.68px]">
-                      <div className="relative mt-[-0.92px] w-fit whitespace-nowrap text-[12.9px] font-normal leading-[18.4px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Ежемесячный платеж
-                      </div>
-
-                      <div className="relative w-fit whitespace-nowrap text-[18.4px] font-medium leading-[25.8px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        4 950₽
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-end gap-8 self-stretch p-8">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    BNPL
-                  </div>
-
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Программное обеспечение для быстрого запуска BNPL-рассрочки
-                    (Buy Now, Pay Later) на этапе оформления покупки — как
-                    онлайн, так и в розничных точках
-                  </p>
-                </div>
-
-                <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
-                    Подробнее
-                  </div>
-
-                  <img
-                    className="relative size-5"
-                    alt="Caret right"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
-                  />
-                </div>
-              </div>
-            </div>
-
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
-              <div className="relative h-[369px] w-full self-stretch overflow-hidden rounded-[32px]">
-                <div className="relative h-[401px] w-[533px]">
-                  <img
-                    className="absolute left-[145px] top-[30px] h-[371px] w-[388px]"
-                    alt="Vector"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1-1.svg"
-                  />
-
-                  <div className="absolute left-[161px] top-[34px] flex h-[247px] w-[283px] flex-col items-start justify-center gap-[13.8px] rounded-[27.6px] bg-white p-[27.6px]">
-                    <div className="relative mt-[-0.65px] inline-flex flex-[0_0_auto] flex-col items-start gap-[3.45px]">
-                      <div className="relative mt-[-0.86px] w-[227.73px] text-[17.3px] font-medium leading-[24.2px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        График платежей
-                      </div>
-
-                      <div className="relative w-[155.27px] text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        Договор: 12345456322
-                      </div>
-                    </div>
-
-                    <div className="relative mb-[-0.65px] inline-flex h-[132.84px] items-end">
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[65.56px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          март
-                        </div>
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[74.19px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          апр
-                        </div>
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[90.57px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          май
-                        </div>
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[103.51px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          июнь
-                        </div>
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[78.5px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          июль
-                        </div>
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                        <div className="relative h-[84.54px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          авг
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className="absolute left-0 top-[94px] h-[83px] w-[283px]"
-                      alt="Vector"
-                      src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-147.svg"
-                    />
-
-                    <div className="absolute left-[135px] top-[115px] size-2.5 rounded-[5.18px] border-[1.73px] border-solid border-[#00cb82] bg-[#ffffff]" />
-                  </div>
-
-                  <img
-                    className="absolute left-0 top-0 h-[369px] w-[380px]"
-                    alt="Vector"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-4.svg"
-                  />
-
-                  <div className="absolute left-[18px] top-[105px] inline-flex flex-col items-center justify-center gap-[10.35px] rounded-[27.6px_27.6px_0px_0px] bg-white p-[13.8px]">
-                    <div className="relative size-[182.88px] rounded-[86.26px]">
-                      <div className="relative left-1.5 top-1.5 size-[171px]">
-                        <div className="absolute left-[35px] top-[59px] inline-flex h-[54px] flex-col items-center gap-[1.73px]">
-                          <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                            Текущий остаток
-                          </div>
-
-                          <div className="relative mb-[-0.18px] w-fit whitespace-nowrap text-center text-[24.2px] font-medium leading-[34.5px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                            44,000₽
-                          </div>
-                        </div>
-
-                        <div className="absolute left-0 top-0 size-[171px] rounded-[85.4px] border-[8.63px] border-solid border-neutral-50" />
-
-                        <img
-                          className="absolute left-0 top-0 size-[171px]"
-                          alt="Ellipse"
-                          src="https://c.animaapp.com/meg2uvv4WWYlvp/img/ellipse-32.svg"
-                        />
-                      </div>
-                    </div>
-
-                    <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[17.25px] bg-[#f6f8ff] px-[13.8px] py-[10.35px]">
-                      <div className="relative w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                        Сумма займа
-                      </div>
-
-                      <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[13.8px] font-medium leading-[20.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        122, 000₽
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-end gap-8 self-stretch p-8">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    POS-кредитование
-                  </div>
-
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Программное обеспечение для запуска POS-займов на этапе
-                    оформления покупки — как в онлайн-магазинах, так и в
-                    розничных точках продаж
-                  </p>
-                </div>
-
-                <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
-                    Подробнее
-                  </div>
-
-                  <img
-                    className="relative size-5"
-                    alt="Caret right"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
-                  />
-                </div>
               </div>
             </div>
           </div>
