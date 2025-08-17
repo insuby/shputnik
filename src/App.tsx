@@ -23,7 +23,19 @@ import { P2P } from './screens/P2P';
 // import { BlogTemplate } from './screens/BlogTemplate';
 import { Privacy } from './screens/Privacy';
 import { Work } from './screens/Work';
+import { MainMobile } from './screens/main-mobile';
 import { Reviews } from './screens/reviews';
+
+function checkIfMobile() {
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent,
+    ) ||
+    (navigator.maxTouchPoints > 0 && /MacIntel/.test(navigator.platform)) || // Для iPad на iOS 13+
+    (window.innerWidth <= 768 && window.innerHeight <= 1024); // Дополнительная проверка по размеру экрана
+
+  return isMobile;
+}
 
 export const App = () => {
   return (
@@ -35,29 +47,40 @@ export const App = () => {
 };
 
 const Pages = () => {
+  const isMobile = checkIfMobile();
   return (
     <Routes>
       <Route path="*" element={<Navigate replace to={RoutesPath.MAIN} />} />
-      <Route element={<Layout />}>
-        <Route path={RoutesPath.MAIN} element={<Main />} />
-        <Route path={RoutesPath.ABOUT} element={<About />} />
-        <Route path={RoutesPath.WORK} element={<Work />} />
-        <Route path={RoutesPath.REVIEWS} element={<Reviews />} />
-        <Route path={RoutesPath.PRODUCTS} element={<MicroCredit />} />
-        <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
-        <Route path={RoutesPath.AUTOCREDIT} element={<Autocredit />} />
-        <Route path={RoutesPath.ISLAMFINANCE} element={<IslamFinance />} />
-        <Route path={RoutesPath.BUSINESSCREDIT} element={<BusinessCredit />} />
-        <Route path={RoutesPath.DEVELOPMENT} element={<Development />} />
-        <Route path={RoutesPath.BANKCREDIT} element={<BankCredit />} />
-        <Route path={RoutesPath.DATAUNLOAD} element={<Dataunload />} />
-        <Route path={RoutesPath.FDATA} element={<Fdata />} />
-        <Route path={RoutesPath.P2P} element={<P2P />} />
-        <Route path={RoutesPath.BNPL} element={<BNPL />} />
-        <Route path={RoutesPath.BLOG} element={<BlogList />} />
-        <Route path="/blog/:id" element={<BlogPost />} />
-        <Route path={RoutesPath.PRIVACY} element={<Privacy />} />
-      </Route>
+      {isMobile ? (
+        <Route>
+          <Route path={RoutesPath.MAIN} element={<MainMobile z/>} />
+
+        </Route>
+      ) : (
+        <Route element={<Layout />}>
+          <Route path={RoutesPath.MAIN} element={<Main />} />
+          <Route path={RoutesPath.ABOUT} element={<About />} />
+          <Route path={RoutesPath.WORK} element={<Work />} />
+          <Route path={RoutesPath.REVIEWS} element={<Reviews />} />
+          <Route path={RoutesPath.PRODUCTS} element={<MicroCredit />} />
+          <Route path={RoutesPath.MICROCREDIT} element={<MicroCredit />} />
+          <Route path={RoutesPath.AUTOCREDIT} element={<Autocredit />} />
+          <Route path={RoutesPath.ISLAMFINANCE} element={<IslamFinance />} />
+          <Route
+            path={RoutesPath.BUSINESSCREDIT}
+            element={<BusinessCredit />}
+          />
+          <Route path={RoutesPath.DEVELOPMENT} element={<Development />} />
+          <Route path={RoutesPath.BANKCREDIT} element={<BankCredit />} />
+          <Route path={RoutesPath.DATAUNLOAD} element={<Dataunload />} />
+          <Route path={RoutesPath.FDATA} element={<Fdata />} />
+          <Route path={RoutesPath.P2P} element={<P2P />} />
+          <Route path={RoutesPath.BNPL} element={<BNPL />} />
+          <Route path={RoutesPath.BLOG} element={<BlogList />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path={RoutesPath.PRIVACY} element={<Privacy />} />
+        </Route>
+      )}
     </Routes>
   );
 };

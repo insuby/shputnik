@@ -3,6 +3,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
+import LineCopy from '../icons/LineCopy.tsx';
 
 export const Integrations = () => {
   const ref1 = useRef(null);

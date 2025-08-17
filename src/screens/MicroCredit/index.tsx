@@ -369,9 +369,9 @@ export const MicroCredit = () => {
                       src="/img/microcredit/vector-1-6.svg"
                     />
 
-                    <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="relative w-full self-stretch">
                       <div className="relative left-7 top-[26px] h-24 w-[290px]">
-                        <div className="absolute left-7 top-7 flex w-[235px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
+                        <div className="absolute left-7 top-9 flex w-[235px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7711.00px] mt-[-1968.00px] size-6 bg-[100%_100%] opacity-0">
                               <div className="relative left-[-7711px] top-[-1968px] h-[15px] w-4">
@@ -393,7 +393,7 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-3 top-4 flex w-[266px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50">
+                        <div className="absolute left-3 top-7 flex w-[266px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
                               <div className="relative left-[3px] top-0.5 h-5 w-[18px]">
@@ -419,7 +419,7 @@ export const MicroCredit = () => {
 
                         <div className="absolute left-0 top-0 flex w-[290px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
-                            <div className="relative ml-[-7683.00px] mt-[-1938.00px] size-6 bg-[100%_100%]">
+                            <div className="relative size-6 bg-[100%_100%]">
                               <div className="relative left-[3px] top-0.5 h-5 w-[18px]">
                                 <img
                                   className="absolute left-[5px] top-[15px] h-[5px] w-2"
