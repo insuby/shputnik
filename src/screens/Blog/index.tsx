@@ -92,7 +92,7 @@ export const BlogList = () => {
                   backgroundImage: `url(${buildMediaUrl(post.image?.url)})`,
                 }}
               >
-                <span className="absolute left-3 top-3 h-7 w-fit rounded-full bg-white px-3 py-1 text-sm text-[#00cb82]">
+                <span className="bg-white/10 absolute left-3 top-3 h-7 w-fit rounded-full px-3 py-1 text-sm text-gray-70 backdrop-blur-2xl">
                   {post.category?.name}
                 </span>
               </div>

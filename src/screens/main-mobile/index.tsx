@@ -666,7 +666,7 @@ export const MainMobile = () => {
               </div>
 
               <img
-                className="relative size-5"
+                className="relative size-12"
                 alt="Caret right"
                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
               />
@@ -1034,7 +1034,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
@@ -1062,7 +1062,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
@@ -1090,7 +1090,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
@@ -1280,7 +1280,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
@@ -1309,7 +1309,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
@@ -1337,7 +1337,7 @@ export const MainMobile = () => {
                 </div>
 
                 <img
-                  className="relative size-5"
+                  className="relative size-12"
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
