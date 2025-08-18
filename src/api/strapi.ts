@@ -17,6 +17,8 @@ export type Post = {
   category: Category;
   ckeditor?: string;
   relatedTo?: Post[];
+  likes?: number;
+  views?: number;
 };
 
 const STRAPI_URL = (import.meta as any).env?.VITE_STRAPI_API_URL as
@@ -85,6 +87,52 @@ export const getPostById = async (id: string) => {
   );
   const res = await fetchJson<{ data: Post }>(url);
   return res.data;
+};
+
+export type Comment = {
+  id: number;
+  content: string;
+  authorName?: string | null;
+  likes?: number;
+  createdAt: string;
+  replies?: Comment[];
+};
+
+export const getComments = async (postId: string | number) => {
+  const res = await fetchJson<{ data: Comment[] }>(buildUrl(`/api/posts/${postId}/comments`));
+  return res.data;
+};
+
+export const addComment = async (
+  postId: string | number,
+  data: { content: string; authorName?: string; parentId?: number },
+) => {
+  const res = await fetch(buildUrl(`/api/posts/${postId}/comments`), {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) throw new Error('Failed to add comment');
+  const json = await res.json();
+  return json.data as Comment;
+};
+
+export const likePost = async (postId: string | number) => {
+  const res = await fetch(buildUrl(`/api/posts/${postId}/like`), { method: 'POST' });
+  if (!res.ok) throw new Error('Failed to like post');
+  return (await res.json()).data as { id: string | number; likes: number };
+};
+
+export const viewPost = async (postId: string | number) => {
+  const res = await fetch(buildUrl(`/api/posts/${postId}/view`), { method: 'POST' });
+  if (!res.ok) throw new Error('Failed to increment views');
+  return (await res.json()).data as { id: string | number; views: number };
+};
+
+export const likeComment = async (commentId: string | number) => {
+  const res = await fetch(buildUrl(`/api/comments/${commentId}/like`), { method: 'POST' });
+  if (!res.ok) throw new Error('Failed to like comment');
+  return (await res.json()).data as { id: string | number; likes: number };
 };
 
 export const buildMediaUrl = (relative?: string | null) => {
