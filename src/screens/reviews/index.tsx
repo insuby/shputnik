@@ -57,20 +57,20 @@ const reviews = [
 ];
 export const Reviews = () => {
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-[88px]">
-      <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
-        <div className="relative mt-[-1.00px] self-stretch text-[60px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] p-6 md:p-[88px]">
+      <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
+        <div className="relative mt-[-1.00px] self-stretch text-[32px] md:text-[60px] font-medium leading-[36px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Отзывы
         </div>
       </div>
 
-      <div className="grid w-full grid-cols-2 gap-4">
+      <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-4">
         {reviews.map((review) => (
           <div
             key={review.videoSrc}
             className="relative flex flex-1 grow flex-col items-start gap-3 rounded-3xl bg-gray-10 p-3"
           >
-            <div className="relative h-80 w-full self-stretch overflow-hidden rounded-2xl bg-gray-10">
+            <div className="relative h-56 md:h-80 w-full self-stretch overflow-hidden rounded-2xl bg-gray-10">
               <div className="size-full">
                 <iframe
                   width="100%"

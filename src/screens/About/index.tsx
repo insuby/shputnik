@@ -13,21 +13,21 @@ export const About = () => {
       className="relative inline-flex flex-col items-start justify-center"
       data-model-id="9263:2719"
     >
-      <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] md:gap-[136px] px-4 md:px-8 pb-[88px] md:pb-[136px] pt-6 md:pt-8">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-20 pb-20 pt-[88px]">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 md:px-20 pb-10 md:pb-20 pt-8 md:pt-[88px]">
             <img
               className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
               alt="Vector"
               src="/img/about/vector-1-1.svg"
             />
 
-            <div className="relative flex w-[980px] flex-[0_0_auto] flex-col items-center justify-center gap-8">
-              <div className="relative mt-[-1.00px] self-stretch text-center text-6xl font-medium leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative flex w-full md:w-[980px] flex-[0_0_auto] flex-col items-center justify-center gap-6 md:gap-8">
+              <div className="relative mt-[-1.00px] self-stretch text-center text-3xl md:text-6xl font-medium leading-9 md:leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Разработка передового программного обеспечения для Fintech
               </div>
 
-              <p className="relative w-[786px] text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
+              <p className="relative w-full md:w-[786px] px-2 text-center text-base md:text-xl font-normal leading-6 md:leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
                 Наша команда занимается разработкой программного обеспечения. Мы
                 создаём решения, адаптированные под специфику местного рынка,
                 бизнес-потребности и технические требования наших партнёров
