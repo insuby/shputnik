@@ -47,11 +47,33 @@ export const MainMobile = () => {
                         <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f"/>
                     </svg>
                 </button>
-                <img
-                    className="relative w-[412px] flex-[0_0_auto]"
-                    alt="Header"
-                    src="https://c.animaapp.com/meg2uvv4WWYlvp/img/header.svg"
-                />
+                <div className="h-12 mb-4 relative">
+                    <svg
+                        className="absolute left-5 top-[0.7rem] h-8 w-28"
+                        viewBox="0 0 112 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <mask id="logoMask" maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="24">
+                            <path d="M0 0.630676H18.5875V23.3693H0V0.630676Z" fill="#1D2C62"/>
+                        </mask>
+                            <path fillRule="evenodd" clipRule="evenodd"
+                                  d="M7.46875 12.0006C7.46875 7.01558 11.51 2.97308 16.4963 2.97308C17.215 2.97308 17.9163 3.05808 18.5875 3.21683C16.6238 1.60058 14.11 0.630585 11.3687 0.630585C5.09 0.630585 0 5.72184 0 12.0006C0 18.2793 5.09 23.3693 11.3687 23.3693C14.11 23.3693 16.6238 22.3993 18.5875 20.7843C17.9163 20.9431 17.215 21.0281 16.4963 21.0281C11.51 21.0281 7.46875 16.9856 7.46875 12.0006Z"
+                                  fill="#1C222F"/>
+                        <path fillRule="evenodd" clipRule="evenodd"
+                              d="M23.7939 2.29712V6.68587C24.8814 8.17712 25.5239 10.0134 25.5239 12.0009C25.5239 13.9871 24.8814 15.8246 23.7939 17.3159V21.7171H29.8539V7.00462H36.0202V21.7171H42.0802V2.29712H23.7939Z"
+                              fill="#1C222F"/>
+                        <path fillRule="evenodd" clipRule="evenodd"
+                              d="M46.8403 2.29712V6.93212H52.4478V21.7171H58.5078V6.93212H64.1153V2.29712H46.8403Z"
+                              fill="#1C222F"/>
+                        <path fillRule="evenodd" clipRule="evenodd"
+                              d="M68.88 2.29712V21.7171H74.9413V13.8084H81.2138V21.7171H87.2738V2.29712H81.2138V9.03087H74.9413V2.29712H68.88Z"
+                              fill="#1C222F"/>
+                        <path fillRule="evenodd" clipRule="evenodd"
+                              d="M92.03 2.26239V11.9899V21.7174H98.09V14.0274H99.6788L104.274 21.7174H111.238L105.213 11.9899L111.238 2.26239H104.274L99.6788 9.95239H98.09V2.26239H92.03Z"
+                              fill="#1C222F"/>
+                    </svg>
+                </div>
 
                 <div className="relative flex h-[853px] w-[411px] items-center gap-2.5 px-3 py-0">
                     <div
@@ -103,64 +125,81 @@ export const MainMobile = () => {
                         animate={{opacity: 1}}
                         exit={{opacity: 0}}
                         transition={{duration: 0.15}}
-                        className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-4"
+                        className="fixed inset-0 z-50 overflow-y-auto bg-white px-0 pb-10 pt-2"
                     >
-                        <div className="mb-6 flex items-center justify-between">
+                        <div className="relative h-12 mb-4">
                             <AnimatePresence mode="wait">
                                 {menuPanel === 'products' ? (
                                     <motion.button
                                         key="back"
-                                        initial={{ opacity: 0, x: -6 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        exit={{ opacity: 0, x: -6 }}
-                                        transition={{ duration: 0.15 }}
+                                        initial={{opacity: 0, x: -6}}
+                                        animate={{opacity: 1, x: 0}}
+                                        exit={{opacity: 0, x: -6}}
+                                        transition={{duration: 0.15}}
                                         aria-label="Назад"
                                         onClick={() => setMenuPanel('root')}
-                                        className="inline-flex items-center justify-center"
+                                        className="absolute left-5 top-2 inline-flex items-center justify-center"
                                     >
-                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M27 16H5" stroke="#1C222F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                                            <path d="M14 7L5 16L14 25" stroke="#1C222F" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
+                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M27 16H5" stroke="#1C222F" strokeWidth="2" strokeLinecap="round"
+                                                  strokeLinejoin="round"/>
+                                            <path d="M14 7L5 16L14 25" stroke="#1C222F" strokeWidth="2"
+                                                  strokeLinecap="square" strokeLinejoin="round"/>
                                         </svg>
                                     </motion.button>
                                 ) : (
                                     <motion.div
                                         key="logo"
-                                        initial={{ opacity: 0, x: -6 }}
-                                        animate={{ opacity: 1, x: 0 }}
-                                        exit={{ opacity: 0, x: -6 }}
-                                        transition={{ duration: 0.15 }}
-                                        className="h-[22px] w-28"
+                                        initial={{opacity: 0, x: -6}}
+                                        animate={{opacity: 1, x: 0}}
+                                        exit={{opacity: 0, x: -6}}
+                                        transition={{duration: 0.15}}
+                                        className="absolute left-5 top-2 h-8 w-28"
                                     >
-                                        <Link
-                                            to={RoutesPath.MAIN}
-                                            onClick={() => setIsMenuOpen(false)}
-                                            className="block h-[22px] w-28"
-                                        >
-                                            <div className="relative h-[23px] w-[170px]">
-                                                <img
-                                                    className="absolute left-0 top-0 size-full"
-                                                    alt="Group"
-                                                    src="/img/logo.png"
-                                                />
-                                            </div>
-                                        </Link>
+                                        <svg width="112" height="24" viewBox="0 0 112 24" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <mask id="mask0_9592_10797" style={{maskType: 'alpha'} as any}
+                                                  maskUnits="userSpaceOnUse" x="0" y="0" width="19" height="24">
+                                                <path d="M0 0.630676H18.5875V23.3693H0V0.630676Z" fill="#1D2C62"/>
+                                            </mask>
+                                            <g mask="url(#mask0_9592_10797)">
+                                                <path fillRule="evenodd" clipRule="evenodd"
+                                                      d="M7.46875 12.0006C7.46875 7.01558 11.51 2.97308 16.4963 2.97308C17.215 2.97308 17.9163 3.05808 18.5875 3.21683C16.6238 1.60058 14.11 0.630585 11.3687 0.630585C5.09 0.630585 0 5.72184 0 12.0006C0 18.2793 5.09 23.3693 11.3687 23.3693C14.11 23.3693 16.6238 22.3993 18.5875 20.7843C17.9163 20.9431 17.215 21.0281 16.4963 21.0281C11.51 21.0281 7.46875 16.9856 7.46875 12.0006Z"
+                                                      fill="#1C222F"/>
+                                            </g>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                  d="M23.7939 2.29712V6.68587C24.8814 8.17712 25.5239 10.0134 25.5239 12.0009C25.5239 13.9871 24.8814 15.8246 23.7939 17.3159V21.7171H29.8539V7.00462H36.0202V21.7171H42.0802V2.29712H23.7939Z"
+                                                  fill="#1C222F"/>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                  d="M46.8403 2.29712V6.93212H52.4478V21.7171H58.5078V6.93212H64.1153V2.29712H46.8403Z"
+                                                  fill="#1C222F"/>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                  d="M68.88 2.29712V21.7171H74.9413V13.8084H81.2138V21.7171H87.2738V2.29712H81.2138V9.03087H74.9413V2.29712H68.88Z"
+                                                  fill="#1C222F"/>
+                                            <path fillRule="evenodd" clipRule="evenodd"
+                                                  d="M92.03 2.26239V11.9899V21.7174H98.09V14.0274H99.6788L104.274 21.7174H111.238L105.213 11.9899L111.238 2.26239H104.274L99.6788 9.95239H98.09V2.26239H92.03Z"
+                                                  fill="#1C222F"/>
+                                        </svg>
                                     </motion.div>
                                 )}
                             </AnimatePresence>
                             <button
                                 aria-label="Закрыть меню"
                                 onClick={() => setIsMenuOpen(false)}
-                                className="inline-flex items-center justify-center"
+                                className="absolute right-5 top-2 inline-flex items-center justify-center"
                             >
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M25 7L7 25" stroke="#1C222F" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
-                                    <path d="M25 25L7 7" stroke="#1C222F" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25 7L7 25" stroke="#1C222F" strokeWidth="2" strokeLinecap="square"
+                                          strokeLinejoin="round"/>
+                                    <path d="M25 25L7 7" stroke="#1C222F" strokeWidth="2" strokeLinecap="square"
+                                          strokeLinejoin="round"/>
                                 </svg>
                             </button>
                         </div>
 
-                        <nav className="space-y-8">
+                        <nav className="space-y-8 px-3">
                             {menuPanel === 'root' ? (
                                 <div className="space-y-3">
                                     <div
@@ -188,7 +227,8 @@ export const MainMobile = () => {
                                                     stroke-linejoin="round"/>
                                               </svg>
                                             </span>
-                                           <span className="text-gray-90 text-start text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Продукты</span>
+                                            <span
+                                                className="text-gray-90 text-start text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Продукты</span>
                                             <span className="absolute right-5">
                                                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
                                                       xmlns="http://www.w3.org/2000/svg">
@@ -198,18 +238,19 @@ export const MainMobile = () => {
                                         </button>
                                         <Link to={RoutesPath.ABOUT} onClick={() => setIsMenuOpen(false)}
                                               className="flex items-center gap-4 h-[80px] p-4">
-                                                                                        <span
-                                                                                            className="size-12 flex justify-center items-center">
-                                                                                            <svg width="18" height="22"
-                                                                                                 viewBox="0 0 18 22"
-                                                                                                 fill="none"
-                                                                                                 xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" clip-rule="evenodd"
-        d="M7.42905 11.0005C7.42905 6.61596 10.9077 3.06036 15.1999 3.06036C15.8186 3.06036 16.4222 3.13512 17 3.27475C15.3096 1.85317 13.1458 1 10.7861 1C5.38144 1 1 5.47804 1 11.0005C1 16.5231 5.38144 21 10.7861 21C13.1458 21 15.3096 20.1468 17 18.7263C16.4222 18.866 15.8186 18.9407 15.1999 18.9407C10.9077 18.9407 7.42905 15.3851 7.42905 11.0005Z"
-        stroke="#1C222F" stroke-width="1.6" stroke-linejoin="round"/>
-</svg>
-                                                                                        </span>
-                                            <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">О компании</span></Link>
+                                                    <span
+                                                        className="size-12 flex justify-center items-center">
+                                                        <svg width="18" height="22"
+                                                             viewBox="0 0 18 22"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M7.42905 11.0005C7.42905 6.61596 10.9077 3.06036 15.1999 3.06036C15.8186 3.06036 16.4222 3.13512 17 3.27475C15.3096 1.85317 13.1458 1 10.7861 1C5.38144 1 1 5.47804 1 11.0005C1 16.5231 5.38144 21 10.7861 21C13.1458 21 15.3096 20.1468 17 18.7263C16.4222 18.866 15.8186 18.9407 15.1999 18.9407C10.9077 18.9407 7.42905 15.3851 7.42905 11.0005Z"
+                                                                stroke="#1C222F" stroke-width="1.6" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                            <span
+                                                className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">О компании</span></Link>
                                         <Link to={RoutesPath.REVIEWS} onClick={() => setIsMenuOpen(false)}
                                               className="flex items-center gap-4 h-[80px] p-4">
                                                                                         <span
@@ -225,31 +266,33 @@ export const MainMobile = () => {
       stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                                                                                         </span>
-                                           <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Отзывы</span></Link>
+                                            <span
+                                                className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Отзывы</span></Link>
                                         <Link to={RoutesPath.WORK} onClick={() => setIsMenuOpen(false)}
                                               className="flex items-center gap-4 h-[80px] p-4">
-                                                                                        <span
-                                                                                            className="size-12 flex justify-center items-center">
-                                                                                            <svg width="24" height="24"
-                                                                                                 viewBox="0 0 24 24"
-                                                                                                 fill="none"
-                                                                                                 xmlns="http://www.w3.org/2000/svg">
-  <path d="M16.875 3.75H20.25V7.125" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
-        stroke-linejoin="round"/>
-  <path d="M16.875 20.25H20.25V16.875" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
-        stroke-linejoin="round"/>
-  <path d="M7.125 20.25H3.75V16.875" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
-        stroke-linejoin="round"/>
-  <path d="M7.125 3.75H3.75V7.125" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path
-      d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
-      stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-  <path
-      d="M7.5 15.75C8.02395 15.0514 8.70336 14.4844 9.48442 14.0938C10.2655 13.7033 11.1267 13.5 12 13.5C12.8733 13.5 13.7345 13.7033 14.5156 14.0938C15.2966 14.4844 15.976 15.0514 16.5 15.75"
-      stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-                                                                                        </span>
-                                           <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Вакансии</span></Link>
+                                                    <span
+                                                        className="size-12 flex justify-center items-center">
+                                                        <svg width="24" height="24"
+                                                             viewBox="0 0 24 24"
+                                                             fill="none"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                          <path d="M16.875 3.75H20.25V7.125" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
+                                                                stroke-linejoin="round"/>
+                                                          <path d="M16.875 20.25H20.25V16.875" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
+                                                                stroke-linejoin="round"/>
+                                                          <path d="M7.125 20.25H3.75V16.875" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round"
+                                                                stroke-linejoin="round"/>
+                                                          <path d="M7.125 3.75H3.75V7.125" stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          <path
+                                                              d="M12 13.5C13.6569 13.5 15 12.1569 15 10.5C15 8.84315 13.6569 7.5 12 7.5C10.3431 7.5 9 8.84315 9 10.5C9 12.1569 10.3431 13.5 12 13.5Z"
+                                                              stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                          <path
+                                                              d="M7.5 15.75C8.02395 15.0514 8.70336 14.4844 9.48442 14.0938C10.2655 13.7033 11.1267 13.5 12 13.5C12.8733 13.5 13.7345 13.7033 14.5156 14.0938C15.2966 14.4844 15.976 15.0514 16.5 15.75"
+                                                              stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                            <span
+                                                className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Вакансии</span></Link>
                                         <Link to={RoutesPath.BLOG} onClick={() => setIsMenuOpen(false)}
                                               className="flex items-center gap-4 h-[80px] rounded-b-2xl p-4">
                                                                                         <span
@@ -266,21 +309,21 @@ export const MainMobile = () => {
       stroke="#1C222F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                                                                                         </span>
-                                           <span className="text-gray-90 text-[20px] py-6  w-10/12">Блог</span></Link>
+                                            <span className="text-gray-90 text-[20px] py-6  w-10/12">Блог</span></Link>
                                     </div>
                                 </div>
                             ) : (
-                                <div className="space-y-3">
+                                <div className="space-y-3 ">
                                     <div className="text-base text-gray-40">Кредитование</div>
-                                    <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                                    <div className="divide-y bg-[#F9FBFF] divide-gray-10 rounded-[32px] border border-[#F3F4F7]">
                                         <Link
                                             to={RoutesPath.MICROCREDIT}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl bg-[#F9FBFF] p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 p-4"
                                         >
                       <span className="group flex items-center gap-3">
                         <svg
-                            className="size-5 text-[#F9FAFD] group-hover:text-white"
+                            className="size-12 text-[#F9FAFD] group-hover:text-white"
                             viewBox="0 0 64 64"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
@@ -308,27 +351,14 @@ export const MainMobile = () => {
                           Микрофинансовое кредитование
                         </span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.BUSINESSCREDIT}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
-                        <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <span className="flex items-center gap-3 w-full">
+                        <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
                           <path
                               d="M43 24H21C20.4477 24 20 24.4477 20 25V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V25C44 24.4477 43.5523 24 43 24Z"
@@ -344,28 +374,15 @@ export const MainMobile = () => {
                         </svg>
                        <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Кредитование бизнеса</span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.BANKCREDIT}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
+                      <span className="flex items-center gap-3 w-full">
                         <img
-                            className="size-5"
+                            className="size-12"
                             alt="icon"
                             src="/img/header/frame-84-4.svg"
                         />
@@ -373,27 +390,14 @@ export const MainMobile = () => {
                           Банковское кредитование
                         </span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.BNPL}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
-                        <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <span className="flex items-center gap-3 w-full">
+                        <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="64" height="64" rx="24" fill="#00CB82" fillOpacity="0.08"/>
                           <path
                               d="M43 22H21C20.4477 22 20 22.4477 20 23V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V23C44 22.4477 43.5523 22 43 22Z"
@@ -404,29 +408,17 @@ export const MainMobile = () => {
                               d="M37 30C37 31.3261 36.4732 32.5979 35.5355 33.5355C34.5979 34.4732 33.3261 35 32 35C30.6739 35 29.4021 34.4732 28.4645 33.5355C27.5268 32.5979 27 31.3261 27 30"
                               stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                       <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">BNPL</span>
+                       <span
+                           className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">BNPL</span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.AUTOCREDIT}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
-                        <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <span className="flex items-center gap-3 w-full">
+                        <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
                           <path
                               d="M24 41C25.6569 41 27 39.6569 27 38C27 36.3431 25.6569 35 24 35C22.3431 35 21 36.3431 21 38C21 39.6569 22.3431 41 24 41Z"
@@ -442,29 +434,17 @@ export const MainMobile = () => {
                           <path d="M42 31H17" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round"
                                 strokeLinejoin="round"/>
                         </svg>
-                       <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Автокредитование</span>
+                       <span
+                           className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">Автокредитование</span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.P2P}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
-                        <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <span className="flex items-center gap-3 w-full">
+                        <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
                           <path d="M27 28H21V22" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round"
                                 strokeLinejoin="round"/>
@@ -477,54 +457,29 @@ export const MainMobile = () => {
                               d="M43 36L39.465 39.535C37.4178 41.5821 34.6461 42.7396 31.751 42.7565C28.8559 42.7733 26.0709 41.6482 24 39.625"
                               stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                       <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">P2P-кредитование</span>
+                       <span
+                           className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">P2P-кредитование</span>
                       </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
-                                            </svg>
                                         </Link>
                                         <Link
                                             to={RoutesPath.ISLAMFINANCE}
                                             onClick={() => setIsMenuOpen(false)}
-                                            className="flex items-center gap-4 rounded-2xl p-4"
+                                            className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
                                         >
-                      <span className="flex items-center gap-3">
-                        <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
-                          <path
-                              d="M34.9999 41.8C33.1929 40.8788 31.6758 39.476 30.6162 37.7465C29.5567 36.017 28.9959 34.0282 28.9959 32C28.9959 29.9718 29.5567 27.983 30.6162 26.2535C31.6758 24.524 33.1929 23.1212 34.9999 22.2C33.3229 21.3451 31.4547 20.9348 29.5738 21.0084C27.693 21.082 25.8625 21.637 24.2574 22.6203C22.6524 23.6037 21.3266 24.9824 20.4067 26.6247C19.4869 28.2669 19.0039 30.1177 19.0039 32C19.0039 33.8823 19.4869 35.7331 20.4067 37.3754C21.3266 39.0176 22.6524 40.3963 24.2574 41.3797C25.8625 42.363 27.693 42.918 29.5738 42.9916C31.4547 43.0652 33.3229 42.6549 34.9999 41.8Z"
-                              stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-                          <path
-                              d="M38.1825 32L36 28.2913L40.0737 29.3L42.7987 26L43.1325 30.3313L47 32L43.1325 33.6688L42.7987 38L40.0737 34.7L36 35.7087L38.1825 32Z"
-                              stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                       <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">
-                          Исламское финансирование
-                        </span>
-                      </span>
-                                            <svg
-                                                width="20"
-                                                height="20"
-                                                viewBox="0 0 20 20"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M7 4L13 10L7 16"
-                                                    stroke="#9FA7BC"
-                                                    strokeWidth="2"
-                                                />
+                                          <span className="flex items-center gap-3 w-full">
+                                            <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
+                                              <path
+                                                  d="M34.9999 41.8C33.1929 40.8788 31.6758 39.476 30.6162 37.7465C29.5567 36.017 28.9959 34.0282 28.9959 32C28.9959 29.9718 29.5567 27.983 30.6162 26.2535C31.6758 24.524 33.1929 23.1212 34.9999 22.2C33.3229 21.3451 31.4547 20.9348 29.5738 21.0084C27.693 21.082 25.8625 21.637 24.2574 22.6203C22.6524 23.6037 21.3266 24.9824 20.4067 26.6247C19.4869 28.2669 19.0039 30.1177 19.0039 32C19.0039 33.8823 19.4869 35.7331 20.4067 37.3754C21.3266 39.0176 22.6524 40.3963 24.2574 41.3797C25.8625 42.363 27.693 42.918 29.5738 42.9916C31.4547 43.0652 33.3229 42.6549 34.9999 41.8Z"
+                                                  stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+                                              <path
+                                                  d="M38.1825 32L36 28.2913L40.0737 29.3L42.7987 26L43.1325 30.3313L47 32L43.1325 33.6688L42.7987 38L40.0737 34.7L36 35.7087L38.1825 32Z"
+                                                  stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
                                             </svg>
+                                           <span className="text-gray-90 text-[20px] py-6  w-10/12">
+                                              Исламское финансирование
+                                            </span>
+                                          </span>
                                         </Link>
                                     </div>
                                 </div>

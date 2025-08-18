@@ -189,7 +189,7 @@ export const HeaderSection = () => {
             </button>
           </div>
 
-          <nav className="space-y-8">
+          <nav className="space-y-8 p-3">
             <div className="space-y-3">
               <div className="text-base text-gray-40">Кредитование</div>
               <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
