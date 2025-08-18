@@ -56,7 +56,7 @@ export const FeedbackForm = () => {
       }`}
     >
       <div
-        className={`relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
+        className={`h-[105%] relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
           isVisible
             ? 'translate-y-0 scale-100 opacity-100'
             : 'translate-y-4 scale-95 opacity-0'
@@ -103,7 +103,7 @@ export const FeedbackForm = () => {
               </p>
             </div>
 
-            <div className="relative mt-[155px] inline-flex flex-[0_0_auto] flex-col items-start gap-5">
+            <div className="relative mt-[105px] inline-flex flex-[0_0_auto] flex-col items-start gap-5">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                 <div className="font-header-2-m relative mt-[-1.00px] w-[233px] text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)]">
                   +7 (495) 006-21-57

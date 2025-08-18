@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
 import { RoutesPath } from '../../routes-path.tsx';
@@ -89,343 +90,273 @@ export const MainMobile = () => {
         </div>
       </div>
 
-      {isMenuOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6">
-          <div className="mb-6 flex items-center justify-between">
-            <Link
-              to={RoutesPath.MAIN}
-              onClick={() => setIsMenuOpen(false)}
-              className="h-[22px] w-28"
-            >
-              <div className="relative h-[23px] w-[170px]">
-                <img
-                  className="absolute left-0 top-0 size-full"
-                  alt="Group"
-                  src="/img/logo.png"
-                />
-              </div>
-            </Link>
-            <button
-              aria-label="Закрыть меню"
-              onClick={() => setIsMenuOpen(false)}
-              className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10"
-            >
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+      <AnimatePresence>
+        {isMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.15 }}
+            className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6"
+          >
+            <div className="mb-6 flex items-center justify-between">
+              <Link
+                to={RoutesPath.MAIN}
+                onClick={() => setIsMenuOpen(false)}
+                className="h-[22px] w-28"
               >
-                <path
-                  d="M5 5L15 15M15 5L5 15"
-                  stroke="#1c222f"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                />
-              </svg>
-            </button>
-          </div>
-
-          <nav className="space-y-8">
-            <div className="space-y-3">
-              <div className="text-base text-gray-40">Кредитование</div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
-                  to={RoutesPath.MICROCREDIT}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl bg-[#F9FBFF] p-4 hover:bg-[#F5F7FF]"
+                <div className="relative h-[23px] w-[170px]">
+                  <img
+                    className="absolute left-0 top-0 size-full"
+                    alt="Group"
+                    src="/img/logo.png"
+                  />
+                </div>
+              </Link>
+              <button
+                aria-label="Закрыть меню"
+                onClick={() => setIsMenuOpen(false)}
+                className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10"
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
                 >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84-2.svg"
-                    />
-                    <span className="text-gray-90">
-                      Микрофинансовое кредитование
-                    </span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.BUSINESSCREDIT}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84-10.svg"
-                    />
-                    <span className="text-gray-90">Кредитование бизнеса</span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.BANKCREDIT}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84-4.svg"
-                    />
-                    <span className="text-gray-90">
-                      Банковское кредитование
-                    </span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.BNPL}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84.svg"
-                    />
-                    <span className="text-gray-90">BNPL</span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.AUTOCREDIT}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/trust/frame-84-20.svg"
-                    />
-                    <span className="text-gray-90">Автокредитование</span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.P2P}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/trust/frame-84-7.svg"
-                    />
-                    <span className="text-gray-90">P2P-кредитование</span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.ISLAMFINANCE}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/trust/frame-84-1.svg"
-                    />
-                    <span className="text-gray-90">
-                      Исламское финансирование
-                    </span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-              </div>
+                  <path
+                    d="M5 5L15 15M15 5L5 15"
+                    stroke="#1c222f"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                  />
+                </svg>
+              </button>
             </div>
 
-            <div className="space-y-3">
-              <div className="text-base text-gray-40">
-                Другое программное обеспечение
-              </div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
-                  to={RoutesPath.DATAUNLOAD}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84-8.svg"
-                    />
-                    <span className="text-gray-90">
-                      Выгрузка данных в кредитные бюро
-                    </span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+            <nav className="space-y-8">
+              <div className="space-y-3">
+                <div className="text-base text-gray-40">Кредитование</div>
+                <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                  <Link
+                    to={RoutesPath.MICROCREDIT}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl bg-[#F9FBFF] p-4 hover:bg-[#F5F7FF]"
                   >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <Link
-                  to={RoutesPath.FDATA}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
-                >
-                  <span className="flex items-center gap-3">
-                    <img
-                      className="size-5"
-                      alt="icon"
-                      src="/img/header/frame-84-6.svg"
-                    />
-                    <span className="text-gray-90">
-                      Модуль принятия решений
+                    <span className="group flex items-center gap-3">
+                      <svg
+                        className="size-5 text-[#F9FAFD] group-hover:text-white"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="64" height="64" rx="24" fill="currentColor" />
+                        <path d="M32 36C34.2091 36 36 34.2091 36 32C36 29.7909 34.2091 28 32 28C29.7909 28 28 29.7909 28 32C28 34.2091 29.7909 36 32 36Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M46 24H18V40H46V24Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M46 29C44.7509 28.7883 43.5985 28.1933 42.7026 27.2974C41.8067 26.4015 41.2117 25.2491 41 24" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M41 40C41.2117 38.7509 41.8067 37.5985 42.7026 36.7026C43.5985 35.8067 44.7509 35.2117 46 35" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M18 35C19.2491 35.2117 20.4015 35.8067 21.2974 36.7026C22.1933 37.5985 22.7883 38.7509 23 40" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M23 24C22.7883 25.2491 22.1933 26.4015 21.2974 27.2974C20.4015 28.1933 19.2491 28.7883 18 29" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">
+                        Микрофинансовое кредитование
+                      </span>
                     </span>
-                  </span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.BUSINESSCREDIT}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
                   >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-                <div className="flex items-center justify-between p-4">
-                  <span className="text-gray-90">Реконсиляция данных</span>
+                    <span className="flex items-center gap-3">
+                      <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                        <path d="M43 24H21C20.4477 24 20 24.4477 20 25V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V25C44 24.4477 43.5523 24 43 24Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M37 24V22C37 21.4696 36.7893 20.9609 36.4142 20.5858C36.0391 20.2107 35.5304 20 35 20H29C28.4696 20 27.9609 20.2107 27.5858 20.5858C27.2107 20.9609 27 21.4696 27 22V24" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M44 30.7888C40.3532 32.8988 36.2132 34.0066 32 34C27.7869 34.0067 23.647 32.8993 20 30.79" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M30 30H34" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">Кредитование бизнеса</span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.BANKCREDIT}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <img
+                        className="size-5"
+                        alt="icon"
+                        src="/img/header/frame-84-4.svg"
+                      />
+                      <span className="text-gray-90">
+                        Банковское кредитование
+                      </span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.BNPL}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="24" fill="#00CB82" fillOpacity="0.08" />
+                        <path d="M43 22H21C20.4477 22 20 22.4477 20 23V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V23C44 22.4477 43.5523 22 43 22Z" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M20 26H44" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M37 30C37 31.3261 36.4732 32.5979 35.5355 33.5355C34.5979 34.4732 33.3261 35 32 35C30.6739 35 29.4021 34.4732 28.4645 33.5355C27.5268 32.5979 27 31.3261 27 30" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">BNPL</span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.AUTOCREDIT}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                        <path d="M24 41C25.6569 41 27 39.6569 27 38C27 36.3431 25.6569 35 24 35C22.3431 35 21 36.3431 21 38C21 39.6569 22.3431 41 24 41Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M40 41C41.6569 41 43 39.6569 43 38C43 36.3431 41.6569 35 40 35C38.3431 35 37 36.3431 37 38C37 39.6569 38.3431 41 40 41Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M27 38H37" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M43 38H46C46.2652 38 46.5196 37.8946 46.7071 37.7071C46.8946 37.5196 47 37.2652 47 37V32C47 31.7348 46.8946 31.4804 46.7071 31.2929C46.5196 31.1054 46.2652 31 46 31H42L36.2925 25.2925C36.1051 25.1053 35.8511 25.0001 35.5863 25H21.535C21.3705 25.0001 21.2086 25.0408 21.0636 25.1184C20.9186 25.196 20.795 25.3082 20.7038 25.445L17 31V37C17 37.2652 17.1054 37.5196 17.2929 37.7071C17.4804 37.8946 17.7348 38 18 38H21" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M42 31H17" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">Автокредитование</span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.P2P}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                        <path d="M27 28H21V22" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M21 28L24.535 24.465C26.5822 22.4179 29.3539 21.2604 32.249 21.2435C35.1441 21.2267 37.9291 22.3519 40 24.375" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M37 36H43V42" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M43 36L39.465 39.535C37.4178 41.5821 34.6461 42.7396 31.751 42.7565C28.8559 42.7733 26.0709 41.6482 24 39.625" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">P2P-кредитование</span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
+                  <Link
+                    to={RoutesPath.ISLAMFINANCE}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-between rounded-2xl p-4 hover:bg-[#F5F7FF]"
+                  >
+                    <span className="flex items-center gap-3">
+                      <svg className="size-5" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                        <path d="M34.9999 41.8C33.1929 40.8788 31.6758 39.476 30.6162 37.7465C29.5567 36.017 28.9959 34.0282 28.9959 32C28.9959 29.9718 29.5567 27.983 30.6162 26.2535C31.6758 24.524 33.1929 23.1212 34.9999 22.2C33.3229 21.3451 31.4547 20.9348 29.5738 21.0084C27.693 21.082 25.8625 21.637 24.2574 22.6203C22.6524 23.6037 21.3266 24.9824 20.4067 26.6247C19.4869 28.2669 19.0039 30.1177 19.0039 32C19.0039 33.8823 19.4869 35.7331 20.4067 37.3754C21.3266 39.0176 22.6524 40.3963 24.2574 41.3797C25.8625 42.363 27.693 42.918 29.5738 42.9916C31.4547 43.0652 33.3229 42.6549 34.9999 41.8Z" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M38.1825 32L36 28.2913L40.0737 29.3L42.7987 26L43.1325 30.3313L47 32L43.1325 33.6688L42.7987 38L40.0737 34.7L36 35.7087L38.1825 32Z" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                      <span className="text-gray-90">
+                        Исламское финансирование
+                      </span>
+                    </span>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L13 10L7 16"
+                        stroke="#9FA7BC"
+                        strokeWidth="2"
+                      />
+                    </svg>
+                  </Link>
                 </div>
               </div>
-            </div>
-
-            <div className="space-y-3">
-              <div className="text-base text-gray-40">Услуги</div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
-                  to={RoutesPath.DEVELOPMENT}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-between p-4"
-                >
-                  <span className="text-gray-90">Разработка на заказ</span>
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7 4L13 10L7 16"
-                      stroke="#9FA7BC"
-                      strokeWidth="2"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </nav>
-        </div>
-      )}
+            </nav>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="w/full relative flex flex-[0_0_auto] flex-col items-center gap-9 self-stretch p-4">
         <div className="w/full relative flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 self-stretch">
