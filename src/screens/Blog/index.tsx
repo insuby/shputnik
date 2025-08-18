@@ -97,9 +97,26 @@ export const BlogList = () => {
                 </span>
               </div>
               <div className="flex w-full flex-col gap-2 py-2">
-                <span className="text-sm text-[#9ea7bb]">
-                  {format(new Date(post.createdAt), 'dd MMMM yyyy')}
-                </span>
+                <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
+                  <div className="inline-flex h-6 items-center justify-center gap-2 relative flex-[0_0_auto]">
+                    <img className="relative w-4 h-4" alt="Calendar blank"
+                         src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"/>
+                    <div
+                        className="relative w-fit [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-sm tracking-[0] leading-5 whitespace-nowrap">{format(new Date(post.createdAt), 'dd MMMM yyyy')}</div>
+                  </div>
+                  <div className="inline-flex h-6 items-center justify-center gap-2 relative flex-[0_0_auto]">
+                    <img className="relative w-4 h-4" alt="Eye"
+                         src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"/>
+                    <div
+                        className="font-normal text-sm leading-5 relative w-fit [font-family:'Roboto',Helvetica] text-gray-40 tracking-[0] whitespace-nowrap">{post.views ?? 0}</div>
+                  </div>
+                  <div className="inline-flex h-6 items-center justify_center gap-2 relative flex-[0_0_auto]">
+                    <img className="relative w-4 h-4" alt="Heart"
+                         src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"/>
+                    <div
+                        className="font-normal text-sm leading-5 relative w-fit [font-family:'Roboto',Helvetica] text-gray-40 tracking-[0] whitespace-nowrap">{post.likes ?? 0}</div>
+                  </div>
+                </div>
                 <p className="text-2xl font-bold text-[#1c222f]">
                   {post.title}
                 </p>
@@ -110,7 +127,7 @@ export const BlogList = () => {
         )}
       </div>
 
-      <div className="flex items-center justify-center gap-2 pt-4">
+      <div className="flex items-center justify-center gap-2 pt-4 mx-auto">
         <Pagination
           pageIndex={page}
           pageCount={pageCount}

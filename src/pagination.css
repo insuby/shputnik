@@ -12,7 +12,6 @@
 .page-item {
     display: flex;
     align-items: center;
-    justify-self: center;
 
     & [role=button] {
         width: 44px;
@@ -68,7 +67,9 @@
     display: flex;
     align-items: center;
     justify-self: center;
+    padding: 15px 17px;
     font-size: 0.875rem;
+
 }
 
 .page-item:first-child .page-link,
