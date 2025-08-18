@@ -482,6 +482,82 @@ export const MainMobile = () => {
                                           </span>
                                         </Link>
                                     </div>
+
+                                    <div className="space-y-3 mt-6">
+                                        <div className="text-base text-gray-40">Другое программное обеспечение</div>
+                                        <div className="divide-y bg-[#F9FBFF] divide-gray-10 rounded-[32px] border border-[#F3F4F7]">
+                                            <Link
+                                                to={RoutesPath.DATAUNLOAD}
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="flex items-center text-xl leading-[140%] gap-4 h-20 p-4"
+                                            >
+                                                <span className="flex items-center gap-3 w-full">
+                                                    <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                                                        <path d="M32 34V20" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M43 34V42H21V34" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M27 25L32 20L37 25" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                    </svg>
+                                                    <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">
+                                                        Выгрузка данных в кредитные бюро
+                                                    </span>
+                                                </span>
+                                            </Link>
+                                            <Link
+                                                to={RoutesPath.FDATA}
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="flex items-center text-xl leading-[140%] gap-4 h-20 p-4"
+                                            >
+                                                <span className="flex items-center gap-3 w-full">
+                                                    <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                                                        <path d="M32 37V44" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M21.6062 26C20.2855 28.2876 19.7564 30.9472 20.1012 33.5661C20.4459 36.1851 21.6452 38.6171 23.513 40.485C25.3808 42.3529 27.8128 43.5524 30.4317 43.8973C33.0506 44.2422 35.7102 43.7133 37.9979 42.3927C40.2857 41.072 42.0737 39.0334 43.0848 36.593C44.0958 34.1526 44.2734 31.4468 43.5899 28.8952C42.9065 26.3436 41.4002 24.0888 39.3047 22.4805C37.2092 20.8722 34.6415 20.0003 32 20V27C33.1006 27.0002 34.1704 27.3636 35.0435 28.0338C35.9165 28.704 36.544 29.6436 36.8287 30.7067C37.1134 31.7699 37.0393 32.8973 36.618 33.9141C36.1967 34.9309 35.4516 35.7802 34.4984 36.3304C33.5452 36.8806 32.437 37.1009 31.3458 36.9572C30.2546 36.8134 29.2414 36.3136 28.4631 35.5353C27.6849 34.757 27.1853 33.7437 27.0416 32.6525C26.898 31.5613 27.1184 30.4532 27.6687 29.5L21.6062 26Z" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M27.1687 33.295L20.4062 35.1062" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                    </svg>
+                                                    <span className="text-gray-90 text-[20px] border-b border-solid py-6 border-[#eeeff2] w-10/12">
+                                                        Настраиваемый модуль принятия решений
+                                                    </span>
+                                                </span>
+                                            </Link>
+                                            <Link
+                                                to={RoutesPath.FDATA}
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
+                                            >
+                                                <span className="flex items-center gap-3 w-full">
+                                                    <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                                                        <path d="M32 32C38.0751 32 43 29.3137 43 26C43 22.6863 38.0751 20 32 20C25.9249 20 21 22.6863 21 26C21 29.3137 25.9249 32 32 32Z" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M21 26V32C21 35.3138 25.925 38 32 38C38.075 38 43 35.3138 43 32V26" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M21 32V38C21 41.3138 25.925 44 32 44C38.075 44 43 41.3138 43 38V32" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                    </svg>
+                                                    <span className="text-gray-90 text-[20px] w-10/12">F-datа</span>
+                                                </span>
+                                            </Link>
+                                        </div>
+                                    </div>
+
+                                    <div className="space-y-3 mt-6">
+                                        <div className="text-base text-gray-40">Услуги</div>
+                                        <div className="divide-y bg-[#F9FBFF] divide-gray-10 rounded-[32px] border border-[#F3F4F7]">
+                                            <Link
+                                                to={RoutesPath.DEVELOPMENT}
+                                                onClick={() => setIsMenuOpen(false)}
+                                                className="flex items-center text-xl leading-[140%] gap-4 h-20 rounded-2xl p-4"
+                                            >
+                                                <span className="flex items-center gap-3 w-full">
+                                                    <svg className="size-12" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <rect width="64" height="64" rx="24" fill="#F9FAFD" />
+                                                        <path d="M24 27L18 32L24 37" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M40 27L46 32L40 37" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                        <path d="M36 21L28 43" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                                                    </svg>
+                                                    <span className="text-gray-90 text-[20px] w-10/12">Разработка на заказ</span>
+                                                </span>
+                                            </Link>
+                                        </div>
+                                    </div>
                                 </div>
                             )}
                         </nav>
