@@ -103,7 +103,7 @@ export const Work = () => {
 
   return (
     <main className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-[88px]">
-      <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
+      <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
         <h1 className="relative mt-[-1.00px] self-stretch text-[60px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Вакансии
         </h1>
@@ -125,7 +125,7 @@ export const Work = () => {
               value={job.id}
               className="mb-4 border-none"
             >
-              <Card className="w-[1216px] rounded-3xl bg-white">
+              <Card className="w-full md:w-[1216px] rounded-3xl bg-white">
                 <AccordionTrigger className="px-8 py-4 hover:no-underline">
                   <div className="flex w-full items-center justify-between">
                     <h2 className="font-header-2-m flex-1 text-left text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-90 [font-style:var(--header-2-m-font-style)]">

@@ -212,7 +212,7 @@ export const Analytics = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView1 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         Отчётность и аналитика
       </motion.div>

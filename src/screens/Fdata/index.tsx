@@ -491,7 +491,7 @@ export const Fdata = () => {
         <div className="relative flex w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
           <div className="relative flex flex-1 grow flex-col items-start gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
             <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
-              <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 f.Data в деталях
               </div>
 
@@ -532,7 +532,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Как мы помогаем финансам
           </motion.div>
@@ -778,7 +778,7 @@ export const Fdata = () => {
       <div className="relative h-[568px] w-[1376px]">
         <div className="absolute left-0 top-0 flex w-[1472px] items-center gap-[68px]">
           <div className="relative flex w-[496px] flex-col items-start justify-center gap-8">
-            <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Инновационная технология
               <br />
               для вашего бизнеса
@@ -997,7 +997,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView54 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Нашим клиентам
           </motion.div>

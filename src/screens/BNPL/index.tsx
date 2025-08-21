@@ -285,7 +285,7 @@ export const BNPL = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
-          <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Подойдет для
           </div>
         </motion.div>
@@ -664,7 +664,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView22 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+          className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
           Настраиваемые параметры
         </motion.div>
@@ -894,7 +894,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView31 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative w-[530px] text-5xl font-medium leading-[60px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+              className="relative w-[530px] text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
             >
               Управляйте <br />
               всеми платежами <br />в одном месте

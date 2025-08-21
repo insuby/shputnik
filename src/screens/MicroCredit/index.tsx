@@ -274,7 +274,7 @@ export const MicroCredit = () => {
         <div className="relative h-[568px] w-[1376px]">
           <div className="absolute left-0 top-0 flex w-[1472px] items-center gap-[68px]">
             <div className="relative flex w-[496px] flex-col items-start justify-center gap-8">
-              <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Основные механизмы работы
                 <br />с клиентами
               </div>

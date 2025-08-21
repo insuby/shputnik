@@ -1,4 +1,4 @@
-import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 
@@ -15,7 +15,7 @@ export const About = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] md:gap-[136px] px-4 md:px-8 md:pb-[88px] md:pb-[136px] pt-6 md:pt-8">
         <div className="relative mx-[-8.00px] inline-flex flex-[0_0_auto] flex-col items-center gap-[88px]">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-            <div className="relative mt-[-1.00px] w-full md:w-[1376px] text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] w-full md:w-[1376px] text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Представительства
             </div>
 
@@ -25,7 +25,7 @@ export const About = () => {
             </p>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 flex-col md:flex-row">
+          <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 flex-col md:!flex-row">
             <div className="relative flex w-full flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6 w-full">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">

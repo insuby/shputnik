@@ -829,7 +829,7 @@ export const BankCredit = () => {
           <motion.div
             ref={refAuto3}
             variants={fadeInUp}
-            className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Автоматизация различных кредитных продуктов
           </motion.div>
@@ -956,7 +956,7 @@ export const BankCredit = () => {
       >
         <motion.div
           variants={fadeInUp}
-          className="relative mt-[-1.00px] w-[832px] text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+          className="relative mt-[-1.00px] w-[832px] text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
           Настройте свой процесс
           <br />

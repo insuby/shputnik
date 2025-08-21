@@ -107,7 +107,7 @@ export const BlogPost = () => {
                                 className="font-normal text-sm leading-5 relative w-fit [font-family:'Roboto',Helvetica] text-gray-40 tracking-[0] whitespace-nowrap">{post.likes ?? 0}</div>
                         </div>
                     </div>
-                    <p className="relative w-[800px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-5xl tracking-[0] leading-[60px]">{post.title}</p>
+                    <p className="relative w-[800px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[36px] md:text-5xl tracking-[0] leading-[60px]">{post.title}</p>
                 </div>
                 <div className="relative self-stretch w-full h-[456px] rounded-3xl overflow-hidden"
                      style={{background: `url(${buildMediaUrl(post.image?.url)}) 50% 50% / cover`}}>
