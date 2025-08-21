@@ -86,7 +86,7 @@ export const ZaimChecker = () => {
             src="/img/zain-checker/frame-18-2.svg"
           />
 
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+          <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
               <motion.div
                 ref={ref1}

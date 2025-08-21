@@ -92,7 +92,7 @@ export const FeedbackForm = () => {
         <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch overflow-hidden rounded-[32px] p-[88px]">
           <div className="relative flex flex-1 grow flex-col items-start gap-[88px]">
             <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
-              <div className="relative mt-[-1.00px] self-stretch text-[60px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Свяжитесь с нами
               </div>
 

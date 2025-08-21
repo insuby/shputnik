@@ -32,7 +32,7 @@ export const Autocredit = () => {
   const inView10 = useInView(ref10, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-12">
           <img
@@ -42,14 +42,14 @@ export const Autocredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+              <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.div
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Займ под залог автомобиля
                 </motion.div>
@@ -59,7 +59,7 @@ export const Autocredit = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+                  className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
                 >
                   Программное обеспечение для автоматизации залоговых займов
                   Программное обеспечение для автоматизации залоговых займов

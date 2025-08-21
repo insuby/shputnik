@@ -1,3 +1,6 @@
+import { useRef, useState } from 'react';
+import Slider from 'react-slick';
+
 export const Technoligies = () => {
   const sliderRef = useRef<Slider>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -13,13 +16,13 @@ export const Technoligies = () => {
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
       <div className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
           Технологии разработки
         </div>
       </div>
 
-      <div className="relative flex w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl ">
-        <div className=" w-1/2">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 rounded-3xl md:w-[1376px] ">
+        <div className="w-full md:w-1/2">
           <Slider
             ref={sliderRef}
             dots={false}
@@ -28,12 +31,11 @@ export const Technoligies = () => {
             centerMode={true}
             centerPadding="0px"
             arrows={false}
-            className="p2p-slider"
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
             <div className="px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Figma
                   </div>
@@ -44,7 +46,7 @@ export const Technoligies = () => {
                     и удобной демонстрации заказчику.
                   </p>
                 </div>
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React.js
                   </div>
@@ -55,7 +57,7 @@ export const Technoligies = () => {
                     высокие нагрузки.
                   </p>
                 </div>
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React Native
                   </div>
@@ -71,7 +73,7 @@ export const Technoligies = () => {
 
             <div className="px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Java
                   </div>
@@ -82,7 +84,7 @@ export const Technoligies = () => {
                     данных и интеграциями.
                   </p>
                 </div>
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Python
                   </div>
@@ -98,7 +100,7 @@ export const Technoligies = () => {
 
             <div className="px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Blockchain / Web3
                   </div>
@@ -109,7 +111,7 @@ export const Technoligies = () => {
                     Polygon, Solana и другими экосистемами.
                   </p>
                 </div>
-                <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Криптопродукты
                   </div>
@@ -199,7 +201,7 @@ export const Technoligies = () => {
         </div>
 
         <img
-          className="relative flex-1 grow self-stretch"
+          className="relative hidden flex-1 grow self-stretch md:flex"
           alt="Frame"
           src="/img/development/frame-21.svg"
         />

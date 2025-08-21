@@ -42,9 +42,9 @@ export const BlogList = () => {
   const pageCount = useMemo(() => Math.max(1, Math.ceil(total / 8)), [total]);
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-[88px]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]">
       <div className="relative flex flex-[0_0_auto] flex-col items-start gap-8">
-        <h1 className="relative mt-[-1.00px] self-stretch text-[60px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <h1 className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Блог
         </h1>
         <div className="flex w-full items-center gap-2 overflow-x-auto">
@@ -74,7 +74,7 @@ export const BlogList = () => {
         </div>
       </div>
 
-      <div className="grid w-full grid-cols-3 gap-6">
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
         {loading ? (
           <div className="col-span-full flex items-center justify-center py-12 text-[#55607a]">
             Загрузка…
@@ -84,7 +84,7 @@ export const BlogList = () => {
             <Link
               to={`/blog/${post.documentId}`}
               key={post.documentId}
-              className="flex flex-col gap-4 rounded-3xl bg-gray-10 p-3 md:flex-row"
+              className="flex flex-col gap-4 rounded-3xl bg-gray-10 md:flex-row p-3"
             >
               <div
                 className="relative h-72 w-full rounded-2xl bg-cover bg-center"
@@ -97,24 +97,36 @@ export const BlogList = () => {
                 </span>
               </div>
               <div className="flex w-full flex-col gap-2 py-2">
-                <div className="flex items-start gap-6 relative self-stretch w-full flex-[0_0_auto]">
-                  <div className="inline-flex h-6 items-center justify-center gap-2 relative flex-[0_0_auto]">
-                    <img className="relative w-4 h-4" alt="Calendar blank"
-                         src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"/>
-                    <div
-                        className="relative w-fit [font-family:'Roboto',Helvetica] font-normal text-gray-40 text-sm tracking-[0] leading-5 whitespace-nowrap">{format(new Date(post.createdAt), 'dd MMMM yyyy')}</div>
+                <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+                  <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
+                    <img
+                      className="relative size-4"
+                      alt="Calendar blank"
+                      src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"
+                    />
+                    <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                      {format(new Date(post.createdAt), 'dd MMMM yyyy')}
+                    </div>
                   </div>
-                  <div className="inline-flex h-6 items-center justify-center gap-2 relative flex-[0_0_auto]">
-                    <img className="relative w-4 h-4" alt="Eye"
-                         src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"/>
-                    <div
-                        className="font-normal text-sm leading-5 relative w-fit [font-family:'Roboto',Helvetica] text-gray-40 tracking-[0] whitespace-nowrap">{post.views ?? 0}</div>
+                  <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
+                    <img
+                      className="relative size-4"
+                      alt="Eye"
+                      src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"
+                    />
+                    <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                      {post.views ?? 0}
+                    </div>
                   </div>
-                  <div className="inline-flex h-6 items-center justify_center gap-2 relative flex-[0_0_auto]">
-                    <img className="relative w-4 h-4" alt="Heart"
-                         src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"/>
-                    <div
-                        className="font-normal text-sm leading-5 relative w-fit [font-family:'Roboto',Helvetica] text-gray-40 tracking-[0] whitespace-nowrap">{post.likes ?? 0}</div>
+                  <div className="justify_center relative inline-flex h-6 flex-[0_0_auto] items-center gap-2">
+                    <img
+                      className="relative size-4"
+                      alt="Heart"
+                      src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"
+                    />
+                    <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                      {post.likes ?? 0}
+                    </div>
                   </div>
                 </div>
                 <p className="text-2xl font-bold text-[#1c222f]">
@@ -127,7 +139,7 @@ export const BlogList = () => {
         )}
       </div>
 
-      <div className="flex items-center justify-center gap-2 pt-4 mx-auto">
+      <div className="mx-auto flex items-center justify-center gap-2 md:pt-4">
         <Pagination
           pageIndex={page}
           pageCount={pageCount}

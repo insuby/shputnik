@@ -46,7 +46,7 @@ export const MicroCredit = () => {
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-12">
           <img
@@ -61,10 +61,10 @@ export const MicroCredit = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
             >
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <div className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+              <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+                <div className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Микрофинансовое кредитование
                 </div>
 
@@ -272,8 +272,8 @@ export const MicroCredit = () => {
         className="relative h-[652px] w-[1376px]"
       >
         <div className="relative h-[568px] w-[1376px]">
-          <div className="absolute left-0 top-0 flex w-[1472px] items-center gap-[68px]">
-            <div className="relative flex w-[496px] flex-col items-start justify-center gap-8">
+          <div className="absolute left-0 top-0 flex w-full md:w-[1472px] items-center gap-[68px]">
+            <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-8">
               <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Основные механизмы работы
                 <br />с клиентами
@@ -300,7 +300,7 @@ export const MicroCredit = () => {
                 centerMode={true}
                 centerPadding="0px"
                 arrows={false}
-                className="p2p-slider"
+
               >
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-[443px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">

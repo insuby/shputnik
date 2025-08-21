@@ -9,25 +9,23 @@ export const About = () => {
     setIsOpen(true);
   };
   return (
-    <div
-      className="relative inline-flex flex-col items-start justify-center"
-    >
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] md:gap-[136px] px-4 md:px-8 md:pb-[88px] md:pb-[136px] pt-6 md:pt-8">
-        <div className="relative mx-[-8.00px] inline-flex flex-[0_0_auto] flex-col items-center gap-[88px]">
+    <div className="relative inline-flex flex-col items-start justify-center">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:pt-8">
+        <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-            <div className="relative mt-[-1.00px] w-full md:w-[1376px] text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
               Представительства
             </div>
 
             <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              По любым вопросам вы можете обратиться в один
-              из наших офисов или связаться с нашей командой
+              По любым вопросам вы можете обратиться в один из наших офисов или
+              связаться с нашей командой
             </p>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 flex-col md:!flex-row">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row">
             <div className="relative flex w-full flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6 w-full">
+              <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Москва
@@ -63,7 +61,7 @@ export const About = () => {
             </div>
 
             <div className="relative flex w-full flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6 w-full">
+              <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Мурманск

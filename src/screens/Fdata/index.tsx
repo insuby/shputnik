@@ -130,7 +130,7 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-12">
           <img
@@ -145,16 +145,16 @@ export const Fdata = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
             >
-              <div className="relative flex w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+                <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                   <div className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     ПО для <br />
                     реконсиляции данных
                   </div>
 
-                  <p className="relative w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]">
+                  <p className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]">
                     Автоматизация всех ваших процессов обработки <br />
                     финансовых данных с минимальной зависимостью <br />
                     от персонала
@@ -554,14 +554,14 @@ export const Fdata = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6"
+          className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref10}
@@ -648,7 +648,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref19}
@@ -776,8 +776,8 @@ export const Fdata = () => {
         text1="Заказать демо"
       />
       <div className="relative h-[568px] w-[1376px]">
-        <div className="absolute left-0 top-0 flex w-[1472px] items-center gap-[68px]">
-          <div className="relative flex w-[496px] flex-col items-start justify-center gap-8">
+        <div className="absolute left-0 top-0 flex w-full md:w-[1472px] items-center gap-[68px]">
+          <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-8">
             <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Инновационная технология
               <br />
@@ -805,10 +805,10 @@ export const Fdata = () => {
               centerMode={true}
               centerPadding="0px"
               arrows={false}
-              className="p2p-slider"
+
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-[443px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-[443px]"
                     alt="Vector"
@@ -929,7 +929,7 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[512px] flex h-14 w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+        <div className="absolute left-[725px] top-[512px] hidden md:flex h-14 w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
           <button
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

@@ -71,7 +71,7 @@ export const FrameWrapper = () => {
           onClick={handleMicroCreditClick}
           className="relative flex cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-12  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
         >
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+          <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
             <p
               id="animate_12_left"
               className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
