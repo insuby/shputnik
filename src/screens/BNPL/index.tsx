@@ -15,7 +15,6 @@ import { Zaim } from '../../widgets/zaim.tsx';
 
 export const BNPL = () => {
   const { setIsOpen } = useFeedbackForm();
-  const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
@@ -52,9 +51,7 @@ export const BNPL = () => {
   const ref35 = useRef(null);
   const ref36 = useRef(null);
   const ref37 = useRef(null);
-  const ref38 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
@@ -91,14 +88,13 @@ export const BNPL = () => {
   const inView35 = useInView(ref35, { once: true, margin: '-100px' });
   const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   const inView37 = useInView(ref37, { once: true, margin: '-100px' });
-  const inView38 = useInView(ref37, { once: true, margin: '-100px' });
 
   const onClick = () => {
     setIsOpen(true);
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-12">
           <img
@@ -115,7 +111,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Автоматизация BNPL и PoS-кредитования
                 </motion.div>
@@ -283,7 +279,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView7 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Подойдет для

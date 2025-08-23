@@ -7,12 +7,13 @@ import { Check10 } from '../../components/ui/check10.tsx';
 import { Graph } from '../../components/ui/graph.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form/use-feedback-form.ts';
+import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
+import {isMobile} from "../../App.tsx";
 
 export const P2P = () => {
   const ref1 = useRef(null);
@@ -73,7 +74,7 @@ export const P2P = () => {
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-12">
           <img
@@ -433,7 +434,7 @@ export const P2P = () => {
 
             <button
               onClick={handleTryClick}
-              className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+              className="all-[unset]  w-full md:w-fit  relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Попробовать
@@ -441,13 +442,13 @@ export const P2P = () => {
             </button>
           </div>
 
-          <div className="w-[915px]">
+          <div className="w-full md:w-[915px]">
             <Slider
               ref={sliderRef}
               dots={false}
               infinite={true}
               speed={500}
-              slidesToShow={2}
+              slidesToShow={isMobile ? 1 : 2}
               slidesToScroll={1}
               centerMode={true}
               centerPadding="0px"
@@ -622,7 +623,7 @@ export const P2P = () => {
               <div className="px-3">
                 <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-10 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
+                    <div className="relative left-0 md:left-10 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
                       <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                           <img

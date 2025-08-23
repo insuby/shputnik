@@ -21,7 +21,7 @@ export const Zaim = () => {
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch"
     >
-      <div className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+      <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
         <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Управление займами
         </div>

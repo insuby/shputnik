@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Cta } from './Cta.tsx';
+import { isMobile } from '../../App.tsx';
 
 export const Fdata = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -39,26 +40,6 @@ export const Fdata = () => {
   const ref28 = useRef(null);
   const ref29 = useRef(null);
   const ref30 = useRef(null);
-  const ref31 = useRef(null);
-  const ref32 = useRef(null);
-  const ref33 = useRef(null);
-  const ref34 = useRef(null);
-  const ref35 = useRef(null);
-  const ref36 = useRef(null);
-  const ref37 = useRef(null);
-  const ref38 = useRef(null);
-  const ref39 = useRef(null);
-  const ref40 = useRef(null);
-  const ref41 = useRef(null);
-  const ref42 = useRef(null);
-  const ref43 = useRef(null);
-  const ref44 = useRef(null);
-  const ref45 = useRef(null);
-  const ref46 = useRef(null);
-  const ref47 = useRef(null);
-  const ref48 = useRef(null);
-  const ref49 = useRef(null);
-  const ref50 = useRef(null);
   const ref51 = useRef(null);
   const ref52 = useRef(null);
   const ref53 = useRef(null);
@@ -92,26 +73,6 @@ export const Fdata = () => {
   const inView28 = useInView(ref28, { once: true, margin: '-100px' });
   const inView29 = useInView(ref29, { once: true, margin: '-100px' });
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
-  const inView31 = useInView(ref31, { once: true, margin: '-100px' });
-  const inView32 = useInView(ref32, { once: true, margin: '-100px' });
-  const inView33 = useInView(ref33, { once: true, margin: '-100px' });
-  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
-  const inView35 = useInView(ref35, { once: true, margin: '-100px' });
-  const inView36 = useInView(ref36, { once: true, margin: '-100px' });
-  const inView37 = useInView(ref37, { once: true, margin: '-100px' });
-  const inView38 = useInView(ref38, { once: true, margin: '-100px' });
-  const inView39 = useInView(ref39, { once: true, margin: '-100px' });
-  const inView40 = useInView(ref40, { once: true, margin: '-100px' });
-  const inView41 = useInView(ref41, { once: true, margin: '-100px' });
-  const inView42 = useInView(ref42, { once: true, margin: '-100px' });
-  const inView43 = useInView(ref43, { once: true, margin: '-100px' });
-  const inView44 = useInView(ref44, { once: true, margin: '-100px' });
-  const inView45 = useInView(ref45, { once: true, margin: '-100px' });
-  const inView46 = useInView(ref46, { once: true, margin: '-100px' });
-  const inView47 = useInView(ref47, { once: true, margin: '-100px' });
-  const inView48 = useInView(ref48, { once: true, margin: '-100px' });
-  const inView49 = useInView(ref49, { once: true, margin: '-100px' });
-  const inView50 = useInView(ref50, { once: true, margin: '-100px' });
   const inView51 = useInView(ref51, { once: true, margin: '-100px' });
   const inView52 = useInView(ref52, { once: true, margin: '-100px' });
   const inView53 = useInView(ref53, { once: true, margin: '-100px' });
@@ -130,7 +91,7 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-12">
           <img
@@ -525,7 +486,7 @@ export const Fdata = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView5 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref6}
@@ -794,13 +755,13 @@ export const Fdata = () => {
             </button>
           </div>
 
-          <div className="w-[915px]">
+          <div className="w-full md:w-[915px]">
             <Slider
               ref={sliderRef}
               dots={false}
               infinite={true}
               speed={500}
-              slidesToShow={2}
+              slidesToShow={isMobile ? 1 : 2}
               slidesToScroll={1}
               centerMode={true}
               centerPadding="0px"
@@ -990,7 +951,7 @@ export const Fdata = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
         <div
           ref={ref53}
-          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref54}

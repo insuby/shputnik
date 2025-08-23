@@ -11,9 +11,9 @@ export const MainMobile = () => {
 
     return (
         <>
-            <div className="relative flex h-[853px]  items-center gap-2.5 px-3 py-0">
+            <div className="relative flex items-center gap-2.5 -mx-2 -mt-5">
                 <div
-                    className="-mt-[88px] relative flex flex-1 grow flex-col items-center gap-[52px] self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-4 py-9">
+                    className=" relative flex flex-1 grow flex-col items-center gap-[52px] self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-4 py-9">
                     <img
                         className="absolute left-[-444px] top-[147px] h-[1060px] w-[1108px]"
                         alt="Vector"

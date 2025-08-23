@@ -10,7 +10,7 @@ export const About = () => {
   };
   return (
     <div className="relative inline-flex flex-col items-start justify-center">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:md:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
             <div className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">

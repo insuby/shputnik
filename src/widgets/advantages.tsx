@@ -32,7 +32,7 @@ export const Advantages = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+        className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
       >
         <motion.div
           ref={ref3}
@@ -61,7 +61,7 @@ export const Advantages = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView5 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-        className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+        className="relative flex md:!flex-row flex-col w-full flex-[0_0_auto] items-start gap-6 self-stretch"
       >
         <motion.div
           ref={ref6}

@@ -100,9 +100,9 @@ export const Dataunload = () => {
   };
 
   return (
-    <div className="relative flex w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] px-8 pb-[136px] pt-8">
+    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-12">
+        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-[1108px]"
             alt="Vector"
@@ -123,7 +123,7 @@ export const Dataunload = () => {
                     Выгрузка данных <br />в кредитные бюро
                   </p>
 
-                  <p className="relative w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
+                  <p className="relative w-full text-center md:text-left md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
                     Программа для конвертации и выгрузки данных в кредитные бюро
                     Программа для конвертации и выгрузки данных в кредитные бюро
                   </p>
@@ -279,7 +279,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView11 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref12}
@@ -440,7 +440,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView27 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         >
           <motion.div
             ref={ref28}
@@ -810,7 +810,7 @@ export const Dataunload = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView42 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
-              className="relative w-[752px] text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica]"
+              className="relative w-full md:w-[752px] text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica]"
             >
               Программа регулярно обновляет формат обмена в соответствие <br />с
               актуальными требованиями каждого КБ.

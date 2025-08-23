@@ -7,10 +7,13 @@ import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+// @ts-ignore
 import vector from './images/Vector 1.png';
+// @ts-ignore
 import code from './images/code.png';
 import { Technoligies } from './technoligies.tsx';
 import { Works } from './works.tsx';
+import {isMobile} from "../../App.tsx";
 
 export const Development = () => {
   const sliderRef = useRef<Slider>(null);
@@ -34,7 +37,7 @@ export const Development = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] md:w-[1440px] md:gap-[136px] md:px-8 md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] md:w-[1440px] md:gap-[136px] md:px-8 md:md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className=" relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 md:mt-0 md:h-[628px] md:p-12">
           <img
@@ -132,7 +135,7 @@ export const Development = () => {
       </div>
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
-        <div className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+        <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
             Разработка&nbsp;&nbsp;проектов
           </div>
@@ -278,13 +281,13 @@ export const Development = () => {
             </button>
           </div>
 
-          <div className="w-[915px]">
+          <div className="w-full md:w-[915px]">
             <Slider
               ref={sliderRef}
               dots={false}
               infinite={true}
               speed={500}
-              slidesToShow={2}
+              slidesToShow={isMobile ? 1 : 2}
               slidesToScroll={1}
               centerMode={true}
               centerPadding="0px"
@@ -616,7 +619,7 @@ export const Development = () => {
       <Technoligies />
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
-        <div className="relative flex w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+        <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
             С нами комфортно
           </div>

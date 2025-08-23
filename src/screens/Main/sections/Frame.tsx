@@ -27,7 +27,7 @@ export const Frame = () => {
 
   return (
     <div className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
-      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
+      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 md:pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
         <img
           className="absolute left-1/2 top-[220px] hidden h-[560px] w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
           alt="Vector"

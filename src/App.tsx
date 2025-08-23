@@ -35,6 +35,8 @@ function checkIfMobile() {
         (window.innerWidth <= 768 && window.innerHeight <= 1024);
 }
 
+export  const isMobile = checkIfMobile();
+
 export const App = () => {
     return (
         <BrowserRouter>
@@ -45,7 +47,6 @@ export const App = () => {
 };
 
 const Pages = () => {
-    const isMobile = checkIfMobile();
     return (
         <Routes>
             <Route path="*" element={<Navigate replace to={RoutesPath.MAIN}/>}/>

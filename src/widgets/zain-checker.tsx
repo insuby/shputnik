@@ -3,15 +3,9 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 import { Check10 } from '../components/ui/check10.tsx';
-import { useFeedbackForm } from './feedback-form/use-feedback-form.ts';
+import {CrmCapabilities} from "./crm-capabilities.tsx";
 
 export const ZaimChecker = () => {
-  const { setIsOpen } = useFeedbackForm();
-
-  const handleDemoClick = () => {
-    setIsOpen(true);
-  };
-
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -423,34 +417,7 @@ export const ZaimChecker = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-12">
-        <img
-          className="absolute left-[420px] top-[-385px] h-[1060px] w-[1108px]"
-          alt="Vector"
-          src="/img/zain-checker/vector-1-1.svg"
-        />
-
-        <div className="relative flex flex-1 grow flex-col items-start gap-3">
-          <div className="relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-            Возможности CRM
-          </div>
-
-          <p className="relative w-[752px] text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica]">
-            Сохранение информации о коммуникациях и действиях в системе,
-            автоматизация стратегии взаимодействия с клиентом, интеграция
-            дополнительных сервисов для повышения продаж
-          </p>
-        </div>
-
-        <button
-          onClick={handleDemoClick}
-          className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4"
-        >
-          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Демонстрация
-          </div>
-        </button>
-      </div>
+    <CrmCapabilities />
     </div>
   );
 };

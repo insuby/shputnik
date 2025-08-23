@@ -57,7 +57,7 @@ const reviews = [
 ];
 export const Reviews = () => {
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] p-6 md:p-[88px]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] p-0 md:p-[88px]">
       <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
         <div className="relative mt-[-1.00px] self-stretch text-[32px] md: text-[36px] md:text-5xl  font-medium leading-[36px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Отзывы
