@@ -36,7 +36,7 @@ export const Autocredit = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-8 md:p-12">
           <img
-            className="absolute -top-16 left-[430px] h-[842px]w-full md:w-[954px]"
+            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
             alt="Vector"
             src="/img/autocredit/vector-1-9.svg"
           />
@@ -75,7 +75,7 @@ export const Autocredit = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="absolute left-[704px] top-[154px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
           >
-            <div className="relative mt-2 flexw-full md:w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
+            <div className="relative mt-2 flex w-full md:w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Калькулятор
               </div>
@@ -98,7 +98,7 @@ export const Autocredit = () => {
                   />
 
                   <img
-                    className="absolute left-[3px] top-[5px] h-[7px]w-full md:w-[13px] -rotate-90"
+                    className="absolute left-[3px] top-[5px] h-[7px] w-full md:w-[13px] -rotate-90"
                     alt="Vector"
                     src="/img/autocredit/vector.svg"
                   />
@@ -154,7 +154,7 @@ export const Autocredit = () => {
                     />
 
                     <img
-                      className="absolute left-[3px] top-[5px] h-[7px]w-full md:w-[13px] -rotate-90"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full md:w-[13px] -rotate-90"
                       alt="Vector"
                       src="/img/autocredit/vector.svg"
                     />
@@ -179,7 +179,7 @@ export const Autocredit = () => {
                     />
 
                     <img
-                      className="absolute left-[3px] top-[5px] h-[7px]w-full md:w-[13px] -rotate-90"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full md:w-[13px] -rotate-90"
                       alt="Vector"
                       src="/img/autocredit/vector.svg"
                     />
@@ -206,7 +206,7 @@ export const Autocredit = () => {
                     />
 
                     <img
-                      className="absolute left-[3px] top-[5px] h-[7px]w-full md:w-[13px] -rotate-90"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full md:w-[13px] -rotate-90"
                       alt="Vector"
                       src="/img/autocredit/vector.svg"
                     />
@@ -231,7 +231,7 @@ export const Autocredit = () => {
                     />
 
                     <img
-                      className="absolute left-[3px] top-[5px] h-[7px]w-full md:w-[13px] -rotate-90"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full md:w-[13px] -rotate-90"
                       alt="Vector"
                       src="/img/autocredit/vector.svg"
                     />
@@ -295,13 +295,13 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="relative flexw-full md:w-[393.9px] flex-col items-start gap-[23.92px] self-stretch p-[29.9px]">
+            <div className="relative flex w-full md:w-[393.9px] flex-col items-start gap-[23.92px] self-stretch p-[29.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Выберите условия
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[20.5px]">
-                <div className="relative mx-[-1.49px] mt-[-1.49px] flexw-full md:w-[337.09px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px]">
+                <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full md:w-[337.09px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px]">
                   <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -328,7 +328,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Сумма
                         </div>
@@ -338,7 +338,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Ставка
                         </div>
@@ -351,7 +351,7 @@ export const Autocredit = () => {
                   </div>
                 </div>
 
-                <div className="relative flexw-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                <div className="relative flex w-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                   <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -370,7 +370,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Сумма
                         </div>
@@ -380,7 +380,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Ставка
                         </div>
@@ -393,7 +393,7 @@ export const Autocredit = () => {
                   </div>
                 </div>
 
-                <div className="relative flexw-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                <div className="relative flex w-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                   <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -412,7 +412,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[91.19px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Сумма
                         </div>
@@ -422,7 +422,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flexw-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
+                      <div className="relative flex w-full md:w-[59.8px] flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           Ставка
                         </div>
@@ -439,7 +439,7 @@ export const Autocredit = () => {
           </motion.div>
 
           <img
-            className="absolute left-[1053px] top-44 h-[568px]w-full md:w-[619px]"
+            className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
             alt="Vector"
             src="/img/autocredit/vector-4-3.svg"
           />

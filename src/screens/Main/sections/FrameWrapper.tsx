@@ -35,7 +35,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
-          className="relative mt-[-1.00px]w-full md:w-[590px] text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+          className="relative mt-[-1.00px] w-full md:w-[590px] text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
         >
           специализируемся на
         </motion.div>
@@ -111,9 +111,9 @@ export const FrameWrapper = () => {
         </motion.div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc]">
-          <div className="relative h-[548px]w-full md:w-[690px]">
+          <div className="relative h-[548px] w-full md:w-[690px]">
             <img
-              className="absolute left-0 top-0 h-[520px]w-full md:w-[690px]"
+              className="absolute left-0 top-0 h-[520px] w-full md:w-[690px]"
               alt="Vector"
               src="/img/vector-1-7.svg"
             />
@@ -124,7 +124,7 @@ export const FrameWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-              className="absolute left-[75px] top-[69px] flexw-full md:w-[324px] flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4"
+              className="absolute left-[75px] top-[69px] flex w-full md:w-[324px] flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -230,14 +230,14 @@ export const FrameWrapper = () => {
                 onClick={onClick}
                 className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-8 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
               >
-                <div className="relative mt-[-1.00px]w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                   Оформить займ
                 </div>
               </button>
             </motion.div>
 
             <img
-              className="absolute left-0 top-0 h-[520px]w-full md:w-[690px]"
+              className="absolute left-0 top-0 h-[520px] w-full md:w-[690px]"
               alt="Vector"
               src="/img/vector-3-1.svg"
             />
@@ -256,11 +256,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-blue-50" />
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Текущее
                   </div>
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     48,456₽
                   </div>
                 </div>
@@ -268,11 +268,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-green-50" />
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Основная
                   </div>
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     122,000₽
                   </div>
                 </div>
@@ -280,11 +280,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-yellow-50" />
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Проценты
                   </div>
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     4,000₽
                   </div>
                 </div>
@@ -292,11 +292,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-red-50" />
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Штраф
                   </div>
 
-                  <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     2,700₽
                   </div>
                 </div>

@@ -127,7 +127,7 @@ export const Technoligies = () => {
           </Slider>
 
           <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
-            <div className="flexw-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+            <div className="flex w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
                 className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

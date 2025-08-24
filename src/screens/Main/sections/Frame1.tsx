@@ -58,9 +58,9 @@ export const Frame1 = () => {
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
           <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]">
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
-              <div className="relative left-[59px] top-[-49px] h-[372px]w-full md:w-[560px]">
+              <div className="relative left-[59px] top-[-49px] h-[372px] w-full md:w-[560px]">
                 <img
-                  className="absolute left-[91px] top-0 h-[372px]w-full md:w-[415px]"
+                  className="absolute left-[91px] top-0 h-[372px] w-full md:w-[415px]"
                   alt="Vector"
                   src="/img/vector-151.svg"
                 />
@@ -76,9 +76,9 @@ export const Frame1 = () => {
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
                     <div className="relative h-7w-full md:w-[142.55px]">
                       <div className="h-7w-full md:w-[143px]">
-                        <div className="h-[29px]w-full md:w-[142px]">
+                        <div className="h-[29px] w-full md:w-[142px]">
                           <div className="h-[29px]">
-                            <div className="relative h-[29px]w-full md:w-[142px]">
+                            <div className="relative h-[29px] w-full md:w-[142px]">
                               <img
                                 className="absolute left-0 top-0 h-[29px] w-6"
                                 alt="Group"
@@ -86,19 +86,19 @@ export const Frame1 = () => {
                               />
 
                               <img
-                                className="absolute left-[30px] top-0.5 h-[25px]w-full md:w-[23px]"
+                                className="absolute left-[30px] top-0.5 h-[25px] w-full md:w-[23px]"
                                 alt="Fill"
                                 src="/img/fill-4.svg"
                               />
 
                               <img
-                                className="absolute left-[60px] top-0.5 h-[25px]w-full md:w-[22px]"
+                                className="absolute left-[60px] top-0.5 h-[25px] w-full md:w-[22px]"
                                 alt="Fill"
                                 src="/img/fill-8.svg"
                               />
 
                               <img
-                                className="absolute left-[88px] top-0.5 h-[25px]w-full md:w-[23px]"
+                                className="absolute left-[88px] top-0.5 h-[25px] w-full md:w-[23px]"
                                 alt="Fill"
                                 src="/img/fill-10.svg"
                               />
@@ -116,7 +116,7 @@ export const Frame1 = () => {
                   </div>
                 </motion.div>
 
-                <div className="absolute left-0 top-[262px] h-[104px]w-full md:w-[560px]">
+                <div className="absolute left-0 top-[262px] h-[104px] w-full md:w-[560px]">
                   <motion.div
                     id="animate_41_left"
                     ref={ref41l}
@@ -126,7 +126,7 @@ export const Frame1 = () => {
                     className="absolute left-0 top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
                   >
                     <img
-                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px]w-full md:w-[57.34px]"
+                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-full md:w-[57.34px]"
                       alt="Group"
                       src="/img/Group%2032.svg"
                     />
@@ -185,13 +185,13 @@ export const Frame1 = () => {
                 />
 
                 <img
-                  className="absolute left-[49px] top-[223px] h-[39px]w-full md:w-[458px]"
+                  className="absolute left-[49px] top-[223px] h-[39px] w-full md:w-[458px]"
                   alt="Vector"
                   src="/img/vector-149.svg"
                 />
 
                 <img
-                  className="absolute left-[204px] top-[223px] h-[39px]w-full md:w-[149px]"
+                  className="absolute left-[204px] top-[223px] h-[39px] w-full md:w-[149px]"
                   alt="Vector"
                   src="/img/vector-150.svg"
                 />
@@ -258,7 +258,7 @@ export const Frame1 = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                      <div className="relative mt-[-1.00px]w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         ID 1232342345346
                       </div>
 
@@ -342,7 +342,7 @@ export const Frame1 = () => {
                 </motion.div>
 
                 <img
-                  className="absolute left-0 top-0 h-[368px]w-full md:w-[678px]"
+                  className="absolute left-0 top-0 h-[368px] w-full md:w-[678px]"
                   alt="Vector"
                   src="/img/vector-1-4.svg"
                 />
@@ -356,7 +356,7 @@ export const Frame1 = () => {
                   className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[148px]w-full md:w-[68px] overflow-hidden rounded-[20px] bg-green-50">
+                    <div className="relative h-[148px] w-full md:w-[68px] overflow-hidden rounded-[20px] bg-green-50">
                       <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>

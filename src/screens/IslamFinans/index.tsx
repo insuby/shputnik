@@ -78,7 +78,7 @@ export const IslamFinance = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-8 md:p-12">
           <img
-            className="absolute left-[539px] top-12 h-[842px]w-full md:w-[954px]"
+            className="absolute left-[539px] top-12 h-[842px] w-full md:w-[954px]"
             alt="Vector"
             src="/img/islamfinans/vector-1-7.svg"
           />
@@ -129,9 +129,9 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[745px] top-[136px] flex h-[538px]w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
+            className="absolute left-[745px] top-[136px] flex h-[538px] w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
           >
-            <div className="relative flexw-full md:w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+            <div className="relative flex w-full md:w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="text-[#1c222f]">Ваш</span>
 
@@ -155,7 +155,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px]w-full md:w-[19px]">
+                    <div className="relative left-px top-1 h-[11px] w-full md:w-[19px]">
                       <img
                         className="absolute left-1.5 top-[3px] size-1.5"
                         alt="Vector"
@@ -163,7 +163,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-0 h-[11px]w-full md:w-[19px]"
+                        className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-19.svg"
                       />
@@ -555,7 +555,7 @@ export const IslamFinance = () => {
           </motion.div>
 
           <img
-            className="absolute left-[1053px] top-44 h-[568px]w-full md:w-[619px]"
+            className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
             alt="Vector"
             src="/img/islamfinans/vector-4-3.svg"
           />

@@ -29,7 +29,7 @@ export const Frame = () => {
     <div className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
       <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 md:pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
         <img
-          className="absolute left-1/2 top-[220px] hidden h-[560px]w-full md:w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
+          className="absolute left-1/2 top-[220px] hidden h-[560px] w-full md:w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
           alt=""
           aria-hidden="true"
           src="/img/vector-1-6.svg"
@@ -116,11 +116,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-blue-50" />
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Текущее
               </div>
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 23,456₽
               </div>
             </div>
@@ -128,11 +128,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-green-50" />
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Основная
               </div>
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 42,000₽
               </div>
             </div>
@@ -140,11 +140,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-yellow-50" />
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Проценты
               </div>
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 4,000₽
               </div>
             </div>
@@ -152,11 +152,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-red-50" />
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Штраф
               </div>
 
-              <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 2,700₽
               </div>
             </div>

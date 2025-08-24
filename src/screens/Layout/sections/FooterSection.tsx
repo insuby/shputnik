@@ -6,12 +6,12 @@ export const FooterSection = () => {
   return (
     <footer className="relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-8 md:p-12 pt-[136px]">
       <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 md:gap-12 self-stretch">
-        <div className="relative flex h-[324px]w-full md:w-[268px] flex-col items-start justify-between">
+        <div className="relative flex h-[324px] w-full md:w-[268px] flex-col items-start justify-between">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative h-[22px] w-28">
               <Link
                 to={RoutesPath.MAIN}
-                className="relative block h-[23px]w-full md:w-[170px]"
+                className="relative block h-[23px] w-full md:w-[170px]"
               >
                 <span className="sr-only">Sputnik</span>
                 <img
@@ -37,7 +37,7 @@ export const FooterSection = () => {
           </p>
         </div>
 
-        <nav aria-label="Навигация в футере" className="relative flex  h-[312px]w-full md:w-[268px] flex-col items-center gap-4">
+        <nav aria-label="Навигация в футере" className="relative flex  h-[312px] w-full md:w-[268px] flex-col items-center gap-4">
           <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
             Программное обеспечение
           </div>
@@ -80,7 +80,7 @@ export const FooterSection = () => {
           </ul>
         </nav>
 
-        <div className="relative flexw-full md:w-[268px] flex-col items-start gap-8">
+        <div className="relative flex w-full md:w-[268px] flex-col items-start gap-8">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               Программное обеспечение
@@ -123,16 +123,16 @@ export const FooterSection = () => {
           </div>
         </div>
 
-        <div className="relative flex h-[324px]w-full md:w-[268px] flex-col items-center justify-center gap-8">
+        <div className="relative flex h-[324px] w-full md:w-[268px] flex-col items-center justify-center gap-8">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-            <div className="relative mt-[-1.00px]w-full md:w-[268px] font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
+            <div className="relative mt-[-1.00px] w-full md:w-[268px] font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               Компания
             </div>
 
-            <div className="relative flexw-full md:w-[268px] flex-[0_0_auto] flex-col items-start gap-3">
+            <div className="relative flex w-full md:w-[268px] flex-[0_0_auto] flex-col items-start gap-3">
               <Link
                 to={RoutesPath.ABOUT}
-                className="relative mt-[-1.00px]w-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                className="relative mt-[-1.00px] w-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 О компании
               </Link>
@@ -168,7 +168,7 @@ export const FooterSection = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
               <a
                 href="tel:+74950062157"
-                className="relative mt-[-1.00px]w-full md:w-[233px] text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC]"
+                className="relative mt-[-1.00px] w-full md:w-[233px] text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC]"
               >
                 +7 (495) 006-21-57
               </a>

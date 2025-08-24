@@ -63,15 +63,15 @@ export const FeedbackForm = () => {
         }`}
       >
         <img
-          className="absolute left-[379px] top-[85px] h-[1150px]w-full md:w-[1230px]"
+          className="absolute left-[379px] top-[85px] h-[1150px] w-full md:w-[1230px]"
           alt="Vector"
           src="/img/vector-1.svg"
         />
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
-          <div className="relative h-[22px]w-full md:w-[170px]">
+          <div className="relative h-[22px] w-full md:w-[170px]">
             <div className="h-[22px] w-28">
-              <div className="relative h-[22px]w-full md:w-[170px]">
+              <div className="relative h-[22px] w-full md:w-[170px]">
                 <img
                   className="absolute  left-0 top-0"
                   alt="Group"
@@ -91,7 +91,7 @@ export const FeedbackForm = () => {
 
         <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch overflow-hidden rounded-[32px] p-[88px]">
           <div className="relative flex flex-1 grow flex-col items-start gap-[88px]">
-            <div className="relative flexw-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
+            <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
               <div className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Свяжитесь с нами
               </div>
@@ -105,7 +105,7 @@ export const FeedbackForm = () => {
 
             <div className="relative mt-[105px] inline-flex flex-[0_0_auto] flex-col items-start gap-5">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-                <div className="font-header-2-m relative mt-[-1.00px]w-full md:w-[233px] text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)]">
+                <div className="font-header-2-m relative mt-[-1.00px] w-full md:w-[233px] text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)]">
                   +7 (495) 006-21-57
                 </div>
 

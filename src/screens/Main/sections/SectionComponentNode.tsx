@@ -59,7 +59,7 @@ export const SectionComponentNode = () => {
         <div className="relativew-full md:w-[686px] self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
           <div className="relative h-[682px]">
             <img
-              className="absolute left-0 top-0 h-[520px]w-full md:w-[686px]"
+              className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]"
               alt="Vector"
               src="/img/vector-1-5.svg"
             />
@@ -70,11 +70,11 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[66px] flexw-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50"
+              className="absolute left-[62px] top-[66px] flex w-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <img
-                  className="absolute left-[-49px] top-3 h-[330px]w-full md:w-[345px]"
+                  className="absolute left-[-49px] top-3 h-[330px] w-full md:w-[345px]"
                   alt="Vector"
                   src="/img/vector-1-2.svg"
                 />
@@ -139,7 +139,7 @@ export const SectionComponentNode = () => {
                       </div>
                     </div>
 
-                    <div className="relative flexw-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                    <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                         Интерес
                       </div>
@@ -161,7 +161,7 @@ export const SectionComponentNode = () => {
                       </div>
                     </div>
 
-                    <div className="relative flexw-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                    <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         Платеж
                       </div>
@@ -254,7 +254,7 @@ export const SectionComponentNode = () => {
             </motion.div>
 
             <img
-              className="absolute left-[57px] top-0 h-[520px]w-full md:w-[629px]"
+              className="absolute left-[57px] top-0 h-[520px] w-full md:w-[629px]"
               alt="Vector"
               src="/img/vector-4-3.svg"
             />
@@ -268,7 +268,7 @@ export const SectionComponentNode = () => {
               className="absolute left-[298px] top-[138px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-8"
             >
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                <div className="relative mt-[-1.00px]w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                   Общий доход
                 </div>
 
@@ -328,7 +328,7 @@ export const SectionComponentNode = () => {
               </div>
 
               <img
-                className="absolute left-0 top-[106px] h-[104px]w-full md:w-[328px]"
+                className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]"
                 alt="Vector"
                 src="/img/vector-147-1.svg"
               />

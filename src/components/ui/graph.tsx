@@ -5,13 +5,13 @@ export const Graph = ({ sum = '42,000 ' }) => {
         <div className="relative h-[184px]">
           <div className="absolute left-0 top-0 size-[184px]">
             <img
-              className="absolute left-0 top-0 h-[184px]w-full md:w-[88px]"
+              className="absolute left-0 top-0 h-[184px] w-full md:w-[88px]"
               alt="Subtract"
               src="/img/graph/subtract-3.svg"
             />
 
             <img
-              className="absolute left-24 top-[76px] h-[108px]w-full md:w-[88px]"
+              className="absolute left-24 top-[76px] h-[108px] w-full md:w-[88px]"
               alt="Subtract"
               src="/img/graph/subtract.svg"
             />
@@ -28,13 +28,13 @@ export const Graph = ({ sum = '42,000 ' }) => {
           </div>
 
           <img
-            className="absolute left-[158px] top-[34px] h-[34px]w-full md:w-[21px]"
+            className="absolute left-[158px] top-[34px] h-[34px] w-full md:w-[21px]"
             alt="Subtract"
             src="/img/graph/subtract-1.svg"
           />
 
           <img
-            className="absolute left-24 top-0 h-[31px]w-full md:w-[59px]"
+            className="absolute left-24 top-0 h-[31px] w-full md:w-[59px]"
             alt="Subtract"
             src="/img/graph/subtract-2.svg"
           />

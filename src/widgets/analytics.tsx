@@ -54,7 +54,7 @@ export const Analytics = () => {
         className="relative flex w-full flex-col-reverse md:!flex-row flex-[0_0_auto] items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]"
       >
         <img
-          className="absolute left-[450px] top-0 h-[668px]w-full md:w-[926px]"
+          className="absolute left-[450px] top-0 h-[668px] w-full md:w-[926px]"
           alt="Vector"
           src="/img/widgets/vector-2-1.svg"
         />
@@ -169,11 +169,11 @@ export const Analytics = () => {
             <div className="absolute left-0 top-0 size-[574px] rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
 
             <div className="absolute left-32 top-[127px] size-[319px]">
-              <div className="absolute left-[-29px] top-[-18px] h-[337px]w-full md:w-[356px]">
-                <div className="absolute left-0 top-[76px] h-[260px]w-full md:w-[356px]">
-                  <div className="absolute left-0 top-[7px] h-[253px]w-full md:w-[356px]">
+              <div className="absolute left-[-29px] top-[-18px] h-[337px] w-full md:w-[356px]">
+                <div className="absolute left-0 top-[76px] h-[260px] w-full md:w-[356px]">
+                  <div className="absolute left-0 top-[7px] h-[253px] w-full md:w-[356px]">
                     <img
-                      className="absolute left-[29px] top-0 h-[253px]w-full md:w-[152px]"
+                      className="absolute left-[29px] top-0 h-[253px] w-full md:w-[152px]"
                       alt="Subtract"
                       src="/img/graph-big/subtract.svg"
                     />
@@ -208,15 +208,15 @@ export const Analytics = () => {
                   </div>
 
                   <img
-                    className="absolute left-[295px] top-0 h-[94px]w-full md:w-[53px]"
+                    className="absolute left-[295px] top-0 h-[94px] w-full md:w-[53px]"
                     alt="Subtract"
                     src="/img/graph-big/subtract-2.svg"
                   />
                 </div>
 
-                <div className="absolute left-[81px] top-0 h-[78px]w-full md:w-[145px]">
+                <div className="absolute left-[81px] top-0 h-[78px] w-full md:w-[145px]">
                   <img
-                    className="absolute left-0 top-[18px] h-[60px]w-full md:w-[145px]"
+                    className="absolute left-0 top-[18px] h-[60px] w-full md:w-[145px]"
                     alt="Subtract"
                     src="/img/graph-big/subtract-4.svg"
                   />
@@ -229,9 +229,9 @@ export const Analytics = () => {
                 </div>
               </div>
 
-              <div className="absolute -top-0.5 left-[211px] h-[57px]w-full md:w-[70px]">
+              <div className="absolute -top-0.5 left-[211px] h-[57px] w-full md:w-[70px]">
                 <img
-                  className="absolute left-0 top-4 h-[41px]w-full md:w-[51px]"
+                  className="absolute left-0 top-4 h-[41px] w-full md:w-[51px]"
                   alt="Subtract"
                   src="/img/graph-big/subtract-3.svg"
                 />

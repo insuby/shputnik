@@ -104,7 +104,7 @@ export const Dataunload = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
-            className="absolute left-[441px] top-[-140px] h-[1060px]w-full md:w-[1108px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
             alt="Vector"
             src="/img/vector-1-5.svg"
           />
@@ -119,7 +119,7 @@ export const Dataunload = () => {
             >
               <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <p className="relative mt-[-1.00px]w-full md:w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <p className="relative mt-[-1.00px] w-full md:w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     Выгрузка данных <br />в кредитные бюро
                   </p>
 
@@ -138,14 +138,14 @@ export const Dataunload = () => {
             </motion.div>
           </HeroButtons>
 
-          <div className="absolute left-[768px] top-20 h-[462px]w-full md:w-[540px]">
-            <div className="relative left-[-33px] top-[-65px] h-[527px]w-full md:w-[606px]">
+          <div className="absolute left-[768px] top-20 h-[462px] w-full md:w-[540px]">
+            <div className="relative left-[-33px] top-[-65px] h-[527px] w-full md:w-[606px]">
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, x: -150 }}
                 animate={inView3 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute left-[31px] top-[152px] flexw-full md:w-[372px] items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
+                className="absolute left-[31px] top-[152px] flex w-full md:w-[372px] items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -165,7 +165,7 @@ export const Dataunload = () => {
               </motion.div>
 
               <img
-                className="absolute left-0 top-0 h-[503px]w-full md:w-[606px]"
+                className="absolute left-0 top-0 h-[503px] w-full md:w-[606px]"
                 alt="Vector"
                 src="/img/dataunload/vector-5.svg"
               />
@@ -175,7 +175,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, y: -150 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute left-[173px] top-[219px] flexw-full md:w-[400px] items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-8"
+                className="absolute left-[173px] top-[219px] flex w-full md:w-[400px] items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-8"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -598,7 +598,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={inView43 ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="absolute left-[339px] top-[-115px] h-[1060px]w-full md:w-[1204px]"
+          className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
           alt="Vector"
           src="/img/dataunload/vector-1-1.svg"
         />
@@ -609,7 +609,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView44 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative flexw-full md:w-[520px] flex-col items-start gap-8"
+            className="relative flex w-full md:w-[520px] flex-col items-start gap-8"
           >
             <motion.img
               ref={ref45}
@@ -628,7 +628,7 @@ export const Dataunload = () => {
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView46 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                  className="relative mt-[-1.00px]w-full md:w-[520px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-full md:w-[520px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Выгрузка во все КБ
                 </motion.div>
@@ -703,7 +703,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView48 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className="relative flexw-full md:w-[520px] flex-col items-start justify-center gap-8"
+            className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-8"
           >
             <motion.img
               ref={ref49}
@@ -715,7 +715,7 @@ export const Dataunload = () => {
               src="/img/dataunload/frame-18-2.svg"
             />
 
-            <div className="relative flexw-full md:w-[520px] flex-[0_0_auto] flex-col items-start gap-6">
+            <div className="relative flex w-full md:w-[520px] flex-[0_0_auto] flex-col items-start gap-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                 <motion.div
                   ref={ref50}
@@ -753,7 +753,7 @@ export const Dataunload = () => {
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-                <div className="relative flexw-full md:w-[520px] flex-[0_0_auto] items-center justify-center gap-6">
+                <div className="relative flex w-full md:w-[520px] flex-[0_0_auto] items-center justify-center gap-6">
                   <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5">
                     <img
                       className="relative size-4"
@@ -791,7 +791,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView42 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
-            className="absolute left-[420px] top-[-385px] h-[1060px]w-full md:w-[1108px]"
+            className="absolute left-[420px] top-[-385px] h-[1060px] w-full md:w-[1108px]"
             alt="Vector"
             src="/img/dataunload/vector-1-3.svg"
           />

@@ -25,7 +25,7 @@ export const Works = () => {
         Примеры работ
       </div>
 
-      <div className="relative flex h-[648px]w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+      <div className="relative flex h-[648px] w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
           <Slider
             ref={sliderRef}
@@ -75,7 +75,7 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 VPN-сервис
               </motion.p>
@@ -94,7 +94,7 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Pax
               </motion.div>
@@ -112,7 +112,7 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Ascro
               </motion.p>
@@ -126,7 +126,7 @@ export const Works = () => {
           )}
 
           <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
-            <div className="flexw-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+            <div className="flex w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
                 className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
