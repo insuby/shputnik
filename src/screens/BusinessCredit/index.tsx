@@ -33,7 +33,7 @@ export const BusinessCredit = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-[1108px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px]w-full md:w-[1108px]"
             alt="Vector"
             src="/img/businesscredit/vector-1-8.svg"
           />
@@ -71,19 +71,19 @@ export const BusinessCredit = () => {
           </HeroButtons>
 
           <img
-            className="absolute left-[559px] top-0 h-[600px] w-[817px]"
+            className="absolute left-[559px] top-0 h-[600px]w-full md:w-[817px]"
             alt="Vector"
             src="/img/businesscredit/vector-3.svg"
           />
 
           <div className="absolute left-[745px] top-[139px] size-[583px]">
-            <div className="relative h-[583px] w-[631px]">
+            <div className="relative h-[583px]w-full md:w-[631px]">
               <motion.div
                 ref={ref4}
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView4 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-[108px] top-0 flex w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
+                className="absolute left-[108px] top-0 flexw-full md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
@@ -94,109 +94,109 @@ export const BusinessCredit = () => {
 
                   <div className="relative flex h-[187.85px] w-full items-end justify-between self-stretch">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[22.31px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[100.97px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         01
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[18.78px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         02
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[34.05px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[111.54px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         03
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[34.05px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[56.35px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         04
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[50.48px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         05
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[34.05px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[102.14px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         06
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[21.13px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         07
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[24.66px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[109.19px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         08
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-[9.39px] self-stretch">
-                      <div className="relative flex w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
+                      <div className="relative flexw-full md:w-[9.39px] flex-1 grow flex-col items-start justify-end gap-[2.35px] overflow-hidden rounded-[117.41px] bg-gray-10">
                         <div className="relative h-[34.05px] w-full self-stretch rounded-[117.41px] bg-[#cbc1f8]" />
 
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relative w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="relativew-full md:w-[18.78px] text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                         09
                       </div>
                     </div>
@@ -205,7 +205,7 @@ export const BusinessCredit = () => {
               </motion.div>
 
               <img
-                className="absolute left-[45px] top-[83px] h-[50px] w-[494px]"
+                className="absolute left-[45px] top-[83px] h-[50px]w-full md:w-[494px]"
                 alt="Vector"
                 src="/img/businesscredit/vector-5.svg"
               />
@@ -215,7 +215,7 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView5 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-0 top-[213px] flex w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
+                className="absolute left-0 top-[213px] flexw-full md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
@@ -259,7 +259,7 @@ export const BusinessCredit = () => {
               </motion.div>
 
               <img
-                className="absolute left-[91px] top-[148px] h-[313px] w-[540px]"
+                className="absolute left-[91px] top-[148px] h-[313px]w-full md:w-[540px]"
                 alt="Vector"
                 src="/img/businesscredit/vector-6-1.svg"
               />

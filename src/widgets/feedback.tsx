@@ -55,13 +55,13 @@ export const Feedback = () => {
     <div className="relative flex w-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px]">
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-8 md:p-[60px]">
         <img
-          className="absolute left-14 top-[-306px] h-[590px] w-[620px]"
+          className="absolute left-14 top-[-306px] h-[590px]w-full md:w-[620px]"
           alt="Vector"
           src="/img/feedback/vector-1.svg"
         />
 
         <img
-          className="absolute left-[666px] top-[-109px] h-[675px] w-[727px]"
+          className="absolute left-[666px] top-[-109px] h-[675px]w-full md:w-[727px]"
           alt="Vector"
           src="/img/feedback/vector-2-1.svg"
         />
@@ -117,7 +117,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-              className="relative mt-[-1.00px] w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+              className="relative mt-[-1.00px]w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               График платежей
             </motion.div>
@@ -127,7 +127,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView6 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-              className="relative w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]"
+              className="relativew-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]"
             >
               Договор: 12345456322
             </motion.div>
@@ -226,7 +226,7 @@ export const Feedback = () => {
           </motion.div>
 
           <img
-            className="absolute left-0 top-[109px] h-24 w-[328px]"
+            className="absolute left-0 top-[109px] h-24w-full md:w-[328px]"
             alt="Vector"
             src="/img/feedback/vector-147.svg"
           />
@@ -235,7 +235,7 @@ export const Feedback = () => {
         </motion.div>
 
         <img
-          className="absolute left-[874px] top-6 h-[403px] w-[426px]"
+          className="absolute left-[874px] top-6 h-[403px]w-full md:w-[426px]"
           alt="Vector"
           src="/img/feedback/vector-4.svg"
         />

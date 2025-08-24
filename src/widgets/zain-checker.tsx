@@ -67,7 +67,7 @@ export const ZaimChecker = () => {
   return (
     <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8">
       <img
-        className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
+        className="absolute left-[339px] top-[-115px] h-[1060px]w-full md:w-[1204px]"
         alt="Vector"
         src="/img/zain-checker/vector-1.svg"
       />

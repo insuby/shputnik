@@ -72,9 +72,9 @@ export const Div = () => {
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
-              <div className="relative h-[401px] w-[678px]">
+              <div className="relative h-[401px]w-full md:w-[678px]">
                 <img
-                  className="absolute left-[145px] top-[30px] h-[371px] w-[388px]"
+                  className="absolute left-[145px] top-[30px] h-[371px]w-full md:w-[388px]"
                   alt=""
                   aria-hidden="true"
                   src="/img/vector-1.svg"
@@ -97,35 +97,35 @@ export const Div = () => {
                       Наушники Beyerdynamic Amiron
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
-                      <div className="relative flex h-5 w-[264px] items-center gap-3">
+                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Стоимость
                         </div>
-                        <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           23,456₽
                         </div>
                       </div>
-                      <div className="relative flex h-5 w-[264px] items-center gap-3">
+                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Авансовый платеж
                         </div>
-                        <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           42,000₽
                         </div>
                       </div>
-                      <div className="relative flex h-5 w-[264px] items-center gap-3">
+                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Срок
                         </div>
-                        <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           4,000₽
                         </div>
                       </div>
-                      <div className="relative flex h-5 w-[264px] items-center gap-3">
+                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Следующий платеж
                         </div>
-                        <div className="relative mt-[-1.00px] w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px]w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           2,700₽
                         </div>
                       </div>
@@ -133,7 +133,7 @@ export const Div = () => {
                   </div>
                 </motion.div>
                 <img
-                  className="absolute left-0 top-0 h-[368px] w-[678px]"
+                  className="absolute left-0 top-0 h-[368px]w-full md:w-[678px]"
                   alt=""
                   aria-hidden="true"
                   src="/img/vector-4-1.svg"
@@ -217,9 +217,9 @@ export const Div = () => {
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
-              <div className="relative left-[67px] top-6 h-[416px] w-[543px]">
+              <div className="relative left-[67px] top-6 h-[416px]w-full md:w-[543px]">
                 <img
-                  className="absolute left-[78px] top-1.5 h-[371px] w-[388px]"
+                  className="absolute left-[78px] top-1.5 h-[371px]w-full md:w-[388px]"
                   alt=""
                   aria-hidden="true"
                   src="/img/vector-1-1.svg"
@@ -233,10 +233,10 @@ export const Div = () => {
                   className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-8"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px]w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       График платежей
                     </div>
-                    <div className="relative w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="relativew-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Договор: 12345456322
                     </div>
                   </div>
@@ -279,7 +279,7 @@ export const Div = () => {
                     </div>
                   </div>
                   <img
-                    className="absolute left-0 top-[109px] h-24 w-[328px]"
+                    className="absolute left-0 top-[109px] h-24w-full md:w-[328px]"
                     alt=""
                     aria-hidden="true"
                     src="/img/vector-147.svg"
@@ -287,7 +287,7 @@ export const Div = () => {
                   <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
                 <img
-                  className="absolute left-3 top-0 h-[416px] w-[388px]"
+                  className="absolute left-3 top-0 h-[416px]w-full md:w-[388px]"
                   alt=""
                   aria-hidden="true"
                   src="/img/vector-4-2.svg"

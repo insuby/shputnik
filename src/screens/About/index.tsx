@@ -13,7 +13,7 @@ export const About = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:md:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
           <header className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-            <h1 id="about-title" className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
+            <h1 id="about-title" className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
               Представительства
             </h1>
 
@@ -24,7 +24,7 @@ export const About = () => {
           </header>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row">
-            <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+            <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-8 md:p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-moscow" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -61,7 +61,7 @@ export const About = () => {
               </button>
             </article>
 
-            <article aria-labelledby="office-murmansk" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+            <article aria-labelledby="office-murmansk" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-8 md:p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-murmansk" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -69,7 +69,7 @@ export const About = () => {
                   </h2>
 
                   <img
-                    className="relative h-12 w-[37px]"
+                    className="relative h-12w-full md:w-[37px]"
                     alt=""
                     aria-hidden="true"
                     src="/img/about/rus-murmansk-coa.svg"

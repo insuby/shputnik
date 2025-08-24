@@ -51,14 +51,14 @@ export const DivWrapper = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 md:rounded-[32px]"
         >
-          <div className="relative left-[-222px] top-[-254px] hidden h-[904px] w-[1265px] md:block">
+          <div className="relative left-[-222px] top-[-254px] hidden h-[904px]w-full md:w-[1265px] md:block">
             <img
-              className="absolute left-0 top-[333px] h-[571px] w-[611px]"
+              className="absolute left-0 top-[333px] h-[571px]w-full md:w-[611px]"
               alt="Vector"
               src="/img/vector-1-8.svg"
             />
             <img
-              className="absolute left-[398px] top-0 h-[682px] w-[716px]"
+              className="absolute left-[398px] top-0 h-[682px]w-full md:w-[716px]"
               alt="Vector"
               src="/img/vector-4.svg"
             />
@@ -70,7 +70,7 @@ export const DivWrapper = () => {
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="absolute left-[284px] top-[317px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
             >
-              <div className="relative mt-2 flex w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
+              <div className="relative mt-2 flexw-full md:w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
                 <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Калькулятор
                 </div>

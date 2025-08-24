@@ -63,15 +63,15 @@ export const FeedbackForm = () => {
         }`}
       >
         <img
-          className="absolute left-[379px] top-[85px] h-[1150px] w-[1230px]"
+          className="absolute left-[379px] top-[85px] h-[1150px]w-full md:w-[1230px]"
           alt="Vector"
           src="/img/vector-1.svg"
         />
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
-          <div className="relative h-[22px] w-[170px]">
+          <div className="relative h-[22px]w-full md:w-[170px]">
             <div className="h-[22px] w-28">
-              <div className="relative h-[22px] w-[170px]">
+              <div className="relative h-[22px]w-full md:w-[170px]">
                 <img
                   className="absolute  left-0 top-0"
                   alt="Group"
@@ -91,8 +91,8 @@ export const FeedbackForm = () => {
 
         <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch overflow-hidden rounded-[32px] p-[88px]">
           <div className="relative flex flex-1 grow flex-col items-start gap-[88px]">
-            <div className="relative flex w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
-              <div className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative flexw-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
+              <div className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Свяжитесь с нами
               </div>
 
@@ -105,18 +105,18 @@ export const FeedbackForm = () => {
 
             <div className="relative mt-[105px] inline-flex flex-[0_0_auto] flex-col items-start gap-5">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-                <div className="font-header-2-m relative mt-[-1.00px] w-[233px] text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)]">
+                <div className="font-header-2-m relative mt-[-1.00px]w-full md:w-[233px] text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)]">
                   +7 (495) 006-21-57
                 </div>
 
-                <p className="relative w-[233px] text-2xl font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica]">
+                <p className="relativew-full md:w-[233px] text-2xl font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica]">
                   <span className="font-header-2-m text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] [font-style:var(--header-2-m-font-style)]">
                     s@sptnk.co
                   </span>
                 </p>
               </div>
 
-              <p className="relative w-[233px] font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
+              <p className="relativew-full md:w-[233px] font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
                 183038, Мурманск,
                 <br />
                 улица Октябрьская,
@@ -126,7 +126,7 @@ export const FeedbackForm = () => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 grow flex-col items-start gap-10 rounded-[32px] bg-[#f9fafd] p-12 md:min-w-[584px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-10 rounded-[32px] bg-[#f9fafd] p-8 md:p-12 md:min-w-[584px]">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
               <div className="relative w-full">
                 <input

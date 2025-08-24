@@ -97,7 +97,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
             Работа сотрудников
           </motion.div>
@@ -127,10 +127,10 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-            className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+            className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-12"
           >
             <img
-              className="absolute left-[53px] top-0 h-[448px] w-[623px]"
+              className="absolute left-[53px] top-0 h-[448px]w-full md:w-[623px]"
               alt="Vector"
               src="/img/widgets/vector-1-3.svg"
             />
@@ -407,9 +407,9 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             />
 
             <div className="relative h-[210px] w-full self-stretch">
-              <div className="relative left-[-15px] md:left-[73px] top-1 flex w-[434px] flex-col items-start">
+              <div className="relative left-[-15px] md:left-[73px] top-1 flexw-full md:w-[434px] flex-col items-start">
                 <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 md:pl-16 pr-2 left-[-110px] md:left-0 pl-0">
-                  <div className="relative flex w-[296px] flex-col items-start gap-1">
+                  <div className="relative flexw-full md:w-[296px] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Вы
                     </div>

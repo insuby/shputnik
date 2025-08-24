@@ -104,7 +104,7 @@ export const Work = () => {
   return (
     <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="jobs-title">
       <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
-        <h1 id="jobs-title" className="relative mt-3 md:mt-[-1.00px] self-stretch  text-[36px] font-medium  leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+        <h1 id="jobs-title" className="relative mt-3 md:mt-[-1.00px] self-stretch  text-[36px] font-medium  leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
           Вакансии
         </h1>
         <p className="relative self-stretch font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-[#939db4] [font-style:var(--body-1-r-font-style)]">

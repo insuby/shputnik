@@ -44,7 +44,7 @@ export const Integrations = () => {
             className="relative flex w-full flex-col md:!flex-row md:w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-20"
         >
             <img
-                className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
+                className="absolute left-[339px] top-[-115px] h-[1060px]w-full md:w-[1204px]"
                 alt="Vector"
                 src="/img/widgets/vector-1-2.svg"
             />
@@ -156,9 +156,9 @@ export const Integrations = () => {
                     transition={{duration: 0.6, ease: 'easeOut', delay: 0.9}}
                     className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch"
                 >
-                    <div className="relative h-[49px] w-[177px]">
+                    <div className="relative h-[49px]w-full md:w-[177px]">
                         <div
-                            className="absolute left-0 top-0 h-[46px] w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
+                            className="absolute left-0 top-0 h-[46px]w-full md:w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
                             <div className="absolute left-[19px] top-[25px] h-1.5 w-1">
                                 <img
                                     className="absolute left-px top-0 h-[5px] w-0.5"
@@ -183,8 +183,8 @@ export const Integrations = () => {
                             />
                         </div>
 
-                        <div className="absolute left-16 top-0.5 h-[47px] w-[119px]">
-                            <div className="relative h-[47px] w-[113px]">
+                        <div className="absolute left-16 top-0.5 h-[47px]w-full md:w-[119px]">
+                            <div className="relative h-[47px]w-full md:w-[113px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                                     Федеральная
@@ -208,9 +208,9 @@ export const Integrations = () => {
                         />
                     </div>
 
-                    <div className="relative h-[49px] w-[157px]">
+                    <div className="relative h-[49px]w-full md:w-[157px]">
                         <div
-                            className="absolute left-0 top-0 h-[46px] w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
+                            className="absolute left-0 top-0 h-[46px]w-full md:w-[42px] bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%]">
                             <img
                                 className="absolute left-4 top-[21px] size-2.5"
                                 alt="Path"
@@ -229,8 +229,8 @@ export const Integrations = () => {
                             color="#55607A"
                         />
 
-                        <div className="absolute left-16 top-0.5 h-[47px] w-[99px]">
-                            <div className="relative h-[47px] w-[93px]">
+                        <div className="absolute left-16 top-0.5 h-[47px]w-full md:w-[99px]">
+                            <div className="relative h-[47px]w-full md:w-[93px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                                     Федеральная
@@ -249,10 +249,10 @@ export const Integrations = () => {
                         </div>
                     </div>
 
-                    <div className="relative h-[47px] w-[153.5px]">
+                    <div className="relative h-[47px]w-full md:w-[153.5px]">
                         <div className="absolute -left-0.5 -top-px size-[46px]">
                             <img
-                                className="absolute left-2.5 top-[9px] h-7 w-[26px]"
+                                className="absolute left-2.5 top-[9px] h-7w-full md:w-[26px]"
                                 alt="Fill copy"
                                 src="/img/widgets/fill-26-copy-2.svg"
                             />
@@ -269,8 +269,8 @@ export const Integrations = () => {
                             color="#55607A"
                         />
 
-                        <div className="absolute left-16 top-0 h-[47px] w-[95px]">
-                            <div className="relative h-[47px] w-[89px]">
+                        <div className="absolute left-16 top-0 h-[47px]w-full md:w-[95px]">
+                            <div className="relative h-[47px]w-full md:w-[89px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
                                     Федеральная

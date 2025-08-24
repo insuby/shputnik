@@ -15,7 +15,7 @@ export const MainMobile = () => {
                 <div
                     className=" relative flex flex-1 grow flex-col items-center gap-[52px] self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-4 py-9">
                     <img
-                        className="absolute left-[-444px] top-[147px] h-[1060px] w-[1108px]"
+                        className="absolute left-[-444px] top-[147px] h-[1060px]w-full md:w-[1108px]"
                         alt="Vector"
                         src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1-6.svg"
                     />
@@ -46,7 +46,7 @@ export const MainMobile = () => {
                     </div>
 
                     <img
-                        className="relative mb-[-36.00px] w-[335px] flex-[0_0_auto]"
+                        className="relative mb-[-36.00px]w-full md:w-[335px] flex-[0_0_auto]"
                         alt="Iphone pro max"
                         src="https://c.animaapp.com/meg2uvv4WWYlvp/img/iphone-16-pro-max---3.png"
                     />
@@ -76,15 +76,15 @@ export const MainMobile = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                     <div className="relative h-[420px] w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc]">
-                        <div className="relative h-[513px] w-[593px]">
+                        <div className="relative h-[513px]w-full md:w-[593px]">
                             <img
-                                className="absolute left-[97px] top-[49px] h-[464px] w-[496px]"
+                                className="absolute left-[97px] top-[49px] h-[464px]w-full md:w-[496px]"
                                 alt="Vector"
                                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1.svg"
                             />
 
                             <div
-                                className="absolute left-[23px] top-[47px] flex h-[261px] w-[220px] flex-col items-center justify-center gap-[16.28px] rounded-[21.71px] bg-white p-[10.86px]">
+                                className="absolute left-[23px] top-[47px] flex h-[261px]w-full md:w-[220px] flex-col items-center justify-center gap-[16.28px] rounded-[21.71px] bg-white p-[10.86px]">
                                 <div
                                     className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[5.43px] self-stretch">
                                     <div
@@ -95,7 +95,7 @@ export const MainMobile = () => {
                                         </div>
 
                                         <div
-                                            className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
+                                            className="relative mr-[-0.11px] flexw-full md:w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
                                             <img
                                                 className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
                                                 alt="Frame"
@@ -116,7 +116,7 @@ export const MainMobile = () => {
                                         </div>
 
                                         <div
-                                            className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
+                                            className="relative mr-[-0.11px] flexw-full md:w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
                                             <img
                                                 className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
                                                 alt="Frame"
@@ -183,33 +183,33 @@ export const MainMobile = () => {
                                 <div
                                     className="relative flex h-[32.57px] w-full items-center justify-center gap-[21.71px] self-stretch rounded-[16.28px] bg-gray-90 px-[21.71px] py-[8.14px]">
                                     <div
-                                        className="relative mt-[-0.68px] w-[111.27px] self-stretch whitespace-nowrap text-center text-[10.9px] font-medium leading-[16.3px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                                        className="relative mt-[-0.68px]w-full md:w-[111.27px] self-stretch whitespace-nowrap text-center text-[10.9px] font-medium leading-[16.3px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                                         Оформить займ
                                     </div>
                                 </div>
                             </div>
 
                             <img
-                                className="absolute left-0 top-0 h-[420px] w-[380px]"
+                                className="absolute left-0 top-0 h-[420px]w-full md:w-[380px]"
                                 alt="Vector"
                                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-3-1.svg"
                             />
 
                             <div
-                                className="absolute left-[185px] top-[97px] flex h-[277px] w-[173px] flex-col items-center justify-center gap-[8.14px] rounded-[21.71px] bg-white p-[10.86px]">
+                                className="absolute left-[185px] top-[97px] flex h-[277px]w-full md:w-[173px] flex-col items-center justify-center gap-[8.14px] rounded-[21.71px] bg-white p-[10.86px]">
                                 <div
                                     className="relative mt-[-0.24px] inline-flex flex-[0_0_auto] items-center gap-[6.78px] rounded-[67.85px] p-[8.14px]">
                                     <div className="relative size-[124.84px]">
                                         <div className="relative size-[125px]">
                                             <div className="absolute left-0 top-0 size-[125px]">
                                                 <img
-                                                    className="absolute left-0 top-0 h-[125px] w-[60px]"
+                                                    className="absolute left-0 top-0 h-[125px]w-full md:w-[60px]"
                                                     alt="Subtract"
                                                     src="https://c.animaapp.com/meg2uvv4WWYlvp/img/subtract.svg"
                                                 />
 
                                                 <img
-                                                    className="absolute left-[65px] top-[51px] h-[74px] w-[60px]"
+                                                    className="absolute left-[65px] top-[51px] h-[74px]w-full md:w-[60px]"
                                                     alt="Subtract"
                                                     src="https://c.animaapp.com/meg2uvv4WWYlvp/img/subtract-3.svg"
                                                 />
@@ -229,7 +229,7 @@ export const MainMobile = () => {
                                             </div>
 
                                             <img
-                                                className="absolute left-[107px] top-[23px] h-[23px] w-[15px]"
+                                                className="absolute left-[107px] top-[23px] h-[23px]w-full md:w-[15px]"
                                                 alt="Subtract"
                                                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/subtract-2.svg"
                                             />
@@ -249,12 +249,12 @@ export const MainMobile = () => {
                                         <div className="relative size-[5.43px] rounded-[2.71px] bg-blue-50"/>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                                             Текущее
                                         </div>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                             48,456₽
                                         </div>
                                     </div>
@@ -263,12 +263,12 @@ export const MainMobile = () => {
                                         <div className="relative size-[5.43px] rounded-[2.71px] bg-green-50"/>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                                             Основная
                                         </div>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                             122,000₽
                                         </div>
                                     </div>
@@ -277,12 +277,12 @@ export const MainMobile = () => {
                                         <div className="relative size-[5.43px] rounded-[2.71px] bg-yellow-50"/>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                                             Проценты
                                         </div>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                             4,000₽
                                         </div>
                                     </div>
@@ -291,12 +291,12 @@ export const MainMobile = () => {
                                         <div className="relative size-[5.43px] rounded-[2.71px] bg-red-50"/>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                                             Штраф
                                         </div>
 
                                         <div
-                                            className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                                            className="relative mt-[-0.68px]w-full md:w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                             2,700₽
                                         </div>
                                     </div>
@@ -351,15 +351,15 @@ export const MainMobile = () => {
                 <div
                     className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
                     <div className="relative h-[420px] w-full self-stretch overflow-hidden rounded-[32px] bg-blue-50">
-                        <div className="absolute left-[-222px] top-[-255px] h-[904px] w-[1114px]">
+                        <div className="absolute left-[-222px] top-[-255px] h-[904px]w-full md:w-[1114px]">
                             <img
-                                className="absolute left-0 top-[333px] h-[571px] w-[611px]"
+                                className="absolute left-0 top-[333px] h-[571px]w-full md:w-[611px]"
                                 alt="Vector"
                                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-1-3.svg"
                             />
 
                             <img
-                                className="absolute left-[398px] top-0 h-[682px] w-[716px]"
+                                className="absolute left-[398px] top-0 h-[682px]w-full md:w-[716px]"
                                 alt="Vector"
                                 src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-4-1.svg"
                             />
@@ -367,7 +367,7 @@ export const MainMobile = () => {
                             <div
                                 className="absolute left-[246px] top-[279px] inline-flex items-center overflow-hidden rounded-[17.55px_17.55px_0px_0px] bg-[#f6f8fd]">
                                 <div
-                                    className="relative flex w-[289px] flex-col items-start gap-[17.55px] bg-[#ffffff] p-[21.94px]">
+                                    className="relative flexw-full md:w-[289px] flex-col items-start gap-[17.55px] bg-[#ffffff] p-[21.94px]">
                                     <div
                                         className="relative mt-[-0.55px] self-stretch text-[17.5px] font-medium leading-[21.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                         Калькулятор
@@ -575,7 +575,7 @@ export const MainMobile = () => {
                                 </div>
 
                                 <div
-                                    className="relative flex w-[289px] flex-col items-start gap-[17.55px] self-stretch p-[21.94px]">
+                                    className="relative flexw-full md:w-[289px] flex-col items-start gap-[17.55px] self-stretch p-[21.94px]">
                                     <div
                                         className="relative mt-[-0.55px] self-stretch text-[17.5px] font-medium leading-[21.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                         Выберите условия
@@ -584,7 +584,7 @@ export const MainMobile = () => {
                                     <div
                                         className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[15.04px]">
                                         <div
-                                            className="relative mx-[-1.10px] mt-[-1.10px] flex w-[247.32px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] border-[1.1px] border-solid border-[#3573fc] bg-white p-[13.16px]">
+                                            className="relative mx-[-1.10px] mt-[-1.10px] flexw-full md:w-[247.32px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] border-[1.1px] border-solid border-[#3573fc] bg-white p-[13.16px]">
                                             <div
                                                 className="relative flex flex-1 grow flex-col items-center justify-center gap-[8.77px] self-stretch">
                                                 <div
@@ -617,7 +617,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[66.9px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Сумма
@@ -630,7 +630,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[43.87px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Ставка
@@ -646,7 +646,7 @@ export const MainMobile = () => {
                                         </div>
 
                                         <div
-                                            className="relative flex w-[245.13px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] bg-white p-[13.16px]">
+                                            className="relative flexw-full md:w-[245.13px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] bg-white p-[13.16px]">
                                             <div
                                                 className="relative flex flex-1 grow flex-col items-center justify-center gap-[8.77px]">
                                                 <div
@@ -673,7 +673,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[66.9px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Сумма
@@ -686,7 +686,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[43.87px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Ставка
@@ -702,7 +702,7 @@ export const MainMobile = () => {
                                         </div>
 
                                         <div
-                                            className="relative flex w-[245.13px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] bg-white p-[13.16px]">
+                                            className="relative flexw-full md:w-[245.13px] flex-[0_0_auto] items-start justify-end gap-[8.77px] rounded-[8.77px] bg-white p-[13.16px]">
                                             <div
                                                 className="relative flex flex-1 grow flex-col items-center justify-center gap-[8.77px]">
                                                 <div
@@ -729,7 +729,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[66.9px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Сумма
@@ -742,7 +742,7 @@ export const MainMobile = () => {
                                                     </div>
 
                                                     <div
-                                                        className="relative flex w-[43.87px] flex-col items-start gap-[1.1px]">
+                                                        className="relative flexw-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                                                             Ставка
@@ -762,7 +762,7 @@ export const MainMobile = () => {
                         </div>
 
                         <img
-                            className="absolute left-[-780px] top-[-2732px] h-[347px] w-[411px]"
+                            className="absolute left-[-780px] top-[-2732px] h-[347px]w-full md:w-[411px]"
                             alt="Vector"
                             src="https://c.animaapp.com/meg2uvv4WWYlvp/img/vector-3.svg"
                         />
@@ -1000,7 +1000,7 @@ export const MainMobile = () => {
                                 />
 
                                 <div
-                                    className="relative w-[233px] text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica]">
+                                    className="relativew-full md:w-[233px] text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica]">
                                     Программное обеспечение
                                     <br/>и разработка современных
                                     <br/>
@@ -1009,7 +1009,7 @@ export const MainMobile = () => {
                             </div>
                         </div>
 
-                        <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-start gap-8">
+                        <div className="relative flexw-full md:w-[284px] flex-[0_0_auto] flex-col items-start gap-8">
                             <div
                                 className="relative flex h-[132px] w-full flex-col items-center justify-center gap-4 self-stretch">
                                 <div
@@ -1020,7 +1020,7 @@ export const MainMobile = () => {
                                 <div
                                     className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                                     <div
-                                        className="relative mt-[-1.00px] w-[233px] text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                                        className="relative mt-[-1.00px]w-full md:w-[233px] text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                         +7 (495) 006-21-57
                                     </div>
 
@@ -1034,7 +1034,7 @@ export const MainMobile = () => {
                         </div>
                     </div>
 
-                    <p className="relative w-[233px] text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica]">
+                    <p className="relativew-full md:w-[233px] text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica]">
                         © 2022 Sputnik – <br/>
                         Автоматизация бизнес-процессов
                     </p>

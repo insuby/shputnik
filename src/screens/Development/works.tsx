@@ -21,11 +21,11 @@ export const Works = () => {
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch">
-      <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         Примеры работ
       </div>
 
-      <div className="relative flex h-[648px] w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+      <div className="relative flex h-[648px]w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
           <Slider
             ref={sliderRef}
@@ -75,11 +75,11 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 VPN-сервис
               </motion.p>
-              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              <p className="relativew-full md:w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Создали мультиплатформенное VPN-решение с упором на
                 конфиденциальность, скорость и стабильность подключения.
                 Интеграция с крипто-оплатами, управление подписками, выбор стран
@@ -94,11 +94,11 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Pax
               </motion.div>
-              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              <p className="relativew-full md:w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Платформа Pax помогает пациентам, врачам и аптекам соблюдать
                 назначенное лечение. Мы разработали, протестировали и внедрили
                 цифровую систему с персонализированной фасовкой препаратов,
@@ -112,11 +112,11 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px]w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 Ascro
               </motion.p>
-              <p className="relative w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+              <p className="relativew-full md:w-[560px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                 Децентрализованная платформа для безопасных сделок с
                 крипто-активами. Реализовали Web3-приложение с подключением
                 через TronLink, созданием сделок между пользователями и
@@ -126,7 +126,7 @@ export const Works = () => {
           )}
 
           <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
-            <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+            <div className="flexw-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
                 className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

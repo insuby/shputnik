@@ -76,9 +76,9 @@ export const IslamFinance = () => {
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-12">
+        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-8 md:p-12">
           <img
-            className="absolute left-[539px] top-12 h-[842px] w-[954px]"
+            className="absolute left-[539px] top-12 h-[842px]w-full md:w-[954px]"
             alt="Vector"
             src="/img/islamfinans/vector-1-7.svg"
           />
@@ -129,9 +129,9 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[745px] top-[136px] flex h-[538px] w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
+            className="absolute left-[745px] top-[136px] flex h-[538px]w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
           >
-            <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+            <div className="relative flexw-full md:w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="text-[#1c222f]">Ваш</span>
 
@@ -142,7 +142,7 @@ export const IslamFinance = () => {
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative ml-[-18572.00px] mt-[-721.92px] size-5 bg-[100%_100%]">
                     <img
-                      className="absolute left-[3px] top-0.5 h-4 w-[15px]"
+                      className="absolute left-[3px] top-0.5 h-4w-full md:w-[15px]"
                       alt="Vector"
                       src="/img/islamfinans/vector.svg"
                     />
@@ -155,7 +155,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-[19px]">
+                    <div className="relative left-px top-1 h-[11px]w-full md:w-[19px]">
                       <img
                         className="absolute left-1.5 top-[3px] size-1.5"
                         alt="Vector"
@@ -163,7 +163,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-0 h-[11px] w-[19px]"
+                        className="absolute left-0 top-0 h-[11px]w-full md:w-[19px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-19.svg"
                       />
@@ -215,7 +215,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-2 h-0.5 w-[5px]"
+                        className="absolute left-0 top-2 h-0.5w-full md:w-[5px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-7.svg"
                       />
@@ -261,7 +261,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5 bg-[100%_100%]">
-                    <div className="relative left-[3px] top-0.5 h-4 w-[15px]">
+                    <div className="relative left-[3px] top-0.5 h-4w-full md:w-[15px]">
                       <img
                         className="absolute left-1 top-3 h-1 w-1.5"
                         alt="Vector"
@@ -269,7 +269,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-0 h-3.5 w-[15px]"
+                        className="absolute left-0 top-0 h-3.5w-full md:w-[15px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-13.svg"
                       />
@@ -555,7 +555,7 @@ export const IslamFinance = () => {
           </motion.div>
 
           <img
-            className="absolute left-[1053px] top-44 h-[568px] w-[619px]"
+            className="absolute left-[1053px] top-44 h-[568px]w-full md:w-[619px]"
             alt="Vector"
             src="/img/islamfinans/vector-4-3.svg"
           />
@@ -590,7 +590,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+              className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-12"
             >
               <motion.div
                 ref={ref11}

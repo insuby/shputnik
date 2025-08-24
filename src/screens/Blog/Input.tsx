@@ -13,7 +13,7 @@ export const Input = ({
 }: Props): JSX.Element => {
   return (
     <div
-      className={`relative flex w-[302px] items-center justify-center gap-2.5 rounded-2xl bg-white px-5 py-4 ${
+      className={`relative flexw-full md:w-[302px] items-center justify-center gap-2.5 rounded-2xl bg-white px-5 py-4 ${
         state === 'active' ? 'border-2 border-solid' : 'border border-solid'
       } ${
         state === 'active' ? 'border-[#acc5ff]' : 'border-[#e3e4e7]'
