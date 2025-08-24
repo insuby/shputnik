@@ -42,12 +42,12 @@ export const BlogList = () => {
   const pageCount = useMemo(() => Math.max(1, Math.ceil(total / 8)), [total]);
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]">
-      <div className="relative flex flex-[0_0_auto] flex-col items-start gap-8">
-        <h1 className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="blog-title">
+      <header className="relative flex flex-[0_0_auto] flex-col items-start gap-8">
+        <h1 id="blog-title" className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Блог
         </h1>
-        <div className="flex w-full items-center gap-2 overflow-x-auto">
+        <nav aria-label="Категории" className="flex w-full items-center gap-2 overflow-x-auto">
           <button
             onClick={() => setCategoryId(null)}
             className={`h-10 whitespace-nowrap rounded-full px-5 ${
@@ -71,8 +71,8 @@ export const BlogList = () => {
               {c.name}
             </button>
           ))}
-        </div>
-      </div>
+        </nav>
+      </header>
 
       <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
         {loading ? (
@@ -81,72 +81,51 @@ export const BlogList = () => {
           </div>
         ) : (
           posts.map((post) => (
-            <Link
-              to={`/blog/${post.documentId}`}
-              key={post.documentId}
-              className="flex flex-col gap-4 rounded-3xl bg-gray-10 md:flex-row p-3"
-            >
-              <div
-                className="relative h-72 w-full rounded-2xl bg-cover bg-center"
-                style={{
-                  backgroundImage: `url(${buildMediaUrl(post.image?.url)})`,
-                }}
-              >
+            <article key={post.documentId} className="flex flex-col gap-4 rounded-3xl bg-gray-10 md:flex-row p-3" aria-labelledby={`post-${post.documentId}-title`}>
+              <Link to={`/blog/${post.documentId}`} className="relative h-72 w-full rounded-2xl bg-cover bg-center" style={{ backgroundImage: `url(${buildMediaUrl(post.image?.url)})` }}>
                 <span className="bg-white/10 absolute left-3 top-3 h-7 w-fit rounded-full px-3 py-1 text-sm text-gray-70 backdrop-blur-2xl">
                   {post.category?.name}
                 </span>
-              </div>
+              </Link>
               <div className="flex w-full flex-col gap-2 py-2">
                 <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
                   <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
-                    <img
-                      className="relative size-4"
-                      alt="Calendar blank"
-                      src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"
-                    />
-                    <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <img className="relative size-4" alt="" aria-hidden="true" src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg" />
+                    <time dateTime={new Date(post.createdAt).toISOString()} className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {format(new Date(post.createdAt), 'dd MMMM yyyy')}
-                    </div>
+                    </time>
                   </div>
                   <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
-                    <img
-                      className="relative size-4"
-                      alt="Eye"
-                      src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"
-                    />
+                    <img className="relative size-4" alt="" aria-hidden="true" src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg" />
                     <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {post.views ?? 0}
                     </div>
                   </div>
                   <div className="justify_center relative inline-flex h-6 flex-[0_0_auto] items-center gap-2">
-                    <img
-                      className="relative size-4"
-                      alt="Heart"
-                      src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"
-                    />
+                    <img className="relative size-4" alt="" aria-hidden="true" src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg" />
                     <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {post.likes ?? 0}
                     </div>
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-[#1c222f]">
-                  {post.title}
-                </p>
+                <h2 id={`post-${post.documentId}-title`} className="text-2xl font-bold text-[#1c222f]">
+                  <Link to={`/blog/${post.documentId}`}>{post.title}</Link>
+                </h2>
                 <p className="leading-6 text-[#7a86a2]">{post.description}</p>
               </div>
-            </Link>
+            </article>
           ))
         )}
       </div>
 
-      <div className="mx-auto flex items-center justify-center gap-2 md:pt-4">
+      <nav aria-label="Навигация по страницам" className="mx-auto flex items-center justify-center gap-2 md:pt-4">
         <Pagination
           pageIndex={page}
           pageCount={pageCount}
           onPageChange={(event) => setPage(event.selected)}
         />
-      </div>
-    </div>
+      </nav>
+    </section>
   );
 };
 

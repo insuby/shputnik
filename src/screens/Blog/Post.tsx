@@ -117,17 +117,19 @@ export const BlogPost = () => {
             <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
               <img
                 className="relative size-4"
-                alt="Calendar blank"
+                alt=""
+                aria-hidden="true"
                 src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"
               />
-              <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <time dateTime={new Date(post.createdAt).toISOString()} className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {format(new Date(post.createdAt), 'dd MMMM yyyy')}
-              </div>
+              </time>
             </div>
             <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
               <img
                 className="relative size-4"
-                alt="Eye"
+                alt=""
+                aria-hidden="true"
                 src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"
               />
               <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
@@ -137,7 +139,8 @@ export const BlogPost = () => {
             <div className="justify_center relative inline-flex h-6 flex-[0_0_auto] items-center gap-2">
               <img
                 className="relative size-4"
-                alt="Heart"
+                alt=""
+                aria-hidden="true"
                 src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"
               />
               <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
@@ -145,9 +148,9 @@ export const BlogPost = () => {
               </div>
             </div>
           </div>
-          <p className="relative text-[36px] font-medium leading-none tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[800px] md:text-5xl md:leading-[60px]">
+          <h1 className="relative text-[36px] font-medium leading-none tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[800px] md:text-5xl md:leading-[60px]">
             {post.title}
-          </p>
+          </h1>
         </div>
         <div
           className="relative h-[456px] w-full self-stretch overflow-hidden rounded-3xl"
@@ -173,7 +176,7 @@ export const BlogPost = () => {
             <div>
               <div dangerouslySetInnerHTML={{ __html: post.ckeditor || '' }} />
             </div>
-            <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-3xl bg-[#f9fafd] p-8">
+            <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] md:!items-center justify-between self-stretch rounded-3xl bg-[#f9fafd] p-8">
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
                 <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   Оцените статью:
