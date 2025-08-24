@@ -42,7 +42,7 @@ export const Autocredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.div
                   ref={ref2}

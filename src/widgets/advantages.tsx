@@ -25,7 +25,7 @@ export const Advantages = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch"
+      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8  md:gap-12 self-stretch"
     >
       <motion.div
         ref={ref2}

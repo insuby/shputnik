@@ -105,7 +105,7 @@ export const BNPL = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.h1
                   ref={ref2}
@@ -273,7 +273,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch"
       >
         <motion.div
           ref={ref7}
@@ -654,7 +654,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView21 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch px-0 py-20"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch px-0 py-20"
       >
         <motion.div
           ref={ref22}

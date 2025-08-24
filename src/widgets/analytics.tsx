@@ -35,7 +35,7 @@ export const Analytics = () => {
 
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
       <motion.div
         ref={ref1}
         initial={{ opacity: 0, y: 50 }}

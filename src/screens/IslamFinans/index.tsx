@@ -89,7 +89,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12"
             >
               <motion.div
                 ref={ref3}
@@ -590,7 +590,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+              className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
             >
               <motion.div
                 ref={ref11}

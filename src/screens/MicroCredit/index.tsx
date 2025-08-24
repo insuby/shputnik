@@ -61,7 +61,7 @@ export const MicroCredit = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12"
             >
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
@@ -303,7 +303,7 @@ export const MicroCredit = () => {
 
               >
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -362,7 +362,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px]  w-full md:w-[377px]"
                       alt="Vector"
@@ -458,7 +458,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -485,7 +485,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -533,7 +533,7 @@ export const MicroCredit = () => {
                 </div>
 
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
+                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12">
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative -left-12 -top-12 w-full md:w-[443px]">
                         <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">

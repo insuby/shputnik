@@ -127,7 +127,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-            className="relative flex flex-1 grow flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+            className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
           >
             <img
               className="absolute left-[53px] top-0 h-[448px] w-[623px]"
@@ -398,7 +398,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-centergap-12 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 nd:p-12"
+            className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 nd:p-12"
           >
             <img
               className="absolute left-0 top-0 h-[488px] w-full md:w-[608px]"
