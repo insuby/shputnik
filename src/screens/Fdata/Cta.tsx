@@ -15,7 +15,7 @@ export const Cta = ({
     <div
       className={`relative flex w-full md:w-[1376px] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 ${className}`}
     >
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
         <img
           className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]"
           alt="Vector"
@@ -29,8 +29,8 @@ export const Cta = ({
         />
 
         <div className="relative flex w-full md:w-[696px] flex-col items-start gap-7">
-          <div className="relative flex h-[120px] w-full flex-col items-start gap-4 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+          <div className="relative flex md:h-[120px] w-full flex-col items-start gap-4 self-stretch">
+            <div className="text-center md:text-left relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-tight md:leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
               {text}
             </div>
 
@@ -42,7 +42,7 @@ export const Cta = ({
             )}
           </div>
 
-          <button className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
+          <button className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {text1}
             </div>

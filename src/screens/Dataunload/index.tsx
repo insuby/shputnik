@@ -119,7 +119,7 @@ export const Dataunload = () => {
             >
               <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <p className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <p className="text-center md:text-left relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     Выгрузка данных <br />в кредитные бюро
                   </p>
 
@@ -301,7 +301,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView14 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+          className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
         >
           <motion.div
             ref={ref15}
@@ -446,7 +446,7 @@ export const Dataunload = () => {
           </motion.div>
         </motion.div>
 
-        <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+        <div className="relative flex-col md:!flex-row flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
           <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.div
@@ -596,7 +596,7 @@ export const Dataunload = () => {
           src="/img/dataunload/vector-1-1.svg"
         />
 
-        <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch p-7 md:p-12">
+        <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-[88px] self-stretch p-7 md:p-12">
           <motion.div
             ref={ref44}
             initial={{ opacity: 0, x: -50 }}
@@ -686,7 +686,7 @@ export const Dataunload = () => {
           </motion.div>
 
           <img
-            className="relative w-px self-stretch"
+            className="hidden md:block relative w-px self-stretch"
             alt="Vector"
             src="/img/dataunload/vector-129.svg"
           />
@@ -778,7 +778,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView42 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
-          className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 md:p-12"
+          className="relative flex w-full flex-[0_0_auto] flex-col md:!flex-row items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 md:p-12"
         >
           <motion.img
             initial={{ opacity: 0, scale: 0.8 }}
@@ -812,7 +812,7 @@ export const Dataunload = () => {
 
           <button
             onClick={handleContactClick}
-            className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
+            className="all-[unset] md:mt-0 mt-3 w-full md:w-fit relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Связаться с нами

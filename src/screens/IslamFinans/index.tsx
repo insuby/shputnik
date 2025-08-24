@@ -87,21 +87,21 @@ export const IslamFinance = () => {
             <motion.div
               ref={ref2}
               initial={{ opacity: 0, y: 50 }}
-              animate={inView2 ? { opacity: 1, y: 0 } : {}}
+              animate={inView1 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
               className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
             >
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, y: 50 }}
-                animate={inView3 ? { opacity: 1, y: 0 } : {}}
+                animate={inView1 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
                 className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6"
               >
                 <motion.div
                   ref={ref4}
                   initial={{ opacity: 0, y: 50 }}
-                  animate={inView4 ? { opacity: 1, y: 0 } : {}}
+                  animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
                   className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
@@ -111,7 +111,7 @@ export const IslamFinance = () => {
                 <motion.p
                   ref={ref5}
                   initial={{ opacity: 0, y: 50 }}
-                  animate={inView5 ? { opacity: 1, y: 0 } : {}}
+                  animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
                   className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
                 >
@@ -127,7 +127,7 @@ export const IslamFinance = () => {
           <motion.div
             ref={ref2}
             initial={{ opacity: 0, x: 50 }}
-            animate={inView2 ? { opacity: 1, x: 0 } : {}}
+            animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
             className="absolute left-[745px] top-[136px] flex h-[538px] w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
           >

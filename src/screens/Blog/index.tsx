@@ -81,7 +81,7 @@ export const BlogList = () => {
           </div>
         ) : (
           posts.map((post) => (
-            <article key={post.documentId} className="flex flex-col gap-4 rounded-3xl bg-gray-10 md:flex-row p-3" aria-labelledby={`post-${post.documentId}-title`}>
+            <article key={post.documentId} className="flex flex-col gap-4 rounded-3xl bg-gray-10 md:!flex-row p-3" aria-labelledby={`post-${post.documentId}-title`}>
               <Link to={`/blog/${post.documentId}`} className="relative h-72 w-full rounded-2xl bg-cover bg-center" style={{ backgroundImage: `url(${buildMediaUrl(post.image?.url)})` }}>
                 <span className="bg-white/10 absolute left-3 top-3 h-7 w-fit rounded-full px-3 py-1 text-sm text-gray-70 backdrop-blur-2xl">
                   {post.category?.name}

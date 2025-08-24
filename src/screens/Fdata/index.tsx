@@ -93,7 +93,7 @@ export const Fdata = () => {
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
+        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -110,7 +110,7 @@ export const Fdata = () => {
             >
               <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <div className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <div className="text-center md:text-left mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     ПО для <br />
                     реконсиляции данных
                   </div>
@@ -121,12 +121,6 @@ export const Fdata = () => {
                     от персонала
                   </p>
                 </div>
-
-                <button className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Связаться с нами
-                  </div>
-                </button>
               </div>
             </motion.div>
           </HeroButtons>
@@ -142,7 +136,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="absolute left-[704px] top-[168px] flex w-full md:w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
+            className="absolute left-[704px] top-[208px] flex w-full md:w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -320,7 +314,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[960px] top-[364px] flex w-full md:w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6"
+            className="absolute left-[960px] top-[404px] flex w-full md:w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
@@ -449,14 +443,14 @@ export const Fdata = () => {
         </div>
       </div>
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
-        <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+        <div className="flex-col md:!flex-row relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
           <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
             <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
               <div className="relative mt-[-1.00px] text-center md:text-left self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 f.Data в деталях
               </div>
 
-              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="text-center md:text-left relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 f.Data автоматизирует все ваши процессы обработки финансовых
                 данных с минимальной зависимостью от персонала. Наша
                 инновационная платформа загружает и реконсилирует данные,
@@ -522,7 +516,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex-col md:!flex-row flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref10}
@@ -609,7 +603,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex-col md:!flex-row flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
           >
             <motion.div
               ref={ref19}
@@ -747,7 +741,7 @@ export const Fdata = () => {
 
             <button
               onClick={onClick}
-              className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+              className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Попробовать
@@ -777,7 +771,7 @@ export const Fdata = () => {
                   />
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-6 top-1 flex w-full md:w-[299px] flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6">
+                    <div className="relative left-0 md:left-6 top-1 flex w-full md:w-[299px] flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6">
                       <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         Настройка правил
                       </div>
@@ -972,15 +966,17 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
-            <div className="relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
+            <div className="hidden md:block relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
 
-            <motion.div className="relative flex flex-1 grow items-center gap-7  md:gap-12">
+            <motion.div className="relative flex flex-col md:!flex-row flex-1 grow items-center gap-7  md:gap-12">
               <div className="relative flex w-full md:w-[421px] flex-col items-start gap-4">
-                <div className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="md:hidden m-auto relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
+
+                <div className="text-center md:text-left relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Константин Гризов
                 </div>
 
-                <div className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <div className="text-center md:text-left relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   Управляющий партнер
                   <br />
                   PLUS Consulting
@@ -988,12 +984,12 @@ export const Fdata = () => {
               </div>
 
               <img
-                className="relative w-px self-stretch"
+                className="hidden md:block relative w-px self-stretch"
                 alt="Vector"
                 src="/img/fdata/vector-166.svg"
               />
 
-              <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="text-center md:text-left relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 f.Data легко масштабируется для бизнеса любого размера, <br />
                 что позволяет автоматизировать работу сфинансовыми данными как в
                 банках, страховых и инвестиционных компаниях, платежных
@@ -1016,7 +1012,7 @@ export const Fdata = () => {
           </motion.div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+            <div className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
@@ -1070,7 +1066,7 @@ export const Fdata = () => {
               </motion.div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+            <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-6 self-stretch">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, x: 50 }}

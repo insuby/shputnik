@@ -620,7 +620,7 @@ export const MobileLayout = () => {
                             width="64"
                             height="64"
                             rx="24"
-                            fill="#00CB82"
+                            fill="none"
                             fillOpacity="0.08"
                           />
                           <path
