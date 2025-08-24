@@ -72,7 +72,7 @@ export const ZaimChecker = () => {
         src="/img/zain-checker/vector-1.svg"
       />
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch p-0 md:p-12">
+      <div className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch p-0 md:p-12">
         <div className="relative flex w-full md:w-[520px] flex-col items-start gap-8">
           <img
             className="relative flex-[0_0_auto]"
