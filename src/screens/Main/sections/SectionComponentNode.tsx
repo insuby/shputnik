@@ -349,9 +349,9 @@ export const SectionComponentNode = () => {
             className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
-              <h4 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 P2P-кредитование
-              </h4>
+              </h3>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 Программное обеспечение для запуска P2P-платформы кредитования,
@@ -389,9 +389,9 @@ export const SectionComponentNode = () => {
             className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
-              <h4 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Исламское финансирование
-              </h4>
+              </h3>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 Платформа для исламского кредитования — поддержка продуктовых
