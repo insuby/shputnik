@@ -65,7 +65,7 @@ export const ZaimChecker = () => {
   const inView28 = useInView(ref28, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8">
+    <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7">
       <img
         className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
         alt="Vector"
@@ -73,7 +73,7 @@ export const ZaimChecker = () => {
       />
 
       <div className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch p-0 md:p-12">
-        <div className="relative flex w-full md:w-[520px] flex-col items-start gap-8">
+        <div className="relative flex w-full md:w-[520px] flex-col items-start gap-7">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
@@ -247,7 +247,7 @@ export const ZaimChecker = () => {
           src="/img/zain-checker/vector-129.svg"
         />
 
-        <div className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-8">
+        <div className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-7">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"

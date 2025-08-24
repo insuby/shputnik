@@ -24,7 +24,7 @@ export const About = () => {
           </header>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row">
-            <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-8 md:p-12">
+            <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 md:p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-moscow" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -61,7 +61,7 @@ export const About = () => {
               </button>
             </article>
 
-            <article aria-labelledby="office-murmansk" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-8 md:p-12">
+            <article aria-labelledby="office-murmansk" className="relative flex w-full flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 md:p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-murmansk" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

@@ -18,7 +18,7 @@ export const CrmCapabilities = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-center gap-8 md:gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 pb-10 md:p-12"
+            className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-center gap-7 md:gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 pb-10 md:p-12"
         >
             <img
                 className="absolute left-[420px] top-[-385px] h-[1060px] w-full md:w-[1108px]"

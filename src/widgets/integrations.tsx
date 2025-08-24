@@ -41,7 +41,7 @@ export const Integrations = () => {
             initial={{opacity: 0, y: 50}}
             animate={inView1 ? {opacity: 1, y: 0} : {}}
             transition={{duration: 0.7, ease: 'easeOut'}}
-            className="relative flex w-full flex-col md:!flex-row md:w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-20"
+            className="relative flex w-full flex-col md:!flex-row md:w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-20"
         >
             <img
                 className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
@@ -54,7 +54,7 @@ export const Integrations = () => {
                 initial={{opacity: 0, x: -50}}
                 animate={inView2 ? {opacity: 1, x: 0} : {}}
                 transition={{duration: 0.7, ease: 'easeOut', delay: 0.1}}
-                className="relative flex w-full md:w-[432px] flex-col items-start gap-8 md:gap-12"
+                className="relative flex w-full md:w-[432px] flex-col items-start gap-7 md:gap-12"
             >
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                     <div
@@ -85,7 +85,7 @@ export const Integrations = () => {
                 initial={{opacity: 0, x: 50}}
                 animate={inView3 ? {opacity: 1, x: 0} : {}}
                 transition={{duration: 0.7, ease: 'easeOut', delay: 0.2}}
-                className={cx("relative flex flex-1 grow flex-col items-start gap-8 md:gap-12 opacity-50", {
+                className={cx("relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 opacity-50", {
                     "!hidden": isMobile,
                 })}
             >
@@ -298,7 +298,7 @@ export const Integrations = () => {
                     initial={{opacity: 0, x: 50}}
                     animate={inView3 ? {opacity: 1, x: 0} : {}}
                     transition={{duration: 0.7, ease: 'easeOut', delay: 0.2}}
-                    className={cx("relative flex flex-1 grow flex-col items-start gap-8 md:gap-12 opacity-50", {
+                    className={cx("relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 opacity-50", {
                         "hidden": !isMobile,
                     })}
                 >

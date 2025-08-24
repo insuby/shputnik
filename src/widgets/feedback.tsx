@@ -53,7 +53,7 @@ export const Feedback = () => {
 
   return (
     <div className="relative flex w-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px]">
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-8 md:p-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
         <img
           className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]"
           alt="Vector"
@@ -66,7 +66,7 @@ export const Feedback = () => {
           src="/img/feedback/vector-2-1.svg"
         />
 
-        <div className="relative flex flex-col items-start gap-8 md:w-[696px]">
+        <div className="relative flex flex-col items-start gap-7 md:w-[696px]">
           <div className="relative flex w-full flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
@@ -109,7 +109,7 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-8 md:inline-flex"
+          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 md:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
             <motion.div
@@ -226,7 +226,7 @@ export const Feedback = () => {
           </motion.div>
 
           <img
-            className="absolute left-0 top-[109px] h-24w-full md:w-[328px]"
+            className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
             alt="Vector"
             src="/img/feedback/vector-147.svg"
           />

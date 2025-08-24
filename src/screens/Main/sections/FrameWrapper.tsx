@@ -46,7 +46,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-          className="relativew-full md:w-[1376px] text-center text-6xl font-medium leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+          className="relativew-full md:w-[1376px] text-center text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
           <span className="text-[#1c222f]">
             программном обеспечении
@@ -63,7 +63,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative flex cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-12  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+          className="relative flex cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 md:p-12  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
         >
           <Link to={RoutesPath.MICROCREDIT} className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
             <h3
@@ -147,7 +147,7 @@ export const FrameWrapper = () => {
                           src="/img/vector-137-3.svg"
                         />
 
-                        <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-50 shadow-[0px_4px_8px_#04ca8333]" />
+                        <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
                     </div>
 
@@ -177,7 +177,7 @@ export const FrameWrapper = () => {
                           src="/img/vector-137-2.svg"
                         />
 
-                        <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-50 shadow-[0px_4px_8px_#04ca8333]" />
+                        <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
                     </div>
 
@@ -228,7 +228,7 @@ export const FrameWrapper = () => {
 
               <button
                 onClick={onClick}
-                className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-8 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
+                className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
               >
                 <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                   Оформить займ
@@ -266,7 +266,7 @@ export const FrameWrapper = () => {
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
-                  <div className="relative size-2 rounded bg-green-50" />
+                  <div className="relative size-2 rounded bg-green-60" />
 
                   <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     Основная

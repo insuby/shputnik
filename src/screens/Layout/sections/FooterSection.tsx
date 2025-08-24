@@ -4,8 +4,8 @@ import { RoutesPath } from '../../../routes-path.tsx';
 
 export const FooterSection = () => {
   return (
-    <footer className="relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-8 md:p-12 pt-[136px]">
-      <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 md:gap-12 self-stretch">
+    <footer className="relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 md:p-12 pt-[136px]">
+      <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
         <div className="relative flex h-[324px] w-full md:w-[268px] flex-col items-start justify-between">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative h-[22px] w-28">
@@ -80,7 +80,7 @@ export const FooterSection = () => {
           </ul>
         </nav>
 
-        <div className="relative flex w-full md:w-[268px] flex-col items-start gap-8">
+        <div className="relative flex w-full md:w-[268px] flex-col items-start gap-7">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               Программное обеспечение
@@ -123,7 +123,7 @@ export const FooterSection = () => {
           </div>
         </div>
 
-        <div className="relative flex h-[324px] w-full md:w-[268px] flex-col items-center justify-center gap-8">
+        <div className="relative flex h-[324px] w-full md:w-[268px] flex-col items-center justify-center gap-7">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative mt-[-1.00px] w-full md:w-[268px] font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               Компания

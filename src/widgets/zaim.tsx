@@ -19,7 +19,7 @@ export const Zaim = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView10 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch"
     >
       <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
         <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -33,7 +33,7 @@ export const Zaim = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView11 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4">
             <img
@@ -60,7 +60,7 @@ export const Zaim = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView12 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <img
@@ -87,7 +87,7 @@ export const Zaim = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView13 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <img

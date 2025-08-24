@@ -33,8 +33,8 @@ export const Autocredit = () => {
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-8 md:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+        <div className="relative flex md:h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -42,7 +42,7 @@ export const Autocredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.div
                   ref={ref2}
@@ -62,7 +62,6 @@ export const Autocredit = () => {
                   className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
                 >
                   Программное обеспечение для автоматизации залоговых займов
-                  Программное обеспечение для автоматизации залоговых займов
                 </motion.p>
               </div>
             </div>
@@ -73,7 +72,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[704px] top-[154px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
+            className="absolute left-[704px] top-[154px] hidden md:inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
           >
             <div className="relative mt-2 flex w-full md:w-[393.9px] flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -453,7 +452,7 @@ export const Autocredit = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch"
       >
         <motion.div
           ref={ref7}
@@ -489,14 +488,14 @@ export const Autocredit = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView10 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl"
+          className="flex-col md:!flex-row relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl"
         >
           <Marquee
             fade
-            className="relative flex h-[609px] w-full flex-1 grow gap-1 self-stretch rounded-[32px] bg-[#f9fafd]"
+            className="relative flex md:h-[609px] md:p-0 p-7 w-full flex-1 grow gap-1 self-stretch rounded-[32px] bg-[#f9fafd]"
             innerClassName="!w-[750px]"
           >
-            <div className="absolute left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6">
+            <div className="md:absolute left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -516,7 +515,7 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="absolute top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6">
+            <div className="md:absolute top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -536,7 +535,7 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="absolute right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px]  bg-[#ffffff] px-4 py-6">
+            <div className="md:absolute right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px]  bg-[#ffffff] px-4 py-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -557,7 +556,7 @@ export const Autocredit = () => {
             </div>
           </Marquee>
 
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] py-12 pl-12 pr-[68px]">
+          <div className="md:relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:py-12 md:pl-12 md:pr-[68px]">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}

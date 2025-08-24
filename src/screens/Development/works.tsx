@@ -20,7 +20,7 @@ export const Works = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch">
       <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         Примеры работ
       </div>
@@ -70,7 +70,7 @@ export const Works = () => {
 
         <div className="relative flex h-[648px] flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
           {currentSlideIndex + 1 === 3 && (
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -89,7 +89,7 @@ export const Works = () => {
             </div>
           )}
           {currentSlideIndex + 1 === 1 && (
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -107,7 +107,7 @@ export const Works = () => {
             </div>
           )}
           {currentSlideIndex + 1 === 2 && (
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -126,7 +126,7 @@ export const Works = () => {
           )}
 
           <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
-            <div className="flex w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+            <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
                 className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

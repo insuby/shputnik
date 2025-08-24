@@ -14,9 +14,9 @@ export const Technoligies = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
       <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+        <div className="relative mt-[-1.00px] self-stretch text-left md:text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
           Технологии разработки
         </div>
       </div>
@@ -33,8 +33,8 @@ export const Technoligies = () => {
             arrows={false}
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="px-3">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="md:px-3">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
                 <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Figma
@@ -71,8 +71,8 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="px-3">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="md:px-3">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
                 <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Java
@@ -98,8 +98,8 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="px-3">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+            <div className="md:px-3">
+              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
                 <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Blockchain / Web3
@@ -127,7 +127,7 @@ export const Technoligies = () => {
           </Slider>
 
           <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
-            <div className="flex w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+            <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
                 className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

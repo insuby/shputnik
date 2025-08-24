@@ -95,8 +95,8 @@ export const BNPL = () => {
 
   return (
     <section aria-labelledby="bnpl-title" className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-8 md:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+        <div className="relative flex h-[1060px] md:h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
             alt=""
@@ -105,7 +105,7 @@ export const BNPL = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.h1
                   ref={ref2}
@@ -137,7 +137,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-8"
+            className="md:absolute left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -200,7 +200,7 @@ export const BNPL = () => {
             </div>
 
             <img
-              className="absolute left-0 top-[132px] h-24w-full md:w-[328px]"
+              className="absolute left-0 top-[730px] md:top-[132px] h-24 w-full md:w-[328px]"
               alt="Vector"
               src="/img/bnpl/vector-147.svg"
             />
@@ -219,7 +219,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[800px] top-[286px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4"
+            className="absolute left-2 md:left-[800px] top-[730px] md:top-[286px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4"
           >
             <div className="relative size-[212px] rounded-[100px]">
               <div className="relative left-[7px] top-[7px] size-[198px]">
@@ -273,7 +273,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch"
       >
         <motion.div
           ref={ref7}
@@ -292,14 +292,14 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+          className="flex-col md:!flex-row relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, x: -50 }}
             animate={inView9 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <img
               className="relative flex-[0_0_auto]"
@@ -326,7 +326,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView10 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <img
               className="relative flex-[0_0_auto]"
@@ -354,14 +354,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView11 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex h-[400px] w-full items-center gap-6 self-stretch rounded-3xl"
+        className="relative flex md:h-[400px] w-full items-center gap-6 self-stretch rounded-3xl flex-col md:!flex-row"
       >
         <motion.div
           ref={ref12}
           initial={{ opacity: 0, x: -50 }}
           animate={inView12 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <motion.div
@@ -460,14 +460,14 @@ export const BNPL = () => {
         </motion.div>
       </motion.div>
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch overflow-hidden rounded-3xl">
-        <div className="relative flex w-full md:w-[676px] flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6">
-          <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-8">
+      <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-center gap-6 self-stretch overflow-hidden rounded-3xl">
+        <div className="relative hidden md:flex w-full md:w-[676px] flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6">
+          <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
             <div className="relative flex flex-1 grow items-start gap-3">
               <motion.div
                 ref={ref16}
                 initial={{ opacity: 0, scale: 0 }}
-                animate={inView16 ? { opacity: 1, scale: 1 } : {}}
+                animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
                 className="relative size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
               />
@@ -475,7 +475,7 @@ export const BNPL = () => {
               <motion.div
                 ref={ref16}
                 initial={{ opacity: 0, scale: 0 }}
-                animate={inView16 ? { opacity: 1, scale: 1 } : {}}
+                animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative flex flex-1 grow flex-col items-start gap-5 p-3"
               >
@@ -611,9 +611,9 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView17 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]"
         >
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
+          <div className="md:mt-0 -mt-20 relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <motion.div
               ref={ref18}
               initial={{ opacity: 0, y: 50 }}
@@ -654,7 +654,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView21 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch px-0 py-20"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch px-0 py-20"
       >
         <motion.div
           ref={ref22}
@@ -671,14 +671,14 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView23 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex h-[228px] w-full items-start justify-center gap-6 self-stretch"
+          className="relative flex md:h-[228px] flex-col md:!flex-row w-full items-start justify-center gap-6 self-stretch"
         >
           <motion.div
             ref={ref24}
             initial={{ opacity: 0, x: -50 }}
             animate={inView24 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden text-center md:text-left rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.div
               ref={ref34}
@@ -721,14 +721,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView25 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden text-center md:text-left rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.div
               ref={ref35}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView35 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4"
+              className="m-auto md:m-0 relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4"
             >
               <svg
                 width="28"
@@ -771,14 +771,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView26 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden text-center md:text-left rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.div
               ref={ref36}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView36 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4"
+              className="m-auto md:m-0 relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4"
             >
               <svg
                 width="28"
@@ -821,14 +821,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView27 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden text-center md:text-left rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.div
               ref={ref37}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView37 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4"
+              className="m-auto md:m-0 relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4"
             >
               <svg
                 width="28"
@@ -866,14 +866,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView28 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-50 px-[88px] py-12"
+        className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:px-[88px] md:py-12 flex-col md:!flex-row"
       >
         <motion.div
           ref={ref29}
           initial={{ opacity: 0, x: -50 }}
           animate={inView29 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full md:w-[530px] flex-col items-start gap-8"
+          className="relative flex w-full md:w-[530px] flex-col items-start gap-7"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <motion.div
@@ -917,9 +917,9 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative mr-[-88.00px] flex h-[538px] w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
+          className="relative mr-[-88.00px] flex md:left-0 left-[-20px] h-[538px] w-[120%] md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
         >
-          <div className="relative flex w-full md:w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+          <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
             <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               <span className="text-[#1c222f]">Ваш</span>
 
@@ -1040,7 +1040,7 @@ export const BNPL = () => {
                       Рассрочка SD45234
                     </div>
 
-                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-50 px-1.5 py-[3px]">
+                    <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                         Активный
                       </div>
@@ -1099,7 +1099,7 @@ export const BNPL = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 self-stretch">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 self-stretch">
                     <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1341,7 +1341,7 @@ export const BNPL = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
+            <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
               <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
                 <div className="relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
                   <div className="relative left-0.5 top-0.5 size-5">
@@ -1381,7 +1381,7 @@ export const BNPL = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6">
+            <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-green-60 p-6">
               <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
                 <div className="relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
                   <img

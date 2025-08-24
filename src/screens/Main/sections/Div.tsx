@@ -37,7 +37,7 @@ export const Div = () => {
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
   const inView31 = useInView(ref31, { once: true, margin: '-100px' });
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch" aria-labelledby="credit-in-store-online">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch" aria-labelledby="credit-in-store-online">
       <h2 id="credit-in-store-online" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_20"
@@ -146,7 +146,7 @@ export const Div = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="absolute left-[363px] top-[238px] inline-flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
                 >
-                  <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-8 rounded-3xl bg-[#f2f5ff] p-4">
+                  <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
                     <img
                       className="relative size-8"
                       alt="Money"
@@ -164,7 +164,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 md:p-10 pt-0">
               <motion.div
                 id="animate_28"
                 ref={ref28}
@@ -230,7 +230,7 @@ export const Div = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView26 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-8"
+                  className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -279,7 +279,7 @@ export const Div = () => {
                     </div>
                   </div>
                   <img
-                    className="absolute left-0 top-[109px] h-24w-full md:w-[328px]"
+                    className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
                     alt=""
                     aria-hidden="true"
                     src="/img/vector-147.svg"
@@ -330,7 +330,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 md:p-10 pt-0">
               <motion.div
                 id="animate_29"
                 ref={ref29}

@@ -101,7 +101,7 @@ export const Dataunload = () => {
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
@@ -115,25 +115,18 @@ export const Dataunload = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
             >
-              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
+              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <p className="relative mt-[-1.00px] w-full md:w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <p className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     Выгрузка данных <br />в кредитные бюро
                   </p>
 
                   <p className="relative w-full text-center md:text-left md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
                     Программа для конвертации и выгрузки данных в кредитные бюро
-                    Программа для конвертации и выгрузки данных в кредитные бюро
                   </p>
                 </div>
-
-                <button className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Связаться с нами
-                  </div>
-                </button>
               </div>
             </motion.div>
           </HeroButtons>
@@ -175,7 +168,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, y: -150 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute left-[173px] top-[219px] flex w-full md:w-[400px] items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-8"
+                className="absolute left-[173px] top-[219px] flex w-full md:w-[400px] items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-7"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -273,7 +266,7 @@ export const Dataunload = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
         <motion.div
           ref={ref11}
           initial={{ opacity: 0, y: 50 }}
@@ -315,7 +308,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView15 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.img
               ref={ref16}
@@ -356,7 +349,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.img
               ref={ref20}
@@ -397,7 +390,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView23 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
-            className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl bg-[#f9fafd] p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:p-10"
           >
             <motion.img
               ref={ref24}
@@ -434,7 +427,7 @@ export const Dataunload = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
         <motion.div
           ref={ref27}
           initial={{ opacity: 0, y: 50 }}
@@ -454,8 +447,8 @@ export const Dataunload = () => {
         </motion.div>
 
         <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
-          <div className="relative flex flex-1 grow flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.div
                 ref={ref29}
                 initial={{ opacity: 0, y: 50 }}
@@ -591,7 +584,7 @@ export const Dataunload = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView42 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
+        className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7"
       >
         <motion.img
           ref={ref43}
@@ -603,13 +596,13 @@ export const Dataunload = () => {
           src="/img/dataunload/vector-1-1.svg"
         />
 
-        <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch p-8 md:p-12">
+        <div className="relative flex w-full flex-[0_0_auto] items-start gap-[88px] self-stretch p-7 md:p-12">
           <motion.div
             ref={ref44}
             initial={{ opacity: 0, x: -50 }}
             animate={inView44 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative flex w-full md:w-[520px] flex-col items-start gap-8"
+            className="relative flex w-full md:w-[520px] flex-col items-start gap-7"
           >
             <motion.img
               ref={ref45}
@@ -703,7 +696,7 @@ export const Dataunload = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView48 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-8"
+            className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-7"
           >
             <motion.img
               ref={ref49}
@@ -785,7 +778,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView42 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
-          className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-8 md:p-12"
+          className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 md:p-12"
         >
           <motion.img
             initial={{ opacity: 0, scale: 0.8 }}

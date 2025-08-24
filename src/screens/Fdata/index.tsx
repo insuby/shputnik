@@ -92,8 +92,8 @@ export const Fdata = () => {
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-8 md:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+        <div className="relative flex h-[636px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -106,11 +106,11 @@ export const Fdata = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
             >
-              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
+              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <div className="relative mt-[-1.00px] w-full md:w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <div className="relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     ПО для <br />
                     реконсиляции данных
                   </div>
@@ -229,7 +229,7 @@ export const Fdata = () => {
 
                   <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-green-50" />
+                      <div className="relative size-2 rounded bg-green-60" />
 
                       <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
@@ -255,7 +255,7 @@ export const Fdata = () => {
 
                   <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-green-50" />
+                      <div className="relative size-2 rounded bg-green-60" />
 
                       <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
@@ -448,11 +448,11 @@ export const Fdata = () => {
           />
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
         <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
-          <div className="relative flex flex-1 grow flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
             <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
-              <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] text-center md:text-left self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 f.Data в деталях
               </div>
 
@@ -479,7 +479,7 @@ export const Fdata = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView4 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch"
       >
         <motion.div
           ref={ref5}
@@ -529,7 +529,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <motion.img
                 ref={ref11}
@@ -569,7 +569,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView14 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <motion.img
                 ref={ref15}
@@ -616,7 +616,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView19 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <motion.img
                 ref={ref20}
@@ -655,7 +655,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 0 }}
               animate={inView23 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <motion.img
                 ref={ref24}
@@ -694,7 +694,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView27 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <motion.img
                 ref={ref28}
@@ -736,10 +736,10 @@ export const Fdata = () => {
         text="Защитите ваши финансовые данные сегодня"
         text1="Заказать демо"
       />
-      <div className="relative h-[568px] w-full md:w-[1376px]">
-        <div className="absolute left-0 top-0 flex w-full md:w-[1472px] items-center gap-[68px]">
-          <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-8">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex-col flex md:!flex-row md:h-[568px] w-full md:w-[1376px]">
+        <div className="flex flex-col md:!flex-row w-full md:w-[1472px] items-center gap-[68px]">
+          <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-7">
+            <div className="relative mt-[-1.00px] text-center md:text-left self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Инновационная технология
               <br />
               для вашего бизнеса
@@ -769,7 +769,7 @@ export const Fdata = () => {
 
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-12">
+                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
                     alt="Vector"
@@ -797,7 +797,7 @@ export const Fdata = () => {
                           Хранение файлов
                         </div>
 
-                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-50">
+                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-60">
                           <div className="relative left-3.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
                         </div>
                       </div>
@@ -817,7 +817,7 @@ export const Fdata = () => {
                 </div>
               </div>
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[442px] flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-12">
+                <div className="relative flex h-[480px] w-full md:w-[442px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
                     alt="Vector"
@@ -830,13 +830,13 @@ export const Fdata = () => {
                         <div className="relative size-[120px]">
                           <div className="absolute left-0 top-0 size-[120px]">
                             <img
-                              className="absolute left-0 top-0 h-[120px] w-full md:w-[57px]"
+                              className="absolute left-0 top-0 h-[120px] w-[57px]"
                               alt="Subtract"
                               src="/img/fdata/subtract-2.svg"
                             />
 
                             <img
-                              className="absolute left-[63px] top-[49px] h-[71px] w-full md:w-[57px]"
+                              className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
                               alt="Subtract"
                               src="/img/fdata/subtract.svg"
                             />
@@ -859,7 +859,7 @@ export const Fdata = () => {
                           />
 
                           <img
-                            className="absolute left-[63px] top-0 h-5w-full md:w-[39px]"
+                            className="absolute left-[63px] top-0 h-5 w-[39px]"
                             alt="Subtract"
                             src="/img/fdata/subtract-3.svg"
                           />
@@ -890,7 +890,7 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[512px] hidden md:flex h-14w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+        <div className="absolute left-[725px] top-[542px] hidden md:flex h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
           <button
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -948,7 +948,7 @@ export const Fdata = () => {
           </button>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
         <div
           ref={ref53}
           className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
@@ -970,11 +970,11 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: -100 }}
             animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
+            className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
             <div className="relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
 
-            <motion.div className="relative flex flex-1 grow items-center gap-8  md:gap-12">
+            <motion.div className="relative flex flex-1 grow items-center gap-7  md:gap-12">
               <div className="relative flex w-full md:w-[421px] flex-col items-start gap-4">
                 <div className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Константин Гризов
@@ -1022,7 +1022,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1049,7 +1049,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1076,7 +1076,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"
@@ -1100,7 +1100,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                className="relative flex flex-1 grow flex-col items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
               >
                 <img
                   className="relative flex-[0_0_auto]"

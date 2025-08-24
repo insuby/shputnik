@@ -260,7 +260,7 @@ export const MainMobile = () => {
                                     </div>
 
                                     <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
-                                        <div className="relative size-[5.43px] rounded-[2.71px] bg-green-50"/>
+                                        <div className="relative size-[5.43px] rounded-[2.71px] bg-green-60"/>
 
                                         <div
                                             className="relative mt-[-0.68px] w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -306,7 +306,7 @@ export const MainMobile = () => {
                     </div>
 
                     <div
-                        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc] p-8">
+                        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc] p-7">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                             <p className="relative mt-[-1.00px] self-stretch text-[28px] font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="font-medium leading-9 text-[#1c222f]">
@@ -770,7 +770,7 @@ export const MainMobile = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-4 self-stretch">
                         <div
-                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-8">
+                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <div
@@ -801,7 +801,7 @@ export const MainMobile = () => {
                         </div>
 
                         <div
-                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-8">
+                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <div
@@ -833,7 +833,7 @@ export const MainMobile = () => {
                         </div>
 
                         <div
-                            className="relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-[0_0_auto] flex-col items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-none bg-[#f5f7ff] p-8">
+                            className="relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-[0_0_auto] flex-col items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-none bg-[#f5f7ff] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <div
@@ -886,7 +886,7 @@ export const MainMobile = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-4 self-stretch">
                         <div
-                            className="relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-[0_0_auto] flex-col items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-none bg-[#f5f7ff] p-8">
+                            className="relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-[0_0_auto] flex-col items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-none bg-[#f5f7ff] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <p className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -919,7 +919,7 @@ export const MainMobile = () => {
                         </div>
 
                         <div
-                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-8">
+                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <div
@@ -952,7 +952,7 @@ export const MainMobile = () => {
                         </div>
 
                         <div
-                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-8">
+                            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
                             <div
                                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                                 <div
@@ -989,9 +989,9 @@ export const MainMobile = () => {
             <div
                 className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch bg-[linear-gradient(180deg,rgba(255,255,255,1)_0%,rgba(232,236,246,1)_64%)] p-4">
                 <footer
-                    className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-white p-8">
+                    className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-white p-7">
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch">
-                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch">
+                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch">
                             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                                 <img
                                     className="relative mt-[-0.37px] h-[22.74px] w-28"
@@ -1009,7 +1009,7 @@ export const MainMobile = () => {
                             </div>
                         </div>
 
-                        <div className="relative flex w-full md:w-[284px] flex-[0_0_auto] flex-col items-start gap-8">
+                        <div className="relative flex w-full md:w-[284px] flex-[0_0_auto] flex-col items-start gap-7">
                             <div
                                 className="relative flex h-[132px] w-full flex-col items-center justify-center gap-4 self-stretch">
                                 <div

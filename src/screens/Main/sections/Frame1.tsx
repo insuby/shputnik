@@ -30,7 +30,7 @@ export const Frame1 = () => {
   const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
   const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch" aria-labelledby="other-software">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch" aria-labelledby="other-software">
       <h2 id="other-software" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_37_left"
@@ -198,7 +198,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
+            <div className="relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 md:p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_38"
@@ -267,7 +267,7 @@ export const Frame1 = () => {
                           Давид Иванов
                         </div>
 
-                        <div className="relative flex size-6 items-center justify-center gap-2.5 rounded-[20px] bg-green-50 p-2">
+                        <div className="relative flex size-6 items-center justify-center gap-2.5 rounded-[20px] bg-green-60 p-2">
                           <img
                             className="relative m-[-4.00px] size-4"
                             alt="Check"
@@ -356,7 +356,7 @@ export const Frame1 = () => {
                   className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[148px] w-full md:w-[68px] overflow-hidden rounded-[20px] bg-green-50">
+                    <div className="relative h-[148px] w-full md:w-[68px] overflow-hidden rounded-[20px] bg-green-60">
                       <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>
@@ -406,7 +406,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
+            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 md:p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_46_left"

@@ -17,13 +17,15 @@ export const Layout = () => {
   }, [isOpen]);
 
   return (
-    <div className="m-auto flex w-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
-      <HeaderSection />
-      <main id="content" role="main" className="w-full">
-        <Outlet />
-      </main>
-      <FooterSection />
-      {isOpen && <FeedbackForm />}
-    </div>
+    <>
+        <div className="m-auto flex size-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
+            <HeaderSection />
+            <main id="content" role="main" className="size-full">
+                <Outlet />
+            </main>
+            <FooterSection />
+        </div>
+        {isOpen && <FeedbackForm />}
+    </>
   );
 };

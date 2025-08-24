@@ -30,7 +30,7 @@ export const SectionComponentNode = () => {
   const inView35 = useInView(ref35, { once: true, margin: '-100px' });
   const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   return (
-    <section className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8" aria-labelledby="alt-ethical-models">
+    <section className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7" aria-labelledby="alt-ethical-models">
       <h2 id="alt-ethical-models" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_32"
@@ -70,7 +70,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[66px] flex w-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50"
+              className="absolute left-[62px] top-[66px] flex w-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <img
@@ -265,7 +265,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, x: 40 }}
               animate={inView34r ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[298px] top-[138px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-8"
+              className="absolute left-[298px] top-[138px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
             >
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                 <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -346,7 +346,7 @@ export const SectionComponentNode = () => {
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleP2PClick}
-            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -386,7 +386,7 @@ export const SectionComponentNode = () => {
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleIslamFinansClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

@@ -25,7 +25,7 @@ export const Advantages = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8  md:gap-12 self-stretch"
+      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7  md:gap-12 self-stretch"
     >
       <motion.div
         ref={ref2}
@@ -68,7 +68,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
         >
           <img
             className="relative flex-[0_0_auto]"
@@ -88,7 +88,7 @@ export const Advantages = () => {
           </div>
         </motion.div>
 
-        <div className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10">
+        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
@@ -112,7 +112,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-[32px] bg-[#f9fafd] p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
         >
           <img
             className="relative flex-[0_0_auto]"

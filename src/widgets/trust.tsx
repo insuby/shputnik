@@ -11,7 +11,7 @@ export const Trust = () => {
 
   return (
     <div className="relative w-full rounded-[32px] text-center md:w-[1376px]">
-      <div className="mx-auto flex w-full flex-col items-start gap-8 md:gap-12 md:w-[704px]">
+      <div className="mx-auto flex w-full flex-col items-start gap-7 md:gap-12 md:w-[704px]">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
             Нам доверяют

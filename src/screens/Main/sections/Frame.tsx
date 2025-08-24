@@ -27,7 +27,7 @@ export const Frame = () => {
 
   return (
     <div className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
-      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 md:pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
+      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-7 overflow-hidden rounded-[24px] px-4 pb-0 md:pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
         <img
           className="absolute left-1/2 top-[220px] hidden h-[560px] w-full md:w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
           alt=""
@@ -35,7 +35,7 @@ export const Frame = () => {
           src="/img/vector-1-6.svg"
         />
 
-        <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-8 md:px-0">
+        <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-7 md:px-0">
           <motion.h1
             id="animate_1"
             ref={refs[0]}
@@ -87,7 +87,7 @@ export const Frame = () => {
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
           className="absolute left-[854px] top-[730px] hidden items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 md:inline-flex"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-8 rounded-3xl bg-[#f2f5ff] p-4">
+          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
             <img className="relative size-8" alt="Money" src="/img/money.svg" />
           </div>
 
@@ -126,7 +126,7 @@ export const Frame = () => {
             </div>
 
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
-              <div className="relative size-2 rounded bg-green-50" />
+              <div className="relative size-2 rounded bg-green-60" />
 
               <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                 Основная

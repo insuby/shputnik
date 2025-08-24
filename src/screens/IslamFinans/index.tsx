@@ -75,8 +75,8 @@ export const IslamFinance = () => {
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-8 md:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
           <img
             className="absolute left-[539px] top-12 h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -89,7 +89,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
             >
               <motion.div
                 ref={ref3}
@@ -131,7 +131,7 @@ export const IslamFinance = () => {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
             className="absolute left-[745px] top-[136px] flex h-[538px] w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
           >
-            <div className="relative flex w-full md:w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+            <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="text-[#1c222f]">Ваш</span>
 
@@ -330,7 +330,7 @@ export const IslamFinance = () => {
                         Финансирование SD45234
                       </div>
 
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-50 px-1.5 py-[3px]">
+                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                           Активный
                         </div>
@@ -389,7 +389,7 @@ export const IslamFinance = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 self-stretch">
+                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -590,14 +590,14 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-center gap-8  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-12"
+              className="relative flex flex-1 grow flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12"
             >
               <motion.div
                 ref={ref11}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView11 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch"
+                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
               >
                 <motion.p
                   ref={ref12}

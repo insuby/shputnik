@@ -451,7 +451,7 @@ export const HeaderSection = () => {
                 <div className="relative flex w-full md:w-[1392px] flex-[0_0_auto] items-center gap-6 bg-[#ffffff]">
                   <Link
                     to={RoutesPath.MICROCREDIT}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -512,7 +512,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.BUSINESSCREDIT}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -537,7 +537,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.BANKCREDIT}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -567,7 +567,7 @@ export const HeaderSection = () => {
                 <div className="relative flex w-full md:w-[1392px] flex-[0_0_auto] items-center gap-6 bg-[#ffffff]">
                   <Link
                     to={RoutesPath.BNPL}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -589,7 +589,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.BNPL}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -612,7 +612,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.AUTOCREDIT}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -638,7 +638,7 @@ export const HeaderSection = () => {
                 <div className="relative flex w-full md:w-[1392px] flex-[0_0_auto] items-center gap-6 bg-[#ffffff]">
                   <Link
                     to={RoutesPath.P2P}
-                    className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -661,7 +661,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.ISLAMFINANCE}
-                    className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -694,7 +694,7 @@ export const HeaderSection = () => {
                 <div className="relative flex w-full md:w-[1392px] flex-[0_0_auto] items-center gap-6 bg-[#ffffff]">
                   <Link
                     to={RoutesPath.DATAUNLOAD}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -716,7 +716,7 @@ export const HeaderSection = () => {
 
                   <Link
                     to={RoutesPath.FDATA}
-                    className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
                   >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -736,7 +736,7 @@ export const HeaderSection = () => {
                     </div>
                   </Link>
 
-                  <div className="group relative flex flex-1 grow cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]">
+                  <div className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]">
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
                       width="64"
@@ -768,7 +768,7 @@ export const HeaderSection = () => {
                   to={RoutesPath.DEVELOPMENT}
                   className="relative flex w-full md:w-[1392px] flex-[0_0_auto] items-center gap-6 bg-[#ffffff]"
                 >
-                  <div className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-8 rounded-[32px] p-5 hover:bg-[#f9fafd]">
+                  <div className="group relative flex w-full md:w-[448px] cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]">
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
                       width="64"

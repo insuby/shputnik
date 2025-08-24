@@ -29,7 +29,7 @@ export const DivWrapper = () => {
   const inView18 = useInView(ref18, { once: true, margin: '-100px' });
   const inView19 = useInView(ref19, { once: true, margin: '-100px' });
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-8 md:px-0" aria-labelledby="classic-crediting">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-7 md:px-0" aria-labelledby="classic-crediting">
       <motion.h2
         ref={ref14}
         initial={{ opacity: 0, x: -40 }}
@@ -173,7 +173,7 @@ export const DivWrapper = () => {
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -212,7 +212,7 @@ export const DivWrapper = () => {
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -251,7 +251,7 @@ export const DivWrapper = () => {
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-8 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 md:p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

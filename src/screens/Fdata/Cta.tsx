@@ -28,7 +28,7 @@ export const Cta = ({
           src="/img/fdata/vector-2.svg"
         />
 
-        <div className="relative flex w-full md:w-[696px] flex-col items-start gap-8">
+        <div className="relative flex w-full md:w-[696px] flex-col items-start gap-7">
           <div className="relative flex h-[120px] w-full flex-col items-start gap-4 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
               {text}
@@ -106,7 +106,7 @@ export const Cta = ({
             </div>
           </div>
 
-          <button className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-8 self-stretch rounded-3xl bg-gray-90 px-8 py-3">
+          <button className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3">
             <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
               Оформить
             </div>

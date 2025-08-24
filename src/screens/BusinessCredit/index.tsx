@@ -30,7 +30,7 @@ export const BusinessCredit = () => {
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
@@ -39,7 +39,7 @@ export const BusinessCredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-8  md:gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
               <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, y: 50 }}
@@ -76,14 +76,14 @@ export const BusinessCredit = () => {
             src="/img/businesscredit/vector-3.svg"
           />
 
-          <div className="absolute left-[745px] top-[139px] size-[583px]">
-            <div className="relative h-[583px] w-full md:w-[631px]">
+          <div className="md:absolute left-[745px] top-[139px] h-[380px] md:size-[583px] md:scale-100 scale-60 md:w-auto w-full">
+            <div className="relative md:h-[583px] w-full md:w-[631px]">
               <motion.div
                 ref={ref4}
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView4 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-[108px] top-0 flex w-full md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
+                className="absolute left-3 md:left-[108px] top-0 flex w-full md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
@@ -215,7 +215,7 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView5 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-0 top-[213px] flex w-full md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-8"
+                className="absolute left-0 top-[213px] flex w-[120%]] md:w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
@@ -269,7 +269,7 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView6 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="absolute left-[272px] top-[307px] inline-flex items-center gap-4 rounded-[32px] bg-[#ffffff] py-4 pl-4 pr-6"
+                className="absolute left-8 md:left-[272px] md:top-[307px] top-[320px] inline-flex items-center gap-4 rounded-[32px] bg-[#ffffff] py-4 pl-4 pr-6"
               >
                 <img
                   className="relative flex-[0_0_auto]"

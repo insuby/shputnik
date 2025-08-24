@@ -126,7 +126,7 @@ export const FeedbackForm = () => {
             </div>
           </div>
 
-          <div className="relative flex flex-1 grow flex-col items-start gap-10 rounded-[32px] bg-[#f9fafd] p-8 md:p-12 md:min-w-[584px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-10 rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:min-w-[584px]">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
               <div className="relative w-full">
                 <input

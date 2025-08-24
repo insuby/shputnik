@@ -35,7 +35,7 @@ export const Analytics = () => {
 
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-8 md:gap-12 self-stretch">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
       <motion.div
         ref={ref1}
         initial={{ opacity: 0, y: 50 }}
@@ -64,7 +64,7 @@ export const Analytics = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView3 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-8 overflow-hidden rounded-3xl pt-0 pb-8 px-8 md:p-20"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl pt-0 pb-8 px-8 md:p-20"
         >
           <motion.div
             ref={ref6}
@@ -169,11 +169,11 @@ export const Analytics = () => {
             <div className="absolute left-0 top-0 size-[574px] rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
 
             <div className="absolute left-32 top-[127px] size-[319px]">
-              <div className="absolute left-[-29px] top-[-18px] h-[337px] w-full md:w-[356px]">
-                <div className="absolute left-0 top-[76px] h-[260px] w-full md:w-[356px]">
-                  <div className="absolute left-0 top-[7px] h-[253px] w-full md:w-[356px]">
+              <div className="absolute left-[-29px] top-[-18px] h-[337px] w-[356px]">
+                <div className="absolute left-0 top-[76px] h-[260px] w-[356px]">
+                  <div className="absolute left-0 top-[7px] h-[253px] w-[356px]">
                     <img
-                      className="absolute left-[29px] top-0 h-[253px] w-full md:w-[152px]"
+                      className="absolute left-[29px] top-0 h-[253px] w-[152px]"
                       alt="Subtract"
                       src="/img/graph-big/subtract.svg"
                     />
@@ -208,15 +208,15 @@ export const Analytics = () => {
                   </div>
 
                   <img
-                    className="absolute left-[295px] top-0 h-[94px] w-full md:w-[53px]"
+                    className="absolute left-[295px] top-0 h-[94px] w-[53px]"
                     alt="Subtract"
                     src="/img/graph-big/subtract-2.svg"
                   />
                 </div>
 
-                <div className="absolute left-[81px] top-0 h-[78px] w-full md:w-[145px]">
+                <div className="absolute left-[81px] top-0 h-[78px] w-[145px]">
                   <img
-                    className="absolute left-0 top-[18px] h-[60px] w-full md:w-[145px]"
+                    className="absolute left-0 top-[18px] h-[60px] w-[145px]"
                     alt="Subtract"
                     src="/img/graph-big/subtract-4.svg"
                   />
@@ -229,9 +229,9 @@ export const Analytics = () => {
                 </div>
               </div>
 
-              <div className="absolute -top-0.5 left-[211px] h-[57px] w-full md:w-[70px]">
+              <div className="absolute -top-0.5 left-[211px] h-[57px] w-[70px]">
                 <img
-                  className="absolute left-0 top-4 h-[41px] w-full md:w-[51px]"
+                  className="absolute left-0 top-4 h-[41px] w-[51px]"
                   alt="Subtract"
                   src="/img/graph-big/subtract-3.svg"
                 />

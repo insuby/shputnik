@@ -102,7 +102,7 @@ export const Work = () => {
   };
 
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="jobs-title">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="jobs-title">
       <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
         <h1 id="jobs-title" className="relative mt-3 md:mt-[-1.00px] self-stretch  text-[36px] font-medium  leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
           Вакансии
@@ -146,7 +146,7 @@ export const Work = () => {
                 </AccordionTrigger>
 
                 <AccordionContent>
-                  <CardContent className="mb-4 flex flex-col items-start gap-8 rounded-b-[32px] border-t border-solid border-gray-20 bg-gray-10 p-6">
+                  <CardContent className="mb-4 flex flex-col items-start gap-7 rounded-b-[32px] border-t border-solid border-gray-20 bg-gray-10 p-6">
                     <div className="flex flex-col items-start gap-6">
                       <div className="flex flex-col items-start gap-3">
                         <h3 className="w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Inter',Helvetica]">
