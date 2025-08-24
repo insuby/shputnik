@@ -29,19 +29,19 @@ export const DivWrapper = () => {
   const inView18 = useInView(ref18, { once: true, margin: '-100px' });
   const inView19 = useInView(ref19, { once: true, margin: '-100px' });
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-8 md:px-0">
-      <motion.p
-        id="animate_14_left"
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-8 md:px-0" aria-labelledby="classic-crediting">
+      <motion.h2
         ref={ref14}
         initial={{ opacity: 0, x: -40 }}
         animate={inView14 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
         className="relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-fit md:text-[40px] md:leading-10"
+        id="classic-crediting"
       >
         <span className="font-medium text-[#1c222f] md:leading-[48px]">
           Классическое кредитование
         </span>
-      </motion.p>
+      </motion.h2>
       <div className="relative grid w-full grid-cols-1 gap-4 self-stretch md:h-[600px] md:grid-cols-2">
         <motion.div
           id="animate_15"
@@ -284,6 +284,6 @@ export const DivWrapper = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

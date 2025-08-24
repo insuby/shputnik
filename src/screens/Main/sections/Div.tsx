@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { RoutesPath } from '../../../routes-path.tsx';
 
@@ -37,8 +37,8 @@ export const Div = () => {
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
   const inView31 = useInView(ref31, { once: true, margin: '-100px' });
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-      <p className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch" aria-labelledby="credit-in-store-online">
+      <h2 id="credit-in-store-online" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_20"
           ref={ref20}
@@ -60,7 +60,7 @@ export const Div = () => {
         >
           в точке продаж и онлайн
         </motion.span>
-      </p>
+      </h2>
       <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
           <motion.div
@@ -69,14 +69,14 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            onClick={handleBNPLClick}
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <div className="relative w-full flex-1 grow self-stretch rounded-[32px]">
+            <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
               <div className="relative h-[401px] w-[678px]">
                 <img
                   className="absolute left-[145px] top-[30px] h-[371px] w-[388px]"
-                  alt="Vector"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/vector-1.svg"
                 />
                 <motion.div
@@ -134,7 +134,8 @@ export const Div = () => {
                 </motion.div>
                 <img
                   className="absolute left-0 top-0 h-[368px] w-[678px]"
-                  alt="Vector"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/vector-4-1.svg"
                 />
                 <motion.div
@@ -162,50 +163,7 @@ export const Div = () => {
                   </div>
                 </motion.div>
               </div>
-            </div>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
-              <motion.div
-                id="animate_28"
-                ref={ref28}
-                initial={{ opacity: 0, x: -40 }}
-                animate={inView28 ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
-              >
-                BNPL
-              </motion.div>
-              <motion.p
-                id="animate_30"
-                ref={ref30}
-                initial={{ opacity: 0, y: 40 }}
-                animate={inView30 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
-              >
-                <p className="w-10/12">
-                  Программное обеспечение для быстрого запуска BNPL-рассрочки
-                  (Buy Now, Pay Later) на этапе оформления покупки — как онлайн,
-                  так и в розничных точках
-                </p>
-                <div className="absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
-                  >
-                    <path
-                      d="M12 6L22 16L12 26"
-                      strokeWidth="2"
-                      strokeLinecap="square"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </motion.p>
-            </div>
+            </Link>
           </motion.div>
           <motion.div
             id="animate_22"
@@ -213,14 +171,14 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            onClick={handleBNPLClick}
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <div className="relative w-full flex-1 grow self-stretch rounded-[32px]">
+            <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
               <div className="relative left-[67px] top-6 h-[416px] w-[543px]">
                 <img
                   className="absolute left-[78px] top-1.5 h-[371px] w-[388px]"
-                  alt="Vector"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/vector-1-1.svg"
                 />
                 <motion.div
@@ -279,14 +237,16 @@ export const Div = () => {
                   </div>
                   <img
                     className="absolute left-0 top-[109px] h-24 w-[328px]"
-                    alt="Vector"
+                    alt=""
+                    aria-hidden="true"
                     src="/img/vector-147.svg"
                   />
                   <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
                 <img
                   className="absolute left-3 top-0 h-[416px] w-[388px]"
-                  alt="Vector"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/vector-4-2.svg"
                 />
                 <motion.div
@@ -310,7 +270,8 @@ export const Div = () => {
                       <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
                       <img
                         className="absolute left-0 top-0 size-[198px]"
-                        alt="Ellipse"
+                        alt=""
+                        aria-hidden="true"
                         src="/img/ellipse-32.svg"
                       />
                     </div>
@@ -325,53 +286,10 @@ export const Div = () => {
                   </div>
                 </motion.div>
               </div>
-            </div>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
-              <motion.div
-                id="animate_29"
-                ref={ref29}
-                initial={{ opacity: 0, x: 40 }}
-                animate={inView29 ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
-              >
-                POS-кредитование
-              </motion.div>
-              <motion.p
-                id="animate_31"
-                ref={ref31}
-                initial={{ opacity: 0, y: 40 }}
-                animate={inView31 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
-              >
-                <p className="w-10/12">
-                  Программное обеспечение для запуска POS-займов на этапе
-                  оформления покупки — как в онлайн-магазинах, так и в розничных
-                  точках продаж
-                </p>
-                <div className="absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
-                  >
-                    <path
-                      d="M12 6L22 16L12 26"
-                      strokeWidth="2"
-                      strokeLinecap="square"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              </motion.p>
-            </div>
+            </Link>
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

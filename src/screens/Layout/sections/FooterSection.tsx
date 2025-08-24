@@ -13,9 +13,11 @@ export const FooterSection = () => {
                 to={RoutesPath.MAIN}
                 className="relative block h-[23px] w-[170px]"
               >
+                <span className="sr-only">Sputnik</span>
                 <img
                   className="absolute left-0 top-0 size-full"
-                  alt="Group"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/logo.png"
                 />
               </Link>
@@ -35,50 +37,48 @@ export const FooterSection = () => {
           </p>
         </div>
 
-        <div className="relative flex  h-[312px] w-[268px] flex-col items-center gap-4">
+        <nav aria-label="Навигация в футере" className="relative flex  h-[312px] w-[268px] flex-col items-center gap-4">
           <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
             Программное обеспечение
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-            <Link
-              to={RoutesPath.MICROCREDIT}
-              className="relative mt-[-1.00px] self-stretch whitespace-pre-wrap font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-            >
-              Микрофинансовое
-              <br />
-              кредитование
-            </Link>
-
-            <Link
-              to={RoutesPath.BUSINESSCREDIT}
-              className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-            >
-              Кредитование бизнеса
-            </Link>
-
-            <Link
-              to={RoutesPath.BANKCREDIT}
-              className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-            >
-              Банковское кредитование
-            </Link>
-
-            <Link
-              to={RoutesPath.AUTOCREDIT}
-              className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-            >
-              Автокредитование
-            </Link>
-
-            <Link
-              to={RoutesPath.BNPL}
-              className="relative self-stretch text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC]"
-            >
-              BNPL
-            </Link>
-          </div>
-        </div>
+          <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+            <li className="list-none">
+              <Link
+                to={RoutesPath.MICROCREDIT}
+                className="relative mt-[-1.00px] self-stretch whitespace-pre-wrap font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+              >
+                Микрофинансовое
+                <br />
+                кредитование
+              </Link>
+            </li>
+            <li className="list-none">
+              <Link
+                to={RoutesPath.BUSINESSCREDIT}
+                className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+              >
+                Кредитование бизнеса
+              </Link>
+            </li>
+            <li className="list-none">
+              <Link
+                to={RoutesPath.BANKCREDIT}
+                className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+              >
+                Банковское кредитование
+              </Link>
+            </li>
+            <li className="list-none">
+              <Link
+                to={RoutesPath.BNPL}
+                className="relative self-stretch text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC]"
+              >
+                BNPL
+              </Link>
+            </li>
+          </ul>
+        </nav>
 
         <div className="relative flex w-[268px] flex-col items-start gap-8">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
@@ -86,35 +86,40 @@ export const FooterSection = () => {
               Программное обеспечение
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-              <Link
-                to={RoutesPath.DATAUNLOAD}
-                className="relative mt-[-1.00px] self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-              >
-                Выгрузка данных в КБ
-              </Link>
-
-              <Link
-                to={RoutesPath.BNPL}
-                className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-              >
-                POS-кредитование
-              </Link>
-
-              <Link
-                to={RoutesPath.P2P}
-                className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-              >
-                P2P-кредитование
-              </Link>
-
-              <Link
-                to={RoutesPath.FDATA}
-                className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
-              >
-                Принятие решений
-              </Link>
-            </div>
+            <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+              <li className="list-none">
+                <Link
+                  to={RoutesPath.DATAUNLOAD}
+                  className="relative mt-[-1.00px] self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                >
+                  Выгрузка данных в КБ
+                </Link>
+              </li>
+              <li className="list-none">
+                <Link
+                  to={RoutesPath.BNPL}
+                  className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                >
+                  POS-кредитование
+                </Link>
+              </li>
+              <li className="list-none">
+                <Link
+                  to={RoutesPath.P2P}
+                  className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                >
+                  P2P-кредитование
+                </Link>
+              </li>
+              <li className="list-none">
+                <Link
+                  to={RoutesPath.FDATA}
+                  className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
+                >
+                  Принятие решений
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 

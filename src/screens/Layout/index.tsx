@@ -19,7 +19,9 @@ export const Layout = () => {
   return (
     <div className="m-auto flex w-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
       <HeaderSection />
-      <Outlet />
+      <main id="content" role="main" className="w-full">
+        <Outlet />
+      </main>
       <FooterSection />
       {isOpen && <FeedbackForm />}
     </div>

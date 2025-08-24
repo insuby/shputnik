@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import { Graph } from '../../../components/ui/graph.tsx';
 import { RoutesPath } from '../../../routes-path.tsx';
@@ -9,14 +9,9 @@ import { useFeedbackForm } from '../../../widgets/feedback-form';
 
 export const FrameWrapper = () => {
   const { setIsOpen } = useFeedbackForm();
-  const navigate = useNavigate();
 
   const onClick = () => {
     setIsOpen(true);
-  };
-
-  const handleMicroCreditClick = () => {
-    navigate(RoutesPath.MICROCREDIT);
   };
 
   const refs = [
@@ -33,7 +28,7 @@ export const FrameWrapper = () => {
 
   return (
     <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-center gap-[88px]">
-      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5" aria-labelledby="home-specialization">
         <motion.div
           id="animate_7"
           ref={refs[0]}
@@ -45,8 +40,8 @@ export const FrameWrapper = () => {
           специализируемся на
         </motion.div>
 
-        <motion.p
-          id="animate_8"
+        <motion.h2
+          id="home-specialization"
           ref={refs[1]}
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
@@ -58,22 +53,21 @@ export const FrameWrapper = () => {
             <br />
           </span>
           <span className="text-[#9ea7bb]">для кредитования </span>
-        </motion.p>
+        </motion.h2>
       </div>
 
-      <div className="group relative flex w-full items-start gap-4">
+      <section className="group relative flex w-full items-start gap-4" aria-labelledby="home-microcredit">
         <motion.div
           id="animate_9_left"
           ref={refs[2]}
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          onClick={handleMicroCreditClick}
           className="relative flex cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-12  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
         >
-          <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-            <p
-              id="animate_12_left"
+          <Link to={RoutesPath.MICROCREDIT} className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+            <h3
+              id="home-microcredit"
               className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               <span className="font-medium leading-[0.1px] text-[#1c222f]">
@@ -84,7 +78,7 @@ export const FrameWrapper = () => {
               <span className="font-medium leading-[48px] text-[#1c222f]">
                 кредитование
               </span>
-            </p>
+            </h3>
 
             <p
               id="animate_13_left"
@@ -95,7 +89,7 @@ export const FrameWrapper = () => {
               процессов под требования организации, включая полную цифровизацию
               всех этапов без ручного труда и с учётом регуляторных стандартов
             </p>
-          </div>
+          </Link>
 
           <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
             <svg
@@ -310,7 +304,7 @@ export const FrameWrapper = () => {
             </motion.div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

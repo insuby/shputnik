@@ -30,8 +30,8 @@ export const SectionComponentNode = () => {
   const inView35 = useInView(ref35, { once: true, margin: '-100px' });
   const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   return (
-    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
-      <p className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8" aria-labelledby="alt-ethical-models">
+      <h2 id="alt-ethical-models" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_32"
           ref={ref32}
@@ -53,7 +53,7 @@ export const SectionComponentNode = () => {
         >
           и этичные модели
         </motion.span>
-      </p>
+      </h2>
 
       <div className="relative flex h-[520px] w-full items-start gap-4">
         <div className="relative w-[686px] self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
@@ -420,6 +420,6 @@ export const SectionComponentNode = () => {
           </motion.div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

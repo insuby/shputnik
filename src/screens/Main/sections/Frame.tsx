@@ -30,12 +30,13 @@ export const Frame = () => {
       <div className="relative flex min-h-[520px] w-full flex-col items-center gap-8 overflow-hidden rounded-[24px] px-4 pb-0 md:pt-8 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
         <img
           className="absolute left-1/2 top-[220px] hidden h-[560px] w-[600px] -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
-          alt="Vector"
+          alt=""
+          aria-hidden="true"
           src="/img/vector-1-6.svg"
         />
 
         <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-8 md:px-0">
-          <motion.p
+          <motion.h1
             id="animate_1"
             ref={refs[0]}
             initial={{ opacity: 0, y: 40 }}
@@ -54,7 +55,7 @@ export const Frame = () => {
             <span className="font-medium text-[#1c222f] md:leading-[56px] xl:leading-[68px]">
               кредитования
             </span>
-          </motion.p>
+          </motion.h1>
 
           <motion.p
             id="animate_2"
@@ -73,7 +74,8 @@ export const Frame = () => {
           animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
           className="relative w-[220px] flex-[0_0_auto] md:w-[320px] xl:w-[412px]"
-          alt="Iphone pro max"
+          alt="Смартфон с интерфейсом кредитного приложения"
+          loading="lazy"
           src="/img/iphone-16-pro-max---3.png"
         />
 

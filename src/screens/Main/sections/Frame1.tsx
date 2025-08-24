@@ -30,8 +30,8 @@ export const Frame1 = () => {
   const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
   const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-      <p className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch" aria-labelledby="other-software">
+      <h2 id="other-software" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
         <motion.span
           id="animate_37_left"
           ref={ref37l}
@@ -52,7 +52,7 @@ export const Frame1 = () => {
         >
           программное обеспечение
         </motion.span>
-      </p>
+      </h2>
 
       <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
@@ -454,6 +454,6 @@ export const Frame1 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

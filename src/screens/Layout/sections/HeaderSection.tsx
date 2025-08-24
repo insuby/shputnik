@@ -70,16 +70,18 @@ export const HeaderSection = () => {
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
           <div className="relative h-[23px] w-[170px]">
+            <span className="sr-only">Sputnik</span>
             <img
               className="absolute left-0 top-0 size-full"
-              alt="Group"
+              alt=""
+              aria-hidden="true"
               src="/img/logo.png"
             />
           </div>
         </Link>
       </div>
 
-      <div className="relative hidden items-center gap-16 md:flex">
+      <nav aria-label="Основная навигация" className="relative hidden items-center gap-16 md:flex">
         <div className="relative">
           <button
             className={`mt-[-1.00px] flex w-fit cursor-pointer items-center whitespace-nowrap border-b-2 border-solid py-2.5 text-gray-90 outline-0 hover:text-[#3573FC] ${
@@ -90,27 +92,29 @@ export const HeaderSection = () => {
             Продукты
           </button>
         </div>
-
-        {navItems.map((item) => (
-          <Link
-            key={item.pathname}
-            to={item.pathname}
-            className="group flex cursor-pointer flex-col items-center rounded-[32px]"
-            data-pathname={item.pathname}
-          >
-            <div
-              className={`relative inline-flex flex-col items-center justify-center gap-2 border-b-2 border-solid px-0 py-2.5 transition-colors ${
-                pathname === item.pathname
-                  ? 'border-[#3573FC]'
-                  : 'border-transparent'
-              }`}
-            >
-              <div className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
-                {item.label}
-              </div>
-            </div>
-          </Link>
-        ))}
+        <ul className="flex items-center gap-16">
+          {navItems.map((item) => (
+            <li key={item.pathname} className="list-none">
+              <Link
+                to={item.pathname}
+                className="group flex cursor-pointer flex-col items-center rounded-[32px]"
+                data-pathname={item.pathname}
+              >
+                <div
+                  className={`relative inline-flex flex-col items-center justify-center gap-2 border-b-2 border-solid px-0 py-2.5 transition-colors ${
+                    pathname === item.pathname
+                      ? 'border-[#3573FC]'
+                      : 'border-transparent'
+                  }`}
+                >
+                  <div className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
+                    {item.label}
+                  </div>
+                </div>
+              </Link>
+            </li>
+          ))}
+        </ul>
         <div
           className="absolute bottom-0.5 !ml-0 h-0.5 rounded-[20px_20px_0px_0px] bg-blue-50 transition-all duration-300 ease-in-out"
           style={{
@@ -118,7 +122,7 @@ export const HeaderSection = () => {
             width: `${indicatorStyle.width}px`,
           }}
         />
-      </div>
+      </nav>
 
       <div className="flex items-center gap-3">
         <button
