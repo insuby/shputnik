@@ -56,7 +56,7 @@ export const FeedbackForm = () => {
       }`}
     >
       <div
-        className={`h-[105%] relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
+        className={`h-fit relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
           isVisible
             ? 'translate-y-0 scale-100 opacity-100'
             : 'translate-y-4 scale-95 opacity-0'
