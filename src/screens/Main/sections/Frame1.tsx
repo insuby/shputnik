@@ -200,7 +200,7 @@ export const Frame1 = () => {
 
             <div className="relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <motion.p
+                <motion.h4
                   id="animate_38"
                   ref={ref38}
                   initial={{ opacity: 0, x: -40 }}
@@ -209,7 +209,7 @@ export const Frame1 = () => {
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Выгрузка данных в кредитные бюро
-                </motion.p>
+                </motion.h4>
 
                 <motion.p
                   id="animate_39"
@@ -408,7 +408,7 @@ export const Frame1 = () => {
 
             <div className="group relative flex w-full flex-[0_0_auto] items-end gap-8 self-stretch p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <motion.div
+                <motion.h4
                   id="animate_46_left"
                   ref={ref46l}
                   initial={{ opacity: 0, x: -40 }}
@@ -417,7 +417,7 @@ export const Frame1 = () => {
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   Модуль принятия решений
-                </motion.div>
+                </motion.h4>
 
                 <motion.p
                   id="animate_47_right"
