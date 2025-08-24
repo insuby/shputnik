@@ -315,7 +315,7 @@ export const MicroCredit = () => {
                         <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
-                              <div className="relative left-[-3px] top-px h-3 w-[203px]">
+                              <div className="relative left-0 md:left-[-3px] top-px h-3 w-[203px]">
                                 <img
                                   className="absolute left-px top-1 h-1 w-[202px]"
                                   alt="Vector"
@@ -370,7 +370,7 @@ export const MicroCredit = () => {
                     />
 
                     <div className="relative w-full self-stretch">
-                      <div className="relative left-7 top-[26px] h-24 w-[290px]">
+                      <div className="relative left-0 md:left-7 top-[26px] h-24 w-[290px]">
                         <div className="absolute left-7 top-9 flex w-[235px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7711.00px] mt-[-1968.00px] size-6 bg-[100%_100%] opacity-0">
@@ -493,7 +493,7 @@ export const MicroCredit = () => {
                     />
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-[42px] top-1.5 flex w-[264px] items-center gap-4">
+                      <div className="relative left-0 md:left-[42px] top-1.5 flex w-[264px] items-center gap-4">
                         <div className="relative size-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
 
                         <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
