@@ -164,6 +164,49 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
+              <motion.div
+                id="animate_28"
+                ref={ref28}
+                initial={{ opacity: 0, x: -40 }}
+                animate={inView28 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+              >
+                BNPL
+              </motion.div>
+              <motion.div
+                id="animate_30"
+                ref={ref30}
+                initial={{ opacity: 0, y: 40 }}
+                animate={inView30 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+              >
+                <p className="w-10/12">
+                  Программное обеспечение для быстрого запуска BNPL-рассрочки
+                  (Buy Now, Pay Later) на этапе оформления покупки — как онлайн,
+                  так и в розничных точках
+                </p>
+                <div className="absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  >
+                    <path
+                      d="M12 6L22 16L12 26"
+                      strokeWidth="2"
+                      strokeLinecap="square"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
           <motion.div
             id="animate_22"
@@ -287,6 +330,49 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-8 self-stretch p-10 pt-0">
+              <motion.div
+                id="animate_29"
+                ref={ref29}
+                initial={{ opacity: 0, x: 40 }}
+                animate={inView29 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+              >
+                POS-кредитование
+              </motion.div>
+              <motion.div
+                id="animate_31"
+                ref={ref31}
+                initial={{ opacity: 0, y: 40 }}
+                animate={inView31 ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut' }}
+                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+              >
+                <p className="w-10/12">
+                  Программное обеспечение для запуска POS-займов на этапе
+                  оформления покупки — как в онлайн-магазинах, так и в розничных
+                  точках продаж
+                </p>
+                <div className="absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  >
+                    <path
+                      d="M12 6L22 16L12 26"
+                      strokeWidth="2"
+                      strokeLinecap="square"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
