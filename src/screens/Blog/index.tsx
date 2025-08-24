@@ -42,7 +42,7 @@ export const BlogList = () => {
   const pageCount = useMemo(() => Math.max(1, Math.ceil(total / 8)), [total]);
 
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="blog-title">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="blog-title">
       <header className="relative flex flex-[0_0_auto] flex-col items-start gap-8">
         <h1 id="blog-title" className="relative mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           Блог

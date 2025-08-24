@@ -115,9 +115,9 @@ export const Dataunload = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12"
             >
-              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                   <p className="relative mt-[-1.00px] w-[624px] text-6xl font-medium leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     Выгрузка данных <br />в кредитные бюро
@@ -273,7 +273,7 @@ export const Dataunload = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch">
         <motion.div
           ref={ref11}
           initial={{ opacity: 0, y: 50 }}
@@ -434,7 +434,7 @@ export const Dataunload = () => {
           </motion.div>
         </motion.div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch">
         <motion.div
           ref={ref27}
           initial={{ opacity: 0, y: 50 }}
@@ -454,7 +454,7 @@ export const Dataunload = () => {
         </motion.div>
 
         <div className="relative flex w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
-          <div className="relative flex flex-1 grow flex-col items-start gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-8">
               <motion.div
                 ref={ref29}

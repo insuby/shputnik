@@ -34,7 +34,7 @@ export const MobileLayout = () => {
             setMenuPanel('root');
             setIsMenuOpen(true);
           }}
-          className="absolute right-5 top-2 z-10 inline-flex size-12 items-center justify-center rounded-full"
+          className="absolute right-3 top-2 z-10 inline-flex size-12 items-center justify-center rounded-full"
         >
           <svg
             width="20"

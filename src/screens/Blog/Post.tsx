@@ -110,7 +110,7 @@ export const BlogPost = () => {
   }
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch rounded-[32px] md:px-20 md:pb-0 md:pt-20">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch rounded-[32px] md:px-20 md:pb-0 md:pt-20">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[1216px]">
           <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
@@ -166,7 +166,7 @@ export const BlogPost = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex w-full flex-[0_0_auto] items-start gap-12 self-stretch">
+        <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 md:gap-12 self-stretch">
           <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-10">
             <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[32px] bg-[#f9fafd] p-10">
               <p className="relative mt-[-1.00px] flex-1 text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

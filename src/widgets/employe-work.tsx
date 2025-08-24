@@ -107,7 +107,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
-            className="relative w-[704px] text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+            className="relative w-full md:w-[704px] text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
           >
             Гибкая настройка прав для всех категорий сотрудников, возможность
             совершать любые действия через кабинет сотрудника, контактировать{' '}
@@ -120,14 +120,14 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView2 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+          className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
         >
           <motion.div
             ref={ref3}
             initial={{ opacity: 0, x: -50 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-            className="relative flex flex-1 grow flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+            className="relative flex flex-1 grow flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
           >
             <img
               className="absolute left-[53px] top-0 h-[448px] w-[623px]"
@@ -136,7 +136,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             />
 
             <img
-              className="relative mt-[-11.00px] h-[222px] w-full self-stretch"
+              className="relative mt-[-11.00px] h-[222px] w-full self-stretch md:left-0 left-[-40px] scale-150 md:scale-100"
               alt="Frame"
               src="/img/widgets/frame-1948755086.svg"
             />
@@ -164,7 +164,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+                className="relative md:!flex-row flex-col flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
               >
                 <motion.div
                   ref={ref11}
@@ -178,7 +178,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView12 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref13}
@@ -204,7 +204,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView14 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref15}
@@ -230,7 +230,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView16 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref17}
@@ -256,7 +256,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView18 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref19}
@@ -290,7 +290,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView21 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref22}
@@ -316,7 +316,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView23 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref24}
@@ -342,7 +342,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView25 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref26}
@@ -368,7 +368,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView27 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref28}
@@ -398,17 +398,17 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-center gap-12 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+            className="relative flex flex-1 grow flex-col items-centergap-12 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 nd:p-12"
           >
             <img
-              className="absolute left-0 top-0 h-[488px] w-[608px]"
+              className="absolute left-0 top-0 h-[488px] w-full md:w-[608px]"
               alt="Vector"
               src="/img/widgets/vector-1-4.svg"
             />
 
             <div className="relative h-[210px] w-full self-stretch">
-              <div className="relative left-[73px] top-1 flex w-[434px] flex-col items-start">
-                <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 pl-16 pr-2">
+              <div className="relative left-[-15px] md:left-[73px] top-1 flex w-[434px] flex-col items-start">
+                <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 md:pl-16 pr-2 left-[-110px] md:left-0 pl-0">
                   <div className="relative flex w-[296px] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       Вы
@@ -482,7 +482,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView41 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref42}
@@ -511,7 +511,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView43 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref44}
@@ -540,7 +540,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView45 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref46}

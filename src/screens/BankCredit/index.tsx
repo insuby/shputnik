@@ -132,7 +132,7 @@ export const BankCredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
                 <motion.div
                   ref={ref15}
@@ -516,7 +516,7 @@ export const BankCredit = () => {
               initial="hidden"
               animate={inViewSystem1 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-12 overflow-hidden rounded-3xl bg-[#f9fafd] p-12">
+              <div className="relative flex flex-1 grow flex-col items-centergap-12 overflow-hidden rounded-3xl bg-[#f9fafd] p-12">
                 <img
                   className="absolute left-[53px] top-0 h-[448px] w-[623px]"
                   alt="Vector"
@@ -667,7 +667,7 @@ export const BankCredit = () => {
               initial="hidden"
               animate={inViewSystem4 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-12 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-12">
+              <div className="relative flex flex-1 grow flex-col items-centergap-12 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-12">
                 <img
                   className="absolute left-0 top-0 h-[488px] w-[608px]"
                   alt="Vector"
@@ -819,7 +819,7 @@ export const BankCredit = () => {
         variants={containerVariants}
         initial="hidden"
         animate={inViewAuto1 ? 'visible' : 'hidden'}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch"
       >
         <motion.div
           ref={refAuto2}
@@ -952,7 +952,7 @@ export const BankCredit = () => {
 
       <motion.div
         variants={slideInRight}
-        className="relative flex w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-12 bg-[#ffffff]"
+        className="relative flex w-[1376px] flex-[0_0_auto] flex-col items-center justify-centergap-12 bg-[#ffffff]"
       >
         <motion.div
           variants={fadeInUp}

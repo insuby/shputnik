@@ -39,7 +39,7 @@ export const BusinessCredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
               <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, y: 50 }}

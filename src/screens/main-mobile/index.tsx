@@ -991,7 +991,7 @@ export const MainMobile = () => {
                 <footer
                     className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-white p-8">
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch">
-                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch">
+                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch">
                             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                                 <img
                                     className="relative mt-[-0.37px] h-[22.74px] w-28"

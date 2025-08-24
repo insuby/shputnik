@@ -5,7 +5,7 @@ import { RoutesPath } from '../../../routes-path.tsx';
 export const FooterSection = () => {
   return (
     <footer className="relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-12 pt-[136px]">
-      <div className="relative flex w-full flex-[0_0_auto] items-start gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] items-start gap-8 md:gap-12 self-stretch">
         <div className="relative flex h-[324px] w-[268px] flex-col items-start justify-between">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative h-[22px] w-28">

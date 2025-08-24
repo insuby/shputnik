@@ -9,44 +9,45 @@ export const About = () => {
     setIsOpen(true);
   };
   return (
-    <div className="relative inline-flex flex-col items-start justify-center">
+    <section className="relative inline-flex flex-col items-start justify-center -mx-5" aria-labelledby="about-title">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:md:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-            <div className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
+          <header className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+            <h1 id="about-title" className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
               Представительства
-            </div>
+            </h1>
 
             <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               По любым вопросам вы можете обратиться в один из наших офисов или
               связаться с нашей командой
             </p>
-          </div>
+          </header>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row">
-            <div className="relative flex w-full flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+            <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <h2 id="office-moscow" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Москва
-                  </div>
+                  </h2>
 
                   <img
                     className="relative h-12 w-10"
-                    alt="Coat of arms of"
+                    alt=""
+                    aria-hidden="true"
                     src="/img/about/coat-of-arms-of-moscow.svg"
                   />
                 </div>
 
-                <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <address className="not-italic relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   183038, Москва,
                   <br />
                   Рубцовская набережная,
                   <br />
                   3с1, офис 1008
-                </p>
+                </address>
                 <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  + 7 (495) 006 21 57
+                  <a href="tel:+74950062157" className="hover:text-[#3573FC]">+ 7 (495) 006 21 57</a>
                 </p>
               </div>
 
@@ -58,31 +59,32 @@ export const About = () => {
                   Связаться
                 </div>
               </button>
-            </div>
+            </article>
 
-            <div className="relative flex w-full flex-col items-start gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
+            <article aria-labelledby="office-murmansk" className="relative flex w-full flex-col items-start gap-8 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <h2 id="office-murmansk" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Мурманск
-                  </div>
+                  </h2>
 
                   <img
                     className="relative h-12 w-[37px]"
-                    alt="Rus murmansk COA"
+                    alt=""
+                    aria-hidden="true"
                     src="/img/about/rus-murmansk-coa.svg"
                   />
                 </div>
 
-                <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <address className="not-italic relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   183038, Мурманск,
                   <br />
                   улица Октябрьская,
                   <br />
                   2а, офис 2
-                </p>
+                </address>
                 <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  + 7 (495) 006 21 57
+                  <a href="tel:+74950062157" className="hover:text-[#3573FC]">+ 7 (495) 006 21 57</a>
                 </p>
               </div>
 
@@ -94,13 +96,13 @@ export const About = () => {
                   Связаться
                 </div>
               </button>
-            </div>
+            </article>
           </div>
         </div>
 
         <Feedback />
         <Trust />
       </div>
-    </div>
+    </section>
   );
 };

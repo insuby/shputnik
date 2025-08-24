@@ -94,27 +94,28 @@ export const BNPL = () => {
   };
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
+    <section aria-labelledby="bnpl-title" className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
         <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-[1108px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/bnpl/vector-1-5.svg"
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12">
+            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <motion.div
+                <motion.h1
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
                   className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
-                  Автоматизация BNPL и PoS-кредитования
-                </motion.div>
+                  <span id="bnpl-title">Автоматизация BNPL и PoS-кредитования</span>
+                </motion.h1>
 
                 <motion.p
                   ref={ref3}
@@ -272,7 +273,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch"
       >
         <motion.div
           ref={ref7}
@@ -653,7 +654,7 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView21 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-12 self-stretch px-0 py-20"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-centergap-12 self-stretch px-0 py-20"
       >
         <motion.div
           ref={ref22}
@@ -1428,6 +1429,6 @@ export const BNPL = () => {
       <EmployeeWork />
       <RoleStructure />
       <Trust />
-    </div>
+    </section>
   );
 };

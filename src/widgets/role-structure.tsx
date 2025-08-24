@@ -27,11 +27,11 @@ export const RoleStructure = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView14 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] items-center gap-20 self-stretch px-0 py-20"
+      className="relative flex w-full flex-[0_0_auto] items-center gap-20 self-stretch md:px-0 flex-col md:!flex-row px-5 md:py-20"
     >
-      <div className="relative flex w-[432px] flex-col items-start gap-12">
+      <div className="relative flex w-full md:w-[432px] flex-col items-start gap-8 md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-          <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Ролевая структура программного обеспечения
           </div>
         </div>
@@ -46,7 +46,7 @@ export const RoleStructure = () => {
         </button>
       </div>
 
-      <div className="relative flex flex-1 grow items-start justify-center gap-6 self-stretch">
+      <div className="flex-col md:!flex-row relative flex flex-1 grow items-start justify-center gap-6 self-stretch">
         <motion.div
           ref={ref15}
           initial={{ opacity: 0, x: -50 }}

@@ -102,15 +102,15 @@ export const Work = () => {
   };
 
   return (
-    <main className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
-        <h1 className="relative mt-[-1.00px] self-stretch  text-[36px] font-medium  leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 md:gap-12 self-stretch overflow-hidden rounded-[32px] md:p-[88px]" aria-labelledby="jobs-title">
+      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
+        <h1 id="jobs-title" className="relative mt-3 md:mt-[-1.00px] self-stretch  text-[36px] font-medium  leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
           Вакансии
         </h1>
         <p className="relative self-stretch font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-[#939db4] [font-style:var(--body-1-r-font-style)]">
           В данный момент у нас открыты следующие вакансии
         </p>
-      </div>
+      </header>
 
       <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
         <Accordion
@@ -125,10 +125,11 @@ export const Work = () => {
               value={job.id}
               className="mb-4 border-none"
             >
-              <Card className="w-full rounded-3xl bg-white md:w-[1216px]">
+              <Card className="w-full rounded-3xl bg-white md:w-[1216px]" asChild>
+                <article aria-labelledby={`${job.id}-title`}>
                 <AccordionTrigger className="px-8 py-4 hover:no-underline">
                   <div className="flex w-full items-center justify-between">
-                    <h2 className="font-header-2-m flex-1 text-left text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-90 [font-style:var(--header-2-m-font-style)]">
+                    <h2 id={`${job.id}-title`} className="font-header-2-m flex-1 text-left text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-90 [font-style:var(--header-2-m-font-style)]">
                       {job.title}
                     </h2>
                     <div className="mr-4 hidden  items-center gap-2 md:flex">
@@ -214,11 +215,12 @@ export const Work = () => {
                     </div>
                   </CardContent>
                 </AccordionContent>
+                </article>
               </Card>
             </AccordionItem>
           ))}
         </Accordion>
       </div>
-    </main>
+    </section>
   );
 };

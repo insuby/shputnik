@@ -89,7 +89,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-12"
+              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-centergap-12"
             >
               <motion.div
                 ref={ref3}
@@ -590,7 +590,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-center gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
+              className="relative flex flex-1 grow flex-col items-centergap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-12"
             >
               <motion.div
                 ref={ref11}
@@ -621,7 +621,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView14 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.75 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref15}
@@ -646,7 +646,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView16 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.85 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref17}
@@ -671,7 +671,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView18 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.95 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref19}
@@ -696,7 +696,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView20 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.05 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref21}
@@ -721,7 +721,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView22 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.15 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref23}
@@ -746,7 +746,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView24 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.25 }}
-                    className="relative flex h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
                   >
                     <motion.div
                       ref={ref25}
