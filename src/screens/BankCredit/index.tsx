@@ -523,7 +523,7 @@ export const BankCredit = () => {
                   src="/img/bankcredit/vector-1-3.svg"
                 />
 
-                <div className="relative h-80 w-full self-stretch">
+                <div className="relative md:h-80 w-full self-stretch">
                   <div className="relative left-0 md:left-[98px] top-[29px] flex w-96 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 scale-95 md:scale-100">
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -674,7 +674,7 @@ export const BankCredit = () => {
                   src="/img/bankcredit/vector-1-4.svg"
                 />
 
-                <div className="relative h-80 w-full self-stretch">
+                <div className="relative md:h-80 w-full self-stretch">
                   <div className="relative left-[-30px] top-[-10px] md:left-7 md:top-[34px] flex w-[120%] md:w-[524px] items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 md:scale-100 scale-90">
                     <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
                       <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
