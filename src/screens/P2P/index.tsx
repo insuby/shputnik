@@ -425,7 +425,7 @@ export const P2P = () => {
                   />
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative -left-12 -top-12 w-full md:w-[443px]">
+                    <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
                       <div className="absolute left-[58px] top-[69px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-white py-2 pl-2 pr-5">
                         <img
                           className="relative flex-[0_0_auto]"

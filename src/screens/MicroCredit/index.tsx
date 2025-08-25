@@ -312,7 +312,7 @@ export const MicroCredit = () => {
 
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative left-0 md:left-10 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
-                        <div className="relative flex w-full md:w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
+                        <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
                               <div className="relative left-0 md:left-[-3px] top-px h-3w-full md:w-[203px]">
@@ -535,7 +535,7 @@ export const MicroCredit = () => {
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative -left-12 -top-12 w-full md:w-[443px]">
+                      <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
                         <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <img
                             className="relative flex-[0_0_auto]"
