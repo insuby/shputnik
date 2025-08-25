@@ -1,12 +1,14 @@
 import {Link} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 import {RoutesPath} from '../../../routes-path.tsx';
 
 export const FooterSection = () => {
+    const { t } = useTranslation(['footer', 'nav']);
     return (
         <footer
             className="w-[calc(100%-32px)] mx-auto relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 md:p-12 md:pt-[136px]">
-            <nav aria-label="Навигация в футере" className="relative flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
+            <nav aria-label={t('software', { ns: 'footer' })} className="relative flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
                 <div className="relative flex md:h-[324px] w-full md:w-[268px] flex-col md:gap-0 gap-10 items-start justify-between">
                     <div className="!text-[16px] relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                         <div className="relative h-[22px] w-28">
@@ -29,10 +31,12 @@ export const FooterSection = () => {
 
                         <div
                             className="relativew w-full md:w-[233px] font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                            Программное обеспечение
-                            <br/>и разработка современных
-                            <br/>
-                            fintech-решений
+                            {t('description', { ns: 'footer' }).split('\n').map((line, idx) => (
+                                <span key={idx}>
+                                    {line}
+                                    <br/>
+                                </span>
+                            ))}
                         </div>
                     </div>
 
@@ -40,7 +44,7 @@ export const FooterSection = () => {
                         className="relative md:!hidden flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
                         <div
                             className="!text-[16px] relative mt-[-1.00px] self-stretch font-body-3-r font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                            Контакты
+                            {t('contacts', { ns: 'footer' })}
                         </div>
 
                         <div className="!text-[16px] relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -62,14 +66,14 @@ export const FooterSection = () => {
 
                     <p className="!text-[16px] relativeww-full md:w-[233px] font-body-3-r font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
                         © 2013 - {new Date().getFullYear()} Sputnik – <br/>
-                        Автоматизация бизнес-процессов
+                        {t('copyrightSuffix', { ns: 'footer' })}
                     </p>
                 </div>
 
                 <div className="hidden md:flex relative h-[312px] w-full md:w-[268px] flex-col items-center gap-4">
                     <div
                         className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                        Программное обеспечение
+                        {t('software', { ns: 'footer' })}
                     </div>
 
                     <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -78,9 +82,12 @@ export const FooterSection = () => {
                                 to={RoutesPath.MICROCREDIT}
                                 className="relative mt-[-1.00px] self-stretch whitespace-pre-wrap font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Микрофинансовое
-                                <br/>
-                                кредитование
+                                {t('microcredit', { ns: 'footer' }).split('\n').map((line, idx) => (
+                                    <span key={idx}>
+                                        {line}
+                                        <br/>
+                                    </span>
+                                ))}
                             </Link>
                         </li>
                         <li className="list-none">
@@ -88,7 +95,7 @@ export const FooterSection = () => {
                                 to={RoutesPath.BUSINESSCREDIT}
                                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Кредитование бизнеса
+                                {t('businessCredit', { ns: 'footer' })}
                             </Link>
                         </li>
                         <li className="list-none">
@@ -96,7 +103,7 @@ export const FooterSection = () => {
                                 to={RoutesPath.BANKCREDIT}
                                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Банковское кредитование
+                                {t('bankCredit', { ns: 'footer' })}
                             </Link>
                         </li>
                         <li className="list-none">
@@ -104,7 +111,7 @@ export const FooterSection = () => {
                                 to={RoutesPath.BNPL}
                                 className="relative self-stretch text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC]"
                             >
-                                BNPL
+                                {t('bnpl', { ns: 'footer' })}
                             </Link>
                         </li>
                     </ul>
@@ -114,7 +121,7 @@ export const FooterSection = () => {
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
                         <div
                             className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                            Программное обеспечение
+                            {t('software', { ns: 'footer' })}
                         </div>
 
                         <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -123,7 +130,7 @@ export const FooterSection = () => {
                                     to={RoutesPath.DATAUNLOAD}
                                     className="relative mt-[-1.00px] self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                                 >
-                                    Выгрузка данных в КБ
+                                    {t('DATAUNLOAD' as any, { ns: 'footer', defaultValue: 'Выгрузка данных в КБ' })}
                                 </Link>
                             </li>
                             <li className="list-none">
@@ -131,7 +138,7 @@ export const FooterSection = () => {
                                     to={RoutesPath.BNPL}
                                     className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                                 >
-                                    POS-кредитование
+                                    {t('posCredit', { ns: 'footer' })}
                                 </Link>
                             </li>
                             <li className="list-none">
@@ -139,7 +146,7 @@ export const FooterSection = () => {
                                     to={RoutesPath.P2P}
                                     className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                                 >
-                                    P2P-кредитование
+                                    {t('p2p', { ns: 'footer' })}
                                 </Link>
                             </li>
                             <li className="list-none">
@@ -147,7 +154,7 @@ export const FooterSection = () => {
                                     to={RoutesPath.FDATA}
                                     className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                                 >
-                                    Принятие решений
+                                    {t('decisions', { ns: 'footer' })}
                                 </Link>
                             </li>
                         </ul>
@@ -158,7 +165,7 @@ export const FooterSection = () => {
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                         <div
                             className="relative mt-[-1.00px] w-full md:w-[268px] font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                            Компания
+                            {t('company', { ns: 'footer' })}
                         </div>
 
                         <div className="relative flex w-full md:w-[268px] flex-[0_0_auto] flex-col items-start gap-3">
@@ -166,28 +173,28 @@ export const FooterSection = () => {
                                 to={RoutesPath.ABOUT}
                                 className="relative mt-[-1.00px] w-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                О компании
+                                {t('about', { ns: 'nav' })}
                             </Link>
 
                             <Link
                                 to={RoutesPath.REVIEWS}
                                 className="relativew-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Отзывы
+                                {t('reviews', { ns: 'nav' })}
                             </Link>
 
                             <Link
                                 to={RoutesPath.WORK}
                                 className="relativew-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Вакансии
+                                {t('vacancies', { ns: 'nav' })}
                             </Link>
 
                             <Link
                                 to={RoutesPath.PRIVACY}
                                 className="relativew-full md:w-[233px] font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                             >
-                                Конфиденциальность
+                                {t('privacy', { ns: 'footer', defaultValue: 'Конфиденциальность' })}
                             </Link>
                         </div>
                     </div>
@@ -196,7 +203,7 @@ export const FooterSection = () => {
                         className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
                         <div
                             className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-                            Контакты
+                            {t('contacts', { ns: 'footer' })}
                         </div>
 
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">

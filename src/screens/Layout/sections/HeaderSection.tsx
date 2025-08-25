@@ -4,8 +4,11 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { RoutesPath } from '../../../routes-path.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../../../components/LanguageSwitcher';
 
 export const HeaderSection = () => {
+  const { t } = useTranslation(['nav', 'common']);
   const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
@@ -45,10 +48,10 @@ export const HeaderSection = () => {
   }, [isMenuOpen, preloadAssets]);
 
   const navItems = [
-    { id: 2, label: 'О компании', pathname: RoutesPath.ABOUT },
-    { id: 3, label: 'Отзывы', pathname: RoutesPath.REVIEWS },
-    { id: 4, label: 'Вакансии', pathname: RoutesPath.WORK },
-    { id: 4, label: 'Блог', pathname: RoutesPath.BLOG },
+    { id: 2, label: t('about', { ns: 'nav' }), pathname: RoutesPath.ABOUT },
+    { id: 3, label: t('reviews', { ns: 'nav' }), pathname: RoutesPath.REVIEWS },
+    { id: 4, label: t('vacancies', { ns: 'nav' }), pathname: RoutesPath.WORK },
+    { id: 5, label: t('blog', { ns: 'nav' }), pathname: RoutesPath.BLOG },
   ];
 
   const isProductActive = pathname.includes('product');
@@ -81,7 +84,7 @@ export const HeaderSection = () => {
         </Link>
       </div>
 
-      <nav aria-label="Основная навигация" className="relative hidden items-center gap-16 md:flex">
+      <nav aria-label={t('products', { ns: 'nav' })} className="relative hidden items-center gap-16 md:flex">
         <div className="relative">
           <button
             className={`mt-[-1.00px] flex w-fit cursor-pointer items-center whitespace-nowrap border-b-2 border-solid py-2.5 text-gray-90 outline-0 hover:text-[#3573FC] ${
@@ -92,7 +95,7 @@ export const HeaderSection = () => {
             aria-controls="products-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            Продукты
+            {t('products', { ns: 'nav' })}
           </button>
         </div>
         <ul className="flex items-center gap-16">
@@ -129,7 +132,7 @@ export const HeaderSection = () => {
 
       <div className="flex items-center gap-3">
         <button
-          aria-label="Открыть меню"
+          aria-label={t('openMenu', { ns: 'common' })}
           onClick={() => setIsMenuOpen(true)}
           className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10 md:hidden"
         >
@@ -153,13 +156,14 @@ export const HeaderSection = () => {
           } relative cursor-pointer items-center justify-center rounded-[100px]`}
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-            Связаться с нами
+            {t('contactUs', { ns: 'common' })}
           </div>
         </button>
+        <LanguageSwitcher />
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 md:hidden" role="dialog" aria-modal="true" aria-label="Мобильное меню">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 md:hidden" role="dialog" aria-modal="true" aria-label={t('products', { ns: 'nav' })}>
           <div className="mb-6 flex items-center justify-between">
             <Link
               to={RoutesPath.MAIN}
@@ -175,7 +179,7 @@ export const HeaderSection = () => {
               </div>
             </Link>
             <button
-              aria-label="Закрыть меню"
+              aria-label={t('closeMenu', { ns: 'common' })}
               onClick={() => setIsMenuOpen(false)}
               className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10"
             >
@@ -196,9 +200,9 @@ export const HeaderSection = () => {
             </button>
           </div>
 
-          <nav aria-label="Мобильная навигация" className="space-y-8 p-3">
+          <nav aria-label={t('crediting', { ns: 'nav' })} className="space-y-8 p-3">
             <div className="space-y-3">
-              <div className="text-base text-gray-40">Кредитование</div>
+              <div className="text-base text-gray-40">{t('crediting', { ns: 'nav' })}</div>
               <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
                 <li className="list-none">
                   <Link
@@ -206,9 +210,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">
-                    Микрофинансовое кредитование
-                  </span>
+                  <span className="text-gray-90">{t('microcredit', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -230,7 +232,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">Кредитование бизнеса</span>
+                  <span className="text-gray-90">{t('businessCredit', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -252,7 +254,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">Банковское кредитование</span>
+                  <span className="text-gray-90">{t('bankCredit', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -274,7 +276,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">BNPL</span>
+                  <span className="text-gray-90">{t('bnpl', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -296,7 +298,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">Автокредитование</span>
+                  <span className="text-gray-90">{t('autocredit', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -318,7 +320,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">P2P-кредитование</span>
+                  <span className="text-gray-90">{t('p2p', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -340,7 +342,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">Исламское финансирование</span>
+                  <span className="text-gray-90">{t('islamFinance', { ns: 'nav' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -360,9 +362,7 @@ export const HeaderSection = () => {
             </div>
 
             <div className="space-y-3">
-              <div className="text-base text-gray-40">
-                Другое программное обеспечение
-              </div>
+              <div className="text-base text-gray-40">{t('otherSoftware', { ns: 'nav' })}</div>
               <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
                 <li className="list-none">
                   <Link
@@ -370,9 +370,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">
-                    Выгрузка данных в кредитные бюро
-                  </span>
+                  <span className="text-gray-90">{t('DATAUNLOAD' as any, { ns: 'nav', defaultValue: 'Выгрузка данных в кредитные бюро' })}</span>
                   <svg
                     width="20"
                     height="20"
@@ -394,7 +392,7 @@ export const HeaderSection = () => {
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
                 >
-                  <span className="text-gray-90">Модуль принятия решений</span>
+                  <span className="text-gray-90">{t('decisions', { ns: 'footer' })}</span>
                   <svg
                     width="20"
                     height="20"

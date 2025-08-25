@@ -1,9 +1,11 @@
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Trust } from '../../widgets/trust.tsx';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
   const { setIsOpen } = useFeedbackForm();
+  const { t } = useTranslation(['about']);
 
   const onClick = () => {
     setIsOpen(true);
@@ -23,13 +25,11 @@ export const About = () => {
 
                     <div className="relative flex w-full md:w-[980px] flex-[0_0_auto] flex-col items-center justify-center gap-6 md:gap-8">
                         <h1 id="about-title" className="relative mt-[-1.00px] self-stretch text-center text-3xl md:text-6xl font-medium leading-9 md:leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            Разработка передового программного обеспечения для Fintech
+                            {t('title', { ns: 'about' })}
                         </h1>
 
                         <p className="relative w-full md:w-[786px] px-2 text-center text-base md:text-xl font-normal leading-6 md:leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
-                            Наша команда занимается разработкой программного обеспечения. Мы
-                            создаём решения, адаптированные под специфику местного рынка,
-                            бизнес-потребности и технические требования наших партнёров
+                            {t('subtitle', { ns: 'about' })}
                         </p>
                     </div>
 
@@ -55,9 +55,12 @@ export const About = () => {
                                 </div>
 
                                 <div className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                                    лет на рынке разработки
-                                    <br />
-                                    fintech-решений
+                                    {t('yearsOnMarket', { ns: 'about' }).split('\n').map((line, idx) => (
+                                        <span key={idx}>
+                                            {line}
+                                            <br />
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         </div>
@@ -69,7 +72,7 @@ export const About = () => {
                                 </div>
 
                                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                                    реализованных проектов
+                                    {t('projectsCompleted', { ns: 'about' })}
                                 </p>
 
                                 <div className="relative mr-[-3.00px] inline-flex flex-[0_0_auto] items-center gap-2">
@@ -107,7 +110,7 @@ export const About = () => {
                                     </div>
 
                                     <div className="relative w-[286px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                                        in-house разработчиков
+                                        {t('inHouseDevelopers', { ns: 'about' })}
                                     </div>
                                 </div>
 
@@ -151,12 +154,11 @@ export const About = () => {
 
             <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:p-0 p-2">
             <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
-              Представительства
+              {t('offices', { ns: 'about' })}
             </h2>
 
             <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              По любым вопросам вы можете обратиться в один из наших офисов или
-              связаться с нашей командой
+              {t('officesSubtitle', { ns: 'about' })}
             </p>
           </section>
 
@@ -165,7 +167,7 @@ export const About = () => {
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-moscow" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Москва
+                    {t('moscow', { ns: 'about' })}
                   </h2>
 
                   <img
@@ -193,7 +195,7 @@ export const About = () => {
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  Связаться
+                  {t('contact', { ns: 'common' })}
                 </div>
               </button>
             </article>
@@ -202,7 +204,7 @@ export const About = () => {
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2 id="office-murmansk" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Мурманск
+                    {t('murmansk', { ns: 'about' })}
                   </h2>
 
                   <img

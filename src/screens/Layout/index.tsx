@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 import { FeedbackForm, useFeedbackForm } from '../../widgets/feedback-form';
 import { FooterSection } from './sections/FooterSection';
-import { HeaderSection } from './sections/HeaderSection';
+import {HeaderSection} from "./sections/HeaderSection.tsx";
 
 export const Layout = () => {
   const { isOpen } = useFeedbackForm();

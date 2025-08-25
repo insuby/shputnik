@@ -1,0 +1,17 @@
+export default {
+  products: 'Продукты',
+  about: 'О компании',
+  reviews: 'Отзывы',
+  vacancies: 'Вакансии',
+  blog: 'Блог',
+  crediting: 'Кредитование',
+  otherSoftware: 'Другое программное обеспечение',
+  microcredit: 'Микрофинансовое кредитование',
+  businessCredit: 'Кредитование бизнеса',
+  bankCredit: 'Банковское кредитование',
+  bnpl: 'BNPL',
+  autocredit: 'Автокредитование',
+  p2p: 'P2P-кредитование',
+  islamFinance: 'Исламское финансирование',
+};
+
