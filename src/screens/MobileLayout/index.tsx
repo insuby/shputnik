@@ -246,7 +246,6 @@ export const MobileLayout = () => {
                 </svg>
               </button>
             </div>
-
             <nav className="space-y-8 px-3">
               {menuPanel === 'root' ? (
                 <div className="space-y-3">
@@ -986,10 +985,16 @@ export const MobileLayout = () => {
                 </div>
               )}
             </nav>
-
-            <div className="absolute inset-x-3 m-auto bottom-2 rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
-              <p>+7 (495) 006-21-57</p>
-            </div>
+              {menuPanel === 'root' && <div
+                  className="h-[136px] absolute inset-x-3 m-auto bottom-2 rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
+                  <div className="size-full p-[16px_24px]">
+                      <p className="text-xl leading-[140%] text-gray-90 font-bold ">+7 (495) 006-21-57</p>
+                      <p className="relative pt-4 w-full md:w-[233px] font-body-1-r font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
+                          183038, Мурманск, <br/>
+                          улица Октябрьская, дом 2а, офис 2
+                      </p>
+                  </div>
+              </div>}
           </motion.div>
         )}
       </AnimatePresence>

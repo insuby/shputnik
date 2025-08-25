@@ -116,7 +116,7 @@ export const FeedbackForm = () => {
                 </p>
               </div>
 
-              <p className="relativew-full md:w-[233px] font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
+              <p className="relative w-full md:w-[233px] font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
                 183038, Мурманск,
                 <br />
                 улица Октябрьская,
