@@ -8,6 +8,7 @@ import { FeedbackForm } from '../../widgets/feedback-form';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 
 import { RoutesPath } from '../../routes-path';
+import {FooterSection} from "../Layout/sections/FooterSection.tsx";
 
 export const MobileLayout = () => {
   const location = useLocation();
@@ -999,6 +1000,7 @@ export const MobileLayout = () => {
       <main id="content" className="-mt-16 px-5 w-full">
         <Outlet />
       </main>
+        <FooterSection/>
       {isOpen && <FeedbackForm />}
     </div>
   );
