@@ -51,7 +51,7 @@ export const FeedbackForm = () => {
   return (
     <div
       onClick={onBackdropClick}
-      className={`fixed inset-0 z-50 flex h-screen w-screen items-center justify-center md:p-[40px] transition-all duration-300 ease-in-out [font-family:var(--font-family)] ${
+      className={`fixed inset-0 z-50 flex h-screen w-screen items-center justify-center pt-8 md:p-[40px] transition-all duration-300 ease-in-out [font-family:var(--font-family)] ${
         isVisible ? 'bg-[#000000CA] opacity-100' : 'bg-transparent opacity-0'
       }`}
     >
@@ -69,7 +69,7 @@ export const FeedbackForm = () => {
         />
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
-          <div className="relative h-[22px] w-full md:w-[170px]">
+          <div className="hiddev md:block 1relative h-[22px] w-full md:w-[170px]">
             <div className="h-[22px] w-28">
               <div className="relative h-[22px] w-full md:w-[170px]">
                 <img
