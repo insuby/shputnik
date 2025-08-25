@@ -134,7 +134,7 @@ export const BankCredit = () => {
           <HeroButtons>
             <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <motion.div
+                <motion.h1
                   ref={ref15}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView15 ? { opacity: 1, x: 0 } : {}}
@@ -142,7 +142,7 @@ export const BankCredit = () => {
                   className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Банковское кредитование
-                </motion.div>
+                </motion.h1>
 
                 <motion.p
                   ref={ref16}

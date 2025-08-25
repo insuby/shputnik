@@ -49,7 +49,7 @@ export const BusinessCredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut' }}
                 className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6"
               >
-                <motion.div
+                <motion.h1
                   ref={ref2}
                   initial={{ opacity: 0, y: 30 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
@@ -57,7 +57,7 @@ export const BusinessCredit = () => {
                   className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Кредитование бизнеса
-                </motion.div>
+                </motion.h1>
 
                 <motion.p
                   ref={ref3}

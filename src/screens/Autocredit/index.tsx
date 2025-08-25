@@ -44,7 +44,7 @@ export const Autocredit = () => {
           <HeroButtons>
             <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <motion.div
+                <motion.h1
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
@@ -52,7 +52,7 @@ export const Autocredit = () => {
                   className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
                 >
                   Займ под залог автомобиля
-                </motion.div>
+                </motion.h1>
 
                 <motion.p
                   ref={ref3}

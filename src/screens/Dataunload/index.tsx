@@ -123,9 +123,9 @@ export const Dataunload = () => {
             >
               <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <p className="text-center md:text-left relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <h1 className="text-center md:text-left relative mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     Выгрузка данных <br />в кредитные бюро
-                  </p>
+                  </h1>
 
                   <p className="relative w-full text-center md:text-left md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
                     Программа для конвертации и выгрузки данных в кредитные бюро

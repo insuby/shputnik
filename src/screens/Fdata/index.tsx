@@ -110,10 +110,10 @@ export const Fdata = () => {
             >
               <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
                 <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <div className="text-center md:text-left mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <h1 className="text-center md:text-left mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                     ПО для <br />
                     реконсиляции данных
-                  </div>
+                  </h1>
 
                   <p className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]">
                     Автоматизация всех ваших процессов обработки <br />

@@ -161,7 +161,7 @@ export const Analytics = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative scale-95 md:scale-100 left-[-85px] md:left-[57px] top-[-73px] md:top-[17px] h-[574px] w-full md:!size-[574px] rounded-[287px]">
+          <div className="relative scale-95 md:scale-100 left-[-95px] md:left-[57px] top-[-73px] md:top-[17px] h-[574px] w-full md:!size-[574px] rounded-[287px]">
             <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
 
             <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />

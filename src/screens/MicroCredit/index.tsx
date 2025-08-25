@@ -64,9 +64,9 @@ export const MicroCredit = () => {
               className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
             >
               <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <div className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                <h1 className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Микрофинансовое кредитование
-                </div>
+                </h1>
 
                 <p className="relative w-full text-center md:text-left md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
                   Полный цикл автоматизации микрофинансового кредитования — от
