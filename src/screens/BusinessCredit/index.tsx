@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { isMobile } from '../../App.tsx';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -21,12 +22,13 @@ export const BusinessCredit = () => {
   const ref5 = useRef(null);
   const ref6 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref5, { once: true, margin: '-100px' });
+  const marginValue = isMobile ? '-10px' : '-100px';
+  const inView1 = useInView(ref1, { once: true, margin: marginValue });
+  const inView2 = useInView(ref2, { once: true, margin: marginValue });
+  const inView3 = useInView(ref3, { once: true, margin: marginValue });
+  const inView4 = useInView(ref4, { once: true, margin: marginValue });
+  const inView5 = useInView(ref5, { once: true, margin: marginValue });
+  const inView6 = useInView(ref6, { once: true, margin: marginValue });
 
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">

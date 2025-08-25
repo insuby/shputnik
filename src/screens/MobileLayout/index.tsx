@@ -987,7 +987,7 @@ export const MobileLayout = () => {
               )}
             </nav>
 
-            <div className="absolute inset-x-3 bottom-2 rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
+            <div className="absolute inset-x-3 m-auto bottom-2 rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
               <p>+7 (495) 006-21-57</p>
             </div>
           </motion.div>

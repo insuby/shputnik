@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { isMobile } from '../../App.tsx';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
@@ -52,8 +53,9 @@ export const Dataunload = () => {
   const ref49 = useRef(null);
   const ref50 = useRef(null);
 
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inViewTop = useInView(refTop, { once: true, margin: '-100px' });
+  const marginValue = isMobile ? '-10px' : '-100px';
+  const inView3 = useInView(ref3, { once: true, margin: marginValue });
+  const inViewTop = useInView(refTop, { once: true, margin: marginValue });
   const inView11 = useInView(ref11, { once: true, margin: '-100px' });
   const inView12 = useInView(ref12, { once: true, margin: '-100px' });
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
@@ -179,9 +181,9 @@ export const Dataunload = () => {
 
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                     <motion.div
-                      ref={ref3}
+                      ref={ref11}
                       initial={{ opacity: 0, x: 150 }}
-                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView11 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',
@@ -207,9 +209,9 @@ export const Dataunload = () => {
                     </motion.div>
 
                     <motion.div
-                      ref={ref3}
+                      ref={ref12}
                       initial={{ opacity: 0, x: 150 }}
-                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView12 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',
@@ -235,9 +237,9 @@ export const Dataunload = () => {
                     </motion.div>
 
                     <motion.div
-                      ref={ref3}
+                      ref={ref13}
                       initial={{ opacity: 0, x: 150 }}
-                      animate={inView3 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView13 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',
