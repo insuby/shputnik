@@ -12,6 +12,7 @@ import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
+import {isMobile} from "../../App.tsx";
 
 export const BNPL = () => {
   const { setIsOpen } = useFeedbackForm();
@@ -217,7 +218,7 @@ export const BNPL = () => {
           <motion.div
             ref={ref4}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView4 ? { opacity: 1, x: 0 } : {}}
+            animate={inView4 ? { opacity: isMobile ? .6 : 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="absolute left-2 md:left-[800px] top-[730px] md:top-[286px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4"
           >
