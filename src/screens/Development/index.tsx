@@ -49,7 +49,7 @@ export const Development = () => {
           <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12 md:w-[624px]">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
-                <motion.div
+                <motion.h1
                   ref={ref15}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView15 ? { opacity: 1, x: 0 } : {}}
@@ -59,7 +59,7 @@ export const Development = () => {
                   Разработка
                   <br />
                   на заказ
-                </motion.div>
+                </motion.h1>
 
                 <motion.p
                   ref={ref16}

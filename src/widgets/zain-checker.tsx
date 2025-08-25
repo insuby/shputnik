@@ -297,7 +297,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -319,7 +319,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -341,7 +341,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -363,7 +363,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -385,7 +385,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 1.1 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -407,7 +407,7 @@ export const ZaimChecker = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 1.3 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
                 >
-                  <Check10 className="!relative !h-4 !w-4" />
+                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

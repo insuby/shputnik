@@ -173,11 +173,11 @@ export const FooterSection = () => {
                 +7 (495) 006-21-57
               </a>
 
-              <p className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
+              <address className="not-italic relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
                 183038, Мурманск,
                 <br />
                 улица Октябрьская, 2а, офис 2
-              </p>
+              </address>
             </div>
           </div>
         </div>

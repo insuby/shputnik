@@ -56,13 +56,15 @@ export const Feedback = () => {
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
         <img
           className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]"
-          alt="Vector"
+          alt=""
+          aria-hidden="true"
           src="/img/feedback/vector-1.svg"
         />
 
         <img
           className="absolute left-[666px] top-[-109px] h-[675px] w-full md:w-[727px]"
-          alt="Vector"
+          alt=""
+          aria-hidden="true"
           src="/img/feedback/vector-2-1.svg"
         />
 
@@ -96,7 +98,7 @@ export const Feedback = () => {
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="w-full all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
+            className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Связаться с нами
@@ -227,7 +229,8 @@ export const Feedback = () => {
 
           <img
             className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/feedback/vector-147.svg"
           />
 
@@ -236,7 +239,8 @@ export const Feedback = () => {
 
         <img
           className="absolute left-[874px] top-6 h-[403px] w-full md:w-[426px]"
-          alt="Vector"
+          alt=""
+          aria-hidden="true"
           src="/img/feedback/vector-4.svg"
         />
 

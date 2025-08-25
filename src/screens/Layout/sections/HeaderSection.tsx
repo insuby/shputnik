@@ -87,6 +87,9 @@ export const HeaderSection = () => {
             className={`mt-[-1.00px] flex w-fit cursor-pointer items-center whitespace-nowrap border-b-2 border-solid py-2.5 text-gray-90 outline-0 hover:text-[#3573FC] ${
               isProductActive ? 'border-[#3573FC]' : 'border-transparent'
             }`}
+            aria-haspopup="true"
+            aria-expanded={isMenuOpen}
+            aria-controls="products-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             Продукты
@@ -156,7 +159,7 @@ export const HeaderSection = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 md:hidden">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 md:hidden" role="dialog" aria-modal="true" aria-label="Мобильное меню">
           <div className="mb-6 flex items-center justify-between">
             <Link
               to={RoutesPath.MAIN}
@@ -193,11 +196,12 @@ export const HeaderSection = () => {
             </button>
           </div>
 
-          <nav className="space-y-8 p-3">
+          <nav aria-label="Мобильная навигация" className="space-y-8 p-3">
             <div className="space-y-3">
               <div className="text-base text-gray-40">Кредитование</div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
+              <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.MICROCREDIT}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -219,7 +223,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.BUSINESSCREDIT}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -239,7 +245,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.BANKCREDIT}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -259,7 +267,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.BNPL}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -279,7 +289,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.AUTOCREDIT}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -299,7 +311,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.P2P}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -319,7 +333,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.ISLAMFINANCE}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -339,15 +355,17 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <div className="space-y-3">
               <div className="text-base text-gray-40">
                 Другое программное обеспечение
               </div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
+              <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.DATAUNLOAD}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -369,7 +387,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.FDATA}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -389,7 +409,9 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <Link
+                </li>
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.FDATA}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -405,13 +427,15 @@ export const HeaderSection = () => {
                     <path d="M7 4L13 10L7 16" stroke="#9FA7BC" strokeWidth="2" />
                   </svg>
                 </Link>
-              </div>
+                </li>
+              </ul>
             </div>
 
             <div className="space-y-3">
               <div className="text-base text-gray-40">Услуги</div>
-              <div className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
-                <Link
+              <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
+                <li className="list-none">
+                  <Link
                   to={RoutesPath.DEVELOPMENT}
                   onClick={() => setIsMenuOpen(false)}
                   className="flex items-center justify-between p-4"
@@ -431,7 +455,8 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-              </div>
+                </li>
+              </ul>
             </div>
           </nav>
         </div>
@@ -445,6 +470,9 @@ export const HeaderSection = () => {
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
             className="fixed inset-x-0 top-20 z-50 mx-auto mt-1 hidden max-w-[1440px] justify-center py-2 md:flex"
+            id="products-menu"
+            role="region"
+            aria-label="Меню продуктов"
           >
             <motion.div
               initial={{ scale: 0.98 }}

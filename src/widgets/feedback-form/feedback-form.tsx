@@ -31,9 +31,7 @@ export const FeedbackForm = () => {
     setIsVisible(true);
   }, []);
 
-  const onSubmit = (data: any) => {
-    console.log(data);
-  };
+  const onSubmit = () => {};
 
   const onClick = () => {
     setIsVisible(false);
@@ -69,7 +67,7 @@ export const FeedbackForm = () => {
         />
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
-          <div className="hiddev md:block 1relative h-[22px] w-full md:w-[170px]">
+          <div className="hidden md:block relative h-[22px] w-full md:w-[170px]">
             <div className="h-[22px] w-28">
               <div className="relative h-[22px] w-full md:w-[170px]">
                 <img
@@ -90,13 +88,13 @@ export const FeedbackForm = () => {
         </header>
 
         <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-2 md:gap-[88px] self-stretch overflow-hidden rounded-[32px] md:p-[88px]">
-          <div className="relative flex flex-1 grow flex-col items-start gap-[88px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-[88px] m-auto md:m-0">
             <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
-              <div className="relative text-center md:text-left mt-3 md:mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative text-center w-full md:w-auto md:text-left mt-3 md:mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Свяжитесь с нами
               </div>
 
-              <p className="relative text-center md:text-left self-stretch font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
+              <p className="hidden md:block relative text-center md:text-left self-stretch font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
                 Свяжитесь с нами, чтобы обсудить возможное сотрудничество. Мы с
                 радостью ответим на ваши вопросы и подберем решение, наилучшим
                 образом соответствующее вашим задачам

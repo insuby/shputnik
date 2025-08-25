@@ -16,14 +16,15 @@ export const About = () => {
                 <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 md:px-20 pb-10 md:pb-20 pt-8 md:pt-[88px]">
                     <img
                         className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
-                        alt="Vector"
+                        alt=""
+                        aria-hidden="true"
                         src="/img/about/vector-1-1.svg"
                     />
 
                     <div className="relative flex w-full md:w-[980px] flex-[0_0_auto] flex-col items-center justify-center gap-6 md:gap-8">
-                        <div className="relative mt-[-1.00px] self-stretch text-center text-3xl md:text-6xl font-medium leading-9 md:leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <h1 id="about-title" className="relative mt-[-1.00px] self-stretch text-center text-3xl md:text-6xl font-medium leading-9 md:leading-[68px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             Разработка передового программного обеспечения для Fintech
-                        </div>
+                        </h1>
 
                         <p className="relative w-full md:w-[786px] px-2 text-center text-base md:text-xl font-normal leading-6 md:leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
                             Наша команда занимается разработкой программного обеспечения. Мы
@@ -36,13 +37,15 @@ export const About = () => {
                         <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-10">
                             <img
                                 className="absolute left-[-157px] top-[-141px] h-[386px] w-[409px]"
-                                alt="Vector"
+                                alt=""
+                                aria-hidden="true"
                                 src="/img/about/vector-3.svg"
                             />
 
                             <img
                                 className="absolute -top-2 left-[189px] h-[442px] w-[476px]"
-                                alt="Vector"
+                                alt=""
+                                aria-hidden="true"
                                 src="/img/about/vector-2.svg"
                             />
 
@@ -92,7 +95,8 @@ export const About = () => {
 
                             <img
                                 className="relative w-px self-stretch hidden md:block"
-                                alt="Vector"
+                                alt=""
+                                aria-hidden="true"
                                 src="/img/about/vector-3-1.svg"
                             />
 
@@ -146,9 +150,9 @@ export const About = () => {
 
 
             <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-            <h1 id="about-title" className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
+            <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
               Представительства
-            </h1>
+            </h2>
 
             <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               По любым вопросам вы можете обратиться в один из наших офисов или
@@ -185,7 +189,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                className="all-[unset] w-full md:w-fit relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
@@ -222,7 +226,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                className="all-[unset] w-full md:w-fit relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">

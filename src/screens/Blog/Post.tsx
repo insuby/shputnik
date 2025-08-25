@@ -358,21 +358,26 @@ export const BlogPost = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-7">
+              <form className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-7" onSubmit={(e)=>{e.preventDefault(); handleSend();}} aria-labelledby="comment-form-title">
                 <div className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-6">
-                  <div className="tracking_[0] relative mt-[-1.00px] text-2xl font-medium leading-8 text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div id="comment-form-title" className="tracking_[0] relative mt-[-1.00px] text-2xl font-medium leading-8 text-gray-90 [font-family:'Roboto',Helvetica]">
                     Ваш комментарий
                   </div>
+                  <label htmlFor="comment-text" className="sr-only">Комментарий</label>
                   <textarea
+                    id="comment-text"
                     className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4"
                     placeholder="Введите комментарий"
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
+                    required
                   />
                   <div className="relative flex h-[60px] w-full items-start gap-6">
                     <div className="flex-1">
                       <div className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4">
+                        <label htmlFor="comment-author" className="sr-only">Ваше имя</label>
                         <input
+                          id="comment-author"
                           className="w-full outline-none"
                           placeholder="Ваше имя (необязательно)"
                           value={authorName}
@@ -382,23 +387,24 @@ export const BlogPost = () => {
                     </div>
                     <div className="flex-1">
                       <div className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4">
+                        <label htmlFor="comment-email" className="sr-only">Ваш email</label>
                         <input
+                          id="comment-email"
+                          type="email"
                           className="w-full outline-none"
                           placeholder="example@mail.ru"
+                          aria-describedby="email-help"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-                <button
-                  onClick={handleSend}
-                  className="all-[unset] relative box-border flex h-[60px] w-full items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
-                >
+                <button type="submit" className="all-[unset] relative box-border flex h-[60px] w-full items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4">
                   <div className="tracking_[0] relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 text-white [font-family:'Roboto',Helvetica]">
                     Отправить
                   </div>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
           <div className="flex_[0_0_auto] relative inline-flex flex-col items-start justify-center gap-4">

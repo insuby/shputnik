@@ -31,6 +31,7 @@ export const MobileLayout = () => {
           isBgEnabled,
       })}
     >
+      <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow">Перейти к контенту</a>
       <div className="relative flex w-full flex-col items-start">
         <button
           aria-label="Открыть меню"
@@ -999,9 +1000,9 @@ export const MobileLayout = () => {
         )}
       </AnimatePresence>
 
-      <div className="-mt-16 px-5 w-full">
+      <main id="content" role="main" className="-mt-16 px-5 w-full">
         <Outlet />
-      </div>
+      </main>
       {isOpen && <FeedbackForm />}
     </div>
   );
