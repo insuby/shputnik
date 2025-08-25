@@ -25,7 +25,7 @@ export const Works = () => {
         Примеры работ
       </div>
 
-      <div className="relative flex h-[648px] w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
+      <div className="relative flex flex-col md:!flex-row  md:h-[648px] w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
           <Slider
             ref={sliderRef}
@@ -38,28 +38,28 @@ export const Works = () => {
             className="p2p-slider"
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="overflow-hidden px-3">
-              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden md:px-3">
+              <div className="relative md:left-[-231px] md:top-[-98px] h-[350px] md:h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
+                  className="absolute md:left-[291px] md:top-[158px] md:h-[588px] w-full"
                   alt="Image"
                   src={slide1}
                 />
               </div>
             </div>
-            <div className="overflow-hidden px-3">
-              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden md:px-3">
+              <div className="relative md:left-[-231px] md:top-[-98px] h-[350px] md:h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
+                  className="absolute md:left-[291px] md:top-[158px] md:h-[588px] w-full"
                   alt="Image"
                   src={slide2}
                 />
               </div>
             </div>
-            <div className="overflow-hidden px-3">
-              <div className="relative left-[-231px] top-[-98px] h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
+            <div className="overflow-hidden md:px-3">
+              <div className="relative md:left-[-231px] md:top-[-98px] h-[350px] md:h-[1035px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%]">
                 <img
-                  className="absolute left-[291px] top-[158px] h-[588px] w-full"
+                  className="absolute md:left-[291px] md:top-[158px] md:h-[588px] w-full"
                   alt="Image"
                   src={slide3}
                 />
@@ -68,7 +68,7 @@ export const Works = () => {
           </Slider>
         </div>
 
-        <div className="relative flex h-[648px] flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+        <div className="relative flex h-[648px] flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 md:py-12 md:pl-12 md:pr-[68px]">
           {currentSlideIndex + 1 === 3 && (
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
@@ -125,7 +125,7 @@ export const Works = () => {
             </div>
           )}
 
-          <div className="bottom-[-80px] mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
+          <div className="bottom-[-80px] mt-5 md:mt-20 flex  w-full flex-[0_0_auto] items-center justify-between self-stretch pr-10">
             <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}

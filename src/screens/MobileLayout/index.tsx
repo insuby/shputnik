@@ -4,21 +4,25 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
+import { FeedbackForm } from '../../widgets/feedback-form';
+import { useFeedbackForm } from '../../widgets/feedback-form';
+
 import { RoutesPath } from '../../routes-path';
 
 export const MobileLayout = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [menuPanel, setMenuPanel] = useState<'root' | 'products'>('root');
+  const { isOpen } = useFeedbackForm();
 
   const isBgEnabled = location.pathname === RoutesPath.MAIN;
 
   useEffect(() => {
-    document.body.style.overflow = isMenuOpen ? 'hidden' : 'auto';
+    document.body.style.overflow = isMenuOpen || isOpen ? 'hidden' : 'auto';
     return () => {
       document.body.style.overflow = 'auto';
     };
-  }, [isMenuOpen]);
+  }, [isMenuOpen, isOpen]);
 
   return (
     <div
@@ -993,6 +997,7 @@ export const MobileLayout = () => {
       <div className="-mt-16 px-5 w-full">
         <Outlet />
       </div>
+      {isOpen && <FeedbackForm />}
     </div>
   );
 };
