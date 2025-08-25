@@ -558,7 +558,8 @@ export const IslamFinance = () => {
 
           <img
             className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/islamfinans/vector-4-3.svg"
           />
         </div>

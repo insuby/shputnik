@@ -127,7 +127,8 @@ export const Fdata = () => {
 
           <img
             className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/fdata/vector-4-2.svg"
           />
 
@@ -886,6 +887,7 @@ export const Fdata = () => {
 
         <div className="absolute left-[725px] top-[542px] hidden md:flex h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
           <button
+            aria-label="Предыдущий слайд"
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
@@ -914,6 +916,7 @@ export const Fdata = () => {
           </button>
 
           <button
+            aria-label="Следующий слайд"
             onClick={goToNext}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >

@@ -51,7 +51,8 @@ export const MicroCredit = () => {
         <div className="relative flex h-[1060px] md:h-auto w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/vector-1-5.svg"
           />
 
@@ -198,7 +199,8 @@ export const MicroCredit = () => {
 
           <img
             className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/vector-3.svg"
           />
 
@@ -588,6 +590,7 @@ export const MicroCredit = () => {
           </div>
           <div className="absolute left-[725px] top-[592px] hidden md:flex h-14w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
             <button
+              aria-label="Предыдущий слайд"
               onClick={goToPrev}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >
@@ -616,6 +619,7 @@ export const MicroCredit = () => {
             </button>
 
             <button
+              aria-label="Следующий слайд"
               onClick={goToNext}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >

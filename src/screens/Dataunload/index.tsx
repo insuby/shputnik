@@ -163,7 +163,8 @@ export const Dataunload = () => {
 
               <img
                 className="absolute left-0 top-0 h-[503px] w-full md:w-[606px]"
-                alt="Vector"
+                alt=""
+                aria-hidden="true"
                 src="/img/dataunload/vector-5.svg"
               />
 

@@ -37,7 +37,8 @@ export const Autocredit = () => {
         <div className="relative flex md:h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/autocredit/vector-1-9.svg"
           />
 
@@ -439,7 +440,8 @@ export const Autocredit = () => {
 
           <img
             className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/autocredit/vector-4-3.svg"
           />
         </div>

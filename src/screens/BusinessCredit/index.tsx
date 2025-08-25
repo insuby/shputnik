@@ -36,7 +36,8 @@ export const BusinessCredit = () => {
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/businesscredit/vector-1-8.svg"
           />
 

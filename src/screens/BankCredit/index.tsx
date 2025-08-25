@@ -127,7 +127,8 @@ export const BankCredit = () => {
         <div className="relative flex md:h-[620px] w-full flex-col items-start gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
-            alt="Vector"
+            alt=""
+            aria-hidden="true"
             src="/img/bankcredit/vector-1-9.svg"
           />
 
