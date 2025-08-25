@@ -356,7 +356,7 @@ export const BankCredit = () => {
 
               <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full md:w-[429px] flex-[0_0_auto] flex-col items-start gap-[20.5px]">
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
+                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Рекомендуемый оффер
@@ -369,7 +369,7 @@ export const BankCredit = () => {
                           Ставка
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           187, 000 ₽
                         </div>
                       </div>
@@ -379,7 +379,7 @@ export const BankCredit = () => {
                           Заработок
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           2, 560, 000 ₽
                         </div>
                       </div>
@@ -389,7 +389,7 @@ export const BankCredit = () => {
                           Окупаемость
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           6 - 8 месяцев
                         </div>
                       </div>
@@ -398,7 +398,7 @@ export const BankCredit = () => {
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
+                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Расходы

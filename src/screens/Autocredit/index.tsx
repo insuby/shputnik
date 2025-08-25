@@ -85,7 +85,7 @@ export const Autocredit = () => {
                     Дилер
                   </div>
 
-                  <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                     Макс Моторс
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export const Autocredit = () => {
                       Марка
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       Audi
                     </div>
                   </div>
@@ -166,7 +166,7 @@ export const Autocredit = () => {
                       Модель
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       A7 Sportback
                     </div>
                   </div>
@@ -193,7 +193,7 @@ export const Autocredit = () => {
                       Год выпуска
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       2004
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export const Autocredit = () => {
                       Первый взнос (руб.)
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       150 000
                     </div>
                   </div>
@@ -245,7 +245,7 @@ export const Autocredit = () => {
                       Срок (месяцы)
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       24
                     </div>
                   </div>
@@ -272,7 +272,7 @@ export const Autocredit = () => {
                       Первый взнос (руб.)
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       150 000
                     </div>
                   </div>
@@ -301,7 +301,7 @@ export const Autocredit = () => {
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[20.5px]">
                 <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full md:w-[337.09px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch">
+                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full self-stretch">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Ваши условия
@@ -322,7 +322,7 @@ export const Autocredit = () => {
                           Ежемесячный платеж
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           187, 000 ₽
                         </div>
                       </div>
@@ -332,7 +332,7 @@ export const Autocredit = () => {
                           Сумма
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           2, 560, 000 ₽
                         </div>
                       </div>
@@ -342,7 +342,7 @@ export const Autocredit = () => {
                           Ставка
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           3,5%
                         </div>
                       </div>
@@ -351,7 +351,7 @@ export const Autocredit = () => {
                 </div>
 
                 <div className="relative flex w-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
+                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Увеличенный первоначальный взнос
@@ -364,7 +364,7 @@ export const Autocredit = () => {
                           Ежемесячный платеж
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           166, 000 ₽
                         </div>
                       </div>
@@ -374,7 +374,7 @@ export const Autocredit = () => {
                           Сумма
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           2, 450, 000 ₽
                         </div>
                       </div>
@@ -393,7 +393,7 @@ export const Autocredit = () => {
                 </div>
 
                 <div className="relative flex w-full md:w-[334.11px] flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px]">
+                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Увеличенный срок
@@ -406,7 +406,7 @@ export const Autocredit = () => {
                           Ежемесячный платеж
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           96, 000 ₽
                         </div>
                       </div>
@@ -416,7 +416,7 @@ export const Autocredit = () => {
                           Сумма
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           2, 640, 000 ₽
                         </div>
                       </div>
@@ -426,7 +426,7 @@ export const Autocredit = () => {
                           Ставка
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                           3,6%
                         </div>
                       </div>

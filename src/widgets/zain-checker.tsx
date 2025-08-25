@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { isMobile } from '../App.tsx';
 
 import { Check10 } from '../components/ui/check10.tsx';
 import {CrmCapabilities} from "./crm-capabilities.tsx";
@@ -35,34 +36,35 @@ export const ZaimChecker = () => {
   const ref27 = useRef(null);
   const ref28 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
-  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-100px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-100px' });
-  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-100px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-100px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-100px' });
-  const inView28 = useInView(ref28, { once: true, margin: '-100px' });
+  const marginValue = isMobile ? '-10px' : '-100px';
+  const inView1 = useInView(ref1, { once: true, margin: marginValue });
+  const inView2 = useInView(ref2, { once: true, margin: marginValue });
+  const inView3 = useInView(ref3, { once: true, margin: marginValue });
+  const inView4 = useInView(ref4, { once: true, margin: marginValue });
+  const inView5 = useInView(ref5, { once: true, margin: marginValue });
+  const inView6 = useInView(ref6, { once: true, margin: marginValue });
+  const inView7 = useInView(ref7, { once: true, margin: marginValue });
+  const inView8 = useInView(ref8, { once: true, margin: marginValue });
+  const inView9 = useInView(ref9, { once: true, margin: marginValue });
+  const inView10 = useInView(ref10, { once: true, margin: marginValue });
+  const inView11 = useInView(ref11, { once: true, margin: marginValue });
+  const inView12 = useInView(ref12, { once: true, margin: marginValue });
+  const inView13 = useInView(ref13, { once: true, margin: marginValue });
+  const inView14 = useInView(ref14, { once: true, margin: marginValue });
+  const inView15 = useInView(ref15, { once: true, margin: marginValue });
+  const inView16 = useInView(ref16, { once: true, margin: marginValue });
+  const inView17 = useInView(ref17, { once: true, margin: marginValue });
+  const inView18 = useInView(ref18, { once: true, margin: marginValue });
+  const inView19 = useInView(ref19, { once: true, margin: marginValue });
+  const inView20 = useInView(ref20, { once: true, margin: marginValue });
+  const inView21 = useInView(ref21, { once: true, margin: marginValue });
+  const inView22 = useInView(ref22, { once: true, margin: marginValue });
+  const inView23 = useInView(ref23, { once: true, margin: marginValue });
+  const inView24 = useInView(ref24, { once: true, margin: marginValue });
+  const inView25 = useInView(ref25, { once: true, margin: marginValue });
+  const inView26 = useInView(ref26, { once: true, margin: marginValue });
+  const inView27 = useInView(ref27, { once: true, margin: marginValue });
+  const inView28 = useInView(ref28, { once: true, margin: marginValue });
 
   return (
     <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7">

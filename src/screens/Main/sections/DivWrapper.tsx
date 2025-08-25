@@ -81,7 +81,7 @@ export const DivWrapper = () => {
                       Дилер
                     </div>
 
-                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                       Макс Моторс
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export const DivWrapper = () => {
                         Марка
                       </div>
 
-                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                         Audi
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export const DivWrapper = () => {
                         Модель
                       </div>
 
-                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
                         A7 Sportback
                       </div>
                     </div>

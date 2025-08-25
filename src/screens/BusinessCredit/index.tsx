@@ -232,7 +232,7 @@ export const BusinessCredit = () => {
                         Ставка
                       </div>
 
-                      <div className="relative self-stretch text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch text-[17.6px] whitespace-nowrap font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         187, 000 ₽
                       </div>
                     </div>
@@ -242,7 +242,7 @@ export const BusinessCredit = () => {
                         Заработок
                       </div>
 
-                      <div className="relative self-stretch text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch text-[17.6px] whitespace-nowrap font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         2, 560, 000 ₽
                       </div>
                     </div>
@@ -252,7 +252,7 @@ export const BusinessCredit = () => {
                         Окупаемость
                       </div>
 
-                      <div className="relative self-stretch text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch text-[17.6px] whitespace-nowrap font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         6 - 8 месяцев
                       </div>
                     </div>
