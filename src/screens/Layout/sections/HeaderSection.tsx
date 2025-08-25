@@ -389,9 +389,22 @@ export const HeaderSection = () => {
                     />
                   </svg>
                 </Link>
-                <div className="flex items-center justify-between p-4">
+                <Link
+                  to={RoutesPath.FDATA}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="flex items-center justify-between p-4"
+                >
                   <span className="text-gray-90">Реконсиляция данных</span>
-                </div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 4L13 10L7 16" stroke="#9FA7BC" strokeWidth="2" />
+                  </svg>
+                </Link>
               </div>
             </div>
 
@@ -736,7 +749,10 @@ export const HeaderSection = () => {
                     </div>
                   </Link>
 
-                  <div className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]">
+                  <Link
+                    to={RoutesPath.FDATA}
+                    className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                  >
                     <svg
                       className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
                       width="64"
@@ -753,7 +769,7 @@ export const HeaderSection = () => {
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Реконсиляция данных
                     </div>
-                  </div>
+                  </Link>
                 </div>
               </div>
 

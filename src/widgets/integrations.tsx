@@ -41,7 +41,7 @@ export const Integrations = () => {
             initial={{opacity: 0, y: 50}}
             animate={inView1 ? {opacity: 1, y: 0} : {}}
             transition={{duration: 0.7, ease: 'easeOut'}}
-            className="relative flex w-full flex-col md:!flex-row md:w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-20"
+            className="relative flex w-full flex-col md:!flex-row md:w-[1376px] flex-[0_0_auto] items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 pt-10 md:p-20"
         >
             <img
                 className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"

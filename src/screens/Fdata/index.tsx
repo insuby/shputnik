@@ -136,9 +136,9 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="absolute left-[704px] top-[208px] flex w-full md:w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
+            className="md:absolute w-fit left-[704px] top-[208px] flex md:w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
           >
-            <div className="relative flex flex-1 grow flex-col items-start gap-6">
+            <div className="relative md:w-auto w-full flex flex-1 grow flex-col items-start gap-6">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                 <div className="relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
                   <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -159,7 +159,7 @@ export const Fdata = () => {
                 </div>
 
                 <div className="relative flex h-9 w-full items-center gap-4 self-stretch rounded-[100px] border border-solid border-[#e3e4e7] py-2 pl-4 pr-3">
-                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Search
                   </div>
 
@@ -173,11 +173,11 @@ export const Fdata = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch px-3 py-1">
-                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Status
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     Reconciliation
                   </div>
 
@@ -199,12 +199,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -225,12 +225,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-green-60" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -251,12 +251,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-green-60" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -277,12 +277,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -332,7 +332,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Waiting
                     </div>
                   </div>
@@ -340,7 +340,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       In progress
                     </div>
                   </div>
@@ -348,7 +348,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Reconciled
                     </div>
                   </div>
@@ -356,7 +356,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Unreconciled
                     </div>
                   </div>
@@ -364,7 +364,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Created
                     </div>
                   </div>
@@ -372,7 +372,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Failed
                     </div>
                   </div>
@@ -387,7 +387,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By me
                       </div>
                     </div>
@@ -395,7 +395,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By others
                       </div>
                     </div>
@@ -409,7 +409,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Payments
                       </div>
                     </div>
@@ -417,7 +417,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Finance
                       </div>
                     </div>
@@ -425,7 +425,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Trading
                       </div>
                     </div>
@@ -444,7 +444,7 @@ export const Fdata = () => {
       </div>
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
         <div className="flex-col md:!flex-row relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl p-7 py-12 md:pl-12 md:pr-[68px]">
             <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
               <div className="relative mt-[-1.00px] text-center md:text-left self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 f.Data в деталях

@@ -81,7 +81,7 @@ export const Development = () => {
             src={vector}
           />
 
-          <div className="absolute left-[727px] top-[188px] h-[280px] w-full md:w-[464px] overflow-hidden rounded-3xl bg-[#ffffff]">
+          <div className="md:absolute md:scale-100 scale-75 relative md:left-[727px] md:top-[188px] h-[280px] w-full md:w-[464px] overflow-hidden rounded-3xl bg-[#ffffff]">
             <div className="absolute left-0 top-0 h-10w-full md:w-[528px] bg-[#f9fafd]">
               <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 
@@ -95,7 +95,7 @@ export const Development = () => {
             </div>
           </div>
         </div>
-        <div className="absolute left-[590px] top-[-41px] size-[738px]">
+        <div className="absolute left-[-190px] top-[190px] md:left-[590px] scale-50 md:scale-100 md:top-[-41px] size-[738px]">
           <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
             <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 

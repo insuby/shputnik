@@ -76,7 +76,7 @@ export const IslamFinance = () => {
   return (
     <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
+        <div ref={ref1} className="relative flex md:h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
           <img
             className="absolute left-[539px] top-12 h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -129,7 +129,7 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[745px] top-[136px] flex h-[538px] w-full md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
+            className="md:absolute left-[745px] top-[136px] flex h-[538px] w-fit md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

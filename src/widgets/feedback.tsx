@@ -96,7 +96,7 @@ export const Feedback = () => {
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
+            className="w-full all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Связаться с нами
