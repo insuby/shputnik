@@ -48,21 +48,25 @@ export const FeedbackForm = () => {
 
   return (
     <div
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="feedback-dialog-title"
       onClick={onBackdropClick}
       className={`fixed inset-0 z-50 flex h-screen w-screen items-center justify-center pt-8 md:p-[40px] transition-all duration-300 ease-in-out [font-family:var(--font-family)] ${
         isVisible ? 'bg-[#000000CA] opacity-100' : 'bg-transparent opacity-0'
       }`}
     >
       <div
-        className={`h-fit relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
+        className={`h-fit max-w-[1376px] relative flex size-fit flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
           isVisible
-            ? 'translate-y-0 scale-100 opacity-100'
-            : 'translate-y-4 scale-95 opacity-0'
+            ? ' translate-y-0 scale-100 opacity-100'
+            : ' translate-y-4 scale-95 opacity-0'
         }`}
       >
         <img
           className="absolute left-[379px] top-[85px] h-[1150px] w-full md:w-[1230px]"
-          alt="Vector"
+          alt=""
+          aria-hidden="true"
           src="/img/vector-1.svg"
         />
 
@@ -72,25 +76,28 @@ export const FeedbackForm = () => {
               <div className="relative h-[22px] w-full md:w-[170px]">
                 <img
                   className="absolute  left-0 top-0"
-                  alt="Group"
+                  alt=""
+                  aria-hidden="true"
                   src="/img/logo.png"
                 />
               </div>
             </div>
           </div>
 
-          <div
-            className="relative my-[-8.00px] inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] p-3 transition-colors duration-200 hover:bg-[#ffffff20]"
+          <button
+            type="button"
+            aria-label="Закрыть"
+            className="relative my-[-8.00px] inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] p-3 transition-colors duration-200 hover:bg-[#ffffff20]"
             onClick={onClick}
           >
-            <img className="relative size-8" alt="X" src="/img/x.svg" />
-          </div>
+            <img className="relative size-8" alt="" aria-hidden="true" src="/img/x.svg" />
+          </button>
         </header>
 
         <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-2 md:gap-[88px] self-stretch overflow-hidden rounded-[32px] md:p-[88px]">
           <div className="relative flex flex-1 grow flex-col items-start gap-[88px] m-auto md:m-0">
-            <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-start gap-4">
-              <div className="relative text-center w-full md:w-auto md:text-left mt-3 md:mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative flex w-full md:w=[560px] flex-[0_0_auto] flex-col items-start gap-4">
+              <div id="feedback-dialog-title" className="relative text-center w-full md:w-auto md:text-left mt-3 md:mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 Свяжитесь с нами
               </div>
 
@@ -125,10 +132,12 @@ export const FeedbackForm = () => {
           </div>
 
           <div className="relative flex flex-1 grow flex-col items-start gap-10 rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:min-w-[584px]">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch" id="feedback-dialog-title">
               <div className="relative w-full">
                 <input
                   {...register('name')}
+                  aria-label="Имя"
+                  autoComplete="name"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
                   placeholder="Ваше имя"
                 />
@@ -142,10 +151,11 @@ export const FeedbackForm = () => {
                 <InputMask
                   {...register('phone')}
                   mask="+7 (999) 999-99-99"
+                  aria-label="Телефон"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
                 >
                   {(props: any) => (
-                    <input {...props} placeholder="+7 (999) 999-99-99" />
+                    <input {...props} placeholder="+7 (999) 999-99-99" autoComplete="tel" />
                   )}
                 </InputMask>
                 {errors['phone'] && (
@@ -158,6 +168,8 @@ export const FeedbackForm = () => {
                 <input
                   {...register('email')}
                   type="email"
+                  aria-label="Email"
+                  autoComplete="email"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
                   placeholder="Ваш почтовый адрес"
                 />
@@ -170,14 +182,15 @@ export const FeedbackForm = () => {
               <textarea
                 placeholder="Комментарий"
                 maxLength={100}
+                aria-label="Комментарий"
                 className="relative !mx-[-1.00px] !mt-[-1.00px] flex !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
               />
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
+            <form className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch" onSubmit={handleSubmit(onSubmit)}>
               <button
+                type="submit"
                 className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
-                onClick={handleSubmit(onSubmit)}
               >
                 <span className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-white [font-style:var(--body-1-r-font-style)]">
                   Отправить
@@ -192,7 +205,7 @@ export const FeedbackForm = () => {
                   данных
                 </span>
               </p>
-            </div>
+            </form>
           </div>
         </div>
       </div>

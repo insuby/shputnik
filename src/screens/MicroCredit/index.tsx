@@ -291,7 +291,7 @@ export const MicroCredit = () => {
               </button>
             </div>
 
-            <div className="w-full md:w-[915px]">
+            <div className="w-full md:w-[915px]" id="microcredit-slider">
               <Slider
                 ref={sliderRef}
                 dots={false}
@@ -590,6 +590,7 @@ export const MicroCredit = () => {
           </div>
           <div className="absolute left-[725px] top-[592px] hidden md:flex h-14w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
             <button
+              aria-controls="microcredit-slider"
               aria-label="Предыдущий слайд"
               onClick={goToPrev}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -619,6 +620,7 @@ export const MicroCredit = () => {
             </button>
 
             <button
+              aria-controls="microcredit-slider"
               aria-label="Следующий слайд"
               onClick={goToNext}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

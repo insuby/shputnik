@@ -389,7 +389,7 @@ export const P2P = () => {
       <div className="relative flex-col flex md:!flex-row md:h-[568px] w-full md:w-[1376px]">
         <div className="flex flex-col md:!flex-row w-full md:w-[1472px] items-center gap-[68px]">
           <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-7">
-            <div className="relative mt-[-1.00px] text-center md:text-left self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               Настраиваемые бизнес-процессы
               <br />
               под ваши запросы
@@ -405,7 +405,7 @@ export const P2P = () => {
             </button>
           </div>
 
-          <div className="w-full md:w-[915px]">
+          <div className="w-full md:w-[915px]" id="p2p-slider">
             <Slider
               ref={sliderRef}
               dots={false}
@@ -700,6 +700,7 @@ export const P2P = () => {
 
         <div className="absolute left-[725px] top-[542px] hidden md:flex h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
           <button
+            aria-controls="p2p-slider"
             aria-label="Предыдущий слайд"
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -729,6 +730,7 @@ export const P2P = () => {
           </button>
 
           <button
+            aria-controls="p2p-slider"
             aria-label="Следующий слайд"
             onClick={goToNext}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -763,7 +765,7 @@ export const P2P = () => {
 
       <div className="relative flex flex-col md:!flex-row md:h-[544px] w-full items-center gap-6 self-stretch rounded-3xl">
         <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="relative mt-[-1.00px] w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mt-[-1.00px] w-full md:w-[480px text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Готовый модуль расчетов
           </div>
 
@@ -797,7 +799,7 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative left-[33px] top-5 h-[714px] w-full md:w-[688px] md:bg-[url(/img/p2p/vector-1-6.svg)] bg-[100%_100%]">
+          <div className="relative left-[33px] top-5 h-[490px] md:h-[714px] w-full md:w-[688px] md:bg-[url(/img/p2p/vector-1-6.svg)] bg-[100%_100%]">
             <div className="relative md:left-[153px] top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-full md:w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3">
@@ -1070,7 +1072,7 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="relative mt-[-1.00px] w-full md:w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mt-[-1.00px] w-full md:w-[480px text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Интеллектуальная работа с платежами
           </div>
 

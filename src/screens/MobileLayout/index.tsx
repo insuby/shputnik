@@ -153,12 +153,8 @@ export const MobileLayout = () => {
                     </svg>
                   </motion.button>
                 ) : (
-                  <motion.div
+                  <div
                     key="logo"
-                    initial={{ opacity: 0, x: -6 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -6 }}
-                    transition={{ duration: 0.15 }}
                     className="absolute left-5 top-2 h-8 w-28"
                   >
                     <svg
@@ -215,7 +211,7 @@ export const MobileLayout = () => {
                         fill="#1C222F"
                       />
                     </svg>
-                  </motion.div>
+                  </div>
                 )}
               </AnimatePresence>
               <button
@@ -1000,7 +996,7 @@ export const MobileLayout = () => {
         )}
       </AnimatePresence>
 
-      <main id="content" role="main" className="-mt-16 px-5 w-full">
+      <main id="content" className="-mt-16 px-5 w-full">
         <Outlet />
       </main>
       {isOpen && <FeedbackForm />}

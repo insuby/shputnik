@@ -10,10 +10,10 @@ export const About = () => {
   };
   return (
     <section className="relative inline-flex flex-col items-start justify-center -mx-5" aria-labelledby="about-title">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-6 md:px-8 md:pb-[88px] md:md:pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 md:px-8 md:pb-[88px] md:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-                <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 md:px-20 pb-10 md:pb-20 pt-8 md:pt-[88px]">
+                <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 md:px-20 pb-10 md:pb-20 pt-0 md:pt-[88px]">
                     <img
                         className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
                         alt=""
@@ -149,7 +149,7 @@ export const About = () => {
             </div>
 
 
-            <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+            <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:p-0 p-2">
             <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-5xl">
               Представительства
             </h2>
@@ -160,7 +160,7 @@ export const About = () => {
             </p>
           </section>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row">
+          <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:!flex-row md:p-0 p-2">
             <article aria-labelledby="office-moscow" className="relative flex w-full flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 md:p-12">
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
@@ -234,7 +234,7 @@ export const About = () => {
                 </div>
               </button>
             </article>
-          </div>
+          </section>
         </div>
 
         <Feedback />

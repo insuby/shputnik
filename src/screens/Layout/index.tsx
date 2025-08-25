@@ -21,7 +21,7 @@ export const Layout = () => {
         <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow">Перейти к контенту</a>
         <div className="m-auto flex size-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
             <HeaderSection />
-            <main id="content" role="main" className="size-full">
+            <main id="content" className="size-full">
                 <Outlet />
             </main>
             <FooterSection />

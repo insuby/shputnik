@@ -34,7 +34,9 @@ body {
     height: 100%;
 }
 
-
+#app {
+    height: 100%;
+}
 
 /* a blue color as a generic focus style */
 button:focus-visible {
