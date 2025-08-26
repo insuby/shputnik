@@ -1,4 +1,4 @@
-export default {
+export const common = {
   brand: {
     name: 'Sputnik',
   },
@@ -8,5 +8,6 @@ export default {
     openMenu: 'Open menu',
     closeMenu: 'Close menu',
   },
+  skipToContent: 'Skip to content',
 };
 

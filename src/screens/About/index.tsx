@@ -179,11 +179,7 @@ export const About = () => {
                 </div>
 
                 <address className="not-italic relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  183038, Москва,
-                  <br />
-                  Рубцовская набережная,
-                  <br />
-                  3с1, офис 1008
+                                  {t('moscowAddress')}
                 </address>
                 <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   <a href="tel:+74950062157" className="hover:text-[#3573FC]">+ 7 (495) 006 21 57</a>
@@ -216,11 +212,7 @@ export const About = () => {
                 </div>
 
                 <address className="not-italic relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  183038, Мурманск,
-                  <br />
-                  улица Октябрьская,
-                  <br />
-                  2а, офис 2
+                                  {t('murmanskAddress')}
                 </address>
                 <p className="relative text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   <a href="tel:+74950062157" className="hover:text-[#3573FC]">+ 7 (495) 006 21 57</a>
@@ -232,7 +224,7 @@ export const About = () => {
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  Связаться
+                  {t('contact')}
                 </div>
               </button>
             </article>

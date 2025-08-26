@@ -77,17 +77,17 @@ export const DivWrapper = () => {
             >
               <div className="relative mt-2 flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] md:w-[393.9px]">
                 <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Калькулятор
+                  {t('calculator.title')}
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-center gap-[11.96px] self-stretch rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Дилер
+                      {t('calculator.dealer')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Макс Моторс
+                      {t('calculator.dealerName')}
                     </div>
                   </div>
 
@@ -102,13 +102,13 @@ export const DivWrapper = () => {
                   <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
                     <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                        Новая
+                        {t('calculator.condition.new')}
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Подержанная
+                        {t('calculator.condition.used')}
                       </div>
                     </div>
                   </div>
@@ -116,13 +116,13 @@ export const DivWrapper = () => {
                   <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
                     <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        С залогом
+                        {t('calculator.collateral.with')}
                       </div>
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                        Без залога
+                        {t('calculator.collateral.without')}
                       </div>
                     </div>
                   </div>
@@ -132,7 +132,7 @@ export const DivWrapper = () => {
                   <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                     <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                        Марка
+                        {t('calculator.brand')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -150,7 +150,7 @@ export const DivWrapper = () => {
                   <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                     <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                        Модель
+                        {t('calculator.model')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

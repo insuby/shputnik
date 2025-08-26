@@ -221,7 +221,7 @@ export const FrameWrapper = () => {
                     </div>
 
                     <div className="relative mr-[-0.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      14 дней
+                      {t('microcredit.termValue')}
                     </div>
                   </div>
 
@@ -268,7 +268,7 @@ export const FrameWrapper = () => {
                   <div className="relative size-2 rounded bg-blue-50" />
 
                   <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                    Текущее
+                    {t('chart.current')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -280,7 +280,7 @@ export const FrameWrapper = () => {
                   <div className="relative size-2 rounded bg-green-60" />
 
                   <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                    Основная
+                    {t('chart.main')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -292,7 +292,7 @@ export const FrameWrapper = () => {
                   <div className="relative size-2 rounded bg-yellow-50" />
 
                   <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                    Проценты
+                    {t('chart.interest')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -304,7 +304,7 @@ export const FrameWrapper = () => {
                   <div className="relative size-2 rounded bg-red-50" />
 
                   <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                    Штраф
+                    {t('chart.penalty')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">

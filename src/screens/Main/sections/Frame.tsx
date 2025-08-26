@@ -74,7 +74,7 @@ export const Frame = () => {
           animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
           className="relativew-full flex-[0_0_auto] md:w-[320px] xl:w-[412px]"
-          alt="Смартфон с интерфейсом кредитного приложения"
+          alt={t('hero.phoneAlt')}
           loading="lazy"
           src="/img/iphone-16-pro-max---3.png"
         />
@@ -117,7 +117,7 @@ export const Frame = () => {
               <div className="relative size-2 rounded bg-blue-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                Текущее
+                {t('chart.current')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -129,7 +129,7 @@ export const Frame = () => {
               <div className="relative size-2 rounded bg-green-60" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                Основная
+                {t('chart.main')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -141,7 +141,7 @@ export const Frame = () => {
               <div className="relative size-2 rounded bg-yellow-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                Проценты
+                {t('chart.interest')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -153,7 +153,7 @@ export const Frame = () => {
               <div className="relative size-2 rounded bg-red-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                Штраф
+                {t('chart.penalty')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -176,7 +176,7 @@ export const Frame = () => {
               <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="w/full relative flex h-6 items-center justify-between self-stretch">
                   <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Сумма
+                    {t('calculator.amount')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -202,11 +202,11 @@ export const Frame = () => {
 
                 <div className="w/full relative flex items-center justify-between self-stretch">
                   <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Срок
+                    {t('calculator.term')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    18 месяцев
+                    {t('calculator.termValue')}
                   </div>
                 </div>
 
@@ -228,7 +228,7 @@ export const Frame = () => {
 
                 <div className="w/full relative flex items-center justify-between self-stretch">
                   <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Ставка
+                    {t('calculator.rate')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -241,7 +241,7 @@ export const Frame = () => {
                 onClick={onClick}
                 className="inline-flex items-center justify-center gap-2 rounded-[32px] bg-gray-90 px-4 py-3 text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                Рассчитать
+                {t('calculator.calculate')}
               </button>
             </div>
           </div>

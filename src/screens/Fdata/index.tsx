@@ -447,14 +447,12 @@ export const Fdata = () => {
           <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 md:gap-12 md:pl-12 md:pr-[68px]">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 md:w-[560px]">
               <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-                f.Data в деталях
+                {t('details.title')}
               </div>
 
               <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
-                f.Data автоматизирует все ваши процессы обработки финансовых
-                данных с минимальной зависимостью от персонала. Наша
-                инновационная платформа загружает и реконсилирует данные,
-                обрабатывает исключения и определяет причины расхождений,
+                {t('details.description')}
+                                  
                 вычисляет и аудирует ключевые метрики и показатели, строит
                 кроссотчетность и аналитику
               </p>

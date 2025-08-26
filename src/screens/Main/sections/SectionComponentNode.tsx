@@ -154,7 +154,7 @@ export const SectionComponentNode = () => {
 
                     <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                        Интерес
+                        {t('alternativeModels.p2pUI.interest')}
                       </div>
 
                       <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -166,7 +166,7 @@ export const SectionComponentNode = () => {
                   <div className="relative flex h-[72px] w-full items-start gap-4 self-stretch rounded-2xl bg-[#f2f5ff] p-1">
                     <div className="relative flex flex-1 grow flex-col items-start p-3">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        Мои займы
+                        {t('alternativeModels.p2pUI.myLoans')}
                       </div>
 
                       <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -176,7 +176,7 @@ export const SectionComponentNode = () => {
 
                     <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        Платеж
+                        {t('alternativeModels.p2pUI.payment')}
                       </div>
 
                       <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -188,7 +188,7 @@ export const SectionComponentNode = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 [font-family:'Inter',Helvetica]">
-                    Инвестиции
+                    {t('alternativeModels.p2pUI.investments')}
                   </div>
 
                   <div className="relative flex h-24 w-full items-start gap-4 self-stretch rounded-2xl bg-[#f2f5ff] p-1">
@@ -200,7 +200,7 @@ export const SectionComponentNode = () => {
                       <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch">
                         <div className="relative flex flex-1 grow flex-col items-start">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Интерес
+                            {t('alternativeModels.p2pUI.interest')}
                           </div>
 
                           <div className="relative w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -210,7 +210,7 @@ export const SectionComponentNode = () => {
 
                         <div className="relative flex flex-1 grow flex-col items-start">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Интерес
+                            {t('alternativeModels.p2pUI.interest')}
                           </div>
 
                           <div className="relative w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -220,7 +220,7 @@ export const SectionComponentNode = () => {
 
                         <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-gray-90 px-2.5 py-1.5">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
-                            Вложить
+                            {t('alternativeModels.p2pUI.invest')}
                           </div>
                         </div>
                       </div>
@@ -236,7 +236,7 @@ export const SectionComponentNode = () => {
                       <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch">
                         <div className="relative flex flex-1 grow flex-col items-start">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Интерес
+                            {t('alternativeModels.p2pUI.interest')}
                           </div>
 
                           <div className="relative w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -246,7 +246,7 @@ export const SectionComponentNode = () => {
 
                         <div className="relative flex flex-1 grow flex-col items-start">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Интерес
+                            {t('alternativeModels.p2pUI.interest')}
                           </div>
 
                           <div className="relative w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -256,7 +256,7 @@ export const SectionComponentNode = () => {
 
                         <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-gray-90 px-2.5 py-1.5">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
-                            Вложить
+                            {t('alternativeModels.p2pUI.invest')}
                           </div>
                         </div>
                       </div>
@@ -282,7 +282,7 @@ export const SectionComponentNode = () => {
             >
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                 <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
-                  Общий доход
+                  {t('alternativeModels.p2pUI.totalIncome')}
                 </div>
 
                 <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
@@ -363,13 +363,11 @@ export const SectionComponentNode = () => {
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                P2P-кредитование
+                {t('cards.p2p.title')}
               </h3>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                Программное обеспечение для запуска P2P-платформы кредитования,
-                обеспечивая прямое взаимодействие между заёмщиками и инвесторами
-                без посредников. Подходит для кредитования ЮЛ и ФЛ
+                {t('cards.p2p.desc')}
               </p>
             </div>
 
@@ -403,13 +401,11 @@ export const SectionComponentNode = () => {
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                Исламское финансирование
+                {t('cards.islamFinance.title')}
               </h3>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                Платформа для исламского кредитования — поддержка продуктовых
-                моделей, соответствующих шариатским нормам (мурабаха, иджара,
-                таваруд и др.)
+                {t('cards.islamFinance.desc')}
               </p>
             </div>
 

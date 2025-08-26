@@ -169,7 +169,7 @@ export const MicroCredit = () => {
                   </div>
 
                   <div className="relative mr-[-0.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    14 дней
+                    {t('application.termValue')}
                   </div>
                 </div>
 
@@ -216,7 +216,7 @@ export const MicroCredit = () => {
                 <div className="relative size-2 rounded bg-blue-50" />
 
                 <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                  Текущее
+                  {t('chart.current')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -228,7 +228,7 @@ export const MicroCredit = () => {
                 <div className="relative size-2 rounded bg-green-60" />
 
                 <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                  Основная
+                  {t('chart.main')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -240,7 +240,7 @@ export const MicroCredit = () => {
                 <div className="relative size-2 rounded bg-yellow-50" />
 
                 <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                  Проценты
+                  {t('chart.interest')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -252,7 +252,7 @@ export const MicroCredit = () => {
                 <div className="relative size-2 rounded bg-red-50" />
 
                 <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                  Штраф
+                  {t('chart.penalty')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -275,8 +275,7 @@ export const MicroCredit = () => {
           <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
             <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
               <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
-                Основные механизмы работы
-                <br />с клиентами
+                {t('mechanisms.title')}
               </div>
 
               <button
@@ -284,7 +283,7 @@ export const MicroCredit = () => {
                 className="all-[unset] relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  Попробовать
+                  {t('mechanisms.try')}
                 </div>
               </button>
             </div>
@@ -347,15 +346,11 @@ export const MicroCredit = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Подача заявок
+                        {t('processes.applications')}
                       </div>
 
                       <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Клиент может самостоятельно пройти регистрацию и подать
-                        заявку на займ через сайт, менеджер может сделать эти
-                        действия через специальный интерфейс. Если клиент ушел
-                        со страницы он всегда может продолжить заполнение
-                        заявки.
+                        {t('processes.applicationsDesc')}
                       </p>
                     </div>
                   </div>
@@ -388,7 +383,7 @@ export const MicroCredit = () => {
                           </div>
 
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
-                            Ваша заявка одобрена
+                            {t('processes.applicationApproved')}
                           </div>
                         </div>
 
@@ -412,7 +407,7 @@ export const MicroCredit = () => {
                           </div>
 
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            Ваша заявка одобрена
+                            {t('processes.applicationApproved')}
                           </div>
                         </div>
 
@@ -436,7 +431,7 @@ export const MicroCredit = () => {
                           </div>
 
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            Ваша заявка одобрена
+                            {t('processes.applicationApproved')}
                           </div>
                         </div>
                       </div>
@@ -444,14 +439,11 @@ export const MicroCredit = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Автооповещение
+                        {t('processes.autoNotification')}
                       </div>
 
                       <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Автоматическое информирование клиента об
-                        одобрении/отказе, наступлении срока погашения, операциях
-                        в личном кабинете и других важных событиях по СМС и
-                        электронной почте.
+                        {t('processes.autoNotificationDesc')}
                       </p>
                     </div>
                   </div>
@@ -472,13 +464,11 @@ export const MicroCredit = () => {
 
                     <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Бонусная система
+                        {t('processes.bonusSystem')}
                       </div>
 
                       <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Система начисления, списания <br />и учета бонусов,
-                        бонусные программы, возможность начисления бонусов
-                        вручную, формирование промокодов.
+                        {t('processes.bonusSystemDesc')}
                       </p>
                     </div>
                   </div>
@@ -498,7 +488,7 @@ export const MicroCredit = () => {
                         <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
                           <div className="relative flex flex-1 grow flex-col items-start justify-between self-stretch">
                             <div className="relative mt-[-1.00px] self-stretch text-center text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                              Заявка одобрена
+                              {t('processes.applicationApproved')}
                             </div>
 
                             <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -517,15 +507,11 @@ export const MicroCredit = () => {
 
                     <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Личный кабинет
+                        {t('processes.personalAccount')}
                       </div>
 
                       <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        У клиента есть личный кабинет, через который он может
-                        подавать заявки на займ (без заполнения анкетных
-                        данных), просматривать историю взаимодействия с
-                        системой, пролонгировать, погашать и рефинансировать
-                        займ.
+                        {t('processes.personalAccountDesc')}
                       </p>
                     </div>
                   </div>
@@ -543,7 +529,7 @@ export const MicroCredit = () => {
                           />
 
                           <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            Заявка на займ
+                            {t('processes.loanApplication')}
                           </div>
                         </div>
 
@@ -561,7 +547,7 @@ export const MicroCredit = () => {
                           />
 
                           <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            Рефинансирование
+                            {t('processes.refinancing')}
                           </div>
                         </div>
                       </div>
@@ -569,15 +555,11 @@ export const MicroCredit = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Автоформирование документов
+                        {t('processes.autoDocumentation')}
                       </div>
 
                       <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Формирование клиентских документов и автоматизация
-                        процесса подписания документов на всех этапах жизни
-                        займа, в том числе РКО, ПКО, договор на предоставление
-                        займа, заявление о пролонгации, рефинансировании,
-                        досудебное письмо и другое.
+                        {t('processes.autoDocumentationDesc')}
                       </p>
                     </div>
                   </div>
@@ -588,7 +570,7 @@ export const MicroCredit = () => {
           <div className="h-14w-full absolute left-[725px] top-[592px] hidden items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
             <button
               aria-controls="microcredit-slider"
-              aria-label="Предыдущий слайд"
+              aria-label={t('processes.previousSlide')}
               onClick={goToPrev}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >
@@ -618,7 +600,7 @@ export const MicroCredit = () => {
 
             <button
               aria-controls="microcredit-slider"
-              aria-label="Следующий слайд"
+              aria-label={t('processes.nextSlide')}
               onClick={goToNext}
               className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >

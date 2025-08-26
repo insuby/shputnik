@@ -105,12 +105,12 @@ export const Div = () => {
                   </div>
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl bg-[#f6f8ff] p-6">
                     <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Наушники Beyerdynamic Amiron
+                      {t('lendingStoreOnline.productName')}
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
                       <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          Стоимость
+                          {t('lendingStoreOnline.cost')}
                         </div>
                         <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           23,456₽
@@ -118,7 +118,7 @@ export const Div = () => {
                       </div>
                       <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          Авансовый платеж
+                          {t('lendingStoreOnline.advancePayment')}
                         </div>
                         <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           42,000₽
@@ -126,7 +126,7 @@ export const Div = () => {
                       </div>
                       <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          Срок
+                          {t('calculator.term')}
                         </div>
                         <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           4,000₽
@@ -134,7 +134,7 @@ export const Div = () => {
                       </div>
                       <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          Следующий платеж
+                          {t('lendingStoreOnline.nextPayment')}
                         </div>
                         <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           2,700₽
@@ -244,47 +244,47 @@ export const Div = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
-                      График платежей
+                      {t('lendingStoreOnline.paymentSchedule')}
                     </div>
                     <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
-                      Договор: 12345456322
+                      {t('lendingStoreOnline.contract')}
                     </div>
                   </div>
                   <div className="relative inline-flex h-[154px] items-end">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[76px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        март
+                        {t('lendingStoreOnline.months.march')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[86px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        апр
+                        {t('lendingStoreOnline.months.april')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[105px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        май
+                        {t('lendingStoreOnline.months.may')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[120px] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        июнь
+                        {t('lendingStoreOnline.months.june')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[91px] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        июль
+                        {t('lendingStoreOnline.months.july')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
                       <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        авг
+                        {t('lendingStoreOnline.months.august')}
                       </div>
                     </div>
                   </div>
@@ -314,7 +314,7 @@ export const Div = () => {
                     <div className="relative left-[7px] top-[7px] size-[198px]">
                       <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                          Текущий остаток
+                          {t('lendingStoreOnline.currentBalance')}
                         </div>
                         <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                           44,000₽
@@ -331,7 +331,7 @@ export const Div = () => {
                   </div>
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                     <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                      Сумма займа
+                      {t('lendingStoreOnline.loanAmount')}
                     </div>
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       122, 000₽
@@ -349,7 +349,7 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                POS-кредитование
+                {t('lendingStoreOnline.posTitle')}
               </motion.div>
               <motion.div
                 id="animate_31"
@@ -359,11 +359,7 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <p className="w-10/12">
-                  Программное обеспечение для запуска POS-займов на этапе
-                  оформления покупки — как в онлайн-магазинах, так и в розничных
-                  точках продаж
-                </p>
+                <p className="w-10/12">{t('lendingStoreOnline.posDesc')}</p>
                 <div className="absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"

@@ -2,19 +2,19 @@ import { cx } from 'class-variance-authority';
 import { AnimatePresence, motion } from 'framer-motion';
 
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
-import { FeedbackForm } from '../../widgets/feedback-form';
-import { useFeedbackForm } from '../../widgets/feedback-form';
-
 import { RoutesPath } from '../../routes-path';
-import {FooterSection} from "../Layout/sections/FooterSection.tsx";
+import { FeedbackForm, useFeedbackForm } from '../../widgets/feedback-form';
+import { FooterSection } from '../Layout/sections/FooterSection.tsx';
 
 export const MobileLayout = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [menuPanel, setMenuPanel] = useState<'root' | 'products'>('root');
   const { isOpen } = useFeedbackForm();
+  const { t } = useTranslation(['mobile']);
 
   const isBgEnabled = location.pathname === RoutesPath.MAIN;
 
@@ -32,10 +32,15 @@ export const MobileLayout = () => {
           isBgEnabled,
       })}
     >
-      <a href="#content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow">Перейти к контенту</a>
+      <a
+        href="#content"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow"
+      >
+        {t('skipToContent')}
+      </a>
       <div className="relative flex w-full flex-col items-start">
         <button
-          aria-label="Открыть меню"
+          aria-label={t('openMenu')}
           onClick={() => {
             setMenuPanel('root');
             setIsMenuOpen(true);
@@ -126,7 +131,7 @@ export const MobileLayout = () => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -6 }}
                     transition={{ duration: 0.15 }}
-                    aria-label="Назад"
+                    aria-label={t('back')}
                     onClick={() => setMenuPanel('root')}
                     className="absolute left-5 top-2 inline-flex items-center justify-center"
                   >
@@ -154,10 +159,7 @@ export const MobileLayout = () => {
                     </svg>
                   </motion.button>
                 ) : (
-                  <div
-                    key="logo"
-                    className="absolute left-5 top-2 h-8 w-28"
-                  >
+                  <div key="logo" className="absolute left-5 top-2 h-8 w-28">
                     <svg
                       width="112"
                       height="24"
@@ -216,7 +218,7 @@ export const MobileLayout = () => {
                 )}
               </AnimatePresence>
               <button
-                aria-label="Закрыть меню"
+                aria-label={t('closeMenu')}
                 onClick={() => setIsMenuOpen(false)}
                 className="absolute right-5 top-2 inline-flex items-center justify-center"
               >
@@ -291,7 +293,7 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-start text-[20px] text-gray-90">
-                        Продукты
+                        {t('products')}
                       </span>
                       <span className="absolute right-5">
                         <svg
@@ -333,7 +335,7 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                        О компании
+                        {t('about')}
                       </span>
                     </Link>
                     <Link
@@ -373,7 +375,7 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                        Отзывы
+                        {t('reviews')}
                       </span>
                     </Link>
                     <Link
@@ -434,7 +436,7 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                        Вакансии
+                        {t('vacancies')}
                       </span>
                     </Link>
                     <Link
@@ -467,14 +469,14 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 py-6 text-[20px]  text-gray-90">
-                        Блог
+                        {t('blog')}
                       </span>
                     </Link>
                   </div>
                 </div>
               ) : (
                 <div className="space-y-3 ">
-                  <div className="text-base text-gray-40">Кредитование</div>
+                  <div className="text-base text-gray-40">{t('lending')}</div>
                   <div className="divide-y divide-gray-10 rounded-[32px] border border-[#F3F4F7] bg-[#F9FBFF]">
                     <Link
                       to={RoutesPath.MICROCREDIT}
@@ -538,7 +540,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          Микрофинансовое кредитование
+                          {t('microfinance')}
                         </span>
                       </span>
                     </Link>
@@ -585,7 +587,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          Кредитование бизнеса
+                          {t('businessLending')}
                         </span>
                       </span>
                     </Link>
@@ -601,7 +603,7 @@ export const MobileLayout = () => {
                           src="/img/header/frame-84-4.svg"
                         />
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          Банковское кредитование
+                          {t('bankLending')}
                         </span>
                       </span>
                     </Link>
@@ -701,7 +703,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          Автокредитование
+                          {t('autoLending')}
                         </span>
                       </span>
                     </Link>
@@ -748,7 +750,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          P2P-кредитование
+                          {t('p2pLending')}
                         </span>
                       </span>
                     </Link>
@@ -781,7 +783,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 py-6 text-[20px]  text-gray-90">
-                          Исламское финансирование
+                          {t('islamicFinance')}
                         </span>
                       </span>
                     </Link>
@@ -789,7 +791,7 @@ export const MobileLayout = () => {
 
                   <div className="mt-6 space-y-3">
                     <div className="text-base text-gray-40">
-                      Другое программное обеспечение
+                      {t('otherSoftware')}
                     </div>
                     <div className="divide-y divide-gray-10 rounded-[32px] border border-[#F3F4F7] bg-[#F9FBFF]">
                       <Link
@@ -833,7 +835,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                           <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                            Выгрузка данных в кредитные бюро
+                            {t('dataUnload')}
                           </span>
                         </span>
                       </Link>
@@ -878,7 +880,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                           <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                            Настраиваемый модуль принятия решений
+                            {t('decisionModule')}
                           </span>
                         </span>
                       </Link>
@@ -923,7 +925,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                           <span className="w-10/12 text-[20px] text-gray-90">
-                            F-datа
+                            {t('fdata')}
                           </span>
                         </span>
                       </Link>
@@ -931,7 +933,9 @@ export const MobileLayout = () => {
                   </div>
 
                   <div className="mt-6 space-y-3">
-                    <div className="text-base text-gray-40">Услуги</div>
+                    <div className="text-base text-gray-40">
+                      {t('services')}
+                    </div>
                     <div className="divide-y divide-gray-10 rounded-[32px] border border-[#F3F4F7] bg-[#F9FBFF]">
                       <Link
                         to={RoutesPath.DEVELOPMENT}
@@ -974,7 +978,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                           <span className="w-10/12 text-[20px] text-gray-90">
-                            Разработка на заказ
+                            {t('customDevelopment')}
                           </span>
                         </span>
                       </Link>
@@ -983,24 +987,26 @@ export const MobileLayout = () => {
                 </div>
               )}
             </nav>
-              {menuPanel === 'root' && <div
-                  className="h-[136px] absolute inset-x-3 m-auto bottom-2 rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
-                  <div className="size-full p-[16px_24px]">
-                      <p className="text-xl leading-[140%] text-gray-90 font-bold ">+7 (495) 006-21-57</p>
-                      <p className="relative pt-4 w-full md:w-[233px] font-body-1-r font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
-                          183038, Мурманск, <br/>
-                          улица Октябрьская, дом 2а, офис 2
-                      </p>
-                  </div>
-              </div>}
+            {menuPanel === 'root' && (
+              <div className="absolute inset-x-3 bottom-2 m-auto h-[136px] rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
+                <div className="size-full p-[16px_24px]">
+                  <p className="text-xl font-bold leading-[140%] text-gray-90 ">
+                    +7 (495) 006-21-57
+                  </p>
+                  <p className="relative w-full pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] md:w-[233px]">
+                    {t('address')}
+                  </p>
+                </div>
+              </div>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
 
-      <main id="content" className="-mt-16 px-5 w-full">
+      <main id="content" className="-mt-16 w-full px-5">
         <Outlet />
       </main>
-        <FooterSection/>
+      <FooterSection />
       {isOpen && <FeedbackForm />}
     </div>
   );
