@@ -111,13 +111,13 @@ export const Autocredit = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                      Новая
+                      {t('form.new')}
                     </div>
                   </div>
 
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Подержанная
+                      {t('form.used')}
                     </div>
                   </div>
                 </div>
@@ -125,13 +125,13 @@ export const Autocredit = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      С залогом
+                      {t('form.withCollateral')}
                     </div>
                   </div>
 
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                      Без залога
+                      {t('form.withoutCollateral')}
                     </div>
                   </div>
                 </div>
@@ -141,7 +141,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Марка
+                      {t('form.brand')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -166,7 +166,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Модель
+                      {t('form.model')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -193,7 +193,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Год выпуска
+                      {t('form.year')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -218,7 +218,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Первый взнос (руб.)
+                      {t('form.firstPayment')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -245,7 +245,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Срок (месяцы)
+                      {t('form.term')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -272,7 +272,7 @@ export const Autocredit = () => {
                 <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
                   <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
                     <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Первый взнос (руб.)
+                      {t('form.firstPayment')}
                     </div>
 
                     <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -299,7 +299,7 @@ export const Autocredit = () => {
 
             <div className="relative flex w-full flex-col items-start gap-[23.92px] self-stretch p-[29.9px] md:w-[393.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                Выберите условия
+                {t('form.selectConditions')}
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[20.5px]">
@@ -307,7 +307,7 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Ваши условия
+                        {t('form.yourConditions')}
                       </div>
 
                       <div className="relative ml-[-13855.74px] mt-[-753.75px] size-[20.93px] bg-[100%_100%]">
@@ -322,7 +322,7 @@ export const Autocredit = () => {
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ежемесячный платеж
+                          {t('form.monthlyPayment')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -332,7 +332,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Сумма
+                          {t('form.amount')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -342,7 +342,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ставка
+                          {t('form.rate')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -357,14 +357,14 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Увеличенный первоначальный взнос
+                        {t('form.increasedFirstPayment')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ежемесячный платеж
+                          {t('form.monthlyPayment')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -374,7 +374,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Сумма
+                          {t('form.amount')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -384,7 +384,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ставка
+                          {t('form.rate')}
                         </div>
 
                         <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#00b235] [font-family:'Roboto',Helvetica]">
@@ -399,14 +399,14 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Увеличенный срок
+                        {t('form.increasedTerm')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ежемесячный платеж
+                          {t('form.monthlyPayment')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -416,7 +416,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Сумма
+                          {t('form.amount')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -426,7 +426,7 @@ export const Autocredit = () => {
 
                       <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                          Ставка
+                          {t('form.rate')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -472,7 +472,7 @@ export const Autocredit = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Управление, учёт <br />и проверка залоговых объектов
+            {t('management.title')}
           </motion.p>
 
           <motion.p
@@ -482,8 +482,7 @@ export const Autocredit = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[704px]"
           >
-            Отдельный интерфейс позволяет контролировать весь жизненный цикл
-            залогов — от проверки до снятия с учёта.
+            {t('management.description')}
           </motion.p>
         </motion.div>
 
@@ -509,7 +508,7 @@ export const Autocredit = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                   <p className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    BMW 7 серии Long (электрический)
+                    {t('examples.bmw7')}
                   </p>
 
                   <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -529,7 +528,7 @@ export const Autocredit = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                   <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Новый BMW M4 Coupe
+                    {t('examples.bmwM4')}
                   </div>
 
                   <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -573,7 +572,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Проверка
+                {t('verification.title')}
               </motion.div>
 
               <motion.p
@@ -582,10 +581,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
               >
-                Система подключается к внешним источникам и автоматически
-                запрашивает до 100 параметров. Включены данные о регистрации,
-                ДТП, страховке и ограничениях. Проверка проходит быстро и без
-                участия оператора.
+                {t('verification.description')}
               </motion.p>
             </motion.div>
 
@@ -601,7 +597,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.9 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Контроль
+                {t('control.title')}
               </motion.div>
 
               <motion.p
@@ -610,9 +606,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.0 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
               >
-                Модуль отслеживает постановку и снятие объектов с учёта. Видно,
-                какие активы находятся в залоге, на каком этапе они находятся.
-                Вся информация обновляется в режиме реального времени.
+                {t('control.description')}
               </motion.p>
             </motion.div>
 
@@ -628,7 +622,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.2 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Управление
+                {t('management2.title')}
               </motion.div>
 
               <motion.p
@@ -637,9 +631,7 @@ export const Autocredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 1.3 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
               >
-                Интерфейс позволяет управлять залогами, назначать ответственных
-                и повторно запускать проверки. Доступна история действий,
-                формирование отчётов и полный контроль за статусом объектов.
+                {t('management2.description')}
               </motion.p>
             </motion.div>
           </div>

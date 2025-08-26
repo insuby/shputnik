@@ -229,7 +229,7 @@ export const IslamFinance = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Отчеты
+                    {t('app.reports')}
                   </div>
                 </div>
 
@@ -261,7 +261,7 @@ export const IslamFinance = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Продукты
+                    {t('app.products')}
                   </div>
                 </div>
 
@@ -283,7 +283,7 @@ export const IslamFinance = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Уведомления
+                    {t('app.notifications')}
                   </div>
                 </div>
 
@@ -305,7 +305,7 @@ export const IslamFinance = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Настройки
+                    {t('app.settings')}
                   </div>
                 </div>
               </div>
@@ -322,9 +322,14 @@ export const IslamFinance = () => {
                 </div>
 
                 <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
-                  <span className="leading-6 text-[#9ea7bb]">Привет,</span>
+                  <span className="leading-6 text-[#9ea7bb]">
+                    {t('app.greeting')}
+                  </span>
 
-                  <span className="leading-6 text-[#1c222f]"> Давид</span>
+                  <span className="leading-6 text-[#1c222f]">
+                    {' '}
+                    {t('app.userName')}
+                  </span>
                 </p>
               </div>
 
@@ -333,12 +338,12 @@ export const IslamFinance = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Финансирование SD45234
+                        {t('app.financingId')}
                       </div>
 
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                          Активный
+                          {t('app.status')}
                         </div>
                       </div>
                     </div>
@@ -346,7 +351,7 @@ export const IslamFinance = () => {
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Стоимость
+                          {t('app.cost')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -356,7 +361,7 @@ export const IslamFinance = () => {
 
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Авансовый платеж
+                          {t('app.advancePayment')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -366,17 +371,17 @@ export const IslamFinance = () => {
 
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Срок
+                          {t('app.term')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          10 месяцев
+                          {t('app.termValue')}
                         </div>
                       </div>
 
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Следующий платеж
+                          {t('app.nextPayment')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -391,7 +396,7 @@ export const IslamFinance = () => {
                   <div className="relative flex flex-1 grow flex-col items-start gap-3">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                        Детали
+                        {t('app.details')}
                       </div>
                     </div>
 
@@ -399,7 +404,7 @@ export const IslamFinance = () => {
                       <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Стоимость
+                            {t('app.cost')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -415,7 +420,7 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Процентная ставка
+                            {t('app.interestRate')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -431,11 +436,11 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
-                            Срок
+                            {t('app.term')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                            10 месяцев
+                            {t('app.termValue')}
                           </div>
                         </div>
 
@@ -447,7 +452,7 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Баланс счета
+                            {t('app.accountBalance')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -463,7 +468,7 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Просроченный основной долг
+                            {t('app.overduePrincipal')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-semibold leading-5 tracking-normal text-red-50 [font-family:'Roboto',Helvetica]">
@@ -479,7 +484,7 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Просроченный платеж
+                            {t('app.overduePayment')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -491,7 +496,7 @@ export const IslamFinance = () => {
                       <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Дата окончания рассрочки
+                            {t('app.installmentEndDate')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -507,7 +512,7 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Дата следующего платежа
+                            {t('app.nextPaymentDate')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -523,11 +528,11 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Наименование товара
+                            {t('app.productName')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                            Наушники
+                            {t('app.headphones')}
                           </div>
                         </div>
 
@@ -539,11 +544,11 @@ export const IslamFinance = () => {
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                            Финансирование
+                            {t('app.financingType')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                            Первый
+                            {t('app.first')}
                           </div>
                         </div>
 
@@ -613,7 +618,7 @@ export const IslamFinance = () => {
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.65 }}
                   className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Мы работаем со всеми типами исламского финансирования
+                  {t('features.title')}
                 </motion.p>
 
                 <motion.div
@@ -644,7 +649,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Мурабаха (Murabaha)
+                      {t('features.types.murabaha')}
                     </div>
                   </motion.div>
 
@@ -669,7 +674,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Иджара (Ijarah)
+                      {t('features.types.ijarah')}
                     </div>
                   </motion.div>
 
@@ -694,7 +699,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Таваррук (Tawarruq)
+                      {t('features.types.tawarruq')}
                     </div>
                   </motion.div>
 
@@ -719,7 +724,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Вакала (Wakala)
+                      {t('features.types.wakala')}
                     </div>
                   </motion.div>
 
@@ -744,7 +749,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Мушарака (Musharakah)
+                      {t('features.types.musharakah')}
                     </div>
                   </motion.div>
 
@@ -769,7 +774,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Истисна (Istisna&apos;a)
+                      {t('features.types.istisna')}
                     </div>
                   </motion.div>
                 </motion.div>

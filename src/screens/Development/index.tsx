@@ -136,7 +136,7 @@ export const Development = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-            Разработка&nbsp;&nbsp;проектов
+                            {t('hero.title')}
           </div>
         </div>
 
@@ -151,13 +151,12 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Анализ
+                  {t('process.analysis')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Досконально анализируем и прорабатываем требования перед
-                  началом работ. Разрабатываем приложение в соответствии с
-                  вашими бизнес-целями.
+                                  {t('process.analysisDescription')}
+                  
                 </p>
               </div>
             </div>
@@ -175,8 +174,7 @@ export const Development = () => {
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Разработаем МѴР в кратчайшие сроки, чтобы вы начали
-                  тестировать бизнес-модель как можно раньше.
+                                  {t('process.mvp')}
                 </p>
               </div>
             </div>
@@ -190,7 +188,7 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Масштабируемость
+                  {t('process.scalability')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">

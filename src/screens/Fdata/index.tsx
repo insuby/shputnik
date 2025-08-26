@@ -452,9 +452,6 @@ export const Fdata = () => {
 
               <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
                 {t('details.description')}
-                                  
-                вычисляет и аудирует ключевые метрики и показатели, строит
-                кроссотчетность и аналитику
               </p>
             </div>
           </div>
@@ -487,7 +484,7 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Как мы помогаем финансам
+            {t('details.helpTitle')}
           </motion.div>
           <motion.p
             ref={ref7}
@@ -496,9 +493,7 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
           >
-            Философия и архитектура f.Data позволяет нашим клиентам уверенно
-            управлять финансовыми данными, делать это быстро
-            <br />и с высокой точностью
+            {t('details.philosophy')}
           </motion.p>
         </motion.div>
 
@@ -540,7 +535,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Сокращение финансовых потерь
+                  {t('details.lossReduction')}
                 </motion.div>
                 <motion.p
                   ref={ref13}
@@ -549,9 +544,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Собственники бизнеса, CFO, COO, CIO получают уверенность
-                  <br />в корректности финансовых данных, передаваемых
-                  технологическими платформами
+                  {t('details.confidence')}
                 </motion.p>
               </div>
             </motion.div>
@@ -580,7 +573,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Оптимизация ресурсов
+                  {t('details.resourceOptimization')}
                 </motion.div>
                 <motion.p
                   ref={ref17}
@@ -589,8 +582,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Автоматизация экономит рабочее время
-                  <br />и в разы увеличивает доступные ресурсы
+                  {t('details.automation')}
                 </motion.p>
               </div>
             </motion.div>
@@ -627,7 +619,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Прозрачная аналитика
+                  {t('details.transparentAnalytics')}
                 </motion.div>
                 <motion.p
                   ref={ref22}
@@ -636,8 +628,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Получайте точную картину состояния ваших финансовых данных за
-                  считанные минуты
+                  {t('details.accuratePicture')}
                 </motion.p>
               </div>
             </motion.div>
@@ -666,7 +657,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Адаптивность
+                  {t('details.adaptability')}
                 </motion.div>
                 <motion.p
                   ref={ref26}
@@ -675,8 +666,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Теперь легко создавать и изменять процессы обработки
-                  финансовых данных
+                  {t('details.easyCreation')}
                 </motion.p>
               </div>
             </motion.div>
@@ -705,7 +695,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Сокращение ошибок
+                  {t('details.errorReduction')}
                 </motion.div>
                 <motion.p
                   ref={ref30}
@@ -714,8 +704,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Сокращайте количество ошибок
-                  <br />и улучшайте качество финансовых данных
+                  {t('details.errorReduction')}
                 </motion.p>
               </div>
             </motion.div>
@@ -725,16 +714,14 @@ export const Fdata = () => {
       <Cta
         className="!flex-[0_0_auto]"
         hasDiv={false}
-        text="Защитите ваши финансовые данные сегодня"
-        text1="Заказать демо"
+        text={t('details.cta.title')}
+        text1={t('details.cta.button')}
       />
       <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
         <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
           <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
             <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-              Инновационная технология
-              <br />
-              для вашего бизнеса
+              {t('details.features.title')}
             </div>
 
             <button
@@ -742,7 +729,7 @@ export const Fdata = () => {
               className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                Попробовать
+                {t('details.features.try')}
               </div>
             </button>
           </div>
@@ -770,12 +757,12 @@ export const Fdata = () => {
                   <div className="relative w-full flex-1 grow self-stretch">
                     <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 md:left-6 md:w-[299px]">
                       <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                        Настройка правил
+                        {t('details.features.rules')}
                       </div>
 
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
                         <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          Автоматическая загрузка
+                          {t('details.features.autoUpload')}
                         </div>
 
                         <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-[#e8ebf4]">
@@ -785,7 +772,7 @@ export const Fdata = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
                         <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          Хранение файлов
+                          {t('details.features.fileStorage')}
                         </div>
 
                         <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-60">
@@ -797,12 +784,11 @@ export const Fdata = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Загрузка и реконсиляция данных
+                      {t('details.dataProcessing.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Поддержка любых форматов интеграций и файлов, гибкая
-                      настройка правил обработки данных
+                      {t('details.dataProcessing.description')}
                     </p>
                   </div>
                 </div>
@@ -867,12 +853,11 @@ export const Fdata = () => {
 
                   <div className="relative flex h-[188px] w-full flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Отчетность
+                      {t('details.reporting.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Легко создавать отчеты и дашборды используя данные из всех
-                      подключенных источников
+                      {t('details.reporting.description')}
                     </p>
                   </div>
                 </div>
@@ -884,7 +869,7 @@ export const Fdata = () => {
         <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
           <button
             aria-controls="fdata-slider"
-            aria-label="Предыдущий слайд"
+            aria-label={t('details.navigation.previousSlide')}
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
@@ -914,7 +899,7 @@ export const Fdata = () => {
 
           <button
             aria-controls="fdata-slider"
-            aria-label="Следующий слайд"
+            aria-label={t('details.navigation.nextSlide')}
             onClick={goToNext}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
@@ -955,7 +940,7 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Нашим клиентам
+            {t('details.testimonials.title')}
           </motion.div>
         </div>
 
@@ -974,11 +959,11 @@ export const Fdata = () => {
                 <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] md:hidden" />
 
                 <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left">
-                  Константин Гризов
+                  {t('details.testimonials.author')}
                 </div>
 
                 <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
-                  Управляющий партнер
+                  {t('details.testimonials.position')}
                   <br />
                   PLUS Consulting
                 </div>
@@ -991,11 +976,9 @@ export const Fdata = () => {
               />
 
               <p className="relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
-                f.Data легко масштабируется для бизнеса любого размера, <br />
-                что позволяет автоматизировать работу сфинансовыми данными как в
-                банках, страховых и инвестиционных компаниях, платежных
-                провайдерах, биржах, брокерах так
-                <br />и в традиционном и онлайн ритейле.
+                {t('details.testimonials.quote')}
+
+                <br />
               </p>
             </motion.div>
 
@@ -1029,14 +1012,11 @@ export const Fdata = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <p className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Контролируйте финансы и будьте готовы к аудиту
+                    {t('details.final.title')}
                   </p>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Своевременно и без рутины выявляйте расхождения в финансовых
-                    транзакциях и предотвращайте потери. Процессы в f.Data
-                    документированы и могут быть использованы для аудиторских
-                    проверок
+                    {t('details.final.description')}
                   </p>
                 </div>
               </motion.div>
@@ -1056,12 +1036,11 @@ export const Fdata = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Откажитесь от рисков персонала
+                    {t('details.risks.title')}
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Управление процессами в f.Data можно легко передать новому
-                    сотруднику
+                    {t('details.risks.description')}
                   </p>
                 </div>
               </motion.div>
@@ -1083,11 +1062,11 @@ export const Fdata = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Работайте быстрее
+                    {t('details.speed.title')}
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Процессы с f.Data выполняются до 100 раз быстрее
+                    {t('details.speed.description')}
                   </p>
                 </div>
               </motion.div>
@@ -1107,13 +1086,11 @@ export const Fdata = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Избавьтесь от ошибок
+                    {t('details.errorReduction')}
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Автоматические проверки качества и целостности данных
-                    <br />
-                    на всех этапах
+                    {t('details.errorReduction')}
                   </p>
                 </div>
               </motion.div>

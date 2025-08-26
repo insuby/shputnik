@@ -23,24 +23,26 @@ import { microcredit as ruMicrocredit } from './locales/ru/microcredit';
 import { microcredit as enMicrocredit } from './locales/en/microcredit';
 import ruBankcredit from './locales/ru/bankcredit';
 import enBankcredit from './locales/en/bankcredit';
-import ruAutocredit from './locales/ru/autocredit';
-import enAutocredit from './locales/en/autocredit';
+import { autocredit as ruAutocredit } from './locales/ru/autocredit';
+import { autocredit as enAutocredit } from './locales/en/autocredit';
 import ruP2p from './locales/ru/p2p';
 import enP2p from './locales/en/p2p';
-import ruIslamfinance from './locales/ru/islamfinance';
-import enIslamfinance from './locales/en/islamfinance';
+import { islamfinance as ruIslamfinance } from './locales/ru/islamfinance';
+import { islamfinance as enIslamfinance } from './locales/en/islamfinance';
 import ruDataunload from './locales/ru/dataunload';
 import enDataunload from './locales/en/dataunload';
 import { fdata as ruFdata } from './locales/ru/fdata';
 import { fdata as enFdata } from './locales/en/fdata';
-import ruDevelopment from './locales/ru/development';
-import enDevelopment from './locales/en/development';
+import { development as ruDevelopment } from './locales/ru/development';
+import { development as enDevelopment } from './locales/en/development';
 import { mobile as ruMobile } from './locales/ru/mobile';
 import { mobile as enMobile } from './locales/en/mobile';
 import { businesscredit as ruBusinesscredit } from './locales/ru/businesscredit';
 import { businesscredit as enBusinesscredit } from './locales/en/businesscredit';
 import { privacy as ruPrivacy } from './locales/ru/privacy';
 import { privacy as enPrivacy } from './locales/en/privacy';
+import { reviews as ruReviews } from './locales/ru/reviews';
+import { reviews as enReviews } from './locales/en/reviews';
 
 export const resources = {
   ru: {
@@ -63,6 +65,7 @@ export const resources = {
     mobile: ruMobile,
     businesscredit: ruBusinesscredit,
     privacy: ruPrivacy,
+    reviews: ruReviews,
   },
   en: {
     common: enCommon,
@@ -84,6 +87,7 @@ export const resources = {
     mobile: enMobile,
     businesscredit: enBusinesscredit,
     privacy: enPrivacy,
+    reviews: enReviews,
   },
 } as const;
 
@@ -95,7 +99,7 @@ i18n
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
     defaultNS: 'common',
-    ns: ['common', 'nav', 'footer', 'about', 'megamenu', 'home', 'blog', 'bnpl', 'microcredit', 'bankcredit', 'autocredit', 'p2p', 'islamfinance', 'dataunload', 'fdata', 'development', 'mobile', 'businesscredit', 'privacy'],
+    ns: ['common', 'nav', 'footer', 'about', 'megamenu', 'home', 'blog', 'bnpl', 'microcredit', 'bankcredit', 'autocredit', 'p2p', 'islamfinance', 'dataunload', 'fdata', 'development', 'mobile', 'businesscredit', 'privacy', 'reviews'],
     interpolation: { escapeValue: false },
     detection: {
       order: ['querystring', 'localStorage', 'navigator'],
