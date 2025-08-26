@@ -1,12 +1,14 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
 import ArrowLineDown from '../../../icons/ArrowLineDown';
 import { RoutesPath } from '../../../routes-path.tsx';
 
 export const SectionComponentNode = () => {
+  const { t } = useTranslation(['home']);
   const navigate = useNavigate();
 
   const handleP2PClick = () => {
@@ -30,8 +32,14 @@ export const SectionComponentNode = () => {
   const inView35 = useInView(ref35, { once: true, margin: '-100px' });
   const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   return (
-    <section className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7" aria-labelledby="alt-ethical-models">
-      <h2 id="alt-ethical-models" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section
+      className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7"
+      aria-labelledby="alt-ethical-models"
+    >
+      <h2
+        id="alt-ethical-models"
+        className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+      >
         <motion.span
           id="animate_32"
           ref={ref32}
@@ -40,7 +48,7 @@ export const SectionComponentNode = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="font-medium leading-[0.1px] text-[#9ea7bb]"
         >
-          Альтернативные
+          {t('alternativeModels.title').split(' ')[0]}
           <br />
         </motion.span>
         <motion.span
@@ -51,12 +59,12 @@ export const SectionComponentNode = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="font-medium leading-[48px] text-[#1c222f]"
         >
-          и этичные модели
+          {t('alternativeModels.title').split(' ').slice(1).join(' ')}
         </motion.span>
       </h2>
 
       <div className="relative flex h-[520px] w-full items-start gap-4">
-        <div className="relativew-full md:w-[686px] self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
+        <div className="relativew-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:w-[686px]">
           <div className="relative h-[682px]">
             <img
               className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]"
@@ -70,7 +78,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[66px] flex w-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60"
+              className="absolute left-[62px] top-[66px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 md:w-[304px]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <img
@@ -81,9 +89,14 @@ export const SectionComponentNode = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <p className="relative w-fit text-base font-semibold leading-4 tracking-normal text-gray-90 opacity-0 [font-family:'Inter',Helvetica]">
-                    <span className="leading-6 text-[#9ea7bb]">Привет,</span>
+                    <span className="leading-6 text-[#9ea7bb]">
+                      {t('alternativeModels.p2pUI.greeting')}
+                    </span>
 
-                    <span className="leading-6 text-[#1c222f]"> Давид</span>
+                    <span className="leading-6 text-[#1c222f]">
+                      {' '}
+                      {t('alternativeModels.p2pUI.userName')}
+                    </span>
                   </p>
 
                   <div className="relative size-8 rounded-3xl [background:url(/img/frame-1948755022.png)_50%_50%_/_cover]" />
@@ -91,11 +104,11 @@ export const SectionComponentNode = () => {
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-center">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#ffffff] opacity-80 [font-family:'Inter',Helvetica]">
-                    Баланс
+                    {t('alternativeModels.p2pUI.balance')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                    122,000₽
+                    {t('alternativeModels.p2pUI.balanceAmount')}
                   </div>
                 </div>
 
@@ -108,7 +121,7 @@ export const SectionComponentNode = () => {
                     />
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
-                      Вывести
+                      {t('alternativeModels.p2pUI.withdraw')}
                     </div>
                   </div>
 
@@ -120,7 +133,7 @@ export const SectionComponentNode = () => {
                     />
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
-                      Пополнить
+                      {t('alternativeModels.p2pUI.topUp')}
                     </div>
                   </div>
                 </div>
@@ -131,15 +144,15 @@ export const SectionComponentNode = () => {
                   <div className="relative flex h-[72px] w-full items-start gap-4 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-1">
                     <div className="relative flex flex-1 grow flex-col items-start p-3">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                        Мои инвестиции
+                        {t('alternativeModels.p2pUI.myInvestments')}
                       </div>
 
                       <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        42 000₽
+                        {t('alternativeModels.p2pUI.investmentAmount')}
                       </div>
                     </div>
 
-                    <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                         Интерес
                       </div>
@@ -161,7 +174,7 @@ export const SectionComponentNode = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         Платеж
                       </div>
@@ -268,11 +281,11 @@ export const SectionComponentNode = () => {
               className="absolute left-[298px] top-[138px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
             >
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
                   Общий доход
                 </div>
 
-                <div className="relativew-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                   1,567,000₽
                 </div>
               </div>
@@ -346,7 +359,7 @@ export const SectionComponentNode = () => {
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleP2PClick}
-            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10 hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] md:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -386,7 +399,7 @@ export const SectionComponentNode = () => {
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleIslamFinansClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 md:p-10  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] md:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

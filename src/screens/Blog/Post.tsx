@@ -1,6 +1,7 @@
 import { format } from 'date-fns';
 
 import { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 
 import {
@@ -16,6 +17,7 @@ import {
 } from '../../api/strapi';
 
 export const BlogPost = () => {
+  const { t } = useTranslation(['blog']);
   const { id } = useParams();
   const [post, setPost] = useState<Post | null>(null);
   const [comments, setComments] = useState<Comment[]>([]);
@@ -104,13 +106,13 @@ export const BlogPost = () => {
   if (!post) {
     return (
       <div className="items_center justify_center flex w-full py-12 text-[#55607a]">
-        Загрузка…
+        {t('post.loading')}
       </div>
     );
   }
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch rounded-[32px] md:px-20 md:pb-0 md:pt-20">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch rounded-[32px] md:gap-12 md:px-20 md:pb-0 md:pt-20">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[1216px]">
           <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
@@ -121,7 +123,10 @@ export const BlogPost = () => {
                 aria-hidden="true"
                 src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"
               />
-              <time dateTime={new Date(post.createdAt).toISOString()} className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <time
+                dateTime={new Date(post.createdAt).toISOString()}
+                className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+              >
                 {format(new Date(post.createdAt), 'dd MMMM yyyy')}
               </time>
             </div>
@@ -166,7 +171,7 @@ export const BlogPost = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
+        <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 self-stretch md:gap-12">
           <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-10">
             <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <p className="relative mt-[-1.00px] flex-1 text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -176,10 +181,10 @@ export const BlogPost = () => {
             <div>
               <div dangerouslySetInnerHTML={{ __html: post.ckeditor || '' }} />
             </div>
-            <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] md:!items-center justify-between self-stretch rounded-3xl bg-[#f9fafd] p-7">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col justify-between self-stretch rounded-3xl bg-[#f9fafd] p-7 md:!flex-row md:!items-center">
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
                 <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  Оцените статью:
+                  {t('post.rateArticle')}
                 </div>
                 <button
                   onClick={handleLike}
@@ -197,13 +202,13 @@ export const BlogPost = () => {
               </div>
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
                 <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  Поделитесь:
+                  {t('post.share')}
                 </div>
                 <a
                   href={vkShare}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Поделиться VK"
+                  aria-label={t('post.shareVk')}
                   className="flex size-12 items-center justify-center rounded-full p-2 transition-colors hover:bg-[#e9efff] active:bg-[#dbe7ff]"
                 >
                   <svg
@@ -223,7 +228,7 @@ export const BlogPost = () => {
                   href={tgShare}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Поделиться Telegram"
+                  aria-label={t('post.shareTelegram')}
                   className="flex size-12 items-center justify-center rounded-full p-2 transition-colors hover:bg-[#e8f7fd] active:bg-[#d3f0fb]"
                 >
                   <svg
@@ -248,7 +253,7 @@ export const BlogPost = () => {
                 {!!comments.length && (
                   <div className="w_[842px] flex_[0_0_auto] relative mr-[-26.00px] flex items-start gap-3">
                     <div className="tracking_[0] relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Комментарии
+                      {t('post.comments')}
                     </div>
                     <div className="tracking_[0] relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 text-gray-40 [font-family:'Roboto',Helvetica]">
                       {comments.length}
@@ -265,11 +270,13 @@ export const BlogPost = () => {
                         <div className="justify_center flex_[0_0_auto] relative flex w-full items-center gap-4 self-stretch">
                           <div className="relative flex size-11 items-center justify-center overflow-hidden rounded-[100px] bg-[#3573fc14]">
                             <div className="top_[11px] tracking_[0] absolute left-3 w-5 text-center text-xl font-medium leading-5 text-blue-30 [font-family:'Roboto',Helvetica]">
-                              {(c.authorName || 'Г').charAt(0).toUpperCase()}
+                              {(c.authorName || t('post.guest').charAt(0))
+                                .charAt(0)
+                                .toUpperCase()}
                             </div>
                           </div>
                           <div className="text-XL tracking_[0] relative flex-1 font-normal leading-7 text-gray-90 [font-family:'Roboto',Helvetica]">
-                            {c.authorName || 'Гость'}
+                            {c.authorName || t('post.guest')}
                           </div>
                           <div className="tracking_[0] relative w-fit whitespace-nowrap text-base font-normal leading-6 text-gray-40 [font-family:'Roboto',Helvetica]">
                             {format(
@@ -288,7 +295,7 @@ export const BlogPost = () => {
                                 onClick={() => setReplyTo(c.id)}
                                 className="tracking_[0] relative text-base font-normal leading-6 text-blue-50 [font-family:'Inter',Helvetica]"
                               >
-                                Ответить
+                                {t('post.reply')}
                               </button>
                               <button
                                 onClick={() => handleLikeComment(c.id)}
@@ -309,7 +316,7 @@ export const BlogPost = () => {
                                 <div className="w_[818px] rounded-2xl border border-[#e3e4e7] bg-white p-3">
                                   <textarea
                                     className="h-[90px] w-full outline-none"
-                                    placeholder="Ваш ответ"
+                                    placeholder={t('post.replyPlaceholder')}
                                     value={replyText}
                                     onChange={(e) =>
                                       setReplyText(e.target.value)
@@ -321,7 +328,7 @@ export const BlogPost = () => {
                                     onClick={() => handleSendReply(c.id)}
                                     className="rounded-full bg-blue-50 px-4 py-2 text-white"
                                   >
-                                    Ответить
+                                    {t('post.reply')}
                                   </button>
                                   <button
                                     onClick={() => {
@@ -330,7 +337,7 @@ export const BlogPost = () => {
                                     }}
                                     className="rounded-full bg-[#e8eaf2] px-4 py-2 text-[#55607a]"
                                   >
-                                    Отмена
+                                    {t('post.cancel')}
                                   </button>
                                 </div>
                               </div>
@@ -340,7 +347,7 @@ export const BlogPost = () => {
                                 {c.replies!.map((r) => (
                                   <div key={r.id} className="text-[#1c222f]">
                                     <div className="text-sm text-[#7a86a2]">
-                                      {r.authorName || 'Гость'} ·{' '}
+                                      {r.authorName || t('post.guest')} ·{' '}
                                       {format(
                                         new Date(r.createdAt),
                                         'dd MMMM yyyy HH:mm',
@@ -358,16 +365,28 @@ export const BlogPost = () => {
                   </div>
                 </div>
               </div>
-              <form className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-7" onSubmit={(e)=>{e.preventDefault(); handleSend();}} aria-labelledby="comment-form-title">
+              <form
+                className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-7"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleSend();
+                }}
+                aria-labelledby="comment-form-title"
+              >
                 <div className="flex_[0_0_auto] relative inline-flex w-full flex-col items-start gap-6">
-                  <div id="comment-form-title" className="tracking_[0] relative mt-[-1.00px] text-2xl font-medium leading-8 text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Ваш комментарий
+                  <div
+                    id="comment-form-title"
+                    className="tracking_[0] relative mt-[-1.00px] text-2xl font-medium leading-8 text-gray-90 [font-family:'Roboto',Helvetica]"
+                  >
+                    {t('post.yourComment')}
                   </div>
-                  <label htmlFor="comment-text" className="sr-only">Комментарий</label>
+                  <label htmlFor="comment-text" className="sr-only">
+                    {t('post.yourComment')}
+                  </label>
                   <textarea
                     id="comment-text"
                     className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4"
-                    placeholder="Введите комментарий"
+                    placeholder={t('post.commentPlaceholder')}
                     value={newComment}
                     onChange={(e) => setNewComment(e.target.value)}
                     required
@@ -375,11 +394,13 @@ export const BlogPost = () => {
                   <div className="relative flex h-[60px] w-full items-start gap-6">
                     <div className="flex-1">
                       <div className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4">
-                        <label htmlFor="comment-author" className="sr-only">Ваше имя</label>
+                        <label htmlFor="comment-author" className="sr-only">
+                          {t('post.namePlaceholder')}
+                        </label>
                         <input
                           id="comment-author"
                           className="w-full outline-none"
-                          placeholder="Ваше имя (необязательно)"
+                          placeholder={t('post.namePlaceholder')}
                           value={authorName}
                           onChange={(e) => setAuthorName(e.target.value)}
                         />
@@ -387,21 +408,26 @@ export const BlogPost = () => {
                     </div>
                     <div className="flex-1">
                       <div className="relative flex w-full items-center justify-center gap-2.5 rounded-2xl border border-solid border-[#e3e4e7] bg-white px-5 py-4">
-                        <label htmlFor="comment-email" className="sr-only">Ваш email</label>
+                        <label htmlFor="comment-email" className="sr-only">
+                          {t('post.emailPlaceholder')}
+                        </label>
                         <input
                           id="comment-email"
                           type="email"
                           className="w-full outline-none"
-                          placeholder="example@mail.ru"
+                          placeholder={t('post.emailPlaceholder')}
                           aria-describedby="email-help"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-                <button type="submit" className="all-[unset] relative box-border flex h-[60px] w-full items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4">
+                <button
+                  type="submit"
+                  className="all-[unset] relative box-border flex h-[60px] w-full items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                >
                   <div className="tracking_[0] relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 text-white [font-family:'Roboto',Helvetica]">
-                    Отправить
+                    {t('post.send')}
                   </div>
                 </button>
               </form>

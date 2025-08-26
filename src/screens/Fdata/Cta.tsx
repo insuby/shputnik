@@ -13,7 +13,7 @@ export const Cta = ({
 }: Props): JSX.Element => {
   return (
     <div
-      className={`relative flex w-full md:w-[1376px] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 ${className}`}
+      className={`relative flex w-full flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px] ${className}`}
     >
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
         <img
@@ -28,9 +28,9 @@ export const Cta = ({
           src="/img/fdata/vector-2.svg"
         />
 
-        <div className="relative flex w-full md:w-[696px] flex-col items-start gap-7">
-          <div className="relative flex md:h-[120px] w-full flex-col items-start gap-4 self-stretch">
-            <div className="text-center md:text-left relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-tight md:leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+        <div className="relative flex w-full flex-col items-start gap-7 md:w-[696px]">
+          <div className="relative flex w-full flex-col items-start gap-4 self-stretch md:h-[120px]">
+            <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-tight tracking-normal text-white [font-family:'Roboto',Helvetica] md:text-left md:leading-[48px]">
               {text}
             </div>
 
@@ -42,14 +42,14 @@ export const Cta = ({
             )}
           </div>
 
-          <button className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4">
+          <button className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:w-fit">
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {text1}
             </div>
           </button>
         </div>
 
-        <div className="absolute left-[789px] top-12 flex w-full md:w-[328px] flex-col items-start gap-3 rounded-[32px] bg-[#ffffff] p-6">
+        <div className="absolute left-[789px] top-12 flex w-full flex-col items-start gap-3 rounded-[32px] bg-[#ffffff] p-6 md:w-[328px]">
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Калькулятор
           </div>
@@ -107,7 +107,7 @@ export const Cta = ({
           </div>
 
           <button className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3">
-            <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
               Оформить
             </div>
           </button>

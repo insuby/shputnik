@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from '../../App.tsx';
 import { Check10 } from '../../components/ui/check10.tsx';
 import { Graph } from '../../components/ui/graph.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
@@ -13,9 +15,9 @@ import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
-import {isMobile} from "../../App.tsx";
 
 export const P2P = () => {
+  const { t } = useTranslation(['p2p']);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -74,7 +76,7 @@ export const P2P = () => {
   };
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
           <img
@@ -85,16 +87,16 @@ export const P2P = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
-              <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
                 <motion.h1
                   ref={ref1}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative text-center md:text-left  mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-full  text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  P2P-кредитование
+                  {t('hero.title')}
                 </motion.h1>
 
                 <motion.p
@@ -102,12 +104,9 @@ export const P2P = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  Ядро, интеграции с сервисами и источниками информации, готовые
-                  модули и библиотеки - все это позволяет быстро развернуть
-                  P2P-площадку кредитования заточенную под требования вашего
-                  бизнеса
+                  {t('hero.description')}
                 </motion.p>
               </div>
             </div>
@@ -118,7 +117,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="md:absolute md:left-[802px] top-[78px] flex w-full md:w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50"
+            className="top-[78px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 md:absolute md:left-[802px] md:w-[304px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
               <img
@@ -129,9 +128,14 @@ export const P2P = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                 <p className="relative w-fit text-base font-semibold leading-4 tracking-normal text-gray-90 opacity-0 [font-family:'Inter',Helvetica]">
-                  <span className="leading-6 text-[#9ea7bb]">Привет,</span>
+                  <span className="leading-6 text-[#9ea7bb]">
+                    {t('app.greeting')}
+                  </span>
 
-                  <span className="leading-6 text-[#1c222f]"> Давид</span>
+                  <span className="leading-6 text-[#1c222f]">
+                    {' '}
+                    {t('app.userName')}
+                  </span>
                 </p>
 
                 <div className="relative size-8 rounded-3xl [background:url(/img/p2p/frame-1948755022.png)_50%_50%_/_cover]" />
@@ -139,18 +143,18 @@ export const P2P = () => {
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-center">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#ffffff] opacity-80 [font-family:'Inter',Helvetica]">
-                  Баланс
+                  {t('app.balance')}
                 </div>
 
                 <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  122,000₽
+                  {t('app.balanceAmount')}
                 </div>
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] items-start gap-3">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
-                    <div className="absolute left-0.5 top-[3px] h-2.5w-full md:w-[9px]">
+                    <div className="h-2.5w-full absolute left-0.5 top-[3px] md:w-[9px]">
                       <img
                         className="absolute left-1 top-0 h-2.5 w-px"
                         alt="Vector"
@@ -165,20 +169,20 @@ export const P2P = () => {
                     </div>
 
                     <img
-                      className="absolute left-0.5 top-0.5 h-pxw-full md:w-[11px]"
+                      className="h-pxw-full absolute left-0.5 top-0.5 md:w-[11px]"
                       alt="Vector"
                       src="/img/p2p/vector.svg"
                     />
                   </div>
 
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
-                    Вывести
+                    {t('app.withdraw')}
                   </div>
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
-                    <div className="absolute left-0.5 top-px h-2.5w-full md:w-[9px]">
+                    <div className="h-2.5w-full absolute left-0.5 top-px md:w-[9px]">
                       <img
                         className="absolute left-1 top-0 h-2.5 w-px"
                         alt="Vector"
@@ -193,7 +197,7 @@ export const P2P = () => {
                     </div>
 
                     <img
-                      className="absolute left-0.5 top-[11px] h-pxw-full md:w-[11px]"
+                      className="h-pxw-full absolute left-0.5 top-[11px] md:w-[11px]"
                       alt="Vector"
                       src="/img/p2p/vector.svg"
                     />
@@ -219,7 +223,7 @@ export const P2P = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                       Интерес
                     </div>
@@ -241,7 +245,7 @@ export const P2P = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full md:w-[88px] flex-col items-start rounded-xl bg-[#eaedf7] p-3">
+                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       Платеж
                     </div>
@@ -312,14 +316,14 @@ export const P2P = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[100px] md:left-[1000px] top-[800px] md:top-[262px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
+            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 md:left-[1000px] md:top-[262px]"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-              <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
                 Общий доход
               </div>
 
-              <div className="relativew-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                 1,567,000₽
               </div>
             </div>
@@ -386,10 +390,10 @@ export const P2P = () => {
       </div>
       <Advantages />
 
-      <div className="relative flex-col flex md:!flex-row md:h-[568px] w-full md:w-[1376px]">
-        <div className="flex flex-col md:!flex-row w-full md:w-[1472px] items-center gap-[68px]">
-          <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-7">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
+        <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
+          <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
               Настраиваемые бизнес-процессы
               <br />
               под ваши запросы
@@ -397,7 +401,7 @@ export const P2P = () => {
 
             <button
               onClick={handleTryClick}
-              className="all-[unset]  w-full md:w-fit  relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+              className="all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Попробовать
@@ -416,10 +420,9 @@ export const P2P = () => {
               centerMode={true}
               centerPadding="0px"
               arrows={false}
-
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
                     alt="Vector"
@@ -475,7 +478,7 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
                     alt="Vector"
@@ -483,8 +486,8 @@ export const P2P = () => {
                   />
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 md:left-4 top-5 h-[114px] w-full md:w-[313px]">
-                      <div className="absolute left-px top-0 flex w-full md:w-[311px] items-center justify-between opacity-[0.08]">
+                    <div className="relative left-0 top-5 h-[114px] w-full md:left-4 md:w-[313px]">
+                      <div className="absolute left-px top-0 flex w-full items-center justify-between opacity-[0.08] md:w-[311px]">
                         <img
                           className="relative ml-[-0.50px] h-28 w-px"
                           alt="Vector"
@@ -554,7 +557,7 @@ export const P2P = () => {
 
                       <div className="absolute left-[62px] top-[42px] size-2 rounded border-2 border-solid border-[#3573fc] bg-[#efeefa]" />
 
-                      <div className="absolute left-[43px] top-2.5 flex w-full md:w-[46px] flex-col items-center">
+                      <div className="absolute left-[43px] top-2.5 flex w-full flex-col items-center md:w-[46px]">
                         <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-[#ffffff] px-2 py-1">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             5,674
@@ -584,10 +587,10 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 md:left-10 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
-                      <div className="relative flex w-full md:w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
+                    <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3 md:w-[230px]">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                           <img
                             className="relative ml-[-3.00px] mr-[-2.00px] mt-[-3.00px] h-7 w-full self-stretch"
@@ -623,8 +626,8 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
-                  <div className="relative flex h-[480px] w-full md:w-[442px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
                     <img
                       className="absolute left-0 top-0 h-[406px] w-full md:w-[442px]"
                       alt="Vector"
@@ -632,7 +635,7 @@ export const P2P = () => {
                     />
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="absolute left-[-32px] md:left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="absolute left-[-32px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 md:left-[23px]">
                         <div className="relative size-[120px]">
                           <div className="relative size-[120px]">
                             <div className="absolute left-0 top-0 size-[120px]">
@@ -675,7 +678,7 @@ export const P2P = () => {
                       </div>
 
                       <img
-                        className="absolute left-[120px] md:left-[179px] top-1 size-36"
+                        className="absolute left-[120px] top-1 size-36 md:left-[179px]"
                         alt="Frame"
                         src="/img/p2p/frame-31.svg"
                       />
@@ -698,7 +701,7 @@ export const P2P = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden md:flex h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
           <button
             aria-controls="p2p-slider"
             aria-label="Предыдущий слайд"
@@ -763,9 +766,9 @@ export const P2P = () => {
 
       <Feedback />
 
-      <div className="relative flex flex-col md:!flex-row md:h-[544px] w-full items-center gap-6 self-stretch rounded-3xl">
+      <div className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl md:h-[544px] md:!flex-row">
         <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="relative mt-[-1.00px] w-full md:w-[480px text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="md:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Готовый модуль расчетов
           </div>
 
@@ -799,10 +802,10 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative left-[33px] top-5 h-[490px] md:h-[714px] w-full md:w-[688px] md:bg-[url(/img/p2p/vector-1-6.svg)] bg-[100%_100%]">
-            <div className="relative md:left-[153px] top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2">
+          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] md:h-[714px] md:w-[688px] md:bg-[url(/img/p2p/vector-1-6.svg)]">
+            <div className="relative top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
-                <div className="relative flex w-full md:w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 md:w-[284px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       Продукт
@@ -810,19 +813,19 @@ export const P2P = () => {
 
                     <div className="relative size-6">
                       <img
-                        className="absolute left-[3px] top-[11px] h-0.5w-full md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[11px] md:w-[18px]"
                         alt="Vector"
                         src="/img/p2p/vector-9.svg"
                       />
 
                       <img
-                        className="absolute left-[3px] top-[5px] h-0.5w-full md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[5px] md:w-[18px]"
                         alt="Vector"
                         src="/img/p2p/vector-9.svg"
                       />
 
                       <img
-                        className="absolute left-[3px] top-[17px] h-0.5w-full md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[17px] md:w-[18px]"
                         alt="Vector"
                         src="/img/p2p/vector-9.svg"
                       />
@@ -830,9 +833,9 @@ export const P2P = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full md:w-[284px] flex-[0_0_auto] flex-col items-start gap-4 rounded-3xl p-2.5">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 rounded-3xl p-2.5 md:w-[284px]">
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
-                    <div className="relative flex w-full md:w-[264px] flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           Сумма
@@ -850,7 +853,7 @@ export const P2P = () => {
                           src="/img/p2p/frame-83-4.svg"
                         />
 
-                        <div className="relative flex h-4w-full md:w-[232px] items-start justify-between">
+                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             10 000 ₽
                           </div>
@@ -862,7 +865,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full md:w-[264px] flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           Период
@@ -880,7 +883,7 @@ export const P2P = () => {
                           src="/img/p2p/frame-83-5.svg"
                         />
 
-                        <div className="relative flex h-4w-full md:w-[232px] items-start justify-between">
+                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             1 месяц
                           </div>
@@ -892,7 +895,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full md:w-[264px] flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           Процентная ставка
@@ -910,7 +913,7 @@ export const P2P = () => {
                           src="/img/p2p/frame-83-6.svg"
                         />
 
-                        <div className="relative flex h-4w-full md:w-[232px] items-start justify-between">
+                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             0%
                           </div>
@@ -927,7 +930,7 @@ export const P2P = () => {
                     onClick={handleTryClick}
                     className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
                   >
-                    <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
                       Создать продукт
                     </div>
                   </button>
@@ -938,10 +941,10 @@ export const P2P = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col-reverse md:!flex-row w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl md:!flex-row">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative md:left-[33px] top-5 h-[714px] w-full md:w-[688px] md:bg-[url(/img/p2p/vector-1-7.svg)] bg-[100%_100%]">
-            <div className="relative left-9 md:left-[153px] top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2">
+          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] md:left-[33px] md:w-[688px] md:bg-[url(/img/p2p/vector-1-7.svg)]">
+            <div className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
@@ -1072,7 +1075,7 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="relative mt-[-1.00px] w-full md:w-[480px text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="md:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Интеллектуальная работа с платежами
           </div>
 
@@ -1118,13 +1121,13 @@ export const P2P = () => {
           src="/img/p2p/vector-1-11.svg"
         />
 
-        <div className="relative flex w-full md:w-[640px] flex-col items-start gap-7">
+        <div className="relative flex w-full flex-col items-start gap-7 md:w-[640px]">
           <motion.div
             ref={ref3}
             initial={{ opacity: 0, x: 80 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] w-full md:w-[530px] text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[530px] md:text-5xl md:leading-[60px]"
           >
             Гибкая настройка системы
           </motion.div>
@@ -1329,7 +1332,7 @@ export const P2P = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={inView20 ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-          className="absolute left-[810px] top-[102px] flex w-full md:w-[324px] flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4"
+          className="absolute left-[810px] top-[102px] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 md:w-[324px]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -1339,15 +1342,15 @@ export const P2P = () => {
 
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
-                  <div className="relative left-[-3px] top-px h-3w-full md:w-[261px]">
+                  <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
                     <img
-                      className="absolute left-px top-1 h-1w-full md:w-[260px]"
+                      className="h-1w-full absolute left-px top-1 md:w-[260px]"
                       alt="Vector"
                       src="/img/p2p/vector-136-1.svg"
                     />
 
                     <img
-                      className="absolute left-0 top-[3px] h-1.5w-full md:w-[169px]"
+                      className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
                       alt="Vector"
                       src="/img/p2p/vector-137.svg"
                     />
@@ -1369,15 +1372,15 @@ export const P2P = () => {
 
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
-                  <div className="relative left-[-3px] top-px h-3w-full md:w-[261px]">
+                  <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
                     <img
-                      className="absolute left-px top-1 h-1w-full md:w-[260px]"
+                      className="h-1w-full absolute left-px top-1 md:w-[260px]"
                       alt="Vector"
                       src="/img/p2p/vector-136.svg"
                     />
 
                     <img
-                      className="absolute left-0 top-[3px] h-1.5w-full md:w-[95px]"
+                      className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
                       alt="Vector"
                       src="/img/p2p/vector-137-1.svg"
                     />
@@ -1435,7 +1438,7 @@ export const P2P = () => {
             onClick={handleTryClick}
             className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
           >
-            <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+            <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
               Оформить займ
             </div>
           </button>
@@ -1460,11 +1463,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-blue-50" />
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                 Текущее
               </div>
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                 48,456₽
               </div>
             </div>
@@ -1472,11 +1475,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-green-60" />
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                 Основная
               </div>
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                 122,000₽
               </div>
             </div>
@@ -1484,11 +1487,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-yellow-50" />
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                 Проценты
               </div>
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                 4,000₽
               </div>
             </div>
@@ -1496,11 +1499,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-red-50" />
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                 Штраф
               </div>
 
-              <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                 2,700₽
               </div>
             </div>

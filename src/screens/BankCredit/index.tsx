@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -14,6 +15,7 @@ import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const BankCredit = () => {
+  const { t } = useTranslation(['bankcredit']);
   // Добавляем отдельные refs для каждого блока в секции "Настройте свой процесс"
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
@@ -122,9 +124,9 @@ export const BankCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex md:h-[620px] w-full flex-col items-start gap-10 md:gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
+        <div className="relative flex w-full flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:h-[620px] md:gap-20 md:p-12">
           <img
             className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
             alt=""
@@ -133,16 +135,16 @@ export const BankCredit = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
-              <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
                 <motion.h1
                   ref={ref15}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView15 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  Банковское кредитование
+                  {t('hero.title')}
                 </motion.h1>
 
                 <motion.p
@@ -150,11 +152,9 @@ export const BankCredit = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView16 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  Программное обеспечение для автоматизации банковского
-                  кредитования Программное обеспечение для автоматизации
-                  банковского кредитования
+                  {t('hero.description')}
                 </motion.p>
               </div>
             </div>
@@ -162,26 +162,28 @@ export const BankCredit = () => {
 
           <motion.div
             variants={slideInRight}
-            className="md:absolute relative left-0 md:left-[720px] top-[45px] md:top-[205px] flex md:w-[669px] items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd]"
+            className="relative left-0 top-[45px] flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] md:absolute md:left-[720px] md:top-[205px] md:w-[669px]"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                <span className="text-[#1c222f]">Ваш</span>
-                <span className="text-[#3573fc]">Банк</span>
+                <span className="text-[#1c222f]">{t('bank.title')}</span>
+                <span className="text-[#3573fc]">
+                  {t('bank.titleHighlight')}
+                </span>
               </p>
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                   <div className="relative size-5 bg-[100%_100%]">
                     <img
-                      className="absolute left-[3px] top-0.5 h-4w-full md:w-[15px]"
+                      className="h-4w-full absolute left-[3px] top-0.5 md:w-[15px]"
                       alt="Vector"
                       src="/img/bankcredit/vector-10.svg"
                     />
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                    Главная
+                    {t('bank.main')}
                   </div>
                 </div>
 
@@ -233,7 +235,7 @@ export const BankCredit = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-3w-full md:w-[17px] bg-[url(/img/bankcredit/vector-14.svg)] bg-[100%_100%]">
+                    <div className="h-3w-full relative left-px top-1 bg-[url(/img/bankcredit/vector-14.svg)] bg-[100%_100%] md:w-[17px]">
                       <img
                         className="absolute left-[11px] top-[9px] h-px w-1"
                         alt="Vector"
@@ -247,7 +249,7 @@ export const BankCredit = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-[3px] h-pxw-full md:w-[17px]"
+                        className="h-pxw-full absolute left-0 top-[3px] md:w-[17px]"
                         alt="Vector"
                         src="/img/bankcredit/vector-18.svg"
                       />
@@ -275,7 +277,7 @@ export const BankCredit = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-2 h-0.5w-full md:w-[5px]"
+                        className="h-0.5w-full absolute left-0 top-2 md:w-[5px]"
                         alt="Vector"
                         src="/img/bankcredit/vector-17.svg"
                       />
@@ -297,7 +299,7 @@ export const BankCredit = () => {
                       />
 
                       <img
-                        className="absolute left-1 top-0 h-1w-full md:w-[7px]"
+                        className="h-1w-full absolute left-1 top-0 md:w-[7px]"
                         alt="Vector"
                         src="/img/bankcredit/vector-24.svg"
                       />
@@ -355,9 +357,9 @@ export const BankCredit = () => {
                 </p>
               </div>
 
-              <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full md:w-[429px] flex-[0_0_auto] flex-col items-start gap-[20.5px]">
+              <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] md:w-[429px]">
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Рекомендуемый оффер
@@ -370,7 +372,7 @@ export const BankCredit = () => {
                           Ставка
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           187, 000 ₽
                         </div>
                       </div>
@@ -380,7 +382,7 @@ export const BankCredit = () => {
                           Заработок
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           2, 560, 000 ₽
                         </div>
                       </div>
@@ -390,7 +392,7 @@ export const BankCredit = () => {
                           Окупаемость
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           6 - 8 месяцев
                         </div>
                       </div>
@@ -399,7 +401,7 @@ export const BankCredit = () => {
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Расходы
@@ -508,24 +510,24 @@ export const BankCredit = () => {
 
       <Advantages />
 
-      <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] md:w-[1376px]">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-[68px] self-stretch">
-          <div className="flex-col md:!flex-row relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={refSystem1}
               variants={slideInLeft}
               initial="hidden"
               animate={inViewSystem1 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-7 md:gap-12 overflow-hidden rounded-3xl bg-[#f9fafd] md:p-12">
+              <div className="relative flex flex-1 grow flex-col items-center gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] md:gap-12 md:p-12">
                 <img
                   className="absolute left-[53px] top-0 h-[448px] w-full md:w-[623px]"
                   alt="Vector"
                   src="/img/bankcredit/vector-1-3.svg"
                 />
 
-                <div className="relative md:h-80 w-full self-stretch">
-                  <div className="relative left-0 md:left-[98px] top-[29px] flex w-96 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 scale-95 md:scale-100">
+                <div className="relative w-full self-stretch md:h-80">
+                  <div className="relative left-0 top-[29px] flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 md:left-[98px] md:scale-100">
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                         <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
@@ -556,7 +558,7 @@ export const BankCredit = () => {
                               2 месяца
                             </div>
 
-                            <div className="relativew-full md:w-[120px] text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               30 580 ₽
                             </div>
                           </div>
@@ -590,7 +592,7 @@ export const BankCredit = () => {
                               2 месяца
                             </div>
 
-                            <div className="relativew-full md:w-[120px] text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               56 320 ₽
                             </div>
                           </div>
@@ -624,7 +626,7 @@ export const BankCredit = () => {
                               2 месяца
                             </div>
 
-                            <div className="relativew-full md:w-[120px] text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               120 850 ₽
                             </div>
                           </div>
@@ -639,7 +641,7 @@ export const BankCredit = () => {
                   variants={containerVariants}
                   initial="hidden"
                   animate={inViewSystem1 ? 'visible' : 'hidden'}
-                  className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:p-0 p-7"
+                  className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch p-7 md:p-0"
                 >
                   <motion.div
                     ref={refSystem2}
@@ -668,15 +670,15 @@ export const BankCredit = () => {
               initial="hidden"
               animate={inViewSystem4 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-7  md:gap-12 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-7 md:p-12">
+              <div className="relative flex flex-1 grow flex-col items-center gap-7  self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-7 md:gap-12 md:p-12">
                 <img
                   className="absolute left-0 top-0 h-[488px] w-full md:w-[608px]"
                   alt="Vector"
                   src="/img/bankcredit/vector-1-4.svg"
                 />
 
-                <div className="relative md:h-80 w-full self-stretch">
-                  <div className="relative left-[-30px] top-[-10px] md:left-7 md:top-[34px] flex w-[120%] md:w-[524px] items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 md:scale-100 scale-90">
+                <div className="relative w-full self-stretch md:h-80">
+                  <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 md:left-7 md:top-[34px] md:w-[524px] md:scale-100">
                     <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
                       <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Выплаты
@@ -820,17 +822,17 @@ export const BankCredit = () => {
         variants={containerVariants}
         initial="hidden"
         animate={inViewAuto1 ? 'visible' : 'hidden'}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12"
       >
         <motion.div
           ref={refAuto2}
           variants={itemVariants}
-          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
         >
           <motion.div
             ref={refAuto3}
             variants={fadeInUp}
-            className="relative mt-[-1.00px] self-stretch text-center text-[33px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[33px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
             Автоматизация различных кредитных продуктов
           </motion.div>
@@ -841,13 +843,13 @@ export const BankCredit = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inViewAuto4 ? 'visible' : 'hidden'}
-          className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start justify-center gap-6 self-stretch"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-6 self-stretch md:!flex-row"
         >
-          <div className="relative flex-col md:!flex-row flex flex-1 grow items-start gap-6">
+          <div className="relative flex flex-1 grow flex-col items-start gap-6 md:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 w-full"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
@@ -886,7 +888,7 @@ export const BankCredit = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 w-full"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.img
@@ -906,11 +908,11 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="relative flex-col md:!flex-row flex flex-1 grow items-start gap-6">
+          <div className="relative flex flex-1 grow flex-col items-start gap-6 md:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 w-full"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.img
@@ -931,7 +933,7 @@ export const BankCredit = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 w-full"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <img
@@ -953,11 +955,11 @@ export const BankCredit = () => {
 
       <motion.div
         variants={slideInRight}
-        className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-7  md:gap-12 bg-[#ffffff]"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 bg-[#ffffff]  md:w-[1376px] md:gap-12"
       >
         <motion.div
           variants={fadeInUp}
-          className="relative mt-[-1.00px] w-full md:w-[832px] text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+          className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[832px] md:text-5xl md:leading-[60px]"
         >
           Настройте свой процесс
           <br />
@@ -965,7 +967,7 @@ export const BankCredit = () => {
         </motion.div>
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-          <div className="flex-col md:!flex-row relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={ref1}
               variants={itemVariants}
@@ -1054,7 +1056,7 @@ export const BankCredit = () => {
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 w-full"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.div
@@ -1123,7 +1125,7 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="flex-col md:!flex-row relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={ref4}
               initial={{ opacity: 0, x: -50 }}

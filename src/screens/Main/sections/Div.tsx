@@ -1,12 +1,14 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 
 import { RoutesPath } from '../../../routes-path.tsx';
 
 export const Div = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(['home']);
 
   const handleBNPLClick = () => {
     navigate(RoutesPath.BNPL);
@@ -37,8 +39,14 @@ export const Div = () => {
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
   const inView31 = useInView(ref31, { once: true, margin: '-100px' });
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch" aria-labelledby="credit-in-store-online">
-      <h2 id="credit-in-store-online" className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
+      aria-labelledby="credit-in-store-online"
+    >
+      <h2
+        id="credit-in-store-online"
+        className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+      >
         <motion.span
           id="animate_20"
           ref={ref20}
@@ -47,7 +55,7 @@ export const Div = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="font-medium leading-[0.1px] text-[#9ea7bb]"
         >
-          Кредитование
+          {t('lendingStoreOnline.headingLeft')}
           <br />
         </motion.span>
         <motion.span
@@ -58,7 +66,7 @@ export const Div = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="font-medium leading-[48px] text-[#1c222f]"
         >
-          в точке продаж и онлайн
+          {t('lendingStoreOnline.headingRight')}
         </motion.span>
       </h2>
       <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
@@ -71,7 +79,10 @@ export const Div = () => {
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
+            <Link
+              to={RoutesPath.BNPL}
+              className="relative w-full flex-1 grow self-stretch rounded-[32px]"
+            >
               <div className="relative h-[401px] w-full md:w-[678px]">
                 <img
                   className="absolute left-[145px] top-[30px] h-[371px] w-full md:w-[388px]"
@@ -97,35 +108,35 @@ export const Div = () => {
                       Наушники Beyerdynamic Amiron
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
-                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
+                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Стоимость
                         </div>
-                        <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           23,456₽
                         </div>
                       </div>
-                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
+                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Авансовый платеж
                         </div>
-                        <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           42,000₽
                         </div>
                       </div>
-                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
+                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Срок
                         </div>
-                        <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           4,000₽
                         </div>
                       </div>
-                      <div className="relative flex h-5w-full md:w-[264px] items-center gap-3">
+                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           Следующий платеж
                         </div>
-                        <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                           2,700₽
                         </div>
                       </div>
@@ -155,7 +166,7 @@ export const Div = () => {
                   </div>
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Ежемесячный платеж
+                      {t('hero.monthlyPayment')}
                     </div>
                     <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       4 950₽
@@ -164,7 +175,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 md:p-10 pt-0">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 md:p-10">
               <motion.div
                 id="animate_28"
                 ref={ref28}
@@ -173,7 +184,7 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                BNPL
+                {t('lendingStoreOnline.bnplTitle')}
               </motion.div>
               <motion.div
                 id="animate_30"
@@ -183,11 +194,7 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <p className="w-10/12">
-                  Программное обеспечение для быстрого запуска BNPL-рассрочки
-                  (Buy Now, Pay Later) на этапе оформления покупки — как онлайн,
-                  так и в розничных точках
-                </p>
+                <p className="w-10/12">{t('lendingStoreOnline.bnplDesc')}</p>
                 <div className="absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"
@@ -216,7 +223,10 @@ export const Div = () => {
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
           >
-            <Link to={RoutesPath.BNPL} className="relative w-full flex-1 grow self-stretch rounded-[32px]">
+            <Link
+              to={RoutesPath.BNPL}
+              className="relative w-full flex-1 grow self-stretch rounded-[32px]"
+            >
               <div className="relative left-[67px] top-6 h-[416px] w-full md:w-[543px]">
                 <img
                   className="absolute left-[78px] top-1.5 h-[371px] w-full md:w-[388px]"
@@ -233,10 +243,10 @@ export const Div = () => {
                   className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                       График платежей
                     </div>
-                    <div className="relativew-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
                       Договор: 12345456322
                     </div>
                   </div>
@@ -330,7 +340,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 md:p-10 pt-0">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 md:p-10">
               <motion.div
                 id="animate_29"
                 ref={ref29}

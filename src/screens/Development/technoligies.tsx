@@ -14,9 +14,9 @@ export const Technoligies = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
-      <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
+        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
           Технологии разработки
         </div>
       </div>
@@ -33,9 +33,9 @@ export const Technoligies = () => {
             arrows={false}
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="md:px-3 px-7">
+            <div className="px-7 md:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Figma
                   </div>
@@ -46,7 +46,7 @@ export const Technoligies = () => {
                     и удобной демонстрации заказчику.
                   </p>
                 </div>
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React.js
                   </div>
@@ -57,7 +57,7 @@ export const Technoligies = () => {
                     высокие нагрузки.
                   </p>
                 </div>
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React Native
                   </div>
@@ -71,9 +71,9 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="md:px-3 px-7">
+            <div className="px-7 md:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Java
                   </div>
@@ -84,7 +84,7 @@ export const Technoligies = () => {
                     данных и интеграциями.
                   </p>
                 </div>
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Python
                   </div>
@@ -98,9 +98,9 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="md:px-3 px-7">
+            <div className="px-7 md:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Blockchain / Web3
                   </div>
@@ -111,7 +111,7 @@ export const Technoligies = () => {
                     Polygon, Solana и другими экосистемами.
                   </p>
                 </div>
-                <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-3">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Криптопродукты
                   </div>

@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from '../../App.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
@@ -13,9 +15,9 @@ import vector from './images/Vector 1.png';
 import code from './images/code.png';
 import { Technoligies } from './technoligies.tsx';
 import { Works } from './works.tsx';
-import {isMobile} from "../../App.tsx";
 
 export const Development = () => {
+  const { t } = useTranslation(['development']);
   const sliderRef = useRef<Slider>(null);
   const { setIsOpen } = useFeedbackForm();
   const ref15 = useRef<HTMLDivElement>(null);
@@ -47,7 +49,7 @@ export const Development = () => {
           />
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12 md:w-[624px]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  md:w-[624px] md:gap-12">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
                 <motion.h1
                   ref={ref15}
@@ -56,9 +58,7 @@ export const Development = () => {
                   transition={{ duration: 0.4, ease: 'easeOut' }}
                   className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  Разработка
-                  <br />
-                  на заказ
+                  {t('hero.title')}
                 </motion.h1>
 
                 <motion.p
@@ -68,8 +68,7 @@ export const Development = () => {
                   transition={{ duration: 0.4, ease: 'easeOut' }}
                   className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  Создаем и развиваем проекты для финансовых проектов,
-                  blockchain-проектов, медицинских и маркетинговых проектов.
+                  {t('hero.description')}
                 </motion.p>
               </div>
             </div>
@@ -81,8 +80,8 @@ export const Development = () => {
             src={vector}
           />
 
-          <div className="md:absolute md:scale-100 scale-75 relative md:left-[727px] md:top-[188px] h-[280px] w-full md:w-[464px] overflow-hidden rounded-3xl bg-[#ffffff]">
-            <div className="absolute left-0 top-0 h-10w-full md:w-[528px] bg-[#f9fafd]">
+          <div className="relative h-[280px] w-full scale-75 overflow-hidden rounded-3xl bg-[#ffffff] md:absolute md:left-[727px] md:top-[188px] md:w-[464px] md:scale-100">
+            <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] md:w-[528px]">
               <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 
               <div className="absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
@@ -90,12 +89,12 @@ export const Development = () => {
               <div className="absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
             </div>
 
-            <div className="absolute left-0 top-12 flex w-full md:w-[464px] flex-col items-start">
+            <div className="absolute left-0 top-12 flex w-full flex-col items-start md:w-[464px]">
               <img className="size-full" alt="Vector" src={code} />
             </div>
           </div>
         </div>
-        <div className="absolute left-[-190px] top-[190px] md:left-[590px] scale-50 md:scale-100 md:top-[-41px] size-[738px]">
+        <div className="absolute left-[-190px] top-[190px] size-[738px] scale-50 md:left-[590px] md:top-[-41px] md:scale-100">
           <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
             <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
@@ -134,9 +133,9 @@ export const Development = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
-        <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
             Разработка&nbsp;&nbsp;проектов
           </div>
         </div>
@@ -264,16 +263,16 @@ export const Development = () => {
         </div>
       </div>
 
-      <div className="relative flex-col flex md:!flex-row md:h-[568px] w-full md:w-[1376px]">
-        <div className="flex w-full  flex-col md:!flex-row items-center gap-[68px] md:w-[1472px]">
+      <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
+        <div className="flex w-full  flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
           <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[496px]">
-            <p className="relative mt-[-1.00px] self-stretch text-center md:text-left text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+            <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
               Разработаем платформы и решения для вашего бизнеса
             </p>
 
             <button
               onClick={onClick}
-              className="all-[unset] w-full md:w-fit box-border inline-flex cursor-pointer items-center justify-center  gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90"
+              className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 попробовать
@@ -292,10 +291,9 @@ export const Development = () => {
               centerMode={true}
               centerPadding="0px"
               arrows={false}
-
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:w-[443px]">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
                     alt="Vector"
@@ -303,7 +301,7 @@ export const Development = () => {
                   />
 
                   <div className="relative w-[382px] flex-1 grow self-stretch">
-                    <div className="relative left-[-72px] md:-left-12 -top-12 w-full md:w-[443px]">
+                    <div className="relative -top-12 left-[-72px] w-full md:-left-12 md:w-[443px]">
                       <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <img
                           className="relative flex-[0_0_auto]"
@@ -368,7 +366,7 @@ export const Development = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[442px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
                     alt="Vector"
@@ -440,7 +438,7 @@ export const Development = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:w-[443px]">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
                     alt="Vector"
@@ -469,7 +467,7 @@ export const Development = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:w-[443px]">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
                     alt="Vector"
@@ -526,7 +524,7 @@ export const Development = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12 md:w-[443px]">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
                     alt="Vector"
@@ -556,7 +554,7 @@ export const Development = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
           <button
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -618,9 +616,9 @@ export const Development = () => {
       <Feedback />
       <Technoligies />
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
-        <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
             С нами комфортно
           </div>
         </div>

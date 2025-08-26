@@ -8,7 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from '../../../components/LanguageSwitcher';
 
 export const HeaderSection = () => {
-  const { t } = useTranslation(['nav', 'common']);
+  const { t } = useTranslation(['nav', 'common', 'megamenu']);
   const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
@@ -470,7 +470,7 @@ export const HeaderSection = () => {
             className="fixed inset-x-0 top-20 z-50 mx-auto mt-1 hidden max-w-[1440px] justify-center py-2 md:flex"
             id="products-menu"
             role="region"
-            aria-label="Меню продуктов"
+            aria-label={t('headings.lending', { ns: 'megamenu' })}
           >
             <motion.div
               initial={{ scale: 0.98 }}
@@ -483,7 +483,7 @@ export const HeaderSection = () => {
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
                   <div className="relative mt-[-1.00px] w-full md:w-[590px] text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Кредитование
+                    {t('headings.lending', { ns: 'megamenu' })}
                   </div>
                 </div>
 
@@ -545,7 +545,7 @@ export const HeaderSection = () => {
                       />
                     </svg>
                     <p className="relative flex-1 text-xl font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      <span className="whitespace-pre-wrap leading-7 text-[#1c222f]">{`Микрофинансовое\nкредитование`}</span>
+                      <span className="whitespace-pre-wrap leading-7 text-[#1c222f]">{t('tiles.microcredit', { ns: 'megamenu' })}</span>
                     </p>
                   </Link>
 
@@ -568,9 +568,12 @@ export const HeaderSection = () => {
                       <path d="M30 30H34" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Кредитование
-                      <br />
-                      бизнеса
+                      {t('tiles.businessCredit', { ns: 'megamenu' }).split('\n').map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
                     </div>
                   </Link>
 
@@ -596,9 +599,12 @@ export const HeaderSection = () => {
                       <path d="M17.75 38.75H42.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Банковское
-                      <br />
-                      кредитование
+                      {t('tiles.bankCredit', { ns: 'megamenu' }).split('\n').map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
                     </div>
                   </Link>
                 </div>
@@ -622,7 +628,7 @@ export const HeaderSection = () => {
                       <path d="M37 30C37 31.3261 36.4732 32.5979 35.5355 33.5355C34.5979 34.4732 33.3261 35 32 35C30.6739 35 29.4021 34.4732 28.4645 33.5355C27.5268 32.5979 27 31.3261 27 30" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      BNPL
+                      {t('tiles.bnpl', { ns: 'megamenu' })}
                     </div>
                   </Link>
 
@@ -645,7 +651,7 @@ export const HeaderSection = () => {
                       <path d="M24.8188 34H40.5125C40.9809 33.9999 41.4344 33.8355 41.7939 33.5353C42.1535 33.2352 42.3963 32.8183 42.48 32.3575L44 24H23" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      POS-кредитование
+                      {t('tiles.pos', { ns: 'megamenu' })}
                     </div>
                   </Link>
 
@@ -669,7 +675,7 @@ export const HeaderSection = () => {
                       <path d="M42 31H17" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Автокредитование
+                      {t('tiles.autocredit', { ns: 'megamenu' })}
                     </div>
                   </Link>
                 </div>
@@ -694,7 +700,7 @@ export const HeaderSection = () => {
                       <path d="M43 36L39.465 39.535C37.4178 41.5821 34.6461 42.7396 31.751 42.7565C28.8559 42.7733 26.0709 41.6482 24 39.625" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      P2P-кредитование
+                      {t('tiles.p2p', { ns: 'megamenu' })}
                     </div>
                   </Link>
 
@@ -715,9 +721,12 @@ export const HeaderSection = () => {
                       <path d="M38.1825 32L36 28.2913L40.0737 29.3L42.7987 26L43.1325 30.3313L47 32L43.1325 33.6688L42.7987 38L40.0737 34.7L36 35.7087L38.1825 32Z" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Исламское
-                      <br />
-                      финансирование
+                      {t('tiles.islamFinance', { ns: 'megamenu' }).split('\n').map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
                     </div>
                   </Link>
                 </div>
@@ -726,7 +735,7 @@ export const HeaderSection = () => {
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
                   <div className="relative mt-[-1.00px] w-full md:w-[590px] text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Другое программное обеспечение
+                    {t('headings.otherSoftware', { ns: 'megamenu' })}
                   </div>
                 </div>
 
@@ -749,7 +758,12 @@ export const HeaderSection = () => {
                       <path d="M27 25L32 20L37 25" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <p className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Выгрузка данных <br />в кредитные бюро
+                      {t('tiles.dataUnloadFull', { ns: 'megamenu' }).split('\n').map((line, idx) => (
+                        <span key={idx}>
+                          {line}
+                          <br />
+                        </span>
+                      ))}
                     </p>
                   </Link>
 
@@ -771,7 +785,7 @@ export const HeaderSection = () => {
                       <path d="M27.1687 33.295L20.4062 35.1062" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Настраиваемый модуль принятия решений
+                      {t('tiles.decisionsModuleFull', { ns: 'megamenu' })}
                     </div>
                   </Link>
 
@@ -793,7 +807,7 @@ export const HeaderSection = () => {
                       <path d="M21 32V38C21 41.3138 25.925 44 32 44C38.075 44 43 41.3138 43 38V32" stroke="#01AD7C" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Реконсиляция данных
+                      {t('tiles.reconciliation', { ns: 'megamenu' })}
                     </div>
                   </Link>
                 </div>
@@ -802,7 +816,7 @@ export const HeaderSection = () => {
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
                   <div className="relative mt-[-1.00px] w-full md:w-[590px] text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Услуги
+                    {t('headings.services', { ns: 'megamenu' })}
                   </div>
                 </div>
 
@@ -825,7 +839,7 @@ export const HeaderSection = () => {
                       <path d="M36 21L28 43" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Разработка на заказ
+                      {t('tiles.customDevelopment', { ns: 'megamenu' })}
                     </div>
                   </div>
                 </Link>

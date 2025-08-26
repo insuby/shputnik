@@ -1,12 +1,15 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from '../../App.tsx';
 import { Graph } from '../../components/ui/graph.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
+import { CrmCapabilities } from '../../widgets/crm-capabilities.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
@@ -15,10 +18,9 @@ import { RoleStructure } from '../../widgets/role-structure.tsx';
 import { Trust } from '../../widgets/trust.tsx';
 import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
-import { isMobile } from '../../App.tsx';
-import {CrmCapabilities} from "../../widgets/crm-capabilities.tsx";
 
 export const MicroCredit = () => {
+  const { t } = useTranslation(['microcredit']);
   const { setIsOpen } = useFeedbackForm();
 
   const sliderRef = useRef<Slider>(null);
@@ -46,9 +48,9 @@ export const MicroCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[1060px] md:h-auto w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
+        <div className="relative flex h-[1060px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:h-auto md:p-12">
           <img
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
             alt=""
@@ -56,25 +58,21 @@ export const MicroCredit = () => {
             src="/img/vector-1-5.svg"
           />
 
-          <HeroButtons buttonText="Узнать больше">
+          <HeroButtons buttonText={t('hero.buttonText')}>
             <motion.div
               ref={ref3}
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12"
             >
-              <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                <h1 className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  Микрофинансовое кредитование
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
+                <h1 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]">
+                  {t('hero.title')}
                 </h1>
 
-                <p className="relative w-full text-center md:text-left md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica]">
-                  Полный цикл автоматизации микрофинансового кредитования — от
-                  заявки до взыскания, с возможностью настройки сценариев и
-                  процессов под требования организации, включая полную
-                  цифровизацию всех этапов без ручного труда и с учётом
-                  регуляторных стандартов
+                <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
+                  {t('hero.description')}
                 </p>
               </div>
             </motion.div>
@@ -85,25 +83,25 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="md:absolute left-[786px] top-[192px] flex md:w-[324px] flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4"
+            className="left-[786px] top-[192px] flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:absolute md:w-[324px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Оформить заявку
+                  {t('application.title')}
                 </div>
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="relative left-[-3px] top-px h-3w-full md:w-[261px]">
+                    <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
                       <img
-                        className="absolute left-px top-1 h-1w-full md:w-[260px]"
+                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
                         alt="Vector"
                         src="/img/vector-136-1.svg"
                       />
 
                       <img
-                        className="absolute left-0 top-[3px] h-1.5w-full md:w-[169px]"
+                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
                         alt="Vector"
                         src="/img/vector-137.svg"
                       />
@@ -125,15 +123,15 @@ export const MicroCredit = () => {
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="relative left-[-3px] top-px h-3w-full md:w-[261px]">
+                    <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
                       <img
-                        className="absolute left-px top-1 h-1w-full md:w-[260px]"
+                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
                         alt="Vector"
                         src="/img/vector-136.svg"
                       />
 
                       <img
-                        className="absolute left-0 top-[3px] h-1.5w-full md:w-[95px]"
+                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
                         alt="Vector"
                         src="/img/vector-137-2.svg"
                       />
@@ -157,7 +155,7 @@ export const MicroCredit = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-start gap-2 self-stretch">
                 <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Сумма
+                    {t('application.amount')}
                   </div>
 
                   <div className="relative mr-[-2.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -167,7 +165,7 @@ export const MicroCredit = () => {
 
                 <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Срок
+                    {t('application.term')}
                   </div>
 
                   <div className="relative mr-[-0.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -177,7 +175,7 @@ export const MicroCredit = () => {
 
                 <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    Ставка
+                    {t('application.rate')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -190,8 +188,8 @@ export const MicroCredit = () => {
                 onClick={onClick}
                 className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3 transition-opacity hover:opacity-90"
               >
-                <div className="relative mt-[-1.00px] w-full md:w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  Оформить займ
+                <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[164px]">
+                  {t('application.applyLoan')}
                 </div>
               </button>
             </div>
@@ -209,7 +207,7 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView5 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="absolute left-[130px] md:left-[1062px] top-[740px] md:top-[304px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4"
+            className="absolute left-[130px] top-[740px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4 md:left-[1062px] md:top-[304px]"
           >
             <Graph />
 
@@ -217,11 +215,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-blue-50" />
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                   Текущее
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                   48,456₽
                 </div>
               </div>
@@ -229,11 +227,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-green-60" />
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                   Основная
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                   122,000₽
                 </div>
               </div>
@@ -241,11 +239,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-yellow-50" />
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                   Проценты
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                   4,000₽
                 </div>
               </div>
@@ -253,11 +251,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-red-50" />
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
                   Штраф
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full md:w-[72px] text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
                   2,700₽
                 </div>
               </div>
@@ -271,19 +269,19 @@ export const MicroCredit = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative h-fit md:h-[652px]  w-full md:w-[1376px]"
+        className="relative h-fit w-full  md:h-[652px] md:w-[1376px]"
       >
-        <div className="relative  h-fit md:h-[568px]  w-full md:w-[1376px]">
-          <div className="flex flex-col md:!flex-row w-full md:w-[1472px] items-center gap-[68px]">
-            <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-7">
-              <div className="relative text-center md:text-left mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="relative  h-fit w-full  md:h-[568px] md:w-[1376px]">
+          <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
+            <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
+              <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
                 Основные механизмы работы
                 <br />с клиентами
               </div>
 
               <button
                 onClick={onClick}
-                className="all-[unset] w-full md:w-fit  relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+                className="all-[unset] relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   Попробовать
@@ -302,10 +300,9 @@ export const MicroCredit = () => {
                 centerMode={true}
                 centerPadding="0px"
                 arrows={false}
-
               >
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -313,19 +310,19 @@ export const MicroCredit = () => {
                     />
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-0 md:left-10 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
+                      <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
                         <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
-                              <div className="relative left-0 md:left-[-3px] top-px h-3w-full md:w-[203px]">
+                              <div className="h-3w-full relative left-0 top-px md:left-[-3px] md:w-[203px]">
                                 <img
-                                  className="absolute left-px top-1 h-1w-full md:w-[202px]"
+                                  className="h-1w-full absolute left-px top-1 md:w-[202px]"
                                   alt="Vector"
                                   src="/img/microcredit/vector-136.svg"
                                 />
 
                                 <img
-                                  className="absolute left-0 top-[3px] h-1.5w-full md:w-[169px]"
+                                  className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
                                   alt="Vector"
                                   src="/img/microcredit/vector-137.svg"
                                 />
@@ -364,7 +361,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px]  w-full md:w-[377px]"
                       alt="Vector"
@@ -372,8 +369,8 @@ export const MicroCredit = () => {
                     />
 
                     <div className="relative w-full self-stretch">
-                      <div className="relative h-[200px] left-0 md:left-7 top-[26px] md:h-[170px] w-full md:w-[290px]">
-                        <div className="absolute left-7 top-9 flex w-full md:w-[235px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
+                      <div className="relative left-0 top-[26px] h-[200px] w-full md:left-7 md:h-[170px] md:w-[290px]">
+                        <div className="absolute left-7 top-9 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] md:w-[235px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7711.00px] mt-[-1968.00px] size-6 bg-[100%_100%] opacity-0">
                               <div className="relative left-[-7711px] top-[-1968px] h-[15px] w-4">
@@ -395,10 +392,10 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-3 top-7 flex w-full md:w-[266px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50">
+                        <div className="absolute left-3 top-7 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50 md:w-[266px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
-                              <div className="relative left-[3px] top-0.5 h-5w-full md:w-[18px]">
+                              <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
                                 <img
                                   className="absolute left-[5px] top-[15px] h-[5px] w-2"
                                   alt="Vector"
@@ -419,10 +416,10 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-0 top-0 flex w-full md:w-[290px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2">
+                        <div className="absolute left-0 top-0 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 md:w-[290px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative size-6 bg-[100%_100%]">
-                              <div className="relative left-[3px] top-0.5 h-5w-full md:w-[18px]">
+                              <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
                                 <img
                                   className="absolute left-[5px] top-[15px] h-[5px] w-2"
                                   alt="Vector"
@@ -460,7 +457,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -487,7 +484,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                     <img
                       className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
                       alt="Vector"
@@ -495,7 +492,7 @@ export const MicroCredit = () => {
                     />
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-[22px] md:left-[42px] top-1.5 flex w-full md:w-[264px] items-center gap-4">
+                      <div className="relative left-[22px] top-1.5 flex w-full items-center gap-4 md:left-[42px] md:w-[264px]">
                         <div className="relative size-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
 
                         <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
@@ -535,7 +532,7 @@ export const MicroCredit = () => {
                 </div>
 
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
                         <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
@@ -588,7 +585,7 @@ export const MicroCredit = () => {
               </Slider>
             </div>
           </div>
-          <div className="absolute left-[725px] top-[592px] hidden md:flex h-14w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+          <div className="h-14w-full absolute left-[725px] top-[592px] hidden items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
             <button
               aria-controls="microcredit-slider"
               aria-label="Предыдущий слайд"

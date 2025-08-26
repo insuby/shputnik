@@ -1,14 +1,15 @@
+import { useTranslation } from 'react-i18next';
+
 interface Props {
   state: 'active' | 'default';
   className: any;
-  text: string;
+  text?: string;
 }
 
-export const Point = ({
-  state,
-  className,
-  text = 'О компании',
-}: Props): JSX.Element => {
+export const Point = ({ state, className, text }: Props): JSX.Element => {
+  const { t } = useTranslation(['blog']);
+
+  const defaultText = text || t('point.aboutCompany');
   return (
     <div
       className={`relative flex flex-col items-center justify-center gap-2 ${
@@ -16,7 +17,7 @@ export const Point = ({
       } ${className}`}
     >
       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-        {text}
+        {defaultText}
       </div>
 
       {state === 'active' && (

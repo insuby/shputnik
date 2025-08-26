@@ -1,14 +1,16 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from '../../App.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Cta } from './Cta.tsx';
-import { isMobile } from '../../App.tsx';
 
 export const Fdata = () => {
+  const { t } = useTranslation(['fdata']);
   const { setIsOpen } = useFeedbackForm();
   const sliderRef = useRef<Slider>(null);
 
@@ -91,7 +93,7 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
           <img
@@ -100,25 +102,22 @@ export const Fdata = () => {
             src="/img/fdata/vector-1-5.svg"
           />
 
-          <HeroButtons buttonText="Узнать больше">
+          <HeroButtons buttonText={t('hero.buttonText')}>
             <motion.div
               ref={ref3}
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12"
             >
-              <div className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12">
-                <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
-                  <h1 className="text-center md:text-left mt-[-1.00px] w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                    ПО для <br />
-                    реконсиляции данных
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
+                  <h1 className="mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]">
+                    {t('hero.title')}
                   </h1>
 
-                  <p className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]">
-                    Автоматизация всех ваших процессов обработки <br />
-                    финансовых данных с минимальной зависимостью <br />
-                    от персонала
+                  <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
+                    {t('hero.description')}
                   </p>
                 </div>
               </div>
@@ -137,13 +136,13 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="md:absolute w-fit left-[704px] top-[208px] flex md:w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6"
+            className="left-[704px] top-[208px] flex w-fit items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 md:absolute md:w-[576px]"
           >
-            <div className="relative md:w-auto w-full flex flex-1 grow flex-col items-start gap-6">
+            <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 md:w-auto">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                 <div className="relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
                   <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                    Dashboard
+                    {t('dashboard.title')}
                   </div>
 
                   <img
@@ -160,8 +159,8 @@ export const Fdata = () => {
                 </div>
 
                 <div className="relative flex h-9 w-full items-center gap-4 self-stretch rounded-[100px] border border-solid border-[#e3e4e7] py-2 pl-4 pr-3">
-                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Search
+                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    {t('dashboard.search')}
                   </div>
 
                   <img
@@ -174,24 +173,24 @@ export const Fdata = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch px-3 py-1">
-                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Status
+                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    {t('dashboard.status')}
                   </div>
 
-                  <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Reconciliation
-                  </div>
-
-                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Operator
+                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    {t('dashboard.reconciliation')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Last run time
+                    {t('dashboard.operator')}
+                  </div>
+
+                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    {t('dashboard.lastRunTime')}
                   </div>
 
                   <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Mismatches
+                    {t('dashboard.mismatches')}
                   </div>
                 </div>
 
@@ -200,12 +199,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -226,12 +225,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-green-60" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -252,12 +251,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-green-60" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -278,12 +277,12 @@ export const Fdata = () => {
                     <div className="relative flex flex-1 grow items-center justify-center gap-2">
                       <div className="relative size-2 rounded bg-red-50" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Unreconciled
                       </div>
                     </div>
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       DP1 vs DP2
                     </div>
 
@@ -315,7 +314,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[960px] top-[404px] flex w-full md:w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6"
+            className="absolute left-[960px] top-[404px] flex w-full items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 md:w-[368px]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
@@ -333,7 +332,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Waiting
                     </div>
                   </div>
@@ -341,7 +340,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       In progress
                     </div>
                   </div>
@@ -349,7 +348,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Reconciled
                     </div>
                   </div>
@@ -357,7 +356,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Unreconciled
                     </div>
                   </div>
@@ -365,7 +364,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Created
                     </div>
                   </div>
@@ -373,7 +372,7 @@ export const Fdata = () => {
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       Failed
                     </div>
                   </div>
@@ -388,7 +387,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By me
                       </div>
                     </div>
@@ -396,7 +395,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         By others
                       </div>
                     </div>
@@ -410,7 +409,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Payments
                       </div>
                     </div>
@@ -418,7 +417,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Finance
                       </div>
                     </div>
@@ -426,7 +425,7 @@ export const Fdata = () => {
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative whitespace-nowrap mt-[-1.00px] flex-1 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Trading
                       </div>
                     </div>
@@ -443,15 +442,15 @@ export const Fdata = () => {
           />
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
-        <div className="flex-col md:!flex-row relative flex w-full md:w-[1376px] flex-[0_0_auto] items-center gap-6 rounded-3xl">
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 md:gap-12 overflow-hidden rounded-3xl p-7 py-12 md:pl-12 md:pr-[68px]">
-            <div className="relative flex w-full md:w-[560px] flex-[0_0_auto] flex-col items-center justify-center gap-6">
-              <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl md:w-[1376px] md:!flex-row">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 md:gap-12 md:pl-12 md:pr-[68px]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 md:w-[560px]">
+              <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
                 f.Data в деталях
               </div>
 
-              <p className="text-center md:text-left relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
                 f.Data автоматизирует все ваши процессы обработки финансовых
                 данных с минимальной зависимостью от персонала. Наша
                 инновационная платформа загружает и реконсилирует данные,
@@ -474,21 +473,21 @@ export const Fdata = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView4 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12"
       >
         <motion.div
           ref={ref5}
           initial={{ opacity: 0, y: 50 }}
           animate={inView5 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
         >
           <motion.div
             ref={ref6}
             initial={{ opacity: 0, y: 30 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
             Как мы помогаем финансам
           </motion.div>
@@ -510,14 +509,14 @@ export const Fdata = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex-col md:!flex-row flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[1376px] md:!flex-row"
           >
             <motion.div
               ref={ref10}
@@ -604,7 +603,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex-col md:!flex-row flex w-full md:w-[1376px] flex-[0_0_auto] items-start gap-6"
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[1376px] md:!flex-row"
           >
             <motion.div
               ref={ref19}
@@ -731,10 +730,10 @@ export const Fdata = () => {
         text="Защитите ваши финансовые данные сегодня"
         text1="Заказать демо"
       />
-      <div className="relative flex-col flex md:!flex-row md:h-[568px] w-full md:w-[1376px]">
-        <div className="flex flex-col md:!flex-row w-full md:w-[1472px] items-center gap-[68px]">
-          <div className="relative flex  w-full md:w-[496px] flex-col items-start justify-center gap-7">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
+        <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
+          <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
               Инновационная технология
               <br />
               для вашего бизнеса
@@ -742,7 +741,7 @@ export const Fdata = () => {
 
             <button
               onClick={onClick}
-              className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+              className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 Попробовать
@@ -761,10 +760,9 @@ export const Fdata = () => {
               centerMode={true}
               centerPadding="0px"
               arrows={false}
-
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[443px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
                     alt="Vector"
@@ -772,7 +770,7 @@ export const Fdata = () => {
                   />
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 md:left-6 top-1 flex w-full md:w-[299px] flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6">
+                    <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 md:left-6 md:w-[299px]">
                       <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         Настройка правил
                       </div>
@@ -812,7 +810,7 @@ export const Fdata = () => {
                 </div>
               </div>
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full md:w-[442px] flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
                   <img
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
                     alt="Vector"
@@ -885,7 +883,7 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden md:flex h-14 w-full md:w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
           <button
             aria-controls="fdata-slider"
             aria-label="Предыдущий слайд"
@@ -947,17 +945,17 @@ export const Fdata = () => {
           </button>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div
           ref={ref53}
-          className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
         >
           <motion.div
             ref={ref54}
             initial={{ opacity: 0, y: 30 }}
             animate={inView54 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
             Нашим клиентам
           </motion.div>
@@ -971,17 +969,17 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
-            <div className="hidden md:block relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
+            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] md:block" />
 
-            <motion.div className="relative flex flex-col md:!flex-row flex-1 grow items-center gap-7  md:gap-12">
-              <div className="relative flex w-full md:w-[421px] flex-col items-start gap-4">
-                <div className="md:hidden m-auto relative size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover]" />
+            <motion.div className="relative flex flex-1 grow flex-col items-center gap-7 md:!flex-row  md:gap-12">
+              <div className="relative flex w-full flex-col items-start gap-4 md:w-[421px]">
+                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] md:hidden" />
 
-                <div className="text-center md:text-left relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left">
                   Константин Гризов
                 </div>
 
-                <div className="text-center md:text-left relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
                   Управляющий партнер
                   <br />
                   PLUS Consulting
@@ -989,12 +987,12 @@ export const Fdata = () => {
               </div>
 
               <img
-                className="hidden md:block relative w-px self-stretch"
+                className="relative hidden w-px self-stretch md:block"
                 alt="Vector"
                 src="/img/fdata/vector-166.svg"
               />
 
-              <p className="text-center md:text-left relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
                 f.Data легко масштабируется для бизнеса любого размера, <br />
                 что позволяет автоматизировать работу сфинансовыми данными как в
                 банках, страховых и инвестиционных компаниях, платежных
@@ -1017,7 +1015,7 @@ export const Fdata = () => {
           </motion.div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-            <div className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
@@ -1071,7 +1069,7 @@ export const Fdata = () => {
               </motion.div>
             </div>
 
-            <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, x: 50 }}

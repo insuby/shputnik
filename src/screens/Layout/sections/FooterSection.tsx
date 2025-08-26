@@ -8,7 +8,7 @@ export const FooterSection = () => {
     return (
         <footer
             className="w-[calc(100%-32px)] mx-auto relative mb-4 flex w-full flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 md:p-12 md:pt-[136px]">
-            <nav aria-label={t('software', { ns: 'footer' })} className="relative flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
+            <nav aria-label={t('software', { ns: 'footer' })} className="relative justify-around flex w-full flex-[0_0_auto] items-start gap-7 md:gap-12 self-stretch">
                 <div className="relative flex md:h-[324px] w-full md:w-[268px] flex-col md:gap-0 gap-10 items-start justify-between">
                     <div className="!text-[16px] relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
                         <div className="relative h-[22px] w-28">

@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Frame1 = () => {
+  const { t } = useTranslation(['home']);
   const ref37l = useRef<HTMLSpanElement>(null);
   const ref37r = useRef<HTMLSpanElement>(null);
   const ref38 = useRef<HTMLParagraphElement>(null);
@@ -30,8 +32,14 @@ export const Frame1 = () => {
   const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
   const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
   return (
-    <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch" aria-labelledby="other-software">
-      <h2 id="other-software" className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+    <section
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
+      aria-labelledby="other-software"
+    >
+      <h2
+        id="other-software"
+        className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+      >
         <motion.span
           id="animate_37_left"
           ref={ref37l}
@@ -40,7 +48,7 @@ export const Frame1 = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-[#1c222f]"
         >
-          Другое{' '}
+          {t('otherSoftware').split(' ')[0]}{' '}
         </motion.span>
         <motion.span
           id="animate_37_right"
@@ -50,7 +58,7 @@ export const Frame1 = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="text-[#9ea7bb]"
         >
-          программное обеспечение
+          {t('otherSoftware').split(' ').slice(1).join(' ')}
         </motion.span>
       </h2>
 
@@ -74,7 +82,7 @@ export const Frame1 = () => {
                   className="absolute left-[177px] top-[100px] inline-flex flex-col items-start gap-2.5 rounded-[32px] bg-[#ffffff5c] p-2"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
-                    <div className="relative h-7w-full md:w-[142.55px]">
+                    <div className="h-7w-full relative md:w-[142.55px]">
                       <div className="h-7w-full md:w-[143px]">
                         <div className="h-[29px] w-full md:w-[142px]">
                           <div className="h-[29px]">
@@ -208,7 +216,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Выгрузка данных в кредитные бюро
+                  {t('dataUnload.title')}
                 </motion.h4>
 
                 <motion.p
@@ -219,10 +227,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Готовое решение для передачи данных в кредитные бюро. Подходит
-                  для МФО, лизинговых, коллекторских и других компаний,
-                  обязанных направлять информацию в соответствии с требованиями
-                  законодательства
+                  {t('dataUnload.desc')}
                 </motion.p>
               </div>
 
@@ -258,13 +263,13 @@ export const Frame1 = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                      <div className="relative mt-[-1.00px] w-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        ID 1232342345346
+                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+                        {t('decisionsModule.ui.id')}
                       </div>
 
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-3">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          Давид Иванов
+                          {t('decisionsModule.ui.name')}
                         </div>
 
                         <div className="relative flex size-6 items-center justify-center gap-2.5 rounded-[20px] bg-green-60 p-2">
@@ -282,11 +287,11 @@ export const Frame1 = () => {
                     <div className="relative flex flex-1 grow items-center gap-[53px] rounded-2xl bg-blue-50 p-4">
                       <div className="relative flex flex-1 grow flex-col items-start gap-0.5">
                         <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-white opacity-50 [font-family:'Roboto',Helvetica]">
-                          Балл
+                          {t('decisionsModule.ui.score')}
                         </div>
 
                         <div className="relative self-stretch text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                          0.82
+                          {t('decisionsModule.ui.scoreValue')}
                         </div>
                       </div>
                     </div>
@@ -301,41 +306,41 @@ export const Frame1 = () => {
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-4">
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        Пол
+                        {t('decisionsModule.ui.gender')}
                       </div>
 
                       <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Мужской
+                        {t('decisionsModule.ui.genderValue')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        Дата рождения
+                        {t('decisionsModule.ui.birthDate')}
                       </div>
 
                       <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        13.10.2025
+                        {t('decisionsModule.ui.birthDateValue')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        Семейное положение
+                        {t('decisionsModule.ui.maritalStatus')}
                       </div>
 
                       <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Женат
+                        {t('decisionsModule.ui.maritalStatusValue')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        Заработная плата
+                        {t('decisionsModule.ui.salary')}
                       </div>
 
                       <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        220,000₽
+                        {t('decisionsModule.ui.salaryValue')}
                       </div>
                     </div>
                   </div>
@@ -356,7 +361,7 @@ export const Frame1 = () => {
                   className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[148px] w-full md:w-[68px] overflow-hidden rounded-[20px] bg-green-60">
+                    <div className="relative h-[148px] w-full overflow-hidden rounded-[20px] bg-green-60 md:w-[68px]">
                       <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>
@@ -364,23 +369,23 @@ export const Frame1 = () => {
 
                     <div className="relative flex flex-1 grow flex-col items-start gap-2">
                       <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Одобрение
+                        {t('decisionsModule.ui.approval')}
                       </div>
 
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                         <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          850 будут возвращены
+                          {t('decisionsModule.ui.approvalReturned')}
                         </div>
 
                         <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          50 не будут возвращены
+                          {t('decisionsModule.ui.approvalNotReturned')}
                         </div>
                       </div>
                     </div>
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relativew-full md:w-[68px] self-stretch overflow-hidden rounded-[20px] bg-red-50">
+                    <div className="relativew-full self-stretch overflow-hidden rounded-[20px] bg-red-50 md:w-[68px]">
                       <div className="absolute left-[13px] top-[29px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         100
                       </div>
@@ -388,16 +393,16 @@ export const Frame1 = () => {
 
                     <div className="relative flex flex-1 grow flex-col items-start gap-2">
                       <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Отказ
+                        {t('decisionsModule.ui.rejection')}
                       </div>
 
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                         <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          90 по умолчанию
+                          {t('decisionsModule.ui.rejectionDefault')}
                         </div>
 
                         <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          10 положительных
+                          {t('decisionsModule.ui.rejectionPositive')}
                         </div>
                       </div>
                     </div>
@@ -416,7 +421,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Модуль принятия решений
+                  {t('decisionsModule.title')}
                 </motion.h4>
 
                 <motion.p
@@ -427,9 +432,7 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Гибкое ПО для скоринга и проверки физлиц и юрлиц — с
-                  подключением десятков внешних источников для верификации и
-                  обогащения данных
+                  {t('decisionsModule.desc')}
                 </motion.p>
               </div>
 

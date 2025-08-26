@@ -20,7 +20,7 @@ export const Point = ({
       } ${className}`}
     >
       <div
-        className={`relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 [font-style:var(--body-3-r-font-style)] ${
+        className={`relative mt-[-1.00px] w-fit whitespace-nowrap text-[length:var(--body-3-r-font-size)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 [font-style:var(--body-3-r-font-style)] ${
           state === 'active'
             ? divClassName
             : state === 'default'

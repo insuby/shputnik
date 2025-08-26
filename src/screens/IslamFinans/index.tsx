@@ -1,8 +1,9 @@
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
-import { isMobile } from '../../App.tsx';
+import { useTranslation } from 'react-i18next';
 
+import { isMobile } from '../../App.tsx';
 import { CheckIcon } from '../../components/ui/check-icon.tsx';
 import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
@@ -17,6 +18,7 @@ import { Zaim } from '../../widgets/zaim.tsx';
 import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const IslamFinance = () => {
+  const { t } = useTranslation(['islamfinance']);
   const { setIsOpen } = useFeedbackForm();
 
   const onClick = () => {
@@ -76,9 +78,12 @@ export const IslamFinance = () => {
   const inView25 = useInView(ref25, { once: true, margin: marginValue });
 
   return (
-    <div className="relative flex w-full md:w-[1440px] flex-[0_0_auto] flex-col items-center gap-[88px] md:gap-[136px] p-0 md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div ref={ref1} className="relative flex md:h-[620px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
+        <div
+          ref={ref1}
+          className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:h-[620px] md:p-12"
+        >
           <img
             className="absolute left-[539px] top-12 h-[842px] w-full md:w-[954px]"
             alt="Vector"
@@ -91,23 +96,23 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView1 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-              className="relative flex w-full md:w-[624px] flex-[0_0_auto] flex-col items-start justify-center gap-7  md:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12"
             >
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView1 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
-                className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6"
+                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex"
               >
                 <motion.h1
                   ref={ref4}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                  className="relative mt-[-1.00px] text-center md:text-left w-full md:w-[624px] text-[36px] md:text-6xl font-medium leading-[44px] md:leading-[68px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  Исламское финансирование
+                  {t('hero.title')}
                 </motion.h1>
 
                 <motion.p
@@ -115,12 +120,9 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                  className="relative text-center md:text-left w-full md:w-[624px] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  Предоставление исламским финансовым институтам первоклассных
-                  систем управления кредитами. <br />
-                  Предоставление исламским финансовым институтам первоклассных
-                  систем управления кредитами
+                  {t('hero.description')}
                 </motion.p>
               </motion.div>
             </motion.div>
@@ -131,27 +133,29 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="md:absolute left-[745px] top-[136px] flex h-[538px] w-fit md:w-[871px] items-center overflow-hidden rounded-3xl bg-[#f6f8fd]"
+            className="left-[745px] top-[136px] flex h-[538px] w-fit items-center overflow-hidden rounded-3xl bg-[#f6f8fd] md:absolute md:w-[871px]"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                <span className="text-[#1c222f]">Ваш</span>
+                <span className="text-[#1c222f]">{t('app.title')}</span>
 
-                <span className="text-[#00CB82]">Лого</span>
+                <span className="text-[#00CB82]">
+                  {t('app.titleHighlight')}
+                </span>
               </p>
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative ml-[-18572.00px] mt-[-721.92px] size-5 bg-[100%_100%]">
                     <img
-                      className="absolute left-[3px] top-0.5 h-4w-full md:w-[15px]"
+                      className="h-4w-full absolute left-[3px] top-0.5 md:w-[15px]"
                       alt="Vector"
                       src="/img/islamfinans/vector.svg"
                     />
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Главная
+                    {t('app.main')}
                   </div>
                 </div>
 
@@ -197,7 +201,7 @@ export const IslamFinance = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                    Финансирование
+                    {t('app.financing')}
                   </div>
                 </div>
 
@@ -217,7 +221,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-2 h-0.5w-full md:w-[5px]"
+                        className="h-0.5w-full absolute left-0 top-2 md:w-[5px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-7.svg"
                       />
@@ -263,7 +267,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5 bg-[100%_100%]">
-                    <div className="relative left-[3px] top-0.5 h-4w-full md:w-[15px]">
+                    <div className="h-4w-full relative left-[3px] top-0.5 md:w-[15px]">
                       <img
                         className="absolute left-1 top-3 h-1 w-1.5"
                         alt="Vector"
@@ -271,7 +275,7 @@ export const IslamFinance = () => {
                       />
 
                       <img
-                        className="absolute left-0 top-0 h-3.5w-full md:w-[15px]"
+                        className="h-3.5w-full absolute left-0 top-0 md:w-[15px]"
                         alt="Vector"
                         src="/img/islamfinans/vector-13.svg"
                       />
@@ -326,7 +330,7 @@ export const IslamFinance = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto w-full">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         Финансирование SD45234
@@ -345,7 +349,7 @@ export const IslamFinance = () => {
                           Стоимость
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           187,000 ₽
                         </div>
                       </div>
@@ -355,7 +359,7 @@ export const IslamFinance = () => {
                           Авансовый платеж
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           14 500 ₽
                         </div>
                       </div>
@@ -365,7 +369,7 @@ export const IslamFinance = () => {
                           Срок
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           10 месяцев
                         </div>
                       </div>
@@ -375,7 +379,7 @@ export const IslamFinance = () => {
                           Следующий платеж
                         </div>
 
-                        <div className="relative self-stretch text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] whitespace-nowrap">
+                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           2,500 ₽
                         </div>
                       </div>
@@ -593,7 +597,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-center gap-7  md:gap-12 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:p-12"
+              className="relative flex flex-1 grow flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:gap-12 md:p-12"
             >
               <motion.div
                 ref={ref11}
@@ -624,7 +628,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView14 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.75 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref15}
@@ -649,7 +653,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView16 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.85 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref17}
@@ -674,7 +678,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView18 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.95 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref19}
@@ -699,7 +703,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView20 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.05 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref21}
@@ -724,7 +728,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView22 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.15 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref23}
@@ -749,7 +753,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView24 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.25 }}
-                    className="relative flex h-fit md:h-7 w-full items-center justify-center gap-6 self-stretch"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch md:h-7"
                   >
                     <motion.div
                       ref={ref25}
@@ -765,7 +769,7 @@ export const IslamFinance = () => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Истисна (Istisna'a)
+                      Истисна (Istisna&apos;a)
                     </div>
                   </motion.div>
                 </motion.div>
