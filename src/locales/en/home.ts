@@ -1,0 +1,108 @@
+export default {
+  hero: {
+    titleA: 'Software for',
+    titleB: 'automation',
+    titleC: 'of lending',
+    monthlyPayment: 'Monthly payment',
+  },
+  specialize: {
+    weSpecialize: 'we specialize in',
+    software: 'software',
+    forLending: 'for lending',
+  },
+  classicLending: 'Classic lending',
+  microcredit: {
+    title: 'Microfinance\nlending',
+    desc:
+      'Full automation cycle for microfinance lending — from application to collection, with configurable workflows and processes tailored to organizational needs, including full digitalization of all stages and regulatory compliance',
+    apply: 'Apply',
+    amount: 'Amount',
+    term: 'Term',
+    rate: 'Rate',
+    applyLoan: 'Apply for loan',
+  },
+  lendingStoreOnline: {
+    headingLeft: 'Lending',
+    headingRight: 'in-store and online',
+    bnplTitle: 'BNPL',
+    bnplDesc:
+      'Software to quickly launch BNPL (Buy Now, Pay Later) at checkout — both online and in retail locations',
+    posTitle: 'POS lending',
+    posDesc:
+      'Software to launch POS loans at checkout — both in online stores and retail points of sale',
+    paymentSchedule: 'Payment schedule',
+    currentBalance: 'Current balance',
+    loanAmount: 'Loan amount',
+  },
+  otherSoftware: 'Other software',
+  dataUnload: {
+    title: 'Data export to credit bureaus',
+    desc:
+      'A ready-made solution for submitting data to credit bureaus. Suitable for MFIs, leasing, collection and other companies required to report in accordance with legislation',
+  },
+  decisionsModule: {
+    title: 'Decision module',
+    desc:
+      'Flexible scoring and verification software for individuals and companies — with dozens of external data sources for verification and enrichment',
+    ui: {
+      id: 'ID 1232342345346',
+      name: 'David Ivanov',
+      score: 'Score',
+      scoreValue: '0.82',
+      gender: 'Gender',
+      genderValue: 'Male',
+      birthDate: 'Date of Birth',
+      birthDateValue: '13.10.2025',
+      maritalStatus: 'Marital Status',
+      maritalStatusValue: 'Married',
+      salary: 'Salary',
+      salaryValue: '220,000₽',
+      approval: 'Approval',
+      approvalReturned: '850 will be returned',
+      approvalNotReturned: '50 will not be returned',
+      rejection: 'Rejection',
+      rejectionDefault: '90 by default',
+      rejectionPositive: '10 positive',
+    },
+  },
+  cards: {
+    businessCredit: {
+      title: 'Business lending',
+      desc: 'Business lending software automates the cycle with corporate, mid-size and small borrowers',
+    },
+    bankCredit: {
+      title: 'Bank lending',
+      desc: 'Ready solution to automate issuance and servicing for consumer and corporate loans',
+    },
+    autocredit: {
+      title: 'Auto loans',
+      desc: 'Full control of auto lending processes and loans secured by vehicles',
+    },
+    p2p: {
+      title: 'P2P lending',
+      desc: 'Software to launch a P2P lending platform, enabling direct interaction between borrowers and investors. Suitable for corporate and retail lending',
+    },
+    islamFinance: {
+      title: 'Islamic finance',
+      desc: 'Islamic finance platform — supports Sharia-compliant product models (Murabaha, Ijara, Tawarruq, etc.)',
+    },
+  },
+  alternativeModels: {
+    title: 'Alternative and ethical models',
+    p2pUI: {
+      greeting: 'Hello,',
+      userName: 'David',
+      balance: 'Balance',
+      balanceAmount: '122,000₽',
+      withdraw: 'Withdraw',
+      topUp: 'Top Up',
+      myInvestments: 'My Investments',
+      investmentAmount: '42 000₽',
+      interest: 'Interest',
+      myLoans: 'My Loans',
+      payment: 'Payment',
+      investments: 'Investments',
+    },
+  },
+};
+
