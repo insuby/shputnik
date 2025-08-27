@@ -16,7 +16,7 @@ import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const BankCredit = () => {
   const { t } = useTranslation(['bankcredit']);
-  // Добавляем отдельные refs для каждого блока в секции "Настройте свой процесс"
+  // {t('comments.configureProcess')}
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
@@ -35,7 +35,7 @@ export const BankCredit = () => {
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
   const inView16 = useInView(ref16, { once: true, margin: '-100px' });
 
-  // Добавляем refs для секции "Автоматизация различных кредитных продуктов"
+  // {t('comments.automation')}
   const refAuto1 = useRef<HTMLDivElement>(null);
   const refAuto2 = useRef<HTMLDivElement>(null);
   const refAuto3 = useRef<HTMLDivElement>(null);
@@ -44,7 +44,7 @@ export const BankCredit = () => {
   const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-100px' });
   const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-100px' });
 
-  // Добавляем refs для секций "Система управления" и "Транзакции"
+  // {t('comments.systemTransactions')}
   const refSystem1 = useRef<HTMLDivElement>(null);
   const refSystem2 = useRef<HTMLDivElement>(null);
   const refSystem3 = useRef<HTMLDivElement>(null);
@@ -229,7 +229,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Финансы
+                    {t('navigation.finance')}
                   </div>
                 </div>
 
@@ -257,7 +257,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Кредитные карты
+                    {t('navigation.creditCards')}
                   </div>
                 </div>
 
@@ -285,7 +285,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Отчеты
+                    {t('navigation.reports')}
                   </div>
                 </div>
 
@@ -319,7 +319,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Бизнес
+                    {t('navigation.business')}
                   </div>
                 </div>
 
@@ -341,7 +341,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    Настройки
+                    {t('navigation.settings')}
                   </div>
                 </div>
               </div>
@@ -352,8 +352,13 @@ export const BankCredit = () => {
                 <div className="relative size-12 rounded-3xl [background:url(/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
                 <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
-                  <span className="leading-6 text-[#9ea7bb]">Привет,</span>
-                  <span className="leading-6 text-[#1c222f]"> Давид</span>
+                  <span className="leading-6 text-[#9ea7bb]">
+                    {t('user.greeting')}
+                  </span>
+                  <span className="leading-6 text-[#1c222f]">
+                    {' '}
+                    {t('user.name')}
+                  </span>
                 </p>
               </div>
 
@@ -362,14 +367,14 @@ export const BankCredit = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Рекомендуемый оффер
+                        {t('offers.recommended')}
                       </div>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Ставка
+                          {t('metrics.rate')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -379,7 +384,7 @@ export const BankCredit = () => {
 
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Заработок
+                          {t('metrics.earnings')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -389,11 +394,11 @@ export const BankCredit = () => {
 
                       <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                          Окупаемость
+                          {t('metrics.payback')}
                         </div>
 
                         <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          6 - 8 месяцев
+                          {t('metrics.paybackPeriod')}
                         </div>
                       </div>
                     </div>
@@ -404,7 +409,7 @@ export const BankCredit = () => {
                   <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Расходы
+                        {t('metrics.expenses')}
                       </div>
                     </div>
 
@@ -542,20 +547,20 @@ export const BankCredit = () => {
                               </div>
 
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                Иван Петров
+                                {t('loans.borrower')}
                               </div>
                             </div>
 
                             <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                                Погашен
+                                {t('loans.status.paid')}
                               </div>
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              2 месяца
+                              {t('loans.period')}
                             </div>
 
                             <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
@@ -576,20 +581,20 @@ export const BankCredit = () => {
                               </div>
 
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                Иван Петров
+                                {t('loans.borrower')}
                               </div>
                             </div>
 
                             <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-                                Рефинансирование
+                                {t('loans.status.refinancing')}
                               </div>
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              2 месяца
+                              {t('loans.period')}
                             </div>
 
                             <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
@@ -610,20 +615,20 @@ export const BankCredit = () => {
                               </div>
 
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                Иван Петров
+                                {t('loans.borrower')}
                               </div>
                             </div>
 
                             <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
-                                Просрочен
+                                {t('loans.status.overdue')}
                               </div>
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              2 месяца
+                              {t('loans.period')}
                             </div>
 
                             <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
@@ -648,7 +653,7 @@ export const BankCredit = () => {
                     variants={itemVariants}
                     className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                   >
-                    Система управления
+                    {t('management.title')}
                   </motion.div>
 
                   <motion.p
@@ -656,10 +661,7 @@ export const BankCredit = () => {
                     variants={fadeInUp}
                     className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
                   >
-                    Банки получают лёгкий доступ к атрибутам и параметрам
-                    кредита, связанным с ним транзакциям и графикам погашения в
-                    режиме реального времени с выплатами и начислением процентов
-                    с помощью универсальной системы управления кредитами.
+                    {t('management.description')}
                   </motion.p>
                 </motion.div>
               </div>
@@ -681,7 +683,7 @@ export const BankCredit = () => {
                   <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 md:left-7 md:top-[34px] md:w-[524px] md:scale-100">
                     <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
                       <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Выплаты
+                        {t('payments.title')}
                       </div>
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start gap-3 self-stretch">
@@ -709,37 +711,37 @@ export const BankCredit = () => {
 
                         <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
                           <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            Статус
+                            {t('payments.status')}
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              Принято
+                              {t('payments.status.accepted')}
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              Принято
+                              {t('payments.status.accepted')}
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
-                              Отклонено
+                              {t('payments.status.rejected')}
                             </div>
                           </div>
 
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
                             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              Принято
+                              {t('payments.status.accepted')}
                             </div>
                           </div>
                         </div>
 
                         <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
                           <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            Дата
+                            {t('payments.date')}
                           </div>
 
                           <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -761,7 +763,7 @@ export const BankCredit = () => {
 
                         <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
                           <div className="relative mt-[-0.75px] self-stretch text-right text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            Сумма
+                            {t('payments.amount')}
                           </div>
 
                           <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -796,17 +798,14 @@ export const BankCredit = () => {
                     variants={itemVariants}
                     className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                   >
-                    Транзакции
+                    {t('transactions.title')}
                   </motion.div>
 
                   <motion.p
                     variants={fadeInUp}
                     className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
                   >
-                    Список выплат и платёжных поручений со всеми данными,
-                    введёнными вручную или полученными от платёжного провайдера,
-                    помогает при автоматических выплатах, прямом дебетовании и
-                    других финансовых операциях.
+                    {t('transactions.description')}
                   </motion.p>
                 </motion.div>
               </div>
@@ -834,7 +833,7 @@ export const BankCredit = () => {
             variants={fadeInUp}
             className="relative mt-[-1.00px] self-stretch text-center text-[33px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Автоматизация различных кредитных продуктов
+            {t('automation.title')}
           </motion.div>
         </motion.div>
 
@@ -881,7 +880,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Потребительские кредиты
+                  {t('automation.products.consumer')}
                 </motion.div>
               </div>
             </motion.div>
@@ -902,7 +901,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Кредитная линия
+                  {t('automation.products.creditLine')}
                 </motion.div>
               </div>
             </motion.div>
@@ -926,7 +925,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Кредиты под залог имущества
+                  {t('automation.products.secured')}
                 </motion.div>
               </div>
             </motion.div>
@@ -943,7 +942,7 @@ export const BankCredit = () => {
                 />
 
                 <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Ипотечное кредитование
+                  {t('automation.products.mortgage')}
                 </div>
               </div>
             </motion.div>
@@ -961,9 +960,9 @@ export const BankCredit = () => {
           variants={fadeInUp}
           className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[832px] md:text-5xl md:leading-[60px]"
         >
-          Настройте свой процесс
+          {t('process.title')}
           <br />
-          принятия решения
+          {t('process.decision')}
         </motion.div>
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
@@ -1043,9 +1042,9 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Верификация
+                  {t('process.verification.title')}
                   <br />
-                  пользователя
+                  {t('process.verification.user')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1091,8 +1090,8 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Чёрный список
-                  <br />и стоп-факторы
+                  {t('process.blacklist.title')}
+                  {t('process.blacklist.stopFactors')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1117,9 +1116,9 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Обогащение
+                  {t('process.enrichment.title')}
                   <br />
-                  данных
+                  {t('process.enrichment.data')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1146,7 +1145,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Внутренняя, внешняя и итоговая скоринговая оценка
+                  {t('process.scoring')}
                 </motion.p>
               </div>
             </motion.div>
@@ -1171,7 +1170,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Подбор/предложение кредитного продукта
+                  {t('process.productSelection')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1196,7 +1195,7 @@ export const BankCredit = () => {
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Андеррайтинг
+                  {t('process.underwriting')}
                 </motion.div>
               </div>
             </motion.div>

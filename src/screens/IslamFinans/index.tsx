@@ -9,7 +9,6 @@ import { HeroButtons } from '../../components/ui/hero-buttons.tsx';
 import { Advantages } from '../../widgets/advantages.tsx';
 import { Analytics } from '../../widgets/analytics.tsx';
 import { EmployeeWork } from '../../widgets/employe-work.tsx';
-import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 import { Integrations } from '../../widgets/integrations.tsx';
 import { RoleStructure } from '../../widgets/role-structure.tsx';
@@ -19,11 +18,7 @@ import { ZaimChecker } from '../../widgets/zain-checker.tsx';
 
 export const IslamFinance = () => {
   const { t } = useTranslation(['islamfinance']);
-  const { setIsOpen } = useFeedbackForm();
 
-  const onClick = () => {
-    setIsOpen(true);
-  };
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -52,11 +47,6 @@ export const IslamFinance = () => {
 
   const marginValue = isMobile ? '-10px' : '-100px';
   const inView1 = useInView(ref1, { once: true, margin: marginValue });
-  const inView2 = useInView(ref2, { once: true, margin: marginValue });
-  const inView3 = useInView(ref3, { once: true, margin: marginValue });
-  const inView4 = useInView(ref4, { once: true, margin: marginValue });
-  const inView5 = useInView(ref5, { once: true, margin: marginValue });
-  const inView6 = useInView(ref6, { once: true, margin: marginValue });
   const inView7 = useInView(ref7, { once: true, margin: marginValue });
   const inView8 = useInView(ref8, { once: true, margin: marginValue });
   const inView9 = useInView(ref9, { once: true, margin: marginValue });

@@ -136,7 +136,7 @@ export const Development = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-                            {t('hero.title')}
+            {t('hero.title')}
           </div>
         </div>
 
@@ -155,8 +155,7 @@ export const Development = () => {
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                  {t('process.analysisDescription')}
-                  
+                  {t('process.analysisDescription')}
                 </p>
               </div>
             </div>
@@ -174,7 +173,7 @@ export const Development = () => {
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                  {t('process.mvp')}
+                  {t('process.mvp')}
                 </p>
               </div>
             </div>
@@ -192,9 +191,7 @@ export const Development = () => {
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Закладываем возможность масштабирования на раннем этапе
-                  создания системы. Развивайте продукт без кардинальных
-                  переработок.
+                  {t('process.scalabilityDescription')}
                 </p>
               </div>
             </div>
@@ -210,11 +207,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Кроссплатформенность
+                  {t('process.crossPlatform')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Приложение работает на всех популярных мобильных платформах.
+                  {t('process.crossPlatformDescription')}
                 </p>
               </div>
             </div>
@@ -228,12 +225,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Высокая нагрузка
+                  {t('process.highLoad')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Ваш сервис выдержит тысячи одновременных обращений
-                  пользователей.
+                  {t('process.highLoadDescription')}
                 </p>
               </div>
             </div>
@@ -247,13 +243,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Дизайн
+                  {t('process.design')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  Интерфейс соответствует <br />
-                  современным трендам мобильной разработки, а также гайдлайнам
-                  платформ Android и iOS.
+                  {t('process.designDescription')}
                 </p>
               </div>
             </div>
@@ -265,7 +259,7 @@ export const Development = () => {
         <div className="flex w-full  flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
           <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[496px]">
             <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
-              Разработаем платформы и решения для вашего бизнеса
+              {t('process.platforms')}
             </p>
 
             <button
@@ -273,7 +267,7 @@ export const Development = () => {
               className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                попробовать
+                {t('process.try')}
               </div>
             </button>
           </div>
@@ -356,8 +350,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Создаем системы под любые корпоративные задачи.
-                      Интегрируем сторонние сервисы.
+                      {t('solutions.title')}
                     </p>
                   </div>
                 </div>
@@ -390,7 +383,7 @@ export const Development = () => {
 
                             <div className="absolute left-[22px] top-[37px] inline-flex flex-col items-center">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                                Вся сумма
+                                {t('solutions.totalAmount')}
                               </div>
 
                               <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -427,9 +420,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Создаём и развиваем финансовые системы: от цифровых
-                      платёжных решений и CRM для банков и МФО — до
-                      аналитических платформ и scoring-сервисов.
+                      {t('solutions.financialSystems')}
                     </p>
                   </div>
                 </div>
@@ -455,10 +446,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Разрабатываем децентрализованные приложения,
-                      смарт-контракты и платформы для управления цифровыми
-                      активами. Интегрируем Web3 и обеспечиваем безопасность
-                      данных.
+                      {t('solutions.blockchain')}
                     </p>
                   </div>
                 </div>
@@ -482,7 +470,7 @@ export const Development = () => {
                         />
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          Выбор препаратов
+                          {t('solutions.drugSelection')}
                         </div>
                       </div>
 
@@ -500,7 +488,7 @@ export const Development = () => {
                         />
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          Оформление заказа
+                          {t('solutions.orderProcessing')}
                         </div>
                       </div>
                     </div>
@@ -512,10 +500,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Разрабатываем медицинские информационные системы, ЛК
-                      пациента, платформы для телемедицины и учёта истории
-                      лечения. Интегрируемся с ЕГИСЗ, БМИС и страховыми
-                      сервисами.
+                      {t('solutions.medical')}
                     </p>
                   </div>
                 </div>
@@ -541,9 +526,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Создаём решения для автоматизации маркетинга: CDP, системы
-                      аналитики, платформы управления кампаниями и
-                      персонализации коммуникаций.
+                      {t('solutions.marketing')}
                     </p>
                   </div>
                 </div>
@@ -617,7 +600,7 @@ export const Development = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-            С нами комфортно
+            {t('comfort.title')}
           </div>
         </div>
         <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 md:flex md:w-[1376px]">
@@ -629,11 +612,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                План работ
+                {t('comfort.workPlan')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                Составляем и показываем детализированный план работ по
-                разработке на старте проекта. Наши клиенты знают, за что платят.
+                {t('comfort.workPlanDescription')}
               </p>
             </div>
           </div>
@@ -645,11 +627,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                Команда
+                {t('comfort.team')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                Сформируем полноценную команду для разработки системы. Командой
-                руководит опытный проектный менеджер.
+                {t('comfort.teamDescription')}
               </p>
             </div>
           </div>
@@ -661,11 +642,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                Надежный партнер
+                {t('comfort.reliablePartner')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                Не бросаем проект на полпути. Сопровождаем и поддерживаем на
-                протяжении всего жизненного цикла.
+                {t('comfort.reliablePartnerDescription')}
               </p>
             </div>
           </div>

@@ -17,20 +17,21 @@ import ruHome from './locales/ru/home';
 import enHome from './locales/en/home';
 import ruBlog from './locales/ru/blog';
 import enBlog from './locales/en/blog';
-import ruBnpl from './locales/ru/bnpl';
-import enBnpl from './locales/en/bnpl';
+import { bnpl as ruBnpl } from './locales/ru/bnpl';
+import { bnpl as enBnpl } from './locales/en/bnpl';
 import { microcredit as ruMicrocredit } from './locales/ru/microcredit';
 import { microcredit as enMicrocredit } from './locales/en/microcredit';
-import ruBankcredit from './locales/ru/bankcredit';
-import enBankcredit from './locales/en/bankcredit';
+import { bankcredit as ruBankcredit } from './locales/ru/bankcredit';
+import { bankcredit as enBankcredit } from './locales/en/bankcredit';
+import { p2p as ruP2p } from './locales/ru/p2p';
+import { p2p as enP2p } from './locales/en/p2p';
 import { autocredit as ruAutocredit } from './locales/ru/autocredit';
 import { autocredit as enAutocredit } from './locales/en/autocredit';
-import ruP2p from './locales/ru/p2p';
-import enP2p from './locales/en/p2p';
+
 import { islamfinance as ruIslamfinance } from './locales/ru/islamfinance';
 import { islamfinance as enIslamfinance } from './locales/en/islamfinance';
-import ruDataunload from './locales/ru/dataunload';
-import enDataunload from './locales/en/dataunload';
+import { dataunload as ruDataunload } from './locales/ru/dataunload';
+import { dataunload as enDataunload } from './locales/en/dataunload';
 import { fdata as ruFdata } from './locales/ru/fdata';
 import { fdata as enFdata } from './locales/en/fdata';
 import { development as ruDevelopment } from './locales/ru/development';
@@ -43,6 +44,8 @@ import { privacy as ruPrivacy } from './locales/ru/privacy';
 import { privacy as enPrivacy } from './locales/en/privacy';
 import { reviews as ruReviews } from './locales/ru/reviews';
 import { reviews as enReviews } from './locales/en/reviews';
+import { work as ruWork } from './locales/ru/work';
+import { work as enWork } from './locales/en/work';
 
 export const resources = {
   ru: {
@@ -56,8 +59,8 @@ export const resources = {
     bnpl: ruBnpl,
     microcredit: ruMicrocredit,
     bankcredit: ruBankcredit,
-    autocredit: ruAutocredit,
     p2p: ruP2p,
+    autocredit: ruAutocredit,
     islamfinance: ruIslamfinance,
     dataunload: ruDataunload,
     fdata: ruFdata,
@@ -66,6 +69,7 @@ export const resources = {
     businesscredit: ruBusinesscredit,
     privacy: ruPrivacy,
     reviews: ruReviews,
+    work: ruWork,
   },
   en: {
     common: enCommon,
@@ -78,8 +82,8 @@ export const resources = {
     bnpl: enBnpl,
     microcredit: enMicrocredit,
     bankcredit: enBankcredit,
-    autocredit: enAutocredit,
     p2p: enP2p,
+    autocredit: enAutocredit,
     islamfinance: enIslamfinance,
     dataunload: enDataunload,
     fdata: enFdata,
@@ -88,6 +92,7 @@ export const resources = {
     businesscredit: enBusinesscredit,
     privacy: enPrivacy,
     reviews: enReviews,
+    work: enWork,
   },
 } as const;
 
@@ -99,7 +104,7 @@ i18n
     fallbackLng: 'ru',
     supportedLngs: ['ru', 'en'],
     defaultNS: 'common',
-    ns: ['common', 'nav', 'footer', 'about', 'megamenu', 'home', 'blog', 'bnpl', 'microcredit', 'bankcredit', 'autocredit', 'p2p', 'islamfinance', 'dataunload', 'fdata', 'development', 'mobile', 'businesscredit', 'privacy', 'reviews'],
+    ns: ['common', 'nav', 'footer', 'about', 'megamenu', 'home', 'blog', 'bnpl', 'microcredit', 'bankcredit', 'autocredit', 'p2p', 'islamfinance', 'dataunload', 'fdata', 'development', 'mobile', 'businesscredit', 'privacy', 'reviews', 'work'],
     interpolation: { escapeValue: false },
     detection: {
       order: ['querystring', 'localStorage', 'navigator'],

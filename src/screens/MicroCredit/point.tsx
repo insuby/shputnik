@@ -10,7 +10,7 @@ export const Point = ({
   state,
   className,
   divClassName,
-  text = 'О компании',
+  text = t('about'),
   divClassNameOverride,
 }: Props): JSX.Element => {
   return (

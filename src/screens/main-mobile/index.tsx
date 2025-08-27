@@ -91,7 +91,7 @@ export const MainMobile = () => {
                                         className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[13.57px] self-stretch px-[10.86px] pb-[10.86px] pt-[8.14px]">
                                         <div
                                             className="relative mt-[-0.68px] self-stretch text-[16.3px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                            Оформить заявку
+                                            {t("application.submit")}
                                         </div>
 
                                         <div
@@ -143,7 +143,7 @@ export const MainMobile = () => {
                                             className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
                                             <div
                                                 className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                                Сумма
+                                                {t("application.amount")}
                                             </div>
 
                                             <div
@@ -156,12 +156,12 @@ export const MainMobile = () => {
                                             className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
                                             <div
                                                 className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                                Срок
+                                                {t("application.term")}
                                             </div>
 
                                             <div
                                                 className="relative mr-[-0.23px] w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                                14 дней
+                                                {t("application.termValue")}
                                             </div>
                                         </div>
 
@@ -169,7 +169,7 @@ export const MainMobile = () => {
                                             className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
                                             <div
                                                 className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                                Ставка
+                                                {t("application.rate")}
                                             </div>
 
                                             <div
@@ -184,7 +184,7 @@ export const MainMobile = () => {
                                     className="relative flex h-[32.57px] w-full items-center justify-center gap-[21.71px] self-stretch rounded-[16.28px] bg-gray-90 px-[21.71px] py-[8.14px]">
                                     <div
                                         className="relative mt-[-0.68px] w-full md:w-[111.27px] self-stretch whitespace-nowrap text-center text-[10.9px] font-medium leading-[16.3px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                                        Оформить займ
+                                        {t("application.submitLoan")}
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +218,7 @@ export const MainMobile = () => {
                                                     className="absolute left-[22px] top-[41px] inline-flex h-[42px] flex-col items-center gap-[1.36px]">
                                                     <div
                                                         className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                                                        Вся сумма
+                                                        {t("balance.total")}
                                                     </div>
 
                                                     <div
@@ -250,7 +250,7 @@ export const MainMobile = () => {
 
                                         <div
                                             className="relative mt-[-0.68px] w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                            Текущее
+                                            {t("balance.current")}
                                         </div>
 
                                         <div
@@ -264,7 +264,7 @@ export const MainMobile = () => {
 
                                         <div
                                             className="relative mt-[-0.68px] w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                            Основная
+                                            {t("balance.principal")}
                                         </div>
 
                                         <div
@@ -278,7 +278,7 @@ export const MainMobile = () => {
 
                                         <div
                                             className="relative mt-[-0.68px] w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                            Проценты
+                                            {t("balance.interest")}
                                         </div>
 
                                         <div
@@ -292,7 +292,7 @@ export const MainMobile = () => {
 
                                         <div
                                             className="relative mt-[-0.68px] w-full md:w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                                            Штраф
+                                            {t("balance.penalty")}
                                         </div>
 
                                         <div
@@ -329,7 +329,7 @@ export const MainMobile = () => {
                             className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                             <div
                                 className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
-                                Подробнее
+                                {t("products.microfinance.more")}
                             </div>
 
                             <img
@@ -345,7 +345,7 @@ export const MainMobile = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-9 self-stretch p-4">
                 <div
                     className="relative mt-[-1.00px] self-stretch text-4xl font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Классическое кредитование
+                    {t("products.classic.title")}
                 </div>
 
                 <div
@@ -370,7 +370,7 @@ export const MainMobile = () => {
                                     className="relative flex w-full md:w-[289px] flex-col items-start gap-[17.55px] bg-[#ffffff] p-[21.94px]">
                                     <div
                                         className="relative mt-[-0.55px] self-stretch text-[17.5px] font-medium leading-[21.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                        Калькулятор
+                                        {t("products.classic.calculator")}
                                     </div>
 
                                     <div
@@ -378,12 +378,12 @@ export const MainMobile = () => {
                                         <div className="relative flex flex-1 grow flex-col items-start gap-[1.1px]">
                                             <div
                                                 className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                Дилер
+                                                {t("products.classic.dealer")}
                                             </div>
 
                                             <div
                                                 className="relative self-stretch text-[11px] font-normal leading-[15.4px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                                Макс Моторс
+                                                {t("products.classic.dealerName")}
                                             </div>
                                         </div>
 
@@ -401,7 +401,7 @@ export const MainMobile = () => {
                                                 className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[5.48px] rounded-[54.84px] bg-gray-90 px-[10.97px] py-[5.48px]">
                                                 <div
                                                     className="relative mt-[-0.55px] w-fit whitespace-nowrap text-[11px] font-normal leading-[15.4px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                                                    Новая
+                                                    {t("products.classic.new")}
                                                 </div>
                                             </div>
 
@@ -409,7 +409,7 @@ export const MainMobile = () => {
                                                 className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[5.48px] rounded-[54.84px] bg-[#f7f9ff] px-[10.97px] py-[5.48px]">
                                                 <div
                                                     className="relative mt-[-0.55px] w-fit whitespace-nowrap text-[11px] font-normal leading-[15.4px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                                    Подержанная
+                                                    {t("products.classic.used")}
                                                 </div>
                                             </div>
                                         </div>
@@ -419,7 +419,7 @@ export const MainMobile = () => {
                                                 className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[5.48px] rounded-[54.84px] bg-[#f7f9ff] px-[10.97px] py-[5.48px]">
                                                 <div
                                                     className="relative mt-[-0.55px] w-fit whitespace-nowrap text-[11px] font-normal leading-[15.4px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                                                    С залогом
+                                                    {t("products.classic.withCollateral")}
                                                 </div>
                                             </div>
 
@@ -427,7 +427,7 @@ export const MainMobile = () => {
                                                 className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[5.48px] rounded-[54.84px] bg-gray-90 px-[10.97px] py-[5.48px]">
                                                 <div
                                                     className="relative mt-[-0.55px] w-fit whitespace-nowrap text-[11px] font-normal leading-[15.4px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                                                    Без залога
+                                                    {t("products.classic.withoutCollateral")}
                                                 </div>
                                             </div>
                                         </div>
@@ -535,7 +535,7 @@ export const MainMobile = () => {
                                                 className="relative my-[-0.34px] flex flex-1 grow flex-col items-start gap-[1.1px]">
                                                 <div
                                                     className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                    Срок (месяцы)
+                                                    {t("application.term")} (месяцы)
                                                 </div>
 
                                                 <div
@@ -620,7 +620,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Сумма
+                                                            {t("application.amount")}
                                                         </div>
 
                                                         <div
@@ -633,7 +633,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Ставка
+                                                            {t("application.rate")}
                                                         </div>
 
                                                         <div
@@ -676,7 +676,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Сумма
+                                                            {t("application.amount")}
                                                         </div>
 
                                                         <div
@@ -689,7 +689,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Ставка
+                                                            {t("application.rate")}
                                                         </div>
 
                                                         <div
@@ -732,7 +732,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[66.9px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Сумма
+                                                            {t("application.amount")}
                                                         </div>
 
                                                         <div
@@ -745,7 +745,7 @@ export const MainMobile = () => {
                                                         className="relative flex w-full md:w-[43.87px] flex-col items-start gap-[1.1px]">
                                                         <div
                                                             className="relative mt-[-0.55px] self-stretch text-[7.7px] font-normal leading-[11.0px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                                                            Ставка
+                                                            {t("application.rate")}
                                                         </div>
 
                                                         <div
@@ -789,7 +789,7 @@ export const MainMobile = () => {
                                 <div
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img
@@ -821,7 +821,7 @@ export const MainMobile = () => {
                                     onClick={onClick}
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img
@@ -853,7 +853,7 @@ export const MainMobile = () => {
                                     onClick={onClick}
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img
@@ -907,7 +907,7 @@ export const MainMobile = () => {
                                     onClick={onClick}
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img
@@ -940,7 +940,7 @@ export const MainMobile = () => {
                                     onClick={onClick}
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img
@@ -972,7 +972,7 @@ export const MainMobile = () => {
                                     onClick={onClick}
                                     className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                                 >
-                                    Подробнее
+                                    {t("products.microfinance.more")}
                                 </div>
 
                                 <img

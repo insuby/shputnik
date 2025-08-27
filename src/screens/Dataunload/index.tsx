@@ -204,7 +204,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Скоринг бюро
+                        {t('bureaus.scoring')}
                       </div>
 
                       <img
@@ -232,7 +232,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        ОКБ
+                        {t('bureaus.okb')}
                       </div>
 
                       <img
@@ -260,7 +260,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        НБКИ
+                        {t('bureaus.nbki')}
                       </div>
 
                       <img
@@ -291,7 +291,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Преимущества
+            {t('advantages.title')}
           </motion.div>
 
           <motion.p
@@ -301,8 +301,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
           >
-            Система автоматически сконвертирует данные для отправки в кредитные
-            бюро с учетом актуальных требований.
+            {t('advantages.description')}
           </motion.p>
         </motion.div>
 
@@ -338,7 +337,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Единый формат обмена
+                {t('advantages.unifiedFormat.title')}
               </motion.div>
 
               <motion.p
@@ -348,8 +347,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                Загружая файл одного формата вы <br />
-                выгружаете данные во все кредитные бюро.
+                {t('advantages.unifiedFormat.description')}
               </motion.p>
             </div>
           </motion.div>
@@ -379,7 +377,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Удобное решение
+                {t('advantages.convenientSolution.title')}
               </motion.div>
 
               <motion.p
@@ -389,8 +387,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                Программа позволяет выгружать данные как файлом, так и через
-                АРІ.
+                {t('advantages.convenientSolution.description')}
               </motion.p>
             </div>
           </motion.div>
@@ -420,7 +417,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.4 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Регулярные обновления
+                {t('advantages.regularUpdates.title')}
               </motion.div>
 
               <motion.p
@@ -430,8 +427,7 @@ export const Dataunload = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.5 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                Программа регулярно обновляется, вам не потребуется следить за
-                изменениями формата обмена.
+                {t('advantages.regularUpdates.description')}
               </motion.p>
             </div>
           </motion.div>
@@ -452,7 +448,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
           >
-            Функциональные возможности
+            {t('features.title')}
           </motion.div>
         </motion.div>
 
@@ -473,7 +469,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Контроль
+                  {t('features.control.title')}
                 </motion.div>
 
                 <motion.p
@@ -483,8 +479,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Контролируйте статус вашей загрузки, получило ли конкретное
-                  кредитное бюро ваши данные.
+                  {t('features.control.description')}
                 </motion.p>
               </motion.div>
 
@@ -502,7 +497,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Актуальные данные
+                  {t('features.actualData.title')}
                 </motion.div>
 
                 <motion.p
@@ -512,8 +507,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Как прошла выгрузка, есть ли в ней ошибки и если есть то
-                  какие.
+                  {t('features.actualData.description')}
                 </motion.p>
               </motion.div>
 
@@ -531,7 +525,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Экономия времени
+                  {t('features.timeSaving.title')}
                 </motion.div>
 
                 <motion.p
@@ -541,8 +535,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Используя данный интерфейс, вы существенно сокращаете время на
-                  процедуру выгрузки данных в КБ.
+                  {t('features.timeSaving.description')}
                 </motion.p>
               </motion.div>
 
@@ -560,7 +553,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Автоматизация процессов
+                  {t('features.processAutomation.title')}
                 </motion.div>
 
                 <motion.p
@@ -570,9 +563,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Настраивайте автоматическую выгрузку во все кредитные бюро раз
-                  в 5 дней, и вам не потребуется дальше контролировать процедуру
-                  выгрузки.
+                  {t('features.processAutomation.description')}
                 </motion.p>
               </motion.div>
             </div>
@@ -633,7 +624,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
                   className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[520px]"
                 >
-                  Выгрузка во все КБ
+                  {t('export.title')}
                 </motion.div>
 
                 <motion.p
@@ -643,9 +634,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  Программа позволяет выгружать данные <br />
-                  через API и интерфейс в четыре кредитных <br />
-                  бюро.
+                  {t('export.description')}
                 </motion.p>
               </div>
 
@@ -660,7 +649,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Эквифакс
+                    {t('export.bureaus.equifax')}
                   </div>
                 </div>
 
@@ -674,7 +663,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    ОКБ
+                    {t('export.bureaus.okb')}
                   </div>
                 </div>
 
@@ -688,7 +677,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    НБКИ
+                    {t('export.bureaus.nbki')}
                   </div>
                 </div>
               </div>
@@ -727,7 +716,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  Стоимость использования
+                  {t('pricing.title')}
                 </motion.div>
 
                 <motion.p
@@ -737,7 +726,7 @@ export const Dataunload = () => {
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   <span className="text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Программа поставляется в формате{' '}
+                    {t('pricing.description')}
                   </span>
 
                   <a
@@ -748,10 +737,7 @@ export const Dataunload = () => {
                     <span className="underline">SAAS</span>
                   </a>
 
-                  <span className="text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    {'  '}без любых дополнительных платежей за настройку или
-                    лицензию.
-                  </span>
+                  <span className="text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"></span>
                 </motion.p>
               </div>
 
@@ -766,7 +752,7 @@ export const Dataunload = () => {
                   </div>
 
                   <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Платите только тогда, когда пользуетесь программой
+                    {t('pricing.payOnly')}
                   </p>
                 </div>
               </div>
@@ -774,11 +760,11 @@ export const Dataunload = () => {
 
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                за 30 000 ₽
+                {t('pricing.price')}
               </div>
 
               <div className="relative w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                /месяц
+                {t('pricing.perMonth')}
               </div>
             </div>
           </motion.div>
@@ -806,7 +792,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
               className="relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
             >
-              Воспользоваться сервисом
+              {t('cta.button')}
             </motion.div>
 
             <motion.p
@@ -815,8 +801,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
               className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica] md:w-[752px]"
             >
-              Программа регулярно обновляет формат обмена в соответствие <br />с
-              актуальными требованиями каждого КБ.
+              {t('cta.description')}
             </motion.p>
           </div>
 
@@ -825,7 +810,7 @@ export const Dataunload = () => {
             className="all-[unset] relative mt-3 box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:mt-0 md:w-fit"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Связаться с нами
+              {t('contact')}
             </div>
           </button>
         </motion.div>
