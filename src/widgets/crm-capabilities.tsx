@@ -1,8 +1,10 @@
 import {motion, useInView} from "framer-motion";
 import {useRef} from "react";
+import {useTranslation} from "react-i18next";
 import {useFeedbackForm} from "./feedback-form";
 
 export const CrmCapabilities = () => {
+    const { t } = useTranslation('widgets');
     const ref = useRef<HTMLDivElement>(null);
     const inView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -28,13 +30,11 @@ export const CrmCapabilities = () => {
 
             <div className="relative flex flex-1 grow flex-col items-start gap-3">
                 <div className="relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                    Возможности CRM
+                    {t('crmCapabilities.title')}
                 </div>
 
                 <p className="relative w-full md:w-[752px] text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica]">
-                    Сохранение информации о коммуникациях и действиях в системе,
-                    автоматизация стратегии взаимодействия с клиентом, интеграция
-                    дополнительных сервисов для повышения продаж
+                    {t('crmCapabilities.subtitle')}
                 </p>
             </div>
 
@@ -43,7 +43,7 @@ export const CrmCapabilities = () => {
                 className="all-[unset] relative box-border w-full md:w-fit inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90"
             >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Демонстрация
+                    {t('crmCapabilities.demo')}
                 </div>
             </button>
         </motion.div>

@@ -1,5 +1,6 @@
 import { Marquee } from '@devnomic/marquee';
 import { motion, useInView } from 'framer-motion';
+
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -228,7 +229,7 @@ export const BNPL = () => {
               <div className="relative left-[7px] top-[7px] size-[198px]">
                 <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                    {t("balance.currentBalance")}
+                    {t('balance.currentBalance')}
                   </div>
 
                   <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -249,7 +250,7 @@ export const BNPL = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-between md:w-[180px]">
                 <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                  {t("balance.loanAmount")}
+                  {t('balance.loanAmount')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -259,7 +260,7 @@ export const BNPL = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                 <div className="relative flex-1 text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                  {t("balance.interest")}
+                  {t('balance.interest')}
                 </div>
 
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -286,7 +287,7 @@ export const BNPL = () => {
           className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
         >
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-            {t("suitableFor")}
+            {t('suitableFor')}
           </div>
         </motion.div>
 
@@ -336,7 +337,7 @@ export const BNPL = () => {
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                {t("description.pos")}
+                {t('description.pos')}
               </div>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -369,7 +370,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              {t("process.bnpl")}
+              {t('process.bnpl')}
             </motion.div>
 
             <motion.div
@@ -379,7 +380,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               className="relativew-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              Готовое программное обеспечения для BNPL-сценария
+              {t('process.title')}
             </motion.div>
           </div>
 
@@ -390,8 +391,7 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[500px]"
           >
-            Предоставьте партнёрским магазинам и точкам продаж возможность
-            подключать рассрочку — с помощью настраиваемого нашего BNPL-софта.
+            {t('integration')}
           </motion.p>
         </motion.div>
 
@@ -411,7 +411,7 @@ export const BNPL = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                       <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t("products.headphones1")}
+                        {t('products.headphones1')}
                       </div>
 
                       <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -427,7 +427,7 @@ export const BNPL = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                       <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t("products.headphones2")}
+                        {t('products.headphones2')}
                       </div>
 
                       <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -443,7 +443,7 @@ export const BNPL = () => {
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                       <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t("products.headphones2")}
+                        {t('products.headphones2')}
                       </div>
 
                       <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -478,7 +478,7 @@ export const BNPL = () => {
                 className="relative flex flex-1 grow flex-col items-start gap-5 p-3"
               >
                 <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                  {t("products.headphones1")}
+                  {t('products.headphones1')}
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -490,7 +490,7 @@ export const BNPL = () => {
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t("form.cost")}
+                      {t('form.cost')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -512,7 +512,7 @@ export const BNPL = () => {
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t("form.advancePayment")}
+                      {t('form.advancePayment')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -534,11 +534,11 @@ export const BNPL = () => {
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t("form.term")}
+                      {t('form.term')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      {t("form.termValue")}
+                      {t('form.termValue')}
                     </div>
                   </motion.div>
 
@@ -556,7 +556,7 @@ export const BNPL = () => {
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t("form.nextPayment")}
+                      {t('form.nextPayment')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -578,11 +578,11 @@ export const BNPL = () => {
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t("form.date")}
+                      {t('form.date')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      {t("form.dateValue")}
+                      {t('form.dateValue')}
                     </div>
                   </motion.div>
                 </div>
@@ -596,7 +596,7 @@ export const BNPL = () => {
                   className="all-[unset] relative box-border flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-gray-90 px-6 py-3"
                 >
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-semibold leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                    {t("form.payFullAmount")}
+                    {t('form.payFullAmount')}
                   </div>
                 </motion.button>
               </motion.div>
@@ -619,7 +619,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
               className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              {t("process.pos")}
+              {t('process.pos')}
             </motion.div>
 
             <motion.p
@@ -629,7 +629,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="relativew-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              Готовое программное обеспечения для PoS-сценария
+              {t('process.posTitle')}
             </motion.p>
           </div>
 
@@ -659,7 +659,7 @@ export const BNPL = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
           className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
         >
-          {t("parameters.title")}
+          {t('parameters.title')}
         </motion.div>
 
         <motion.div
@@ -708,7 +708,7 @@ export const BNPL = () => {
             </motion.div>
 
             <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t("parameters.personalInfo")}
+              {t('parameters.personalInfo')}
             </div>
           </motion.div>
 
@@ -758,7 +758,7 @@ export const BNPL = () => {
             </motion.div>
 
             <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t("parameters.history")}
+              {t('parameters.history')}
             </div>
           </motion.div>
 
@@ -808,7 +808,7 @@ export const BNPL = () => {
             </motion.div>
 
             <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t("parameters.thirdPartyData")}
+              {t('parameters.thirdPartyData')}
             </div>
           </motion.div>
 
@@ -851,7 +851,7 @@ export const BNPL = () => {
             </motion.div>
 
             <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t("parameters.documentCheck")}
+              {t('parameters.documentCheck')}
             </div>
           </motion.div>
         </motion.div>
@@ -879,7 +879,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="relative mt-[-1.00px] self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
             >
-              {t("backoffice.title")}
+              {t('backoffice.title')}
             </motion.div>
 
             <motion.p
@@ -889,8 +889,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               className="relativew-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[530px] md:text-5xl md:leading-[60px]"
             >
-              Управляйте <br />
-              всеми платежами <br />в одном месте
+              {t('posIntegration.managePayments')}
             </motion.p>
           </div>
 
@@ -901,10 +900,7 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
           >
-            Мониторинг и управление каждым приложением с единой панели
-            управления. Этот централизованный контроль упрощает отслеживание
-            планов рассрочки atl, обеспечивая эффективную работу и оптимальное
-            финансовое управление.
+            {t('backoffice.description')}
           </motion.p>
         </motion.div>
 
@@ -917,9 +913,9 @@ export const BNPL = () => {
         >
           <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
             <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              <span className="text-[#1c222f]">Ваш</span>
+              <span className="text-[#1c222f]">{t('app.title')}</span>
 
-              <span className="text-[#00cb82]">Лого</span>
+              <span className="text-[#00cb82]">{t('app.titleHighlight')}</span>
             </p>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
@@ -933,7 +929,7 @@ export const BNPL = () => {
                 </div>
 
                 <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                  {t("app.main")}
+                  {t('app.main')}
                 </div>
               </div>
 
@@ -961,7 +957,7 @@ export const BNPL = () => {
                 </div>
 
                 <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  {t("app.applications")}
+                  {t('app.applications')}
                 </div>
               </div>
 
@@ -989,7 +985,7 @@ export const BNPL = () => {
                 </div>
 
                 <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                  {t("app.clients")}
+                  {t('app.clients')}
                 </div>
               </div>
 
@@ -1011,7 +1007,7 @@ export const BNPL = () => {
                 </div>
 
                 <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                  {t("app.reports")}
+                  {t('app.reports')}
                 </div>
               </div>
             </div>
@@ -1022,9 +1018,14 @@ export const BNPL = () => {
               <div className="relative size-12 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
               <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
-                <span className="leading-6 text-[#9ea7bb]">{t("app.greeting")}</span>
+                <span className="leading-6 text-[#9ea7bb]">
+                  {t('app.greeting')}
+                </span>
 
-                <span className="leading-6 text-[#1c222f]"> {t("app.userName")}</span>
+                <span className="leading-6 text-[#1c222f]">
+                  {' '}
+                  {t('app.userName')}
+                </span>
               </p>
             </div>
 
@@ -1033,12 +1034,12 @@ export const BNPL = () => {
                 <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t("installment.id")}
+                      {t('installment.id')}
                     </div>
 
                     <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                        {t("installment.status")}
+                        {t('installment.status')}
                       </div>
                     </div>
                   </div>
@@ -1046,7 +1047,7 @@ export const BNPL = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
                     <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                        {t("form.cost")}
+                        {t('form.cost')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1056,7 +1057,7 @@ export const BNPL = () => {
 
                     <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                        {t("form.advancePayment")}
+                        {t('form.advancePayment')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1066,17 +1067,17 @@ export const BNPL = () => {
 
                     <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                        {t("form.term")}
+                        {t('form.term')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t("form.termValue")}
+                        {t('form.termValue')}
                       </div>
                     </div>
 
                     <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
                       <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                        {t("form.nextPayment")}
+                        {t('form.nextPayment')}
                       </div>
 
                       <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1091,7 +1092,7 @@ export const BNPL = () => {
                 <div className="relative flex flex-1 grow flex-col items-start gap-3">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
                     <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                      {t("installment.details")}
+                      {t('installment.details')}
                     </div>
                   </div>
 
@@ -1099,7 +1100,7 @@ export const BNPL = () => {
                     <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("form.cost")}
+                          {t('form.cost')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1115,7 +1116,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.interestRate")}
+                          {t('installment.interestRate')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1131,11 +1132,11 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
-                          {t("form.term")}
+                          {t('form.term')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                          {t("form.termValue")}
+                          {t('form.termValue')}
                         </div>
                       </div>
 
@@ -1147,7 +1148,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.accountBalance")}
+                          {t('installment.accountBalance')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1163,7 +1164,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.overduePrincipal")}
+                          {t('installment.overduePrincipal')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1179,7 +1180,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.overduePayment")}
+                          {t('installment.overduePayment')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1191,7 +1192,7 @@ export const BNPL = () => {
                     <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("form.date")} окончания рассрочки
+                          {t('form.installmentEndDate')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1207,7 +1208,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("form.date")} следующего платежа
+                          {t('form.nextPaymentDate')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1223,11 +1224,11 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.productName")}
+                          {t('installment.productName')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                          {t("installment.headphones")}
+                          {t('installment.headphones')}
                         </div>
                       </div>
 
@@ -1239,11 +1240,11 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t("installment.loan")}
+                          {t('installment.loan')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                          {t("installment.first")}
+                          {t('installment.first')}
                         </div>
                       </div>
 
@@ -1274,7 +1275,7 @@ export const BNPL = () => {
 
               <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
                 <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] md:w-[293px]">
-                  {t("social.title")}
+                  {t('social.title')}
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 md:w-[293px]">
@@ -1284,7 +1285,7 @@ export const BNPL = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t("parameters.personalInfo")}
+                      {t('parameters.personalInfo')}
                     </div>
                   </div>
 
@@ -1294,7 +1295,7 @@ export const BNPL = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t("social.bankAndAddress")}
+                      {t('social.bankAndAddress')}
                     </div>
                   </div>
 
@@ -1304,7 +1305,7 @@ export const BNPL = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t("social.bankAndAddress")}
+                      {t('social.bankAndAddress')}
                     </div>
                   </div>
 
@@ -1314,7 +1315,7 @@ export const BNPL = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t("social.documents")}
+                      {t('social.documents')}
                     </div>
                   </div>
                 </div>
@@ -1357,7 +1358,7 @@ export const BNPL = () => {
               </div>
 
               <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                {t("verification.creditHistory")}
+                {t('verification.creditHistory')}
               </div>
             </div>
 
@@ -1389,7 +1390,7 @@ export const BNPL = () => {
               </div>
 
               <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                {t("verification.applicationApproval")}
+                {t('verification.applicationApproval')}
               </div>
             </div>
           </div>
@@ -1397,8 +1398,7 @@ export const BNPL = () => {
 
         <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
           <p className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] md:w-[480px]">
-            Многофункциональный <br />
-            бэк-офис для кредитных менеджеров
+            {t('backoffice.title')}
           </p>
 
           <img
@@ -1409,14 +1409,11 @@ export const BNPL = () => {
 
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] md:w-[500px]">
-              Автоматизированное принятие решений
+              {t('automation.title')}
             </div>
 
             <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[500px]">
-              Программное обеспечение Buy Now Pay Later устраняет ручные
-              процессы, специальные запросы и бумажные следы. Получите единый
-              плавный автоматизированный рабочий процесс, который отвечает
-              потребностям заемщиков* и повышает операционную эффективность.
+              {t('automation.description')}
             </p>
           </div>
         </div>

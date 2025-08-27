@@ -30,4 +30,4 @@ export default {
   point: {
     aboutCompany: 'About company',
   },
-}; 
+};

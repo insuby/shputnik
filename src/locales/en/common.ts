@@ -10,4 +10,3 @@ export const common = {
   },
   skipToContent: 'Skip to content',
 };
-

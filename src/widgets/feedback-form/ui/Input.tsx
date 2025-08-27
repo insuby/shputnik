@@ -8,8 +8,8 @@ interface Props {
 export const Input = ({
   state,
   className,
-  text = 'Имя',
-  text1 = 'Привет|',
+  text = '',
+  text1 = '',
 }: Props): JSX.Element => {
   return (
     <div

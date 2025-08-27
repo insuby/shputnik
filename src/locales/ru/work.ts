@@ -92,4 +92,4 @@ export const work = {
     conditions: 'Условия',
   },
   apply: 'Откликнуться',
-}; 
+};

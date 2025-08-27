@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 export const Graph = ({ sum = '42,000 ' }) => {
+  const { t } = useTranslation('components');
+  
   return (
     <div className="relative ml-[-4.00px] inline-flex flex-[0_0_auto] flex-col items-start gap-2.5 px-3 py-0">
       <div className="relative size-[184px]">
@@ -18,7 +22,7 @@ export const Graph = ({ sum = '42,000 ' }) => {
 
             <div className="absolute left-[39px] top-[61px] inline-flex h-[62px] flex-col items-center gap-0.5">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                Вся сумма
+                {t('graph.totalAmount')}
               </div>
 
               <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">

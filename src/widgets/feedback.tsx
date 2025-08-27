@@ -1,10 +1,12 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
 import { useFeedbackForm } from './feedback-form';
 
 export const Feedback = () => {
+  const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
 
   const ref1 = useRef(null);
@@ -77,7 +79,7 @@ export const Feedback = () => {
               transition={{ duration: 0.8, ease: 'easeOut' }}
               className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
             >
-              Попробуйте, вам понравится!
+              {t('feedback.title')}
             </motion.div>
 
             <motion.p
@@ -87,8 +89,7 @@ export const Feedback = () => {
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
               className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white opacity-60 [font-family:'Roboto',Helvetica]"
             >
-              Оставьте заявку на демонстрацию — мы покажем, как работает
-              платформа и ответим на ваши вопросы
+              {t('feedback.subtitle')}
             </motion.p>
           </div>
 
@@ -101,7 +102,7 @@ export const Feedback = () => {
             className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Связаться с нами
+              {t('feedback.contactButton')}
             </div>
           </motion.button>
         </div>
@@ -121,7 +122,7 @@ export const Feedback = () => {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
               className="relative mt-[-1.00px] w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
-              График платежей
+              {t('feedback.paymentSchedule')}
             </motion.div>
 
             <motion.div
@@ -131,7 +132,7 @@ export const Feedback = () => {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
               className="relativew-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]"
             >
-              Договор: 12345456322
+              {t('feedback.contract')}
             </motion.div>
           </div>
 
@@ -152,7 +153,7 @@ export const Feedback = () => {
               <div className="relative h-[76px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                март
+                {t('feedback.months.march')}
               </div>
             </motion.div>
 
@@ -166,7 +167,7 @@ export const Feedback = () => {
               <div className="relative h-[86px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                апр
+                {t('feedback.months.april')}
               </div>
             </motion.div>
 
@@ -180,7 +181,7 @@ export const Feedback = () => {
               <div className="relative h-[105px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                май
+                {t('feedback.months.may')}
               </div>
             </motion.div>
 
@@ -194,7 +195,7 @@ export const Feedback = () => {
               <div className="relative h-[120px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                июнь
+                {t('feedback.months.june')}
               </div>
             </motion.div>
 
@@ -208,7 +209,7 @@ export const Feedback = () => {
               <div className="relative h-[91px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                июль
+                {t('feedback.months.july')}
               </div>
             </motion.div>
 
@@ -222,7 +223,7 @@ export const Feedback = () => {
               <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
               <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                авг
+                {t('feedback.months.august')}
               </div>
             </motion.div>
           </motion.div>
@@ -273,7 +274,7 @@ export const Feedback = () => {
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                   className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
                 >
-                  Текущий остаток
+                  {t('feedback.currentBalance')}
                 </motion.div>
 
                 <motion.div
@@ -311,7 +312,7 @@ export const Feedback = () => {
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
               className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
             >
-              Сумма займа
+              {t('feedback.loanAmount')}
             </motion.div>
 
             <motion.div

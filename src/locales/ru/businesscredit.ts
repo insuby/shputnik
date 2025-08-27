@@ -12,4 +12,4 @@ export const businesscredit = {
     paybackPeriod: '6 - 8 месяцев',
     personalOffer: 'Персональное предложение',
   },
-}; 
+};

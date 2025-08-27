@@ -1,4 +1,5 @@
 import {motion, useInView} from 'framer-motion';
+import {useTranslation} from 'react-i18next';
 
 import {useRef} from 'react';
 
@@ -8,6 +9,7 @@ import {isMobile} from "../App.tsx";
 import {cx} from "class-variance-authority";
 
 export const Integrations = () => {
+    const { t } = useTranslation('widgets');
     const ref1 = useRef(null);
     const {setIsOpen} = useFeedbackForm();
 
@@ -59,13 +61,11 @@ export const Integrations = () => {
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                     <div
                         className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        Интеграции
+                        {t('integrations.title')}
                     </div>
 
                     <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        Кредитный конвейер тесно интегрирован <br/>с большим количеством
-                        источников информации, государственных служб, платежных систем,
-                        лидогенераторов, рекламных и других сервисов
+                        {t('integrations.subtitle')}
                     </p>
                 </div>
 
@@ -75,7 +75,7 @@ export const Integrations = () => {
                 >
                     <div
                         className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                        Попробовать
+                        {t('integrations.try')}
                     </div>
                 </button>
             </motion.div>
@@ -187,17 +187,7 @@ export const Integrations = () => {
                             <div className="relative h-[47px] w-full md:w-[113px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    Федеральная
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[15px] whitespace-nowrap text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    служба судебных
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    приставов
+                                    {t('integrations.services.fssp')}
                                 </div>
                             </div>
                         </div>
@@ -233,17 +223,7 @@ export const Integrations = () => {
                             <div className="relative h-[47px] w-full md:w-[93px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    Федеральная
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[15px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    миграционная
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    служба
+                                    {t('integrations.services.fms')}
                                 </div>
                             </div>
                         </div>
@@ -273,17 +253,7 @@ export const Integrations = () => {
                             <div className="relative h-[47px] w-full md:w-[89px]">
                                 <div
                                     className="absolute left-0 top-0 text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    Федеральная
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[15px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    налоговая
-                                </div>
-
-                                <div
-                                    className="absolute left-0 top-[30px] text-sm font-normal leading-[normal] tracking-normal text-gray-70 [font-family:'Proxima_Nova-Regular',Helvetica]">
-                                    служба
+                                    {t('integrations.services.fns')}
                                 </div>
                             </div>
                         </div>

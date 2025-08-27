@@ -1,10 +1,12 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
 import { useFeedbackForm } from './feedback-form';
 
 export const RoleStructure = () => {
+  const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
 
   const ref14 = useRef<HTMLDivElement>(null);
@@ -32,7 +34,7 @@ export const RoleStructure = () => {
       <div className="relative flex w-full md:w-[432px] flex-col items-start gap-7 md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
           <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Ролевая структура программного обеспечения
+            {t('roleStructure.title')}
           </div>
         </div>
 
@@ -41,7 +43,7 @@ export const RoleStructure = () => {
           className="all-[unset]  w-full md:w-fit  relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90"
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-            Демо-версия
+            {t('roleStructure.demo')}
           </div>
         </button>
       </div>
@@ -59,7 +61,7 @@ export const RoleStructure = () => {
           </div>
 
           <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Личный кабинет клиента
+            {t('roleStructure.clientCabinet')}
           </div>
         </motion.div>
 
@@ -79,7 +81,7 @@ export const RoleStructure = () => {
           </div>
 
           <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Мульткабинет сотрудника
+            {t('roleStructure.employeeCabinet')}
           </div>
         </motion.div>
 
@@ -95,7 +97,7 @@ export const RoleStructure = () => {
           </div>
 
           <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Кабинет супер- администратора
+            {t('roleStructure.adminCabinet')}
           </div>
         </motion.div>
       </div>

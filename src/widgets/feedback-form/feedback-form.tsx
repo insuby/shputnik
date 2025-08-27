@@ -1,5 +1,6 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import { useTranslation } from 'react-i18next';
 
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -8,14 +9,16 @@ import InputMask from 'react-input-mask';
 
 import { useFeedbackForm } from './use-feedback-form.ts';
 
-const schema = yup.object({
-  name: yup.string().trim().required('Обязательное поле'),
-  email: yup.string().trim().required('Обязательное поле'),
-  phone: yup.string().trim().required('Обязательное поле'),
-});
-
 export const FeedbackForm = () => {
+  const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
+  
+  const schema = yup.object({
+    name: yup.string().trim().required(t('feedbackForm.name')),
+    email: yup.string().trim().required(t('feedbackForm.name')),
+    phone: yup.string().trim().required(t('feedbackForm.name')),
+  });
+
   const [isVisible, setIsVisible] = useState(false);
 
   const {
@@ -86,7 +89,7 @@ export const FeedbackForm = () => {
 
           <button
             type="button"
-            aria-label="Закрыть"
+            aria-label={t('feedbackForm.close')}
             className="relative my-[-8.00px] inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] p-3 transition-colors duration-200 hover:bg-[#ffffff20]"
             onClick={onClick}
           >
@@ -98,13 +101,11 @@ export const FeedbackForm = () => {
           <div className="relative flex flex-1 grow flex-col items-start gap-[88px] m-auto md:m-0">
             <div className="relative flex w-full md:w=[560px] flex-[0_0_auto] flex-col items-start gap-4">
               <div id="feedback-dialog-title" className="relative text-center w-full md:w-auto md:text-left mt-3 md:mt-[-1.00px] self-stretch  text-[36px] md:text-5xl  font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                Свяжитесь с нами
+                {t('feedbackForm.title')}
               </div>
 
               <p className="hidden md:block relative text-center md:text-left self-stretch font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
-                Свяжитесь с нами, чтобы обсудить возможное сотрудничество. Мы с
-                радостью ответим на ваши вопросы и подберем решение, наилучшим
-                образом соответствующее вашим задачам
+                {t('feedbackForm.subtitle')}
               </p>
             </div>
 
@@ -122,11 +123,7 @@ export const FeedbackForm = () => {
               </div>
 
               <p className="relative w-full md:w-[233px] font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
-                183038, Мурманск,
-                <br />
-                улица Октябрьская,
-                <br />
-                дом 2а, офис 2
+                {t('feedbackForm.address')}
               </p>
             </div>
           </div>
@@ -136,10 +133,10 @@ export const FeedbackForm = () => {
               <div className="relative w-full">
                 <input
                   {...register('name')}
-                  aria-label="Имя"
+                  aria-label={t('feedbackForm.name')}
                   autoComplete="name"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
-                  placeholder="Ваше имя"
+                  placeholder={t('feedbackForm.namePlaceholder')}
                 />
                 {errors['name'] && (
                   <span className=" absolute -bottom-6 text-rose-700">
@@ -151,7 +148,7 @@ export const FeedbackForm = () => {
                 <InputMask
                   {...register('phone')}
                   mask="+7 (999) 999-99-99"
-                  aria-label="Телефон"
+                  aria-label={t('feedbackForm.phone')}
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
                 >
                   {(props: any) => (
@@ -171,7 +168,7 @@ export const FeedbackForm = () => {
                   aria-label="Email"
                   autoComplete="email"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
-                  placeholder="Ваш почтовый адрес"
+                  placeholder={t('feedbackForm.emailPlaceholder')}
                 />
                 {errors['email'] && (
                   <span className=" absolute -bottom-6 text-rose-700">
@@ -180,9 +177,9 @@ export const FeedbackForm = () => {
                 )}
               </div>
               <textarea
-                placeholder="Комментарий"
+                placeholder={t('feedbackForm.commentPlaceholder')}
                 maxLength={100}
-                aria-label="Комментарий"
+                aria-label={t('feedbackForm.comment')}
                 className="relative !mx-[-1.00px] !mt-[-1.00px] flex !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
               />
             </div>
@@ -193,17 +190,11 @@ export const FeedbackForm = () => {
                 className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
               >
                 <span className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-white [font-style:var(--body-1-r-font-style)]">
-                  Отправить
+                  {t('feedbackForm.send')}
                 </span>
               </button>
               <p className="relative self-stretch text-center font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-40 [font-style:var(--body-3-r-font-style)]">
-                <span className="font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#9ea7bb] [font-style:var(--body-3-r-font-style)]">
-                  Нажимая на кнопку “Отправить” я соглашаюсь с&nbsp;
-                </span>
-                <span className="font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#3573fc] [font-style:var(--body-3-r-font-style)]">
-                  политикой <br /> конфиденциальности и обработкой персональных
-                  данных
-                </span>
+                {t('feedbackForm.privacy')}
               </p>
             </form>
           </div>

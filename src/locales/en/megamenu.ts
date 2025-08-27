@@ -19,4 +19,3 @@ export default {
     customDevelopment: 'Custom development',
   },
 };
-

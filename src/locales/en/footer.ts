@@ -12,4 +12,3 @@ export default {
   description: 'Software and development of modern\nfintech solutions',
   copyrightSuffix: 'Business process automation',
 };
-

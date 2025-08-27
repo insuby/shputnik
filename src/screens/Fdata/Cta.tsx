@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 interface Props {
   className: any;
   text: string;
@@ -7,10 +9,11 @@ interface Props {
 
 export const Cta = ({
   className,
-  text = 'Попробуйте, вам понравится!',
+  text = '{t("cta.title")}',
   hasDiv = true,
-  text1 = 'Связаться с нами',
+  text1 = '{t("cta.contact")}',
 }: Props): JSX.Element => {
+  const { t } = useTranslation('fdata');
   return (
     <div
       className={`relative flex w-full flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px] ${className}`}
@@ -36,8 +39,7 @@ export const Cta = ({
 
             {hasDiv && (
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white opacity-60 [font-family:'Roboto',Helvetica]">
-                Оставьте заявку на демонстрацию — мы покажем, как работает
-                платформа и ответим на ваши вопросы
+                {t('cta.description')}
               </p>
             )}
           </div>
@@ -51,14 +53,14 @@ export const Cta = ({
 
         <div className="absolute left-[789px] top-12 flex w-full flex-col items-start gap-3 rounded-[32px] bg-[#ffffff] p-6 md:w-[328px]">
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            Калькулятор
+            {t('calculator.title')}
           </div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                  Сумма
+                  {t('calculator.amount')}
                 </div>
 
                 <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -88,11 +90,11 @@ export const Cta = ({
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                  Период
+                  {t('calculator.period')}
                 </div>
 
                 <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  8 месяцев
+                  {t('calculator.periodValue')}
                 </div>
               </div>
 
@@ -108,7 +110,7 @@ export const Cta = ({
 
           <button className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3">
             <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
-              Оформить
+              {t('calculator.submit')}
             </div>
           </button>
         </div>
@@ -124,7 +126,7 @@ export const Cta = ({
             <div className="relative left-[7px] top-[7px] size-[198px]">
               <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                  Текущий остаток
+                  {t('balance.currentBalance')}
                 </div>
 
                 <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -144,7 +146,7 @@ export const Cta = ({
 
           <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
             <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-              Сумма займа
+              {t('calculator.loanAmount')}
             </div>
 
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

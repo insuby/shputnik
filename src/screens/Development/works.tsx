@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
 import slide1 from './images/slide1.png';
@@ -8,6 +9,7 @@ import slide2 from './images/slide2.png';
 import slide3 from './images/slide3.png';
 
 export const Works = () => {
+  const { t } = useTranslation('development');
   const sliderRef = useRef<Slider>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
@@ -22,7 +24,7 @@ export const Works = () => {
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch md:gap-12">
       <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-        Примеры работ
+        {t('works.title')}
       </div>
 
       <div className="relative flex w-full flex-[0_0_auto]  flex-col items-center gap-6 rounded-3xl md:h-[648px] md:w-[1376px] md:!flex-row">
@@ -77,14 +79,10 @@ export const Works = () => {
                 transition={{ duration: 0.7 }}
                 className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
               >
-                VPN-сервис
+                {t('works.vpn.title')}
               </motion.p>
               <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
-                Создали мультиплатформенное VPN-решение с упором на
-                конфиденциальность, скорость и стабильность подключения.
-                Интеграция с крипто-оплатами, управление подписками, выбор стран
-                и автоматическое подключение — всё в удобном мобильном
-                приложении.
+                {t('works.vpn.description')}
               </p>
             </div>
           )}
@@ -99,10 +97,7 @@ export const Works = () => {
                 Pax
               </motion.div>
               <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
-                Платформа Pax помогает пациентам, врачам и аптекам соблюдать
-                назначенное лечение. Мы разработали, протестировали и внедрили
-                цифровую систему с персонализированной фасовкой препаратов,
-                логированием приёма и связкой с ЛК врача и пациента.
+                {t('works.pax.description')}
               </p>
             </div>
           )}
@@ -117,10 +112,7 @@ export const Works = () => {
                 Ascro
               </motion.p>
               <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
-                Децентрализованная платформа для безопасных сделок с
-                крипто-активами. Реализовали Web3-приложение с подключением
-                через TronLink, созданием сделок между пользователями и
-                гарантами, механизмом депонирования и логикой споров.
+                {t('works.crypto.description')}
               </p>
             </div>
           )}

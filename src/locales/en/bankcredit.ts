@@ -1,7 +1,8 @@
 export const bankcredit = {
   hero: {
     title: 'Bank Lending',
-    description: 'Software for automating bank lending Software for automating bank lending',
+    description:
+      'Software for automating bank lending Software for automating bank lending',
   },
   bank: {
     title: 'Your',
@@ -9,9 +10,12 @@ export const bankcredit = {
     main: 'Main',
   },
   comments: {
-    configureProcess: 'Add separate refs for each block in the "Configure your process" section',
-    automation: 'Add refs for the "Automation of various credit products" section',
-    systemTransactions: 'Add refs for "Management System" and "Transactions" sections',
+    configureProcess:
+      'Add separate refs for each block in the "Configure your process" section',
+    automation:
+      'Add refs for the "Automation of various credit products" section',
+    systemTransactions:
+      'Add refs for "Management System" and "Transactions" sections',
   },
   navigation: {
     finance: 'Finance',
@@ -45,7 +49,8 @@ export const bankcredit = {
   },
   management: {
     title: 'Management System',
-    description: 'Banks get easy access to loan attributes and parameters, related transactions and repayment schedules in real-time with payments and interest accrual through a universal loan management system.',
+    description:
+      'Banks get easy access to loan attributes and parameters, related transactions and repayment schedules in real-time with payments and interest accrual through a universal loan management system.',
   },
   payments: {
     title: 'Payments',
@@ -58,7 +63,8 @@ export const bankcredit = {
   },
   transactions: {
     title: 'Transactions',
-    description: 'List of payments and payment orders with all data entered manually or received from the payment provider, helps with automatic payments, direct debiting and other financial operations.',
+    description:
+      'List of payments and payment orders with all data entered manually or received from the payment provider, helps with automatic payments, direct debiting and other financial operations.',
   },
   automation: {
     title: 'Automation of Various Credit Products',
@@ -88,4 +94,4 @@ export const bankcredit = {
     productSelection: 'Credit product selection/offer',
     underwriting: 'Underwriting',
   },
-}; 
+};

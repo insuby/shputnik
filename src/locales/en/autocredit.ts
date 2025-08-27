@@ -28,7 +28,8 @@ export const autocredit = {
   },
   management: {
     title: 'Management, accounting and verification of collateral objects',
-    description: 'A separate interface allows you to control the entire life cycle of collateral — from verification to deregistration.',
+    description:
+      'A separate interface allows you to control the entire life cycle of collateral — from verification to deregistration.',
   },
   examples: {
     bmw7: 'BMW 7 Series Long (electric)',
@@ -36,14 +37,17 @@ export const autocredit = {
   },
   verification: {
     title: 'Verification',
-    description: 'The system connects to external sources and automatically requests up to 100 parameters. Registration data is included, accidents, insurance and restrictions. Verification is fast and without operator involvement.',
+    description:
+      'The system connects to external sources and automatically requests up to 100 parameters. Registration data is included, accidents, insurance and restrictions. Verification is fast and without operator involvement.',
   },
   control: {
     title: 'Control',
-    description: 'The module tracks the registration and deregistration of objects. It shows, which assets are pledged, at what stage they are. All information is updated in real time.',
+    description:
+      'The module tracks the registration and deregistration of objects. It shows, which assets are pledged, at what stage they are. All information is updated in real time.',
   },
   management2: {
     title: 'Management',
-    description: 'The interface allows you to manage collateral, assign responsible parties and re-run checks. Action history is available, report generation and full control over object status.',
+    description:
+      'The interface allows you to manage collateral, assign responsible parties and re-run checks. Action history is available, report generation and full control over object status.',
   },
-}; 
+};

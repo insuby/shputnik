@@ -15,8 +15,13 @@ export const bnpl = {
     title: 'Ready software for BNPL scenario',
     posTitle: 'Ready software for PoS scenario',
   },
-  integration: 'Provide partner stores and points of sale with the ability to connect installments — using our customizable BNPL software.',
-  posIntegration: 'Our solution easily integrates into e-commerce and PoS scenarios, allows you to manage limits, payment schedules and automate the entire credit process.',
+  integration:
+    'Provide partner stores and points of sale with the ability to connect installments — using our customizable BNPL software.',
+  posIntegration: {
+    description:
+      'Our solution easily integrates into e-commerce and PoS scenarios, allows you to manage limits, payment schedules and automate the entire credit process.',
+    managePayments: 'Manage all payments in one place',
+  },
   products: {
     headphones1: 'Beyerdynamic Amiron Headphones',
     headphones2: 'Kennerton Gjallarhorn JM Headphones',
@@ -41,7 +46,8 @@ export const bnpl = {
   backoffice: {
     title: 'Back Office',
     subtitle: 'Manage all payments in one place',
-    description: 'Monitoring and management of each application from a single control panel. This centralized control simplifies tracking of atl installment plans, ensuring efficient operation and optimal financial management.',
+    description:
+      'Monitoring and management of each application from a single control panel. This centralized control simplifies tracking of atl installment plans, ensuring efficient operation and optimal financial management.',
   },
   app: {
     title: 'Your',
@@ -83,9 +89,12 @@ export const bnpl = {
     creditHistory: 'Credit History Check',
     applicationApproval: 'Application Approval',
   },
-  backofficeTitle: 'Multifunctional back office for credit managers',
+  backoffice: {
+    title: 'Multifunctional back office for credit managers',
+  },
   automation: {
     title: 'Automated Decision Making',
-    description: 'Buy Now Pay Later software eliminates manual processes, special requests and paper trails. Get a single smooth automated workflow that meets borrower needs* and improves operational efficiency.',
+    description:
+      'Buy Now Pay Later software eliminates manual processes, special requests and paper trails. Get a single smooth automated workflow that meets borrower needs* and improves operational efficiency.',
   },
-}; 
+};

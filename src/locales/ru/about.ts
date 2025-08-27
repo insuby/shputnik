@@ -14,4 +14,3 @@ export const about = {
   murmanskAddress: '183038, Мурманск, улица Октябрьская, 2а, офис 2',
   contact: 'Связаться',
 };
-

@@ -14,4 +14,3 @@ export default {
   p2p: 'P2P-кредитование',
   islamFinance: 'Исламское финансирование',
 };
-

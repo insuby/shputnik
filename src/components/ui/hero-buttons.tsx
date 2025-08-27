@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion';
-
+import { useTranslation } from 'react-i18next';
 import { ReactNode, useRef } from 'react';
 
 import { useFeedbackForm } from '../../widgets/feedback-form';
@@ -9,11 +9,12 @@ type HeroButtonsProps = {
 };
 
 export const HeroButtons = ({
-  buttonText = 'Записаться на презентацию',
+  buttonText,
   children,
 }: HeroButtonsProps & {
   children: ReactNode;
 }) => {
+  const { t } = useTranslation('components');
   const { setIsOpen } = useFeedbackForm();
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
@@ -38,7 +39,7 @@ export const HeroButtons = ({
           className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] px-5 py-2.5"
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
-            О продукте
+            {t('heroButtons.aboutProduct')}
           </div>
         </motion.div>
 
@@ -57,7 +58,7 @@ export const HeroButtons = ({
             />
 
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
-              Спецификация
+              {t('heroButtons.specification')}
             </div>
           </div>
         </motion.div>
@@ -76,7 +77,7 @@ export const HeroButtons = ({
         className="all-[unset] relative box-border hidden md:inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90"
       >
         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-          {buttonText}
+          {buttonText || t('heroButtons.signUpPresentation')}
         </div>
       </motion.button>
     </>

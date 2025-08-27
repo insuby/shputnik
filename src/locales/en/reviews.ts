@@ -19,7 +19,8 @@ export const reviews = {
     },
     {
       name: 'Sergey Geylo',
-      position: 'Director of the center for development of medium-sized technology companies at RVK',
+      position:
+        'Director of the center for development of medium-sized technology companies at RVK',
     },
     {
       name: 'Alexandra Dmitrieva',
@@ -47,4 +48,4 @@ export const reviews = {
     },
   ],
   reviewLabel: 'review',
-}; 
+};

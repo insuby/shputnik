@@ -26,4 +26,4 @@ export const autocredit = {
     increasedFirstPayment: 'Увеличенный первоначальный взнос',
     increasedTerm: 'Увеличенный срок',
   },
-}; 
+};

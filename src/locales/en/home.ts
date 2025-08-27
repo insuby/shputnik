@@ -14,8 +14,7 @@ export default {
   classicLending: 'Classic lending',
   microcredit: {
     title: 'Microfinance\nlending',
-    desc:
-      'Full automation cycle for microfinance lending — from application to collection, with configurable workflows and processes tailored to organizational needs, including full digitalization of all stages and regulatory compliance',
+    desc: 'Full automation cycle for microfinance lending — from application to collection, with configurable workflows and processes tailored to organizational needs, including full digitalization of all stages and regulatory compliance',
     apply: 'Apply',
     amount: 'Amount',
     term: 'Term',
@@ -39,13 +38,11 @@ export default {
   otherSoftware: 'Other software',
   dataUnload: {
     title: 'Data export to credit bureaus',
-    desc:
-      'A ready-made solution for submitting data to credit bureaus. Suitable for MFIs, leasing, collection and other companies required to report in accordance with legislation',
+    desc: 'A ready-made solution for submitting data to credit bureaus. Suitable for MFIs, leasing, collection and other companies required to report in accordance with legislation',
   },
   decisionsModule: {
     title: 'Decision module',
-    desc:
-      'Flexible scoring and verification software for individuals and companies — with dozens of external data sources for verification and enrichment',
+    desc: 'Flexible scoring and verification software for individuals and companies — with dozens of external data sources for verification and enrichment',
     ui: {
       id: 'ID 1232342345346',
       name: 'David Ivanov',
@@ -160,4 +157,3 @@ export default {
     },
   },
 };
-

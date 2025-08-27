@@ -1,7 +1,8 @@
 export const islamfinance = {
   hero: {
     title: 'Исламское финансирование',
-    description: 'Предоставление исламским финансовым институтам первоклассных систем управления кредитами.',
+    description:
+      'Предоставление исламским финансовым институтам первоклассных систем управления кредитами.',
   },
   app: {
     title: 'Ваш',
@@ -41,7 +42,7 @@ export const islamfinance = {
       tawarruq: 'Таваррук (Tawarruq)',
       wakala: 'Вакала (Wakala)',
       musharakah: 'Мушарака (Musharakah)',
-      istisna: 'Истисна (Istisna\'a)',
+      istisna: "Истисна (Istisna'a)",
     },
   },
-}; 
+};

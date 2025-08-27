@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
 export const Advantages = () => {
+  const { t } = useTranslation('widgets');
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -41,7 +43,7 @@ export const Advantages = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
           className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
         >
-          Преимущества
+          {t('advantages.title')}
         </motion.div>
 
         <motion.p
@@ -51,8 +53,7 @@ export const Advantages = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative self-stretch text-center text-xl  font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
         >
-          Автоматизация процессов выдачи займов с учётом задач и масштаба вашего
-          бизнеса
+          {t('advantages.subtitle')}
         </motion.p>
       </motion.div>
 
@@ -78,12 +79,11 @@ export const Advantages = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Гибкая настройка
+              {t('advantages.flexibleSetup.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Используйте готовое решение или адаптируйте систему под ваши
-              уникальные процессы и регламенты
+              {t('advantages.flexibleSetup.description')}
             </p>
           </div>
         </motion.div>
@@ -97,12 +97,11 @@ export const Advantages = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Полная автоматизация
+              {t('advantages.fullAutomation.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Автоматизация всех этапов работы с возможностью подключения
-              внешних сервисов и систем
+              {t('advantages.fullAutomation.description')}
             </p>
           </div>
         </div>
@@ -122,12 +121,11 @@ export const Advantages = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Оптимизация затрат
+              {t('advantages.costOptimization.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Снижайте издержки за счёт автоматизации ключевых операций и
-              повышения эффективности
+              {t('advantages.costOptimization.description')}
             </p>
           </div>
         </motion.div>

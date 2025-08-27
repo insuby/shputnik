@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 import { isMobile } from '../App.tsx';
@@ -7,6 +8,7 @@ import { Check10 } from '../components/ui/check10.tsx';
 import {CrmCapabilities} from "./crm-capabilities.tsx";
 
 export const ZaimChecker = () => {
+  const { t } = useTranslation('widgets');
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -91,7 +93,7 @@ export const ZaimChecker = () => {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="relative mt-[-1.00px] w-full md:w-[520px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Проверка заемщика
+                {t('zainChecker.title')}
               </motion.div>
 
               <motion.p
@@ -101,9 +103,7 @@ export const ZaimChecker = () => {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
               >
-                В программу включены интеграции с большинством сторонних
-                сервисов, а также наши собственные сервисы проверки
-                потенциального заемщика (юридического лица):
+                {t('zainChecker.subtitle')}
               </motion.p>
             </div>
 
@@ -126,7 +126,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Антимошеннические сервисы
+                  {t('zainChecker.services.antifraud')}
                 </div>
               </motion.div>
 
@@ -148,7 +148,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Идентификация клиента
+                  {t('zainChecker.services.identification')}
                 </div>
               </motion.div>
 
@@ -170,7 +170,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Бюро кредитных историй
+                  {t('zainChecker.services.creditBureau')}
                 </div>
               </motion.div>
 
@@ -192,7 +192,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Государственные сервисы
+                  {t('zainChecker.services.governmentServices')}
                 </div>
               </motion.div>
 
@@ -214,7 +214,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Социальные сети
+                  {t('zainChecker.services.socialNetworks')}
                 </div>
               </motion.div>
 
@@ -236,7 +236,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Дополнительные источники информации
+                  {t('zainChecker.services.additionalSources')}
                 </div>
               </motion.div>
             </div>
@@ -265,7 +265,7 @@ export const ZaimChecker = () => {
                 transition={{ duration: 0.8, ease: 'easeOut' }}
                 className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Платежные системы
+                {t('zainChecker.paymentSystems.title')}
               </motion.div>
 
               <motion.p
@@ -275,10 +275,7 @@ export const ZaimChecker = () => {
                 transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
               >
-                Интеграции с большинством платежных систем полностью
-                автоматизировать процесс приема и выдачи займа, а интеграция с
-                1С - учитывать даже те платежи, которые связаны только расчетным
-                счетом:
+                {t('zainChecker.paymentSystems.subtitle')}
               </motion.p>
             </div>
 
@@ -301,7 +298,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Выдача online
+                  {t('zainChecker.paymentSystems.onlineIssuance')}
                 </div>
               </motion.div>
 
@@ -323,7 +320,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Погашение займа через личный кабинет
+                  {t('zainChecker.paymentSystems.repayment')}
                 </p>
               </motion.div>
 
@@ -345,7 +342,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Проверка статусов платежей
+                  {t('zainChecker.paymentSystems.paymentStatus')}
                 </div>
               </motion.div>
 
@@ -367,7 +364,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Отмена платежей
+                  {t('zainChecker.paymentSystems.cancelPayments')}
                 </div>
               </motion.div>
 
@@ -389,7 +386,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Работа с наличными
+                  {t('zainChecker.paymentSystems.cashWork')}
                 </div>
               </motion.div>
 
@@ -411,7 +408,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Интеграция с расчетным счетом
+                  {t('zainChecker.paymentSystems.accountIntegration')}
                 </div>
               </motion.div>
             </div>

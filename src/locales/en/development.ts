@@ -1,41 +1,50 @@
 export const development = {
-    hero: {
-        title: 'Custom Development',
-        description: 'We create and develop projects for financial projects, blockchain projects, medical and marketing projects.',
+  works: {
+    title: 'Work Examples',
+    vpn: {
+      title: 'VPN Service',
+      description:
+        'Created a multiplatform VPN solution focusing on privacy, speed and connection stability. Integration with crypto payments, subscription management, country selection and automatic connection — all in a convenient mobile application.',
     },
-    process: {
-        analysis: 'Analysis',
-        analysisDescription: 'We thoroughly analyze and work out requirements before starting work. We develop the application in accordance with your business goals.',
-        mvp: 'We will develop an MVP in the shortest possible time so that you can start testing the business model as early as possible.',
-        scalability: 'Scalability',
-        scalabilityDescription: 'We build scalability capability at an early stage of system creation. Develop the product without radical rework.',
-        crossPlatform: 'Cross-platform',
-        crossPlatformDescription: 'The application works on all popular mobile platforms.',
-        highLoad: 'High load',
-        highLoadDescription: 'Your service will withstand thousands of simultaneous user requests.',
-        design: 'Design',
-        designDescription: 'The interface complies with modern mobile development trends, as well as Android and iOS platform guidelines.',
-        platforms: 'We will develop platforms and solutions for your business',
-        try: 'try',
+    pax: {
+      description:
+        'The Pax platform helps patients, doctors and pharmacies comply with prescribed treatment. We developed, tested and implemented a digital system with personalized drug packaging, intake logging and integration with doctor and patient personal accounts.',
     },
-    solutions: {
-        title: 'We create systems for any corporate tasks. We integrate third-party services.',
-        totalAmount: 'Total amount',
-        financialSystems: 'We create and develop financial systems: from digital payment solutions and CRM for banks and MFIs — to analytical platforms and scoring services.',
-        blockchain: 'We develop decentralized applications, smart contracts and platforms for managing digital assets. We integrate Web3 and ensure data security.',
-        drugSelection: 'Drug selection',
-        orderProcessing: 'Order processing',
-        medical: 'We develop medical information systems, patient personal accounts, telemedicine platforms and medical history tracking. We integrate with EGISZ, BMIS and insurance services.',
-        marketing: 'We create solutions for marketing automation: CDP, analytics systems, campaign management platforms and communication personalization.',
+    crypto: {
+      description:
+        'Decentralized platform for secure crypto asset transactions. Implemented a Web3 application with TronLink integration, creating transactions between users and guarantors, escrow mechanism and dispute logic.',
     },
-    comfort: {
-        title: 'Comfortable with us',
-        workPlan: 'Work plan',
-        workPlanDescription: 'We create and show a detailed work plan for development at the start of the project. Our clients know what they are paying for.',
-        team: 'Team',
-        teamDescription: 'We will form a full-fledged team for system development. The team is led by an experienced project manager.',
-        reliablePartner: 'Reliable partner',
-        reliablePartnerDescription: 'We don\'t abandon the project halfway. We accompany and support throughout the entire lifecycle.',
-        scalabilityDescription: 'We lay the foundation for scalability at an early stage of system creation. Develop the product without radical rework.'
-    }
-}
+  },
+  technologies: {
+    title: 'Development Technologies',
+    figma: {
+      description:
+        'We design interfaces and interactive prototypes in Figma — for coordinating user scenarios at an early stage and convenient demonstration to the client.',
+    },
+    react: {
+      description:
+        'We create fast and scalable web interfaces on React.js — with clean components and optimized architecture for high loads.',
+    },
+    reactNative: {
+      description:
+        'We develop cross-platform mobile applications with native user experience — on React Native for Android and iOS simultaneously.',
+    },
+    java: {
+      description:
+        'We use Java to build reliable backend architecture: from APIs and microservices to working with high-load databases and integrations.',
+    },
+    python: {
+      description:
+        'On Python we implement analytical modules, data processing and ML/AI integrations — especially in scoring, risk analytics and process automation tasks.',
+    },
+    blockchain: {
+      description:
+        'We implement smart contracts, NFT mechanics, DAO and other decentralized solutions. We work with Ethereum, BNB Chain, Polygon, Solana and other ecosystems.',
+    },
+    crypto: {
+      title: 'Crypto Products',
+      description:
+        'We develop crypto wallets, dApps, platforms for exchange and management of digital assets. We integrate KYC/AML, token support, multisig and DeFi protocols.',
+    },
+  },
+};

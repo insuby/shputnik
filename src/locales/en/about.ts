@@ -1,7 +1,7 @@
 export const about = {
   title: 'Building advanced software for Fintech',
   subtitle:
-    'Our team develops software. We create solutions tailored to the specifics of the local market, business needs, and our partners\' technical requirements',
+    "Our team develops software. We create solutions tailored to the specifics of the local market, business needs, and our partners' technical requirements",
   yearsOnMarket: 'years in the fintech\ndevelopment market',
   projectsCompleted: 'completed projects',
   inHouseDevelopers: 'in-house developers',
@@ -14,4 +14,3 @@ export const about = {
   murmanskAddress: '183038, Murmansk, Oktyabrskaya street, 2а, office 2',
   contact: 'Contact',
 };
-

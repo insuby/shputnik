@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
 export const Analytics = () => {
+  const { t } = useTranslation('widgets');
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -43,7 +45,7 @@ export const Analytics = () => {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
-        Отчётность и аналитика
+        {t('analytics.title')}
       </motion.div>
 
       <motion.div
@@ -80,7 +82,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
               className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
-              Отчеты и статистика
+              {t('analytics.reports.title')}
             </motion.div>
 
             <motion.p
@@ -90,8 +92,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
               className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
-              Более 25 отчетов, которые покрывают основные потребности
-              организации.
+              {t('analytics.reports.description')}
             </motion.p>
           </motion.div>
 
@@ -109,7 +110,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
               className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
-              Аналитические сервисы
+              {t('analytics.analyticalServices.title')}
             </motion.div>
 
             <motion.p
@@ -119,8 +120,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
               className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
-              Описание базы данных для работы с Tableau, Microsoft Power BI,
-              Deductor и др.
+              {t('analytics.analyticalServices.description')}
             </motion.p>
           </motion.div>
 
@@ -138,7 +138,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
               className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
-              Интеграция с 1С
+              {t('analytics.integration1c.title')}
             </motion.div>
 
             <motion.p
@@ -148,8 +148,7 @@ export const Analytics = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
               className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
             >
-              Позволяет полностью автоматизировать процесс обмена данными с
-              программой 1С для ведения бухгалтерского учета.
+              {t('analytics.integration1c.description')}
             </motion.p>
           </motion.div>
         </motion.div>
@@ -186,7 +185,7 @@ export const Analytics = () => {
 
                     <div className="absolute left-[87px] top-[55px] inline-flex flex-col items-center gap-0.5">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                        Баланс
+                        {t('analytics.balance')}
                       </div>
 
                       <div className="relative w-fit whitespace-nowrap text-[40px] font-normal leading-[52px] tracking-normal text-[#1c222f] [font-family:'Poppins',Helvetica]">
@@ -259,19 +258,19 @@ export const Analytics = () => {
             >
               <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] bg-[#1c222f] px-3 py-2">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-2-r-font-style)]">
-                  Неделя
+                  {t('analytics.periods.week')}
                 </div>
               </div>
 
               <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] px-3 py-2">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#9ea7bb] [font-style:var(--body-2-r-font-style)]">
-                  Месяц
+                  {t('analytics.periods.month')}
                 </div>
               </div>
 
               <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] px-3 py-2">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#9ea7bb] [font-style:var(--body-2-r-font-style)]">
-                  Год
+                  {t('analytics.periods.year')}
                 </div>
               </div>
             </motion.div>

@@ -1,7 +1,9 @@
 import { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
 export const Technoligies = () => {
+  const { t } = useTranslation('development');
   const sliderRef = useRef<Slider>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
@@ -17,7 +19,7 @@ export const Technoligies = () => {
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
         <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-          Технологии разработки
+          {t('technologies.title')}
         </div>
       </div>
 
@@ -41,9 +43,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Проектируем интерфейсы и интерактивные прототипы в Figma —
-                    для согласования пользовательских сценариев на раннем этапе
-                    и удобной демонстрации заказчику.
+                    {t('technologies.figma.description')}
                   </p>
                 </div>
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
@@ -52,9 +52,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Создаём быстрые и масштабируемые веб-интерфейсы на React.js
-                    — с чистыми компонентами и оптимизированной архитектурой под
-                    высокие нагрузки.
+                    {t('technologies.react.description')}
                   </p>
                 </div>
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
@@ -63,9 +61,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Разрабатываем кроссплатформенные мобильные приложения с
-                    нативным опытом пользователя — на React Native для Android и
-                    iOS одновременно.
+                    {t('technologies.reactNative.description')}
                   </p>
                 </div>
               </div>
@@ -79,9 +75,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Используем Java для построения надёжной backend-архитектуры:
-                    от API и микросервисов до работы с высоконагруженными базами
-                    данных и интеграциями.
+                    {t('technologies.java.description')}
                   </p>
                 </div>
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
@@ -90,9 +84,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    На Python реализуем аналитические модули, обработку данных и
-                    интеграции с ML/AI — особенно в задачах скоринга,
-                    риск-аналитики и автоматизации процессов.
+                    {t('technologies.python.description')}
                   </p>
                 </div>
               </div>
@@ -106,20 +98,16 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Реализуем смарт-контракты, NFT-механики, DAO и другие
-                    децентрализованные решения. Работаем с Ethereum, BNB Chain,
-                    Polygon, Solana и другими экосистемами.
+                    {t('technologies.blockchain.description')}
                   </p>
                 </div>
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    Криптопродукты
+                    {t('technologies.crypto.title')}
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    Разрабатываем криптокошельки, dApps, платформы для обмена и
-                    управления цифровыми активами. Интегрируем KYC/AML,
-                    поддержку токенов, мультисиг и DeFi-протоколы.
+                    {t('technologies.crypto.description')}
                   </p>
                 </div>
               </div>

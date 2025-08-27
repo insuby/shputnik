@@ -1,4 +1,5 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
@@ -6,6 +7,7 @@ import { Check10 } from '../components/ui/check10.tsx';
 import Subtract from '../icons/Subtract';
 
 export const EmployeeWork = ({ color }: { color?: string }) => {
+  const { t } = useTranslation('widgets');
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -99,7 +101,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
-            Работа сотрудников
+            {t('employeeWork.title')}
           </motion.div>
 
           <motion.p
@@ -109,9 +111,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
             className="relative w-full md:w-[704px] text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
           >
-            Гибкая настройка прав для всех категорий сотрудников, возможность
-            совершать любые действия через кабинет сотрудника, контактировать{' '}
-            <br />с клиентом через СМС, email или по телефону
+            {t('employeeWork.subtitle')}
           </motion.p>
         </motion.div>
 
@@ -155,8 +155,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.35 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Индивидуальная политика доступа для всех категорий сотрудников,
-                возможность настройки ролей
+                {t('employeeWork.accessPolicy')}
               </motion.p>
 
               <motion.div
@@ -195,7 +194,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Кредитный менеджер
+                      {t('employeeWork.roles.creditManager')}
                     </div>
                   </motion.div>
 
@@ -221,7 +220,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Аналитик
+                      {t('employeeWork.roles.analyst')}
                     </div>
                   </motion.div>
 
@@ -247,7 +246,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Риск-менджер
+                      {t('employeeWork.roles.riskManager')}
                     </div>
                   </motion.div>
 
@@ -273,7 +272,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Верификатор
+                      {t('employeeWork.roles.verifier')}
                     </div>
                   </motion.div>
                 </motion.div>
@@ -307,7 +306,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Коллектор
+                      {t('employeeWork.roles.collector')}
                     </div>
                   </motion.div>
 
@@ -333,7 +332,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Оператор
+                      {t('employeeWork.roles.operator')}
                     </div>
                   </motion.div>
 
@@ -359,7 +358,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Супервайзер
+                      {t('employeeWork.roles.supervisor')}
                     </div>
                   </motion.div>
 
@@ -385,7 +384,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Руководитель
+                      {t('employeeWork.roles.manager')}
                     </div>
                   </motion.div>
                 </motion.div>
@@ -411,12 +410,12 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 md:pl-16 pr-2 md:left-0 pl-0">
                   <div className="relative flex w-full md:w-[296px] flex-col items-start gap-1">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Вы
+                      {t('employeeWork.roles.you')}
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-[16px_16px_0px_16px] bg-violet-50 px-3 py-2">
                       <p className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                        Могу ли я досрочно показить заем?
+                        {t('employeeWork.earlyRepayment.question')}
                       </p>
                     </div>
                   </div>
@@ -431,13 +430,12 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
 
                   <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Менеджер Руслана
+                      {t('employeeWork.earlyRepayment.answer')}
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start self-stretch rounded-[16px_16px_16px_0px] bg-[#ffffff] px-3 py-2">
                       <p className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        Да, конечно, итоговая сумма для погашения задолженности
-                        на сегодняшний день 14 456 ₽
+                        {t('employeeWork.earlyRepayment.answer')}
                       </p>
                     </div>
                   </div>
@@ -459,8 +457,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
-                Сохранение действий сотрудников, <br />
-                контактов с клиентами и других операций
+                {t('employeeWork.actionTracking')}
               </motion.p>
 
               <motion.div
@@ -502,7 +499,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      История взаимодействия с клиентом
+                      {t('employeeWork.interactionHistory')}
                     </p>
                   </motion.div>
 
@@ -531,7 +528,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Online-чат для коммуникации с клиентом
+                      {t('employeeWork.onlineChat')}
                     </p>
                   </motion.div>
 
@@ -560,7 +557,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                     </motion.div>
 
                     <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      Интеграция с телефонией, email и СМС сервисами
+                      {t('employeeWork.integration')}
                     </p>
                   </motion.div>
                 </motion.div>

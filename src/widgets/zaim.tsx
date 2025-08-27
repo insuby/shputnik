@@ -1,8 +1,10 @@
 import { motion, useInView } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
 
 export const Zaim = () => {
+  const { t } = useTranslation('widgets');
   const ref10 = useRef<HTMLDivElement>(null);
   const ref11 = useRef<HTMLDivElement>(null);
   const ref12 = useRef<HTMLDivElement>(null);
@@ -23,7 +25,7 @@ export const Zaim = () => {
     >
       <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
         <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-          Управление займами
+          {t('zaim.title')}
         </div>
       </div>
 
@@ -45,12 +47,11 @@ export const Zaim = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Редактирование условий
+              {t('zaim.editConditions.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Расчёт условий выдачи кредита и при необходимости предложение
-              альтернативных.
+              {t('zaim.editConditions.description')}
             </p>
           </div>
         </motion.div>
@@ -72,12 +73,11 @@ export const Zaim = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Создание и настройка
+              {t('zaim.createAndSetup.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Создание и редактирование кредитных продуктов, настройка ручных и
-              автоматических действий.
+              {t('zaim.createAndSetup.description')}
             </p>
           </div>
         </motion.div>
@@ -99,12 +99,11 @@ export const Zaim = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              Проценты и штрафы
+              {t('zaim.interestAndPenalties.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-              Автоматическое начисление процентов по займу и штрафов за
-              нарушение сроков возврата.
+              {t('zaim.interestAndPenalties.description')}
             </p>
           </div>
         </motion.div>
