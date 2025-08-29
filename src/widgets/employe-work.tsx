@@ -430,7 +430,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
 
                   <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('employeeWork.earlyRepayment.answer')}
+                      {t('static.managerName')}
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start self-stretch rounded-[16px_16px_16px_0px] bg-[#ffffff] px-3 py-2">
