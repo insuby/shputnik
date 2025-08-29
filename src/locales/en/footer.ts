@@ -11,4 +11,5 @@ export default {
   decisions: 'Decision making',
   description: 'Software and development of modern\nfintech solutions',
   copyrightSuffix: 'Business process automation',
+  address: '183038, Murmansk, Oktyabrskaya Street, 2a, office 2',
 };

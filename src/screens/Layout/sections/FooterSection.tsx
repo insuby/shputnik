@@ -88,7 +88,7 @@ export const FooterSection = () => {
               </a>
 
               <address className="relative  self-stretch font-body-2-r !text-[16px] font-[number:var(--body-2-r-font-weight)] not-italic leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
-                {t('address')}
+                {t('address', { ns: 'footer' })}
                 <br />
               </address>
             </div>
@@ -248,7 +248,7 @@ export const FooterSection = () => {
               </a>
 
               <address className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] not-italic leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
-                {t('address')}
+                {t('address', { ns: 'footer' })}
                 <br />
               </address>
             </div>
