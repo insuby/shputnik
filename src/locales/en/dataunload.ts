@@ -1,4 +1,18 @@
 export const dataunload = {
+  // Static texts from commit
+  static: {
+    heroDescription: 'Program for converting and exporting data to credit bureaus',
+    advantagesDescription: 'The system automatically converts data for sending to credit bureaus in accordance with current requirements.',
+    exportTitle: 'Export',
+    exportDescription: 'Export data to credit bureaus',
+    equifax: 'Equifax',
+    okb: 'OKB',
+    nbki: 'NBKI',
+    fileName: 'Uploaded file.pdf',
+    fileSize: '450 KB',
+    bureausTitle: 'Credit bureaus',
+    scoring: 'Scoring bureau',
+  },
   hero: {
     title: 'Data export to credit bureaus',
     subtitle: 'Program for converting and exporting data to credit bureaus',

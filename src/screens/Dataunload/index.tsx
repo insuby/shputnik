@@ -133,7 +133,7 @@ export const Dataunload = () => {
                   </h1>
 
                   <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
-                    {t('hero.description')}
+                    {t('static.heroDescription')}
                   </p>
                 </div>
               </div>
@@ -157,11 +157,11 @@ export const Dataunload = () => {
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('file.name')}
+                    {t('static.fileName')}
                   </div>
 
                   <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[129px]">
-                    {t('file.size')}
+                    {t('static.fileSize')}
                   </div>
                 </div>
               </motion.div>
@@ -182,7 +182,7 @@ export const Dataunload = () => {
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                    {t('bureaus.title')}
+                    {t('static.bureausTitle')}
                   </div>
 
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
@@ -204,7 +204,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('bureaus.scoring')}
+                        {t('static.scoring')}
                       </div>
 
                       <img
@@ -232,7 +232,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('bureaus.okb')}
+                        {t('static.okb')}
                       </div>
 
                       <img
@@ -260,7 +260,7 @@ export const Dataunload = () => {
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('bureaus.nbki')}
+                        {t('static.nbki')}
                       </div>
 
                       <img
@@ -301,7 +301,7 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
           >
-            {t('advantages.description')}
+            {t('static.advantagesDescription')}
           </motion.p>
         </motion.div>
 
@@ -624,7 +624,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
                   className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[520px]"
                 >
-                  {t('export.title')}
+                  {t('static.exportTitle')}
                 </motion.div>
 
                 <motion.p
@@ -634,7 +634,7 @@ export const Dataunload = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('export.description')}
+                  {t('static.exportDescription')}
                 </motion.p>
               </div>
 
@@ -649,7 +649,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('export.bureaus.equifax')}
+                    {t('static.equifax')}
                   </div>
                 </div>
 
@@ -663,7 +663,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('export.bureaus.okb')}
+                    {t('static.okb')}
                   </div>
                 </div>
 
@@ -677,7 +677,7 @@ export const Dataunload = () => {
                   </div>
 
                   <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('export.bureaus.nbki')}
+                    {t('static.nbki')}
                   </div>
                 </div>
               </div>
