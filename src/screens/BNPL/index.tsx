@@ -120,7 +120,9 @@ export const BNPL = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
                   className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  <span id="bnpl-title">{t('description.bnpl')}</span>
+                  <span id="bnpl-title">
+                    Автоматизация BNPL и PoS-кредитования
+                  </span>
                 </motion.h1>
 
                 <motion.p
@@ -337,11 +339,13 @@ export const BNPL = () => {
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                {t('description.pos')}
+                PoS-кредитование
               </div>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                {t('description.pos')}
+                Программный продукт для автоматизации кредитования online и в
+                точках продаж. Позволяет оформлять займы с процентной ставкой
+                прямо на кассе, в офисе или через онлайн-форму.
               </p>
             </div>
           </motion.div>
@@ -619,7 +623,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
               className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              {t('process.pos')}
+              POS-процесс
             </motion.div>
 
             <motion.p
@@ -629,7 +633,7 @@ export const BNPL = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               className="relativew-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
             >
-              {t('process.posTitle')}
+              Готовое программное обеспечения для PoS-сценария
             </motion.p>
           </div>
 
@@ -640,7 +644,9 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[500px]"
           >
-            {t('posIntegration')}
+            Наше решение легко интегрируется в e-commerce и PoS-сценарии,
+            позволяет управлять лимитами, графиками платежей и автоматизировать
+            весь кредитный процесс.
           </motion.p>
         </motion.div>
       </div>

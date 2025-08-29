@@ -435,7 +435,8 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
 
                     <div className="relative flex w-full flex-[0_0_auto] items-start self-stretch rounded-[16px_16px_16px_0px] bg-[#ffffff] px-3 py-2">
                       <p className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('employeeWork.earlyRepayment.answer')}
+                        Да, конечно, итоговая сумма для погашения задолженности
+                        на сегодняшний день 14 456 ₽
                       </p>
                     </div>
                   </div>
