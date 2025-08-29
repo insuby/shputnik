@@ -1,6 +1,6 @@
 export const development = {
   hero: {
-    title: 'Development',
+    title: 'Custom Development',
     subtitle: 'We create and develop projects for financial projects, blockchain projects, medical and marketing projects.',
   },
   technologies: {
