@@ -1,4 +1,8 @@
 export default {
+  // Static texts from commit
+  static: {
+    managerAnswer: 'Yes, of course, the final amount for debt repayment as of today is 14,456 ₽',
+  },
   feedback: {
     title: "Try it, you'll like it!",
     subtitle:
