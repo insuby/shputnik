@@ -53,6 +53,11 @@ export const p2p = {
     totalAmount: 'Вся сумма',
     totalValue: '88,000₽',
   },
+  total: 'Вся сумма',
+  navigation: {
+    previousSlide: 'Предыдущий слайд',
+    nextSlide: 'Следующий слайд',
+  },
   calculationModule: {
     title: 'Готовый модуль расчетов',
     interestWork: {
