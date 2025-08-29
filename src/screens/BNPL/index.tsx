@@ -130,7 +130,7 @@ export const BNPL = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
                   className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  {t('hero.description')}
+                  {t('description.bnpl')}
                 </motion.p>
               </div>
             </div>
@@ -145,11 +145,11 @@ export const BNPL = () => {
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
-                {t('paymentSchedule.title')}
+                {t('installment.id')}
               </div>
 
               <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
-                {t('paymentSchedule.contract')}
+                {t('installment.status')}
               </div>
             </div>
 
@@ -158,7 +158,7 @@ export const BNPL = () => {
                 <div className="relative h-[92px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.march')}
+                  Март
                 </div>
               </div>
 
@@ -166,7 +166,7 @@ export const BNPL = () => {
                 <div className="relative h-[104px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.april')}
+                  Апрель
                 </div>
               </div>
 
@@ -174,7 +174,7 @@ export const BNPL = () => {
                 <div className="relative h-[127px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.may')}
+                  Май
                 </div>
               </div>
 
@@ -182,7 +182,7 @@ export const BNPL = () => {
                 <div className="relative h-[145px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.june')}
+                  Июнь
                 </div>
               </div>
 
@@ -190,7 +190,7 @@ export const BNPL = () => {
                 <div className="relative h-[110px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.july')}
+                  Июль
                 </div>
               </div>
 
@@ -198,7 +198,7 @@ export const BNPL = () => {
                 <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('paymentSchedule.months.august')}
+                  Август
                 </div>
               </div>
             </div>
