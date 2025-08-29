@@ -68,7 +68,7 @@ export const Development = () => {
                   transition={{ duration: 0.4, ease: 'easeOut' }}
                   className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  {t('hero.description')}
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
             </div>
@@ -136,7 +136,7 @@ export const Development = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-            {t('hero.title')}
+            Разработка проектов
           </div>
         </div>
 
@@ -151,11 +151,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('process.analysis')}
+                  {t('projectDevelopment.analysis.title')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.analysisDescription')}
+                  {t('projectDevelopment.analysis.description')}
                 </p>
               </div>
             </div>
@@ -173,7 +173,7 @@ export const Development = () => {
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.mvp')}
+                  {t('projectDevelopment.mvp.description')}
                 </p>
               </div>
             </div>
@@ -187,11 +187,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('process.scalability')}
+                  {t('projectDevelopment.scalability.title')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.scalabilityDescription')}
+                  {t('projectDevelopment.scalability.description')}
                 </p>
               </div>
             </div>
@@ -207,11 +207,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('process.crossPlatform')}
+                  {t('projectDevelopment.crossPlatform.title')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.crossPlatformDescription')}
+                  {t('projectDevelopment.crossPlatform.description')}
                 </p>
               </div>
             </div>
@@ -225,11 +225,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('process.highLoad')}
+                  {t('projectDevelopment.highLoad.title')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.highLoadDescription')}
+                  {t('projectDevelopment.highLoad.description')}
                 </p>
               </div>
             </div>
@@ -243,11 +243,11 @@ export const Development = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('process.design')}
+                  {t('projectDevelopment.design.title')}
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('process.designDescription')}
+                  {t('projectDevelopment.design.description')}
                 </p>
               </div>
             </div>
@@ -259,7 +259,7 @@ export const Development = () => {
         <div className="flex w-full  flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
           <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[496px]">
             <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
-              {t('process.platforms')}
+              {t('platforms.title')}
             </p>
 
             <button
@@ -267,7 +267,7 @@ export const Development = () => {
               className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                {t('process.try')}
+                {t('platforms.tryButton')}
               </div>
             </button>
           </div>
@@ -350,7 +350,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('solutions.title')}
+                      {t('platforms.title')}
                     </p>
                   </div>
                 </div>
@@ -383,7 +383,7 @@ export const Development = () => {
 
                             <div className="absolute left-[22px] top-[37px] inline-flex flex-col items-center">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                                {t('solutions.totalAmount')}
+                                {t('platforms.enterprise.totalAmount')}
                               </div>
 
                               <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -420,7 +420,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('solutions.financialSystems')}
+                      {t('platforms.fintech.description')}
                     </p>
                   </div>
                 </div>
@@ -446,7 +446,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('solutions.blockchain')}
+                      {t('platforms.blockchain.description')}
                     </p>
                   </div>
                 </div>
@@ -470,7 +470,7 @@ export const Development = () => {
                         />
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          {t('solutions.drugSelection')}
+                          {t('platforms.medtech.drugSelection')}
                         </div>
                       </div>
 
@@ -488,7 +488,7 @@ export const Development = () => {
                         />
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          {t('solutions.orderProcessing')}
+                          {t('platforms.medtech.orderProcessing')}
                         </div>
                       </div>
                     </div>
@@ -500,7 +500,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('solutions.medical')}
+                      {t('platforms.medtech.description')}
                     </p>
                   </div>
                 </div>
@@ -526,7 +526,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('solutions.marketing')}
+                      {t('platforms.martech.description')}
                     </p>
                   </div>
                 </div>
@@ -612,10 +612,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                {t('comfort.workPlan')}
+                {t('comfort.workPlan.title')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                {t('comfort.workPlanDescription')}
+                {t('comfort.workPlan.description')}
               </p>
             </div>
           </div>
@@ -627,10 +627,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                {t('comfort.team')}
+                {t('comfort.team.title')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                {t('comfort.teamDescription')}
+                {t('comfort.team.description')}
               </p>
             </div>
           </div>
@@ -642,10 +642,10 @@ export const Development = () => {
             />
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                {t('comfort.reliablePartner')}
+                {t('comfort.reliablePartner.title')}
               </div>
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                {t('comfort.reliablePartnerDescription')}
+                {t('comfort.reliablePartner.description')}
               </p>
             </div>
           </div>
