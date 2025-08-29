@@ -394,9 +394,7 @@ export const P2P = () => {
         <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
           <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
             <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-              {t('features.customizableProcesses')}
-              <br />
-              {t('features.tailoredToRequests')}
+              {t('customizableProcesses.title')}
             </div>
 
             <button
@@ -404,7 +402,7 @@ export const P2P = () => {
               className="all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                {t('cta.try')}
+                {t('customizableProcesses.tryButton')}
               </div>
             </button>
           </div>
@@ -573,11 +571,11 @@ export const P2P = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('investor.title')}
+                      {t('investorFunctions.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      {t('investor.description')}
+                      {t('investorFunctions.description')}
                     </p>
                   </div>
                 </div>
@@ -611,11 +609,11 @@ export const P2P = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('borrower.title')}
+                      {t('borrowerFunctions.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('borrower.description')}
+                      {t('borrowerFunctions.description')}
                     </p>
                   </div>
                 </div>
@@ -764,7 +762,7 @@ export const P2P = () => {
       <div className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl md:h-[544px] md:!flex-row">
         <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
           <div className="md:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-            {t('calculations.title')}
+            {t('calculationModule.title')}
           </div>
 
           <img
@@ -775,21 +773,21 @@ export const P2P = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('calculations.subtitle')}
+              {t('calculationModule.interestWork.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('calculations.description')}
+              {t('calculationModule.interestWork.description')}
             </p>
           </div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('products.title')}
+              {t('productWork.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('products.description')}
+              {t('productWork.description')}
             </p>
           </div>
         </div>
@@ -801,7 +799,7 @@ export const P2P = () => {
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 md:w-[284px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('form.product')}
+                      {t('product.title')}
                     </div>
 
                     <div className="relative size-6">
@@ -831,7 +829,7 @@ export const P2P = () => {
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                          {t('form.amount')}
+                          {t('product.amount.label')}
                         </div>
 
                         <p className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -861,11 +859,11 @@ export const P2P = () => {
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                          {t('form.period')}
+                          {t('product.period.label')}
                         </div>
 
                         <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          {t('form.periodRange')}
+                          {t('product.period.value')}
                         </div>
                       </div>
 
@@ -878,11 +876,11 @@ export const P2P = () => {
 
                         <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                            {t('form.periodMin')}
+                            {t('product.period.min')}
                           </div>
 
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                            {t('form.periodMax')}
+                            {t('product.period.max')}
                           </div>
                         </div>
                       </div>
@@ -891,7 +889,7 @@ export const P2P = () => {
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
-                          {t('form.interestRate')}
+                          {t('product.interestRate.label')}
                         </div>
 
                         <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -924,7 +922,7 @@ export const P2P = () => {
                     className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
                   >
                     <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
-                      {t('form.createProduct')}
+                      {t('product.createProduct')}
                     </div>
                   </button>
                 </div>
@@ -1090,11 +1088,11 @@ export const P2P = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('products.title')}
+              {t('productWork.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('payments.automation.description')}
+              {t('productWork.description')}
             </p>
           </div>
         </div>
@@ -1118,7 +1116,7 @@ export const P2P = () => {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className="relative mt-[-1.00px] w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[530px] md:text-5xl md:leading-[60px]"
           >
-            {t('system.title')}
+            {t('flexibleSystem.title')}
           </motion.div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch">
@@ -1146,7 +1144,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.businessProcesses')}
+                {t('flexibleSystem.businessProcesses')}
               </motion.p>
             </motion.div>
 
@@ -1174,7 +1172,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.ratingRules')}
+                {t('flexibleSystem.ratingRules')}
               </motion.div>
             </motion.div>
 
@@ -1202,7 +1200,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.loanConditions')}
+                {t('flexibleSystem.loanConditions')}
               </motion.div>
             </motion.div>
 
@@ -1230,7 +1228,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.autoMessages')}
+                {t('flexibleSystem.automaticMessages')}
               </motion.div>
             </motion.div>
 
@@ -1258,7 +1256,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.documentSystem')}
+                {t('flexibleSystem.documentFormation')}
               </motion.div>
             </motion.div>
 
@@ -1285,7 +1283,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.employeeRoles')}
+                {t('flexibleSystem.employeeRoles')}
               </motion.div>
             </motion.div>
 
@@ -1310,7 +1308,7 @@ export const P2P = () => {
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
                 className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
-                {t('system.organizationRules')}
+                {t('flexibleSystem.organizationRules')}
               </motion.p>
             </motion.div>
           </div>
@@ -1392,7 +1390,7 @@ export const P2P = () => {
             <div className="relative flex w-full flex-[0_0_auto] items-start gap-2 self-stretch">
               <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('form.amount')}
+                  {t('application.amount.label')}
                 </div>
 
                 <div className="relative mr-[-2.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1402,7 +1400,7 @@ export const P2P = () => {
 
               <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('application.term')}
+                  {t('application.term.label')}
                 </div>
 
                 <div className="relative mr-[-0.33px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1412,7 +1410,7 @@ export const P2P = () => {
 
               <div className="relative flex flex-1 grow flex-col items-start rounded-[20px] bg-[#f6f8ff] px-4 py-3">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  {t('application.rate')}
+                  {t('application.rate.label')}
                 </div>
 
                 <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1427,7 +1425,7 @@ export const P2P = () => {
             className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
           >
             <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
-              {t('application.submitLoan')}
+              {t('application.applyLoan')}
             </div>
           </button>
         </motion.div>
@@ -1452,7 +1450,7 @@ export const P2P = () => {
               <div className="relative size-2 rounded bg-blue-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                {t('balance.current')}
+                {t('chart.current')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -1464,7 +1462,7 @@ export const P2P = () => {
               <div className="relative size-2 rounded bg-green-60" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                {t('balance.principal')}
+                {t('chart.main')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -1476,7 +1474,7 @@ export const P2P = () => {
               <div className="relative size-2 rounded bg-yellow-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                {t('balance.interest')}
+                {t('chart.interest')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
@@ -1488,7 +1486,7 @@ export const P2P = () => {
               <div className="relative size-2 rounded bg-red-50" />
 
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
-                {t('balance.penalty')}
+                {t('chart.penalty')}
               </div>
 
               <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">

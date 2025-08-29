@@ -248,7 +248,7 @@ export const About = () => {
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                  {t('contact')}
+                  {t('contact', { ns: 'common' })}
                 </div>
               </button>
             </article>

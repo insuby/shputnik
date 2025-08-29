@@ -752,7 +752,7 @@ export const Dataunload = () => {
                   </div>
 
                   <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('pricing.payOnly')}
+                    {t('pricing.payOnlyWhenUsing')}
                   </p>
                 </div>
               </div>
@@ -792,7 +792,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
               className="relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]"
             >
-              {t('cta.button')}
+              {t('cta.title')}
             </motion.div>
 
             <motion.p
@@ -810,7 +810,7 @@ export const Dataunload = () => {
             className="all-[unset] relative mt-3 box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:mt-0 md:w-fit"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('contact')}
+              {t('cta.buttonText')}
             </div>
           </button>
         </motion.div>
