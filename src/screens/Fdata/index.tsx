@@ -200,16 +200,16 @@ export const Fdata = () => {
                       <div className="relative size-2 rounded bg-red-50" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Unreconciled
+                        {t('dashboard.unreconciled')}
                       </div>
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      DP1 vs DP2
+                      {t('dashboard.dp1vsDp2')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      John Smith
+                      {t('dashboard.johnSmith')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -231,11 +231,11 @@ export const Fdata = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      DP1 vs DP2
+                      {t('dashboard.dp1vsDp2')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      John Smith
+                      {t('dashboard.johnSmith')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -257,11 +257,11 @@ export const Fdata = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      DP1 vs DP2
+                      {t('dashboard.dp1vsDp2')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      John Smith
+                      {t('dashboard.johnSmith')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -278,16 +278,16 @@ export const Fdata = () => {
                       <div className="relative size-2 rounded bg-red-50" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Unreconciled
+                        {t('dashboard.unreconciled')}
                       </div>
                     </div>
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      DP1 vs DP2
+                      {t('dashboard.dp1vsDp2')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      John Smith
+                      {t('dashboard.johnSmith')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -357,7 +357,7 @@ export const Fdata = () => {
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      Unreconciled
+                      {t('dashboard.unreconciled')}
                     </div>
                   </div>
 
