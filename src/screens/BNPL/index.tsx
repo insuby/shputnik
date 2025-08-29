@@ -120,7 +120,7 @@ export const BNPL = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
                   className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
                 >
-                  <span id="bnpl-title">{t('hero.title')}</span>
+                  <span id="bnpl-title">{t('description.bnpl')}</span>
                 </motion.h1>
 
                 <motion.p
@@ -900,7 +900,7 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
           >
-            {t('backoffice.description')}
+            {t('posIntegration.description')}
           </motion.p>
         </motion.div>
 
@@ -1192,7 +1192,7 @@ export const BNPL = () => {
                     <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('form.installmentEndDate')}
+                          {t('installment.installmentEndDate')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -1208,7 +1208,7 @@ export const BNPL = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('form.nextPaymentDate')}
+                          {t('installment.nextPaymentDate')}
                         </div>
 
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
