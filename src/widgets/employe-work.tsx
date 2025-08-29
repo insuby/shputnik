@@ -406,7 +406,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             />
 
             <div className="relative w-full self-stretch md:h-[210px]">
-              <div className="relative top-1 flex w-full flex-col items-start md:left-[73px] md:w-[434px]">
+              <div className="relative top-1 flex w-full flex-col items-start md:left-[73px] md:w-[456px]">
                 <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 pl-0 pr-2 md:left-0 md:pl-16">
                   <div className="relative flex w-full flex-col items-start gap-1 md:w-[296px]">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">

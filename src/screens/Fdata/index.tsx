@@ -117,7 +117,7 @@ export const Fdata = () => {
                   </h1>
 
                   <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
-                    {t('hero.description')}
+                    {t('static.heroDescription')}
                   </p>
                 </div>
               </div>
@@ -573,7 +573,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('details.resourceOptimization')}
+                  {t('howWeHelp.resourceOptimization.title')}
                 </motion.div>
                 <motion.p
                   ref={ref17}
@@ -619,7 +619,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('details.transparentAnalytics')}
+                  {t('howWeHelp.transparentAnalytics.title')}
                 </motion.div>
                 <motion.p
                   ref={ref22}
@@ -657,7 +657,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('details.adaptability')}
+                  {t('howWeHelp.adaptability.title')}
                 </motion.div>
                 <motion.p
                   ref={ref26}
@@ -695,7 +695,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('details.errorReduction')}
+                  {t('howWeHelp.errorReduction.title')}
                 </motion.div>
                 <motion.p
                   ref={ref30}
@@ -704,7 +704,7 @@ export const Fdata = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
-                  {t('details.errorReduction')}
+                  {t('howWeHelp.errorReduction.description')}
                 </motion.p>
               </div>
             </motion.div>
@@ -1086,11 +1086,11 @@ export const Fdata = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('details.errorReduction')}
+                    {t('howWeHelp.errorReduction.title')}
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    {t('details.errorReduction')}
+                    {t('howWeHelp.errorReduction.description')}
                   </p>
                 </div>
               </motion.div>
