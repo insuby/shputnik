@@ -102,31 +102,31 @@ export const Development = () => {
 
             <div className="absolute left-[221px] top-[536px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-red-40 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                FinTech
+                {t('technologies.fintech')}
               </div>
             </div>
 
             <div className="absolute left-[232px] top-32 inline-flex items-center justify-center gap-2 rounded-[100px] bg-green-60 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                Blockchain
+                {t('technologies.blockchain')}
               </div>
             </div>
 
             <div className="absolute left-[469px] top-[569px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-blue-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                MedTech
+                {t('technologies.medtech')}
               </div>
             </div>
 
             <div className="absolute left-[577px] top-[341px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-violet-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                MarTech
+                {t('technologies.martech')}
               </div>
             </div>
 
             <div className="absolute left-[34px] top-[276px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-yellow-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                Enterprise
+                {t('technologies.enterprise')}
               </div>
             </div>
           </div>
@@ -136,7 +136,7 @@ export const Development = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
           <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
-            Разработка проектов
+            {t('projectDevelopment.title')}
           </div>
         </div>
 
@@ -346,7 +346,7 @@ export const Development = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Enterprise
+                      {t('platforms.enterprise.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -416,7 +416,7 @@ export const Development = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      FinTech
+                      {t('platforms.fintech.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -442,7 +442,7 @@ export const Development = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      Blockchain
+                      {t('platforms.blockchain.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -496,7 +496,7 @@ export const Development = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      MedTech
+                      {t('platforms.medtech.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -522,7 +522,7 @@ export const Development = () => {
 
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                     <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      MarTech
+                      {t('platforms.martech.title')}
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
