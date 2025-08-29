@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useFeedbackForm } from './feedback-form';
 
@@ -99,7 +99,7 @@ export const Feedback = () => {
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="w-full md:w-fit all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4"
+            className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:w-fit"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('feedback.contactButton')}
@@ -120,7 +120,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-              className="relative mt-[-1.00px] w-full md:w-[264px] text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+              className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]"
             >
               {t('feedback.paymentSchedule')}
             </motion.div>
@@ -130,7 +130,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView6 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-              className="relativew-full md:w-[180px] text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]"
+              className="relativew-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]"
             >
               {t('feedback.contract')}
             </motion.div>

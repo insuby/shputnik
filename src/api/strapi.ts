@@ -99,7 +99,9 @@ export type Comment = {
 };
 
 export const getComments = async (postId: string | number) => {
-  const res = await fetchJson<{ data: Comment[] }>(buildUrl(`/api/posts/${postId}/comments`));
+  const res = await fetchJson<{ data: Comment[] }>(
+    buildUrl(`/api/posts/${postId}/comments`),
+  );
   return res.data;
 };
 
@@ -118,19 +120,25 @@ export const addComment = async (
 };
 
 export const likePost = async (postId: string | number) => {
-  const res = await fetch(buildUrl(`/api/posts/${postId}/like`), { method: 'POST' });
+  const res = await fetch(buildUrl(`/api/posts/${postId}/like`), {
+    method: 'POST',
+  });
   if (!res.ok) throw new Error('Failed to like post');
   return (await res.json()).data as { id: string | number; likes: number };
 };
 
 export const viewPost = async (postId: string | number) => {
-  const res = await fetch(buildUrl(`/api/posts/${postId}/view`), { method: 'POST' });
+  const res = await fetch(buildUrl(`/api/posts/${postId}/view`), {
+    method: 'POST',
+  });
   if (!res.ok) throw new Error('Failed to increment views');
   return (await res.json()).data as { id: string | number; views: number };
 };
 
 export const likeComment = async (commentId: string | number) => {
-  const res = await fetch(buildUrl(`/api/comments/${commentId}/like`), { method: 'POST' });
+  const res = await fetch(buildUrl(`/api/comments/${commentId}/like`), {
+    method: 'POST',
+  });
   if (!res.ok) throw new Error('Failed to like comment');
   return (await res.json()).data as { id: string | number; likes: number };
 };

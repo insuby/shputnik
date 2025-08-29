@@ -13,7 +13,7 @@ export const Point = ({
   text,
 }: Props): JSX.Element => {
   const { t } = useTranslation('components');
-  
+
   return (
     <div
       className={`relative inline-flex flex-col items-center justify-center gap-2 px-0 py-2.5 ${className}`}

@@ -22,19 +22,7 @@ export default {
     applyLoan: 'Apply for loan',
     termValue: '14 days',
   },
-  lendingStoreOnline: {
-    headingLeft: 'Lending',
-    headingRight: 'in-store and online',
-    bnplTitle: 'BNPL',
-    bnplDesc:
-      'Software to quickly launch BNPL (Buy Now, Pay Later) at checkout — both online and in retail locations',
-    posTitle: 'POS lending',
-    posDesc:
-      'Software to launch POS loans at checkout — both in online stores and retail points of sale',
-    paymentSchedule: 'Payment schedule',
-    currentBalance: 'Current balance',
-    loanAmount: 'Loan amount',
-  },
+
   otherSoftware: 'Other software',
   dataUnload: {
     title: 'Data export to credit bureaus',

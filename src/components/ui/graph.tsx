@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 export const Graph = ({ sum = '42,000 ' }) => {
   const { t } = useTranslation('components');
-  
+
   return (
     <div className="relative ml-[-4.00px] inline-flex flex-[0_0_auto] flex-col items-start gap-2.5 px-3 py-0">
       <div className="relative size-[184px]">

@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Zaim = () => {
   const { t } = useTranslation('widgets');
@@ -21,15 +21,15 @@ export const Zaim = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView10 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 md:gap-12 self-stretch"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch md:gap-12"
     >
-      <div className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-        <div className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]">
+        <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
           {t('zaim.title')}
         </div>
       </div>
 
-      <div className="relative flex flex-col md:!flex-row w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
         <motion.div
           ref={ref11}
           initial={{ opacity: 0, x: -50 }}

@@ -168,6 +168,7 @@ export default {
     address: '183038, Murmansk, Oktyabrskaya street, house 2a, office 2',
     name: 'Name',
     namePlaceholder: 'Your name',
+    email: 'Email',
     phone: 'Phone',
     emailPlaceholder: 'Your email address',
     comment: 'Comment',

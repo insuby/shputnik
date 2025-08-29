@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Analytics = () => {
   const { t } = useTranslation('widgets');
@@ -35,15 +35,14 @@ export const Analytics = () => {
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
 
-
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 md:gap-12 self-stretch">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
       <motion.div
         ref={ref1}
         initial={{ opacity: 0, y: 50 }}
         animate={inView1 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative mt-[-1.00px] self-stretch text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
       >
         {t('analytics.title')}
       </motion.div>
@@ -53,7 +52,7 @@ export const Analytics = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-full flex-col-reverse md:!flex-row flex-[0_0_auto] items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]"
+        className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:!flex-row"
       >
         <img
           className="absolute left-[450px] top-0 h-[668px] w-full md:w-[926px]"
@@ -66,7 +65,7 @@ export const Analytics = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView3 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl pt-0 pb-8 px-8 md:p-20"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl px-8 pb-8 pt-0 md:p-20"
         >
           <motion.div
             ref={ref6}
@@ -160,7 +159,7 @@ export const Analytics = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative scale-95 md:scale-100 left-[-95px] md:left-[57px] top-[-73px] md:top-[17px] h-[574px] w-full md:!size-[574px] rounded-[287px]">
+          <div className="relative left-[-95px] top-[-73px] h-[574px] w-full scale-95 rounded-[287px] md:left-[57px] md:top-[17px] md:!size-[574px] md:scale-100">
             <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
 
             <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />

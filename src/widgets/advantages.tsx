@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Advantages = () => {
   const { t } = useTranslation('widgets');
@@ -27,21 +27,21 @@ export const Advantages = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7  md:gap-12 self-stretch"
+      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7  self-stretch md:gap-12"
     >
       <motion.div
         ref={ref2}
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-full md:w-[656px] flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
       >
         <motion.div
           ref={ref3}
           initial={{ opacity: 0, y: 50 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative mt-[-1.00px] self-stretch text-center text-[36px] md:text-5xl font-medium leading-[44px] md:leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+          className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
         >
           {t('advantages.title')}
         </motion.div>
@@ -62,7 +62,7 @@ export const Advantages = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView5 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-        className="relative flex md:!flex-row flex-col w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row"
       >
         <motion.div
           ref={ref6}

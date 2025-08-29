@@ -10,4 +10,4 @@ export default {
   graph: {
     totalAmount: 'Total amount',
   },
-}; 
+};

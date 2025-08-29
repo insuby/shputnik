@@ -168,6 +168,7 @@ export default {
     address: '183038, Мурманск, улица Октябрьская, дом 2а, офис 2',
     name: 'Имя',
     namePlaceholder: 'Ваше имя',
+    email: 'Email',
     phone: 'Телефон',
     emailPlaceholder: 'Ваш почтовый адрес',
     comment: 'Комментарий',

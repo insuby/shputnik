@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
+
 import { ReactNode, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { useFeedbackForm } from '../../widgets/feedback-form';
 
@@ -74,7 +75,7 @@ export const HeroButtons = ({
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={handleButtonClick}
-        className="all-[unset] relative box-border hidden md:inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90"
+        className="all-[unset] relative box-border hidden flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 md:inline-flex"
       >
         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           {buttonText || t('heroButtons.signUpPresentation')}

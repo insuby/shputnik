@@ -43,12 +43,7 @@ export const bnpl = {
     thirdPartyData: 'Third Party Service Data',
     documentCheck: 'Document Verification',
   },
-  backoffice: {
-    title: 'Back Office',
-    subtitle: 'Manage all payments in one place',
-    description:
-      'Monitoring and management of each application from a single control panel. This centralized control simplifies tracking of atl installment plans, ensuring efficient operation and optimal financial management.',
-  },
+
   app: {
     title: 'Your',
     titleHighlight: 'Logo',

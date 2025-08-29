@@ -1,11 +1,11 @@
 import { motion, useInView } from 'framer-motion';
-import { useTranslation } from 'react-i18next';
 
 import { useRef } from 'react';
-import { isMobile } from '../App.tsx';
+import { useTranslation } from 'react-i18next';
 
+import { isMobile } from '../App.tsx';
 import { Check10 } from '../components/ui/check10.tsx';
-import {CrmCapabilities} from "./crm-capabilities.tsx";
+import { CrmCapabilities } from './crm-capabilities.tsx';
 
 export const ZaimChecker = () => {
   const { t } = useTranslation('widgets');
@@ -69,29 +69,29 @@ export const ZaimChecker = () => {
   const inView28 = useInView(ref28, { once: true, margin: marginValue });
 
   return (
-    <div className="relative flex w-full md:w-[1376px] flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[1376px]">
       <img
         className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
         alt="Vector"
         src="/img/zain-checker/vector-1.svg"
       />
 
-      <div className="relative flex-col md:!flex-row flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch p-0 md:p-12">
-        <div className="relative flex w-full md:w-[520px] flex-col items-start gap-7">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch p-0 md:!flex-row md:p-12">
+        <div className="relative flex w-full flex-col items-start gap-7 md:w-[520px]">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
             src="/img/zain-checker/frame-18-2.svg"
           />
 
-          <div className="relative w-full flex md:inline-flex flex-[0_0_auto] flex-col items-start gap-6">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
               <motion.div
                 ref={ref1}
                 initial={{ opacity: 0, x: 80 }}
                 animate={inView1 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] w-full md:w-[520px] text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[520px]"
               >
                 {t('zainChecker.title')}
               </motion.div>
@@ -113,7 +113,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref4}
@@ -135,7 +135,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView5 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref6}
@@ -157,7 +157,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView7 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref8}
@@ -179,7 +179,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView9 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref10}
@@ -201,7 +201,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView11 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref12}
@@ -223,7 +223,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView13 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref14}
@@ -244,19 +244,19 @@ export const ZaimChecker = () => {
         </div>
 
         <img
-          className="relative hidden md:block md:h-[528px] w-px"
+          className="relative hidden w-px md:block md:h-[528px]"
           alt="Vector"
           src="/img/zain-checker/vector-129.svg"
         />
 
-        <div className="relative flex w-full md:w-[520px] flex-col items-start justify-center gap-7">
+        <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[520px]">
           <img
             className="relative flex-[0_0_auto]"
             alt="Frame"
             src="/img/zain-checker/frame-18-4.svg"
           />
 
-          <div className="relative flex w-full md:w-[520px] flex-[0_0_auto] flex-col items-start gap-6">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[520px]">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
               <motion.div
                 ref={ref15}
@@ -285,7 +285,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView17 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref18}
@@ -307,7 +307,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView19 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref20}
@@ -329,7 +329,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView21 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref22}
@@ -351,7 +351,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView23 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref24}
@@ -373,7 +373,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView25 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref26}
@@ -395,7 +395,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView27 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
-                className="relative flex h-fit md:h-7 w-full md:w-[520px] items-center justify-center gap-6"
+                className="relative flex h-fit w-full items-center justify-center gap-6 md:h-7 md:w-[520px]"
               >
                 <motion.div
                   ref={ref28}
@@ -416,7 +416,7 @@ export const ZaimChecker = () => {
         </div>
       </div>
 
-    <CrmCapabilities />
+      <CrmCapabilities />
     </div>
   );
 };
