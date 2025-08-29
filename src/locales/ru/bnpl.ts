@@ -43,7 +43,6 @@ export const bnpl = {
     thirdPartyData: 'Данные из сторонних сервисов',
     documentCheck: 'Проверка документов',
   },
-
   app: {
     title: 'Ваш',
     titleHighlight: 'Лого',

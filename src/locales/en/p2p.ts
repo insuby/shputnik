@@ -1,114 +1,144 @@
 export const p2p = {
-  actions: {
+  hero: {
+    title: 'P2P lending',
+    subtitle: 'Core, integrations with services and information sources, ready-made modules and libraries - all this allows you to quickly deploy',
+  },
+  dashboard: {
+    greeting: 'Hello,',
+    userName: 'David',
+    balance: 'Balance',
+    balanceAmount: '122,000₽',
+    withdraw: 'Withdraw',
     topUp: 'Top Up',
-    invest: 'Invest',
-  },
-  sections: {
     myInvestments: 'My Investments',
-    myLoans: 'My Loans',
-    investments: 'Investments',
-  },
-  metrics: {
+    investmentAmount: '42 000₽',
     interest: 'Interest',
+    interestAmount: '1 200₽',
+    myLoans: 'My Loans',
+    loanAmount: '134 000₽',
     payment: 'Payment',
+    paymentAmount: '9 000₽',
+    investments: 'Investments',
+    investAmount: '80 000₽',
+    interestRate: '14%',
+    invest: 'Invest',
     totalIncome: 'Total Income',
+    totalIncomeAmount: '1,567,000₽',
   },
-  features: {
-    customizableProcesses: 'Customizable Business Processes',
-    tailoredToRequests: 'tailored to your requests',
-  },
-  cta: {
-    try: 'Try',
+  customizableProcesses: {
+    title: 'Customizable business processes for your requests',
+    tryButton: 'Try',
   },
   notifications: {
     applicationApproved: 'Your application has been approved',
     passwordChanged: 'Your password has been changed',
   },
   services: {
-    title: 'Services and Integrations',
-    description:
-      'Acceptance and accounting of applications from investors and borrowers, client dashboard, specialist dashboard, CRM system, integration with telephony, SMS and email services',
+    title: 'Services and integrations',
+    description: 'Acceptance and accounting of applications from investors and borrowers, client portal, specialist portal, CRM system, integration with telephony, SMS and email services',
+    totalApplications: '5,674',
   },
-  investor: {
-    title: 'Investor Functions',
-    description:
-      'Simple or batch investing, auctions, rating, account top-up, money withdrawal from account',
+  investorFunctions: {
+    title: 'Investor functions',
+    description: 'Simple or package investing, trading, rating, account replenishment, money withdrawal from account',
+    range: '0 - 122 000',
   },
-  borrower: {
-    title: 'Borrower Functions',
-    description:
-      'Loan application submission, auctions, rating, loan repayment, loan receipt',
+  borrowerFunctions: {
+    title: 'Borrower functions',
+    description: 'Submitting a loan application, trading, rating, loan repayment, loan receipt',
   },
   modules: {
     title: 'Modules',
-    description: 'Auto-investing, statistics generation, history, rating',
+    description: 'Auto-investment, statistics formation, history, rating',
+    totalAmount: 'Total amount',
+    totalValue: '88,000₽',
   },
-  total: 'Total Amount',
-  navigation: {
-    previousSlide: 'Previous slide',
-    nextSlide: 'Next slide',
+  calculationModule: {
+    title: 'Ready calculation module',
+    interestWork: {
+      title: 'Interest work',
+      description: 'Accrual, write-off and calculation of interest and penalties. Compliance with all requirements of Russian legislation',
+    },
+    productWork: {
+      title: 'Product work',
+      description: 'A flexible system allows you to create and configure the necessary credit product: from PDL to credit line',
+    },
   },
-  calculations: {
-    title: 'Ready Calculation Module',
-    subtitle: 'Interest Work',
-    description:
-      'Accrual, write-off and calculation of interest and penalties. Compliance with all requirements of Russian legislation',
+  product: {
+    title: 'Product',
+    amount: {
+      label: 'Amount',
+      value: '30 000 ₽ - 680 000 ₽',
+      min: '10 000 ₽',
+      max: '800 000 ₽',
+    },
+    period: {
+      label: 'Period',
+      value: '2 - 8 months',
+      min: '1 month',
+      max: '24 months',
+    },
+    interestRate: {
+      label: 'Interest rate',
+      value: '1.2% - 8%',
+      min: '0%',
+      max: '24%',
+    },
+    createProduct: 'Create product',
   },
-  products: {
-    title: 'Product Management',
-    description:
-      'Flexible system allows you to create and configure the necessary credit product: from PDL to credit line',
-  },
-  form: {
-    product: 'Product',
-    amount: 'Amount',
-    period: 'Period',
-    periodRange: '2 - 8 months',
-    periodMin: '1 month',
-    periodMax: '24 months',
-    interestRate: 'Interest Rate',
-    createProduct: 'Create Product',
-  },
-  menu: {
+  payments: {
+    title: 'Payments',
     products: 'Products',
     contracts: 'Contracts',
-  },
-  loanTypes: {
-    pro: 'Loan PRO',
+    loanPro: 'Loan PRO',
     preferential: 'Preferential',
     express: 'Express',
   },
-  payments: {
-    title: 'Intelligent Payment Processing',
+  intelligentPayments: {
+    title: 'Intelligent payment processing',
     automation: {
       title: 'Automation',
-      description:
-        'Automatic allocation of incoming payments, distribution of interest, principal, penalties, and creation of other operations. Sending outgoing payments by events. You can enable both fully automatic mode and "with confirmation" mode',
+      description: 'Automatic distribution of incoming payments, distribution of interest, principal, penalties, as well as creation of other operations',
+    },
+    productWork: {
+      title: 'Product work',
+      description: 'Sending outgoing payments by events. You can enable both fully automatic mode,',
     },
   },
-  system: {
-    title: 'Flexible System Configuration',
-    businessProcesses: 'Business processes tailored to your business needs',
+  flexibleSystem: {
+    title: 'Flexible system configuration',
+    businessProcesses: 'Business processes for your business needs',
     ratingRules: 'Rating calculation rules',
     loanConditions: 'Loan issuance conditions',
-    autoMessages: 'Automatic messages',
-    documentSystem: 'Intelligent document generation system',
+    automaticMessages: 'Automatic messages',
+    documentFormation: 'Intelligent document formation system',
     employeeRoles: 'Employee roles in the system',
-    organizationRules:
-      'Organization rule management, user action control, blacklist management',
+    organizationRules: 'Organization rule management, user action control, blacklist management',
   },
   application: {
-    submit: 'Submit Application',
-    amount: 'Amount',
-    term: 'Term',
-    termValue: '14 days',
-    rate: 'Rate',
-    submitLoan: 'Submit Loan',
+    title: 'Submit application',
+    amount: {
+      label: 'Amount',
+      value: '42 000₽',
+    },
+    term: {
+      label: 'Term',
+      value: '14 days',
+    },
+    rate: {
+      label: 'Rate',
+      value: '2.5%',
+    },
+    applyLoan: 'Apply for loan',
   },
-  balance: {
+  chart: {
     current: 'Current',
-    principal: 'Principal',
+    currentAmount: '48,456₽',
+    main: 'Main',
+    mainAmount: '122,000₽',
     interest: 'Interest',
+    interestAmount: '4,000₽',
     penalty: 'Penalty',
+    penaltyAmount: '2,700₽',
   },
 };

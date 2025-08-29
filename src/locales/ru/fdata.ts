@@ -1,20 +1,111 @@
 export const fdata = {
-  cta: {
-    title: 'Попробуйте, вам понравится!',
-    contact: 'Связаться с нами',
-    description:
-      'Оставьте заявку на демонстрацию — мы покажем, как работает платформа и ответим на ваши вопросы',
+  hero: {
+    title: 'ПО для реконсиляции данных',
+    subtitle: 'Автоматизация всех ваших процессов обработки финансовых данных с минимальной зависимостью от персонала',
   },
-  calculator: {
-    title: 'Калькулятор',
-    amount: 'Сумма',
-    period: 'Период',
-    periodValue: '8 месяцев',
-    submit: 'Оформить',
-    loanAmount: 'Сумма займа',
+  dashboard: {
+    title: 'Dashboard',
+    search: 'Search',
+    status: 'Status',
+    reconciliation: 'Reconciliation',
+    operator: 'Operator',
+    lastRunTime: 'Last run time',
+    mismatches: 'Mismatches',
+    unreconciled: 'Unreconciled',
+    reconciled: 'Reconciled',
+    dp1vsDp2: 'DP1 vs DP2',
+    johnSmith: 'John Smith',
+    may25: '25 may 07:16',
+    may24: '24 may 12:44',
+    may23: '23 may 05:38',
+    may22: '22 may 07:16',
   },
-  balance: {
-    currentBalance: 'Текущий остаток',
-    loanAmount: 'Сумма займа',
+  filter: {
+    title: 'Filter',
+    status: 'Status',
+    waiting: 'Waiting',
+    inProgress: 'In progress',
+    reconciled: 'Reconciled',
+    unreconciled: 'Unreconciled',
+    created: 'Created',
+    failed: 'Failed',
+    users: 'Users',
+    byMe: 'By me',
+    byOthers: 'By others',
+    projects: 'Projects',
+    payments: 'Payments',
+    finance: 'Finance',
+    trading: 'Trading',
+  },
+  details: {
+    title: 'f.Data в деталях',
+    description: 'f.Data автоматизирует все ваши процессы обработки финансовых данных с минимальной зависимостью от персонала. Наша инновационная платформа загружает и реконсилирует данные, обеспечивая точность и надежность.',
+  },
+  howWeHelp: {
+    title: 'Как мы помогаем финансам',
+    subtitle: 'Философия и архитектура f.Data позволяет нашим клиентам уверенно управлять финансовыми данными, делать это быстро и эффективно.',
+    financialLossReduction: {
+      title: 'Сокращение финансовых потерь',
+      description: 'Собственники бизнеса, CFO, COO, CIO получают уверенность в корректности финансовых данных, передаваемых в отчетность.',
+    },
+    resourceOptimization: {
+      title: 'Оптимизация ресурсов',
+      description: 'Автоматизация экономит рабочее время и в разы увеличивает доступные ресурсы',
+    },
+    transparentAnalytics: {
+      title: 'Прозрачная аналитика',
+      description: 'Получайте точную картину состояния ваших финансовых данных за считанные минуты',
+    },
+    adaptability: {
+      title: 'Адаптивность',
+      description: 'Теперь легко создавать и изменять процессы обработки финансовых данных',
+    },
+    errorReduction: {
+      title: 'Сокращение ошибок',
+      description: 'Сокращайте количество ошибок и улучшайте качество финансовых данных',
+    },
+  },
+  innovativeTechnology: {
+    title: 'Инновационная технология для вашего бизнеса',
+    tryButton: 'Попробовать',
+  },
+  dataLoading: {
+    title: 'Загрузка и реконсиляция данных',
+    description: 'Поддержка любых форматов интеграций и файлов, гибкая настройка правил обработки данных',
+    ruleSetup: 'Настройка правил',
+    automaticLoading: 'Автоматическая загрузка',
+    fileStorage: 'Хранение файлов',
+    total: 'Total',
+    totalValue: '88,000',
+  },
+  reporting: {
+    title: 'Отчетность',
+    description: 'Легко создавать отчеты и дашборды используя данные из всех подключенных источников',
+  },
+  ourClients: {
+    title: 'Нашим клиентам',
+    testimonial: {
+      name: 'Константин Гризов',
+      position: 'Управляющий партнер PLUS Consulting',
+      text: 'f.Data легко масштабируется для бизнеса любого размера, что позволяет автоматизировать работу с финансовыми данными как в банках, страховых и инвестиционных компаниях, платежных системах, так и в компаниях среднего и малого бизнеса.',
+    },
+  },
+  benefits: {
+    controlFinances: {
+      title: 'Контролируйте финансы и будьте готовы к аудиту',
+      description: 'Своевременно и без рутины выявляйте расхождения в финансовых транзакциях и предотвращайте потери. Процессы в f.Data документированы и могут быть использованы для аудиторских проверок.',
+    },
+    rejectPersonnelRisks: {
+      title: 'Откажитесь от рисков персонала',
+      description: 'Управление процессами в f.Data можно легко передать новому сотруднику',
+    },
+    workFaster: {
+      title: 'Работайте быстрее',
+      description: 'Процессы с f.Data выполняются до 100 раз быстрее',
+    },
+    getRidOfErrors: {
+      title: 'Избавьтесь от ошибок',
+      description: 'Автоматические проверки качества и целостности данных на всех этапах',
+    },
   },
 };
