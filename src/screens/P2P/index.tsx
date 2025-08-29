@@ -106,7 +106,7 @@ export const P2P = () => {
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
                   className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
                 >
-                  {t('hero.description')}
+                  {t('hero.subtitle')}
                 </motion.p>
               </div>
             </div>
@@ -247,7 +247,7 @@ export const P2P = () => {
 
                   <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t('metrics.payment')}
+                      {t('dashboard.payment')}
                     </div>
 
                     <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -320,7 +320,7 @@ export const P2P = () => {
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
-                {t('metrics.totalIncome')}
+                {t('dashboard.totalIncome')}
               </div>
 
               <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
@@ -783,11 +783,11 @@ export const P2P = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('productWork.title')}
+              {t('calculationModule.productWork.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('productWork.description')}
+              {t('calculationModule.productWork.description')}
             </p>
           </div>
         </div>
@@ -940,7 +940,7 @@ export const P2P = () => {
                 <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('metrics.payment')}
+                      {t('payments.title')}
                     </div>
 
                     <div className="relative size-6">
@@ -969,13 +969,13 @@ export const P2P = () => {
                   <div className="relative flex w-[264px] items-center justify-between rounded-[100px] bg-[#f9fafd]">
                     <div className="relative flex w-[132px] flex-col items-center justify-center gap-2 rounded-[100px] bg-gray-90 px-0 py-2">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                        {t('menu.products')}
+                        {t('payments.products')}
                       </div>
                     </div>
 
                     <div className="relative flex w-[132px] flex-col items-center justify-center gap-2 px-0 py-2">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('menu.contracts')}
+                        {t('payments.contracts')}
                       </div>
                     </div>
                   </div>
@@ -987,7 +987,7 @@ export const P2P = () => {
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                         <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                            {t('loanTypes.pro')}
+                            {t('payments.loanPro')}
                           </div>
                         </div>
                       </div>
@@ -1000,7 +1000,7 @@ export const P2P = () => {
                     <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-                          {t('loanTypes.preferential')}
+                          {t('payments.preferential')}
                         </div>
                       </div>
 
@@ -1012,7 +1012,7 @@ export const P2P = () => {
                     <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-                          {t('loanTypes.preferential')}
+                          {t('payments.preferential')}
                         </div>
                       </div>
 
@@ -1024,7 +1024,7 @@ export const P2P = () => {
                     <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
-                          {t('loanTypes.express')}
+                          {t('payments.express')}
                         </div>
                       </div>
 
@@ -1037,7 +1037,7 @@ export const P2P = () => {
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                         <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                            {t('loanTypes.pro')}
+                            {t('payments.loanPro')}
                           </div>
                         </div>
                       </div>
@@ -1050,7 +1050,7 @@ export const P2P = () => {
                     <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-                          {t('loanTypes.preferential')}
+                          {t('payments.preferential')}
                         </div>
                       </div>
 
@@ -1078,21 +1078,21 @@ export const P2P = () => {
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('payments.automation.title')}
+              {t('intelligentPayments.automation.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('payments.automation.description')}
+              {t('intelligentPayments.automation.description')}
             </p>
           </div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-              {t('productWork.title')}
+              {t('intelligentPayments.productWork.title')}
             </div>
 
             <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-              {t('productWork.description')}
+              {t('intelligentPayments.productWork.description')}
             </p>
           </div>
         </div>
