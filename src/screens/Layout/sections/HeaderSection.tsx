@@ -9,8 +9,8 @@ import { RoutesPath } from '../../../routes-path.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
 
 export const HeaderSection = () => {
-  const { t } = useTranslation(['nav', 'common', 'megamenu']);
-  const { pathname } = useLocation();
+    const { t } = useTranslation(['common']);
+    const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,7 +99,7 @@ export const HeaderSection = () => {
             aria-controls="products-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {t('products', { ns: 'nav' })}
+              {t('actions.products')}
           </button>
         </div>
         <ul className="flex items-center gap-16">
@@ -160,7 +160,7 @@ export const HeaderSection = () => {
           } relative cursor-pointer items-center justify-center rounded-[100px]`}
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-            {t('contactUs', { ns: 'common' })}
+              {t('actions.contactUs')}
           </div>
         </button>
         <LanguageSwitcher />

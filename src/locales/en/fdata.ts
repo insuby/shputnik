@@ -1,7 +1,8 @@
 export const fdata = {
   // Static texts from commit
   static: {
-    heroDescription: 'Automation of all your financial data processing processes with minimal personnel dependency',
+    heroDescription:
+      'Automation of all your financial data processing processes with minimal personnel dependency',
     processAnalysis: 'Analysis',
     processAnalysisDescription: 'Data analysis and processing',
     processMvp: 'MVP',
@@ -24,7 +25,8 @@ export const fdata = {
   },
   hero: {
     title: 'Software for data reconciliation',
-    subtitle: 'Automation of all your financial data processing processes with minimal personnel dependency',
+    subtitle:
+      'Automation of all your financial data processing processes with minimal personnel dependency',
     buttonText: 'Learn more',
   },
   dashboard: {
@@ -63,14 +65,20 @@ export const fdata = {
   },
   details: {
     title: 'f.Data in detail',
-    description: 'f.Data automates all your financial data processing processes with minimal personnel dependency. Our innovative platform loads and reconciles data, ensuring accuracy and reliability.',
+    description:
+      'f.Data automates all your financial data processing processes with minimal personnel dependency. Our innovative platform loads and reconciles data, ensuring accuracy and reliability.',
     helpTitle: 'How we help finance',
-    philosophy: 'The philosophy and architecture of f.Data allows our clients to confidently manage financial data, do it quickly and efficiently.',
+    philosophy:
+      'The philosophy and architecture of f.Data allows our clients to confidently manage financial data, do it quickly and efficiently.',
     lossReduction: 'Financial loss reduction',
-    confidence: 'Business owners, CFO, COO, CIO gain confidence in the correctness of financial data transmitted in reports.',
-    automation: 'Automation saves working time and increases available resources many times over',
-    accuratePicture: 'Get an accurate picture of the state of your financial data in minutes',
-    easyCreation: 'Now it is easy to create and modify financial data processing processes',
+    confidence:
+      'Business owners, CFO, COO, CIO gain confidence in the correctness of financial data transmitted in reports.',
+    automation:
+      'Automation saves working time and increases available resources many times over',
+    accuratePicture:
+      'Get an accurate picture of the state of your financial data in minutes',
+    easyCreation:
+      'Now it is easy to create and modify financial data processing processes',
     cta: {
       title: 'Innovative technology for your business',
       button: 'Try',
@@ -84,11 +92,13 @@ export const fdata = {
     },
     dataProcessing: {
       title: 'Data processing',
-      description: 'Support for any integration formats and files, flexible configuration of data processing rules',
+      description:
+        'Support for any integration formats and files, flexible configuration of data processing rules',
     },
     reporting: {
       title: 'Reporting',
-      description: 'Easily create reports and dashboards using data from all connected sources',
+      description:
+        'Easily create reports and dashboards using data from all connected sources',
     },
     navigation: {
       previousSlide: 'Previous slide',
@@ -97,16 +107,20 @@ export const fdata = {
     testimonials: {
       title: 'Our clients',
       author: 'Konstantin Grizov',
-      position: 'Managing Partner PLUS Consulting',
-      quote: 'f.Data easily scales for businesses of any size, allowing you to automate work with financial data both in banks, insurance and investment companies, payment systems, and in medium and small businesses.',
+      position: 'Managing Partner',
+      company: 'PLUS Consulting',
+      quote:
+        'f.Data easily scales for businesses of any size, allowing you to automate work with financial data both in banks, insurance and investment companies, payment systems, and in medium and small businesses.',
     },
     final: {
       title: 'Control finances and be ready for audit',
-      description: 'Timely and without routine, identify discrepancies in financial transactions and prevent losses. Processes in f.Data are documented and can be used for audit checks.',
+      description:
+        'Timely and without routine, identify discrepancies in financial transactions and prevent losses. Processes in f.Data are documented and can be used for audit checks.',
     },
     risks: {
       title: 'Reject personnel risks',
-      description: 'Process management in f.Data can be easily transferred to a new employee',
+      description:
+        'Process management in f.Data can be easily transferred to a new employee',
     },
     speed: {
       title: 'Work faster',
@@ -115,26 +129,32 @@ export const fdata = {
   },
   howWeHelp: {
     title: 'How we help finance',
-    subtitle: 'The philosophy and architecture of f.Data allows our clients to confidently manage financial data, do it quickly and efficiently.',
+    subtitle:
+      'The philosophy and architecture of f.Data allows our clients to confidently manage financial data, do it quickly and efficiently.',
     financialLossReduction: {
       title: 'Financial loss reduction',
-      description: 'Business owners, CFO, COO, CIO gain confidence in the correctness of financial data transmitted in reports.',
+      description:
+        'Business owners, CFO, COO, CIO gain confidence in the correctness of financial data transmitted in reports.',
     },
     resourceOptimization: {
       title: 'Resource optimization',
-      description: 'Automation saves working time and increases available resources many times over',
+      description:
+        'Automation saves working time and increases available resources many times over',
     },
     transparentAnalytics: {
       title: 'Transparent analytics',
-      description: 'Get an accurate picture of the state of your financial data in minutes',
+      description:
+        'Get an accurate picture of the state of your financial data in minutes',
     },
     adaptability: {
       title: 'Adaptability',
-      description: 'Now it is easy to create and modify financial data processing processes',
+      description:
+        'Now it is easy to create and modify financial data processing processes',
     },
     errorReduction: {
       title: 'Error reduction',
-      description: 'Reduce the number of errors and improve the quality of financial data',
+      description:
+        'Reduce the number of errors and improve the quality of financial data',
     },
   },
   innovativeTechnology: {
@@ -143,7 +163,8 @@ export const fdata = {
   },
   dataLoading: {
     title: 'Data loading and reconciliation',
-    description: 'Support for any integration formats and files, flexible configuration of data processing rules',
+    description:
+      'Support for any integration formats and files, flexible configuration of data processing rules',
     ruleSetup: 'Rule setup',
     automaticLoading: 'Automatic loading',
     fileStorage: 'File storage',
@@ -152,7 +173,8 @@ export const fdata = {
   },
   reporting: {
     title: 'Reporting',
-    description: 'Easily create reports and dashboards using data from all connected sources',
+    description:
+      'Easily create reports and dashboards using data from all connected sources',
   },
   ourClients: {
     title: 'Our clients',
@@ -165,11 +187,13 @@ export const fdata = {
   benefits: {
     controlFinances: {
       title: 'Control finances and be ready for audit',
-      description: 'Timely and without routine, identify discrepancies in financial transactions and prevent losses. Processes in f.Data are documented and can be used for audit checks.',
+      description:
+        'Timely and without routine, identify discrepancies in financial transactions and prevent losses. Processes in f.Data are documented and can be used for audit checks.',
     },
     rejectPersonnelRisks: {
       title: 'Reject personnel risks',
-      description: 'Process management in f.Data can be easily transferred to a new employee',
+      description:
+        'Process management in f.Data can be easily transferred to a new employee',
     },
     workFaster: {
       title: 'Work faster',

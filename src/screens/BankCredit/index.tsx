@@ -1043,8 +1043,6 @@ export const BankCredit = () => {
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.verification.title')}
-                  <br />
-                  {t('process.verification.user')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1091,7 +1089,6 @@ export const BankCredit = () => {
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.blacklist.title')}
-                  {t('process.blacklist.stopFactors')}
                 </motion.div>
               </div>
             </motion.div>
@@ -1117,8 +1114,6 @@ export const BankCredit = () => {
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.enrichment.title')}
-                  <br />
-                  {t('process.enrichment.data')}
                 </motion.div>
               </div>
             </motion.div>

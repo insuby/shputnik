@@ -239,7 +239,7 @@ export const Fdata = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      24 may 12:44
+                      {t('dashboard.may24')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -252,7 +252,7 @@ export const Fdata = () => {
                       <div className="relative size-2 rounded bg-green-60" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Reconciled
+                        {t('filter.reconciled')}
                       </div>
                     </div>
 
@@ -265,7 +265,7 @@ export const Fdata = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      23 may 05:38
+                      {t('dashboard.may23')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -291,7 +291,7 @@ export const Fdata = () => {
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      22 may 07:16
+                      {t('dashboard.may22')}
                     </div>
 
                     <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
@@ -319,21 +319,21 @@ export const Fdata = () => {
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
                 <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                  Filter
+                  {t('filter.title')}
                 </div>
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
                 <div className="relative flex flex-1 grow flex-col items-start gap-2">
                   <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    Status
+                    {t('filter.status')}
                   </div>
 
                   <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      Waiting
+                      {t('filter.waiting')}
                     </div>
                   </div>
 
@@ -341,7 +341,7 @@ export const Fdata = () => {
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      In progress
+                      {t('filter.inProgress')}
                     </div>
                   </div>
 
@@ -349,7 +349,7 @@ export const Fdata = () => {
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      Reconciled
+                      {t('filter.reconciled')}
                     </div>
                   </div>
 
@@ -365,7 +365,7 @@ export const Fdata = () => {
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      Created
+                      {t('filter.created')}
                     </div>
                   </div>
 
@@ -373,7 +373,7 @@ export const Fdata = () => {
                     <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                     <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                      Failed
+                      {t('filter.failed')}
                     </div>
                   </div>
                 </div>
@@ -381,14 +381,14 @@ export const Fdata = () => {
                 <div className="relative flex flex-1 grow flex-col items-start justify-center gap-3">
                   <div className="relative mr-[-28.00px] flex h-[76px] w-44 flex-col items-start gap-2">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Users
+                      {t('filter.users')}
                     </div>
 
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        By me
+                        {t('filter.byMe')}
                       </div>
                     </div>
 
@@ -396,21 +396,21 @@ export const Fdata = () => {
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        By others
+                        {t('filter.byOthers')}
                       </div>
                     </div>
                   </div>
 
                   <div className="relative mr-[-28.00px] flex w-44 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                      Projects
+                      {t('filter.projects')}
                     </div>
 
                     <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Payments
+                        {t('filter.payments')}
                       </div>
                     </div>
 
@@ -418,7 +418,7 @@ export const Fdata = () => {
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Finance
+                        {t('filter.finance')}
                       </div>
                     </div>
 
@@ -426,7 +426,7 @@ export const Fdata = () => {
                       <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
                       <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
-                        Trading
+                        {t('filter.trading')}
                       </div>
                     </div>
                   </div>
@@ -820,7 +820,7 @@ export const Fdata = () => {
 
                             <div className="absolute left-[29px] top-[37px] inline-flex flex-col items-center">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                                Total
+                                {t('dataLoading.total')}
                               </div>
 
                               <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -965,7 +965,7 @@ export const Fdata = () => {
                 <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
                   {t('details.testimonials.position')}
                   <br />
-                  PLUS Consulting
+                  {t('details.testimonials.company')}
                 </div>
               </div>
 
@@ -996,7 +996,7 @@ export const Fdata = () => {
           </motion.div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
@@ -1046,7 +1046,7 @@ export const Fdata = () => {
               </motion.div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, x: 50 }}
