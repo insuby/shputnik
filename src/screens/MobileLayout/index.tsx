@@ -293,7 +293,7 @@ export const MobileLayout = () => {
                         </svg>
                       </span>
                       <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-start text-[20px] text-gray-90">
-                        {t('products')}
+                        {t('productsTitle')}
                       </span>
                       <span className="absolute right-5">
                         <svg
@@ -994,7 +994,7 @@ export const MobileLayout = () => {
                     +7 (495) 006-21-57
                   </p>
                   <p className="relative w-full pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] md:w-[233px]">
-                    {t('address')}
+                    {t('address', { ns: 'footer' })}
                   </p>
                 </div>
               </div>

@@ -9,8 +9,8 @@ import { RoutesPath } from '../../../routes-path.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
 
 export const HeaderSection = () => {
-    const { t } = useTranslation(['common']);
-    const { pathname } = useLocation();
+  const { t } = useTranslation(['common', 'ns', 'layout']);
+  const { pathname } = useLocation();
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,7 +99,7 @@ export const HeaderSection = () => {
             aria-controls="products-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-              {t('actions.products')}
+              {t('products', { ns: 'nav' })}
           </button>
         </div>
         <ul className="flex items-center gap-16">
@@ -160,7 +160,7 @@ export const HeaderSection = () => {
           } relative cursor-pointer items-center justify-center rounded-[100px]`}
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-              {t('actions.contactUs')}
+            {t('actions.contactUs')}
           </div>
         </button>
         <LanguageSwitcher />
@@ -452,7 +452,7 @@ export const HeaderSection = () => {
                     className="flex items-center justify-between p-4"
                   >
                     <span className="text-gray-90">
-                      {t('header.reconciliation')}
+                      {t('header.reconciliation', { ns: 'layout' })}
                     </span>
                     <svg
                       width="20"
@@ -474,7 +474,7 @@ export const HeaderSection = () => {
 
             <div className="space-y-3">
               <div className="text-base text-gray-40">
-                {t('header.services')}
+                {t('header.services', { ns: 'layout' })}
               </div>
               <ul className="divide-y divide-gray-10 rounded-2xl border border-[#F3F4F7]">
                 <li className="list-none">
@@ -484,7 +484,7 @@ export const HeaderSection = () => {
                     className="flex items-center justify-between p-4"
                   >
                     <span className="text-gray-90">
-                      {t('header.customDevelopment')}
+                      {t('header.customDevelopment', { ns: 'layout' })}
                     </span>
                     <svg
                       width="20"

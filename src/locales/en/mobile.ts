@@ -1,4 +1,5 @@
 export const mobile = {
+  productsTitle: 'Products',
   hero: {
     title: 'Software for Credit Automation',
     description:
@@ -104,4 +105,11 @@ export const mobile = {
   automation: {
     title: 'Business Process Automation',
   },
+  skipToContent: 'Skip to content',
+  openMenu: 'Open menu',
+  about: 'About',
+  reviews: 'Reviews',
+  services: 'Services',
+  customDevelopment: 'Custom Development',
+  fdata: 'F-data',
 };
