@@ -36,6 +36,7 @@ body {
 
 #app {
     min-height: 100%;
+    white-space: pre-wrap !important;
 }
 
 /* a blue color as a generic focus style */

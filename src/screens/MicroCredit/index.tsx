@@ -76,6 +76,18 @@ export const MicroCredit = () => {
                 </p>
               </div>
             </motion.div>
+              <svg className="absolute right-0 bottom-0" width="1229" height="600" viewBox="0 0 1229 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.2" filter="url(#filter0_f_9140_707)">
+                      <path d="M848.195 221.527C914.44 107.237 1082.96 126.282 1158.93 150.092C1550.22 396.24 1113.57 748.267 873.355 753.275C633.136 758.283 300.514 477.534 387.518 327.43C474.521 177.326 765.389 364.389 848.195 221.527Z" fill="#FF2A9F" />
+                  </g>
+                  <defs>
+                      <filter id="filter0_f_9140_707" x="0.65683" y="-240.667" width="1687.5" height="1366.71" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                          <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                          <feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9140_707" />
+                      </filter>
+                  </defs>
+              </svg>
           </HeroButtons>
 
           <motion.div

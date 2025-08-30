@@ -36,14 +36,21 @@ export const BusinessCredit = () => {
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
-          <img
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/businesscredit/vector-1-8.svg"
-          />
-
-          <HeroButtons>
+            <svg
+                className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
+                width="1688" height="1367" viewBox="0 0 1688 1367" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.2" filter="url(#filter0_f_9321_96338)">
+                    <path d="M847.72 462.293C913.979 347.979 1082.53 367.028 1158.53 390.843C1549.9 637.044 1113.16 989.147 872.885 994.155C632.615 999.164 299.921 718.356 386.944 568.219C473.966 418.083 764.896 605.186 847.72 462.293Z" fill="#FF2A9F"/>
+                </g>
+                <defs>
+                    <filter id="filter0_f_9321_96338" x="0.000579958" y="-3.05241e-05" width="1687.86" height="1367" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                        <feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9321_96338"/>
+                    </filter>
+                </defs>
+            </svg>
+            <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
               <motion.div
                 ref={ref1}

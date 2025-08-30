@@ -511,11 +511,11 @@ export const BNPL = () => {
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                     className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch"
                   >
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       {t('form.advancePayment')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       14 500 ₽
                     </div>
                   </motion.div>
@@ -909,7 +909,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative left-[-20px] mr-[-88.00px] flex h-[538px] w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] md:left-0 md:w-[871px]"
+          className="relative left-[-20px] mr-[-108.00px] flex h-[538px] w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] md:left-0 md:w-[871px]"
         >
           <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
             <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

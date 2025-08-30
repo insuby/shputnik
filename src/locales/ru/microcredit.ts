@@ -21,7 +21,7 @@ export const microcredit = {
     penalty: 'Штраф',
   },
   mechanisms: {
-    title: 'Основные механизмы работы с клиентами',
+    title: 'Основные механизмы работы\nс клиентами',
     try: 'Попробовать',
   },
   processes: {

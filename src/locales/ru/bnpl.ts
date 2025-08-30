@@ -22,7 +22,7 @@ export const bnpl = {
   process: {
     bnpl: 'BNPL-процесс',
     pos: 'POS-процесс',
-    title: 'Готовое программное обеспечения для BNPL-сценария',
+    title: 'Готовое программное\nобеспечения\nдля BNPL-сценария',
     posTitle: 'Готовое программное обеспечения для PoS-сценария',
   },
   integration:
@@ -94,7 +94,7 @@ export const bnpl = {
     applicationApproval: 'Одобрение заявки',
   },
   backoffice: {
-    title: 'Многофункциональный бэк-офис для кредитных менеджеров',
+    title: 'Бэк-офис',
   },
   automation: {
     title: 'Автоматизированное принятие решений',
