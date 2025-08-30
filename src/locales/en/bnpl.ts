@@ -2,12 +2,15 @@ export const bnpl = {
   // Static texts from commit
   static: {
     title: 'BNPL and PoS Lending Automation',
-    description: 'We offer ready-made tools for automating BNPL (Buy Now, Pay Later) and POS lending processes. Solutions are suitable for banks, MFIs, fintech companies and retail chains',
+    description:
+      'We offer ready-made tools for automating BNPL (Buy Now, Pay Later) and POS lending processes. Solutions are suitable for banks, MFIs, fintech companies and retail chains',
     posTitle: 'PoS Lending',
-    posDescription: 'Software product for automating lending online and at points of sale. Allows you to arrange loans with interest rates directly at the checkout, in the office or through an online form.',
+    posDescription:
+      'Software product for automating lending online and at points of sale. Allows you to arrange loans with interest rates directly at the checkout, in the office or through an online form.',
     posProcess: 'POS Process',
     posProcessTitle: 'Ready software for PoS scenario',
-    integration: 'Our solution easily integrates into e-commerce and PoS scenarios, allows you to manage limits, payment schedules and automate the entire credit process.',
+    integration:
+      'Our solution easily integrates into e-commerce and PoS scenarios, allows you to manage limits, payment schedules and automate the entire credit process.',
   },
   balance: {
     currentBalance: 'Current Balance',
@@ -100,5 +103,13 @@ export const bnpl = {
     title: 'Automated Decision Making',
     description:
       'Buy Now Pay Later software eliminates manual processes, special requests and paper trails. Get a single smooth automated workflow that meets borrower needs* and improves operational efficiency.',
+  },
+  months: {
+    march: 'March',
+    april: 'April',
+    may: 'May',
+    june: 'June',
+    july: 'July',
+    august: 'August',
   },
 };

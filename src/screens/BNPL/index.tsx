@@ -158,7 +158,7 @@ export const BNPL = () => {
                 <div className="relative h-[92px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Март
+                  {t('months.march')}
                 </div>
               </div>
 
@@ -166,7 +166,7 @@ export const BNPL = () => {
                 <div className="relative h-[104px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Апрель
+                  {t('months.april')}
                 </div>
               </div>
 
@@ -174,7 +174,7 @@ export const BNPL = () => {
                 <div className="relative h-[127px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Май
+                  {t('months.may')}
                 </div>
               </div>
 
@@ -182,7 +182,7 @@ export const BNPL = () => {
                 <div className="relative h-[145px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Июнь
+                  {t('months.june')}
                 </div>
               </div>
 
@@ -190,7 +190,7 @@ export const BNPL = () => {
                 <div className="relative h-[110px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Июль
+                  {t('months.july')}
                 </div>
               </div>
 
@@ -198,7 +198,7 @@ export const BNPL = () => {
                 <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
                 <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                  Август
+                  {t('months.august')}
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch"
         >
           <motion.div
             ref={ref9}

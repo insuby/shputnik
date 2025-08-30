@@ -98,7 +98,7 @@ export const Technoligies = () => {
                   </div>
 
                   <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    {t('technologies.blockchain.description')}
+                    {t('technologies.blockchainTech.description')}
                   </p>
                 </div>
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 md:w-[560px]">

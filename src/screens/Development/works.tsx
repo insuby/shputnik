@@ -94,7 +94,7 @@ export const Works = () => {
                 transition={{ duration: 0.7 }}
                 className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
               >
-                Pax
+                {t('works.pax.title')}
               </motion.div>
               <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
                 {t('works.pax.description')}
@@ -109,7 +109,7 @@ export const Works = () => {
                 transition={{ duration: 0.7 }}
                 className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[480px]"
               >
-                Ascro
+                {t('works.crypto.title')}
               </motion.p>
               <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
                 {t('works.crypto.description')}

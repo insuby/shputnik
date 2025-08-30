@@ -310,7 +310,7 @@ export const Dataunload = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView14 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch"
         >
           <motion.div
             ref={ref15}

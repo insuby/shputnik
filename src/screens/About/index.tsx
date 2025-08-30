@@ -40,7 +40,7 @@ export const About = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch ">
                 <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-10">
                   <img
                     className="absolute left-[-157px] top-[-141px] h-[386px] w-[409px]"
