@@ -649,7 +649,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
-                          BNPL
+                          {t('bnpl')}
                         </span>
                       </span>
                     </Link>
