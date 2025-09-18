@@ -11,7 +11,7 @@ export default {
     userName: 'Давид',
     approvalTitle: 'Заявка\nодобрена',
     approvalAmount: '42,000₽',
-    scoreTitle: 'Скоринговый балл',
+    scoreTitle: 'Скоринговый\nбалл',
     scoreValue: '824',
   },
   specialize: {

@@ -119,8 +119,8 @@ export const Frame = () => {
                         </div>
 
                         <div className="flex w-full items-stretch gap-4">
-                            <div className="flex size-[140px] flex-col justify-around rounded-2xl bg-white p-4">
-                                <div className="text-sm text-center  text-gray-40 [font-family:'Roboto',Helvetica]">
+                            <div className="flex size-[140px] flex-col justify-center rounded-2xl bg-white p-4 gap-2">
+                                <div className="text-sm text-center text-gray-40 [font-family:'Roboto',Helvetica]">
                                     {t('heroCards.scoreTitle')}
                                 </div>
                                 <div
