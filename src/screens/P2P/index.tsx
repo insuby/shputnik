@@ -316,7 +316,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 md:left-[1000px] md:top-[262px]"
+            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 md:left-[1000px] md:top-[228px]"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">

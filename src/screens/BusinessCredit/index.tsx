@@ -35,7 +35,7 @@ export const BusinessCredit = () => {
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
+        <div className="md:min-h-[600px] relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:p-12">
             <svg
                 className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
                 width="1688" height="1367" viewBox="0 0 1688 1367" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -78,7 +78,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[66px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 md:w-[304px]"
+              className="absolute left-[62px] top-[80px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 md:w-[304px]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <img

@@ -165,6 +165,82 @@ export const DivWrapper = () => {
                     />
                   </div>
                 </div>
+
+                <div className="relative flex w/full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                        {t('calculator.year')}
+                      </div>
+
+                      <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        2004
+                      </div>
+                    </div>
+
+                    <img
+                      className="relative size-[17.94px]"
+                      alt="Caret right"
+                      src="/img/caretright.svg"
+                    />
+                  </div>
+
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                        {t('calculator.initialPayment')}
+                      </div>
+
+                      <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        150 000
+                      </div>
+                    </div>
+
+                    <img
+                      className="relative size-[17.94px]"
+                      alt="Caret right"
+                      src="/img/caretright.svg"
+                    />
+                  </div>
+                </div>
+
+                <div className="relative flex w/full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                        {t('calculator.termMonths')}
+                      </div>
+
+                      <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        24
+                      </div>
+                    </div>
+
+                    <img
+                      className="relative size-[17.94px]"
+                      alt="Caret right"
+                      src="/img/caretright.svg"
+                    />
+                  </div>
+
+                  <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
+                    <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                        {t('calculator.initialPayment')}
+                      </div>
+
+                      <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        150 000
+                      </div>
+                    </div>
+
+                    <img
+                      className="relative size-[17.94px]"
+                      alt="Caret right"
+                      src="/img/caretright.svg"
+                    />
+                  </div>
+                </div>
               </div>
             </motion.div>
           </div>

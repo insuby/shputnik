@@ -106,6 +106,9 @@ export default {
     },
     brand: 'Марка',
     model: 'Модель',
+    year: 'Год выпуска',
+    initialPayment: 'Первый взнос (руб.)',
+    termMonths: 'Срок (месяцы)',
   },
   lendingStoreOnline: {
     headingLeft: 'Кредитование в магазине',

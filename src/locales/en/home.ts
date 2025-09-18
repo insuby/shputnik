@@ -107,6 +107,9 @@ export default {
     },
     brand: 'Brand',
     model: 'Model',
+    year: 'Year',
+    initialPayment: 'Initial payment (RUB)',
+    termMonths: 'Term (months)',
   },
   lendingStoreOnline: {
     headingLeft: 'In-store',
