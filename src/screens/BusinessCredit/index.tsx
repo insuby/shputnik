@@ -112,7 +112,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[100.97px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         01
                       </div>
                     </div>
@@ -124,7 +124,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         02
                       </div>
                     </div>
@@ -136,7 +136,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[111.54px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         03
                       </div>
                     </div>
@@ -148,7 +148,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[56.35px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         04
                       </div>
                     </div>
@@ -160,7 +160,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         05
                       </div>
                     </div>
@@ -172,7 +172,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[102.14px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         06
                       </div>
                     </div>
@@ -184,7 +184,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         07
                       </div>
                     </div>
@@ -196,7 +196,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[109.19px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         08
                       </div>
                     </div>
@@ -208,7 +208,7 @@ export const BusinessCredit = () => {
                         <div className="relative h-[78.66px] w-full self-stretch rounded-[117.41px] bg-blue-30" />
                       </div>
 
-                      <div className="relativew-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
+                      <div className="relative w-full text-center text-[12.3px] font-normal leading-[17.6px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica] md:w-[18.78px]">
                         09
                       </div>
                     </div>

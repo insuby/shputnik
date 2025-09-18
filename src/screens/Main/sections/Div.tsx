@@ -246,7 +246,7 @@ export const Div = () => {
                     <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                       {t('lendingStoreOnline.paymentSchedule')}
                     </div>
-                    <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
                       {t('lendingStoreOnline.contract')}
                     </div>
                   </div>

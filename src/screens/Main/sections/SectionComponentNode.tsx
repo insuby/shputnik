@@ -64,7 +64,7 @@ export const SectionComponentNode = () => {
       </h2>
 
       <div className="relative flex h-[520px] w-full items-start gap-4">
-        <div className="relativew-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:w-[686px]">
+        <div className="relative w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:w-[686px]">
           <div className="relative h-[682px]">
             <img
               className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]"
@@ -285,7 +285,7 @@ export const SectionComponentNode = () => {
                   {t('alternativeModels.p2pUI.totalIncome')}
                 </div>
 
-                <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
+                <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                   1,567,000₽
                 </div>
               </div>

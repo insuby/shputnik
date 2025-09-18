@@ -160,7 +160,7 @@ export const Dataunload = () => {
                     {t('static.fileName')}
                   </div>
 
-                  <div className="relativew-full text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[129px]">
+                  <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[129px]">
                     {t('static.fileSize')}
                   </div>
                 </div>

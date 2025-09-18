@@ -563,7 +563,7 @@ export const BankCredit = () => {
                               {t('loans.period')}
                             </div>
 
-                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
+                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               30 580 ₽
                             </div>
                           </div>
@@ -597,7 +597,7 @@ export const BankCredit = () => {
                               {t('loans.period')}
                             </div>
 
-                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
+                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               56 320 ₽
                             </div>
                           </div>
@@ -631,7 +631,7 @@ export const BankCredit = () => {
                               {t('loans.period')}
                             </div>
 
-                            <div className="relativew-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
+                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[120px]">
                               120 850 ₽
                             </div>
                           </div>

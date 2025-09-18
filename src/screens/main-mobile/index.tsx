@@ -802,7 +802,7 @@ export const MainMobile = () => {
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/logo.svg"
                 />
 
-                <div className="relativew-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] md:w-[233px]">
+                <div className="relative w-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] md:w-[233px]">
                   {t('development.title')}
                   <br />
                   {t('development.fintech')}
@@ -829,7 +829,7 @@ export const MainMobile = () => {
             </div>
           </div>
 
-          <p className="relativew-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] md:w-[233px]">
+          <p className="relative w-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] md:w-[233px]">
             © 2022 Sputnik – <br />
             {t('automation.title')}
           </p>

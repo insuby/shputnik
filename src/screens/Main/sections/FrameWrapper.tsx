@@ -51,7 +51,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-          className="relativew-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-6xl md:leading-[68px]"
+          className="relative w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[1376px] md:text-6xl md:leading-[68px]"
         >
           <span className="text-[#1c222f]">
             {t('specialize.software')}
@@ -96,7 +96,7 @@ export const FrameWrapper = () => {
 
             <p
               id="animate_13_left"
-              className="relativew-full text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[590px]"
+              className="relative w-full text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[590px]"
             >
               {t('microcredit.desc')}
             </p>

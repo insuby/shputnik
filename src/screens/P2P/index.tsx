@@ -323,7 +323,7 @@ export const P2P = () => {
                 {t('dashboard.totalIncome')}
               </div>
 
-              <div className="relativew-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
+              <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
                 1,567,000₽
               </div>
             </div>

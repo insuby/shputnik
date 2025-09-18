@@ -385,7 +385,7 @@ export const Frame1 = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relativew-full self-stretch overflow-hidden rounded-[20px] bg-red-50 md:w-[68px]">
+                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 md:w-[68px]">
                       <div className="absolute left-[13px] top-[29px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         100
                       </div>

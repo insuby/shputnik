@@ -95,7 +95,7 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="left-[786px] top-[192px] flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:absolute md:w-[324px]"
+            className="left-[786px] top-[132px] flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:absolute md:w-[324px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -219,7 +219,7 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView5 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="absolute left-[130px] top-[740px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4 md:left-[1062px] md:top-[304px]"
+            className="absolute left-[130px] top-[740px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4 md:left-[1062px] md:top-[242px]"
           >
             <Graph />
 

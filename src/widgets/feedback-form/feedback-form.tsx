@@ -123,7 +123,7 @@ export const FeedbackForm = () => {
                   +7 (495) 006-21-57
                 </div>
 
-                <p className="relativew-full text-2xl font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica] md:w-[233px]">
+                <p className="relative w-full text-2xl font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica] md:w-[233px]">
                   <span className="font-header-2-m text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] [font-style:var(--header-2-m-font-style)]">
                     s@sptnk.co
                   </span>

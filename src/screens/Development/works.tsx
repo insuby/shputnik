@@ -81,7 +81,7 @@ export const Works = () => {
               >
                 {t('works.vpn.title')}
               </motion.p>
-              <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
                 {t('works.vpn.description')}
               </p>
             </div>
@@ -96,7 +96,7 @@ export const Works = () => {
               >
                 {t('works.pax.title')}
               </motion.div>
-              <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
                 {t('works.pax.description')}
               </p>
             </div>
@@ -111,7 +111,7 @@ export const Works = () => {
               >
                 {t('works.crypto.title')}
               </motion.p>
-              <p className="relativew-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[560px]">
                 {t('works.crypto.description')}
               </p>
             </div>

@@ -67,17 +67,21 @@ export const Frame = () => {
           ></motion.p>
         </div>
 
-        <motion.img
-          id="animate_3"
-          ref={refs[2]}
-          initial={{ opacity: 0, y: 40 }}
-          animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relativew-full flex-[0_0_auto] md:w-[320px] xl:w-[412px]"
-          alt={t('hero.phoneAlt')}
-          loading="lazy"
-          src="/img/iphone-16-pro-max---3.png"
-        />
+        {/*<motion.img*/}
+        {/*  id="animate_3"*/}
+        {/*  ref={refs[2]}*/}
+        {/*  initial={{ opacity: 0, y: 40 }}*/}
+        {/*  animate={inViews[2] ? { opacity: 1, y: 0 } : {}}*/}
+        {/*  transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}*/}
+        {/*  className="relative w-full flex-[0_0_auto] md:w-[320px] xl:w-[412px]"*/}
+        {/*  alt={t('hero.phoneAlt')}*/}
+        {/*  loading="lazy"*/}
+        {/*  src="/img/iphone-16-pro-max---3.png"*/}
+        {/*/>*/}
+
+          <div className="absolute ">
+
+          </div>
 
         <motion.div
           id="animate_6"
