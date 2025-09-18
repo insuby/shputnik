@@ -6,6 +6,14 @@ export default {
     monthlyPayment: 'Monthly payment',
     phoneAlt: 'Smartphone with credit app interface',
   },
+  heroCards: {
+    greeting: 'Hello,',
+    userName: 'David',
+    approvalTitle: 'Application approved',
+    approvalAmount: '42,000₽',
+    scoreTitle: 'Score',
+    scoreValue: '824',
+  },
   specialize: {
     weSpecialize: 'we specialize in',
     software: 'software',

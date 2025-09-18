@@ -4,6 +4,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Graph } from '../../../components/ui/graph.tsx';
+import { CheckIcon } from '../../../components/ui/check-icon.tsx';
 import { useFeedbackForm } from '../../../widgets/feedback-form';
 
 export const Frame = () => {
@@ -67,21 +68,55 @@ export const Frame = () => {
           ></motion.p>
         </div>
 
-        {/*<motion.img*/}
-        {/*  id="animate_3"*/}
-        {/*  ref={refs[2]}*/}
-        {/*  initial={{ opacity: 0, y: 40 }}*/}
-        {/*  animate={inViews[2] ? { opacity: 1, y: 0 } : {}}*/}
-        {/*  transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}*/}
-        {/*  className="relative w-full flex-[0_0_auto] md:w-[320px] xl:w-[412px]"*/}
-        {/*  alt={t('hero.phoneAlt')}*/}
-        {/*  loading="lazy"*/}
-        {/*  src="/img/iphone-16-pro-max---3.png"*/}
-        {/*/>*/}
+        {/* Hero mini-cards: greeting, approval, score */}
+        <div className="absolute left-[540px] top-[320px] hidden flex-col gap-4 md:flex">
+          <motion.div
+            id="animate_3"
+            ref={refs[2]}
+            initial={{ opacity: 0, y: 40 }}
+            animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
+            className="inline-flex w-fit items-center rounded-[24px] bg-white px-4 py-2"
+          >
+            <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              {t('heroCards.greeting')} <span className="font-medium">{t('heroCards.userName')}</span>
+            </div>
+          </motion.div>
 
-          <div className="absolute ">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: delays[2] + 0.1, ease: 'easeOut' }}
+            className="inline-flex items-center gap-4 rounded-[24px] bg-white p-4"
+          >
+            <CheckIcon className="inline-flex items-center justify-center rounded-[100px] p-1.5" bgColor="#00CB82" iconColor="#FFFFFF" />
+            <div className="relative inline-flex flex-col items-start gap-0.5">
+              <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                {t('heroCards.approvalTitle')}
+              </div>
+              <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                {t('heroCards.approvalAmount')}
+              </div>
+            </div>
+          </motion.div>
 
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={inViews[2] ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.7, delay: delays[2] + 0.2, ease: 'easeOut' }}
+            className="inline-flex items-center gap-4 rounded-[24px] bg-white p-4"
+          >
+            <div className="relative inline-flex h-8 w-8 items-center justify-center rounded-[12px] bg-[#F2F5FF]" aria-hidden="true" />
+            <div className="relative inline-flex flex-col items-start gap-0.5">
+              <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                {t('heroCards.scoreTitle')}
+              </div>
+              <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                {t('heroCards.scoreValue')}
+              </div>
+            </div>
+          </motion.div>
+        </div>
 
         <motion.div
           id="animate_6"
