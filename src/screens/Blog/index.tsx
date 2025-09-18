@@ -94,7 +94,7 @@ export const BlogList = () => {
           posts.map((post) => (
             <article
               key={post.documentId}
-              className="flex flex-col gap-4 rounded-3xl bg-gray-10 p-3 md:!flex-row"
+              className="flex flex-col gap-4 rounded-3xl bg-gray-10 p-3"
               aria-labelledby={`post-${post.documentId}-title`}
             >
               <Link
