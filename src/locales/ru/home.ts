@@ -9,7 +9,7 @@ export default {
   heroCards: {
     greeting: 'Привет,',
     userName: 'Давид',
-    approvalTitle: 'Заявка одобрена',
+    approvalTitle: 'Заявка\nодобрена',
     approvalAmount: '42,000₽',
     scoreTitle: 'Скоринговый балл',
     scoreValue: '824',
