@@ -29,7 +29,7 @@ export const FrameWrapper = () => {
   const delays = [0, 0.15, 0.3, 0.45, 0.6];
 
   return (
-    <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-center gap-[88px]">
+    <section className="relative inline-flex w-full flex-[0_0_auto] flex-col items-center gap-[88px]">
       <div
         className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5"
         aria-labelledby="home-specialization"
@@ -316,6 +316,6 @@ export const FrameWrapper = () => {
           </div>
         </div>
       </section>
-    </div>
+    </section>
   );
 };

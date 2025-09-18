@@ -29,7 +29,7 @@ export const Frame = () => {
     const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
 
     return (
-        <div className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
+        <section className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
             <div
                 className="relative flex min-h-[520px] w-full flex-col items-center gap-7 overflow-hidden rounded-[24px] px-4 pb-0 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
                 <img
@@ -332,6 +332,6 @@ export const Frame = () => {
                     </div>
                 </motion.div>
             </div>
-        </div>
+        </section>
     );
 };

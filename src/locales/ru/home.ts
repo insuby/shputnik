@@ -109,6 +109,13 @@ export default {
     year: 'Год выпуска',
     initialPayment: 'Первый взнос (руб.)',
     termMonths: 'Срок (месяцы)',
+    selectConditions: 'Выберите условия',
+    optionYour: {
+      title: 'Ваши условия',
+    },
+    monthlyPayment: 'Ежемесячный платеж',
+    sum: 'Сумма',
+    interestShort: 'Ставка',
   },
   lendingStoreOnline: {
     headingLeft: 'Кредитование в магазине',

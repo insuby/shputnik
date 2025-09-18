@@ -110,6 +110,13 @@ export default {
     year: 'Year',
     initialPayment: 'Initial payment (RUB)',
     termMonths: 'Term (months)',
+    selectConditions: 'Select conditions',
+    optionYour: {
+      title: 'Your conditions',
+    },
+    monthlyPayment: 'Monthly payment',
+    sum: 'Amount',
+    interestShort: 'Rate',
   },
   lendingStoreOnline: {
     headingLeft: 'In-store',
