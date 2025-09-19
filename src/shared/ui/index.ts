@@ -20,3 +20,4 @@ export { Separator } from './separator';
 export { Table } from './table';
 export { Toggle } from './toggle';
 export { ToggleGroup } from './toggle-group';
+export { InlineSvg } from './inline-svg';

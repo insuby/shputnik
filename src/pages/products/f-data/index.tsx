@@ -1,4 +1,3 @@
-import { isMobile } from 'app';
 import { motion, useInView } from 'framer-motion';
 import { useFeedbackForm } from 'widgets';
 
@@ -6,6 +5,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from 'shared/lib/is-mobile';
 import { HeroButtons } from 'shared/ui';
 
 import { Cta } from './Cta.tsx';

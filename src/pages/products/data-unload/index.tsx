@@ -1,10 +1,10 @@
-import { isMobile } from 'app';
 import { motion, useInView } from 'framer-motion';
 import { Feedback, Integrations, Trust } from 'widgets';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { isMobile } from 'shared/lib/is-mobile';
 import { HeroButtons } from 'shared/ui';
 
 export const Dataunload = () => {

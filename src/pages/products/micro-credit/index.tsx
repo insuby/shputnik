@@ -1,4 +1,3 @@
-import { isMobile } from 'app';
 import { motion, useInView } from 'framer-motion';
 import {
   Advantages,
@@ -18,6 +17,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+import { isMobile } from 'shared/lib/is-mobile';
 import { Graph, HeroButtons } from 'shared/ui';
 
 export const MicroCredit = () => {

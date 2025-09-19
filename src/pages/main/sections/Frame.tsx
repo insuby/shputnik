@@ -31,12 +31,26 @@ export const Frame = () => {
   return (
     <section className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
       <div className="relative flex min-h-[520px] w-full flex-col items-center gap-7 overflow-hidden rounded-[24px] px-4 pb-0 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
-        <img
+        <svg
           className="absolute left-1/2 top-[220px] hidden h-[560px] w-full -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
-          alt=""
+          width="1125"
+          height="1073"
+          viewBox="0 0 1125 1073"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
-          src="/img/vector-1-6.svg"
-        />
+        >
+          <g opacity="0.08" filter="url(#filter0_f_50_350)">
+            <path d="M466.34 421.979C450.478 305.734 579.011 227.218 645.26 202.49C1053.79 161.752 939.561 646.609 773.871 781.079C608.18 915.549 221.919 900.047 201.087 747.375C180.255 594.704 486.167 567.285 466.34 421.979Z" fill="#3573FC"/>
+          </g>
+          <defs>
+            <filter id="filter0_f_50_350" x="0" y="0" width="1125" height="1072.76" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_50_350"/>
+            </filter>
+          </defs>
+        </svg>
 
         <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-7 md:px-0">
           <motion.h1
@@ -68,7 +82,6 @@ export const Frame = () => {
           ></motion.p>
         </div>
 
-        {/* Phone frame with inner cards */}
         <motion.div
           id="animate_phone"
           ref={refs[2]}
@@ -175,7 +188,22 @@ export const Frame = () => {
           className="absolute left-[894px] top-[730px] hidden items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 md:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
-            <img className="relative size-8" alt="Money" src="/img/money.svg" />
+            <svg
+              className="relative size-8"
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Money"
+            >
+              <path d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M26.25 7H1.75V21H26.25V7Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M26.25 11.375C25.157 11.1897 24.1487 10.6691 23.3648 9.88521C22.5809 9.10132 22.0603 8.093 21.875 7" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M21.875 21C22.0603 19.907 22.5809 18.8987 23.3648 18.1148C24.1487 17.3309 25.157 16.8103 26.25 16.625" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M1.75 16.625C2.843 16.8103 3.85132 17.3309 4.63521 18.1148C5.4191 18.8987 5.93975 19.907 6.125 21" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M6.125 7C5.93975 8.093 5.4191 9.10132 4.63521 9.88521C3.85132 10.6691 2.843 11.1897 1.75 11.375" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
           </div>
 
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
@@ -273,17 +301,29 @@ export const Frame = () => {
 
                 <div className="w/full relative h-3.5 self-stretch">
                   <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
-                    <img
+                    <svg
                       className="h-1w-full absolute left-0 top-1 md:w-[260px]"
-                      alt="Vector"
-                      src="/img/vector-136.svg"
-                    />
+                      width="260"
+                      height="4"
+                      viewBox="0 0 260 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-label="Vector"
+                    >
+                      <path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
+                    </svg>
 
-                    <img
+                    <svg
                       className="h-1w-full absolute left-0 top-1 md:w-[167px]"
-                      alt="Vector"
-                      src="/img/vector-136.svg"
-                    />
+                      width="260"
+                      height="4"
+                      viewBox="0 0 260 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-label="Vector"
+                    >
+                      <path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
+                    </svg>
                   </div>
                 </div>
 
@@ -299,11 +339,17 @@ export const Frame = () => {
 
                 <div className="w/full relative h-3.5 self-stretch">
                   <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
-                    <img
+                    <svg
                       className="h-1w-full absolute left-0 top-1 md:w-[260px]"
-                      alt="Vector"
-                      src="/img/vector-137-2.svg"
-                    />
+                      width="95"
+                      height="6"
+                      viewBox="0 0 95 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-label="Vector"
+                    >
+                      <path d="M3 3H92" stroke="#00CB82" strokeWidth="6" strokeLinecap="round" />
+                    </svg>
                   </div>
                 </div>
 

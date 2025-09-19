@@ -124,11 +124,26 @@ export const FrameWrapper = () => {
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc]">
           <div className="relative h-[548px] w-full md:w-[690px]">
-            <img
+            <svg
               className="absolute left-0 top-0 h-[520px] w-full md:w-[690px]"
-              alt="Vector"
-              src="/img/vector-1-7.svg"
-            />
+              width="1077"
+              height="1131"
+              viewBox="0 0 1077 1131"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Vector"
+            >
+              <g opacity="0.32" filter="url(#filter0_f_9009_1120)">
+                <path d="M464.894 521.819C440.801 465.832 494.233 408.667 523.96 387.083C722.805 309.922 732.997 568.509 668.74 658.847C604.482 749.185 408.97 795.098 377.327 721.567C345.684 648.036 495.01 591.802 464.894 521.819Z" fill="#3573FC"/>
+              </g>
+              <defs>
+                <filter id="filter0_f_9009_1120" x="0" y="0" width="1076.87" height="1131" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                  <feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9009_1120"/>
+                </filter>
+              </defs>
+            </svg>
 
             <motion.div
               id="animate_10"
@@ -147,17 +162,29 @@ export const FrameWrapper = () => {
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
                       <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                        <img
+                        <svg
                           className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                          alt="Vector"
-                          src="/img/vector-136.svg"
-                        />
+                          width="260"
+                          height="4"
+                          viewBox="0 0 260 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-label="Vector"
+                        >
+                          <path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
+                        </svg>
 
-                        <img
+                        <svg
                           className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
-                          alt="Vector"
-                          src="/img/vector-137-3.svg"
-                        />
+                          width="169"
+                          height="6"
+                          viewBox="0 0 169 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-label="Vector"
+                        >
+                          <path d="M3 3L166 3.00001" stroke="#00CB82" strokeWidth="6" strokeLinecap="round" />
+                        </svg>
 
                         <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
@@ -177,17 +204,29 @@ export const FrameWrapper = () => {
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
                       <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                        <img
+                        <svg
                           className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                          alt="Vector"
-                          src="/img/vector-136-1.svg"
-                        />
+                          width="260"
+                          height="4"
+                          viewBox="0 0 260 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-label="Vector"
+                        >
+                          <path d="M2 2H258" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
+                        </svg>
 
-                        <img
+                        <svg
                           className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
-                          alt="Vector"
-                          src="/img/vector-137-2.svg"
-                        />
+                          width="95"
+                          height="6"
+                          viewBox="0 0 95 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          aria-label="Vector"
+                        >
+                          <path d="M3 3H92" stroke="#00CB82" strokeWidth="6" strokeLinecap="round" />
+                        </svg>
 
                         <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
@@ -248,11 +287,26 @@ export const FrameWrapper = () => {
               </button>
             </motion.div>
 
-            <img
+            <svg
               className="absolute left-0 top-0 h-[520px] w-full md:w-[690px]"
-              alt="Vector"
-              src="/img/vector-3-1.svg"
-            />
+              width="1012"
+              height="807"
+              viewBox="0 0 1012 807"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-label="Vector"
+            >
+              <g opacity="0.32" filter="url(#filter0_f_9012_1641)">
+                <path d="M505.932 261.319C547.13 186.048 656.863 195.734 706.579 209.985C964.587 363.598 686.644 599.143 530.734 606.219C374.823 613.294 154.36 436.28 208.469 337.422C262.577 238.564 454.434 355.407 505.932 261.319Z" fill="white"/>
+              </g>
+              <defs>
+                <filter id="filter0_f_9012_1641" x="0" y="0" width="1012" height="806.538" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+                  <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9012_1641"/>
+                </filter>
+              </defs>
+            </svg>
 
             <motion.div
               id="animate_11"

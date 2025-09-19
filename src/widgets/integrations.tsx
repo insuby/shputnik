@@ -1,4 +1,3 @@
-import { isMobile } from 'app';
 import { cx } from 'class-variance-authority';
 import { motion, useInView } from 'framer-motion';
 
@@ -8,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { useFeedbackForm } from 'widgets/feedback-form';
 
 import { LineCopy } from 'shared/icons/LineCopy';
+import { isMobile } from 'shared/lib/is-mobile';
 
 export const Integrations = () => {
   const { t } = useTranslation('widgets');

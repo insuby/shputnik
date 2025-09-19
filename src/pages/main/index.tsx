@@ -1,4 +1,5 @@
-import { Feedback } from '../../widgets/feedback.tsx';
+import { Feedback } from 'widgets/feedback.tsx';
+
 import { Div } from './sections/Div';
 import { DivWrapper } from './sections/DivWrapper';
 import { Frame } from './sections/Frame';

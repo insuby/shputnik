@@ -1002,7 +1002,13 @@ export const MobileLayout = () => {
         )}
       </AnimatePresence>
 
-      <main id="content" className="-mt-16 w-full px-5">
+      <main
+        id="content"
+        className={cx('-mt-20 w-full mx-auto', {
+            'px-5': !isBgEnabled,
+            'flex flex-col gap-[88px]': isBgEnabled,
+        })}
+      >
         <Outlet />
       </main>
       {isOpen && <FeedbackForm />}

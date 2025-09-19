@@ -66,12 +66,26 @@ export const FeedbackForm = () => {
             : ' translate-y-4 scale-95 opacity-0'
         }`}
       >
-        <img
+        <svg
           className="absolute left-[379px] top-[85px] h-[1150px] w-full md:w-[1230px]"
-          alt=""
+          width="1408"
+          height="1470"
+          viewBox="0 0 1408 1470"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
-          src="/img/vector-1.svg"
-        />
+        >
+          <g opacity="0.2" filter="url(#filter0_f_15_177)">
+            <path d="M551.293 621.064C506.958 486.085 642.859 364.437 716.352 320.486C1194 182.548 1164.08 785.029 996.168 981.451C828.258 1177.87 364.818 1243.95 306.591 1066.68C248.363 889.399 606.711 789.787 551.293 621.064Z" fill="#3772FE"/>
+          </g>
+          <defs>
+            <filter id="filter0_f_15_177" x="0" y="0" width="1407.95" height="1470" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_15_177"/>
+            </filter>
+          </defs>
+        </svg>
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
           <div className="relative hidden h-[22px] w-full md:block md:w-[170px]">
@@ -93,12 +107,18 @@ export const FeedbackForm = () => {
             className="relative my-[-8.00px] inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] p-3 transition-colors duration-200 hover:bg-[#ffffff20]"
             onClick={onClick}
           >
-            <img
+            <svg
               className="relative size-8"
-              alt=""
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
-              src="/img/x.svg"
-            />
+            >
+              <path d="M25 7L7 25" stroke="black" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>
+              <path d="M25 25L7 7" stroke="black" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>
+            </svg>
           </button>
         </header>
 

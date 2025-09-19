@@ -67,11 +67,26 @@ export const Frame1 = () => {
           <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]">
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[url(/img/vector-1-3.svg)] bg-[100%_100%]">
               <div className="relative left-[59px] top-[-49px] h-[372px] w-full md:w-[560px]">
-                <img
+                <svg
                   className="absolute left-[91px] top-0 h-[372px] w-full md:w-[415px]"
-                  alt="Vector"
-                  src="/img/vector-151.svg"
-                />
+                  width="1078"
+                  height="1072"
+                  viewBox="0 0 1078 1072"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Vector"
+                >
+                  <g opacity="0.4" filter="url(#filter0_f_9062_7)">
+                    <path d="M589.852 586.159C601.21 640.449 543.216 681.763 512.799 695.634C321.503 728.473 359.197 496.013 432.848 427.072C506.499 358.132 689.17 352.558 704.086 423.86C719.003 495.162 575.655 518.297 589.852 586.159Z" fill="#725DD6" />
+                  </g>
+                  <defs>
+                    <filter id="filter0_f_9062_7" x="0" y="0" width="1078" height="1071.62" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                      <feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9062_7" />
+                    </filter>
+                  </defs>
+                </svg>
 
                 <motion.div
                   id="animate_40"

@@ -1,9 +1,9 @@
-import { isMobile } from 'app';
 import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { isMobile } from 'shared/lib/is-mobile';
 import { Check10 } from 'shared/ui';
 
 import { CrmCapabilities } from './crm-capabilities.tsx';
