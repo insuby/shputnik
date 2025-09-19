@@ -44,7 +44,6 @@ import { islamfinance as ruIslamfinance } from './locales/ru/islamfinance';
 import { layout as ruLayout } from './locales/ru/layout';
 import ruMegamenu from './locales/ru/megamenu';
 import { microcredit as ruMicrocredit } from './locales/ru/microcredit';
-import { mobile as ruMobile } from './locales/ru/mobile';
 import ruNav from './locales/ru/nav';
 import { p2p as ruP2p } from './locales/ru/p2p';
 import { privacy as ruPrivacy } from './locales/ru/privacy';
@@ -70,7 +69,6 @@ export const resources = {
     dataunload: ruDataunload,
     fdata: ruFdata,
     development: ruDevelopment,
-    mobile: ruMobile,
     layout: ruLayout,
     businesscredit: ruBusinesscredit,
     privacy: ruPrivacy,
@@ -96,7 +94,6 @@ export const resources = {
     dataunload: enDataunload,
     fdata: enFdata,
     development: enDevelopment,
-    mobile: enMobile,
     layout: enLayout,
     businesscredit: enBusinesscredit,
     privacy: enPrivacy,
@@ -132,7 +129,6 @@ i18n
       'dataunload',
       'fdata',
       'development',
-      'mobile',
       'layout',
       'businesscredit',
       'privacy',

@@ -757,7 +757,7 @@ export const MainMobile = () => {
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
                   {t('products.microfinance.more')}
                 </div>
 
@@ -783,7 +783,7 @@ export const MainMobile = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div
                   onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                 >
                   {t('products.microfinance.more')}
                 </div>
@@ -810,7 +810,7 @@ export const MainMobile = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div
                   onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                 >
                   {t('products.microfinance.more')}
                 </div>
@@ -828,14 +828,14 @@ export const MainMobile = () => {
 
         <div className="flex flex-col items-center gap-9 p-4 relative self-stretch w-full flex-[0_0_auto]">
             <p className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-4xl leading-9 relative tracking-[0]">
-        <span className="font-medium text-[#1c222f] leading-[0.1px]">
-          Точечное и потребительское
-          <br />
-        </span>
+            <span className="font-medium text-[#1c222f] leading-[0.1px]">
+              Точечное и потребительское
+              <br />
+            </span>
 
-                <span className="font-medium text-[#9ea7bb] leading-10">
-          кредитование
-        </span>
+            <span className="font-medium text-[#9ea7bb] leading-10">
+              кредитование
+            </span>
             </p>
 
             <div className="flex flex-col items-start gap-5 relative self-stretch w-full flex-[0_0_auto]">
@@ -1132,7 +1132,7 @@ export const MainMobile = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div
                   onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                 >
                   {t('products.microfinance.more')}
                 </div>
@@ -1159,7 +1159,7 @@ export const MainMobile = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div
                   onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                 >
                   {t('products.microfinance.more')}
                 </div>
@@ -1186,7 +1186,7 @@ export const MainMobile = () => {
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div
                   onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
                 >
                   {t('products.microfinance.more')}
                 </div>

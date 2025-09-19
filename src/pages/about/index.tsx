@@ -17,7 +17,7 @@ export const About = () => {
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 md:px-8 md:pb-[88px] md:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] md:inline-flex">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 pt-0 md:gap-20 md:px-20 md:pb-20 md:pt-[88px]">
+            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 md:gap-20 md:px-20 md:pb-20 pt-[88px]">
               <img
                 className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
                 alt=""
