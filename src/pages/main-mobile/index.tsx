@@ -2,11 +2,13 @@ import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 import { useFeedbackForm } from 'widgets/feedback-form';
 import { Feedback } from 'widgets/feedback.tsx';
 
 import { CheckIcon } from 'shared/ui';
+import { RoutesPath } from 'shared/routes-path';
 
 export const MainMobile = () => {
   const { t } = useTranslation(['home']);
@@ -373,28 +375,24 @@ export const MainMobile = () => {
             </div>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc] p-8">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc] p-8">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
               <p className="relative mt-[-1.00px] self-stretch text-[28px] font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="font-medium leading-9 text-[#1c222f]">
-                  Микрофинансовое
+                  {t('products.microfinance.title').split('\n')[0]}
                   <br />
-                  кредитование
+                  {t('products.microfinance.title').split('\n')[1]}
                 </span>
               </p>
 
               <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                Вид деятельности, связанный с выдачей небольших займов гражданам
-                и малому бизнесу, который не имеет доступа к традиционному
-                банкингу. Микрозаймы, как правило, выдаются на короткие сроки и
-                имеют более высокие процентные ставки по сравнению с банковскими
-                кредитами.
+                {t('products.microfinance.description')}
               </p>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+            <Link to={RoutesPath.MICROCREDIT} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
-                Подробнее
+                {t('products.microfinance.more')}
               </div>
 
                 <svg
@@ -402,7 +400,7 @@ export const MainMobile = () => {
                     xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path d="M7.5 3.75L13.75 10L7.5 16.25" stroke="#3573FC" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
                 </svg>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -744,7 +742,7 @@ export const MainMobile = () => {
             />
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-4 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-4 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -756,9 +754,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+              <Link to={RoutesPath.BUSINESSCREDIT} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
-                  {t('products.microfinance.more')}
+                  {t('products.business.more')}
                 </div>
 
                 <img
@@ -766,7 +764,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
@@ -780,12 +778,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div
-                  onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('products.microfinance.more')}
+              <Link to={RoutesPath.BANKCREDIT} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                  {t('products.bank.more')}
                 </div>
 
                 <img
@@ -793,7 +788,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
 
             <div className="relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-[0_0_auto] flex-col items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-none bg-[#f5f7ff] p-7">
@@ -807,12 +802,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div
-                  onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('products.microfinance.more')}
+              <Link to={RoutesPath.AUTOCREDIT} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                  {t('products.auto.more')}
                 </div>
 
                 <img
@@ -820,7 +812,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
           </div>
         </div>
@@ -829,12 +821,12 @@ export const MainMobile = () => {
         <div className="flex flex-col items-center gap-9 p-4 relative self-stretch w-full flex-[0_0_auto]">
             <p className="self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-normal text-gray-90 text-4xl leading-9 relative tracking-[0]">
             <span className="font-medium text-[#1c222f] leading-[0.1px]">
-              Точечное и потребительское
+              {t('lendingStoreOnline.headingLeft')}
               <br />
             </span>
 
             <span className="font-medium text-[#9ea7bb] leading-10">
-              кредитование
+              {t('lendingStoreOnline.headingRight')}
             </span>
             </p>
 
@@ -857,13 +849,13 @@ export const MainMobile = () => {
 
                                 <div className="inline-flex flex-col items-start gap-[12.4px] p-[18.6px] relative self-stretch flex-[0_0_auto] bg-[#f6f8ff] rounded-[18.6px]">
                                     <div className="relative self-stretch mt-[-0.77px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[15.5px] tracking-[0] leading-[21.7px]">
-                                        Наушники Beyerdynamic Amiron
+                                        {t('lendingStoreOnline.productName')}
                                     </div>
 
                                     <div className="flex flex-col w-[167.42px] items-start gap-[7.75px] relative flex-[0_0_auto]">
                                         <div className="flex h-[15.5px] items-center gap-[9.3px] relative self-stretch w-full">
                                             <div className="flex-1 mt-[-1.03px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.8px] leading-[15.5px] relative tracking-[0]">
-                                                Стоимость
+                                                {t('lendingStoreOnline.cost')}
                                             </div>
 
                                             <div className="w-[55.79px] mt-[-1.03px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[10.8px] text-right leading-[15.5px] relative tracking-[0]">
@@ -873,7 +865,7 @@ export const MainMobile = () => {
 
                                         <div className="flex h-[15.5px] items-center gap-[9.3px] relative self-stretch w-full">
                                             <div className="flex-1 mt-[-1.03px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.8px] leading-[15.5px] relative tracking-[0]">
-                                                Авансовый платеж
+                                                {t('lendingStoreOnline.advancePayment')}
                                             </div>
 
                                             <div className="w-[55.79px] mt-[-1.03px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[10.8px] text-right leading-[15.5px] relative tracking-[0]">
@@ -883,7 +875,7 @@ export const MainMobile = () => {
 
                                         <div className="flex h-[15.5px] items-center gap-[9.3px] relative self-stretch w-full">
                                             <div className="flex-1 mt-[-1.03px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.8px] leading-[15.5px] relative tracking-[0]">
-                                                Срок
+                                                {t('calculator.term')}
                                             </div>
 
                                             <div className="w-[55.79px] mt-[-1.03px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[10.8px] text-right leading-[15.5px] relative tracking-[0]">
@@ -893,7 +885,7 @@ export const MainMobile = () => {
 
                                         <div className="flex h-[15.5px] items-center gap-[9.3px] relative self-stretch w-full">
                                             <div className="flex-1 mt-[-1.03px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.8px] leading-[15.5px] relative tracking-[0]">
-                                                Следующий платеж
+                                                {t('lendingStoreOnline.nextPayment')}
                                             </div>
 
                                             <div className="w-[55.79px] mt-[-1.03px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[10.8px] text-right leading-[15.5px] relative tracking-[0]">
@@ -919,7 +911,7 @@ export const MainMobile = () => {
 
                                 <div className="inline-flex flex-col items-start gap-[3.68px] relative flex-[0_0_auto]">
                                     <div className="w-fit mt-[-0.92px] [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-[12.9px] leading-[18.4px] whitespace-nowrap relative tracking-[0]">
-                                        Ежемесячный платеж
+                                        {t('lendingStoreOnline.monthlyPayment')}
                                     </div>
 
                                     <div className="relative w-fit font-medium text-gray-90 text-[18.4px] leading-[25.8px] whitespace-nowrap [font-family:'Roboto',Helvetica] tracking-[0]">
@@ -932,27 +924,25 @@ export const MainMobile = () => {
                         <div className="flex flex-col items-start justify-end gap-8 p-8 relative self-stretch w-full flex-[0_0_auto]">
                             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                                 <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[28px] tracking-[0] leading-9">
-                                    BNPL
+                                    {t('lendingStoreOnline.bnplTitle')}
                                 </div>
 
-                                <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                                    Предоставление банком денежных средств физическим или
-                                    юридическим лицам. Предоставление банком денежных средств
-                                    физическим или юридическим лицам
-                                </p>
+            <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
+              {t('lendingStoreOnline.bnplDesc')}
+            </p>
                             </div>
 
-                            <div className="flex items-center justify-center gap-2.5 p-4 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[100px]">
-                                <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-blue-50 text-base leading-6 whitespace-nowrap relative tracking-[0]">
-                                    Подробнее
-                                </div>
+            <Link to={RoutesPath.BNPL} className="flex items-center justify-center gap-2.5 p-4 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[100px]">
+              <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-blue-50 text-base leading-6 whitespace-nowrap relative tracking-[0]">
+                {t('products.microfinance.more')}
+              </div>
 
-                                <img
-                                    className="relative w-5 h-5"
-                                    alt="Caret right"
-                                    src="https://c.animaapp.com/mfqhurw5UPzvsV/img/caretright-3.svg"
-                                />
-                            </div>
+              <img
+                className="relative w-5 h-5"
+                alt="Caret right"
+                src="https://c.animaapp.com/mfqhurw5UPzvsV/img/caretright-3.svg"
+              />
+            </Link>
                         </div>
                     </div>
 
@@ -980,7 +970,7 @@ export const MainMobile = () => {
                                         <div className="relative w-[6.9px] h-[65.56px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            март
+                                            {t('lendingStoreOnline.months.march')}
                                         </div>
                                     </div>
 
@@ -988,7 +978,7 @@ export const MainMobile = () => {
                                         <div className="h-[74.19px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-[6.9px] rounded-[20.7px]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            апр
+                                            {t('lendingStoreOnline.months.april')}
                                         </div>
                                     </div>
 
@@ -996,7 +986,7 @@ export const MainMobile = () => {
                                         <div className="h-[90.57px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)] relative w-[6.9px] rounded-[20.7px]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            май
+                                            {t('lendingStoreOnline.months.may')}
                                         </div>
                                     </div>
 
@@ -1004,7 +994,7 @@ export const MainMobile = () => {
                                         <div className="h-[103.51px] bg-[#f2f4fb] relative w-[6.9px] rounded-[20.7px]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            июнь
+                                            {t('lendingStoreOnline.months.june')}
                                         </div>
                                     </div>
 
@@ -1012,7 +1002,7 @@ export const MainMobile = () => {
                                         <div className="h-[78.5px] bg-[#f2f4fb] relative w-[6.9px] rounded-[20.7px]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            июль
+                                            {t('lendingStoreOnline.months.july')}
                                         </div>
                                     </div>
 
@@ -1020,7 +1010,7 @@ export const MainMobile = () => {
                                         <div className="h-[84.54px] bg-[#f2f4fb] relative w-[6.9px] rounded-[20.7px]" />
 
                                         <div className="w-[37.96px] [font-family:'Roboto',Helvetica] font-normal text-[#7a86a2] text-[10.4px] text-center leading-[13.8px] relative tracking-[0]">
-                                            авг
+                                            {t('lendingStoreOnline.months.august')}
                                         </div>
                                     </div>
                                 </div>
@@ -1076,19 +1066,17 @@ export const MainMobile = () => {
                         <div className="flex flex-col items-start justify-end gap-8 p-8 relative self-stretch w-full flex-[0_0_auto]">
                             <div className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
                                 <div className="relative self-stretch mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-gray-90 text-[28px] tracking-[0] leading-9">
-                                    POS-кредитование
+                                    {t('lendingStoreOnline.posTitle')}
                                 </div>
 
                                 <p className="self-stretch [font-family:'Roboto',Helvetica] font-normal text-[#9ea7bb] text-xl leading-7 relative tracking-[0]">
-                                    Предоставление банком денежных средств физическим или
-                                    юридическим лицам. Предоставление банком денежных средств
-                                    физическим или юридическим лицам
+                                    {t('lendingStoreOnline.posDesc')}
                                 </p>
                             </div>
 
-                            <div className="flex items-center justify-center gap-2.5 p-4 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[100px]">
+                            <Link to={RoutesPath.BNPL} className="flex items-center justify-center gap-2.5 p-4 relative self-stretch w-full flex-[0_0_auto] bg-white rounded-[100px]">
                                 <div className="w-fit mt-[-1.00px] [font-family:'Roboto',Helvetica] font-medium text-blue-50 text-base leading-6 whitespace-nowrap relative tracking-[0]">
-                                    Подробнее
+                                    {t('products.microfinance.more')}
                                 </div>
 
                                 <img
@@ -1096,7 +1084,7 @@ export const MainMobile = () => {
                                     alt="Caret right"
                                     src="https://c.animaapp.com/mfqhurw5UPzvsV/img/caretright-3.svg"
                                 />
-                            </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -1129,12 +1117,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div
-                  onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('products.microfinance.more')}
+              <Link to={RoutesPath.DATAUNLOAD} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                  {t('other.dataUnload.more')}
                 </div>
 
                 <img
@@ -1142,7 +1127,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
@@ -1156,12 +1141,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div
-                  onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('products.microfinance.more')}
+              <Link to={RoutesPath.DEVELOPMENT} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                  {t('other.decisionModule.more')}
                 </div>
 
                 <img
@@ -1169,7 +1151,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
@@ -1183,12 +1165,9 @@ export const MainMobile = () => {
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
-                <div
-                  onClick={onClick}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('products.microfinance.more')}
+              <Link to={RoutesPath.FDATA} className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4">
+                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap md:text-xl font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica]">
+                  {t('other.fdata.more')}
                 </div>
 
                 <img
@@ -1196,7 +1175,7 @@ export const MainMobile = () => {
                   alt="Caret right"
                   src="https://c.animaapp.com/meg2uvv4WWYlvp/img/caretright.svg"
                 />
-              </div>
+              </Link>
             </div>
           </div>
         </div>

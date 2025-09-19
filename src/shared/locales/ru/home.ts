@@ -122,8 +122,8 @@ export default {
     interestShort: 'Ставка',
   },
   lendingStoreOnline: {
-    headingLeft: 'Кредитование в магазине',
-    headingRight: 'и онлайн',
+    headingLeft: 'Точечное и потребительское',
+    headingRight: 'кредитование',
     bnplTitle: 'BNPL',
     bnplDesc: 'Buy Now, Pay Later — покупка товаров с отсрочкой платежа',
     posTitle: 'POS-кредитование',
