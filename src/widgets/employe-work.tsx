@@ -120,7 +120,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView2 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row"
         >
           <motion.div
             ref={ref3}
@@ -163,7 +163,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView1 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch"
+                className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row"
               >
                 <motion.div
                   ref={ref11}

@@ -1,10 +1,10 @@
-interface Props {
+type Props = {
   state: 'active' | 'default';
   className: any;
   divClassName?: any;
   text: string;
   divClassNameOverride?: any;
-}
+};
 
 export const Point = ({
   state,

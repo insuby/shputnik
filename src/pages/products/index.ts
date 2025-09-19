@@ -1,0 +1,10 @@
+export { MicroCredit } from '../../screens/MicroCredit';
+export { Autocredit } from '../../screens/Autocredit';
+export { IslamFinance } from '../../screens/IslamFinans';
+export { BusinessCredit } from '../../screens/BusinessCredit';
+export { BankCredit } from '../../screens/BankCredit';
+export { Development } from '../../screens/Development';
+export { Dataunload } from '../../screens/Dataunload';
+export { Fdata } from '../../screens/Fdata';
+export { P2P } from '../../screens/P2P';
+export { BNPL } from '../../screens/BNPL';

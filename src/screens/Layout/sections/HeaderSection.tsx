@@ -99,7 +99,7 @@ export const HeaderSection = () => {
             aria-controls="products-menu"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-              {t('products', { ns: 'nav' })}
+            {t('products', { ns: 'nav' })}
           </button>
         </div>
         <ul className="flex items-center gap-16">

@@ -1,196 +1,196 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:500,400");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import "tailwind.css";
-@import "pagination.css";
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,400');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import 'tailwind.css';
+@import 'pagination.css';
 
 * {
-    -webkit-font-smoothing: antialiased;
-    scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 /* Скрытие скроллбара */
 body {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /* Скрытие скроллбара для всех элементов */
 * {
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 *::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 html,
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 #app {
-    min-height: 100%;
-    white-space: pre-wrap !important;
+  min-height: 100%;
+  white-space: pre-wrap !important;
 }
 
 /* a blue color as a generic focus style */
 button:focus-visible {
-    outline: 2px solid #4a90e2 !important;
-    outline: -webkit-focus-ring-color auto 5px !important;
+  outline: 2px solid #4a90e2 !important;
+  outline: -webkit-focus-ring-color auto 5px !important;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* Отключение hover поведения для navigation menu */
 [data-radix-navigation-menu-trigger] {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 [data-radix-navigation-menu-content] {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 /* Убираем hover эффекты */
 [data-radix-navigation-menu-trigger]:hover {
-    background: none !important;
+  background: none !important;
 }
 
 [data-radix-navigation-menu-content]:hover {
-    background: none !important;
+  background: none !important;
 }
 
 /* Slick Slider Styles */
 .slick-slider {
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    user-select: none;
-    touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .slick-list:focus {
-    outline: none;
+  outline: none;
 }
 
 .slick-list.dragging {
-    cursor: pointer;
-    cursor: hand;
+  cursor: pointer;
+  cursor: hand;
 }
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-    transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .slick-track:before,
 .slick-track:after {
-    display: table;
-    content: '';
+  display: table;
+  content: '';
 }
 
 .slick-track:after {
-    clear: both;
+  clear: both;
 }
 
 .slick-loading .slick-track {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .slick-slide {
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
 }
 
 [dir='rtl'] .slick-slide {
-    float: right;
+  float: right;
 }
 
 .slick-slide img {
-    display: block;
+  display: block;
 }
 
 .slick-slide.slick-loading img {
-    display: none;
+  display: none;
 }
 
 .slick-slide.dragging img {
-    pointer-events: none;
+  pointer-events: none;
 }
 
 .slick-initialized .slick-slide {
-    display: block;
+  display: block;
 }
 
 .slick-loading .slick-slide {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 .slick-vertical .slick-slide {
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
 }
 
 .slick-arrow.slick-hidden {
-    display: none;
+  display: none;
 }
 
 /* P2P Slider specific styles */
 .p2p-slider .slick-slide {
-    opacity: 0.5;
-    transition: opacity 0.3s ease;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
 }
 
 .p2p-slider .slick-slide.slick-active {
-    opacity: 1;
+  opacity: 1;
 }
 
 .p2p-slider .slick-slide.slick-center {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Отключение hover эффектов для NavigationMenu */
 [data-radix-navigation-menu-trigger] {
-    pointer-events: auto !important;
+  pointer-events: auto !important;
 }
 
 [data-radix-navigation-menu-content] {
-    pointer-events: none !important;
+  pointer-events: none !important;
 }
 
 [data-radix-navigation-menu-viewport] {
-    pointer-events: auto !important;
+  pointer-events: auto !important;
 }
 
 /* Отключение hover открытия меню */
 [data-radix-navigation-menu-root] {
-    --radix-navigation-menu-trigger-delay: 999999ms !important;
+  --radix-navigation-menu-trigger-delay: 999999ms !important;
 }

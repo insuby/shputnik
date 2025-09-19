@@ -3,243 +3,240 @@
 @tailwind utilities;
 
 @layer components {
-    .all-\[unset\] {
-        all: unset;
-    }
+  .all-\[unset\] {
+    all: unset;
+  }
 }
 
 :root {
-    --font-family: "Roboto", sans-serif;
-    --blue-10: rgba(242, 245, 255, 1);
-    --blue-50: rgba(53, 115, 252, 1);
-    --body-1-r-font-family: "Inter", Helvetica;
-    --body-1-r-font-size: 20px;
-    --body-1-r-font-style: normal;
-    --body-1-r-font-weight: 400;
-    --body-1-r-letter-spacing: 0px;
-    --body-1-r-line-height: 28px;
-    --body-2-r-font-family: "Inter", Helvetica;
-    --body-2-r-font-size: 14px;
-    --body-2-r-footer-font-size: 16px;
-    --body-2-r-font-style: normal;
-    --body-2-r-font-weight: 400;
-    --body-2-r-letter-spacing: 0px;
-    --body-2-r-line-height: 24px;
-    --body-3-r-font-family: "Inter", Helvetica;
-    --body-3-r-font-size: 16px;
-    --body-3-r-font-style: normal;
-    --body-3-r-font-weight: 400;
-    --body-3-r-letter-spacing: 0px;
-    --body-3-r-line-height: 20px;
-    --gray-10: rgba(248, 248, 250, 1);
-    --gray-20: rgba(227, 229, 232, 1);
-    --gray-40: rgba(159, 167, 188, 1);
-    --gray-70: rgba(85, 96, 122, 1);
-    --gray-90: rgba(28, 34, 47, 1);
-    --green-50: rgba(0, 203, 130, 1);
-    --header-1-m-font-family: "Geometria", Helvetica;
-    --header-1-m-font-size: 40px;
-    --header-1-m-font-style: normal;
-    --header-1-m-font-weight: 500;
-    --header-1-m-letter-spacing: 0px;
-    --header-1-m-line-height: 48px;
-    --red-40: rgba(255, 128, 104, 1);
-    --red-50: rgba(231, 73, 81, 1);
-    --tite-2-m-font-family: "Geometria", Helvetica;
-    --tite-2-m-font-size: 56px;
-    --tite-2-m-font-style: normal;
-    --tite-2-m-font-weight: 500;
-    --tite-2-m-letter-spacing: 0px;
-    --tite-2-m-line-height: 64px;
-    --title-1-m-font-family: "Geometria", Helvetica;
-    --title-1-m-font-size: 68px;
-    --title-1-m-font-style: normal;
-    --title-1-m-font-weight: 500;
-    --title-1-m-letter-spacing: 0px;
-    --title-1-m-line-height: 72px;
-    --title-1-r-font-family: "Geometria", Helvetica;
-    --title-1-r-font-size: 68px;
-    --title-1-r-font-style: normal;
-    --title-1-r-font-weight: 400;
-    --title-1-r-letter-spacing: 0px;
-    --title-1-r-line-height: 72px;
-    --violet-50: rgba(165, 101, 255, 1);
-    --white: rgba(255, 255, 255, 1);
-    --yellow-50: rgba(251, 171, 0, 1);
+  --font-family: 'Roboto', sans-serif;
+  --blue-10: rgba(242, 245, 255, 1);
+  --blue-50: rgba(53, 115, 252, 1);
+  --body-1-r-font-family: 'Inter', Helvetica;
+  --body-1-r-font-size: 20px;
+  --body-1-r-font-style: normal;
+  --body-1-r-font-weight: 400;
+  --body-1-r-letter-spacing: 0px;
+  --body-1-r-line-height: 28px;
+  --body-2-r-font-family: 'Inter', Helvetica;
+  --body-2-r-font-size: 14px;
+  --body-2-r-footer-font-size: 16px;
+  --body-2-r-font-style: normal;
+  --body-2-r-font-weight: 400;
+  --body-2-r-letter-spacing: 0px;
+  --body-2-r-line-height: 24px;
+  --body-3-r-font-family: 'Inter', Helvetica;
+  --body-3-r-font-size: 16px;
+  --body-3-r-font-style: normal;
+  --body-3-r-font-weight: 400;
+  --body-3-r-letter-spacing: 0px;
+  --body-3-r-line-height: 20px;
+  --gray-10: rgba(248, 248, 250, 1);
+  --gray-20: rgba(227, 229, 232, 1);
+  --gray-40: rgba(159, 167, 188, 1);
+  --gray-70: rgba(85, 96, 122, 1);
+  --gray-90: rgba(28, 34, 47, 1);
+  --green-50: rgba(0, 203, 130, 1);
+  --header-1-m-font-family: 'Geometria', Helvetica;
+  --header-1-m-font-size: 40px;
+  --header-1-m-font-style: normal;
+  --header-1-m-font-weight: 500;
+  --header-1-m-letter-spacing: 0px;
+  --header-1-m-line-height: 48px;
+  --red-40: rgba(255, 128, 104, 1);
+  --red-50: rgba(231, 73, 81, 1);
+  --tite-2-m-font-family: 'Geometria', Helvetica;
+  --tite-2-m-font-size: 56px;
+  --tite-2-m-font-style: normal;
+  --tite-2-m-font-weight: 500;
+  --tite-2-m-letter-spacing: 0px;
+  --tite-2-m-line-height: 64px;
+  --title-1-m-font-family: 'Geometria', Helvetica;
+  --title-1-m-font-size: 68px;
+  --title-1-m-font-style: normal;
+  --title-1-m-font-weight: 500;
+  --title-1-m-letter-spacing: 0px;
+  --title-1-m-line-height: 72px;
+  --title-1-r-font-family: 'Geometria', Helvetica;
+  --title-1-r-font-size: 68px;
+  --title-1-r-font-style: normal;
+  --title-1-r-font-weight: 400;
+  --title-1-r-letter-spacing: 0px;
+  --title-1-r-line-height: 72px;
+  --violet-50: rgba(165, 101, 255, 1);
+  --white: rgba(255, 255, 255, 1);
+  --yellow-50: rgba(251, 171, 0, 1);
 
-    --blue-30: rgba(172, 198, 255, 1);
+  --blue-30: rgba(172, 198, 255, 1);
 
-
-    --app-background: rgba(247, 246, 249, 1);
-    --body-body-3-regular-font-family: "Inter", Helvetica;
-    --body-body-3-regular-font-size: 14px;
-    --body-body-3-regular-font-style: normal;
-    --body-body-3-regular-font-weight: 400;
-    --body-body-3-regular-letter-spacing: 0px;
-    --body-body-3-regular-line-height: 20px;
-    --caption-caption-1-regular-font-family: "Inter", Helvetica;
-    --caption-caption-1-regular-font-size: 12px;
-    --caption-caption-1-regular-font-style: normal;
-    --caption-caption-1-regular-font-weight: 400;
-    --caption-caption-1-regular-letter-spacing: 0px;
-    --caption-caption-1-regular-line-height: 16px;
-    --gray-60: rgba(113, 114, 120, 1);
-    --gray-99: rgba(34, 32, 36, 1);
-    --green-10: rgba(228, 251, 241, 1);
-    --header-2-m-font-family: "Geometria", Helvetica;
-    --header-2-m-font-size: 24px;
-    --header-2-m-font-style: normal;
-    --header-2-m-font-weight: 500;
-    --header-2-m-letter-spacing: 0px;
-    --header-2-m-line-height: 32px;
-    --red-10: rgba(255, 242, 240, 1);
-    --violet-10: rgba(237, 234, 253, 1);
-    --yellow-10: rgba(255, 246, 227, 1);
+  --app-background: rgba(247, 246, 249, 1);
+  --body-body-3-regular-font-family: 'Inter', Helvetica;
+  --body-body-3-regular-font-size: 14px;
+  --body-body-3-regular-font-style: normal;
+  --body-body-3-regular-font-weight: 400;
+  --body-body-3-regular-letter-spacing: 0px;
+  --body-body-3-regular-line-height: 20px;
+  --caption-caption-1-regular-font-family: 'Inter', Helvetica;
+  --caption-caption-1-regular-font-size: 12px;
+  --caption-caption-1-regular-font-style: normal;
+  --caption-caption-1-regular-font-weight: 400;
+  --caption-caption-1-regular-letter-spacing: 0px;
+  --caption-caption-1-regular-line-height: 16px;
+  --gray-60: rgba(113, 114, 120, 1);
+  --gray-99: rgba(34, 32, 36, 1);
+  --green-10: rgba(228, 251, 241, 1);
+  --header-2-m-font-family: 'Geometria', Helvetica;
+  --header-2-m-font-size: 24px;
+  --header-2-m-font-style: normal;
+  --header-2-m-font-weight: 500;
+  --header-2-m-letter-spacing: 0px;
+  --header-2-m-line-height: 32px;
+  --red-10: rgba(255, 242, 240, 1);
+  --violet-10: rgba(237, 234, 253, 1);
+  --yellow-10: rgba(255, 246, 227, 1);
 }
 
 @layer base {
-    :root {
-        --background: 0 0% 100%;
-        --foreground: 222.2 47.4% 11.2%;
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
 
-        --muted: 210 40% 96.1%;
-        --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
-        --popover: 0 0% 100%;
-        --popover-foreground: 222.2 47.4% 11.2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
 
-        --border: 214.3 31.8% 91.4%;
-        --input: 214.3 31.8% 91.4%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
 
-        --card: transparent;
-        --card-foreground: 222.2 47.4% 11.2%;
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
 
-        --primary: 222.2 47.4% 11.2%;
-        --primary-foreground: 210 40% 98%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
 
-        --secondary: 210 40% 96.1%;
-        --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
-        --accent: 210 40% 96.1%;
-        --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
-        --destructive: 0 100% 50%;
-        --destructive-foreground: 210 40% 98%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
 
-        --ring: 215 20.2% 65.1%;
+    --ring: 215 20.2% 65.1%;
 
-        --radius: 0.5rem;
-    }
+    --radius: 0.5rem;
+  }
 
-    .dark {
-        --background: 224 71% 4%;
-        --foreground: 213 31% 91%;
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
 
-        --muted: 223 47% 11%;
-        --muted-foreground: 215.4 16.3% 56.9%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
 
-        --accent: 216 34% 17%;
-        --accent-foreground: 210 40% 98%;
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
 
-        --popover: 224 71% 4%;
-        --popover-foreground: 215 20.2% 65.1%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
 
-        --border: 216 34% 17%;
-        --input: 216 34% 17%;
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
 
-        --card: transparent;
-        --card-foreground: 213 31% 91%;
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
 
-        --primary: 210 40% 98%;
-        --primary-foreground: 222.2 47.4% 1.2%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
 
-        --secondary: 222.2 47.4% 11.2%;
-        --secondary-foreground: 210 40% 98%;
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
 
-        --destructive: 0 63% 31%;
-        --destructive-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
 
-        --ring: 216 34% 17%;
+    --ring: 216 34% 17%;
 
-        --radius: 0.5rem;
-    }
+    --radius: 0.5rem;
+  }
 }
 
 @layer base {
-    * {
-        @apply border-border;
-    }
+  * {
+    @apply border-border;
+  }
 
-    body {
-        @apply bg-background text-foreground;
-        font-feature-settings: "rlig" 1, "calt" 1;
-    }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
 }
 
 :root {
-    --blue-50: rgba(53, 115, 252, 1);
-    --body-2-r-font-family: "Inter", Helvetica;
-    --body-2-r-font-size: 16px;
-    --body-2-r-font-style: normal;
-    --body-2-r-font-weight: 400;
-    --body-2-r-letter-spacing: 0px;
-    --body-2-r-line-height: 24px;
-    --body-3-r-font-family: "Inter", Helvetica;
-    --body-3-r-font-size: 14px;
-    --body-3-r-font-style: normal;
-    --body-3-r-font-weight: 400;
-    --body-3-r-letter-spacing: 0px;
-    --body-3-r-line-height: 20px;
-    --gray-20: rgba(227, 229, 232, 1);
-    --gray-40: rgba(159, 167, 188, 1);
-    --gray-70: rgba(85, 96, 122, 1);
-    --gray-90: rgba(28, 34, 47, 1);
-    --green-50: rgba(0, 203, 130, 1);
-    --green-60: rgba(1, 173, 124, 1);
-    --red-50: rgba(231, 73, 81, 1);
-    --violet-50: rgba(114, 93, 214, 1);
-    --white: rgba(255, 255, 255, 1);
-    --yellow-50: rgba(251, 171, 0, 1);
+  --blue-50: rgba(53, 115, 252, 1);
+  --body-2-r-font-family: 'Inter', Helvetica;
+  --body-2-r-font-size: 16px;
+  --body-2-r-font-style: normal;
+  --body-2-r-font-weight: 400;
+  --body-2-r-letter-spacing: 0px;
+  --body-2-r-line-height: 24px;
+  --body-3-r-font-family: 'Inter', Helvetica;
+  --body-3-r-font-size: 14px;
+  --body-3-r-font-style: normal;
+  --body-3-r-font-weight: 400;
+  --body-3-r-letter-spacing: 0px;
+  --body-3-r-line-height: 20px;
+  --gray-20: rgba(227, 229, 232, 1);
+  --gray-40: rgba(159, 167, 188, 1);
+  --gray-70: rgba(85, 96, 122, 1);
+  --gray-90: rgba(28, 34, 47, 1);
+  --green-50: rgba(0, 203, 130, 1);
+  --green-60: rgba(1, 173, 124, 1);
+  --red-50: rgba(231, 73, 81, 1);
+  --violet-50: rgba(114, 93, 214, 1);
+  --white: rgba(255, 255, 255, 1);
+  --yellow-50: rgba(251, 171, 0, 1);
 }
 
-
-
 :root {
-    --background: rgba(247, 246, 249, 1);
-    --blue-30: rgba(172, 198, 255, 1);
-    --blue-50: rgba(53, 115, 252, 1);
-    --body-2-r-font-family: "Inter", Helvetica;
-    --body-2-r-font-size: 16px;
-    --body-2-r-font-style: normal;
-    --body-2-r-font-weight: 400;
-    --body-2-r-letter-spacing: 0px;
-    --body-2-r-line-height: 24px;
-    --body-3-r-font-family: "Inter", Helvetica;
-    --body-3-r-font-size: 14px;
-    --body-3-r-font-style: normal;
-    --body-3-r-font-weight: 400;
-    --body-3-r-letter-spacing: 0px;
-    --body-3-r-line-height: 20px;
-    --body-body-3-regular-font-family: "Inter", Helvetica;
-    --body-body-3-regular-font-size: 14px;
-    --body-body-3-regular-font-style: normal;
-    --body-body-3-regular-font-weight: 400;
-    --body-body-3-regular-letter-spacing: 0px;
-    --body-body-3-regular-line-height: 20px;
-    --caption-caption-1-regular-font-family: "Inter", Helvetica;
-    --caption-caption-1-regular-font-size: 12px;
-    --caption-caption-1-regular-font-style: normal;
-    --caption-caption-1-regular-font-weight: 400;
-    --caption-caption-1-regular-letter-spacing: 0px;
-    --caption-caption-1-regular-line-height: 16px;
-    --gray-10: rgba(248, 249, 252, 1);
-    --gray-20: rgba(227, 229, 232, 1);
-    --gray-40: #9fa7bc;
-    --gray-60: rgba(113, 114, 120, 1);
-    --gray-70: rgba(85, 96, 122, 1);
-    --gray-90: rgba(28, 34, 47, 1);
-    --gray-99: rgba(34, 32, 36, 1);
-    --green-50: rgba(0, 203, 130, 1);
-    --violet-50: rgba(114, 93, 214, 1);
-    --white: rgba(255, 255, 255, 1);
+  --background: rgba(247, 246, 249, 1);
+  --blue-30: rgba(172, 198, 255, 1);
+  --blue-50: rgba(53, 115, 252, 1);
+  --body-2-r-font-family: 'Inter', Helvetica;
+  --body-2-r-font-size: 16px;
+  --body-2-r-font-style: normal;
+  --body-2-r-font-weight: 400;
+  --body-2-r-letter-spacing: 0px;
+  --body-2-r-line-height: 24px;
+  --body-3-r-font-family: 'Inter', Helvetica;
+  --body-3-r-font-size: 14px;
+  --body-3-r-font-style: normal;
+  --body-3-r-font-weight: 400;
+  --body-3-r-letter-spacing: 0px;
+  --body-3-r-line-height: 20px;
+  --body-body-3-regular-font-family: 'Inter', Helvetica;
+  --body-body-3-regular-font-size: 14px;
+  --body-body-3-regular-font-style: normal;
+  --body-body-3-regular-font-weight: 400;
+  --body-body-3-regular-letter-spacing: 0px;
+  --body-body-3-regular-line-height: 20px;
+  --caption-caption-1-regular-font-family: 'Inter', Helvetica;
+  --caption-caption-1-regular-font-size: 12px;
+  --caption-caption-1-regular-font-style: normal;
+  --caption-caption-1-regular-font-weight: 400;
+  --caption-caption-1-regular-letter-spacing: 0px;
+  --caption-caption-1-regular-line-height: 16px;
+  --gray-10: rgba(248, 249, 252, 1);
+  --gray-20: rgba(227, 229, 232, 1);
+  --gray-40: #9fa7bc;
+  --gray-60: rgba(113, 114, 120, 1);
+  --gray-70: rgba(85, 96, 122, 1);
+  --gray-90: rgba(28, 34, 47, 1);
+  --gray-99: rgba(34, 32, 36, 1);
+  --green-50: rgba(0, 203, 130, 1);
+  --violet-50: rgba(114, 93, 214, 1);
+  --white: rgba(255, 255, 255, 1);
 }

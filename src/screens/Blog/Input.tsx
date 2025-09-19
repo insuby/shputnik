@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-interface Props {
+type Props = {
   state: 'filled' | 'active' | 'default';
   className: any;
   text?: string;
   text1?: string;
-}
+};
 
 export const Input = ({
   state,

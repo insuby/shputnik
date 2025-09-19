@@ -296,7 +296,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row"
         >
           <motion.div
             ref={ref9}

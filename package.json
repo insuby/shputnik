@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "lint": "eslint --no-eslintrc -c .eslintrc.cjs src --fix && prettier --write src",
+    "prepare": "husky"
   },
   "dependencies": {
     "@devnomic/marquee": "^1.0.3",

@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-interface Props {
+type Props = {
   state: 'default';
   className: any;
   divClassName: any;
   text: string;
-}
+};
 
 export const Point = ({
   className,

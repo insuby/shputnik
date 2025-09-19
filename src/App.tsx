@@ -3,28 +3,27 @@ import '@devnomic/marquee/dist/index.css';
 
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
+import { About } from 'pages/about';
+import { BlogList, BlogPost } from 'pages/blog';
+import { Main } from 'pages/home';
+import { Layout, MobileLayout } from 'pages/layouts';
+import { MainMobile } from 'pages/main-mobile';
+import { Privacy, Reviews, Work } from 'pages/other';
+import {
+  Autocredit,
+  BNPL,
+  BankCredit,
+  BusinessCredit,
+  Dataunload,
+  Development,
+  Fdata,
+  IslamFinance,
+  MicroCredit,
+  P2P,
+} from 'pages/products';
+
 import { ScrollToTop } from './ScrollToTop';
 import { RoutesPath } from './routes-path';
-import { About } from './screens/About';
-import { Autocredit } from './screens/Autocredit';
-import { BNPL } from './screens/BNPL';
-import { BankCredit } from './screens/BankCredit';
-import { BlogList } from './screens/Blog';
-import { BlogPost } from './screens/Blog/Post';
-import { BusinessCredit } from './screens/BusinessCredit';
-import { Dataunload } from './screens/Dataunload';
-import { Development } from './screens/Development';
-import { Fdata } from './screens/Fdata';
-import { IslamFinance } from './screens/IslamFinans';
-import { Layout } from './screens/Layout';
-import { Main } from './screens/Main';
-import { MicroCredit } from './screens/MicroCredit';
-import { MobileLayout } from './screens/MobileLayout';
-import { P2P } from './screens/P2P';
-import { Privacy } from './screens/Privacy';
-import { Work } from './screens/Work';
-import { MainMobile } from './screens/main-mobile';
-import { Reviews } from './screens/reviews';
 
 function checkIfMobile() {
   // Дополнительная проверка по размеру экрана

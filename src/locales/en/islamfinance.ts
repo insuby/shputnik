@@ -42,7 +42,7 @@ export const islamfinance = {
       tawarruq: 'Tawarruq',
       wakala: 'Wakala',
       musharakah: 'Musharakah',
-      istisna: "Istisna",
+      istisna: 'Istisna',
     },
   },
 };

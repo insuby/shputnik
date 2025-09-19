@@ -1,9 +1,9 @@
-interface Props {
+type Props = {
   state: 'phone' | 'filled' | 'active' | 'default';
   className: any;
   text: string;
   text1: string;
-}
+};
 
 export const Input = ({
   state,

@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
 
-interface Props {
+type Props = {
   className: any;
   text: string;
   hasDiv: boolean;
   text1: string;
-}
+};
 
 export const Cta = ({
   className,

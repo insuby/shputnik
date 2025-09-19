@@ -1,7 +1,8 @@
 export const p2p = {
   hero: {
     title: 'P2P lending',
-    subtitle: 'Core, integrations with services and information sources, ready-made modules and libraries - all this allows you to quickly deploy',
+    subtitle:
+      'Core, integrations with services and information sources, ready-made modules and libraries - all this allows you to quickly deploy',
   },
   dashboard: {
     greeting: 'Hello,',
@@ -35,17 +36,20 @@ export const p2p = {
   },
   services: {
     title: 'Services and integrations',
-    description: 'Acceptance and accounting of applications from investors and borrowers, client portal, specialist portal, CRM system, integration with telephony, SMS and email services',
+    description:
+      'Acceptance and accounting of applications from investors and borrowers, client portal, specialist portal, CRM system, integration with telephony, SMS and email services',
     totalApplications: '5,674',
   },
   investorFunctions: {
     title: 'Investor functions',
-    description: 'Simple or package investing, trading, rating, account replenishment, money withdrawal from account',
+    description:
+      'Simple or package investing, trading, rating, account replenishment, money withdrawal from account',
     range: '0 - 122 000',
   },
   borrowerFunctions: {
     title: 'Borrower functions',
-    description: 'Submitting a loan application, trading, rating, loan repayment, loan receipt',
+    description:
+      'Submitting a loan application, trading, rating, loan repayment, loan receipt',
   },
   modules: {
     title: 'Modules',
@@ -62,11 +66,13 @@ export const p2p = {
     title: 'Ready calculation module',
     interestWork: {
       title: 'Interest work',
-      description: 'Accrual, write-off and calculation of interest and penalties. Compliance with all requirements of Russian legislation',
+      description:
+        'Accrual, write-off and calculation of interest and penalties. Compliance with all requirements of Russian legislation',
     },
     productWork: {
       title: 'Product work',
-      description: 'A flexible system allows you to create and configure the necessary credit product: from PDL to credit line',
+      description:
+        'A flexible system allows you to create and configure the necessary credit product: from PDL to credit line',
     },
   },
   product: {
@@ -103,11 +109,13 @@ export const p2p = {
     title: 'Intelligent payment processing',
     automation: {
       title: 'Automation',
-      description: 'Automatic distribution of incoming payments, distribution of interest, principal, penalties, as well as creation of other operations',
+      description:
+        'Automatic distribution of incoming payments, distribution of interest, principal, penalties, as well as creation of other operations',
     },
     productWork: {
       title: 'Product work',
-      description: 'Sending outgoing payments by events. You can enable both fully automatic mode,',
+      description:
+        'Sending outgoing payments by events. You can enable both fully automatic mode,',
     },
   },
   flexibleSystem: {
@@ -118,7 +126,8 @@ export const p2p = {
     automaticMessages: 'Automatic messages',
     documentFormation: 'Intelligent document formation system',
     employeeRoles: 'Employee roles in the system',
-    organizationRules: 'Organization rule management, user action control, blacklist management',
+    organizationRules:
+      'Organization rule management, user action control, blacklist management',
   },
   application: {
     title: 'Submit application',

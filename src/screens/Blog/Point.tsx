@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
 
-interface Props {
+type Props = {
   state: 'active' | 'default';
   className: any;
   text?: string;
-}
+};
 
 export const Point = ({ state, className, text }: Props): JSX.Element => {
   const { t } = useTranslation(['blog']);

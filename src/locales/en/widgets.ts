@@ -2,7 +2,8 @@ export default {
   // Static texts from commit
   static: {
     managerName: 'Manager Ruslana',
-    managerAnswer: 'Yes, of course, the final amount for debt repayment as of today is 14,456 ₽',
+    managerAnswer:
+      'Yes, of course, the final amount for debt repayment as of today is 14,456 ₽',
   },
   feedback: {
     title: "Try it, you'll like it!",

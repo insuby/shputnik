@@ -1,7 +1,7 @@
-interface Props {
+type Props = {
   className: any;
   color?: string;
-}
+};
 
 export const Check10 = ({
   className,

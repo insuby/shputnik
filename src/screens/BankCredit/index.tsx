@@ -517,7 +517,7 @@ export const BankCredit = () => {
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] md:w-[1376px]">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-[68px] self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={refSystem1}
               variants={slideInLeft}
@@ -966,7 +966,7 @@ export const BankCredit = () => {
         </motion.div>
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={ref1}
               variants={itemVariants}
@@ -1119,7 +1119,7 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row items-stretch">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row">
             <motion.div
               ref={ref4}
               initial={{ opacity: 0, x: -50 }}

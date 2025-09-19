@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { useFeedbackForm } from '../../widgets/feedback-form';
 import { Feedback } from '../../widgets/feedback.tsx';
 
-export const MainMobile = () => {
+export const MainMobile: React.FC = () => {
   const { t } = useTranslation('mobile');
   const { setIsOpen } = useFeedbackForm();
 

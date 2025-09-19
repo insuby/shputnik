@@ -20,6 +20,18 @@ export default defineConfig({
   resolve: {
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.scss'],
     alias: {
+      app: pathResolve('./src/app'),
+      'app/*': pathResolve('./src/app/*'),
+      pages: pathResolve('./src/pages'),
+      'pages/*': pathResolve('./src/pages/*'),
+      widgets: pathResolve('./src/widgets'),
+      'widgets/*': pathResolve('./src/widgets/*'),
+      features: pathResolve('./src/features'),
+      'features/*': pathResolve('./src/features/*'),
+      entities: pathResolve('./src/entities'),
+      'entities/*': pathResolve('./src/entities/*'),
+      shared: pathResolve('./src/shared'),
+      'shared/*': pathResolve('./src/shared/*'),
       icons: pathResolve('./src/icons'),
       'icons/*': pathResolve('./src/icons/*'),
     },

@@ -1,6 +1,6 @@
-interface Props {
+type Props = {
   className: any;
-}
+};
 
 export const Check15 = ({ className }: Props): JSX.Element => {
   return (
