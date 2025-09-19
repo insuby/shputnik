@@ -4,6 +4,7 @@ import { Div } from './sections/Div';
 import { DivWrapper } from './sections/DivWrapper';
 import { Frame } from './sections/Frame';
 import { Frame1 } from './sections/Frame1';
+import { CustomDevelopment } from './sections/CustomDevelopment';
 import { FrameWrapper } from './sections/FrameWrapper';
 import { SectionComponentNode } from './sections/SectionComponentNode';
 
@@ -17,6 +18,7 @@ export const Main = () => {
       <SectionComponentNode />
       <Feedback />
       <Frame1 />
+      <CustomDevelopment />
     </div>
   );
 };

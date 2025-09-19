@@ -108,29 +108,55 @@ export const Frame1 = () => {
                                 src="/img/group-3-1.png"
                               />
 
-                              <img
+                              <svg
                                 className="absolute left-[30px] top-0.5 h-[25px] w-full md:w-[23px]"
-                                alt="Fill"
-                                src="/img/fill-4.svg"
-                              />
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Fill"
+                              >
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V5.64979C1.39998 7.56953 2.22709 9.9334 2.22709 12.492C2.22709 15.049 1.39998 17.4144 0 19.3342V25.0001H7.80125V6.06013H15.7393V25.0001H23.5405V0H0Z" fill="#1C222F" />
+                              </svg>
 
-                              <img
+                              <svg
                                 className="absolute left-[60px] top-0.5 h-[25px] w-full md:w-[22px]"
-                                alt="Fill"
-                                src="/img/fill-8.svg"
-                              />
+                                width="58"
+                                height="59"
+                                viewBox="0 0 58 59"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Fill"
+                              >
+                                <path fillRule="evenodd" clipRule="evenodd" d="M29.0001 3.61905C14.4324 3.61905 2.62109 15.4303 2.62109 29.994C2.62109 44.5674 14.4324 56.3855 29.0001 56.3855C43.5737 56.3855 55.3849 44.5674 55.3849 29.994C55.3849 19.7828 49.5653 10.9425 41.0708 6.55863C40.9902 6.48515 40.9234 6.42048 40.8388 6.34405C40.8388 6.34405 40.8329 6.38324 40.8329 6.44301C39.7916 5.91856 38.716 5.46451 37.6135 5.08395C37.698 4.72532 37.8111 4.19423 37.8573 3.80131C37.9074 3.32118 37.523 2.81851 36.7317 3.00762C36.1841 3.12912 34.7774 3.62003 33.5466 4.03549C32.0662 3.77975 30.5533 3.61905 29.0001 3.61905Z" fill="#1C222F" stroke="white" strokeWidth="4.57833" strokeMiterlimit="2.613" strokeLinejoin="round" />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M2.62109 29.994C2.62109 15.4304 14.4324 3.61914 29.0001 3.61914C43.5737 3.61914 55.3849 15.4304 55.3849 29.994C55.3849 44.5675 43.5727 56.3856 29.0001 56.3856C14.4314 56.3856 2.62109 44.5675 2.62109 29.994Z" fill="white" stroke="#1C222F" strokeWidth="1.23213" strokeMiterlimit="2.613" strokeLinejoin="round" />
+                                <path fillRule="evenodd" clipRule="evenodd" d="M38.6928 4.30757C49.0708 8.21918 56.4524 18.2461 56.4524 29.9936C56.4524 45.155 44.1605 57.4474 29 57.4474C13.8395 57.4474 1.55345 45.155 1.55345 29.9936C1.55345 14.8372 13.8395 2.54774 29 2.54774C30.6318 2.54774 32.2372 2.68884 33.7943 2.9632L34.7429 2.58498C32.8536 2.19582 30.9293 1.99981 29 2C13.5387 2 1 14.5314 1 29.9936C1 45.4597 13.5397 58 29 58C44.4662 58 57 45.4597 57 29.9936C57 17.8982 49.3293 7.59011 38.5798 3.67556L38.6928 4.30757Z" fill="#1C222F" />
+                              </svg>
 
-                              <img
+                              <svg
                                 className="absolute left-[88px] top-0.5 h-[25px] w-full md:w-[23px]"
-                                alt="Fill"
-                                src="/img/fill-10.svg"
-                              />
+                                width="24"
+                                height="25"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Fill"
+                              >
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V25.0001H7.80286V14.8188H15.8777V25.0001H23.6789V0H15.8777V8.6686H7.80286V0H0Z" fill="#1C222F" />
+                              </svg>
 
-                              <img
+                              <svg
                                 className="absolute left-[117px] top-0.5 h-[25px] w-6"
-                                alt="Fill"
-                                src="/img/fill-14.svg"
-                              />
+                                width="25"
+                                height="25"
+                                viewBox="0 0 25 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                aria-label="Fill"
+                              >
+                                <path fillRule="evenodd" clipRule="evenodd" d="M0 0V12.5001V25.0002H7.78725V15.1183H9.82884L15.7335 25.0002H24.6821L16.9398 12.5001L24.6821 0H15.7335L9.82884 9.88184H7.78725V0H0Z" fill="#1C222F" />
+                              </svg>
                             </div>
                           </div>
                         </div>
