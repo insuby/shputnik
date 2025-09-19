@@ -1,6 +1,3 @@
-import cjs from './.eslintrc.cjs';
-export default cjs;
-
 module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',

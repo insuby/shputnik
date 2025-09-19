@@ -1,2 +1,3 @@
-export { BlogList } from '../../screens/Blog';
-export { BlogPost } from '../../screens/Blog/Post';
+export { Input } from './input';
+export { BlogPost } from './post';
+export { BlogList } from './list';

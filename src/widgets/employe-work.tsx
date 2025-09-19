@@ -3,8 +3,8 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { Check10 } from '../components/ui/check10.tsx';
-import Subtract from '../icons/Subtract';
+import { Subtract } from 'shared/icons/Subtract.tsx';
+import { Check10 } from 'shared/ui/check10.tsx';
 
 export const EmployeeWork = ({ color }: { color?: string }) => {
   const { t } = useTranslation('widgets');
@@ -55,26 +55,6 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
   const inView8 = useInView(ref8, { once: true, margin: '-100px' });
   const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
-  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-100px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-100px' });
-  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-100px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-100px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-100px' });
-  const inView28 = useInView(ref28, { once: true, margin: '-100px' });
-  const inView29 = useInView(ref29, { once: true, margin: '-100px' });
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
   const inView40 = useInView(ref40, { once: true, margin: '-100px' });
   const inView41 = useInView(ref41, { once: true, margin: '-100px' });
@@ -120,7 +100,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView2 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch md:!flex-row"
         >
           <motion.div
             ref={ref3}
@@ -163,7 +143,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView1 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row"
+                className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch md:!flex-row"
               >
                 <motion.div
                   ref={ref11}

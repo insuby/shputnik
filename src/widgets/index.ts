@@ -1,2 +1,13 @@
-export { FeedbackForm } from './feedback-form/feedback-form.tsx';
+export { FeedbackForm, useFeedbackForm } from './feedback-form';
+export { Advantages } from './advantages';
+export { Analytics } from './analytics';
+export { CrmCapabilities } from './crm-capabilities';
+export { EmployeeWork } from './employe-work';
 export { Feedback } from './feedback';
+export { Integrations } from './integrations';
+export { LanguageSwitcher } from './language-switcher';
+export { RoleStructure } from './role-structure';
+export { Trust } from './trust';
+export { Zaim } from './zaim';
+export { ZaimChecker } from './zain-checker';
+export { ScrollToTop } from './scroll-to-top';

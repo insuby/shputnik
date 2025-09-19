@@ -29,7 +29,7 @@ export const Zaim = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start items-stretch gap-6 self-stretch md:!flex-row">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch md:!flex-row">
         <motion.div
           ref={ref11}
           initial={{ opacity: 0, x: -50 }}
