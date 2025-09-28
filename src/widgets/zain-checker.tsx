@@ -71,19 +71,34 @@ export const ZaimChecker = () => {
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:w-[1376px]">
-      <img
-        className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
-        alt="Vector"
-        src="/img/zain-checker/vector-1.svg"
-      />
+      <svg width="1435" height="1361" viewBox="0 0 1435 1361" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]" alt="Vector">
+
+<g opacity="0.16" filter="url(#filter0_f_9321_96528)">
+<path d="M580.201 516.863C557.553 350.888 741.074 238.781 835.665 203.475C1418.97 145.308 1255.87 837.593 1019.3 1029.59C782.722 1221.59 231.215 1199.45 201.47 981.467C171.726 763.481 608.51 724.332 580.201 516.863Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_f_9321_96528" x="0" y="0" width="1435" height="1360.42" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9321_96528"/>
+</filter>
+</defs>
+
+</svg>
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch p-0 md:!flex-row md:p-12">
         <div className="relative flex w-full flex-col items-start gap-7 md:w-[520px]">
-          <img
-            className="relative flex-[0_0_auto]"
-            alt="Frame"
-            src="/img/zain-checker/frame-18-2.svg"
-          />
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="64" height="64" rx="32" fill="#725DD6" fill-opacity="0.08"/>
+<path d="M38.5 21H43V25.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M38.5 43H43V38.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M25.5 43H21V38.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M25.5 21H21V25.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M32 34C34.2091 34 36 32.2091 36 30C36 27.7909 34.2091 26 32 26C29.7909 26 28 27.7909 28 30C28 32.2091 29.7909 34 32 34Z" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M26 37C26.6986 36.0685 27.6045 35.3125 28.6459 34.7918C29.6873 34.2711 30.8357 34 32 34C33.1643 34 34.3127 34.2711 35.3541 34.7918C36.3955 35.3125 37.3014 36.0685 38 37" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
@@ -244,18 +259,22 @@ export const ZaimChecker = () => {
           </div>
         </div>
 
-        <img
-          className="relative hidden w-px md:block md:h-[528px]"
-          alt="Vector"
-          src="/img/zain-checker/vector-129.svg"
-        />
+        <svg width="1" height="528" viewBox="0 0 1 528" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative hidden w-px md:block md:h-[528px]" alt="Vector">
+
+<path d="M0.5 0V528" stroke="#E3E5E8"/>
+
+</svg>
 
         <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[520px]">
-          <img
-            className="relative flex-[0_0_auto]"
-            alt="Frame"
-            src="/img/zain-checker/frame-18-4.svg"
-          />
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="64" height="64" rx="32" fill="#00CB82" fill-opacity="0.08"/>
+<path d="M44 23H20C19.4477 23 19 23.4477 19 24V40C19 40.5523 19.4477 41 20 41H44C44.5523 41 45 40.5523 45 40V24C45 23.4477 44.5523 23 44 23Z" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M37 37H41" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M31 37H33" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19 28H45" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[520px]">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">

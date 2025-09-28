@@ -63,12 +63,44 @@ export const P2P = () => {
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex min-h-[600px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
-          <img
+          <svg
+            width="1688"
+            height="1367"
+            viewBox="0 0 1688 1367"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/p2p/vector-1-5.svg"
-          />
+          >
+            <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
+              <path
+                d="M847.72 462.293C913.979 347.979 1082.53 367.028 1158.53 390.843C1549.9 637.044 1113.16 989.147 872.885 994.155C632.615 999.164 299.921 718.356 386.944 568.219C473.966 418.083 764.896 605.186 847.72 462.293Z"
+                fill="#3573FC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9267_12262"
+                x="0.000579958"
+                y="-3.05241e-05"
+                width="1687.86"
+                height="1367"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="186.349"
+                  result="effect1_foregroundBlur_9267_12262"
+                />
+              </filter>
+            </defs>
+          </svg>
 
           <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
@@ -104,11 +136,44 @@ export const P2P = () => {
             className="top-[78px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 md:absolute md:left-[802px] md:w-[304px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
-              <img
+              <svg
+                width="694"
+                height="594"
+                viewBox="0 0 694 594"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
                 className="absolute left-[-13px] top-1.5 h-[330px] w-full md:w-[345px]"
-                alt="Vector"
-                src="/img/p2p/vector-1-1.svg"
-              />
+              >
+                <g opacity="0.4" filter="url(#filter0_f_9267_13639)">
+                  <path
+                    d="M348.174 228.069C368.821 192.447 421.344 198.383 445.025 205.804C566.982 282.524 430.887 392.244 356.016 393.804C281.144 395.365 177.473 307.862 204.59 261.077C231.707 214.293 322.365 272.596 348.174 228.069Z"
+                    fill="#00CB82"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_9267_13639"
+                    x="0"
+                    y="-3.05443e-05"
+                    width="693.986"
+                    height="594"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="100"
+                      result="effect1_foregroundBlur_9267_13639"
+                    />
+                  </filter>
+                </defs>
+              </svg>
 
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                 <p className="relative w-fit text-base font-semibold leading-4 tracking-normal text-gray-90 opacity-0 [font-family:'Inter',Helvetica]">
@@ -139,24 +204,57 @@ export const P2P = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
                     <div className="h-2.5w-full absolute left-0.5 top-[3px] md:w-[9px]">
-                      <img
+                      <svg
+                        width="2"
+                        height="10"
+                        viewBox="0 0 2 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-1 top-0 h-2.5 w-px"
-                        alt="Vector"
-                        src="/img/p2p/vector-8.svg"
-                      />
+                      >
+                        <path
+                          d="M0.630342 9.36927V0.630727"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 h-[5px] w-full md:w-[9px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-5.svg"
-                      />
+                      >
+                        <path
+                          d="M0.660783 5.0004L5 0.661187L9.33922 5.0004"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
 
-                    <img
+                    <svg
+                      width="11"
+                      height="2"
+                      viewBox="0 0 11 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-pxw-full absolute left-0.5 top-0.5 md:w-[11px]"
-                      alt="Vector"
-                      src="/img/p2p/vector.svg"
-                    />
+                    >
+                      <path
+                        d="M0.609347 0.609719H10.3907"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
@@ -167,24 +265,57 @@ export const P2P = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
                     <div className="h-2.5w-full absolute left-0.5 top-px md:w-[9px]">
-                      <img
+                      <svg
+                        width="2"
+                        height="10"
+                        viewBox="0 0 2 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-1 top-0 h-2.5 w-px"
-                        alt="Vector"
-                        src="/img/p2p/vector-21.svg"
-                      />
+                      >
+                        <path
+                          d="M0.630342 0.630727V9.36927"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="10"
+                        height="6"
+                        viewBox="0 0 10 6"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-1 h-[5px] w-full md:w-[9px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-7.svg"
-                      />
+                      >
+                        <path
+                          d="M0.660783 0.661187L5 5.0004L9.33922 0.661187"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
 
-                    <img
+                    <svg
+                      width="11"
+                      height="2"
+                      viewBox="0 0 11 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-pxw-full absolute left-0.5 top-[11px] md:w-[11px]"
-                      alt="Vector"
-                      src="/img/p2p/vector.svg"
-                    />
+                    >
+                      <path
+                        d="M0.609347 0.609719H10.3907"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-white [font-family:'Inter',Helvetica]">
@@ -288,12 +419,45 @@ export const P2P = () => {
             </div>
           </motion.div>
 
-          <img
+          <svg
+            width="675"
+            height="745"
+            viewBox="0 0 675 745"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="absolute left-[739px] top-[46px] h-[554px] w-full md:w-[637px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/p2p/vector-4-1.svg"
-          />
+            hidden={true}
+          >
+            <g opacity="0.32" filter="url(#filter0_f_9267_13714)">
+              <path
+                d="M399.512 346.545C450.592 351.671 470.87 414.38 474.624 445.094C450.225 623.077 255.595 524.946 215.306 440.712C175.017 356.477 221.07 193.713 288.157 200.445C355.245 207.177 335.661 340.138 399.512 346.545Z"
+                fill="#9FA7BC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9267_13714"
+                x="0"
+                y="0"
+                width="674.867"
+                height="745"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_9267_13714"
+                />
+              </filter>
+            </defs>
+          </svg>
 
           <motion.div
             ref={ref2}
@@ -362,11 +526,35 @@ export const P2P = () => {
               </div>
             </div>
 
-            <img
+            <svg
+              width="329"
+              height="66"
+              viewBox="0 0 329 66"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
               className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]"
-              alt="Vector"
-              src="/img/p2p/vector-147.svg"
-            />
+            >
+              <path
+                d="M0.246214 59.3603L24.7228 53.1261C29.1825 51.9902 33.9154 52.8286 37.7136 55.4275L46.9086 61.7193C53.9906 66.5651 63.6339 64.9648 68.7709 58.0911L78.6246 44.9062C82.3245 39.9556 88.5437 37.5771 94.6028 38.7955L123.082 44.5221C128.473 45.6063 133.895 42.7989 136.121 37.7698L140.075 28.8359C142.413 23.5527 149.804 23.2671 152.543 28.3542V28.3542C155.376 33.6158 163.09 33.0815 165.171 27.4795L171.374 10.7804C176.264 -2.38511 194.944 -2.21685 199.596 11.0346L213.17 49.6995C215.05 55.0568 222.63 55.0481 224.498 49.6865V49.6865C226.39 44.2596 234.092 44.3388 235.871 49.8034L237.582 55.0596C239.866 62.0738 249.68 62.3668 252.379 55.5014L262.421 29.9466C265.432 22.2849 275.801 21.1403 280.411 27.9606V27.9606C283.669 32.7809 290.286 33.9153 294.964 30.4555L328.406 5.71847"
+                stroke="url(#paint0_linear_9267_13738)"
+                strokeWidth="2"
+              />
+              <defs>
+                <linearGradient
+                  id="paint0_linear_9267_13738"
+                  x1="0.246214"
+                  y1="43.5685"
+                  x2="328.406"
+                  y2="43.5685"
+                  gradientUnits="userSpaceOnUse"
+                >
+                  <stop stopColor="white" />
+                  <stop offset="0.269231" stopColor="#00CB82" />
+                  <stop offset="0.692308" stopColor="#00CB82" />
+                  <stop offset="1" stopColor="white" />
+                </linearGradient>
+              </defs>
+            </svg>
 
             <div className="absolute left-[180px] top-[131px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
           </motion.div>
@@ -405,38 +593,179 @@ export const P2P = () => {
             >
               <div className="px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                  <img
+                  <svg
+                    width="638"
+                    height="682"
+                    viewBox="0 0 638 682"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
-                    alt="Vector"
-                    src="/img/p2p/vector-1-3.svg"
-                  />
+                  >
+                    <g opacity="0.16" filter="url(#filter0_f_9267_13346)">
+                      <path
+                        d="M271.254 368.279C228.004 368.251 205.763 317.376 200.049 291.941C205.626 140.694 376.991 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.451C320.013 481.415 325.317 368.313 271.254 368.279Z"
+                        fill="#725DD6"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_9267_13346"
+                        x="0"
+                        y="0"
+                        width="638"
+                        height="681.5"
+                        filterUnits="userSpaceOnUse"
+                        colorInterpolationFilters="sRGB"
+                      >
+                        <feFlood
+                          floodOpacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="100"
+                          result="effect1_foregroundBlur_9267_13346"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
 
                   <div className="relative w-full flex-1 grow self-stretch">
                     <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
                       <div className="absolute left-[58px] top-[69px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-white py-2 pl-2 pr-5">
-                        <img
+                        <svg
+                          width="44"
+                          height="44"
+                          viewBox="0 0 44 44"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="/img/p2p/frame-19-4.svg"
-                        />
+                        >
+                          <rect
+                            width="44"
+                            height="44"
+                            rx="22"
+                            fill="#3573FC"
+                            fill-opacity="0.08"
+                          />
+                          <path
+                            d="M31 15.25L22 23.5L13 15.25"
+                            stroke="#3573FC"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M13 15.25H31V28C31 28.1989 30.921 28.3897 30.7803 28.5303C30.6397 28.671 30.4489 28.75 30.25 28.75H13.75C13.5511 28.75 13.3603 28.671 13.2197 28.5303C13.079 28.3897 13 28.1989 13 28V15.25Z"
+                            stroke="#3573FC"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M20.3649 22L13.2324 28.5381"
+                            stroke="#3573FC"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M30.7692 28.5381L23.6367 22"
+                            stroke="#3573FC"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('notifications.applicationApproved')}
                         </div>
                       </div>
 
-                      <img
+                      <svg
+                        width="524"
+                        height="422"
+                        viewBox="0 0 524 422"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 h-[352px] w-full md:w-[443px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-4-4.svg"
-                      />
+                      >
+                        <g opacity="0.32" filter="url(#filter0_f_9281_847)">
+                          <path
+                            d="M264.727 260.394C251.592 280.662 211.173 269.288 192.605 261.068C94.1856 193.639 189.84 141.569 246.73 151.249C303.621 160.929 388.901 232.775 371.65 259.394C354.399 286.013 281.146 235.059 264.727 260.394Z"
+                            fill="#9FA7BC"
+                          />
+                        </g>
+                        <defs>
+                          <filter
+                            id="filter0_f_9281_847"
+                            x="0"
+                            y="0"
+                            width="524"
+                            height="421.854"
+                            filterUnits="userSpaceOnUse"
+                            colorInterpolationFilters="sRGB"
+                          >
+                            <feFlood
+                              floodOpacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="BackgroundImageFix"
+                              result="shape"
+                            />
+                            <feGaussianBlur
+                              stdDeviation="75"
+                              result="effect1_foregroundBlur_9281_847"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
 
                       <div className="absolute left-[100px] top-[115px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-white py-2 pl-2 pr-5">
-                        <img
+                        <svg
+                          width="44"
+                          height="44"
+                          viewBox="0 0 44 44"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
-                          src="/img/p2p/frame-19-5.svg"
-                        />
+                        >
+                          <rect
+                            width="44"
+                            height="44"
+                            rx="22"
+                            fill="#00CB82"
+                            fill-opacity="0.08"
+                          />
+                          <path
+                            d="M22 23.125C22.6213 23.125 23.125 22.6213 23.125 22C23.125 21.3787 22.6213 20.875 22 20.875C21.3787 20.875 20.875 21.3787 20.875 22C20.875 22.6213 21.3787 23.125 22 23.125Z"
+                            fill="#00CB82"
+                          />
+                          <path
+                            d="M17.875 23.125C18.4963 23.125 19 22.6213 19 22C19 21.3787 18.4963 20.875 17.875 20.875C17.2537 20.875 16.75 21.3787 16.75 22C16.75 22.6213 17.2537 23.125 17.875 23.125Z"
+                            fill="#00CB82"
+                          />
+                          <path
+                            d="M26.125 23.125C26.7463 23.125 27.25 22.6213 27.25 22C27.25 21.3787 26.7463 20.875 26.125 20.875C25.5037 20.875 25 21.3787 25 22C25 22.6213 25.5037 23.125 26.125 23.125Z"
+                            fill="#00CB82"
+                          />
+                          <path
+                            d="M17.4926 29.7916C19.3831 30.8857 21.607 31.255 23.7496 30.8305C25.8923 30.4061 27.8075 29.2169 29.1381 27.4847C30.4687 25.7525 31.124 23.5955 30.9817 21.4158C30.8394 19.2362 29.9093 17.1827 28.3648 15.6381C26.8202 14.0936 24.7667 13.1635 22.5871 13.0212C20.4074 12.8789 18.2504 13.5342 16.5182 14.8648C14.786 16.1954 13.5968 18.1106 13.1724 20.2533C12.7479 22.3959 13.1172 24.6198 14.2113 26.5103L13.0385 30.0119C12.9945 30.144 12.9881 30.2858 13.0201 30.4214C13.052 30.557 13.1212 30.681 13.2197 30.7795C13.3182 30.878 13.4422 30.9471 13.5777 30.9791C13.7133 31.0111 13.8551 31.0047 13.9873 30.9606L17.4926 29.7916Z"
+                            stroke="#00CB82"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
 
                         <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('notifications.passwordChanged')}
@@ -459,81 +788,217 @@ export const P2P = () => {
 
               <div className="px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                  <img
+                  <svg
+                    width="638"
+                    height="682"
+                    viewBox="0 0 638 682"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
-                    alt="Vector"
-                    src="/img/p2p/vector-1-10.svg"
-                  />
+                  >
+                    <g opacity="0.2" filter="url(#filter0_f_9267_13362)">
+                      <path
+                        d="M271.254 368.279C228.004 368.251 205.763 317.376 200.049 291.941C205.626 140.694 376.991 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.451C320.013 481.415 325.317 368.313 271.254 368.279Z"
+                        fill="#725DD6"
+                      />
+                    </g>
+                    <defs>
+                      <filter
+                        id="filter0_f_9267_13362"
+                        x="0"
+                        y="0"
+                        width="638"
+                        height="681.5"
+                        filterUnits="userSpaceOnUse"
+                        colorInterpolationFilters="sRGB"
+                      >
+                        <feFlood
+                          floodOpacity="0"
+                          result="BackgroundImageFix"
+                        />
+                        <feBlend
+                          mode="normal"
+                          in="SourceGraphic"
+                          in2="BackgroundImageFix"
+                          result="shape"
+                        />
+                        <feGaussianBlur
+                          stdDeviation="100"
+                          result="effect1_foregroundBlur_9267_13362"
+                        />
+                      </filter>
+                    </defs>
+                  </svg>
 
                   <div className="relative w-full flex-1 grow self-stretch">
                     <div className="relative left-0 top-5 h-[114px] w-full md:left-4 md:w-[313px]">
                       <div className="absolute left-px top-0 flex w-full items-center justify-between opacity-[0.08] md:w-[311px]">
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative ml-[-0.50px] h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
 
-                        <img
+                        <svg
+                          width="1"
+                          height="112"
+                          viewBox="0 0 1 112"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative mr-[-0.50px] h-28 w-px"
-                          alt="Vector"
-                          src="/img/p2p/vector-152.svg"
-                        />
+                        >
+                          <path d="M0.5 0V112" stroke="#55607A" />
+                        </svg>
                       </div>
 
-                      <img
+                      <svg
+                        width="311"
+                        height="102"
+                        viewBox="0 0 311 102"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-px top-3 h-[102px] w-full md:w-[311px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-160.svg"
-                      />
+                      >
+                        <path
+                          opacity="0.24"
+                          d="M7.54673 70.4189L0 61.5V101.5H311V55.5L306.607 40.5654C306.208 39.2074 305.496 37.9621 304.528 36.9294C301.173 33.3513 295.579 33.0966 291.913 36.355L289.5 38.5L280.156 47.844C279.719 48.2807 279.317 48.7504 278.953 49.2491L275.984 53.3114C272.529 58.0393 266.198 59.5001 260.785 57.2679C258.593 56.3644 256.625 55.6607 255.5 55.5C253.095 55.1564 250.763 48.6394 249.52 44.0617C249.151 42.7029 248.606 41.3965 247.837 40.2171L245.051 35.9448C242.836 32.5481 239.055 30.5 235 30.5H230.675C226.8 30.5 223.163 28.6284 220.911 25.4749L217.84 21.1762C217.282 20.3949 216.82 19.5494 216.463 18.658L212.017 7.54331C210.195 2.98741 205.782 0 200.876 0H194.799C192.327 0 189.915 0.763574 187.893 2.18632L180.178 7.61563C178.425 8.84933 177.034 10.5301 176.15 12.4833L168.819 28.6889C168.277 29.8881 167.541 30.9899 166.64 31.9502L162.442 36.4287C161.165 37.7908 159.588 38.8361 157.836 39.4815L155.549 40.3242C152.651 41.3918 149.437 41.1918 146.694 39.7729C141.136 36.8979 134.302 39.234 131.667 44.9099L130 48.5L120.769 67.6995C118.771 71.8564 114.567 74.5 109.954 74.5H106.595C101.703 74.5 97.3006 71.53 95.4686 66.9936L88 48.5L86.1768 42.8279C84.5817 37.8653 79.9652 34.5 74.7525 34.5H62.666C59.9676 34.5 57.3481 35.4094 55.2302 37.0814L51.3621 40.1352C49.8114 41.3594 48.5869 42.9476 47.7975 44.7588L41.0894 60.1477C40.698 61.0459 40.1979 61.8927 39.6006 62.6692L35.2967 68.2642C32.5111 71.8856 27.5498 73.0249 23.4633 70.9817L19.6807 69.0904C17.8292 68.1646 15.5819 68.6685 14.3029 70.2963C12.5975 72.4668 9.32977 72.5261 7.54673 70.4189Z"
+                          fill="url(#paint0_linear_9281_858)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_9281_858"
+                            x1="142.5"
+                            y1="40"
+                            x2="142.5"
+                            y2="102"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#3573FC" />
+                            <stop
+                              offset="1"
+                              stopColor="#3573FC"
+                              stopOpacity="0"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
 
-                      <img
+                      <svg
+                        width="313"
+                        height="77"
+                        viewBox="0 0 313 77"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-[11px] h-[76px] w-full md:w-[313px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-161.svg"
-                      />
+                      >
+                        <path
+                          d="M1 62.5L8.54673 71.4189C10.3298 73.5261 13.5975 73.4668 15.3029 71.2963V71.2963C16.5819 69.6685 18.8292 69.1646 20.6807 70.0904L24.4633 71.9817C28.5498 74.0249 33.5111 72.8856 36.2967 69.2642L40.6006 63.6692C41.1979 62.8927 41.698 62.0459 42.0894 61.1477L48.7975 45.7588C49.5869 43.9476 50.8114 42.3594 52.3621 41.1352L56.2302 38.0814C58.3481 36.4094 60.9676 35.5 63.6659 35.5H75.7525C80.9652 35.5 85.5817 38.8653 87.1768 43.8279L89 49.5L96.4686 67.9936C98.3006 72.53 102.703 75.5 107.595 75.5H110.954C115.567 75.5 119.771 72.8564 121.769 68.6995L131 49.5L132.667 45.9099C135.302 40.234 142.136 37.8979 147.694 40.7729V40.7729C150.437 42.1918 153.651 42.3918 156.549 41.3242L158.836 40.4815C160.588 39.8361 162.165 38.7908 163.442 37.4287L167.64 32.9502C168.541 31.9899 169.277 30.8881 169.819 29.6889L177.15 13.4833C178.034 11.5301 179.425 9.84933 181.178 8.61563L188.893 3.18632C190.915 1.76357 193.327 1 195.799 1H201.876C206.782 1 211.195 3.98741 213.017 8.54331L217.463 19.658C217.82 20.5494 218.282 21.3949 218.84 22.1762L221.911 26.4749C224.163 29.6284 227.8 31.5 231.675 31.5H236C240.055 31.5 243.836 33.5481 246.051 36.9448L248.837 41.2171C249.606 42.3965 250.151 43.7029 250.52 45.0617C251.763 49.6394 254.095 56.1564 256.5 56.5C257.625 56.6607 259.593 57.3644 261.785 58.2679C267.198 60.5001 273.529 59.0393 276.984 54.3114L279.953 50.2491C280.317 49.7504 280.719 49.2807 281.156 48.844L290.5 39.5L292.913 37.355C296.579 34.0966 302.173 34.3513 305.528 37.9294V37.9294C306.496 38.9621 307.208 40.2074 307.607 41.5654L312 56.5"
+                          stroke="url(#paint0_linear_9281_859)"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_9281_859"
+                            x1="1"
+                            y1="38.25"
+                            x2="312"
+                            y2="38.25"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#3573FC" stopOpacity="0" />
+                            <stop offset="0.144088" stopColor="#3573FC" />
+                            <stop offset="0.859" stopColor="#3573FC" />
+                            <stop
+                              offset="1"
+                              stopColor="#3573FC"
+                              stopOpacity="0"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
 
                       <div className="absolute left-[62px] top-[42px] size-2 rounded border-2 border-solid border-[#3573fc] bg-[#efeefa]" />
 
@@ -544,11 +1009,19 @@ export const P2P = () => {
                           </div>
                         </div>
 
-                        <img
+                        <svg
+                          width="8"
+                          height="5"
+                          viewBox="0 0 8 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative h-1.5 w-2"
-                          alt="Vector"
-                          src="/img/p2p/vector-162.svg"
-                        />
+                        >
+                          <path
+                            d="M2.3359 3.50385L0 0H8L5.6641 3.50385C4.87246 4.69132 3.12754 4.69132 2.3359 3.50385Z"
+                            fill="white"
+                          />
+                        </svg>
                       </div>
                     </div>
                   </div>
@@ -571,11 +1044,70 @@ export const P2P = () => {
                     <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3 md:w-[230px]">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                          <img
+                          <svg
+                            width="203"
+                            height="28"
+                            viewBox="0 0 203 28"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
                             className="relative ml-[-3.00px] mr-[-2.00px] mt-[-3.00px] h-7 w-full self-stretch"
-                            alt="Frame"
-                            src="/img/p2p/frame-83-4-1.svg"
-                          />
+                          >
+                            <path
+                              d="M3 10L201 10"
+                              stroke="#F2F5FF"
+                              strokeWidth="4"
+                              strokeLinecap="round"
+                            />
+                            <path
+                              d="M3 10L166 10"
+                              stroke="#00CB82"
+                              strokeWidth="6"
+                              strokeLinecap="round"
+                            />
+                            <g filter="url(#filter0_d_9281_6391)">
+                              <circle cx="164" cy="10" r="6" fill="#00CB82" />
+                            </g>
+                            <defs>
+                              <filter
+                                id="filter0_d_9281_6391"
+                                x="150"
+                                y="0"
+                                width="28"
+                                height="28"
+                                filterUnits="userSpaceOnUse"
+                                colorInterpolationFilters="sRGB"
+                              >
+                                <feFlood
+                                  floodOpacity="0"
+                                  result="BackgroundImageFix"
+                                />
+                                <feColorMatrix
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha"
+                                />
+                                <feOffset dy="4" />
+                                <feGaussianBlur stdDeviation="4" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix
+                                  type="matrix"
+                                  values="0 0 0 0 0.0156863 0 0 0 0 0.792157 0 0 0 0 0.513726 0 0 0 0.2 0"
+                                />
+                                <feBlend
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_9281_6391"
+                                />
+                                <feBlend
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_9281_6391"
+                                  result="shape"
+                                />
+                              </filter>
+                            </defs>
+                          </svg>
 
                           <div className="relative h-6 w-full self-stretch">
                             <div className="absolute -top-px left-0 whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -606,28 +1138,80 @@ export const P2P = () => {
               <div className="px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
                   <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
-                    <img
+                    <svg
+                      width="638"
+                      height="682"
+                      viewBox="0 0 638 682"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="absolute left-0 top-0 h-[406px] w-full md:w-[442px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-1-11-1.svg"
-                    />
+                    >
+                      <g opacity="0.2" filter="url(#filter0_f_9281_6366)">
+                        <path
+                          d="M271.254 368.279C228.004 368.251 205.763 317.375 200.049 291.941C205.627 140.694 376.992 206.692 417.807 273.94C458.623 341.189 433.62 481.486 376.817 481.45C320.013 481.414 325.317 368.313 271.254 368.279Z"
+                          fill="#725DD6"
+                        />
+                      </g>
+                      <defs>
+                        <filter
+                          id="filter0_f_9281_6366"
+                          x="0"
+                          y="0"
+                          width="638"
+                          height="681.5"
+                          filterUnits="userSpaceOnUse"
+                          colorInterpolationFilters="sRGB"
+                        >
+                          <feFlood
+                            floodOpacity="0"
+                            result="BackgroundImageFix"
+                          />
+                          <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="BackgroundImageFix"
+                            result="shape"
+                          />
+                          <feGaussianBlur
+                            stdDeviation="100"
+                            result="effect1_foregroundBlur_9281_6366"
+                          />
+                        </filter>
+                      </defs>
+                    </svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="absolute left-[-32px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 md:left-[23px]">
                         <div className="relative size-[120px]">
                           <div className="relative size-[120px]">
                             <div className="absolute left-0 top-0 size-[120px]">
-                              <img
+                              <svg
+                                width="88"
+                                height="184"
+                                viewBox="0 0 88 184"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
                                 className="absolute left-0 top-0 h-[120px] w-[57px]"
-                                alt="Subtract"
-                                src="/img/p2p/subtract-5.svg"
-                              />
+                              >
+                                <path
+                                  d="M88 3.9396C88 6.08804 86.3148 7.84704 84.1835 8.04445C41.4563 12.0019 8.00001 48.0786 8 92C8 135.921 41.4561 171.997 84.1831 175.954C86.3147 176.152 88 177.911 88 180.06C88 182.349 86.0959 184.186 83.8239 183.985C36.8437 179.832 0 140.236 0 92C7.12916e-06 43.7637 36.844 4.16756 83.8244 0.0150405C86.0962 -0.185756 88 1.65045 88 3.9396Z"
+                                  fill="#00CB82"
+                                />
+                              </svg>
 
-                              <img
+                              <svg
+                                width="88"
+                                height="109"
+                                viewBox="0 0 88 109"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
                                 className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
-                                alt="Subtract"
-                                src="/img/p2p/subtract-9.svg"
-                              />
+                              >
+                                <path
+                                  d="M82.1887 0.13856C84.4418 -0.46743 86.7414 0.974287 87.0712 3.29211C87.6831 7.59299 88 11.9894 88 16.46C88 64.6962 51.1563 104.292 4.17612 108.445C1.90409 108.646 0 106.809 0 104.52C0 102.371 1.68535 100.612 3.81693 100.415C46.5439 96.4569 80 60.3812 80 16.46C80 12.4948 79.7265 8.59373 79.1986 4.77432C78.9109 2.69312 80.1668 0.682378 82.1887 0.13856Z"
+                                  fill="#3573FC"
+                                />
+                              </svg>
 
                               <div className="absolute left-[22px] top-[37px] inline-flex flex-col items-center">
                                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
@@ -640,26 +1224,73 @@ export const P2P = () => {
                               </div>
                             </div>
 
-                            <img
+                            <svg
+                              width="22"
+                              height="34"
+                              viewBox="0 0 22 34"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                               className="absolute left-[103px] top-[22px] h-[22px] w-3.5"
-                              alt="Subtract"
-                              src="/img/p2p/subtract-7.svg"
-                            />
+                            >
+                              <path
+                                d="M1.2 1.19297C2.88815 -0.501545 5.66596 -0.387931 7.11702 1.51503C13.3358 9.67043 18.2497 18.8812 21.5464 28.8333C22.2619 30.9931 20.9672 33.2712 18.777 33.8602C16.6341 34.4366 14.4363 33.1771 13.7274 31.0669C10.7574 22.2258 6.38755 14.0314 0.882313 6.74905C-0.389941 5.06611 -0.288233 2.68682 1.2 1.19297Z"
+                                fill="#E74951"
+                              />
+                            </svg>
 
-                            <img
+                            <svg
+                              width="60"
+                              height="31"
+                              viewBox="0 0 60 31"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
                               className="absolute left-[63px] top-0 h-5 w-[39px]"
-                              alt="Subtract"
-                              src="/img/p2p/subtract-8.svg"
-                            />
+                            >
+                              <path
+                                d="M0 3.98813C0 1.67086 1.92569 -0.187994 4.22536 0.015217C25.1577 1.8649 44.1019 10.6645 58.7533 24.1027C60.4064 25.619 60.4028 28.2038 58.8194 29.7932C57.24 31.3786 54.6864 31.3731 53.0313 29.8676C39.7737 17.8077 22.7091 9.88863 3.86196 8.14327C1.70446 7.94348 0 6.16296 0 3.98813Z"
+                                fill="#FBAB00"
+                              />
+                            </svg>
                           </div>
                         </div>
                       </div>
 
-                      <img
+                      <svg
+                        width="144"
+                        height="144"
+                        viewBox="0 0 144 144"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-[120px] top-1 size-36 md:left-[179px]"
-                        alt="Frame"
-                        src="/img/p2p/frame-31.svg"
-                      />
+                      >
+                        <rect width="144" height="144" rx="24" fill="white" />
+                        <path
+                          d="M16 116V88.7266M28.4444 116V81.5135M40.8889 116V68.5299M53.3333 116V28M65.7778 116V42.2703M78.2222 116V74.3784V32.7568M90.6667 116V51.7838M103.111 116V81.5135M115.556 116V62.4865M128 116V81.5135"
+                          stroke="url(#paint0_linear_9281_6409)"
+                          strokeWidth="3"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_9281_6409"
+                            x1="12.08"
+                            y1="97.96"
+                            x2="132.478"
+                            y2="98.6727"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#3573FC" stopOpacity="0" />
+                            <stop offset="0.29049" stopColor="#3573FC" />
+                            <stop offset="0.685619" stopColor="#3573FC" />
+                            <stop
+                              offset="1"
+                              stopColor="#3573FC"
+                              stopOpacity="0"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
                     </div>
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -749,11 +1380,16 @@ export const P2P = () => {
             {t('calculationModule.title')}
           </div>
 
-          <img
+          <svg
+            width="560"
+            height="1"
+            viewBox="0 0 560 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="relative h-px w-full self-stretch object-cover"
-            alt="Vector"
-            src="/img/p2p/vector-138.svg"
-          />
+          >
+            <path d="M0 0.5H560" stroke="#E3E5E8" />
+          </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -777,7 +1413,7 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] md:h-[714px] md:w-[688px] md:bg-[url(/img/p2p/vector-1-6.svg)]">
+          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] md:h-[714px] md:w-[688px] md:bg-gray-100">
             <div className="relative top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 md:w-[284px]">
@@ -787,23 +1423,56 @@ export const P2P = () => {
                     </div>
 
                     <div className="relative size-6">
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="h-0.5w-full absolute left-[3px] top-[11px] md:w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="h-0.5w-full absolute left-[3px] top-[5px] md:w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="h-0.5w-full absolute left-[3px] top-[17px] md:w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -822,11 +1491,155 @@ export const P2P = () => {
                       </div>
 
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                        <img
+                        <svg
+                          width="232"
+                          height="30"
+                          viewBox="0 0 232 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
-                          alt="Frame"
-                          src="/img/p2p/frame-83-4.svg"
-                        />
+                        >
+                          <path
+                            d="M4 13L228 13"
+                            stroke="white"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M58 13L163 13"
+                            stroke="#3573FC"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter0_d_9281_1499)">
+                            <rect
+                              x="154"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M161 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M163 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M165 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter1_d_9281_1499)">
+                            <rect
+                              x="49"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M56 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M58 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M60 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <defs>
+                            <filter
+                              id="filter0_d_9281_1499"
+                              x="146"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1499"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1499"
+                                result="shape"
+                              />
+                            </filter>
+                            <filter
+                              id="filter1_d_9281_1499"
+                              x="41"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1499"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1499"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
 
                         <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -852,11 +1665,155 @@ export const P2P = () => {
                       </div>
 
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                        <img
+                        <svg
+                          width="232"
+                          height="30"
+                          viewBox="0 0 232 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
-                          alt="Frame"
-                          src="/img/p2p/frame-83-5.svg"
-                        />
+                        >
+                          <path
+                            d="M4 13L228 13"
+                            stroke="white"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M37 13L84 13"
+                            stroke="#3573FC"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter0_d_9281_1516)">
+                            <rect
+                              x="75"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M82 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M84 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M86 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter1_d_9281_1516)">
+                            <rect
+                              x="28"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M35 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M37 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M39 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <defs>
+                            <filter
+                              id="filter0_d_9281_1516"
+                              x="67"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1516"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1516"
+                                result="shape"
+                              />
+                            </filter>
+                            <filter
+                              id="filter1_d_9281_1516"
+                              x="20"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1516"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1516"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
 
                         <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -882,11 +1839,155 @@ export const P2P = () => {
                       </div>
 
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                        <img
+                        <svg
+                          width="232"
+                          height="30"
+                          viewBox="0 0 232 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
                           className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
-                          alt="Frame"
-                          src="/img/p2p/frame-83-6.svg"
-                        />
+                        >
+                          <path
+                            d="M4 13L228 13"
+                            stroke="white"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M23 13L85 13"
+                            stroke="#3573FC"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter0_d_9281_1816)">
+                            <rect
+                              x="75"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M82 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M84 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M86 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <g filter="url(#filter1_d_9281_1816)">
+                            <rect
+                              x="12"
+                              y="6"
+                              width="18"
+                              height="14"
+                              rx="7"
+                              fill="white"
+                            />
+                          </g>
+                          <path
+                            d="M19 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M21 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <path
+                            d="M23 11V15"
+                            stroke="#E3E5E8"
+                            strokeLinecap="round"
+                          />
+                          <defs>
+                            <filter
+                              id="filter0_d_9281_1816"
+                              x="67"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1816"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1816"
+                                result="shape"
+                              />
+                            </filter>
+                            <filter
+                              id="filter1_d_9281_1816"
+                              x="4"
+                              y="0"
+                              width="34"
+                              height="30"
+                              filterUnits="userSpaceOnUse"
+                              colorInterpolationFilters="sRGB"
+                            >
+                              <feFlood
+                                floodOpacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                result="hardAlpha"
+                              />
+                              <feOffset dy="2" />
+                              <feGaussianBlur stdDeviation="4" />
+                              <feComposite in2="hardAlpha" operator="out" />
+                              <feColorMatrix
+                                type="matrix"
+                                values="0 0 0 0 0.251433 0 0 0 0 0.339361 0 0 0 0 0.533654 0 0 0 0.24 0"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_9281_1816"
+                              />
+                              <feBlend
+                                mode="normal"
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_9281_1816"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
 
                         <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -918,7 +2019,7 @@ export const P2P = () => {
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl md:!flex-row">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] md:left-[33px] md:w-[688px] md:bg-[url(/img/p2p/vector-1-7.svg)]">
+          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] md:left-[33px] md:w-[688px] md:bg-gray-100">
             <div className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
@@ -928,23 +2029,56 @@ export const P2P = () => {
                     </div>
 
                     <div className="relative size-6">
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-[3px] top-[11px] h-0.5 w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-[3px] top-[5px] h-0.5 w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
 
-                      <img
+                      <svg
+                        width="19"
+                        height="2"
+                        viewBox="0 0 19 2"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-[3px] top-[17px] h-0.5 w-[18px]"
-                        alt="Vector"
-                        src="/img/p2p/vector-9.svg"
-                      />
+                      >
+                        <path
+                          d="M1 1H17.5"
+                          stroke="#9FA7BC"
+                          strokeWidth="2"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -1054,11 +2188,16 @@ export const P2P = () => {
             {t('payments.title')}
           </div>
 
-          <img
+          <svg
+            width="560"
+            height="1"
+            viewBox="0 0 560 1"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
             className="relative h-px w-full self-stretch object-cover"
-            alt="Vector"
-            src="/img/p2p/vector-138.svg"
-          />
+          >
+            <path d="M0 0.5H560" stroke="#E3E5E8" />
+          </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1086,11 +2225,44 @@ export const P2P = () => {
       <Integrations />
 
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-20">
-        <img
+        <svg
+          width="1435"
+          height="1361"
+          viewBox="0 0 1435 1361"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[386px] top-[15px] h-[1060px] w-full md:w-[1204px]"
-          alt="Vector"
-          src="/img/p2p/vector-1-11.svg"
-        />
+        >
+          <g opacity="0.12" filter="url(#filter0_f_9267_12444)">
+            <path
+              d="M580.201 516.863C557.553 350.888 741.074 238.781 835.665 203.475C1418.97 145.308 1255.87 837.593 1019.3 1029.59C782.722 1221.59 231.215 1199.45 201.47 981.467C171.726 763.481 608.51 724.332 580.201 516.863Z"
+              fill="#3573FC"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_9267_12444"
+              x="0"
+              y="0"
+              width="1435"
+              height="1360.42"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_9267_12444"
+              />
+            </filter>
+          </defs>
+        </svg>
 
         <div className="relative flex w-full flex-col items-start gap-7 md:w-[640px]">
           <motion.div
@@ -1313,17 +2485,37 @@ export const P2P = () => {
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
                   <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                    <img
+                    <svg
+                      width="260"
+                      height="4"
+                      viewBox="0 0 260 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-136-1.svg"
-                    />
+                    >
+                      <path
+                        d="M2 2L258 2.00002"
+                        stroke="#F2F5FF"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                      />
+                    </svg>
 
-                    <img
+                    <svg
+                      width="169"
+                      height="6"
+                      viewBox="0 0 169 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-137.svg"
-                    />
+                    >
+                      <path
+                        d="M3 3L166 3.00001"
+                        stroke="#00CB82"
+                        strokeWidth="6"
+                        strokeLinecap="round"
+                      />
+                    </svg>
 
                     <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                   </div>
@@ -1343,17 +2535,37 @@ export const P2P = () => {
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
                   <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                    <img
+                    <svg
+                      width="260"
+                      height="4"
+                      viewBox="0 0 260 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-136.svg"
-                    />
+                    >
+                      <path
+                        d="M2 2H258"
+                        stroke="#F2F5FF"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                      />
+                    </svg>
 
-                    <img
+                    <svg
+                      width="95"
+                      height="6"
+                      viewBox="0 0 95 6"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                       className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
-                      alt="Vector"
-                      src="/img/p2p/vector-137-1.svg"
-                    />
+                    >
+                      <path
+                        d="M3 3H92"
+                        stroke="#00CB82"
+                        strokeWidth="6"
+                        strokeLinecap="round"
+                      />
+                    </svg>
 
                     <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                   </div>
@@ -1414,12 +2626,45 @@ export const P2P = () => {
           </button>
         </motion.div>
 
-        <img
+        <svg
+          width="1037"
+          height="1134"
+          viewBox="0 0 1037 1134"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[571px] top-0 h-[656px] w-full md:w-[805px]"
-          alt=""
-          aria-hidden="true"
-          src="/img/p2p/vector-3-1.svg"
-        />
+          hidden={true}
+        >
+          <g opacity="0.24" filter="url(#filter0_f_9267_13819)">
+            <path
+              d="M603.167 599.549C634.286 648.936 592.233 710.965 567.317 735.806C390.662 838.373 342.571 595.238 389.933 500.215C437.296 405.192 615.444 332.684 656.314 397.547C697.185 462.41 564.268 537.816 603.167 599.549Z"
+              fill="#9FA7BC"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_9267_13819"
+              x="0.000579966"
+              y="9.15736e-05"
+              width="1037"
+              height="1133.35"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="186.349"
+                result="effect1_foregroundBlur_9267_13819"
+              />
+            </filter>
+          </defs>
+        </svg>
 
         <motion.div
           initial={{ opacity: 0, x: 50 }}

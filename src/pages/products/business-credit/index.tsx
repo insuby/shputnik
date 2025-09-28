@@ -108,11 +108,20 @@ export const BusinessCredit = () => {
             </div>
           </HeroButtons>
 
-          <img
-            className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]"
-            alt="Vector"
-            src="/img/businesscredit/vector-3.svg"
-          />
+          <svg width="1011" height="1099" viewBox="0 0 1011 1099" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]" alt="Vector">
+
+<g opacity="0.24" filter="url(#filter0_f_9321_96391)">
+<path d="M573.958 568.375C624.166 557.895 637.698 493.455 638.188 462.544C595.176 288.29 412.16 406.311 381.017 494.248C349.874 582.186 412.794 739.035 478.736 725.271C544.678 711.508 511.198 581.475 573.958 568.375Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_9321_96391" x="-0.00137371" y="0" width="1011" height="1098.93" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9321_96391"/>
+</filter>
+</defs>
+
+</svg>
 
           <div className="scale-60 left-[745px] top-[139px] h-[380px] w-full md:absolute md:size-[583px] md:w-auto md:scale-100">
             <div className="relative w-full md:h-[583px] md:w-[631px]">
@@ -242,11 +251,20 @@ export const BusinessCredit = () => {
                 </div>
               </motion.div>
 
-              <img
-                className="absolute left-[45px] top-[83px] h-[50px] w-full md:w-[494px]"
-                alt="Vector"
-                src="/img/businesscredit/vector-5.svg"
-              />
+              <svg width="705" height="569" viewBox="0 0 705 569" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[45px] top-[83px] h-[50px] w-full md:w-[494px]" alt="Vector">
+
+<g opacity="0.32" filter="url(#filter0_f_9321_97914)">
+<path d="M376.303 184.943C420.705 146.535 488.739 178.973 517.205 199.992C645.894 360.14 411.409 444.711 309.765 411.982C208.122 379.252 109.096 213.076 167.413 162.632C225.73 112.189 320.799 232.953 376.303 184.943Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_9321_97914" x="0" y="0" width="704.887" height="569" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_9321_97914"/>
+</filter>
+</defs>
+
+</svg>
 
               <motion.div
                 ref={ref5}
@@ -296,11 +314,20 @@ export const BusinessCredit = () => {
                 </div>
               </motion.div>
 
-              <img
-                className="absolute left-[91px] top-[148px] h-[313px] w-full md:w-[540px]"
-                alt="Vector"
-                src="/img/businesscredit/vector-6-1.svg"
-              />
+              <svg width="583" height="496" viewBox="0 0 583 496" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[91px] top-[148px] h-[313px] w-full md:w-[540px]" alt="Vector">
+
+<g opacity="0.32" filter="url(#filter0_f_9321_97929)">
+<path d="M285.105 186.734C299.738 149.589 350.956 147.667 374.736 151.349C502.784 207.227 388.206 332.15 316.648 344.499C245.09 356.848 133.009 287.98 152.227 239.194C171.444 190.408 266.815 233.167 285.105 186.734Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_9321_97929" x="0" y="0" width="582.552" height="496" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_9321_97929"/>
+</filter>
+</defs>
+
+</svg>
 
               <motion.div
                 ref={ref6}
@@ -309,11 +336,15 @@ export const BusinessCredit = () => {
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
                 className="absolute left-8 top-[320px] inline-flex items-center gap-4 rounded-[32px] bg-[#ffffff] py-4 pl-4 pr-6 md:left-[272px] md:top-[307px]"
               >
-                <img
-                  className="relative flex-[0_0_auto]"
-                  alt="Frame"
-                  src="/img/businesscredit/frame-18.svg"
-                />
+                <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="64" height="64" rx="24" fill="#F2F5FF"/>
+<path d="M43 24H21C20.4477 24 20 24.4477 20 25V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V25C44 24.4477 43.5523 24 43 24Z" stroke="#3573FC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M37 24V22C37 21.4696 36.7893 20.9609 36.4142 20.5858C36.0391 20.2107 35.5304 20 35 20H29C28.4696 20 27.9609 20.2107 27.5858 20.5858C27.2107 20.9609 27 21.4696 27 22V24" stroke="#3573FC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M44 30.7888C40.3532 32.8988 36.2132 34.0066 32 34C27.7869 34.0067 23.647 32.8993 20 30.79" stroke="#3573FC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M30 30H34" stroke="#3573FC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">

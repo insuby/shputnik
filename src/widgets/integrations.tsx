@@ -46,11 +46,7 @@ export const Integrations = () => {
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 pt-10 md:w-[1376px] md:!flex-row md:p-20"
     >
-      <img
-        className="absolute left-[339px] top-[-115px] h-[1060px] w-full md:w-[1204px]"
-        alt="Vector"
-        src="/img/widgets/vector-1-2.svg"
-      />
+      {/* Removed missing SVG img: /img/widgets/vector-1-2.svg */}
 
       <motion.div
         ref={ref2}
@@ -91,65 +87,17 @@ export const Integrations = () => {
           },
         )}
       >
-        <motion.img
-          ref={ref4}
-          initial={{ opacity: 0, x: -80 }}
-          animate={inView4 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-17.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-17.svg */}
 
-        <motion.img
-          ref={ref5}
-          initial={{ opacity: 0, x: 80 }}
-          animate={inView5 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-30.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-30.svg */}
 
-        <motion.img
-          ref={ref6}
-          initial={{ opacity: 0, x: -80 }}
-          animate={inView6 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-29.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-29.svg */}
 
-        <motion.img
-          ref={ref7}
-          initial={{ opacity: 0, x: 80 }}
-          animate={inView7 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-24.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-24.svg */}
 
-        <motion.img
-          ref={ref8}
-          initial={{ opacity: 0, x: -80 }}
-          animate={inView8 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-26.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-26.svg */}
 
-        <motion.img
-          ref={ref9}
-          initial={{ opacity: 0, x: 80 }}
-          animate={inView9 ? { opacity: 1, x: 0 } : {}}
-          transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-          className="relative w-full flex-[0_0_auto] self-stretch"
-          alt="Frame"
-          src="/img/widgets/frame-27.svg"
-        />
+        {/* Removed missing SVG motion.img: /img/widgets/frame-27.svg */}
 
         <motion.div
           ref={ref10}
@@ -159,28 +107,16 @@ export const Integrations = () => {
           className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch"
         >
           <div className="relative h-[49px] w-full md:w-[177px]">
-            <div className="absolute left-0 top-0 h-[46px] w-full bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%] md:w-[42px]">
+            <div className="absolute left-0 top-0 h-[46px] w-full bg-gray-100 bg-[100%_100%] md:w-[42px]">
               <div className="absolute left-[19px] top-[25px] h-1.5 w-1">
-                <img
-                  className="absolute left-px top-0 h-[5px] w-0.5"
-                  alt="Rectangle"
-                  src="/img/widgets/vector-22.svg"
-                />
+                {/* Removed missing SVG img: /img/widgets/vector-22.svg */}
 
-                <div className="absolute left-0 top-1 h-0.5 w-1 bg-[url(/img/widgets/vector-22.svg)] bg-[100%_100%]">
-                  <img
-                    className="absolute left-0 top-0 h-0.5 w-1"
-                    alt="Vector"
-                    src="/img/widgets/vector-24.svg"
-                  />
+                <div className="absolute left-0 top-1 h-0.5 w-1 bg-gray-100 bg-[100%_100%]">
+                  {/* Removed missing SVG img: /img/widgets/vector-24.svg */}
                 </div>
               </div>
 
-              <img
-                className="absolute left-5 top-[22px] size-0.5"
-                alt="Oval"
-                src="/img/widgets/oval-20.svg"
-              />
+              {/* Removed missing SVG img: /img/widgets/oval-20.svg */}
             </div>
 
             <div className="absolute left-16 top-0.5 h-[47px] w-full md:w-[119px]">
@@ -198,18 +134,10 @@ export const Integrations = () => {
           </div>
 
           <div className="relative h-[49px] w-full md:w-[157px]">
-            <div className="absolute left-0 top-0 h-[46px] w-full bg-[url(/img/widgets/fill-26-copy.svg)] bg-[100%_100%] md:w-[42px]">
-              <img
-                className="absolute left-4 top-[21px] size-2.5"
-                alt="Path"
-                src="/img/widgets/path-9-1.svg"
-              />
+            <div className="absolute left-0 top-0 h-[46px] w-full bg-gray-100 bg-[100%_100%] md:w-[42px]">
+              {/* Removed missing SVG img: /img/widgets/path-9-1.svg */}
 
-              <img
-                className="absolute left-4 top-5 size-[11px]"
-                alt="Path"
-                src="/img/widgets/path-9.svg"
-              />
+              {/* Removed missing SVG img: /img/widgets/path-9.svg */}
             </div>
 
             <LineCopy
@@ -228,17 +156,9 @@ export const Integrations = () => {
 
           <div className="relative h-[47px] w-full md:w-[153.5px]">
             <div className="absolute -left-0.5 -top-px size-[46px]">
-              <img
-                className="h-7w-full absolute left-2.5 top-[9px] md:w-[26px]"
-                alt="Fill copy"
-                src="/img/widgets/fill-26-copy-2.svg"
-              />
+              {/* Removed missing SVG img: /img/widgets/fill-26-copy-2.svg */}
 
-              <img
-                className="absolute left-0 top-0 size-[46px]"
-                alt="Oval"
-                src="/img/widgets/oval.svg"
-              />
+              {/* Removed missing SVG img: /img/widgets/oval.svg */}
             </div>
 
             <LineCopy

@@ -73,7 +73,7 @@ export const FeedbackForm = () => {
           viewBox="0 0 1408 1470"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
+          aria-hidden={true}
         >
           <g opacity="0.2" filter="url(#filter0_f_15_177)">
             <path d="M551.293 621.064C506.958 486.085 642.859 364.437 716.352 320.486C1194 182.548 1164.08 785.029 996.168 981.451C828.258 1177.87 364.818 1243.95 306.591 1066.68C248.363 889.399 606.711 789.787 551.293 621.064Z" fill="#3772FE"/>
@@ -94,7 +94,7 @@ export const FeedbackForm = () => {
                 <img
                   className="absolute  left-0 top-0"
                   alt=""
-                  aria-hidden="true"
+                  aria-hidden={true}
                   src="/img/logo.png"
                 />
               </div>
@@ -114,7 +114,7 @@ export const FeedbackForm = () => {
               viewBox="0 0 32 32"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
+              aria-hidden={true}
             >
               <path d="M25 7L7 25" stroke="black" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>
               <path d="M25 25L7 7" stroke="black" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>

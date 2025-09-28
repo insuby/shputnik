@@ -42,7 +42,7 @@ export const CustomDevelopment = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="stroke-[#9FA7BC]"
-              aria-hidden="true"
+              aria-hidden={true}
             >
               <path d="M12 6L22 16L12 26" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round" />
             </svg>

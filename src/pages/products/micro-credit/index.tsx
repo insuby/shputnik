@@ -52,12 +52,20 @@ export const MicroCredit = () => {
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex h-[1060px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:h-auto md:p-12">
-          <img
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/vector-1-5.svg"
-          />
+          <svg width="1077" height="1131" viewBox="0 0 1077 1131" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]" alt="" hidden={true}>
+
+<g opacity="0.32" filter="url(#filter0_f_9017_4482)">
+<path d="M464.894 521.819C440.801 465.832 494.232 408.667 523.96 387.083C722.805 309.922 732.997 568.509 668.74 658.847C604.482 749.185 408.97 795.098 377.327 721.567C345.684 648.036 495.01 591.802 464.894 521.819Z" fill="#3573FC"/>
+</g>
+<defs>
+<filter id="filter0_f_9017_4482" x="-3.05339e-05" y="-0.000152669" width="1076.87" height="1131" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9017_4482"/>
+</filter>
+</defs>
+
+</svg>
 
           <HeroButtons buttonText={t('hero.buttonText')}>
             <motion.div
@@ -133,17 +141,17 @@ export const MicroCredit = () => {
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
                     <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                      <img
-                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                        alt="Vector"
-                        src="/img/vector-136-1.svg"
-                      />
+                      <svg width="260" height="4" viewBox="0 0 260 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1w-full absolute left-px top-1 md:w-[260px]" alt="Vector">
 
-                      <img
-                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
-                        alt="Vector"
-                        src="/img/vector-137.svg"
-                      />
+<path d="M2 2H258" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round"/>
+
+</svg>
+
+                      <svg width="169" height="6" viewBox="0 0 169 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]" alt="Vector">
+
+<path d="M3 3L166 3.00001" stroke="#00CB82" strokeWidth="6" strokeLinecap="round"/>
+
+</svg>
 
                       <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                     </div>
@@ -163,17 +171,17 @@ export const MicroCredit = () => {
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
                     <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
-                      <img
-                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
-                        alt="Vector"
-                        src="/img/vector-136.svg"
-                      />
+                      <svg width="260" height="4" viewBox="0 0 260 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1w-full absolute left-px top-1 md:w-[260px]" alt="Vector">
 
-                      <img
-                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
-                        alt="Vector"
-                        src="/img/vector-137-2.svg"
-                      />
+<path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round"/>
+
+</svg>
+
+                      <svg width="95" height="6" viewBox="0 0 95 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]" alt="Vector">
+
+<path d="M3 3H92" stroke="#00CB82" strokeWidth="6" strokeLinecap="round"/>
+
+</svg>
 
                       <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                     </div>
@@ -234,12 +242,20 @@ export const MicroCredit = () => {
             </div>
           </motion.div>
 
-          <img
-            className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/vector-3.svg"
-          />
+          <svg width="964" height="720" viewBox="0 0 964 720" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]" alt="" hidden={true}>
+
+<g opacity="0.12" filter="url(#filter0_f_120_871)">
+<path d="M471.857 189.613C516.151 91.6805 654.128 93.3359 717.579 106.405C1054.45 273.715 729.711 594.357 535.654 618.03C341.596 641.702 49.3959 441.591 107.57 312.97C165.743 184.349 416.49 312.029 471.857 189.613Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_120_871" x="0" y="0" width="963.789" height="720" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_120_871"/>
+</filter>
+</defs>
+
+</svg>
 
           <motion.div
             ref={ref5}
@@ -341,11 +357,20 @@ export const MicroCredit = () => {
               >
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                    <img
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
-                      alt="Vector"
-                      src="/img/microcredit/vector-1-1.svg"
-                    />
+                    <svg width="638" height="682" viewBox="0 0 638 682" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]" alt="Vector">
+
+<g opacity="0.16" filter="url(#filter0_f_9122_617)">
+<path d="M271.254 368.279C228.004 368.251 205.763 317.375 200.049 291.941C205.627 140.694 376.992 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.45C320.013 481.414 325.317 368.313 271.254 368.279Z" fill="#725DD6"/>
+</g>
+<defs>
+<filter id="filter0_f_9122_617" x="0" y="0" width="638" height="681.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9122_617"/>
+</filter>
+</defs>
+
+</svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
@@ -353,17 +378,17 @@ export const MicroCredit = () => {
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
                               <div className="h-3w-full relative left-0 top-px md:left-[-3px] md:w-[203px]">
-                                <img
-                                  className="h-1w-full absolute left-px top-1 md:w-[202px]"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector-136.svg"
-                                />
+                                <svg width="202" height="4" viewBox="0 0 202 4" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1w-full absolute left-px top-1 md:w-[202px]" alt="Vector">
 
-                                <img
-                                  className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector-137.svg"
-                                />
+<path d="M2 2L200 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round"/>
+
+</svg>
+
+                                <svg width="169" height="6" viewBox="0 0 169 6" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]" alt="Vector">
+
+<path d="M3 3L166 3.00001" stroke="#00CB82" strokeWidth="6" strokeLinecap="round"/>
+
+</svg>
 
                                 <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                               </div>
@@ -396,11 +421,20 @@ export const MicroCredit = () => {
                 </div>
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                    <img
-                      className="absolute left-0 top-0 h-[467px]  w-full md:w-[377px]"
-                      alt="Vector"
-                      src="/img/microcredit/vector-1-6.svg"
-                    />
+                    <svg width="638" height="682" viewBox="0 0 638 682" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[467px]  w-full md:w-[377px]" alt="Vector">
+
+<g opacity="0.2" filter="url(#filter0_f_9122_622)">
+<path d="M271.254 368.279C228.004 368.251 205.763 317.375 200.049 291.941C205.627 140.694 376.992 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.45C320.013 481.414 325.317 368.313 271.254 368.279Z" fill="#725DD6"/>
+</g>
+<defs>
+<filter id="filter0_f_9122_622" x="0" y="0" width="638" height="681.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9122_622"/>
+</filter>
+</defs>
+
+</svg>
 
                     <div className="relative w-full self-stretch">
                       <div className="relative left-0 top-[26px] h-[200px] w-full md:left-7 md:h-[170px] md:w-[290px]">
@@ -430,17 +464,17 @@ export const MicroCredit = () => {
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
-                                <img
-                                  className="absolute left-[5px] top-[15px] h-[5px] w-2"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector.svg"
-                                />
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[5px] top-[15px] h-[5px] w-2" alt="Vector">
 
-                                <img
-                                  className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector-2.svg"
-                                />
+<path d="M0.841943 0.8422C0.841943 1.67977 1.17467 2.48303 1.76692 3.07528C2.35917 3.66753 3.16243 4.00026 4 4.00026C4.83757 4.00026 5.64083 3.66753 6.23308 3.07528C6.82533 2.48303 7.15806 1.67977 7.15806 0.8422" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
+
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]" alt="Vector">
+
+<path d="M2.35059 7.73193C2.35059 5.89859 3.07888 4.14034 4.37524 2.84398C5.67161 1.54761 7.42986 0.819322 9.2632 0.819322C11.0965 0.819322 12.8548 1.54761 14.1511 2.84398C15.4475 4.14034 16.1758 5.89859 16.1758 7.73193C16.1758 11.171 16.9727 13.9341 17.6063 15.0286C17.6736 15.1451 17.7091 15.2773 17.7092 15.4119C17.7094 15.5465 17.6741 15.6788 17.607 15.7955C17.5399 15.9122 17.4433 16.0092 17.327 16.0768C17.2106 16.1444 17.0785 16.1802 16.9439 16.1807H1.58252C1.44809 16.1799 1.31622 16.1438 1.20011 16.076C1.08399 16.0083 0.987683 15.9113 0.920818 15.7946C0.853953 15.678 0.818869 15.5459 0.819073 15.4115C0.819277 15.277 0.854762 15.145 0.921982 15.0286C1.55468 13.9341 2.35059 11.17 2.35059 7.73193Z" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
                               </div>
                             </div>
                           </div>
@@ -454,17 +488,17 @@ export const MicroCredit = () => {
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
-                                <img
-                                  className="absolute left-[5px] top-[15px] h-[5px] w-2"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector.svg"
-                                />
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[5px] top-[15px] h-[5px] w-2" alt="Vector">
 
-                                <img
-                                  className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]"
-                                  alt="Vector"
-                                  src="/img/microcredit/vector-2.svg"
-                                />
+<path d="M0.841943 0.8422C0.841943 1.67977 1.17467 2.48303 1.76692 3.07528C2.35917 3.66753 3.16243 4.00026 4 4.00026C4.83757 4.00026 5.64083 3.66753 6.23308 3.07528C6.82533 2.48303 7.15806 1.67977 7.15806 0.8422" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
+
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]" alt="Vector">
+
+<path d="M2.35059 7.73193C2.35059 5.89859 3.07888 4.14034 4.37524 2.84398C5.67161 1.54761 7.42986 0.819322 9.2632 0.819322C11.0965 0.819322 12.8548 1.54761 14.1511 2.84398C15.4475 4.14034 16.1758 5.89859 16.1758 7.73193C16.1758 11.171 16.9727 13.9341 17.6063 15.0286C17.6736 15.1451 17.7091 15.2773 17.7092 15.4119C17.7094 15.5465 17.6741 15.6788 17.607 15.7955C17.5399 15.9122 17.4433 16.0092 17.327 16.0768C17.2106 16.1444 17.0785 16.1802 16.9439 16.1807H1.58252C1.44809 16.1799 1.31622 16.1438 1.20011 16.076C1.08399 16.0083 0.987683 15.9113 0.920818 15.7946C0.853953 15.678 0.818869 15.5459 0.819073 15.4115C0.819277 15.277 0.854762 15.145 0.921982 15.0286C1.55468 13.9341 2.35059 11.17 2.35059 7.73193Z" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
                               </div>
                             </div>
                           </div>
@@ -489,17 +523,47 @@ export const MicroCredit = () => {
                 </div>
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                    <img
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
-                      alt="Vector"
-                      src="/img/microcredit/vector-1-6-1.svg"
-                    />
+                    <svg width="638" height="682" viewBox="0 0 638 682" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]" alt="Vector">
 
-                    <img
-                      className="relative w-full flex-1 grow self-stretch"
-                      alt="Frame"
-                      src="/img/microcredit/frame-1948755086-2.svg"
-                    />
+<g opacity="0.2" filter="url(#filter0_f_9668_11045)">
+<path d="M271.254 368.279C228.004 368.251 205.763 317.375 200.049 291.941C205.627 140.694 376.992 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.45C320.013 481.414 325.317 368.313 271.254 368.279Z" fill="#725DD6"/>
+</g>
+<defs>
+<filter id="filter0_f_9668_11045" x="0" y="0" width="638" height="681.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9668_11045"/>
+</filter>
+</defs>
+
+</svg>
+
+                    <svg width="347" height="136" viewBox="0 0 347 136" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative w-full flex-1 grow self-stretch" alt="Frame">
+
+<rect x="128" y="6" width="92" height="92" rx="24" fill="white"/>
+<rect x="148" y="26" width="52" height="52" rx="26" fill="#3573FC" fill-opacity="0.08"/>
+<path d="M174 56C176.209 56 178 54.2091 178 52C178 49.7909 176.209 48 174 48C171.791 48 170 49.7909 170 52C170 54.2091 171.791 56 174 56Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M188 44H160V60H188V44Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M188 49C186.751 48.7883 185.598 48.1933 184.703 47.2974C183.807 46.4015 183.212 45.2491 183 44" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M183 60C183.212 58.7509 183.807 57.5985 184.703 56.7026C185.598 55.8067 186.751 55.2117 188 55" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M160 55C161.249 55.2117 162.402 55.8067 163.297 56.7026C164.193 57.5985 164.788 58.7509 165 60" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M165 44C164.788 45.2491 164.193 46.4015 163.297 47.2974C162.402 48.1933 161.249 48.7883 160 49" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<rect x="8" y="38" width="92" height="92" rx="24" fill="white"/>
+<rect x="28" y="58" width="52" height="52" rx="26" fill="#E74951" fill-opacity="0.08"/>
+<path d="M63 75L45 93" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M47.5 81C49.433 81 51 79.433 51 77.5C51 75.567 49.433 74 47.5 74C45.567 74 44 75.567 44 77.5C44 79.433 45.567 81 47.5 81Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M60.5 94C62.433 94 64 92.433 64 90.5C64 88.567 62.433 87 60.5 87C58.567 87 57 88.567 57 90.5C57 92.433 58.567 94 60.5 94Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<rect x="248" y="38" width="92" height="92" rx="24" fill="white"/>
+<rect x="268" y="58" width="52" height="52" rx="26" fill="#725DD6" fill-opacity="0.08"/>
+<path d="M305 78H283C282.448 78 282 78.4477 282 79V83C282 83.5523 282.448 84 283 84H305C305.552 84 306 83.5523 306 83V79C306 78.4477 305.552 78 305 78Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M304 84V93C304 93.2652 303.895 93.5196 303.707 93.7071C303.52 93.8946 303.265 94 303 94H285C284.735 94 284.48 93.8946 284.293 93.7071C284.105 93.5196 284 93.2652 284 93V84" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M294 78V94" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M300.099 71.9012C301.266 73.0687 301.335 75.0337 300.099 76.1287C297.985 78 294 78 294 78C294 78 294 74.015 295.875 71.9012C296.966 70.665 298.931 70.7337 300.099 71.9012Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M287.901 71.9012C286.734 73.0687 286.665 75.0337 287.901 76.1287C290.015 78 294 78 294 78C294 78 294 74.015 292.125 71.9012C291.034 70.665 289.069 70.7337 287.901 71.9012Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M100 68L128 68" stroke="white" strokeWidth="2"/>
+<path d="M220 68L248 68" stroke="white" strokeWidth="2"/>
+
+</svg>
 
                     <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -514,11 +578,20 @@ export const MicroCredit = () => {
                 </div>
                 <div className="px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                    <img
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
-                      alt="Vector"
-                      src="/img/microcredit/vector-1-9.svg"
-                    />
+                    <svg width="638" height="682" viewBox="0 0 638 682" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]" alt="Vector">
+
+<g opacity="0.2" filter="url(#filter0_f_9668_11877)">
+<path d="M271.254 368.279C228.004 368.251 205.763 317.375 200.049 291.941C205.627 140.694 376.992 206.692 417.807 273.94C458.623 341.189 433.62 481.487 376.817 481.45C320.013 481.414 325.317 368.313 271.254 368.279Z" fill="#725DD6"/>
+</g>
+<defs>
+<filter id="filter0_f_9668_11877" x="0" y="0" width="638" height="681.5" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9668_11877"/>
+</filter>
+</defs>
+
+</svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative left-[22px] top-1.5 flex w-full items-center gap-4 md:left-[42px] md:w-[264px]">
@@ -535,11 +608,12 @@ export const MicroCredit = () => {
                             </div>
                           </div>
 
-                          <img
-                            className="absolute -top-2 left-[100px] size-8"
-                            alt="Frame"
-                            src="/img/microcredit/frame-18-4.svg"
-                          />
+                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute -top-2 left-[100px] size-8" alt="Frame">
+
+<rect width="32" height="32" rx="16" fill="#00CB82"/>
+<path d="M10.5 17L14 20.5L22 12.5" stroke="white" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>
+
+</svg>
                         </div>
                       </div>
                     </div>
@@ -561,29 +635,46 @@ export const MicroCredit = () => {
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
                         <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
-                          <img
-                            className="relative flex-[0_0_auto]"
-                            alt="Frame"
-                            src="/img/microcredit/frame-19-1.svg"
-                          />
+                          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="44" height="44" rx="22" fill="#3573FC" fill-opacity="0.08"/>
+<path d="M25.75 31H15.25C15.0511 31 14.8603 30.921 14.7197 30.7803C14.579 30.6397 14.5 30.4489 14.5 30.25V16.75C14.5 16.5511 14.579 16.3603 14.7197 16.2197C14.8603 16.079 15.0511 16 15.25 16H22.75L26.5 19.75V30.25C26.5 30.4489 26.421 30.6397 26.2803 30.7803C26.1397 30.921 25.9489 31 25.75 31Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M17.5 16V13.75C17.5 13.5511 17.579 13.3603 17.7197 13.2197C17.8603 13.079 18.0511 13 18.25 13H25.75L29.5 16.75V27.25C29.5 27.4489 29.421 27.6397 29.2803 27.7803C29.1397 27.921 28.9489 28 28.75 28H26.5" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.25 24.25H22.75" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.25 27.25H22.75" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
                           <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('processes.loanApplication')}
                           </div>
                         </div>
 
-                        <img
-                          className="absolute left-0 top-0 h-[339px] w-full md:w-[443px]"
-                          alt="Vector"
-                          src="/img/microcredit/vector-4-1.svg"
-                        />
+                        <svg width="524" height="422" viewBox="0 0 524 422" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[339px] w-full md:w-[443px]" alt="Vector">
+
+<g opacity="0.32" filter="url(#filter0_f_9670_11051)">
+<path d="M264.727 260.394C251.592 280.662 211.172 269.289 192.604 261.069C94.1848 193.639 189.84 141.57 246.73 151.25C303.62 160.929 388.901 232.775 371.65 259.395C354.399 286.014 281.146 235.059 264.727 260.394Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_9670_11051" x="0" y="0" width="524" height="421.855" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_9670_11051"/>
+</filter>
+</defs>
+
+</svg>
 
                         <div className="absolute left-[119px] top-[101px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
-                          <img
-                            className="relative flex-[0_0_auto]"
-                            alt="Frame"
-                            src="/img/microcredit/frame-19-6.svg"
-                          />
+                          <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="44" height="44" rx="22" fill="#00CB82" fill-opacity="0.08"/>
+<path d="M25.75 19H30.25V14.5" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M30.25 19L27.5988 16.3488C26.0633 14.8134 23.9846 13.9453 21.8132 13.9326C19.6419 13.92 17.5532 14.7639 16 16.2813" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M18.25 25H13.75V29.5" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M13.75 25L16.4012 27.6512C17.9367 29.1866 20.0154 30.0547 22.1868 30.0674C24.3581 30.08 26.4468 29.2361 28 27.7188" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
                           <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('processes.refinancing')}

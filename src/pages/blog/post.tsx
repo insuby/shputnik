@@ -117,12 +117,14 @@ export const BlogPost = () => {
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[1216px]">
           <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
             <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
-              <img
-                className="relative size-4"
-                alt=""
-                aria-hidden="true"
-                src="https://c.animaapp.com/me09936stTuvMn/img/calendarblank.svg"
-              />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-4" alt="" hidden={true}>
+
+<path d="M13 2.5H3C2.72386 2.5 2.5 2.72386 2.5 3V13C2.5 13.2761 2.72386 13.5 3 13.5H13C13.2761 13.5 13.5 13.2761 13.5 13V3C13.5 2.72386 13.2761 2.5 13 2.5Z" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M11 1.5V3.5" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M5 1.5V3.5" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M2.5 5.5H13.5" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
               <time
                 dateTime={new Date(post.createdAt).toISOString()}
                 className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
@@ -131,23 +133,22 @@ export const BlogPost = () => {
               </time>
             </div>
             <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
-              <img
-                className="relative size-4"
-                alt=""
-                aria-hidden="true"
-                src="https://c.animaapp.com/me09936stTuvMn/img/eye.svg"
-              />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-4" alt="" hidden={true}>
+
+<path d="M8 3.5C3 3.5 1 8 1 8C1 8 3 12.5 8 12.5C13 12.5 15 8 15 8C15 8 13 3.5 8 3.5Z" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
               <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {post.views ?? 0}
               </div>
             </div>
             <div className="justify_center relative inline-flex h-6 flex-[0_0_auto] items-center gap-2">
-              <img
-                className="relative size-4"
-                alt=""
-                aria-hidden="true"
-                src="https://c.animaapp.com/me09936stTuvMn/img/heart-2.svg"
-              />
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-4" alt="" hidden={true}>
+
+<path d="M8 14C8 14 1.5 10.5 1.5 6.375C1.5 5.47989 1.85558 4.62145 2.48851 3.98851C3.12145 3.35558 3.97989 3 4.875 3C6.28688 3 7.49625 3.76937 8 5C8.50375 3.76937 9.71312 3 11.125 3C12.0201 3 12.8785 3.35558 13.5115 3.98851C14.1444 4.62145 14.5 5.47989 14.5 6.375C14.5 10.5 8 14 8 14Z" stroke="#9FA7BC" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
               <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {post.likes ?? 0}
               </div>
@@ -190,11 +191,11 @@ export const BlogPost = () => {
                   onClick={handleLike}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2"
                 >
-                  <img
-                    className="relative size-8"
-                    alt="Heart"
-                    src="https://c.animaapp.com/me09936stTuvMn/img/heart.svg"
-                  />
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-8" alt="Heart">
+
+<path d="M14 24.5C14 24.5 2.625 18.375 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5Z" fill="#55607A"/>
+
+</svg>
                   <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {post.likes ?? 0}
                   </div>
@@ -301,11 +302,11 @@ export const BlogPost = () => {
                                 onClick={() => handleLikeComment(c.id)}
                                 className="inline-flex items-center gap-2"
                               >
-                                <img
-                                  className="relative size-7"
-                                  alt="Heart"
-                                  src="https://c.animaapp.com/me09936stTuvMn/img/heart.svg"
-                                />
+                                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-7" alt="Heart">
+
+<path d="M14 24.5C14 24.5 2.625 18.375 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5Z" fill="#55607A"/>
+
+</svg>
                                 <div className="tracking_[0] w-fit whitespace-nowrap text-base font-medium leading-6 text-gray-40 [font-family:'Roboto',Helvetica]">
                                   {c.likes ?? 0}
                                 </div>

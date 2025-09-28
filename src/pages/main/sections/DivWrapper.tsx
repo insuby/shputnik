@@ -103,7 +103,7 @@ export const DivWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView16 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[284px] top-[317px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
+              className="absolute left-[284px] top-[319px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
             >
               <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] md:w-full">
                 <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
@@ -122,11 +122,11 @@ export const DivWrapper = () => {
                       </div>
                     </div>
 
-                    <img
-                      className="relative size-[17.94px]"
-                      alt="Caret right"
-                      src="/img/caretright.svg"
-                    />
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
+
+<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+
+</svg>
                   </div>
 
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[11.96px]">
@@ -271,11 +271,11 @@ export const DivWrapper = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative size-[17.94px]"
-                        alt="Caret right"
-                        src="/img/caretright.svg"
-                      />
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
+
+<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+
+</svg>
                     </div>
 
                     <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
@@ -289,11 +289,11 @@ export const DivWrapper = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative size-[17.94px]"
-                        alt="Caret right"
-                        src="/img/caretright.svg"
-                      />
+                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
+
+<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+
+</svg>
                     </div>
                   </div>
                 </div>

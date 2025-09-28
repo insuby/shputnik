@@ -56,19 +56,35 @@ export const Feedback = () => {
   return (
     <div className="relative flex w-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px]">
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
-        <img
-          className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]"
-          alt=""
-          aria-hidden="true"
-          src="/img/feedback/vector-1.svg"
-        />
+        <svg width="939" height="763" viewBox="0 0 939 763" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]" alt="" hidden={true}>
 
-        <img
-          className="absolute left-[666px] top-[-109px] h-[675px] w-full md:w-[727px]"
-          alt=""
-          aria-hidden="true"
-          src="/img/feedback/vector-2-1.svg"
-        />
+<g opacity="0.4" filter="url(#filter0_f_0_4)">
+<path d="M464.944 503.537C498.131 571.515 595.163 567.495 639.531 556.988C873.053 432.314 637.967 213.464 500.958 200.826C363.949 188.189 162.528 335.014 206.115 424.295C249.702 513.575 423.459 418.564 464.944 503.537Z" fill="#00FF6A"/>
+</g>
+<defs>
+<filter id="filter0_f_0_4" x="0" y="0" width="938.566" height="763" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_4"/>
+</filter>
+</defs>
+
+</svg>
+
+        <svg width="1040" height="846" viewBox="0 0 1040 846" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[666px] top-[-109px] h-[675px] w-full md:w-[727px]" alt="" hidden={true}>
+
+<g opacity="0.3" filter="url(#filter0_f_0_5)">
+<path d="M504.648 285.206C536.839 200.58 652.934 194.855 706.958 202.571C998.824 325.867 742.328 612.212 580.387 642.126C418.446 672.04 162.443 518.86 204.721 407.715C246.998 296.571 464.411 390.989 504.648 285.206Z" fill="#FF2BB8"/>
+</g>
+<defs>
+<filter id="filter0_f_0_5" x="0" y="0.000122116" width="1039.93" height="846" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_5"/>
+</filter>
+</defs>
+
+</svg>
 
         <div className="relative flex flex-col items-start gap-7 md:w-[696px]">
           <div className="relative flex w-full flex-col items-start gap-4 self-stretch">
@@ -228,22 +244,37 @@ export const Feedback = () => {
             </motion.div>
           </motion.div>
 
-          <img
-            className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/feedback/vector-147.svg"
-          />
+          <svg width="329" height="62" viewBox="0 0 329 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]" alt="" hidden={true}>
+
+<path d="M0.247285 55.6176L24.7332 49.381C29.1947 48.2446 33.9294 49.0834 37.729 51.6833L46.9276 57.9774C54.0122 62.8251 63.6592 61.2242 68.7982 54.3479L76.6352 43.8615C81.3036 37.6149 89.793 35.6394 96.7397 39.1831L117.269 49.6558C125.75 53.9821 136.11 49.9981 139.506 41.1042L152.056 8.2426C156.121 -2.39929 171.61 -0.959684 173.644 10.2489L175.739 21.7982C177.224 29.987 188.598 30.9118 191.387 23.0705V23.0705C193.933 15.9142 204.031 15.853 206.663 22.9778L209.006 29.3211C211.913 37.1908 222.387 38.7047 227.404 31.9804L233.005 24.4727C238.302 17.372 248.429 16.0749 255.345 21.6113L261.435 26.4867C266.413 30.4716 273.281 31.1237 278.92 28.1469L328.533 1.95518" stroke="url(#paint0_linear_0_35)" strokeWidth="2"/>
+<defs>
+<linearGradient id="paint0_linear_0_35" x1="0.247285" y1="39.8198" x2="328.533" y2="39.8198" gradientUnits="userSpaceOnUse">
+<stop stopColor="white"/>
+<stop offset="0.269231" stopColor="#00CB82"/>
+<stop offset="0.692308" stopColor="#00CB82"/>
+<stop offset="1" stopColor="white"/>
+</linearGradient>
+</defs>
+
+</svg>
 
           <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
         </motion.div>
 
-        <img
-          className="absolute left-[874px] top-6 h-[403px] w-full md:w-[426px]"
-          alt=""
-          aria-hidden="true"
-          src="/img/feedback/vector-4.svg"
-        />
+        <svg width="669" height="732" viewBox="0 0 669 732" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[874px] top-6 h-[403px] w-full md:w-[426px]" alt="" hidden={true}>
+
+<g opacity="0.16" filter="url(#filter0_f_0_37)">
+<path d="M267.283 332.535C243.872 286.891 285.493 235.854 309.23 216.041C471.821 139.955 495.065 356.516 446.238 436.023C397.41 515.531 235.843 565.188 205.096 505.24C174.349 445.292 296.547 389.591 267.283 332.535Z" fill="#7C92C8"/>
+</g>
+<defs>
+<filter id="filter0_f_0_37" x="0" y="0" width="669" height="731.862" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_37"/>
+</filter>
+</defs>
+
+</svg>
 
         <motion.div
           ref={ref14}
@@ -290,11 +321,17 @@ export const Feedback = () => {
 
               <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
-              <img
-                className="absolute left-0 top-0 size-[198px]"
-                alt="Ellipse"
-                src="/img/feedback/ellipse-32.svg"
-              />
+              <svg width="198" height="198" viewBox="0 0 198 198" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 size-[198px]" alt="Ellipse">
+
+<path d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5" stroke="url(#paint0_linear_0_44)" strokeWidth="10" strokeLinecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_0_44" x1="99" y1="5" x2="43.5" y2="-9" gradientUnits="userSpaceOnUse">
+<stop stopColor="#3573FC"/>
+<stop offset="1" stopColor="#3573FC" stopOpacity="0"/>
+</linearGradient>
+</defs>
+
+</svg>
             </div>
           </motion.div>
 

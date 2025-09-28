@@ -41,7 +41,7 @@ export const Works = () => {
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
             <div className="overflow-hidden md:px-3">
-              <div className="relative h-[350px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
+              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
                 <img
                   className="absolute w-full md:left-[291px] md:top-[158px] md:h-[588px]"
                   alt="Image"
@@ -50,7 +50,7 @@ export const Works = () => {
               </div>
             </div>
             <div className="overflow-hidden md:px-3">
-              <div className="relative h-[350px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
+              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
                 <img
                   className="absolute w-full md:left-[291px] md:top-[158px] md:h-[588px]"
                   alt="Image"
@@ -59,7 +59,7 @@ export const Works = () => {
               </div>
             </div>
             <div className="overflow-hidden md:px-3">
-              <div className="relative h-[350px] w-full bg-[url(/img/development/vector-1-3.svg)] bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
+              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] md:left-[-231px] md:top-[-98px] md:h-[1035px]">
                 <img
                   className="absolute w-full md:left-[291px] md:top-[158px] md:h-[588px]"
                   alt="Image"

@@ -79,7 +79,7 @@ export const HeaderSection = () => {
             <img
               className="absolute left-0 top-0 size-full"
               alt=""
-              aria-hidden="true"
+              aria-hidden={true}
               src="/img/logo.png"
             />
           </div>

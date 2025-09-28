@@ -105,12 +105,20 @@ export const BNPL = () => {
     >
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex h-[1060px] w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:h-[620px] md:p-12">
-          <img
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
-            alt=""
-            aria-hidden="true"
-            src="/img/bnpl/vector-1-5.svg"
-          />
+          <svg width="1688" height="1367" viewBox="0 0 1688 1367" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]" alt="" hidden={true}>
+
+<g opacity="0.2" filter="url(#filter0_f_9163_1918)">
+<path d="M847.72 462.293C913.979 347.979 1082.53 367.028 1158.53 390.843C1549.9 637.044 1113.16 989.147 872.885 994.155C632.615 999.164 299.921 718.356 386.944 568.219C473.966 418.083 764.896 605.186 847.72 462.293Z" fill="#FF2A9F"/>
+</g>
+<defs>
+<filter id="filter0_f_9163_1918" x="0.000579958" y="-3.05241e-05" width="1687.86" height="1367" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9163_1918"/>
+</filter>
+</defs>
+
+</svg>
 
           <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
@@ -205,20 +213,37 @@ export const BNPL = () => {
               </div>
             </div>
 
-            <img
-              className="absolute left-0 top-[730px] h-24 w-full md:top-[132px] md:w-[328px]"
-              alt="Vector"
-              src="/img/bnpl/vector-147.svg"
-            />
+            <svg width="329" height="62" viewBox="0 0 329 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-[730px] h-24 w-full md:top-[132px] md:w-[328px]" alt="Vector">
+
+<path d="M0.247285 55.6177L24.7332 49.381C29.1947 48.2447 33.9294 49.0835 37.729 51.6833L46.9276 57.9775C54.0122 62.8252 63.6592 61.2242 68.7982 54.348L76.6352 43.8616C81.3036 37.615 89.793 35.6394 96.7397 39.1832L117.269 49.6559C125.75 53.9822 136.11 49.9982 139.506 41.1042L152.056 8.24266C156.121 -2.39923 171.61 -0.959623 173.644 10.249L175.739 21.7982C177.224 29.9871 188.598 30.9119 191.387 23.0705V23.0705C193.933 15.9143 204.031 15.853 206.663 22.9778L209.006 29.3212C211.913 37.1908 222.387 38.7048 227.404 31.9804L233.005 24.4727C238.302 17.3721 248.429 16.075 255.345 21.6113L261.435 26.4868C266.413 30.4717 273.281 31.1237 278.92 28.1469L328.533 1.95524" stroke="url(#paint0_linear_9163_3017)" strokeWidth="2"/>
+<defs>
+<linearGradient id="paint0_linear_9163_3017" x1="0.247285" y1="39.8199" x2="328.533" y2="39.8199" gradientUnits="userSpaceOnUse">
+<stop stopColor="white"/>
+<stop offset="0.269231" stopColor="#00CB82"/>
+<stop offset="0.692308" stopColor="#00CB82"/>
+<stop offset="1" stopColor="white"/>
+</linearGradient>
+</defs>
+
+</svg>
 
             <div className="absolute left-[156px] top-[156px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
           </motion.div>
 
-          <img
-            className="absolute left-[615px] top-0 h-[620px] w-full md:w-[761px]"
-            alt="Vector"
-            src="/img/bnpl/vector-3-1.svg"
-          />
+          <svg width="847" height="929" viewBox="0 0 847 929" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[615px] top-0 h-[620px] w-full md:w-[761px]" alt="Vector">
+
+<g opacity="0.24" filter="url(#filter0_f_9163_1971)">
+<path d="M359.843 481.964C313.157 472.22 300.574 412.299 300.119 383.557C340.114 221.525 510.292 331.268 539.251 413.037C568.209 494.806 509.702 640.653 448.386 627.855C387.07 615.056 418.201 494.145 359.843 481.964Z" fill="#9FA7BC"/>
+</g>
+<defs>
+<filter id="filter0_f_9163_1971" x="0" y="0" width="847" height="928.763" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_9163_1971"/>
+</filter>
+</defs>
+
+</svg>
 
           <motion.div
             ref={ref4}
@@ -241,11 +266,17 @@ export const BNPL = () => {
 
                 <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
-                <img
-                  className="absolute left-0 top-0 size-[198px]"
-                  alt="Ellipse"
-                  src="/img/bnpl/ellipse-32.svg"
-                />
+                <svg width="198" height="198" viewBox="0 0 198 198" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 size-[198px]" alt="Ellipse">
+
+<path d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5" stroke="url(#paint0_linear_9163_3025)" strokeWidth="10" strokeLinecap="round"/>
+<defs>
+<linearGradient id="paint0_linear_9163_3025" x1="99" y1="5" x2="43.5" y2="-9" gradientUnits="userSpaceOnUse">
+<stop stopColor="#3573FC"/>
+<stop offset="1" stopColor="#3573FC" stopOpacity="0"/>
+</linearGradient>
+</defs>
+
+</svg>
               </div>
             </div>
 
@@ -307,11 +338,14 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
-            <img
-              className="relative flex-[0_0_auto]"
-              alt="Frame"
-              src="/img/bnpl/frame-18-2.svg"
-            />
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="60" height="60" rx="30" fill="#E74951" fill-opacity="0.08"/>
+<path d="M39.625 21.25H20.375C19.8918 21.25 19.5 21.6418 19.5 22.125V37.875C19.5 38.3582 19.8918 38.75 20.375 38.75H39.625C40.1082 38.75 40.5 38.3582 40.5 37.875V22.125C40.5 21.6418 40.1082 21.25 39.625 21.25Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M19.5 24.75H40.5" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M34.375 28.25C34.375 29.4103 33.9141 30.5231 33.0936 31.3436C32.2731 32.1641 31.1603 32.625 30 32.625C28.8397 32.625 27.7269 32.1641 26.9064 31.3436C26.0859 30.5231 25.625 29.4103 25.625 28.25" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -331,11 +365,15 @@ export const BNPL = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
           >
-            <img
-              className="relative flex-[0_0_auto]"
-              alt="Frame"
-              src="/img/bnpl/frame-18-3.svg"
-            />
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
+
+<rect width="60" height="60" rx="30" fill="#3573FC" fill-opacity="0.08"/>
+<path d="M36.5625 36.125H25.9717C25.5619 36.1249 25.1651 35.981 24.8505 35.7184C24.5359 35.4558 24.3234 35.091 24.2502 34.6878L21.3298 18.625H18.625" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M26.0625 40.5C27.2706 40.5 28.25 39.5206 28.25 38.3125C28.25 37.1044 27.2706 36.125 26.0625 36.125C24.8544 36.125 23.875 37.1044 23.875 38.3125C23.875 39.5206 24.8544 40.5 26.0625 40.5Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M36.5625 40.5C37.7706 40.5 38.75 39.5206 38.75 38.3125C38.75 37.1044 37.7706 36.125 36.5625 36.125C35.3544 36.125 34.375 37.1044 34.375 38.3125C34.375 39.5206 35.3544 40.5 36.5625 40.5Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M23.7164 31.75H37.4484C37.8583 31.7499 38.2551 31.606 38.5697 31.3434C38.8843 31.0808 39.0967 30.716 39.17 30.3128L40.5 23H22.125" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+
+</svg>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -500,11 +538,7 @@ export const BNPL = () => {
                     </div>
                   </motion.div>
 
-                  <img
-                    className="relative h-px w-full self-stretch object-cover"
-                    alt="Vector"
-                    src="/img/bnpl/vector-140.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                   <motion.div
                     ref={ref16}
@@ -522,11 +556,7 @@ export const BNPL = () => {
                     </div>
                   </motion.div>
 
-                  <img
-                    className="relative h-px w-full self-stretch object-cover"
-                    alt="Vector"
-                    src="/img/bnpl/vector-140.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                   <motion.div
                     ref={ref16}
@@ -544,11 +574,7 @@ export const BNPL = () => {
                     </div>
                   </motion.div>
 
-                  <img
-                    className="relative h-px w-full self-stretch object-cover"
-                    alt="Vector"
-                    src="/img/bnpl/vector-140.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                   <motion.div
                     ref={ref16}
@@ -566,11 +592,7 @@ export const BNPL = () => {
                     </div>
                   </motion.div>
 
-                  <img
-                    className="relative h-px w-full self-stretch object-cover"
-                    alt="Vector"
-                    src="/img/bnpl/vector-140.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                   <motion.div
                     ref={ref16}
@@ -923,11 +945,7 @@ export const BNPL = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                 <div className="relative ml-[-10470.00px] mt-[-3731.92px] size-5 bg-[100%_100%]">
-                  <img
-                    className="h-4w-full absolute left-[3px] top-0.5 md:w-[15px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-14.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-14.svg */}
                 </div>
 
                 <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
@@ -938,23 +956,11 @@ export const BNPL = () => {
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                 <div className="relative size-5">
                   <div className="relative left-px top-1 h-[11px] w-full md:w-[19px]">
-                    <img
-                      className="absolute left-1.5 top-0.5 size-1.5"
-                      alt="Vector"
-                      src="/img/bnpl/vector-11.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-11.svg */}
 
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-4.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-4.svg */}
 
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-8.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-8.svg */}
                   </div>
                 </div>
 
@@ -966,23 +972,11 @@ export const BNPL = () => {
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                 <div className="relative size-5">
                   <div className="relative left-px top-1 h-[11px] w-full md:w-[19px]">
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-5.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-5.svg */}
 
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-10.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-10.svg */}
 
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-3.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-3.svg */}
                   </div>
                 </div>
 
@@ -994,17 +988,9 @@ export const BNPL = () => {
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                 <div className="relative size-5">
                   <div className="relative left-px top-1 h-[11px] w-full md:w-[19px]">
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-16.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-16.svg */}
 
-                    <img
-                      className="absolute left-0 top-0 h-[11px] w-full md:w-[19px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-1.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-1.svg */}
                   </div>
                 </div>
 
@@ -1110,11 +1096,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1126,11 +1108,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
@@ -1142,11 +1120,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1158,11 +1132,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1174,11 +1144,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1202,11 +1168,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1218,11 +1180,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1234,11 +1192,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1250,11 +1204,7 @@ export const BNPL = () => {
                         </div>
                       </div>
 
-                      <img
-                        className="relative mb-[-1.00px] h-px w-full self-stretch object-cover"
-                        alt="Vector"
-                        src="/img/bnpl/vector-140.svg"
-                      />
+                      {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
                     </div>
                   </div>
                 </div>
@@ -1326,17 +1276,9 @@ export const BNPL = () => {
 
             <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
               <div className="relative left-1 top-[3px] h-[18px] w-4">
-                <img
-                  className="absolute left-[7px] top-0 h-[18px] w-0.5"
-                  alt="Vector"
-                  src="/img/bnpl/vector-26.svg"
-                />
+                {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
 
-                <img
-                  className="absolute left-0 top-2.5 h-[9px] w-4"
-                  alt="Vector"
-                  src="/img/bnpl/vector-28.svg"
-                />
+                {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
               </div>
             </div>
 
@@ -1344,17 +1286,9 @@ export const BNPL = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
                 <div className="relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
                   <div className="relative left-0.5 top-0.5 size-5">
-                    <img
-                      className="absolute left-0 top-0 size-[17px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-25.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-25.svg */}
 
-                    <img
-                      className="absolute left-[13px] top-[13px] size-[7px]"
-                      alt="Vector"
-                      src="/img/bnpl/vector-29.svg"
-                    />
+                    {/* Removed broken SVG: /img/bnpl/vector-29.svg */}
                   </div>
                 </div>
               </div>
@@ -1366,28 +1300,16 @@ export const BNPL = () => {
 
             <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
               <div className="relative left-1 top-[3px] h-[18px] w-4">
-                <img
-                  className="absolute left-[7px] top-0 h-[18px] w-0.5"
-                  alt="Vector"
-                  src="/img/bnpl/vector-26.svg"
-                />
+                {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
 
-                <img
-                  className="absolute left-0 top-2.5 h-[9px] w-4"
-                  alt="Vector"
-                  src="/img/bnpl/vector-28.svg"
-                />
+                {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
               </div>
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-green-60 p-6">
               <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
                 <div className="relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
-                  <img
-                    className="h-3.5w-full absolute left-[3px] top-1.5 md:w-[19px]"
-                    alt="Vector"
-                    src="/img/bnpl/vector-30.svg"
-                  />
+                  {/* Removed broken SVG: /img/bnpl/vector-30.svg */}
                 </div>
               </div>
 
@@ -1403,11 +1325,7 @@ export const BNPL = () => {
             {t('backoffice.title')}
           </p>
 
-          <img
-            className="relative h-px w-full self-stretch object-cover"
-            alt="Vector"
-            src="/img/bnpl/vector-140.svg"
-          />
+          {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] md:w-[500px]">
