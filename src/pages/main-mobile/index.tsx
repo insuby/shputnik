@@ -103,7 +103,7 @@ export const MainMobile = () => {
                     }}
                   />
                   <div className="relative flex size-[102px] md:size-[140px] items-center justify-center gap-4 rounded-2xl bg-white p-4">
-                    <div className="absolute -top-2 right-0 -translate-x-1/2">
+                    <div className="absolute -top-2 right-0 ">
                       <CheckIcon
                         className="inline-flex items-center justify-center rounded-[100px] p-1.5"
                         bgColor="#00CB82"
@@ -1258,7 +1258,7 @@ export const MainMobile = () => {
 <g opacity="0.4" filter="url(#filter4_f_9587_15004)">
 <path d="M223.831 184.747C230.785 217.987 195.277 243.282 176.654 251.775C59.5301 271.881 82.609 129.554 127.703 87.3444C172.797 45.1347 284.639 41.7219 293.772 85.3777C302.905 129.033 215.139 143.198 223.831 184.747Z" fill="#725DD6"/>
 </g>
-<rect x="127.407" y="129" width="126.503" height="56.3472" rx="19.599" fill="white" fill-opacity="0.36"/>
+<rect x="127.407" y="129" width="126.503" height="56.3472" rx="19.599" fill="white" fillOpacity="0.36"/>
 <rect x="132.307" y="133.9" width="116.703" height="46.5477" rx="14.6993" fill="white"/>
 <mask id="mask0_9587_15004" style={{"maskType":"alpha"}} maskUnits="userSpaceOnUse" x="147" y="148" width="15" height="19">
 <path d="M147.006 148.312H161.495V166.036H147.006V148.312Z" fill="#1D2C62"/>

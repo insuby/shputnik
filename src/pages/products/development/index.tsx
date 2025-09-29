@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
-import { isMobile } from 'shared/lib/is-mobile';
+import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { HeroButtons } from 'shared/ui';
 
 // @ts-ignore
@@ -19,6 +19,7 @@ export const Development = () => {
   const { t } = useTranslation(['development']);
   const sliderRef = useRef<Slider>(null);
   const { setIsOpen } = useFeedbackForm();
+  const isMobile = useIsMobile();
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
 
@@ -140,7 +141,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#725DD6" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#725DD6" fillOpacity="0.08"/>
 <path d="M32 37V44" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M21.6077 26C20.2869 28.2876 19.7579 30.9472 20.1027 33.5661C20.4474 36.1851 21.6467 38.6171 23.5145 40.485C25.3823 42.3529 27.8142 43.5524 30.4332 43.8973C33.0521 44.2422 35.7117 43.7133 37.9994 42.3927C40.2871 41.072 42.0752 39.0334 43.0862 36.593C44.0973 34.1526 44.2749 31.4468 43.5914 28.8952C42.908 26.3436 41.4017 24.0888 39.3062 22.4805C37.2106 20.8722 34.643 20.0003 32.0015 20V27C33.1021 27.0002 34.1719 27.3636 35.0449 28.0338C35.918 28.704 36.5455 29.6436 36.8302 30.7067C37.1149 31.7699 37.0408 32.8973 36.6195 33.9141C36.1981 34.9309 35.4531 35.7802 34.4999 36.3304C33.5466 36.8806 32.4385 37.1009 31.3473 36.9572C30.2561 36.8134 29.2428 36.3136 28.4646 35.5353C27.6864 34.757 27.1867 33.7437 27.0431 32.6525C26.8995 31.5613 27.1199 30.4532 27.6702 29.5L21.6077 26Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M27.1687 33.295L20.4062 35.1063" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -161,7 +162,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#00CB82" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#00CB82" fillOpacity="0.08"/>
 <path d="M35 29H29V35H35V29Z" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M41 22H23C22.4477 22 22 22.4477 22 23V41C22 41.5523 22.4477 42 23 42H41C41.5523 42 42 41.5523 42 41V23C42 22.4477 41.5523 22 41 22Z" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M42 29H45" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -189,7 +190,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#3573FC" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M36 22H42V28" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M35 29L42 22" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M28 42H22V36" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -217,7 +218,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#3573FC" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M26 30C28.2091 30 30 28.2091 30 26C30 23.7909 28.2091 22 26 22C23.7909 22 22 23.7909 22 26C22 28.2091 23.7909 30 26 30Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M38 30C40.2091 30 42 28.2091 42 26C42 23.7909 40.2091 22 38 22C35.7909 22 34 23.7909 34 26C34 28.2091 35.7909 30 38 30Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M26 42C28.2091 42 30 40.2091 30 38C30 35.7909 28.2091 34 26 34C23.7909 34 22 35.7909 22 38C22 40.2091 23.7909 42 26 42Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -240,7 +241,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#E74951" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#E74951" fillOpacity="0.08"/>
 <path d="M20 31L32 19L44 31H38V35H26V31H20Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M38 43H26" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M38 39H26" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -261,7 +262,7 @@ export const Development = () => {
             <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
               <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#FBAB00" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#FBAB00" fillOpacity="0.08"/>
 <path d="M27.5863 43H22C21.7348 43 21.4804 42.8947 21.2929 42.7071C21.1054 42.5196 21 42.2653 21 42V36.4138C21.0001 36.1489 21.1053 35.8949 21.2925 35.7075L36.7075 20.2925C36.895 20.1051 37.1493 19.9999 37.4144 19.9999C37.6795 19.9999 37.9337 20.1051 38.1213 20.2925L43.7075 25.875C43.8949 26.0626 44.0002 26.3168 44.0002 26.5819C44.0002 26.847 43.8949 27.1013 43.7075 27.2888L28.2925 42.7075C28.1051 42.8947 27.8511 42.9999 27.5863 43Z" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M33 24L40 31" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M36.5 27.5L24.5 39.5" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -334,7 +335,7 @@ export const Development = () => {
                       <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="44" height="44" rx="22" fill="#00CB82" fill-opacity="0.08"/>
+<rect width="44" height="44" rx="22" fill="#00CB82" fillOpacity="0.08"/>
 <path d="M14.5 28L29.5 28C30.3284 28 31 27.3284 31 26.5V16C31 15.1716 30.3284 14.5 29.5 14.5L14.5 14.5C13.6716 14.5 13 15.1716 13 16V26.5C13 27.3284 13.6716 28 14.5 28Z" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M25 31H19" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 
@@ -363,7 +364,7 @@ export const Development = () => {
                       <div className="absolute left-[58px] top-[92px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="44" height="44" rx="22" fill="#3573FC" fill-opacity="0.08"/>
+<rect width="44" height="44" rx="22" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M28.75 24.25L25 28L19 26.5L13.75 22.75" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M16.8125 16.6216L21.9987 15.25L27.185 16.6216" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M13.2217 15.6643L10.8292 20.4511C10.7403 20.6289 10.7256 20.8348 10.7884 21.0234C10.8511 21.212 10.9862 21.368 11.1639 21.4571L13.7495 22.7499L16.8133 16.6215L14.2286 15.3296C14.1405 15.2854 14.0446 15.259 13.9463 15.2519C13.848 15.2449 13.7493 15.2572 13.6558 15.2883C13.5623 15.3194 13.4758 15.3686 13.4013 15.4331C13.3269 15.4976 13.2658 15.5762 13.2217 15.6643Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -396,7 +397,7 @@ export const Development = () => {
                       <div className="absolute left-32 top-[138px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="44" height="44" rx="22" fill="#E74951" fill-opacity="0.08"/>
+<rect width="44" height="44" rx="22" fill="#E74951" fillOpacity="0.08"/>
 <path d="M17.5 20.5C19.1569 20.5 20.5 19.1569 20.5 17.5C20.5 15.8431 19.1569 14.5 17.5 14.5C15.8431 14.5 14.5 15.8431 14.5 17.5C14.5 19.1569 15.8431 20.5 17.5 20.5Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M26.5 20.5C28.1569 20.5 29.5 19.1569 29.5 17.5C29.5 15.8431 28.1569 14.5 26.5 14.5C24.8431 14.5 23.5 15.8431 23.5 17.5C23.5 19.1569 24.8431 20.5 26.5 20.5Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M17.5 29.5C19.1569 29.5 20.5 28.1569 20.5 26.5C20.5 24.8431 19.1569 23.5 17.5 23.5C15.8431 23.5 14.5 24.8431 14.5 26.5C14.5 28.1569 15.8431 29.5 17.5 29.5Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -532,17 +533,17 @@ export const Development = () => {
                   <svg width="346" height="124" viewBox="0 0 346 124" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative w-full flex-1 grow self-stretch" alt="Frame">
 
 <rect x="7" width="92" height="92" rx="24" fill="white"/>
-<rect x="27" y="20" width="52" height="52" rx="26" fill="#3573FC" fill-opacity="0.08"/>
+<rect x="27" y="20" width="52" height="52" rx="26" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M41.0874 39.615L52.9999 46.135L64.9124 39.615" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M53.48 33.1249L64.48 39.1474C64.6371 39.2334 64.7682 39.3599 64.8597 39.5138C64.9511 39.6677 64.9996 39.8434 65 40.0224V51.9774C64.9996 52.1565 64.9511 52.3321 64.8597 52.486C64.7682 52.64 64.6371 52.7665 64.48 52.8524L53.48 58.8749C53.3328 58.9555 53.1678 58.9977 53 58.9977C52.8322 58.9977 52.6672 58.9555 52.52 58.8749L41.52 52.8524C41.3629 52.7665 41.2318 52.64 41.1403 52.486C41.0489 52.3321 41.0004 52.1565 41 51.9774V40.0224C41.0004 39.8434 41.0489 39.6677 41.1403 39.5138C41.2318 39.3599 41.3629 39.2334 41.52 39.1474L52.52 33.1249C52.6672 33.0444 52.8322 33.0022 53 33.0022C53.1678 33.0022 53.3328 33.0444 53.48 33.1249Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M53 46.1362V59" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <rect x="127" y="16" width="92" height="92" rx="24" fill="white"/>
-<rect x="147" y="36" width="52" height="52" rx="26" fill="#E74951" fill-opacity="0.08"/>
+<rect x="147" y="36" width="52" height="52" rx="26" fill="#E74951" fillOpacity="0.08"/>
 <path d="M161.087 55.615L173 62.135L184.912 55.615" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M173.48 49.1249L184.48 55.1474C184.637 55.2334 184.768 55.3599 184.86 55.5138C184.951 55.6677 185 55.8434 185 56.0224V67.9774C185 68.1565 184.951 68.3321 184.86 68.486C184.768 68.64 184.637 68.7665 184.48 68.8524L173.48 74.8749C173.333 74.9555 173.168 74.9977 173 74.9977C172.832 74.9977 172.667 74.9555 172.52 74.8749L161.52 68.8524C161.363 68.7665 161.232 68.64 161.14 68.486C161.049 68.3321 161 68.1565 161 67.9774V56.0224C161 55.8434 161.049 55.6677 161.14 55.5138C161.232 55.3599 161.363 55.2334 161.52 55.1474L172.52 49.1249C172.667 49.0444 172.832 49.0022 173 49.0022C173.168 49.0022 173.333 49.0444 173.48 49.1249Z" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M173 62.1362V75" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <rect x="247" y="32" width="92" height="92" rx="24" fill="white"/>
-<rect x="267" y="52" width="52" height="52" rx="26" fill="#725DD6" fill-opacity="0.08"/>
+<rect x="267" y="52" width="52" height="52" rx="26" fill="#725DD6" fillOpacity="0.08"/>
 <path d="M281.087 71.615L293 78.135L304.912 71.615" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M293.48 65.1249L304.48 71.1474C304.637 71.2334 304.768 71.3599 304.86 71.5138C304.951 71.6677 305 71.8434 305 72.0224V83.9774C305 84.1565 304.951 84.3321 304.86 84.486C304.768 84.64 304.637 84.7665 304.48 84.8524L293.48 90.8749C293.333 90.9555 293.168 90.9977 293 90.9977C292.832 90.9977 292.667 90.9555 292.52 90.8749L281.52 84.8524C281.363 84.7665 281.232 84.64 281.14 84.486C281.049 84.3321 281 84.1565 281 83.9774V72.0224C281 71.8434 281.049 71.6677 281.14 71.5138C281.232 71.3599 281.363 71.2334 281.52 71.1474L292.52 65.1249C292.667 65.0444 292.832 65.0022 293 65.0022C293.168 65.0022 293.333 65.0444 293.48 65.1249Z" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M293 78.1362V91" stroke="#725DD6" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -585,7 +586,7 @@ export const Development = () => {
                       <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="44" height="44" rx="22" fill="#3573FC" fill-opacity="0.08"/>
+<rect width="44" height="44" rx="22" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M23.7578 14.2427L14.2424 23.7581C12.5857 25.4148 12.5857 28.1008 14.2424 29.7575L14.243 29.7582C15.8997 31.4148 18.5857 31.4148 20.2424 29.7582L29.7578 20.2427C31.4145 18.586 31.4145 15.9 29.7578 14.2433L29.7572 14.2427C28.1005 12.586 25.4145 12.586 23.7578 14.2427Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M19 19L25 25" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M25 20.5L27.25 18.25" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -615,7 +616,7 @@ export const Development = () => {
                       <div className="absolute left-[119px] top-[101px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="44" height="44" rx="22" fill="#00CB82" fill-opacity="0.08"/>
+<rect width="44" height="44" rx="22" fill="#00CB82" fillOpacity="0.08"/>
 <path d="M13.75 23.5L19 28.75L31 16.75" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 
 </svg>
@@ -793,7 +794,7 @@ export const Development = () => {
           <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#E74951" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#E74951" fillOpacity="0.08"/>
 <path d="M32 32H43" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M32 24H43" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M32 40H43" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -814,7 +815,7 @@ export const Development = () => {
           <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#00CB82" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#00CB82" fillOpacity="0.08"/>
 <path d="M40 31C41.1645 30.9991 42.3131 31.2698 43.3547 31.7906C44.3963 32.3114 45.302 33.0679 46 34" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M18 34C18.698 33.0679 19.6037 32.3114 20.6453 31.7906C21.6869 31.2698 22.8355 30.9991 24 31" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M32 39C34.7614 39 37 36.7614 37 34C37 31.2386 34.7614 29 32 29C29.2386 29 27 31.2386 27 34C27 36.7614 29.2386 39 32 39Z" stroke="#00CB82" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
@@ -835,7 +836,7 @@ export const Development = () => {
           <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10">
             <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#3573FC" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#3573FC" fillOpacity="0.08"/>
 <path d="M41 35L36 40L28 38L21 33" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M25.0859 24.8287L32.0009 23L38.9159 24.8287" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.2956 23.5524L17.1056 29.9349C16.9871 30.1719 16.9675 30.4463 17.0511 30.6978C17.1348 30.9493 17.3149 31.1573 17.5519 31.2761L20.9994 32.9999L25.0844 24.8286L21.6381 23.1061C21.5207 23.0472 21.3928 23.012 21.2617 23.0026C21.1307 22.9931 20.9991 23.0096 20.8744 23.0511C20.7497 23.0925 20.6344 23.1581 20.5351 23.2441C20.4358 23.3301 20.3544 23.4349 20.2956 23.5524Z" stroke="#3573FC" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>

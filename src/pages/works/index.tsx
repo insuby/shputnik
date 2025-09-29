@@ -70,7 +70,7 @@ export const Works = () => {
                         {job.tags.map((tag, index) => (
                           <Badge
                             key={index}
-                            className="h-8 rounded-[52px] bg-blue-10 px-3 py-2 font-medium text-blue-50 shadow-none [font-family:var(--font-family)] hover:bg-blue-10 hover:text-blue-50"
+                            className="!h-8 !rounded-[52px] px-3 py-2 font-medium  shadow-none [font-family:var(--font-family)] !bg-blue-10 !text-blue-50"
                           >
                             {tag}
                           </Badge>
@@ -81,7 +81,7 @@ export const Works = () => {
 
                   <AccordionContent>
                     <CardContent className="mb-4 flex flex-col items-start gap-7 rounded-b-[32px] border-t border-solid border-gray-20 bg-gray-10 p-6">
-                      <div className="flex flex-col items-start gap-6">
+                      <div className="flex flex-col items-start gap-6 pt-6 px-3">
                         <div className="flex flex-col items-start gap-3">
                           <h3 className="w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Inter',Helvetica]">
                             {t('sections.responsibilities')}
@@ -139,7 +139,7 @@ export const Works = () => {
 
                       <div className="flex w-full items-center gap-6">
                         <Button
-                          className="h-[60px] w-full rounded-[100px] bg-blue-50 px-6 py-3 md:w-fit "
+                          className="!h-[60px] w-full !rounded-[100px] !bg-blue-50 !px-6 !py-3 md:w-fit "
                           onClick={onClick}
                         >
                           <span className="relative mt-[-1.00px] w-full whitespace-nowrap text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-white [font-style:var(--body-2-r-font-style)] md:w-fit">

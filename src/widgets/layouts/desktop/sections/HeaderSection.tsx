@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import { LanguageSwitcher } from 'widgets';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -15,39 +15,14 @@ export const HeaderSection = () => {
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const assetsPrefetchedRef = useRef(false);
-
-  const preloadAssets = useCallback(() => {
-    if (assetsPrefetchedRef.current) return;
-    const imageUrls = ['/img/trust/frame-17-1.svg'];
-
-    imageUrls.forEach((url) => {
-      const existing = document.head.querySelector(
-        `link[rel="prefetch"][href="${url}"]`,
-      );
-      if (!existing) {
-        const link = document.createElement('link');
-        link.rel = 'prefetch';
-        link.as = 'image';
-        link.href = url;
-        document.head.appendChild(link);
-      }
-
-      const img = new Image();
-      img.src = url;
-    });
-
-    assetsPrefetchedRef.current = true;
-  }, []);
 
   useEffect(() => {
     if (isMenuOpen) {
       document.body.style.overflow = 'hidden';
-      preloadAssets();
     } else {
       document.body.style.overflow = 'auto';
     }
-  }, [isMenuOpen, preloadAssets]);
+  }, [isMenuOpen]);
 
   const navItems = [
     { id: 2, label: t('about', { ns: 'nav' }), pathname: RoutesPath.ABOUT },
@@ -164,7 +139,7 @@ export const HeaderSection = () => {
             {t('actions.contactUs')}
           </div>
         </button>
-        <LanguageSwitcher />
+        {/*<LanguageSwitcher />*/}
       </div>
 
       {isMenuOpen && (
@@ -1081,6 +1056,52 @@ export const HeaderSection = () => {
                           fill="currentColor"
                         />
                         <path
+                          d="M32 32C38.0751 32 43 29.3137 43 26C43 22.6863 38.0751 20 32 20C25.9249 20 21 22.6863 21 26C21 29.3137 25.9249 32 32 32Z"
+                          stroke="#01AD7C"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M21 26V32C21 35.3138 25.925 38 32 38C38.075 38 43 35.3138 43 32V26"
+                          stroke="#01AD7C"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M21 32V38C21 41.3138 25.925 44 32 44C38.075 44 43 41.3138 43 38V32"
+                          stroke="#01AD7C"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                      <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        {t('tiles.reconciliation', { ns: 'megamenu' })}
+                      </div>
+                    </Link>
+
+
+                    <Link
+                      to={RoutesPath.FDATA}
+                      className="group invisible relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                    >
+                      <svg
+                        className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          width="64"
+                          height="64"
+                          rx="24"
+                          fill="currentColor"
+                        />
+                        <path
                           d="M32 37V44"
                           stroke="#FBAB00"
                           strokeWidth="1.6"
@@ -1107,50 +1128,6 @@ export const HeaderSection = () => {
                       </div>
                     </Link>
 
-                    <Link
-                      to={RoutesPath.FDATA}
-                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
-                    >
-                      <svg
-                        className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
-                        width="64"
-                        height="64"
-                        viewBox="0 0 64 64"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <rect
-                          width="64"
-                          height="64"
-                          rx="24"
-                          fill="currentColor"
-                        />
-                        <path
-                          d="M32 32C38.0751 32 43 29.3137 43 26C43 22.6863 38.0751 20 32 20C25.9249 20 21 22.6863 21 26C21 29.3137 25.9249 32 32 32Z"
-                          stroke="#01AD7C"
-                          strokeWidth="1.6"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M21 26V32C21 35.3138 25.925 38 32 38C38.075 38 43 35.3138 43 32V26"
-                          stroke="#01AD7C"
-                          strokeWidth="1.6"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M21 32V38C21 41.3138 25.925 44 32 44C38.075 44 43 41.3138 43 38V32"
-                          stroke="#01AD7C"
-                          strokeWidth="1.6"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('tiles.reconciliation', { ns: 'megamenu' })}
-                      </div>
-                    </Link>
                   </div>
                 </div>
 

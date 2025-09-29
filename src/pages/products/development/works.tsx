@@ -4,8 +4,11 @@ import { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
+// @ts-ignore
 import slide1 from './images/slide1.png';
+// @ts-ignore
 import slide2 from './images/slide2.png';
+// @ts-ignore
 import slide3 from './images/slide3.png';
 
 export const Works = () => {

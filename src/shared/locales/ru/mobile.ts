@@ -111,7 +111,7 @@ export const mobile = {
   reviews: 'Отзывы',
   services: 'Услуги',
   customDevelopment: 'Индивидуальная разработка',
-  fdata: 'F-data',
+  fdata: 'ПО для реконсиляции данных',
   vacancies: 'Вакансии',
   blog: 'Блог',
   lending: 'Кредитование',

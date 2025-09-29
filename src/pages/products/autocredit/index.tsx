@@ -39,20 +39,45 @@ export const Autocredit = () => {
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:h-[620px] md:p-12">
-          <svg width="1643" height="1443" viewBox="0 0 1643 1443" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]" alt="" hidden={true}>
-
-<g opacity="0.3" filter="url(#filter0_f_9245_977)">
-<path d="M761.851 555.197C780.637 424.39 944.138 379.12 1023.54 372.836C1478.6 455.11 1204.88 944.896 983.821 1039.27C762.765 1133.65 349.219 997.349 373.892 825.552C398.565 653.755 738.368 718.706 761.851 555.197Z" fill="white"/>
-</g>
-<defs>
-<filter id="filter0_f_9245_977" x="0.000580047" y="1.52644e-05" width="1642.66" height="1443" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9245_977"/>
-</filter>
-</defs>
-
-</svg>
+          <svg
+            width="1643"
+            height="1443"
+            viewBox="0 0 1643 1443"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
+            aria-hidden={true}
+          >
+            <g opacity="0.3" filter="url(#filter0_f_9245_977)">
+              <path
+                d="M761.851 555.197C780.637 424.39 944.138 379.12 1023.54 372.836C1478.6 455.11 1204.88 944.896 983.821 1039.27C762.765 1133.65 349.219 997.349 373.892 825.552C398.565 653.755 738.368 718.706 761.851 555.197Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9245_977"
+                x="0.000580047"
+                y="1.52644e-05"
+                width="1642.66"
+                height="1443"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="186.349"
+                  result="effect1_foregroundBlur_9245_977"
+                />
+              </filter>
+            </defs>
+          </svg>
 
           <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
@@ -109,11 +134,22 @@ export const Autocredit = () => {
                     alt="Vector"
                   />
 
-                  <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                  <svg
+                    width="14"
+                    height="8"
+                    viewBox="0 0 14 8"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                  >
+                    <path
+                      d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                      stroke="#9FA7BC"
+                      strokeWidth="1.49488"
+                      strokeLinecap="square"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
                 </div>
               </div>
 
@@ -165,11 +201,22 @@ export const Autocredit = () => {
                       alt="Vector"
                     />
 
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                    >
+                      <path
+                        d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                        stroke="#9FA7BC"
+                        strokeWidth="1.49488"
+                        strokeLinecap="square"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
 
@@ -190,11 +237,22 @@ export const Autocredit = () => {
                       alt="Vector"
                     />
 
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                    >
+                      <path
+                        d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                        stroke="#9FA7BC"
+                        strokeWidth="1.49488"
+                        strokeLinecap="square"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -217,11 +275,22 @@ export const Autocredit = () => {
                       alt="Vector"
                     />
 
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                    >
+                      <path
+                        d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                        stroke="#9FA7BC"
+                        strokeWidth="1.49488"
+                        strokeLinecap="square"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
 
@@ -242,11 +311,22 @@ export const Autocredit = () => {
                       alt="Vector"
                     />
 
-                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                    <svg
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                    >
+                      <path
+                        d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                        stroke="#9FA7BC"
+                        strokeWidth="1.49488"
+                        strokeLinecap="square"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -270,11 +350,22 @@ export const Autocredit = () => {
                         alt="Vector"
                       />
 
-                      <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[3px] top-2.5 h-[11px] w-1.5 -rotate-90" alt="Vector">
-
-<path d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                      <svg
+                        width="14"
+                        height="8"
+                        viewBox="0 0 14 8"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute left-[3px] top-2.5 h-[11px] w-1.5 -rotate-90"
+                      >
+                        <path
+                          d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -321,11 +412,22 @@ export const Autocredit = () => {
                       </div>
 
                       <div className="relative ml-[-13855.74px] mt-[-753.75px] size-[20.93px] bg-[100%_100%]">
-                        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-2.5w-full absolute left-[-14133px] top-[-754px] md:w-[15px]" alt="Vector">
-
-<path d="M1.10861 7.28462L5.91182 12.0878L16.8906 1.10905" stroke="#3573FC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                        <svg
+                          width="18"
+                          height="13"
+                          viewBox="0 0 18 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-2.5w-full absolute left-[-14133px] top-[-754px] md:w-[15px]"
+                        >
+                          <path
+                            d="M1.10861 7.28462L5.91182 12.0878L16.8906 1.10905"
+                            stroke="#3573FC"
+                            strokeWidth="1.49488"
+                            strokeLinecap="square"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
                       </div>
                     </div>
 
@@ -450,20 +552,45 @@ export const Autocredit = () => {
             </div>
           </motion.div>
 
-          <svg width="847" height="880" viewBox="0 0 847 880" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]" alt="" hidden={true}>
-
-<g opacity="0.12" filter="url(#filter0_f_9245_2387)">
-<path d="M507.31 503.032C531.657 577.593 456.513 644.621 415.897 668.816C152.064 744.51 169.163 411.923 262.05 303.644C354.938 195.364 610.856 159.328 642.832 257.254C674.808 355.18 476.877 409.83 507.31 503.032Z" fill="#9FA7BC"/>
-</g>
-<defs>
-<filter id="filter0_f_9245_2387" x="0" y="0" width="846.432" height="880" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9245_2387"/>
-</filter>
-</defs>
-
-</svg>
+          <svg
+            width="847"
+            height="880"
+            viewBox="0 0 847 880"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
+            aria-hidden={true}
+          >
+            <g opacity="0.12" filter="url(#filter0_f_9245_2387)">
+              <path
+                d="M507.31 503.032C531.657 577.593 456.513 644.621 415.897 668.816C152.064 744.51 169.163 411.923 262.05 303.644C354.938 195.364 610.856 159.328 642.832 257.254C674.808 355.18 476.877 409.83 507.31 503.032Z"
+                fill="#9FA7BC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9245_2387"
+                x="0"
+                y="0"
+                width="846.432"
+                height="880"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_9245_2387"
+                />
+              </filter>
+            </defs>
+          </svg>
         </div>
       </div>
 
@@ -513,8 +640,8 @@ export const Autocredit = () => {
         >
           <Marquee
             fade
-            className="relative flex w-full flex-1 grow gap-1 self-stretch rounded-[32px] bg-[#f9fafd] p-7 md:h-[609px] md:p-0"
-            innerClassName="!w-[750px]"
+            className="relative flex w-full flex-1 grow  !gap-[1rem] self-stretch rounded-[32px] bg-[#f9fafd] p-7 md:h-[609px] md:p-0"
+            innerClassName="!gap-[1rem] !w-[750px]"
           >
             <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 md:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">

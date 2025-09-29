@@ -37,12 +37,12 @@ export const islamfinance = {
   features: {
     title: 'Мы работаем со всеми типами исламского финансирования',
     types: {
-      murabaha: 'Мурабаха (Murabaha)',
-      ijarah: 'Иджара (Ijarah)',
-      tawarruq: 'Таваррук (Tawarruq)',
-      wakala: 'Вакала (Wakala)',
-      musharakah: 'Мушарака (Musharakah)',
-      istisna: "Истисна (Istisna'a)",
+      murabaha: 'Мурабаха',
+      ijarah: 'Иджара',
+      tawarruq: 'Таваррук',
+      wakala: 'Вакала',
+      musharakah: 'Мушарака',
+      istisna: 'Истисна',
     },
   },
 };

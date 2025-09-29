@@ -3,6 +3,7 @@ export default {
     titleA: 'Software for',
     titleB: 'automation',
     titleC: 'of lending',
+    description: 'description',
     monthlyPayment: 'Monthly payment',
     phoneAlt: 'Smartphone with credit app interface',
   },

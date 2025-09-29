@@ -67,13 +67,32 @@ export const DivWrapper = () => {
               aria-label="Vector"
             >
               <g opacity="0.32" filter="url(#filter0_f_9012_1637)">
-                <path d="M313.244 383.268C283.607 314.398 349.334 244.079 385.902 217.528C630.502 122.612 643.04 440.702 563.996 551.827C484.952 662.953 244.451 719.431 205.527 628.979C166.603 538.528 350.29 469.355 313.244 383.268Z" fill="#1C222F"/>
+                <path
+                  d="M313.244 383.268C283.607 314.398 349.334 244.079 385.902 217.528C630.502 122.612 643.04 440.702 563.996 551.827C484.952 662.953 244.451 719.431 205.527 628.979C166.603 538.528 350.29 469.355 313.244 383.268Z"
+                  fill="#1C222F"
+                />
               </g>
               <defs>
-                <filter id="filter0_f_9012_1637" x="0" y="0" width="807.419" height="874" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                  <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9012_1637"/>
+                <filter
+                  id="filter0_f_9012_1637"
+                  x="0"
+                  y="0"
+                  width="807.419"
+                  height="874"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="100"
+                    result="effect1_foregroundBlur_9012_1637"
+                  />
                 </filter>
               </defs>
             </svg>
@@ -87,13 +106,32 @@ export const DivWrapper = () => {
               aria-label="Vector"
             >
               <g opacity="0.32" filter="url(#filter0_f_9012_1641)">
-                <path d="M505.932 261.319C547.13 186.048 656.863 195.734 706.579 209.985C964.587 363.598 686.644 599.143 530.734 606.219C374.823 613.294 154.36 436.28 208.469 337.422C262.577 238.564 454.434 355.407 505.932 261.319Z" fill="white"/>
+                <path
+                  d="M505.932 261.319C547.13 186.048 656.863 195.734 706.579 209.985C964.587 363.598 686.644 599.143 530.734 606.219C374.823 613.294 154.36 436.28 208.469 337.422C262.577 238.564 454.434 355.407 505.932 261.319Z"
+                  fill="white"
+                />
               </g>
               <defs>
-                <filter id="filter0_f_9012_1641" x="0" y="0" width="1012" height="806.538" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                  <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-                  <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9012_1641"/>
+                <filter
+                  id="filter0_f_9012_1641"
+                  x="0"
+                  y="0"
+                  width="1012"
+                  height="806.538"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="100"
+                    result="effect1_foregroundBlur_9012_1641"
+                  />
                 </filter>
               </defs>
             </svg>
@@ -122,11 +160,22 @@ export const DivWrapper = () => {
                       </div>
                     </div>
 
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
-
-<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="relative size-[17.94px]"
+                    >
+                      <path
+                        d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                        stroke="#9FA7BC"
+                        strokeWidth="1.49488"
+                        strokeLinecap="square"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[11.96px]">
@@ -180,7 +229,13 @@ export const DivWrapper = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-label="Caret right"
                       >
-                        <path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
 
@@ -204,7 +259,13 @@ export const DivWrapper = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-label="Caret right"
                       >
-                        <path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -230,7 +291,13 @@ export const DivWrapper = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-label="Caret right"
                       >
-                        <path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
 
@@ -254,7 +321,13 @@ export const DivWrapper = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-label="Caret right"
                       >
-                        <path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
                   </div>
@@ -271,11 +344,22 @@ export const DivWrapper = () => {
                         </div>
                       </div>
 
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
-
-<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative size-[17.94px]"
+                      >
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
 
                     <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
@@ -289,11 +373,22 @@ export const DivWrapper = () => {
                         </div>
                       </div>
 
-                      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative size-[17.94px]" alt="Caret right">
-
-<path d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501" stroke="#9FA7BC" strokeWidth="1.49488" strokeLinecap="square" strokeLinejoin="round"/>
-
-</svg>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative size-[17.94px]"
+                      >
+                        <path
+                          d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
+                          stroke="#9FA7BC"
+                          strokeWidth="1.49488"
+                          strokeLinecap="square"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
                     </div>
                   </div>
                 </div>
@@ -304,7 +399,7 @@ export const DivWrapper = () => {
                 </div>
 
                 <div className="relative flex w-full flex-col gap-[20.5px]">
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -319,7 +414,13 @@ export const DivWrapper = () => {
                           xmlns="http://www.w3.org/2000/svg"
                           aria-label="Check"
                         >
-                          <path d="M2.5 9L6 12.5L14 4.5" stroke="#3573FC" strokeWidth="2" strokeLinecap="square" strokeLinejoin="round"/>
+                          <path
+                            d="M2.5 9L6 12.5L14 4.5"
+                            stroke="#3573FC"
+                            strokeWidth="2"
+                            strokeLinecap="square"
+                            strokeLinejoin="round"
+                          />
                         </svg>
                       </div>
                       <div className="relative grid w-full grid-cols-3 gap-[17.94px]">
@@ -351,7 +452,7 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] bg-white p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -387,7 +488,7 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] bg-white p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

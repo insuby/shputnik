@@ -3,13 +3,14 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { isMobile } from 'shared/lib/is-mobile';
+import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { Check10 } from 'shared/ui';
 
 import { CrmCapabilities } from './crm-capabilities.tsx';
 
 export const ZaimChecker = () => {
   const { t } = useTranslation('widgets');
+  const isMobile = useIsMobile();
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -90,7 +91,7 @@ export const ZaimChecker = () => {
         <div className="relative flex w-full flex-col items-start gap-7 md:w-[520px]">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#725DD6" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#725DD6" fillOpacity="0.08"/>
 <path d="M38.5 21H43V25.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M38.5 43H43V38.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M25.5 43H21V38.5" stroke="#725DD6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -268,7 +269,7 @@ export const ZaimChecker = () => {
         <div className="relative flex w-full flex-col items-start justify-center gap-7 md:w-[520px]">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="64" height="64" rx="32" fill="#00CB82" fill-opacity="0.08"/>
+<rect width="64" height="64" rx="32" fill="#00CB82" fillOpacity="0.08"/>
 <path d="M44 23H20C19.4477 23 19 23.4477 19 24V40C19 40.5523 19.4477 41 20 41H44C44.5523 41 45 40.5523 45 40V24C45 23.4477 44.5523 23 44 23Z" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M37 37H41" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M31 37H33" stroke="#00CB82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

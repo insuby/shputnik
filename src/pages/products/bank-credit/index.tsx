@@ -955,7 +955,7 @@ export const BankCredit = () => {
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="relative flex-[0_0_auto]" alt="Frame">
 
-<rect width="60" height="60" rx="30" fill="#E74951" fill-opacity="0.08"/>
+<rect width="60" height="60" rx="30" fill="#E74951" fillOpacity="0.08"/>
 <path d="M17.75 39.625H42.25" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M32.625 39.625V32.625H27.375V39.625" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
 <path d="M20.375 28.7629V39.625" stroke="#E74951" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>

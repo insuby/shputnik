@@ -14,11 +14,12 @@ import {
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import { isMobile } from 'shared/lib/is-mobile';
+import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { CheckIcon, HeroButtons } from 'shared/ui';
 
 export const IslamFinance = () => {
   const { t } = useTranslation(['islamfinance']);
+  const isMobile = useIsMobile();
 
   const ref1 = useRef(null);
   const ref2 = useRef(null);

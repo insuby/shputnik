@@ -66,20 +66,44 @@ export const SectionComponentNode = () => {
       <div className="relative flex h-[520px] w-full items-start gap-4">
         <div className="relative w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:w-[686px]">
           <div className="relative h-[682px]">
-            <svg width="1077" height="1131" viewBox="0 0 1077 1131" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]" alt="Vector">
-
-<g opacity="0.32" filter="url(#filter0_f_9017_4482)">
-<path d="M464.894 521.819C440.801 465.832 494.232 408.667 523.96 387.083C722.805 309.922 732.997 568.509 668.74 658.847C604.482 749.185 408.97 795.098 377.327 721.567C345.684 648.036 495.01 591.802 464.894 521.819Z" fill="#3573FC"/>
-</g>
-<defs>
-<filter id="filter0_f_9017_4482" x="-3.05339e-05" y="-0.000152669" width="1076.87" height="1131" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9017_4482"/>
-</filter>
-</defs>
-
-</svg>
+            <svg
+              width="1077"
+              height="1131"
+              viewBox="0 0 1077 1131"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]"
+            >
+              <g opacity="0.32" filter="url(#filter0_f_9017_4482)">
+                <path
+                  d="M464.894 521.819C440.801 465.832 494.232 408.667 523.96 387.083C722.805 309.922 732.997 568.509 668.74 658.847C604.482 749.185 408.97 795.098 377.327 721.567C345.684 648.036 495.01 591.802 464.894 521.819Z"
+                  fill="#3573FC"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_9017_4482"
+                  x="-3.05339e-05"
+                  y="-0.000152669"
+                  width="1076.87"
+                  height="1131"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="186.349"
+                    result="effect1_foregroundBlur_9017_4482"
+                  />
+                </filter>
+              </defs>
+            </svg>
 
             <motion.div
               id="animate_33"
@@ -90,20 +114,44 @@ export const SectionComponentNode = () => {
               className="absolute left-[62px] top-[80px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 md:w-[304px]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
-                <svg width="694" height="594" viewBox="0 0 694 594" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[-49px] top-3 h-[330px] w-full md:w-[345px]" alt="Vector">
-
-<g opacity="0.4" filter="url(#filter0_f_9017_4394)">
-<path d="M348.173 228.069C368.82 192.447 421.344 198.383 445.024 205.804C566.981 282.524 430.886 392.244 356.015 393.805C281.144 395.365 177.472 307.862 204.589 261.077C231.706 214.293 322.364 272.597 348.173 228.069Z" fill="#3573FC"/>
-</g>
-<defs>
-<filter id="filter0_f_9017_4394" x="0" y="0" width="693.986" height="594" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9017_4394"/>
-</filter>
-</defs>
-
-</svg>
+                <svg
+                  width="694"
+                  height="594"
+                  viewBox="0 0 694 594"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="absolute left-[-49px] top-3 h-[330px] w-full md:w-[345px]"
+                >
+                  <g opacity="0.4" filter="url(#filter0_f_9017_4394)">
+                    <path
+                      d="M348.173 228.069C368.82 192.447 421.344 198.383 445.024 205.804C566.981 282.524 430.886 392.244 356.015 393.805C281.144 395.365 177.472 307.862 204.589 261.077C231.706 214.293 322.364 272.597 348.173 228.069Z"
+                      fill="#3573FC"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_f_9017_4394"
+                      x="0"
+                      y="0"
+                      width="693.986"
+                      height="594"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="100"
+                        result="effect1_foregroundBlur_9017_4394"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <p className="relative w-fit text-base font-semibold leading-4 tracking-normal text-gray-90 opacity-0 [font-family:'Inter',Helvetica]">
@@ -284,20 +332,44 @@ export const SectionComponentNode = () => {
               </div>
             </motion.div>
 
-            <svg width="675" height="745" viewBox="0 0 675 745" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-[57px] top-0 h-[520px] w-full md:w-[629px]" alt="Vector">
-
-<g opacity="0.32" filter="url(#filter0_f_9018_4612)">
-<path d="M399.512 346.545C450.592 351.671 470.87 414.38 474.623 445.094C450.225 623.077 255.595 524.946 215.306 440.711C175.017 356.477 221.07 193.713 288.157 200.445C355.245 207.177 335.661 340.138 399.512 346.545Z" fill="#9FA7BC"/>
-</g>
-<defs>
-<filter id="filter0_f_9018_4612" x="0" y="0" width="674.866" height="745" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-<feFlood floodOpacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9018_4612"/>
-</filter>
-</defs>
-
-</svg>
+            <svg
+              width="675"
+              height="745"
+              viewBox="0 0 675 745"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="absolute left-[57px] top-0 h-[520px] w-full md:w-[629px]"
+            >
+              <g opacity="0.32" filter="url(#filter0_f_9018_4612)">
+                <path
+                  d="M399.512 346.545C450.592 351.671 470.87 414.38 474.623 445.094C450.225 623.077 255.595 524.946 215.306 440.711C175.017 356.477 221.07 193.713 288.157 200.445C355.245 207.177 335.661 340.138 399.512 346.545Z"
+                  fill="#9FA7BC"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_9018_4612"
+                  x="0"
+                  y="0"
+                  width="674.866"
+                  height="745"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="100"
+                    result="effect1_foregroundBlur_9018_4612"
+                  />
+                </filter>
+              </defs>
+            </svg>
 
             <motion.div
               id="animate_34_right"
@@ -367,19 +439,35 @@ export const SectionComponentNode = () => {
                 </div>
               </div>
 
-              <svg width="329" height="66" viewBox="0 0 329 66" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]" alt="Vector">
-
-<path d="M0.246945 59.3598L24.7234 53.1256C29.1831 51.9896 33.916 52.8281 37.7141 55.427L46.9091 61.7187C53.991 66.5645 63.6343 64.9642 68.7713 58.0906L78.6249 44.9058C82.3248 39.9552 88.544 37.5767 94.6031 38.795L123.082 44.5216C128.474 45.6058 133.895 42.7984 136.121 37.7694L140.075 28.8355C142.413 23.5523 149.804 23.2668 152.543 28.3538V28.3538C155.376 33.6154 163.09 33.0811 165.171 27.4791L171.373 10.7801C176.263 -2.38534 194.943 -2.21709 199.596 11.0343L213.169 49.699C215.05 55.0563 222.63 55.0476 224.498 49.686V49.686C226.389 44.2592 234.091 44.3384 235.871 49.8029L237.582 55.0591C239.866 62.0732 249.68 62.3662 252.378 55.5009L262.421 29.9462C265.432 22.2846 275.8 21.1399 280.41 27.9602V27.9602C283.668 32.7804 290.285 33.9149 294.963 30.4551L328.405 5.71819" stroke="url(#paint0_linear_9018_4609)" strokeWidth="2"/>
-<defs>
-<linearGradient id="paint0_linear_9018_4609" x1="0.246945" y1="43.5681" x2="328.405" y2="43.5681" gradientUnits="userSpaceOnUse">
-<stop stopColor="white"/>
-<stop offset="0.269231" stopColor="#00CB82"/>
-<stop offset="0.692308" stopColor="#00CB82"/>
-<stop offset="1" stopColor="white"/>
-</linearGradient>
-</defs>
-
-</svg>
+              <svg
+                width="329"
+                height="66"
+                viewBox="0 0 329 66"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]"
+              >
+                <path
+                  d="M0.246945 59.3598L24.7234 53.1256C29.1831 51.9896 33.916 52.8281 37.7141 55.427L46.9091 61.7187C53.991 66.5645 63.6343 64.9642 68.7713 58.0906L78.6249 44.9058C82.3248 39.9552 88.544 37.5767 94.6031 38.795L123.082 44.5216C128.474 45.6058 133.895 42.7984 136.121 37.7694L140.075 28.8355C142.413 23.5523 149.804 23.2668 152.543 28.3538V28.3538C155.376 33.6154 163.09 33.0811 165.171 27.4791L171.373 10.7801C176.263 -2.38534 194.943 -2.21709 199.596 11.0343L213.169 49.699C215.05 55.0563 222.63 55.0476 224.498 49.686V49.686C226.389 44.2592 234.091 44.3384 235.871 49.8029L237.582 55.0591C239.866 62.0732 249.68 62.3662 252.378 55.5009L262.421 29.9462C265.432 22.2846 275.8 21.1399 280.41 27.9602V27.9602C283.668 32.7804 290.285 33.9149 294.963 30.4551L328.405 5.71819"
+                  stroke="url(#paint0_linear_9018_4609)"
+                  strokeWidth="2"
+                />
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_9018_4609"
+                    x1="0.246945"
+                    y1="43.5681"
+                    x2="328.405"
+                    y2="43.5681"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stopColor="white" />
+                    <stop offset="0.269231" stopColor="#00CB82" />
+                    <stop offset="0.692308" stopColor="#00CB82" />
+                    <stop offset="1" stopColor="white" />
+                  </linearGradient>
+                </defs>
+              </svg>
 
               <div className="absolute left-[180px] top-[131px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
             </motion.div>

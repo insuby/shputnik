@@ -38,16 +38,35 @@ export const Frame = () => {
           viewBox="0 0 1125 1073"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          aria-hidden={true}
+          aria-hidden
         >
           <g opacity="0.08" filter="url(#filter0_f_50_350)">
-            <path d="M466.34 421.979C450.478 305.734 579.011 227.218 645.26 202.49C1053.79 161.752 939.561 646.609 773.871 781.079C608.18 915.549 221.919 900.047 201.087 747.375C180.255 594.704 486.167 567.285 466.34 421.979Z" fill="#3573FC"/>
+            <path
+              d="M466.34 421.979C450.478 305.734 579.011 227.218 645.26 202.49C1053.79 161.752 939.561 646.609 773.871 781.079C608.18 915.549 221.919 900.047 201.087 747.375C180.255 594.704 486.167 567.285 466.34 421.979Z"
+              fill="#3573FC"
+            />
           </g>
           <defs>
-            <filter id="filter0_f_50_350" x="0" y="0" width="1125" height="1072.76" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-              <feFlood floodOpacity="0" result="BackgroundImageFix"/>
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_50_350"/>
+            <filter
+              id="filter0_f_50_350"
+              x="0"
+              y="0"
+              width="1125"
+              height="1072.76"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="100"
+                result="effect1_foregroundBlur_50_350"
+              />
             </filter>
           </defs>
         </svg>
@@ -78,8 +97,10 @@ export const Frame = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-            className="relative w-full text-center text-[#929cb3] [font-family:'Roboto',Helvetica] md:w-[600px]"
-          ></motion.p>
+            className="w-full md:w-[786px] text-[#929cb3] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+          >
+            {t('hero.description')}
+          </motion.p>
         </div>
 
         <motion.div
@@ -115,7 +136,7 @@ export const Frame = () => {
                 }}
               />
               <div className="relative flex  size-[140px] items-center justify-center gap-4 rounded-2xl bg-white p-4">
-                <div className="absolute -top-2 right-0 -translate-x-1/2">
+                <div className="absolute -top-2 right-0 ">
                   <CheckIcon
                     className="inline-flex items-center justify-center rounded-[100px] p-1.5"
                     bgColor="#00CB82"
@@ -197,12 +218,48 @@ export const Frame = () => {
               xmlns="http://www.w3.org/2000/svg"
               aria-label="Money"
             >
-              <path d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M26.25 7H1.75V21H26.25V7Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M26.25 11.375C25.157 11.1897 24.1487 10.6691 23.3648 9.88521C22.5809 9.10132 22.0603 8.093 21.875 7" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M21.875 21C22.0603 19.907 22.5809 18.8987 23.3648 18.1148C24.1487 17.3309 25.157 16.8103 26.25 16.625" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M1.75 16.625C2.843 16.8103 3.85132 17.3309 4.63521 18.1148C5.4191 18.8987 5.93975 19.907 6.125 21" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-              <path d="M6.125 7C5.93975 8.093 5.4191 9.10132 4.63521 9.88521C3.85132 10.6691 2.843 11.1897 1.75 11.375" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+              <path
+                d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M26.25 7H1.75V21H26.25V7Z"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M26.25 11.375C25.157 11.1897 24.1487 10.6691 23.3648 9.88521C22.5809 9.10132 22.0603 8.093 21.875 7"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M21.875 21C22.0603 19.907 22.5809 18.8987 23.3648 18.1148C24.1487 17.3309 25.157 16.8103 26.25 16.625"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M1.75 16.625C2.843 16.8103 3.85132 17.3309 4.63521 18.1148C5.4191 18.8987 5.93975 19.907 6.125 21"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M6.125 7C5.93975 8.093 5.4191 9.10132 4.63521 9.88521C3.85132 10.6691 2.843 11.1897 1.75 11.375"
+                stroke="#3573FCFF"
+                strokeWidth="1.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
           </div>
 
@@ -302,27 +359,25 @@ export const Frame = () => {
                 <div className="w/full relative h-3.5 self-stretch">
                   <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
                     <svg
-                      className="h-1w-full absolute left-0 top-1 md:w-[260px]"
-                      width="260"
-                      height="4"
-                      viewBox="0 0 260 4"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Vector"
-                    >
-                      <path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
-                    </svg>
-
-                    <svg
-                      className="h-1w-full absolute left-0 top-1 md:w-[167px]"
                       width="260"
-                      height="4"
-                      viewBox="0 0 260 4"
+                      height="14"
+                      viewBox="0 0 260 14"
                       fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Vector"
                     >
-                      <path d="M2 2L258 2.00002" stroke="#F2F5FF" strokeWidth="4" strokeLinecap="round" />
+                      <path
+                        d="M2 7L258 7.00002"
+                        stroke="#F2F5FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M2 7L165 7.00001"
+                        stroke="#3573FC"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="163" cy="7" r="6" fill="#3573FC" />
                     </svg>
                   </div>
                 </div>
@@ -340,15 +395,25 @@ export const Frame = () => {
                 <div className="w/full relative h-3.5 self-stretch">
                   <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
                     <svg
-                      className="h-1w-full absolute left-0 top-1 md:w-[260px]"
-                      width="95"
-                      height="6"
-                      viewBox="0 0 95 6"
-                      fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      aria-label="Vector"
+                      width="260"
+                      height="14"
+                      viewBox="0 0 260 14"
+                      fill="none"
                     >
-                      <path d="M3 3H92" stroke="#00CB82" strokeWidth="6" strokeLinecap="round" />
+                      <path
+                        d="M2 7H258"
+                        stroke="#F2F5FF"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <path
+                        d="M2 7H91"
+                        stroke="#3573FC"
+                        stroke-width="4"
+                        stroke-linecap="round"
+                      />
+                      <circle cx="91" cy="7" r="6" fill="#3573FC" />
                     </svg>
                   </div>
                 </div>

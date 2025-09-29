@@ -13,11 +13,12 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
-import { isMobile } from 'shared/lib/is-mobile';
+import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { Check10, Graph, HeroButtons } from 'shared/ui';
 
 export const P2P = () => {
   const { t } = useTranslation(['p2p']);
+  const isMobile = useIsMobile();
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
@@ -426,7 +427,7 @@ export const P2P = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="absolute left-[739px] top-[46px] h-[554px] w-full md:w-[637px]"
-            hidden={true}
+            aria-hidden={true}
           >
             <g opacity="0.32" filter="url(#filter0_f_9267_13714)">
               <path
@@ -617,10 +618,7 @@ export const P2P = () => {
                         filterUnits="userSpaceOnUse"
                         colorInterpolationFilters="sRGB"
                       >
-                        <feFlood
-                          floodOpacity="0"
-                          result="BackgroundImageFix"
-                        />
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend
                           mode="normal"
                           in="SourceGraphic"
@@ -651,7 +649,7 @@ export const P2P = () => {
                             height="44"
                             rx="22"
                             fill="#3573FC"
-                            fill-opacity="0.08"
+                            fillOpacity="0.08"
                           />
                           <path
                             d="M31 15.25L22 23.5L13 15.25"
@@ -744,7 +742,7 @@ export const P2P = () => {
                             height="44"
                             rx="22"
                             fill="#00CB82"
-                            fill-opacity="0.08"
+                            fillOpacity="0.08"
                           />
                           <path
                             d="M22 23.125C22.6213 23.125 23.125 22.6213 23.125 22C23.125 21.3787 22.6213 20.875 22 20.875C21.3787 20.875 20.875 21.3787 20.875 22C20.875 22.6213 21.3787 23.125 22 23.125Z"
@@ -812,10 +810,7 @@ export const P2P = () => {
                         filterUnits="userSpaceOnUse"
                         colorInterpolationFilters="sRGB"
                       >
-                        <feFlood
-                          floodOpacity="0"
-                          result="BackgroundImageFix"
-                        />
+                        <feFlood floodOpacity="0" result="BackgroundImageFix" />
                         <feBlend
                           mode="normal"
                           in="SourceGraphic"
@@ -2633,7 +2628,7 @@ export const P2P = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[571px] top-0 h-[656px] w-full md:w-[805px]"
-          hidden={true}
+          aria-hidden={true}
         >
           <g opacity="0.24" filter="url(#filter0_f_9267_13819)">
             <path

@@ -2,9 +2,14 @@ import { motion, useInView } from 'framer-motion';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
+
+import { RoutesPath } from 'shared/routes-path.tsx';
+import { useIsMobile } from 'shared/lib/use-is-mobile';
 
 export const Frame1 = () => {
   const { t } = useTranslation(['home']);
+  const isMobile = useIsMobile();
   const ref37l = useRef<HTMLSpanElement>(null);
   const ref37r = useRef<HTMLSpanElement>(null);
   const ref38 = useRef<HTMLParagraphElement>(null);
@@ -31,6 +36,13 @@ export const Frame1 = () => {
   const inView44 = useInView(ref44, { once: true, margin: '-100px' });
   const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
   const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(RoutesPath.DATAUNLOAD);
+  };
+
   return (
     <section
       className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
@@ -64,7 +76,10 @@ export const Frame1 = () => {
 
       <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
-          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]">
+          <div
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            onClick={handleClick}
+          >
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-gray-100 bg-[100%_100%]">
               <div className="relative left-[59px] top-[-49px] h-[372px] w-full md:w-[560px]">
                 <svg
@@ -117,48 +132,48 @@ export const Frame1 = () => {
                 >
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
                     <div className="h-7w-full relative md:w-[142.55px]">
-                            <div className="relative h-[29px] w-full md:w-[142px] flex items-center justify-center">
-                              <svg
-                                width="112"
-                                height="24"
-                                viewBox="0 0 112 24"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <g mask="url(#mask0_9587_14956)">
-                                  <path
-                                    fill-rule="evenodd"
-                                    clip-rule="evenodd"
-                                    d="M7.46875 12.0009C7.46875 7.01586 11.51 2.97336 16.4963 2.97336C17.215 2.97336 17.9163 3.05836 18.5875 3.21711C16.6238 1.60086 14.11 0.630859 11.3687 0.630859C5.09 0.630859 0 5.72211 0 12.0009C0 18.2796 5.09 23.3696 11.3687 23.3696C14.11 23.3696 16.6238 22.3996 18.5875 20.7846C17.9163 20.9434 17.215 21.0284 16.4963 21.0284C11.51 21.0284 7.46875 16.9859 7.46875 12.0009Z"
-                                    fill="#1C222F"
-                                  ></path>
-                                </g>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M23.7939 2.29688V6.68563C24.8814 8.17688 25.5239 10.0131 25.5239 12.0006C25.5239 13.9869 24.8814 15.8244 23.7939 17.3156V21.7169H29.8539V7.00438H36.0202V21.7169H42.0802V2.29688H23.7939Z"
-                                  fill="#1C222F"
-                                ></path>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M46.8403 2.29688V6.93188H52.4478V21.7169H58.5078V6.93188H64.1153V2.29688H46.8403Z"
-                                  fill="#1C222F"
-                                ></path>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M68.88 2.29688V21.7169H74.9413V13.8081H81.2138V21.7169H87.2738V2.29688H81.2138V9.03063H74.9413V2.29688H68.88Z"
-                                  fill="#1C222F"
-                                ></path>
-                                <path
-                                  fill-rule="evenodd"
-                                  clip-rule="evenodd"
-                                  d="M92.03 2.2627V11.9902V21.7177H98.09V14.0277H99.6788L104.274 21.7177H111.238L105.213 11.9902L111.238 2.2627H104.274L99.6788 9.95269H98.09V2.2627H92.03Z"
-                                  fill="#1C222F"
-                                ></path>
-                              </svg>
-                            </div>
+                      <div className="relative h-[29px] w-full md:w-[142px] flex items-center justify-center">
+                        <svg
+                          width="112"
+                          height="24"
+                          viewBox="0 0 112 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g mask="url(#mask0_9587_14956)">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M7.46875 12.0009C7.46875 7.01586 11.51 2.97336 16.4963 2.97336C17.215 2.97336 17.9163 3.05836 18.5875 3.21711C16.6238 1.60086 14.11 0.630859 11.3687 0.630859C5.09 0.630859 0 5.72211 0 12.0009C0 18.2796 5.09 23.3696 11.3687 23.3696C14.11 23.3696 16.6238 22.3996 18.5875 20.7846C17.9163 20.9434 17.215 21.0284 16.4963 21.0284C11.51 21.0284 7.46875 16.9859 7.46875 12.0009Z"
+                              fill="#1C222F"
+                            ></path>
+                          </g>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.7939 2.29688V6.68563C24.8814 8.17688 25.5239 10.0131 25.5239 12.0006C25.5239 13.9869 24.8814 15.8244 23.7939 17.3156V21.7169H29.8539V7.00438H36.0202V21.7169H42.0802V2.29688H23.7939Z"
+                            fill="#1C222F"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M46.8403 2.29688V6.93188H52.4478V21.7169H58.5078V6.93188H64.1153V2.29688H46.8403Z"
+                            fill="#1C222F"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M68.88 2.29688V21.7169H74.9413V13.8081H81.2138V21.7169H87.2738V2.29688H81.2138V9.03063H74.9413V2.29688H68.88Z"
+                            fill="#1C222F"
+                          ></path>
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M92.03 2.2627V11.9902V21.7177H98.09V14.0277H99.6788L104.274 21.7177H111.238L105.213 11.9902L111.238 2.2627H104.274L99.6788 9.95269H98.09V2.2627H92.03Z"
+                            fill="#1C222F"
+                          ></path>
+                        </svg>
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -179,7 +194,6 @@ export const Frame1 = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-full md:w-[57.34px]"
-                      alt="Group"
                     >
                       <path
                         fillRule="evenodd"
@@ -242,7 +256,6 @@ export const Frame1 = () => {
                       viewBox="0 0 56 56"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      xlink="http://www.w3.org/1999/xlink"
                       className="relative size-14"
                       alt="Clip path group"
                     >
@@ -289,7 +302,6 @@ export const Frame1 = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="relative size-14"
-                      alt="Clip path group"
                     >
                       <mask
                         id="mask0_9569_17288"
@@ -326,7 +338,6 @@ export const Frame1 = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="relative size-14"
-                      alt="Okb logo"
                     >
                       <g clipPath="url(#clip0_9569_17295)">
                         <path
@@ -367,7 +378,6 @@ export const Frame1 = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-[279px] top-[184px] h-10 w-0.5"
-                  alt="Vector"
                 >
                   <path d="M1 0V40" stroke="white" strokeWidth="2" />
                 </svg>
@@ -379,7 +389,6 @@ export const Frame1 = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-[49px] top-[223px] h-[39px] w-full md:w-[458px]"
-                  alt="Vector"
                 >
                   <path
                     d="M457 39V25C457 11.7452 446.255 1 433 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -395,7 +404,6 @@ export const Frame1 = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-[204px] top-[223px] h-[39px] w-full md:w-[149px]"
-                  alt="Vector"
                 >
                   <path
                     d="M148 39V25C148 11.7452 137.255 1 124 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -459,7 +467,7 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView44 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[49px] top-[84px] flex flex-col items-start justify-center gap-1 rounded-[32px] bg-white p-3"
+                  className="absolute left-[49px] top-[15px] flex flex-col items-start justify-center gap-1 rounded-[32px] bg-white p-3"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
@@ -480,7 +488,6 @@ export const Frame1 = () => {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             className="relative m-[-4.00px] size-4"
-                            alt="Check"
                           >
                             <path
                               d="M2.5 9L6 12.5L14 4.5"
@@ -515,7 +522,6 @@ export const Frame1 = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="relative flex-1 grow self-stretch"
-                      alt="Frame"
                     >
                       <rect width="132" height="94" rx="16" fill="#F2F5FF" />
                       <path
@@ -597,7 +603,6 @@ export const Frame1 = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-0 top-0 h-[368px] w-full md:w-[678px]"
-                  alt="Vector"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_36_2389)">
                     <path

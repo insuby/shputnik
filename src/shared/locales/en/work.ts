@@ -5,7 +5,6 @@ export const work = {
     {
       id: 'job-1',
       title: 'Middle Java developer',
-      isOpen: true,
       tags: ['Full time', 'Remote'],
       responsibilities: [
         'Participation in the development of existing and new projects as part of a team',
@@ -27,7 +26,6 @@ export const work = {
     {
       id: 'job-2',
       title: 'Software Tester',
-      isOpen: false,
       tags: ['Full time', 'Remote'],
       responsibilities: [
         'Study of business requirements received from the customer and/or technical requirements',
@@ -58,7 +56,6 @@ export const work = {
     {
       id: 'job-3',
       title: 'Sales Manager',
-      isOpen: false,
       tags: ['Full time'],
       responsibilities: [
         'Search for new clients',
