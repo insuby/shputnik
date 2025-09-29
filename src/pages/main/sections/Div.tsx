@@ -83,9 +83,9 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative h-[401px] w-full md:w-[678px]">
+              <div className="relative h-[401px] w-full xl:w-[678px]">
                 <svg
-                  className="absolute left-[145px] top-[30px] h-[371px] w-full md:w-[388px]"
+                  className="absolute left-[145px] top-[30px] h-[371px] w-full xl:w-[388px]"
                   width="1408"
                   height="1470"
                   viewBox="0 0 1408 1470"
@@ -94,13 +94,32 @@ export const Div = () => {
                   aria-hidden={true}
                 >
                   <g opacity="0.2" filter="url(#filter0_f_15_177)">
-                    <path d="M551.293 621.064C506.958 486.085 642.859 364.437 716.352 320.486C1194 182.548 1164.08 785.029 996.168 981.451C828.258 1177.87 364.818 1243.95 306.591 1066.68C248.363 889.399 606.711 789.787 551.293 621.064Z" fill="#3772FE" />
+                    <path
+                      d="M551.293 621.064C506.958 486.085 642.859 364.437 716.352 320.486C1194 182.548 1164.08 785.029 996.168 981.451C828.258 1177.87 364.818 1243.95 306.591 1066.68C248.363 889.399 606.711 789.787 551.293 621.064Z"
+                      fill="#3772FE"
+                    />
                   </g>
                   <defs>
-                    <filter id="filter0_f_15_177" x="0" y="0" width="1407.95" height="1470" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <filter
+                      id="filter0_f_15_177"
+                      x="0"
+                      y="0"
+                      width="1407.95"
+                      height="1470"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
                       <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_15_177" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="150"
+                        result="effect1_foregroundBlur_15_177"
+                      />
                     </filter>
                   </defs>
                 </svg>
@@ -122,35 +141,35 @@ export const Div = () => {
                       {t('lendingStoreOnline.productName')}
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
-                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.cost')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                           23,456₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.advancePayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                           42,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('calculator.term')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                           4,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 md:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.nextPayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                           2,700₽
                         </div>
                       </div>
@@ -158,7 +177,7 @@ export const Div = () => {
                   </div>
                 </motion.div>
                 <svg
-                  className="absolute left-0 top-0 h-[368px] w-full md:w-[678px]"
+                  className="absolute left-0 top-0 h-[368px] w-full xl:w-[678px]"
                   width="1101"
                   height="1009"
                   viewBox="0 0 1101 1009"
@@ -167,13 +186,32 @@ export const Div = () => {
                   aria-hidden={true}
                 >
                   <g opacity="0.24" filter="url(#filter0_f_9016_1953)">
-                    <path d="M567.447 574.542C555.473 624.411 490.662 636.012 459.753 635.578C286.874 587.384 410.3 407.988 499.122 379.488C587.943 350.987 742.831 418.56 727.105 484.056C711.379 549.552 582.415 512.206 567.447 574.542Z" fill="#9FA7BC" />
+                    <path
+                      d="M567.447 574.542C555.473 624.411 490.662 636.012 459.753 635.578C286.874 587.384 410.3 407.988 499.122 379.488C587.943 350.987 742.831 418.56 727.105 484.056C711.379 549.552 582.415 512.206 567.447 574.542Z"
+                      fill="#9FA7BC"
+                    />
                   </g>
                   <defs>
-                    <filter id="filter0_f_9016_1953" x="0" y="0" width="1101" height="1008.37" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <filter
+                      id="filter0_f_9016_1953"
+                      x="0"
+                      y="0"
+                      width="1101"
+                      height="1008.37"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
                       <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="186.349" result="effect1_foregroundBlur_9016_1953" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="186.349"
+                        result="effect1_foregroundBlur_9016_1953"
+                      />
                     </filter>
                   </defs>
                 </svg>
@@ -195,12 +233,48 @@ export const Div = () => {
                       xmlns="http://www.w3.org/2000/svg"
                       aria-label="Money"
                     >
-                      <path d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M26.25 7H1.75V21H26.25V7Z" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M26.25 11.375C25.157 11.1897 24.1487 10.6691 23.3648 9.88521C22.5809 9.10132 22.0603 8.093 21.875 7" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M21.875 21C22.0603 19.907 22.5809 18.8987 23.3648 18.1148C24.1487 17.3309 25.157 16.8103 26.25 16.625" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M1.75 16.625C2.843 16.8103 3.85132 17.3309 4.63521 18.1148C5.4191 18.8987 5.93975 19.907 6.125 21" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                      <path d="M6.125 7C5.93975 8.093 5.4191 9.10132 4.63521 9.88521C3.85132 10.6691 2.843 11.1897 1.75 11.375" stroke="#3573FCFF" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                      <path
+                        d="M14 17.5C15.933 17.5 17.5 15.933 17.5 14C17.5 12.067 15.933 10.5 14 10.5C12.067 10.5 10.5 12.067 10.5 14C10.5 15.933 12.067 17.5 14 17.5Z"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M26.25 7H1.75V21H26.25V7Z"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M26.25 11.375C25.157 11.1897 24.1487 10.6691 23.3648 9.88521C22.5809 9.10132 22.0603 8.093 21.875 7"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M21.875 21C22.0603 19.907 22.5809 18.8987 23.3648 18.1148C24.1487 17.3309 25.157 16.8103 26.25 16.625"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M1.75 16.625C2.843 16.8103 3.85132 17.3309 4.63521 18.1148C5.4191 18.8987 5.93975 19.907 6.125 21"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M6.125 7C5.93975 8.093 5.4191 9.10132 4.63521 9.88521C3.85132 10.6691 2.843 11.1897 1.75 11.375"
+                        stroke="#3573FCFF"
+                        strokeWidth="1.6"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
                     </svg>
                   </div>
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
@@ -214,7 +288,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 md:p-10">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
               <motion.div
                 id="animate_28"
                 ref={ref28}
@@ -266,9 +340,9 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative left-[67px] top-6 h-[416px] w-full md:w-[543px]">
+              <div className="relative left-[67px] top-6 h-[416px] w-full xl:w-[543px]">
                 <svg
-                  className="absolute left-[78px] top-1.5 h-[371px] w-full md:w-[388px]"
+                  className="absolute left-[78px] top-1.5 h-[371px] w-full xl:w-[388px]"
                   width="1225"
                   height="986"
                   viewBox="0 0 1225 986"
@@ -277,13 +351,32 @@ export const Div = () => {
                   aria-hidden={true}
                 >
                   <g opacity="0.08" filter="url(#filter0_f_0_9)">
-                    <path d="M585.778 320.414C622.466 208.96 772.426 194.708 842.821 201.513C1227.94 343.938 912.747 729.754 704.859 778.022C496.971 826.29 156.523 643.066 204.707 496.686C252.892 350.307 539.918 459.731 585.778 320.414Z" fill="#3573FC" />
+                    <path
+                      d="M585.778 320.414C622.466 208.96 772.426 194.708 842.821 201.513C1227.94 343.938 912.747 729.754 704.859 778.022C496.971 826.29 156.523 643.066 204.707 496.686C252.892 350.307 539.918 459.731 585.778 320.414Z"
+                      fill="#3573FC"
+                    />
                   </g>
                   <defs>
-                    <filter id="filter0_f_0_9" x="0" y="0" width="1224.62" height="986" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <filter
+                      id="filter0_f_0_9"
+                      x="0"
+                      y="0"
+                      width="1224.62"
+                      height="986"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
                       <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_0_9" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="100"
+                        result="effect1_foregroundBlur_0_9"
+                      />
                     </filter>
                   </defs>
                 </svg>
@@ -296,10 +389,10 @@ export const Div = () => {
                   className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
+                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]">
                       {t('lendingStoreOnline.paymentSchedule')}
                     </div>
-                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
                       {t('lendingStoreOnline.contract')}
                     </div>
                   </div>
@@ -342,7 +435,7 @@ export const Div = () => {
                     </div>
                   </div>
                   <svg
-                    className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
+                    className="absolute left-0 top-[109px] h-24 w-full xl:w-[328px]"
                     width="329"
                     height="62"
                     viewBox="0 0 329 62"
@@ -350,9 +443,20 @@ export const Div = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     aria-hidden={true}
                   >
-                    <path d="M0.247041 55.6176L24.733 49.381C29.1945 48.2446 33.9292 49.0834 37.7288 51.6833L46.9274 57.9775C54.012 62.8252 63.659 61.2242 68.798 54.3479L76.635 43.8616C81.3034 37.6149 89.7928 35.6394 96.7395 39.1831L117.269 49.6559C125.75 53.9822 136.109 49.9982 139.506 41.1042L152.056 8.24261C156.12 -2.39929 171.61 -0.959684 173.643 10.2489L175.739 21.7982C177.224 29.987 188.598 30.9118 191.387 23.0705V23.0705C193.932 15.9142 204.031 15.853 206.663 22.9778L209.006 29.3211C211.913 37.1908 222.387 38.7047 227.404 31.9804L233.005 24.4727C238.302 17.372 248.429 16.0749 255.345 21.6113L261.435 26.4867C266.413 30.4716 273.281 31.1237 278.919 28.1469L328.533 1.95518" stroke="url(#paint0_linear_9016_2129)" strokeWidth="2" />
+                    <path
+                      d="M0.247041 55.6176L24.733 49.381C29.1945 48.2446 33.9292 49.0834 37.7288 51.6833L46.9274 57.9775C54.012 62.8252 63.659 61.2242 68.798 54.3479L76.635 43.8616C81.3034 37.6149 89.7928 35.6394 96.7395 39.1831L117.269 49.6559C125.75 53.9822 136.109 49.9982 139.506 41.1042L152.056 8.24261C156.12 -2.39929 171.61 -0.959684 173.643 10.2489L175.739 21.7982C177.224 29.987 188.598 30.9118 191.387 23.0705V23.0705C193.932 15.9142 204.031 15.853 206.663 22.9778L209.006 29.3211C211.913 37.1908 222.387 38.7047 227.404 31.9804L233.005 24.4727C238.302 17.372 248.429 16.0749 255.345 21.6113L261.435 26.4867C266.413 30.4716 273.281 31.1237 278.919 28.1469L328.533 1.95518"
+                      stroke="url(#paint0_linear_9016_2129)"
+                      strokeWidth="2"
+                    />
                     <defs>
-                      <linearGradient id="paint0_linear_9016_2129" x1="0.247041" y1="39.8198" x2="328.533" y2="39.8198" gradientUnits="userSpaceOnUse">
+                      <linearGradient
+                        id="paint0_linear_9016_2129"
+                        x1="0.247041"
+                        y1="39.8198"
+                        x2="328.533"
+                        y2="39.8198"
+                        gradientUnits="userSpaceOnUse"
+                      >
                         <stop stopColor="white" />
                         <stop offset="0.269231" stopColor="#00CB82" />
                         <stop offset="0.692308" stopColor="#00CB82" />
@@ -363,7 +467,7 @@ export const Div = () => {
                   <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
                 <svg
-                  className="absolute left-3 top-0 h-[416px] w-full md:w-[388px]"
+                  className="absolute left-3 top-0 h-[416px] w-full xl:w-[388px]"
                   width="651"
                   height="764"
                   viewBox="0 0 651 764"
@@ -372,13 +476,32 @@ export const Div = () => {
                   aria-hidden={true}
                 >
                   <g opacity="0.16" filter="url(#filter0_f_9016_2210)">
-                    <path d="M245.68 388.785C198.282 369.121 196.998 303.256 202.28 272.781C277.054 109.518 434.941 259.656 449.155 351.902C463.368 444.147 372.271 586.589 310.02 560.763C247.77 534.937 304.927 413.365 245.68 388.785Z" fill="#7C92C8" />
+                    <path
+                      d="M245.68 388.785C198.282 369.121 196.998 303.256 202.28 272.781C277.054 109.518 434.941 259.656 449.155 351.902C463.368 444.147 372.271 586.589 310.02 560.763C247.77 534.937 304.927 413.365 245.68 388.785Z"
+                      fill="#7C92C8"
+                    />
                   </g>
                   <defs>
-                    <filter id="filter0_f_9016_2210" x="0" y="0" width="650.795" height="764" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                    <filter
+                      id="filter0_f_9016_2210"
+                      x="0"
+                      y="0"
+                      width="650.795"
+                      height="764"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
                       <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-                      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_9016_2210" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="100"
+                        result="effect1_foregroundBlur_9016_2210"
+                      />
                     </filter>
                   </defs>
                 </svg>
@@ -410,11 +533,27 @@ export const Div = () => {
                         xmlns="http://www.w3.org/2000/svg"
                         aria-hidden={true}
                       >
-                        <path d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5" stroke="url(#paint0_linear_9017_4475)" strokeWidth="10" strokeLinecap="round" />
+                        <path
+                          d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5"
+                          stroke="url(#paint0_linear_9017_4475)"
+                          strokeWidth="10"
+                          strokeLinecap="round"
+                        />
                         <defs>
-                          <linearGradient id="paint0_linear_9017_4475" x1="99" y1="5" x2="43.5" y2="-9" gradientUnits="userSpaceOnUse">
+                          <linearGradient
+                            id="paint0_linear_9017_4475"
+                            x1="99"
+                            y1="5"
+                            x2="43.5"
+                            y2="-9"
+                            gradientUnits="userSpaceOnUse"
+                          >
                             <stop stopColor="#3573FC" />
-                            <stop offset="1" stopColor="#3573FC" stopOpacity="0" />
+                            <stop
+                              offset="1"
+                              stopColor="#3573FC"
+                              stopOpacity="0"
+                            />
                           </linearGradient>
                         </defs>
                       </svg>
@@ -431,7 +570,7 @@ export const Div = () => {
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 md:p-10">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
               <motion.div
                 id="animate_29"
                 ref={ref29}

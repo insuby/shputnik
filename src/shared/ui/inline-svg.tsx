@@ -57,7 +57,10 @@ export const InlineSvg: FC<InlineSvgProps> = ({ src, className, alt }) => {
 
   if (!finalHtml) return null;
 
-  return <span dangerouslySetInnerHTML={{ __html: finalHtml }} aria-hidden={alt ? undefined : true} />;
+  return (
+    <span
+      dangerouslySetInnerHTML={{ __html: finalHtml }}
+      aria-hidden={alt ? undefined : true}
+    />
+  );
 };
-
-

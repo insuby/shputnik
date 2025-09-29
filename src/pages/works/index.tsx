@@ -25,13 +25,13 @@ export const Works = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] md:gap-12 md:p-[88px]"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] xl:gap-12 xl:p-[88px]"
       aria-labelledby="jobs-title"
     >
-      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
+      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 xl:w-[560px]">
         <h1
           id="jobs-title"
-          className="relative mt-3 self-stretch text-[36px]  font-medium leading-[44px]  tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:mt-[-1.00px] md:text-5xl md:leading-[60px]"
+          className="relative mt-3 self-stretch text-[36px]  font-medium leading-[44px]  tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:mt-[-1.00px] xl:text-5xl xl:leading-[60px]"
         >
           {t('title')}
         </h1>
@@ -45,7 +45,6 @@ export const Works = () => {
           type="single"
           collapsible
           className="w-full"
-          defaultValue="job-1"
         >
           {jobListings.map((job) => (
             <AccordionItem
@@ -54,7 +53,7 @@ export const Works = () => {
               className="mb-4 border-none"
             >
               <Card
-                className="w-full rounded-3xl bg-white md:w-[1216px]"
+                className="w-full rounded-3xl bg-white xl:w-[1216px]"
                 asChild
               >
                 <article aria-labelledby={`${job.id}-title`}>
@@ -66,11 +65,11 @@ export const Works = () => {
                       >
                         {job.title}
                       </h2>
-                      <div className="mr-4 hidden  items-center gap-2 md:flex">
+                      <div className="mr-4 hidden  items-center gap-2 xl:flex">
                         {job.tags.map((tag, index) => (
                           <Badge
                             key={index}
-                            className="!h-8 !rounded-[52px] px-3 py-2 font-medium  shadow-none [font-family:var(--font-family)] !bg-blue-10 !text-blue-50"
+                            className="!h-8 !rounded-[52px] !bg-blue-10 px-3 py-2  font-medium !text-blue-50 shadow-none [font-family:var(--font-family)]"
                           >
                             {tag}
                           </Badge>
@@ -81,7 +80,7 @@ export const Works = () => {
 
                   <AccordionContent>
                     <CardContent className="mb-4 flex flex-col items-start gap-7 rounded-b-[32px] border-t border-solid border-gray-20 bg-gray-10 p-6">
-                      <div className="flex flex-col items-start gap-6 pt-6 px-3">
+                      <div className="flex flex-col items-start gap-6 px-3 pt-6">
                         <div className="flex flex-col items-start gap-3">
                           <h3 className="w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Inter',Helvetica]">
                             {t('sections.responsibilities')}
@@ -139,10 +138,10 @@ export const Works = () => {
 
                       <div className="flex w-full items-center gap-6">
                         <Button
-                          className="!h-[60px] w-full !rounded-[100px] !bg-blue-50 !px-6 !py-3 md:w-fit "
+                          className="!h-[60px] w-full !rounded-[100px] !bg-blue-50 !px-6 !py-3 xl:w-fit "
                           onClick={onClick}
                         >
-                          <span className="relative mt-[-1.00px] w-full whitespace-nowrap text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-white [font-style:var(--body-2-r-font-style)] md:w-fit">
+                          <span className="relative mt-[-1.00px] w-full whitespace-nowrap text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-white [font-style:var(--body-2-r-font-style)] xl:w-fit">
                             {t('apply')}
                           </span>
                         </Button>

@@ -4,8 +4,8 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-import { RoutesPath } from 'shared/routes-path.tsx';
 import { useIsMobile } from 'shared/lib/use-is-mobile';
+import { RoutesPath } from 'shared/routes-path.tsx';
 
 export const Frame1 = () => {
   const { t } = useTranslation(['home']);
@@ -81,9 +81,9 @@ export const Frame1 = () => {
             onClick={handleClick}
           >
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-gray-100 bg-[100%_100%]">
-              <div className="relative left-[59px] top-[-49px] h-[372px] w-full md:w-[560px]">
+              <div className="relative left-[59px] top-[-49px] h-[372px] w-full xl:w-[560px]">
                 <svg
-                  className="absolute left-[91px] top-0 h-[372px] w-full md:w-[415px]"
+                  className="absolute left-[91px] top-0 h-[372px] w-full xl:w-[415px]"
                   width="1078"
                   height="1072"
                   viewBox="0 0 1078 1072"
@@ -131,8 +131,8 @@ export const Frame1 = () => {
                   className="absolute left-[177px] top-[100px] inline-flex flex-col items-start gap-2.5 rounded-[32px] bg-[#ffffff5c] p-2"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
-                    <div className="h-7w-full relative md:w-[142.55px]">
-                      <div className="relative h-[29px] w-full md:w-[142px] flex items-center justify-center">
+                    <div className="h-7w-full relative xl:w-[142.55px]">
+                      <div className="relative flex h-[29px] w-full items-center justify-center xl:w-[142px]">
                         <svg
                           width="112"
                           height="24"
@@ -142,33 +142,33 @@ export const Frame1 = () => {
                         >
                           <g mask="url(#mask0_9587_14956)">
                             <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
+                              fillRule="evenodd"
+                              clipRule="evenodd"
                               d="M7.46875 12.0009C7.46875 7.01586 11.51 2.97336 16.4963 2.97336C17.215 2.97336 17.9163 3.05836 18.5875 3.21711C16.6238 1.60086 14.11 0.630859 11.3687 0.630859C5.09 0.630859 0 5.72211 0 12.0009C0 18.2796 5.09 23.3696 11.3687 23.3696C14.11 23.3696 16.6238 22.3996 18.5875 20.7846C17.9163 20.9434 17.215 21.0284 16.4963 21.0284C11.51 21.0284 7.46875 16.9859 7.46875 12.0009Z"
                               fill="#1C222F"
                             ></path>
                           </g>
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M23.7939 2.29688V6.68563C24.8814 8.17688 25.5239 10.0131 25.5239 12.0006C25.5239 13.9869 24.8814 15.8244 23.7939 17.3156V21.7169H29.8539V7.00438H36.0202V21.7169H42.0802V2.29688H23.7939Z"
                             fill="#1C222F"
                           ></path>
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M46.8403 2.29688V6.93188H52.4478V21.7169H58.5078V6.93188H64.1153V2.29688H46.8403Z"
                             fill="#1C222F"
                           ></path>
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M68.88 2.29688V21.7169H74.9413V13.8081H81.2138V21.7169H87.2738V2.29688H81.2138V9.03063H74.9413V2.29688H68.88Z"
                             fill="#1C222F"
                           ></path>
                           <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
+                            fillRule="evenodd"
+                            clipRule="evenodd"
                             d="M92.03 2.2627V11.9902V21.7177H98.09V14.0277H99.6788L104.274 21.7177H111.238L105.213 11.9902L111.238 2.2627H104.274L99.6788 9.95269H98.09V2.2627H92.03Z"
                             fill="#1C222F"
                           ></path>
@@ -178,7 +178,7 @@ export const Frame1 = () => {
                   </div>
                 </motion.div>
 
-                <div className="absolute left-0 top-[262px] h-[104px] w-full md:w-[560px]">
+                <div className="absolute left-0 top-[262px] h-[104px] w-full xl:w-[560px]">
                   <motion.div
                     id="animate_41_left"
                     ref={ref41l}
@@ -193,7 +193,7 @@ export const Frame1 = () => {
                       viewBox="0 0 58 59"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-full md:w-[57.34px]"
+                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-full xl:w-[57.34px]"
                     >
                       <path
                         fillRule="evenodd"
@@ -388,7 +388,7 @@ export const Frame1 = () => {
                   viewBox="0 0 458 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[49px] top-[223px] h-[39px] w-full md:w-[458px]"
+                  className="absolute left-[49px] top-[223px] h-[39px] w-full xl:w-[458px]"
                 >
                   <path
                     d="M457 39V25C457 11.7452 446.255 1 433 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -403,7 +403,7 @@ export const Frame1 = () => {
                   viewBox="0 0 149 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[204px] top-[223px] h-[39px] w-full md:w-[149px]"
+                  className="absolute left-[204px] top-[223px] h-[39px] w-full xl:w-[149px]"
                 >
                   <path
                     d="M148 39V25C148 11.7452 137.255 1 124 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -414,7 +414,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 md:p-10">
+            <div className="relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 xl:p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_38"
@@ -471,7 +471,7 @@ export const Frame1 = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
                         {t('decisionsModule.ui.id')}
                       </div>
 
@@ -602,7 +602,7 @@ export const Frame1 = () => {
                   viewBox="0 0 1435 1361"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-0 top-0 h-[368px] w-full md:w-[678px]"
+                  className="absolute left-0 top-0 h-[368px] w-full xl:w-[678px]"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_36_2389)">
                     <path
@@ -644,7 +644,7 @@ export const Frame1 = () => {
                   className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[148px] w-full overflow-hidden rounded-[20px] bg-green-60 md:w-[68px]">
+                    <div className="relative h-[148px] w-full overflow-hidden rounded-[20px] bg-green-60 xl:w-[68px]">
                       <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>
@@ -668,7 +668,7 @@ export const Frame1 = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 md:w-[68px]">
+                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 xl:w-[68px]">
                       <div className="absolute left-[13px] top-[29px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         100
                       </div>
@@ -694,7 +694,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 md:p-10">
+            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 xl:p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_46_left"

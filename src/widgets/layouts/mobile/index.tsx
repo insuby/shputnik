@@ -596,18 +596,66 @@ export const MobileLayout = () => {
                       className="flex h-20 items-center gap-4 rounded-2xl p-4 text-xl leading-[140%]"
                     >
                       <span className="flex w-full items-center gap-3">
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-12" alt="icon">
-
-<rect width="60" height="60" rx="24" fill="#F9FAFD"/>
-<path d="M18.625 26.5H41.375L30 19.5L18.625 26.5Z" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M22.125 26.5V35.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M27.375 26.5V35.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M32.625 26.5V35.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M37.875 26.5V35.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M19.5 35.25H40.5" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-<path d="M17.75 38.75H42.25" stroke="#FBAB00" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
-
-</svg>
+                        <svg
+                          width="60"
+                          height="60"
+                          viewBox="0 0 60 60"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="size-12"
+                          alt="icon"
+                        >
+                          <rect width="60" height="60" rx="24" fill="#F9FAFD" />
+                          <path
+                            d="M18.625 26.5H41.375L30 19.5L18.625 26.5Z"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M22.125 26.5V35.25"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M27.375 26.5V35.25"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M32.625 26.5V35.25"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M37.875 26.5V35.25"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M19.5 35.25H40.5"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                          <path
+                            d="M17.75 38.75H42.25"
+                            stroke="#FBAB00"
+                            strokeWidth="1.6"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
                         <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
                           {t('bankLending')}
                         </span>
@@ -999,7 +1047,7 @@ export const MobileLayout = () => {
                   <p className="text-xl font-bold leading-[140%] text-gray-90 ">
                     +7 (495) 006-21-57
                   </p>
-                  <p className="relative w-full pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] md:w-[233px]">
+                  <p className="relative w-full pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] xl:w-[233px]">
                     {t('address', { ns: 'footer' })}
                   </p>
                 </div>
@@ -1012,8 +1060,8 @@ export const MobileLayout = () => {
       <main
         id="content"
         className={cx('-mt-20 w-full mx-auto', {
-            'px-5': !isBgEnabled,
-            'flex flex-col gap-[88px]': isBgEnabled,
+          'px-5': !isBgEnabled,
+          'flex flex-col gap-[88px]': isBgEnabled,
         })}
       >
         <Outlet />

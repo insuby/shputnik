@@ -13,10 +13,10 @@ export const Trust = () => {
   };
 
   return (
-    <div className="relative w-full rounded-[32px] text-center md:w-[1376px]">
-      <div className="mx-auto flex w-full flex-col items-start gap-7 md:w-[704px] md:gap-12">
+    <div className="relative w-full rounded-[32px] text-center xl:w-[1376px]">
+      <div className="mx-auto flex w-full flex-col items-start gap-7 xl:w-[704px] xl:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
             {t('trust.title')}
           </div>
 

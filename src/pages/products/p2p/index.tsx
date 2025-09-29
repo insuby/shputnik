@@ -61,16 +61,16 @@ export const P2P = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-[1440px] xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex min-h-[600px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-12">
+        <div className="relative flex min-h-[600px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 xl:p-12">
           <svg
             width="1688"
             height="1367"
             viewBox="0 0 1688 1367"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
           >
             <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
               <path
@@ -104,14 +104,14 @@ export const P2P = () => {
           </svg>
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
                 <motion.h1
                   ref={ref1}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative mt-[-1.00px] w-full  text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full  text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
                 >
                   {t('hero.title')}
                 </motion.h1>
@@ -121,7 +121,7 @@ export const P2P = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
                 >
                   {t('hero.subtitle')}
                 </motion.p>
@@ -134,7 +134,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="top-[78px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 md:absolute md:left-[802px] md:w-[304px]"
+            className="top-[78px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 xl:absolute xl:left-[802px] xl:w-[304px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
               <svg
@@ -143,7 +143,7 @@ export const P2P = () => {
                 viewBox="0 0 694 594"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-[-13px] top-1.5 h-[330px] w-full md:w-[345px]"
+                className="absolute left-[-13px] top-1.5 h-[330px] w-full xl:w-[345px]"
               >
                 <g opacity="0.4" filter="url(#filter0_f_9267_13639)">
                   <path
@@ -204,7 +204,7 @@ export const P2P = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-start gap-3">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
-                    <div className="h-2.5w-full absolute left-0.5 top-[3px] md:w-[9px]">
+                    <div className="h-2.5w-full absolute left-0.5 top-[3px] xl:w-[9px]">
                       <svg
                         width="2"
                         height="10"
@@ -228,7 +228,7 @@ export const P2P = () => {
                         viewBox="0 0 10 6"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[5px] w-full md:w-[9px]"
+                        className="absolute left-0 top-0 h-[5px] w-full xl:w-[9px]"
                       >
                         <path
                           d="M0.660783 5.0004L5 0.661187L9.33922 5.0004"
@@ -246,7 +246,7 @@ export const P2P = () => {
                       viewBox="0 0 11 2"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-pxw-full absolute left-0.5 top-0.5 md:w-[11px]"
+                      className="h-pxw-full absolute left-0.5 top-0.5 xl:w-[11px]"
                     >
                       <path
                         d="M0.609347 0.609719H10.3907"
@@ -265,7 +265,7 @@ export const P2P = () => {
 
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-2xl bg-[#ffffff29] px-2.5 py-1.5">
                   <div className="relative size-3.5">
-                    <div className="h-2.5w-full absolute left-0.5 top-px md:w-[9px]">
+                    <div className="h-2.5w-full absolute left-0.5 top-px xl:w-[9px]">
                       <svg
                         width="2"
                         height="10"
@@ -289,7 +289,7 @@ export const P2P = () => {
                         viewBox="0 0 10 6"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-1 h-[5px] w-full md:w-[9px]"
+                        className="absolute left-0 top-1 h-[5px] w-full xl:w-[9px]"
                       >
                         <path
                           d="M0.660783 0.661187L5 5.0004L9.33922 0.661187"
@@ -307,7 +307,7 @@ export const P2P = () => {
                       viewBox="0 0 11 2"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-pxw-full absolute left-0.5 top-[11px] md:w-[11px]"
+                      className="h-pxw-full absolute left-0.5 top-[11px] xl:w-[11px]"
                     >
                       <path
                         d="M0.609347 0.609719H10.3907"
@@ -339,7 +339,7 @@ export const P2P = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
+                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 xl:w-[88px]">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                       {t('dashboard.interest')}
                     </div>
@@ -361,7 +361,7 @@ export const P2P = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
+                  <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 xl:w-[88px]">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.payment')}
                     </div>
@@ -426,7 +426,7 @@ export const P2P = () => {
             viewBox="0 0 675 745"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[739px] top-[46px] h-[554px] w-full md:w-[637px]"
+            className="absolute left-[739px] top-[46px] h-[554px] w-full xl:w-[637px]"
             aria-hidden={true}
           >
             <g opacity="0.32" filter="url(#filter0_f_9267_13714)">
@@ -465,14 +465,14 @@ export const P2P = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 md:left-[1000px] md:top-[228px]"
+            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 xl:left-[1000px] xl:top-[228px]"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
                 {t('dashboard.totalIncome')}
               </div>
 
-              <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
+              <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]">
                 1,567,000₽
               </div>
             </div>
@@ -533,7 +533,7 @@ export const P2P = () => {
               viewBox="0 0 329 66"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]"
+              className="absolute left-0 top-[106px] h-[104px] w-full xl:w-[328px]"
             >
               <path
                 d="M0.246214 59.3603L24.7228 53.1261C29.1825 51.9902 33.9154 52.8286 37.7136 55.4275L46.9086 61.7193C53.9906 66.5651 63.6339 64.9648 68.7709 58.0911L78.6246 44.9062C82.3245 39.9556 88.5437 37.5771 94.6028 38.7955L123.082 44.5221C128.473 45.6063 133.895 42.7989 136.121 37.7698L140.075 28.8359C142.413 23.5527 149.804 23.2671 152.543 28.3542V28.3542C155.376 33.6158 163.09 33.0815 165.171 27.4795L171.374 10.7804C176.264 -2.38511 194.944 -2.21685 199.596 11.0346L213.17 49.6995C215.05 55.0568 222.63 55.0481 224.498 49.6865V49.6865C226.39 44.2596 234.092 44.3388 235.871 49.8034L237.582 55.0596C239.866 62.0738 249.68 62.3668 252.379 55.5014L262.421 29.9466C265.432 22.2849 275.801 21.1403 280.411 27.9606V27.9606C283.669 32.7809 290.286 33.9153 294.964 30.4555L328.406 5.71847"
@@ -563,16 +563,16 @@ export const P2P = () => {
       </div>
       <Advantages />
 
-      <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
-        <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
-          <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
+      <div className="relative flex w-full flex-col xl:h-[568px] xl:w-[1376px] xl:!flex-row">
+        <div className="flex w-full flex-col items-center gap-[68px] xl:w-[1472px] xl:!flex-row">
+          <div className="relative flex  w-full flex-col items-start justify-center gap-7 xl:w-[496px]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
               {t('customizableProcesses.title')}
             </div>
 
             <button
               onClick={handleTryClick}
-              className="all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
+              className="all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 {t('customizableProcesses.tryButton')}
@@ -580,7 +580,7 @@ export const P2P = () => {
             </button>
           </div>
 
-          <div className="w-full md:w-[915px]" id="p2p-slider">
+          <div className="w-full xl:w-[915px]" id="p2p-slider">
             <Slider
               ref={sliderRef}
               dots={false}
@@ -593,14 +593,14 @@ export const P2P = () => {
               arrows={false}
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
+                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[443px]"
                   >
                     <g opacity="0.16" filter="url(#filter0_f_9267_13346)">
                       <path
@@ -634,7 +634,7 @@ export const P2P = () => {
                   </svg>
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
+                    <div className="relative -left-12 -top-12 w-[120%] xl:w-[443px]">
                       <div className="absolute left-[58px] top-[69px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-white py-2 pl-2 pr-5">
                         <svg
                           width="44"
@@ -692,7 +692,7 @@ export const P2P = () => {
                         viewBox="0 0 524 422"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[352px] w-full md:w-[443px]"
+                        className="absolute left-0 top-0 h-[352px] w-full xl:w-[443px]"
                       >
                         <g opacity="0.32" filter="url(#filter0_f_9281_847)">
                           <path
@@ -785,14 +785,14 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
+                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[377px]"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9267_13362)">
                       <path
@@ -826,8 +826,8 @@ export const P2P = () => {
                   </svg>
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 top-5 h-[114px] w-full md:left-4 md:w-[313px]">
-                      <div className="absolute left-px top-0 flex w-full items-center justify-between opacity-[0.08] md:w-[311px]">
+                    <div className="relative left-0 top-5 h-[114px] w-full xl:left-4 xl:w-[313px]">
+                      <div className="absolute left-px top-0 flex w-full items-center justify-between opacity-[0.08] xl:w-[311px]">
                         <svg
                           width="1"
                           height="112"
@@ -934,7 +934,7 @@ export const P2P = () => {
                         viewBox="0 0 311 102"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-px top-3 h-[102px] w-full md:w-[311px]"
+                        className="absolute left-px top-3 h-[102px] w-full xl:w-[311px]"
                       >
                         <path
                           opacity="0.24"
@@ -966,7 +966,7 @@ export const P2P = () => {
                         viewBox="0 0 313 77"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-[11px] h-[76px] w-full md:w-[313px]"
+                        className="absolute left-0 top-[11px] h-[76px] w-full xl:w-[313px]"
                       >
                         <path
                           d="M1 62.5L8.54673 71.4189C10.3298 73.5261 13.5975 73.4668 15.3029 71.2963V71.2963C16.5819 69.6685 18.8292 69.1646 20.6807 70.0904L24.4633 71.9817C28.5498 74.0249 33.5111 72.8856 36.2967 69.2642L40.6006 63.6692C41.1979 62.8927 41.698 62.0459 42.0894 61.1477L48.7975 45.7588C49.5869 43.9476 50.8114 42.3594 52.3621 41.1352L56.2302 38.0814C58.3481 36.4094 60.9676 35.5 63.6659 35.5H75.7525C80.9652 35.5 85.5817 38.8653 87.1768 43.8279L89 49.5L96.4686 67.9936C98.3006 72.53 102.703 75.5 107.595 75.5H110.954C115.567 75.5 119.771 72.8564 121.769 68.6995L131 49.5L132.667 45.9099C135.302 40.234 142.136 37.8979 147.694 40.7729V40.7729C150.437 42.1918 153.651 42.3918 156.549 41.3242L158.836 40.4815C160.588 39.8361 162.165 38.7908 163.442 37.4287L167.64 32.9502C168.541 31.9899 169.277 30.8881 169.819 29.6889L177.15 13.4833C178.034 11.5301 179.425 9.84933 181.178 8.61563L188.893 3.18632C190.915 1.76357 193.327 1 195.799 1H201.876C206.782 1 211.195 3.98741 213.017 8.54331L217.463 19.658C217.82 20.5494 218.282 21.3949 218.84 22.1762L221.911 26.4749C224.163 29.6284 227.8 31.5 231.675 31.5H236C240.055 31.5 243.836 33.5481 246.051 36.9448L248.837 41.2171C249.606 42.3965 250.151 43.7029 250.52 45.0617C251.763 49.6394 254.095 56.1564 256.5 56.5C257.625 56.6607 259.593 57.3644 261.785 58.2679C267.198 60.5001 273.529 59.0393 276.984 54.3114L279.953 50.2491C280.317 49.7504 280.719 49.2807 281.156 48.844L290.5 39.5L292.913 37.355C296.579 34.0966 302.173 34.3513 305.528 37.9294V37.9294C306.496 38.9621 307.208 40.2074 307.607 41.5654L312 56.5"
@@ -997,7 +997,7 @@ export const P2P = () => {
 
                       <div className="absolute left-[62px] top-[42px] size-2 rounded border-2 border-solid border-[#3573fc] bg-[#efeefa]" />
 
-                      <div className="absolute left-[43px] top-2.5 flex w-full flex-col items-center md:w-[46px]">
+                      <div className="absolute left-[43px] top-2.5 flex w-full flex-col items-center xl:w-[46px]">
                         <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-[#ffffff] px-2 py-1">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-4 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             5,674
@@ -1034,10 +1034,10 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3 md:w-[230px]">
+                    <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 xl:left-10">
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3 xl:w-[230px]">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                           <svg
                             width="203"
@@ -1131,15 +1131,15 @@ export const P2P = () => {
               </div>
 
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
-                  <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
+                  <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[442px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px] w-full md:w-[442px]"
+                      className="absolute left-0 top-0 h-[406px] w-full xl:w-[442px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9281_6366)">
                         <path
@@ -1176,7 +1176,7 @@ export const P2P = () => {
                     </svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="absolute left-[-32px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 md:left-[23px]">
+                      <div className="absolute left-[-32px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 xl:left-[23px]">
                         <div className="relative size-[120px]">
                           <div className="relative size-[120px]">
                             <div className="absolute left-0 top-0 size-[120px]">
@@ -1256,7 +1256,7 @@ export const P2P = () => {
                         viewBox="0 0 144 144"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[120px] top-1 size-36 md:left-[179px]"
+                        className="absolute left-[120px] top-1 size-36 xl:left-[179px]"
                       >
                         <rect width="144" height="144" rx="24" fill="white" />
                         <path
@@ -1304,7 +1304,7 @@ export const P2P = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
           <button
             aria-controls="p2p-slider"
             aria-label={t('navigation.previousSlide')}
@@ -1369,9 +1369,9 @@ export const P2P = () => {
 
       <Feedback />
 
-      <div className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl md:h-[544px] md:!flex-row">
-        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="md:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl xl:h-[544px] xl:!flex-row">
+        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]">
+          <div className="xl:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('calculationModule.title')}
           </div>
 
@@ -1408,10 +1408,10 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] md:h-[714px] md:w-[688px] md:bg-gray-100">
-            <div className="relative top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
+          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] xl:h-[714px] xl:w-[688px] xl:bg-gray-100">
+            <div className="relative top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 xl:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 md:w-[284px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 xl:w-[284px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('product.title')}
@@ -1424,7 +1424,7 @@ export const P2P = () => {
                         viewBox="0 0 19 2"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-0.5w-full absolute left-[3px] top-[11px] md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[11px] xl:w-[18px]"
                       >
                         <path
                           d="M1 1H17.5"
@@ -1441,7 +1441,7 @@ export const P2P = () => {
                         viewBox="0 0 19 2"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-0.5w-full absolute left-[3px] top-[5px] md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[5px] xl:w-[18px]"
                       >
                         <path
                           d="M1 1H17.5"
@@ -1458,7 +1458,7 @@ export const P2P = () => {
                         viewBox="0 0 19 2"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-0.5w-full absolute left-[3px] top-[17px] md:w-[18px]"
+                        className="h-0.5w-full absolute left-[3px] top-[17px] xl:w-[18px]"
                       >
                         <path
                           d="M1 1H17.5"
@@ -1472,9 +1472,9 @@ export const P2P = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 rounded-3xl p-2.5 md:w-[284px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 rounded-3xl p-2.5 xl:w-[284px]">
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 xl:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('product.amount.label')}
@@ -1492,7 +1492,7 @@ export const P2P = () => {
                           viewBox="0 0 232 30"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
+                          className="relative mt-[-6.00px] h-[30px] w-full xl:w-[232px]"
                         >
                           <path
                             d="M4 13L228 13"
@@ -1636,7 +1636,7 @@ export const P2P = () => {
                           </defs>
                         </svg>
 
-                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
+                        <div className="h-4w-full relative flex items-start justify-between xl:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             10 000 ₽
                           </div>
@@ -1648,7 +1648,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 xl:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('product.period.label')}
@@ -1666,7 +1666,7 @@ export const P2P = () => {
                           viewBox="0 0 232 30"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
+                          className="relative mt-[-6.00px] h-[30px] w-full xl:w-[232px]"
                         >
                           <path
                             d="M4 13L228 13"
@@ -1810,7 +1810,7 @@ export const P2P = () => {
                           </defs>
                         </svg>
 
-                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
+                        <div className="h-4w-full relative flex items-start justify-between xl:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             {t('product.period.min')}
                           </div>
@@ -1822,7 +1822,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 md:w-[264px]">
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 overflow-hidden rounded-2xl bg-[#f2f5ff] px-4 py-3.5 xl:w-[264px]">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('product.interestRate.label')}
@@ -1840,7 +1840,7 @@ export const P2P = () => {
                           viewBox="0 0 232 30"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="relative mt-[-6.00px] h-[30px] w-full md:w-[232px]"
+                          className="relative mt-[-6.00px] h-[30px] w-full xl:w-[232px]"
                         >
                           <path
                             d="M4 13L228 13"
@@ -1984,7 +1984,7 @@ export const P2P = () => {
                           </defs>
                         </svg>
 
-                        <div className="h-4w-full relative flex items-start justify-between md:w-[232px]">
+                        <div className="h-4w-full relative flex items-start justify-between xl:w-[232px]">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                             0%
                           </div>
@@ -2001,7 +2001,7 @@ export const P2P = () => {
                     onClick={handleTryClick}
                     className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
                   >
-                    <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
+                    <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[164px]">
                       {t('product.createProduct')}
                     </div>
                   </button>
@@ -2012,10 +2012,10 @@ export const P2P = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl md:!flex-row">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl xl:!flex-row">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] md:left-[33px] md:w-[688px] md:bg-gray-100">
-            <div className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 md:left-[153px]">
+          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] xl:left-[33px] xl:w-[688px] xl:bg-gray-100">
+            <div className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 xl:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
@@ -2178,8 +2178,8 @@ export const P2P = () => {
           </div>
         </div>
 
-        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 md:py-12 md:pl-12 md:pr-[68px]">
-          <div className="md:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]">
+          <div className="xl:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('payments.title')}
           </div>
 
@@ -2219,14 +2219,14 @@ export const P2P = () => {
       <Zaim />
       <Integrations />
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 md:p-20">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 xl:p-20">
         <svg
           width="1435"
           height="1361"
           viewBox="0 0 1435 1361"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[386px] top-[15px] h-[1060px] w-full md:w-[1204px]"
+          className="absolute left-[386px] top-[15px] h-[1060px] w-full xl:w-[1204px]"
         >
           <g opacity="0.12" filter="url(#filter0_f_9267_12444)">
             <path
@@ -2259,13 +2259,13 @@ export const P2P = () => {
           </defs>
         </svg>
 
-        <div className="relative flex w-full flex-col items-start gap-7 md:w-[640px]">
+        <div className="relative flex w-full flex-col items-start gap-7 xl:w-[640px]">
           <motion.div
             ref={ref3}
             initial={{ opacity: 0, x: 80 }}
             animate={inView3 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[530px] md:text-5xl md:leading-[60px]"
+            className="relative mt-[-1.00px] w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[530px] xl:text-5xl xl:leading-[60px]"
           >
             {t('flexibleSystem.title')}
           </motion.div>
@@ -2469,7 +2469,7 @@ export const P2P = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={inView20 ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-          className="absolute left-[810px] top-[102px] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 md:w-[324px]"
+          className="absolute left-[810px] top-[102px] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 xl:w-[324px]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -2479,14 +2479,14 @@ export const P2P = () => {
 
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
-                  <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
+                  <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
                     <svg
                       width="260"
                       height="4"
                       viewBox="0 0 260 4"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-1w-full absolute left-px top-1 md:w-[260px]"
+                      className="h-1w-full absolute left-px top-1 xl:w-[260px]"
                     >
                       <path
                         d="M2 2L258 2.00002"
@@ -2502,7 +2502,7 @@ export const P2P = () => {
                       viewBox="0 0 169 6"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
+                      className="h-1.5w-full absolute left-0 top-[3px] xl:w-[169px]"
                     >
                       <path
                         d="M3 3L166 3.00001"
@@ -2529,14 +2529,14 @@ export const P2P = () => {
 
               <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                 <div className="relative h-3.5 w-full self-stretch">
-                  <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
+                  <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
                     <svg
                       width="260"
                       height="4"
                       viewBox="0 0 260 4"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-1w-full absolute left-px top-1 md:w-[260px]"
+                      className="h-1w-full absolute left-px top-1 xl:w-[260px]"
                     >
                       <path
                         d="M2 2H258"
@@ -2552,7 +2552,7 @@ export const P2P = () => {
                       viewBox="0 0 95 6"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
+                      className="h-1.5w-full absolute left-0 top-[3px] xl:w-[95px]"
                     >
                       <path
                         d="M3 3H92"
@@ -2615,7 +2615,7 @@ export const P2P = () => {
             onClick={handleTryClick}
             className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
           >
-            <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[164px]">
+            <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[164px]">
               {t('application.applyLoan')}
             </div>
           </button>
@@ -2627,7 +2627,7 @@ export const P2P = () => {
           viewBox="0 0 1037 1134"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[571px] top-0 h-[656px] w-full md:w-[805px]"
+          className="absolute left-[571px] top-0 h-[656px] w-full xl:w-[805px]"
           aria-hidden={true}
         >
           <g opacity="0.24" filter="url(#filter0_f_9267_13819)">
@@ -2673,11 +2673,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-blue-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.current')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 48,456₽
               </div>
             </div>
@@ -2685,11 +2685,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-green-60" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.main')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 122,000₽
               </div>
             </div>
@@ -2697,11 +2697,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-yellow-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.interest')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 4,000₽
               </div>
             </div>
@@ -2709,11 +2709,11 @@ export const P2P = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-red-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.penalty')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 2,700₽
               </div>
             </div>

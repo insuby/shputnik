@@ -8,8 +8,6 @@ import Slider from 'react-slick';
 import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { HeroButtons } from 'shared/ui';
 
-import { Cta } from './Cta.tsx';
-
 export const Fdata = () => {
   const { t } = useTranslation(['fdata']);
   const { setIsOpen } = useFeedbackForm();
@@ -85,16 +83,16 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-[1440px] xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-12">
+        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-12">
           <svg
             width="1643"
             height="1443"
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
+            className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
           >
             <g opacity="0.3" filter="url(#filter0_f_9604_10514)">
               <path
@@ -133,15 +131,15 @@ export const Fdata = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12"
             >
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
-                  <h1 className="mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
+                  <h1 className="mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]">
                     {t('hero.title')}
                   </h1>
 
-                  <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
+                  <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left">
                     {t('static.heroDescription')}
                   </p>
                 </div>
@@ -155,7 +153,7 @@ export const Fdata = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
+            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9604_10535)">
@@ -194,9 +192,9 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="left-[704px] top-[208px] flex w-fit items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 md:absolute md:w-[576px]"
+            className="left-[704px] top-[208px] flex w-fit items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 xl:absolute xl:w-[576px]"
           >
-            <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 md:w-auto">
+            <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 xl:w-auto">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
                 <div className="relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
                   <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
@@ -430,7 +428,7 @@ export const Fdata = () => {
             viewBox="0 0 743 629"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[775px] top-[172px] h-[464px] w-full md:w-[601px]"
+            className="absolute left-[775px] top-[172px] h-[464px] w-full xl:w-[601px]"
           >
             <g opacity="0.32" filter="url(#filter0_f_9608_11091)">
               <path
@@ -468,7 +466,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[960px] top-[404px] flex w-full items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 md:w-[368px]"
+            className="absolute left-[960px] top-[404px] flex w-full items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 xl:w-[368px]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
@@ -595,7 +593,7 @@ export const Fdata = () => {
             viewBox="0 0 642 519"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[980px] top-[454px] h-[401px] w-full md:w-[410px]"
+            className="absolute left-[980px] top-[454px] h-[401px] w-full xl:w-[410px]"
           >
             <g opacity="0.24" filter="url(#filter0_f_9608_11095)">
               <path
@@ -629,15 +627,15 @@ export const Fdata = () => {
           </svg>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl md:w-[1376px] md:!flex-row">
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 md:gap-12 md:pl-12 md:pr-[68px]">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 md:w-[560px]">
-              <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl xl:w-[1376px] xl:!flex-row">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 xl:gap-12 xl:pl-12 xl:pr-[68px]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 xl:w-[560px]">
+              <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
                 {t('details.title')}
               </div>
 
-              <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
+              <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:text-left">
                 {t('details.description')}
               </p>
             </div>
@@ -708,21 +706,21 @@ export const Fdata = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView4 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12"
       >
         <motion.div
           ref={ref5}
           initial={{ opacity: 0, y: 50 }}
           animate={inView5 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
         >
           <motion.div
             ref={ref6}
             initial={{ opacity: 0, y: 30 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
           >
             {t('details.helpTitle')}
           </motion.div>
@@ -748,21 +746,21 @@ export const Fdata = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[1376px] md:!flex-row"
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:w-[1376px] xl:!flex-row"
           >
             <motion.div
               ref={ref10}
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-18-4.svg */}
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -792,7 +790,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView14 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-20.svg */}
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -823,14 +821,14 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:w-[1376px] md:!flex-row"
+            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:w-[1376px] xl:!flex-row"
           >
             <motion.div
               ref={ref19}
               initial={{ opacity: 0, x: -50 }}
               animate={inView19 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-19.svg */}
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -860,7 +858,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 0 }}
               animate={inView23 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-19-2.svg */}
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -890,7 +888,7 @@ export const Fdata = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={inView27 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-18-5.svg */}
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -918,16 +916,16 @@ export const Fdata = () => {
         </motion.div>
       </motion.div>
       <Feedback />
-      <div className="relative flex w-full flex-col md:h-[568px] md:w-[1376px] md:!flex-row">
-        <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
-          <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]">
+      <div className="relative flex w-full flex-col xl:h-[568px] xl:w-[1376px] xl:!flex-row">
+        <div className="flex w-full flex-col items-center gap-[68px] xl:w-[1472px] xl:!flex-row">
+          <div className="relative flex  w-full flex-col items-start justify-center gap-7 xl:w-[496px]">
+            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
               {t('details.features.title')}
             </div>
 
             <button
               onClick={onClick}
-              className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
+              className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 {t('details.features.try')}
@@ -935,7 +933,7 @@ export const Fdata = () => {
             </button>
           </div>
 
-          <div className="w-full md:w-[915px]" id="fdata-slider">
+          <div className="w-full xl:w-[915px]" id="fdata-slider">
             <Slider
               ref={sliderRef}
               dots={false}
@@ -948,14 +946,14 @@ export const Fdata = () => {
               arrows={false}
             >
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full md:w-[443px]"
+                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[443px]"
                   >
                     <g opacity="0.12" filter="url(#filter0_f_9604_10676)">
                       <path
@@ -989,7 +987,7 @@ export const Fdata = () => {
                   </svg>
 
                   <div className="relative w-full flex-1 grow self-stretch">
-                    <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 md:left-6 md:w-[299px]">
+                    <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 xl:left-6 xl:w-[299px]">
                       <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         {t('details.features.rules')}
                       </div>
@@ -1028,14 +1026,14 @@ export const Fdata = () => {
                 </div>
               </div>
               <div className="px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[442px] md:gap-12 md:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[442px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full md:w-[377px]"
+                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[377px]"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9604_10711)">
                       <path
@@ -1196,7 +1194,7 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
           <button
             aria-controls="fdata-slider"
             aria-label={t('details.navigation.previousSlide')}
@@ -1258,17 +1256,17 @@ export const Fdata = () => {
           </button>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch md:gap-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
         <div
           ref={ref53}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 md:w-[656px]"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
         >
           <motion.div
             ref={ref54}
             initial={{ opacity: 0, y: 30 }}
             animate={inView54 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
           >
             {t('details.testimonials.title')}
           </motion.div>
@@ -1282,17 +1280,17 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
-            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] md:block" />
+            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] xl:block" />
 
-            <motion.div className="relative flex flex-1 grow flex-col items-center gap-7 md:!flex-row  md:gap-12">
-              <div className="relative flex w-full flex-col items-start gap-4 md:w-[421px]">
-                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] md:hidden" />
+            <motion.div className="relative flex flex-1 grow flex-col items-center gap-7 xl:!flex-row  xl:gap-12">
+              <div className="relative flex w-full flex-col items-start gap-4 xl:w-[421px]">
+                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] xl:hidden" />
 
-                <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left">
+                <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-left">
                   {t('details.testimonials.author')}
                 </div>
 
-                <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
+                <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:text-left">
                   {t('details.testimonials.position')}
                   <br />
                   {t('details.testimonials.company')}
@@ -1305,12 +1303,12 @@ export const Fdata = () => {
                 viewBox="0 0 1 140"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative hidden w-px self-stretch md:block"
+                className="relative hidden w-px self-stretch xl:block"
               >
                 <path d="M0.5 0V140" stroke="#E3E5E8" />
               </svg>
 
-              <p className="relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:text-left">
+              <p className="relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:text-left">
                 {t('details.testimonials.quote')}
 
                 <br />
@@ -1323,7 +1321,7 @@ export const Fdata = () => {
               viewBox="0 0 670 640"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[178px] top-[-105px] h-[348px] w-full md:w-[323px]"
+              className="absolute left-[178px] top-[-105px] h-[348px] w-full xl:w-[323px]"
             >
               <g opacity="0.12" filter="url(#filter0_f_9606_11018)">
                 <path
@@ -1362,7 +1360,7 @@ export const Fdata = () => {
               viewBox="0 0 670 640"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[1005px] top-[11px] h-[348px] w-full md:w-[323px]"
+              className="absolute left-[1005px] top-[11px] h-[348px] w-full xl:w-[323px]"
             >
               <g opacity="0.12" filter="url(#filter0_f_9606_11020)">
                 <path
@@ -1397,13 +1395,13 @@ export const Fdata = () => {
           </motion.div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch xl:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10 self-stretch"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
               >
                 <svg
                   width="64"
@@ -1466,7 +1464,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
               >
                 <svg
                   width="64"
@@ -1539,13 +1537,13 @@ export const Fdata = () => {
               </motion.div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch md:!flex-row">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch xl:!flex-row">
               <motion.div
                 ref={ref54}
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
               >
                 <svg
                   width="64"
@@ -1608,7 +1606,7 @@ export const Fdata = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView54 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 md:p-10"
+                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
               >
                 <svg
                   width="64"

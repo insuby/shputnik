@@ -19,7 +19,7 @@ export const Input = ({
   const defaultText1 = text1 || t('input.hello');
   return (
     <div
-      className={`relative flex w-full items-center justify-center gap-2.5 rounded-2xl bg-white px-5 py-4 md:w-[302px] ${
+      className={`relative flex w-full items-center justify-center gap-2.5 rounded-2xl bg-white px-5 py-4 xl:w-[302px] ${
         state === 'active' ? 'border-2 border-solid' : 'border border-solid'
       } ${
         state === 'active' ? 'border-[#acc5ff]' : 'border-[#e3e4e7]'

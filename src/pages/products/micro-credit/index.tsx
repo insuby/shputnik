@@ -51,16 +51,16 @@ export const MicroCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-[1440px] xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[1060px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 md:h-auto md:p-12">
+        <div className="relative flex h-[1060px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 xl:h-auto xl:p-12">
           <svg
             width="1077"
             height="1131"
             viewBox="0 0 1077 1131"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full md:w-[1108px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
             aria-hidden={true}
           >
             <g opacity="0.32" filter="url(#filter0_f_9017_4482)">
@@ -100,14 +100,14 @@ export const MicroCredit = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12"
             >
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
-                <h1 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
+                <h1 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]">
                   {t('hero.title')}
                 </h1>
 
-                <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left">
+                <p className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffff99] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left">
                   {t('hero.description')}
                 </p>
               </div>
@@ -159,7 +159,7 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="left-[786px] top-[132px] flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:absolute md:w-[324px]"
+            className="left-[786px] top-[132px] flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 xl:absolute xl:w-[324px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -169,14 +169,14 @@ export const MicroCredit = () => {
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
+                    <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
                       <svg
                         width="260"
                         height="4"
                         viewBox="0 0 260 4"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
+                        className="h-1w-full absolute left-px top-1 xl:w-[260px]"
                       >
                         <path
                           d="M2 2H258"
@@ -192,7 +192,7 @@ export const MicroCredit = () => {
                         viewBox="0 0 169 6"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
+                        className="h-1.5w-full absolute left-0 top-[3px] xl:w-[169px]"
                       >
                         <path
                           d="M3 3L166 3.00001"
@@ -219,14 +219,14 @@ export const MicroCredit = () => {
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="h-3w-full relative left-[-3px] top-px md:w-[261px]">
+                    <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
                       <svg
                         width="260"
                         height="4"
                         viewBox="0 0 260 4"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1w-full absolute left-px top-1 md:w-[260px]"
+                        className="h-1w-full absolute left-px top-1 xl:w-[260px]"
                       >
                         <path
                           d="M2 2L258 2.00002"
@@ -242,7 +242,7 @@ export const MicroCredit = () => {
                         viewBox="0 0 95 6"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1.5w-full absolute left-0 top-[3px] md:w-[95px]"
+                        className="h-1.5w-full absolute left-0 top-[3px] xl:w-[95px]"
                       >
                         <path
                           d="M3 3H92"
@@ -304,7 +304,7 @@ export const MicroCredit = () => {
                 onClick={onClick}
                 className="all-[unset] relative box-border flex h-12 w-full cursor-pointer items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3 transition-opacity hover:opacity-90"
               >
-                <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[164px]">
+                <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[164px]">
                   {t('application.applyLoan')}
                 </div>
               </button>
@@ -317,7 +317,7 @@ export const MicroCredit = () => {
             viewBox="0 0 964 720"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[559px] top-0 h-[600px] w-full md:w-[817px]"
+            className="absolute left-[559px] top-0 h-[600px] w-full xl:w-[817px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_120_871)">
@@ -356,7 +356,7 @@ export const MicroCredit = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={inView5 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="absolute left-[130px] top-[740px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4 md:left-[1062px] md:top-[242px]"
+            className="absolute left-[130px] top-[740px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-[#ffffff] p-4 xl:left-[1062px] xl:top-[242px]"
           >
             <Graph />
 
@@ -364,11 +364,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-blue-50" />
 
-                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   {t('chart.current')}
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   48,456₽
                 </div>
               </div>
@@ -376,11 +376,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-green-60" />
 
-                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   {t('chart.main')}
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   122,000₽
                 </div>
               </div>
@@ -388,11 +388,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-yellow-50" />
 
-                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   {t('chart.interest')}
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   4,000₽
                 </div>
               </div>
@@ -400,11 +400,11 @@ export const MicroCredit = () => {
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                 <div className="relative size-2 rounded bg-red-50" />
 
-                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   {t('chart.penalty')}
                 </div>
 
-                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+                <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                   2,700₽
                 </div>
               </div>
@@ -418,18 +418,18 @@ export const MicroCredit = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative h-fit w-full  md:h-[652px] md:w-[1376px]"
+        className="relative h-fit w-full  xl:h-[652px] xl:w-[1376px]"
       >
-        <div className="relative  h-fit w-full  md:h-[568px] md:w-[1376px]">
-          <div className="flex w-full flex-col items-center gap-[68px] md:w-[1472px] md:!flex-row">
-            <div className="relative flex  w-full flex-col items-start justify-center gap-7 md:w-[496px]">
-              <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-left md:text-5xl md:leading-[60px]">
+        <div className="relative  h-fit w-full  xl:h-[568px] xl:w-[1376px]">
+          <div className="flex w-full flex-col items-center gap-[68px] xl:w-[1472px] xl:!flex-row">
+            <div className="relative flex  w-full flex-col items-start justify-center gap-7 xl:w-[496px]">
+              <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-left xl:text-5xl xl:leading-[60px]">
                 {t('mechanisms.title')}
               </div>
 
               <button
                 onClick={onClick}
-                className="all-[unset] relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 md:w-fit"
+                className="all-[unset] relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:w-fit"
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   {t('mechanisms.try')}
@@ -437,7 +437,7 @@ export const MicroCredit = () => {
               </button>
             </div>
 
-            <div className="w-full md:w-[915px]" id="microcredit-slider">
+            <div className="w-full xl:w-[915px]" id="microcredit-slider">
               <Slider
                 ref={sliderRef}
                 dots={false}
@@ -450,14 +450,14 @@ export const MicroCredit = () => {
                 arrows={false}
               >
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
+                      className="absolute left-0 top-0 h-[467px] w-full xl:w-[443px]"
                     >
                       <g opacity="0.16" filter="url(#filter0_f_9122_617)">
                         <path
@@ -494,18 +494,18 @@ export const MicroCredit = () => {
                     </svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 md:left-10">
+                      <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 xl:left-10">
                         <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
-                              <div className="h-3w-full relative left-0 top-px md:left-[-3px] md:w-[203px]">
+                              <div className="h-3w-full relative left-0 top-px xl:left-[-3px] xl:w-[203px]">
                                 <svg
                                   width="202"
                                   height="4"
                                   viewBox="0 0 202 4"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
-                                  className="h-1w-full absolute left-px top-1 md:w-[202px]"
+                                  className="h-1w-full absolute left-px top-1 xl:w-[202px]"
                                 >
                                   <path
                                     d="M2 2L200 2.00002"
@@ -521,7 +521,7 @@ export const MicroCredit = () => {
                                   viewBox="0 0 169 6"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
-                                  className="h-1.5w-full absolute left-0 top-[3px] md:w-[169px]"
+                                  className="h-1.5w-full absolute left-0 top-[3px] xl:w-[169px]"
                                 >
                                   <path
                                     d="M3 3L166 3.00001"
@@ -561,14 +561,14 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[467px]  w-full md:w-[377px]"
+                      className="absolute left-0 top-0 h-[467px]  w-full xl:w-[377px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9122_622)">
                         <path
@@ -605,17 +605,17 @@ export const MicroCredit = () => {
                     </svg>
 
                     <div className="relative w-full self-stretch">
-                      <div className="relative left-0 top-[26px] h-[200px] w-full md:left-7 md:h-[170px] md:w-[290px]">
-                        <div className="absolute left-7 top-9 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] md:w-[235px]">
+                      <div className="relative left-0 top-[26px] h-[200px] w-full xl:left-7 xl:h-[170px] xl:w-[290px]">
+                        <div className="absolute left-7 top-9 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] xl:w-[235px]">
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
                             {t('processes.applicationApproved')}
                           </div>
                         </div>
 
-                        <div className="absolute left-3 top-7 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50 md:w-[266px]">
+                        <div className="absolute left-3 top-7 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50 xl:w-[266px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
-                              <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
+                              <div className="h-5w-full relative left-[3px] top-0.5 xl:w-[18px]">
                                 <svg
                                   width="8"
                                   height="5"
@@ -639,7 +639,7 @@ export const MicroCredit = () => {
                                   viewBox="0 0 19 17"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
-                                  className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]"
+                                  className="absolute left-0 top-0 h-[17px] w-full xl:w-[18px]"
                                 >
                                   <path
                                     d="M2.35059 7.73193C2.35059 5.89859 3.07888 4.14034 4.37524 2.84398C5.67161 1.54761 7.42986 0.819322 9.2632 0.819322C11.0965 0.819322 12.8548 1.54761 14.1511 2.84398C15.4475 4.14034 16.1758 5.89859 16.1758 7.73193C16.1758 11.171 16.9727 13.9341 17.6063 15.0286C17.6736 15.1451 17.7091 15.2773 17.7092 15.4119C17.7094 15.5465 17.6741 15.6788 17.607 15.7955C17.5399 15.9122 17.4433 16.0092 17.327 16.0768C17.2106 16.1444 17.0785 16.1802 16.9439 16.1807H1.58252C1.44809 16.1799 1.31622 16.1438 1.20011 16.076C1.08399 16.0083 0.987683 15.9113 0.920818 15.7946C0.853953 15.678 0.818869 15.5459 0.819073 15.4115C0.819277 15.277 0.854762 15.145 0.921982 15.0286C1.55468 13.9341 2.35059 11.17 2.35059 7.73193Z"
@@ -658,10 +658,10 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-0 top-0 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 md:w-[290px]">
+                        <div className="absolute left-0 top-0 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 xl:w-[290px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative size-6 bg-[100%_100%]">
-                              <div className="h-5w-full relative left-[3px] top-0.5 md:w-[18px]">
+                              <div className="h-5w-full relative left-[3px] top-0.5 xl:w-[18px]">
                                 <svg
                                   width="8"
                                   height="5"
@@ -685,7 +685,7 @@ export const MicroCredit = () => {
                                   viewBox="0 0 19 17"
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
-                                  className="absolute left-0 top-0 h-[17px] w-full md:w-[18px]"
+                                  className="absolute left-0 top-0 h-[17px] w-full xl:w-[18px]"
                                 >
                                   <path
                                     d="M2.35059 7.73193C2.35059 5.89859 3.07888 4.14034 4.37524 2.84398C5.67161 1.54761 7.42986 0.819322 9.2632 0.819322C11.0965 0.819322 12.8548 1.54761 14.1511 2.84398C15.4475 4.14034 16.1758 5.89859 16.1758 7.73193C16.1758 11.171 16.9727 13.9341 17.6063 15.0286C17.6736 15.1451 17.7091 15.2773 17.7092 15.4119C17.7094 15.5465 17.6741 15.6788 17.607 15.7955C17.5399 15.9122 17.4433 16.0092 17.327 16.0768C17.2106 16.1444 17.0785 16.1802 16.9439 16.1807H1.58252C1.44809 16.1799 1.31622 16.1438 1.20011 16.076C1.08399 16.0083 0.987683 15.9113 0.920818 15.7946C0.853953 15.678 0.818869 15.5459 0.819073 15.4115C0.819277 15.277 0.854762 15.145 0.921982 15.0286C1.55468 13.9341 2.35059 11.17 2.35059 7.73193Z"
@@ -718,14 +718,14 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
+                      className="absolute left-0 top-0 h-[467px] w-full xl:w-[443px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9668_11045)">
                         <path
@@ -934,14 +934,14 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[467px] w-full md:w-[443px]"
+                      className="absolute left-0 top-0 h-[467px] w-full xl:w-[443px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9668_11877)">
                         <path
@@ -978,7 +978,7 @@ export const MicroCredit = () => {
                     </svg>
 
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-[22px] top-1.5 flex w-full items-center gap-4 md:left-[42px] md:w-[264px]">
+                      <div className="relative left-[22px] top-1.5 flex w-full items-center gap-4 xl:left-[42px] xl:w-[264px]">
                         <div className="relative size-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
 
                         <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
@@ -1031,9 +1031,9 @@ export const MicroCredit = () => {
                 </div>
 
                 <div className="px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 md:w-[443px] md:gap-12 md:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative -left-12 -top-12 w-[120%] md:w-[443px]">
+                      <div className="relative -left-12 -top-12 w-[120%] xl:w-[443px]">
                         <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
@@ -1091,7 +1091,7 @@ export const MicroCredit = () => {
                           viewBox="0 0 524 422"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-0 top-0 h-[339px] w-full md:w-[443px]"
+                          className="absolute left-0 top-0 h-[339px] w-full xl:w-[443px]"
                         >
                           <g opacity="0.32" filter="url(#filter0_f_9670_11051)">
                             <path
@@ -1194,7 +1194,7 @@ export const MicroCredit = () => {
               </Slider>
             </div>
           </div>
-          <div className="h-14w-full absolute left-[725px] top-[592px] hidden items-center justify-between rounded-full bg-[#f9fafd] p-1 md:flex md:w-[120px]">
+          <div className="h-14w-full absolute left-[725px] top-[592px] hidden items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
             <button
               aria-controls="microcredit-slider"
               aria-label={t('processes.previousSlide')}

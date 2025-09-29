@@ -36,16 +36,16 @@ export const Autocredit = () => {
   const inView10 = useInView(ref10, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 md:w-[1440px] md:gap-[136px] md:px-8 md:pb-[136px] md:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-[1440px] xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:h-[620px] md:p-12">
+        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:h-[620px] xl:p-12">
           <svg
             width="1643"
             height="1443"
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
+            className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
             aria-hidden={true}
           >
             <g opacity="0.3" filter="url(#filter0_f_9245_977)">
@@ -80,14 +80,14 @@ export const Autocredit = () => {
           </svg>
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 md:w-[624px]  md:gap-12">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 md:inline-flex">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
                 <motion.h1
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left md:text-6xl md:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
                 >
                   {t('hero.title')}
                 </motion.h1>
@@ -97,7 +97,7 @@ export const Autocredit = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] md:w-[624px] md:text-left"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
                 >
                   {t('hero.description')}
                 </motion.p>
@@ -110,9 +110,9 @@ export const Autocredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[704px] top-[154px] hidden items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] md:inline-flex"
+            className="absolute left-[704px] top-[154px] hidden items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:inline-flex"
           >
-            <div className="relative mt-2 flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] md:w-[393.9px]">
+            <div className="relative mt-2 flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] xl:w-[393.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('calculator.title')}
               </div>
@@ -140,7 +140,7 @@ export const Autocredit = () => {
                     viewBox="0 0 14 8"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                    className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 xl:w-[13px]"
                   >
                     <path
                       d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
@@ -207,7 +207,7 @@ export const Autocredit = () => {
                       viewBox="0 0 14 8"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 xl:w-[13px]"
                     >
                       <path
                         d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
@@ -243,7 +243,7 @@ export const Autocredit = () => {
                       viewBox="0 0 14 8"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 xl:w-[13px]"
                     >
                       <path
                         d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
@@ -281,7 +281,7 @@ export const Autocredit = () => {
                       viewBox="0 0 14 8"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 xl:w-[13px]"
                     >
                       <path
                         d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
@@ -317,7 +317,7 @@ export const Autocredit = () => {
                       viewBox="0 0 14 8"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 md:w-[13px]"
+                      className="absolute left-[3px] top-[5px] h-[7px] w-full -rotate-90 xl:w-[13px]"
                     >
                       <path
                         d="M12.8898 1.1106L7.00017 7.00028L1.1105 1.1106"
@@ -398,14 +398,14 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-col items-start gap-[23.92px] self-stretch p-[29.9px] md:w-[393.9px]">
+            <div className="relative flex w-full flex-col items-start gap-[23.92px] self-stretch p-[29.9px] xl:w-[393.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('form.selectConditions')}
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[20.5px]">
-                <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px] md:w-[337.09px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch md:w-auto">
+                <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px] xl:w-[337.09px]">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch xl:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('form.yourConditions')}
@@ -418,7 +418,7 @@ export const Autocredit = () => {
                           viewBox="0 0 18 13"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-2.5w-full absolute left-[-14133px] top-[-754px] md:w-[15px]"
+                          className="h-2.5w-full absolute left-[-14133px] top-[-754px] xl:w-[15px]"
                         >
                           <path
                             d="M1.10861 7.28462L5.91182 12.0878L16.8906 1.10905"
@@ -442,7 +442,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.amount')}
                         </div>
@@ -452,7 +452,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.rate')}
                         </div>
@@ -465,8 +465,8 @@ export const Autocredit = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] md:w-[334.11px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
+                <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] xl:w-[334.11px]">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('form.increasedFirstPayment')}
@@ -484,7 +484,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.amount')}
                         </div>
@@ -494,7 +494,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.rate')}
                         </div>
@@ -507,8 +507,8 @@ export const Autocredit = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] md:w-[334.11px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] md:w-auto">
+                <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] xl:w-[334.11px]">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('form.increasedTerm')}
@@ -526,7 +526,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[91.19px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[91.19px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.amount')}
                         </div>
@@ -536,7 +536,7 @@ export const Autocredit = () => {
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-col items-start gap-[1.49px] md:w-[59.8px]">
+                      <div className="relative flex w-full flex-col items-start gap-[1.49px] xl:w-[59.8px]">
                         <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {t('form.rate')}
                         </div>
@@ -558,7 +558,7 @@ export const Autocredit = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[1053px] top-44 h-[568px] w-full md:w-[619px]"
+            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9245_2387)">
@@ -601,7 +601,7 @@ export const Autocredit = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch md:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch xl:gap-12"
       >
         <motion.div
           ref={ref7}
@@ -615,7 +615,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView8 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-5xl md:leading-[60px]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
           >
             {t('management.title')}
           </motion.p>
@@ -625,7 +625,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] md:w-[704px]"
+            className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[704px]"
           >
             {t('management.description')}
           </motion.p>
@@ -636,14 +636,14 @@ export const Autocredit = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView10 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl md:w-[1376px] md:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl xl:w-[1376px] xl:!flex-row"
         >
           <Marquee
             fade
-            className="relative flex w-full flex-1 grow  !gap-[1rem] self-stretch rounded-[32px] bg-[#f9fafd] p-7 md:h-[609px] md:p-0"
+            className="relative flex w-full flex-1 grow  !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 xl:h-[609px] xl:p-0"
             innerClassName="!gap-[1rem] !w-[750px]"
           >
-            <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 md:absolute">
+            <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 xl:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -663,7 +663,7 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 md:absolute">
+            <div className="top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 xl:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -683,7 +683,7 @@ export const Autocredit = () => {
               </div>
             </div>
 
-            <div className="right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff]  px-4 py-6 md:absolute">
+            <div className="right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff]  px-4 py-6 xl:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
                   className="relative h-[120px] w-full self-stretch"
@@ -704,7 +704,7 @@ export const Autocredit = () => {
             </div>
           </Marquee>
 
-          <div className="flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 md:relative md:py-12 md:pl-12 md:pr-[68px]">
+          <div className="flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:relative xl:py-12 xl:pl-12 xl:pr-[68px]">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={inView10 ? { opacity: 1, y: 0 } : {}}

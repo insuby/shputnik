@@ -6,17 +6,17 @@ import { RoutesPath } from 'shared/routes-path.tsx';
 export const FooterSection = () => {
   const { t } = useTranslation(['footer', 'nav']);
   return (
-    <footer className="relative mx-auto mb-4 flex w-[calc(100%-32px)] flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 md:mt-[136px] md:p-12">
+    <footer className="relative mx-auto mb-4 flex w-[calc(100%-32px)] flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 xl:mt-[136px] xl:p-12">
       <nav
         aria-label={t('software', { ns: 'footer' })}
-        className="relative flex w-full flex-[0_0_auto] items-start justify-around gap-7 self-stretch md:gap-12"
+        className="relative flex w-full flex-[0_0_auto] items-start justify-around gap-7 self-stretch xl:gap-12"
       >
-        <div className="relative flex w-full flex-col items-start justify-between gap-10 md:h-[324px] md:w-[268px] md:gap-0">
+        <div className="relative flex w-full flex-col items-start justify-between gap-10 xl:h-[324px] xl:w-[268px] xl:gap-0">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 !text-[16px]">
             <div className="relative h-[22px] w-28">
               <Link
                 to={RoutesPath.MAIN}
-                className="relative block h-[23px] w-full !text-[16px] md:w-[170px]"
+                className="relative block h-[23px] w-full !text-[16px] xl:w-[170px]"
               >
                 <span className="sr-only">Sputnik</span>
                 <svg
@@ -62,7 +62,7 @@ export const FooterSection = () => {
               </Link>
             </div>
 
-            <div className="relativew w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] md:w-[233px]">
+            <div className="relativew w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
               {t('description', { ns: 'footer' })
                 .split('\n')
                 .map((line, idx) => (
@@ -74,7 +74,7 @@ export const FooterSection = () => {
             </div>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch md:!hidden">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch xl:!hidden">
             <div className="relative mt-[-1.00px] self-stretch font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               {t('contacts', { ns: 'footer' })}
             </div>
@@ -82,7 +82,7 @@ export const FooterSection = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch !text-[16px]">
               <a
                 href="tel:+74950062157"
-                className="relative mt-[-1.00px] w-full text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC] md:w-[233px]"
+                className="relative mt-[-1.00px] w-full text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC] xl:w-[233px]"
               >
                 +7 (495) 006-21-57
               </a>
@@ -94,13 +94,13 @@ export const FooterSection = () => {
             </div>
           </div>
 
-          <p className="relativeww-full font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] md:w-[233px]">
+          <p className="relativeww-full font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
             © 2013 - {new Date().getFullYear()} Sputnik – <br />
             {t('copyrightSuffix', { ns: 'footer' })}
           </p>
         </div>
 
-        <div className="relative hidden h-[312px] w-full flex-col items-center gap-4 md:flex md:w-[268px]">
+        <div className="relative hidden h-[312px] w-full flex-col items-center gap-4 xl:flex xl:w-[268px]">
           <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
             {t('software', { ns: 'footer' })}
           </div>
@@ -148,7 +148,7 @@ export const FooterSection = () => {
           </ul>
         </div>
 
-        <div className="relative hidden w-full flex-col items-start gap-7 md:flex md:w-[268px]">
+        <div className="relative hidden w-full flex-col items-start gap-7 xl:flex xl:w-[268px]">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
             <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               {t('software', { ns: 'footer' })}
@@ -194,37 +194,37 @@ export const FooterSection = () => {
           </div>
         </div>
 
-        <div className="relative hidden h-[324px] w-full flex-col items-center justify-center gap-7 md:flex md:w-[268px]">
+        <div className="relative hidden h-[324px] w-full flex-col items-center justify-center gap-7 xl:flex xl:w-[268px]">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-            <div className="relative mt-[-1.00px] w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] md:w-[268px]">
+            <div className="relative mt-[-1.00px] w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[268px]">
               {t('company', { ns: 'footer' })}
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 md:w-[268px]">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 xl:w-[268px]">
               <Link
                 to={RoutesPath.ABOUT}
-                className="relative mt-[-1.00px] w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] md:w-[233px]"
+                className="relative mt-[-1.00px] w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('about', { ns: 'nav' })}
               </Link>
 
               <Link
                 to={RoutesPath.REVIEWS}
-                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] md:w-[233px]"
+                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('reviews', { ns: 'nav' })}
               </Link>
 
               <Link
                 to={RoutesPath.WORK}
-                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] md:w-[233px]"
+                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('vacancies', { ns: 'nav' })}
               </Link>
 
               <Link
                 to={RoutesPath.PRIVACY}
-                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] md:w-[233px]"
+                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('privacy', {
                   ns: 'footer',
@@ -242,7 +242,7 @@ export const FooterSection = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
               <a
                 href="tel:+74950062157"
-                className="relative mt-[-1.00px] w-full text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC] md:w-[233px]"
+                className="relative mt-[-1.00px] w-full text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC] xl:w-[233px]"
               >
                 +7 (495) 006-21-57
               </a>

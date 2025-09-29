@@ -54,15 +54,15 @@ export const Feedback = () => {
   const inView21 = useInView(ref21, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex w-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 md:w-[1376px]">
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 md:p-[60px]">
+    <div className="relative flex w-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-[1376px]">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
         <svg
           width="939"
           height="763"
           viewBox="0 0 939 763"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-14 top-[-306px] h-[590px] w-full md:w-[620px]"
+          className="absolute left-14 top-[-306px] h-[590px] w-full xl:w-[620px]"
           aria-hidden={true}
         >
           <g opacity="0.4" filter="url(#filter0_f_0_4)">
@@ -102,7 +102,7 @@ export const Feedback = () => {
           viewBox="0 0 1040 846"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[666px] top-[-109px] h-[675px] w-full md:w-[727px]"
+          className="absolute left-[666px] top-[-109px] h-[675px] w-full xl:w-[727px]"
           aria-hidden={true}
         >
           <g opacity="0.3" filter="url(#filter0_f_0_5)">
@@ -136,7 +136,7 @@ export const Feedback = () => {
           </defs>
         </svg>
 
-        <div className="relative flex flex-col items-start gap-7 md:w-[696px]">
+        <div className="relative flex flex-col items-start gap-7 xl:w-[696px]">
           <div className="relative flex w-full flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
@@ -165,7 +165,7 @@ export const Feedback = () => {
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:w-fit"
+            className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 xl:w-fit"
           >
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('feedback.contactButton')}
@@ -178,7 +178,7 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 md:inline-flex"
+          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 xl:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
             <motion.div
@@ -186,7 +186,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-              className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]"
+              className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]"
             >
               {t('feedback.paymentSchedule')}
             </motion.div>
@@ -196,7 +196,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView6 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-              className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]"
+              className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]"
             >
               {t('feedback.contract')}
             </motion.div>
@@ -300,7 +300,7 @@ export const Feedback = () => {
             viewBox="0 0 329 62"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-0 top-[109px] h-24 w-full md:w-[328px]"
+            className="absolute left-0 top-[109px] h-24 w-full xl:w-[328px]"
             aria-hidden={true}
           >
             <path
@@ -334,7 +334,7 @@ export const Feedback = () => {
           viewBox="0 0 669 732"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[874px] top-6 h-[403px] w-full md:w-[426px]"
+          className="absolute left-[874px] top-6 h-[403px] w-full xl:w-[426px]"
           aria-hidden={true}
         >
           <g opacity="0.16" filter="url(#filter0_f_0_37)">

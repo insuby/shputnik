@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { LanguageSwitcher } from 'widgets';
 
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -49,7 +48,7 @@ export const HeaderSection = () => {
     >
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
-          <div className="relative h-[23px] w-full md:w-[170px]">
+          <div className="relative h-[23px] w-full xl:w-[170px]">
             <span className="sr-only">Sputnik</span>
             <img
               className="absolute left-0 top-0 size-full"
@@ -63,7 +62,7 @@ export const HeaderSection = () => {
 
       <nav
         aria-label={t('products', { ns: 'nav' })}
-        className="relative hidden items-center gap-16 md:flex"
+        className="relative hidden items-center gap-16 xl:flex"
       >
         <div className="relative">
           <button
@@ -114,7 +113,7 @@ export const HeaderSection = () => {
         <button
           aria-label={t('openMenu', { ns: 'common' })}
           onClick={() => setIsMenuOpen(true)}
-          className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10 md:hidden"
+          className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10 xl:hidden"
         >
           <svg
             width="20"
@@ -144,7 +143,7 @@ export const HeaderSection = () => {
 
       {isMenuOpen && (
         <div
-          className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 md:hidden"
+          className="fixed inset-0 z-50 overflow-y-auto bg-white px-6 pb-10 pt-6 xl:hidden"
           role="dialog"
           aria-modal="true"
           aria-label={t('products', { ns: 'nav' })}
@@ -155,7 +154,7 @@ export const HeaderSection = () => {
               onClick={() => setIsMenuOpen(false)}
               className="h-[22px] w-28"
             >
-              <div className="relative h-[23px] w-full md:w-[170px]">
+              <div className="relative h-[23px] w-full xl:w-[170px]">
                 <img
                   className="absolute left-0 top-0 size-full"
                   alt="Group"
@@ -490,7 +489,7 @@ export const HeaderSection = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
-            className="fixed inset-x-0 top-20 z-50 mx-auto mt-1 hidden max-w-[1440px] justify-center py-2 md:flex"
+            className="fixed inset-x-0 top-20 z-50 mx-auto mt-1 hidden max-w-[1440px] justify-center py-2 xl:flex"
             id="products-menu"
             role="region"
             aria-label={t('headings.lending', { ns: 'megamenu' })}
@@ -505,15 +504,20 @@ export const HeaderSection = () => {
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[0px_0px_32px_32px] border border-[#F3F4F7] bg-white px-6 pb-6 pt-10">
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
-                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[590px]">
+                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[590px]">
                       {t('headings.lending', { ns: 'megamenu' })}
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] md:w-[1392px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.MICROCREDIT}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.MICROCREDIT) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -582,6 +586,11 @@ export const HeaderSection = () => {
                     <Link
                       to={RoutesPath.BUSINESSCREDIT}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.BUSINESSCREDIT) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -641,6 +650,11 @@ export const HeaderSection = () => {
                     <Link
                       to={RoutesPath.BANKCREDIT}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.BANKCREDIT) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -719,10 +733,15 @@ export const HeaderSection = () => {
                     </Link>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] md:w-[1392px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.BNPL}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.BNPL) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -768,6 +787,11 @@ export const HeaderSection = () => {
                     <Link
                       to={RoutesPath.BNPL}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.BNPL) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -820,6 +844,11 @@ export const HeaderSection = () => {
                     <Link
                       to={RoutesPath.AUTOCREDIT}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.AUTOCREDIT) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -877,10 +906,15 @@ export const HeaderSection = () => {
                     </Link>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] md:w-[1392px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.P2P}
-                      className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] md:w-[448px]"
+                      className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] xl:w-[448px]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.P2P) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -932,7 +966,12 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.ISLAMFINANCE}
-                      className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] md:w-[448px]"
+                      className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] xl:w-[448px]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.ISLAMFINANCE) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -979,15 +1018,20 @@ export const HeaderSection = () => {
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
-                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[590px]">
+                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[590px]">
                       {t('headings.otherSoftware', { ns: 'megamenu' })}
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] md:w-[1392px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.DATAUNLOAD}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.DATAUNLOAD) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -1040,6 +1084,11 @@ export const HeaderSection = () => {
                     <Link
                       to={RoutesPath.FDATA}
                       className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.FDATA) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -1082,10 +1131,14 @@ export const HeaderSection = () => {
                       </div>
                     </Link>
 
-
                     <Link
                       to={RoutesPath.FDATA}
                       className="group invisible relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      onClick={() => {
+                        if (pathname === RoutesPath.FDATA) {
+                          setIsMenuOpen(false);
+                        }
+                      }}
                     >
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
@@ -1127,22 +1180,26 @@ export const HeaderSection = () => {
                         {t('tiles.decisionsModuleFull', { ns: 'megamenu' })}
                       </div>
                     </Link>
-
                   </div>
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 px-5 py-0">
-                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] md:w-[590px]">
+                    <div className="relative mt-[-1.00px] w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[590px]">
                       {t('headings.services', { ns: 'megamenu' })}
                     </div>
                   </div>
 
                   <Link
                     to={RoutesPath.DEVELOPMENT}
-                    className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] md:w-[1392px]"
+                    className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]"
+                    onClick={() => {
+                      if (pathname === RoutesPath.DEVELOPMENT) {
+                        setIsMenuOpen(false);
+                      }
+                    }}
                   >
-                    <div className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] md:w-[448px]">
+                    <div className="group relative flex w-full cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd] xl:w-[448px]">
                       <svg
                         className="relative size-16 flex-[0_0_auto] text-[#F3F4F7] group-hover:text-white"
                         width="64"

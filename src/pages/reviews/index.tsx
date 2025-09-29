@@ -19,26 +19,26 @@ export const Reviews = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-0 md:p-[88px]"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-0 xl:p-[88px]"
       aria-labelledby="reviews-title"
     >
-      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 md:w-[560px]">
+      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 xl:w-[560px]">
         <h1
           id="reviews-title"
-          className="relative mt-3 self-stretch text-[32px] font-medium leading-[36px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:mt-[-1.00px] md:text-5xl md:leading-[60px]"
+          className="relative mt-3 self-stretch text-[32px] font-medium leading-[36px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:mt-[-1.00px] xl:text-5xl xl:leading-[60px]"
         >
           {t('title')}
         </h1>
       </header>
 
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="grid w-full grid-cols-1 gap-4 xl:grid-cols-2">
         {t('reviewers', { returnObjects: true }).map((reviewer, idx) => (
           <article
             key={videoSrcs[idx]}
             aria-labelledby={`review-${idx}-title`}
             className="relative flex flex-1 grow flex-col items-start gap-3 rounded-3xl bg-gray-10 p-3"
           >
-            <div className="relative h-56 w-full self-stretch overflow-hidden rounded-2xl bg-gray-10 md:h-80">
+            <div className="relative h-56 w-full self-stretch overflow-hidden rounded-2xl bg-gray-10 xl:h-80">
               <div className="size-full">
                 <iframe
                   title={`${reviewer.name}: ${t('reviewLabel')}`}

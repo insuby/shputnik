@@ -32,7 +32,7 @@ export const DivWrapper = () => {
   const inView19 = useInView(ref19, { once: true, margin: '-100px' });
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 md:gap-7 md:px-0"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 xl:gap-7 xl:px-0"
       aria-labelledby="classic-crediting"
     >
       <motion.h2
@@ -40,25 +40,25 @@ export const DivWrapper = () => {
         initial={{ opacity: 0, x: -40 }}
         animate={inView14 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-fit md:text-[40px] md:leading-10"
+        className="relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-fit xl:text-[40px] xl:leading-10"
         id="classic-crediting"
       >
-        <span className="font-medium text-[#1c222f] md:leading-[48px]">
+        <span className="font-medium text-[#1c222f] xl:leading-[48px]">
           {t('classicLending')}
         </span>
       </motion.h2>
-      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch md:h-[660px] md:grid-cols-2">
+      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch xl:h-[660px] xl:grid-cols-2">
         <motion.div
           id="animate_15"
           ref={ref15}
           initial={{ opacity: 0, y: 40 }}
           animate={inView15 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 md:rounded-[32px]"
+          className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
         >
-          <div className="relative left-[-222px] top-[-254px] hidden h-[904px] w-full md:block md:w-[1265px]">
+          <div className="relative left-[-222px] top-[-254px] hidden h-[904px] w-full xl:block xl:w-[1265px]">
             <svg
-              className="absolute left-0 top-[333px] h-[571px] w-full md:w-[611px]"
+              className="absolute left-0 top-[333px] h-[571px] w-full xl:w-[611px]"
               width="808"
               height="874"
               viewBox="0 0 808 874"
@@ -97,7 +97,7 @@ export const DivWrapper = () => {
               </defs>
             </svg>
             <svg
-              className="absolute left-[398px] top-0 h-[682px] w-full md:w-[716px]"
+              className="absolute left-[398px] top-0 h-[682px] w-full xl:w-[716px]"
               width="1012"
               height="807"
               viewBox="0 0 1012 807"
@@ -143,7 +143,7 @@ export const DivWrapper = () => {
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="absolute left-[284px] top-[319px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
             >
-              <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] md:w-full">
+              <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] xl:w-full">
                 <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
                   <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('calculator.title')}
@@ -399,7 +399,7 @@ export const DivWrapper = () => {
                 </div>
 
                 <div className="relative flex w-full flex-col gap-[20.5px]">
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -452,7 +452,7 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -488,7 +488,7 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] bg-white border-solid border-[#DBE2F0] p-[17.94px]">
+                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
                     <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
                       <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
                         <div className="relative w-fit whitespace-nowrap text-[14.95px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -537,7 +537,7 @@ export const DivWrapper = () => {
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] md:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -575,7 +575,7 @@ export const DivWrapper = () => {
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] md:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -613,7 +613,7 @@ export const DivWrapper = () => {
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] md:p-10"
+            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

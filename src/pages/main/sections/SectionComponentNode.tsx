@@ -64,7 +64,7 @@ export const SectionComponentNode = () => {
       </h2>
 
       <div className="relative flex h-[520px] w-full items-start gap-4">
-        <div className="relative w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] md:w-[686px]">
+        <div className="relative w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] xl:w-[686px]">
           <div className="relative h-[682px]">
             <svg
               width="1077"
@@ -72,7 +72,7 @@ export const SectionComponentNode = () => {
               viewBox="0 0 1077 1131"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-0 h-[520px] w-full md:w-[686px]"
+              className="absolute left-0 top-0 h-[520px] w-full xl:w-[686px]"
             >
               <g opacity="0.32" filter="url(#filter0_f_9017_4482)">
                 <path
@@ -111,7 +111,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[80px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 md:w-[304px]"
+              className="absolute left-[62px] top-[80px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 xl:w-[304px]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <svg
@@ -120,7 +120,7 @@ export const SectionComponentNode = () => {
                   viewBox="0 0 694 594"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[-49px] top-3 h-[330px] w-full md:w-[345px]"
+                  className="absolute left-[-49px] top-3 h-[330px] w-full xl:w-[345px]"
                 >
                   <g opacity="0.4" filter="url(#filter0_f_9017_4394)">
                     <path
@@ -218,7 +218,7 @@ export const SectionComponentNode = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
+                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 xl:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                         {t('alternativeModels.p2pUI.interest')}
                       </div>
@@ -240,7 +240,7 @@ export const SectionComponentNode = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 md:w-[88px]">
+                    <div className="relative flex w-full flex-col items-start rounded-xl bg-[#eaedf7] p-3 xl:w-[88px]">
                       <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('alternativeModels.p2pUI.payment')}
                       </div>
@@ -338,7 +338,7 @@ export const SectionComponentNode = () => {
               viewBox="0 0 675 745"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[57px] top-0 h-[520px] w-full md:w-[629px]"
+              className="absolute left-[57px] top-0 h-[520px] w-full xl:w-[629px]"
             >
               <g opacity="0.32" filter="url(#filter0_f_9018_4612)">
                 <path
@@ -380,11 +380,11 @@ export const SectionComponentNode = () => {
               className="absolute left-[298px] top-[138px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
             >
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[180px]">
+                <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
                   {t('alternativeModels.p2pUI.totalIncome')}
                 </div>
 
-                <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[264px]">
+                <div className="relative w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]">
                   1,567,000₽
                 </div>
               </div>
@@ -445,7 +445,7 @@ export const SectionComponentNode = () => {
                 viewBox="0 0 329 66"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-0 top-[106px] h-[104px] w-full md:w-[328px]"
+                className="absolute left-0 top-[106px] h-[104px] w-full xl:w-[328px]"
               >
                 <path
                   d="M0.246945 59.3598L24.7234 53.1256C29.1831 51.9896 33.916 52.8281 37.7141 55.427L46.9091 61.7187C53.991 66.5645 63.6343 64.9642 68.7713 58.0906L78.6249 44.9058C82.3248 39.9552 88.544 37.5767 94.6031 38.795L123.082 44.5216C128.474 45.6058 133.895 42.7984 136.121 37.7694L140.075 28.8355C142.413 23.5523 149.804 23.2668 152.543 28.3538V28.3538C155.376 33.6154 163.09 33.0811 165.171 27.4791L171.373 10.7801C176.263 -2.38534 194.943 -2.21709 199.596 11.0343L213.169 49.699C215.05 55.0563 222.63 55.0476 224.498 49.686V49.686C226.389 44.2592 234.091 44.3384 235.871 49.8029L237.582 55.0591C239.866 62.0732 249.68 62.3662 252.378 55.5009L262.421 29.9462C265.432 22.2846 275.8 21.1399 280.41 27.9602V27.9602C283.668 32.7804 290.285 33.9149 294.963 30.4551L328.405 5.71819"
@@ -482,7 +482,7 @@ export const SectionComponentNode = () => {
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleP2PClick}
-            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] md:p-10"
+            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -520,7 +520,7 @@ export const SectionComponentNode = () => {
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleIslamFinansClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] md:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

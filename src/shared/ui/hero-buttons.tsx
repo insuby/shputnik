@@ -61,10 +61,34 @@ export const HeroButtons = ({
               xmlns="http://www.w3.org/2000/svg"
               aria-label="File text"
             >
-              <path d="M15.625 17.5H4.375C4.20924 17.5 4.05027 17.4342 3.93306 17.3169C3.81585 17.1997 3.75 17.0408 3.75 16.875V3.125C3.75 2.95924 3.81585 2.80027 3.93306 2.68306C4.05027 2.56585 4.20924 2.5 4.375 2.5H11.875L16.25 6.875V16.875C16.25 17.0408 16.1842 17.1997 16.0669 17.3169C15.9497 17.4342 15.7908 17.5 15.625 17.5Z" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M11.875 2.5V6.875H16.25" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M7.5 10.625H12.5" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-              <path d="M7.5 13.125H12.5" stroke="white" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+              <path
+                d="M15.625 17.5H4.375C4.20924 17.5 4.05027 17.4342 3.93306 17.3169C3.81585 17.1997 3.75 17.0408 3.75 16.875V3.125C3.75 2.95924 3.81585 2.80027 3.93306 2.68306C4.05027 2.56585 4.20924 2.5 4.375 2.5H11.875L16.25 6.875V16.875C16.25 17.0408 16.1842 17.1997 16.0669 17.3169C15.9497 17.4342 15.7908 17.5 15.625 17.5Z"
+                stroke="white"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M11.875 2.5V6.875H16.25"
+                stroke="white"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M7.5 10.625H12.5"
+                stroke="white"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <path
+                d="M7.5 13.125H12.5"
+                stroke="white"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
             </svg>
 
             <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
@@ -84,7 +108,7 @@ export const HeroButtons = ({
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={handleButtonClick}
-        className="all-[unset] relative box-border hidden flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 md:inline-flex"
+        className="all-[unset] relative box-border hidden flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 xl:inline-flex"
       >
         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           {buttonText || t('heroButtons.signUpPresentation')}

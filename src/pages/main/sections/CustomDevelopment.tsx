@@ -21,14 +21,14 @@ export const CustomDevelopment = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
+    <section className="relative w-full overflow-hidden rounded-[24px] bg-[#ffffff] xl:rounded-[32px]">
       <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
           <div
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
-            <div className="relative flex size-full flex-col flex-[0_0_auto] gap-7 self-stretch p-8 md:p-10">
+            <div className="relative flex size-full flex-[0_0_auto] flex-col gap-7 self-stretch p-8 xl:p-10">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h2
                   ref={titleRef}
@@ -76,7 +76,7 @@ export const CustomDevelopment = () => {
 
           <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]">
             <div
-              className="relative flex size-full flex-col flex-[0_0_auto] gap-7 self-stretch p-8 md:p-10 bg-contain bg-center"
+              className="relative flex size-full flex-[0_0_auto] flex-col gap-7 self-stretch bg-contain bg-center p-8 xl:p-10"
               style={{
                 backgroundImage: "url('/img/Frame 29.png')",
               }}

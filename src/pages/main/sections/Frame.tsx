@@ -29,10 +29,10 @@ export const Frame = () => {
   const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
 
   return (
-    <section className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] md:rounded-[32px]">
-      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-7 overflow-hidden rounded-[24px] px-4 pb-0 md:h-[900px] md:gap-20 md:rounded-[32px] md:px-10 md:pt-[88px] xl:px-20">
+    <section className="w-full overflow-hidden rounded-[24px] bg-[#ffffff] xl:rounded-[32px]">
+      <div className="relative flex min-h-[520px] w-full flex-col items-center gap-7 overflow-hidden rounded-[24px] px-4 pb-0 xl:h-[900px] xl:gap-20 xl:rounded-[32px] xl:px-10 xl:px-20 xl:pt-[88px]">
         <svg
-          className="absolute left-1/2 top-[220px] hidden h-[560px] w-full -translate-x-1/2 md:left-[113px] md:top-[272px] md:block md:h-[1060px] md:w-[1108px] md:translate-x-0"
+          className="absolute left-1/2 top-[220px] hidden h-[560px] w-full -translate-x-1/2 xl:left-[113px] xl:top-[272px] xl:block xl:h-[1060px] xl:w-[1108px] xl:translate-x-0"
           width="1125"
           height="1073"
           viewBox="0 0 1125 1073"
@@ -71,22 +71,22 @@ export const Frame = () => {
           </defs>
         </svg>
 
-        <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 md:gap-7 md:px-0">
+        <div className="relative flex w-full max-w-[980px] flex-col items-center justify-center gap-4 px-0 xl:gap-7 xl:px-0">
           <motion.h1
             id="animate_1"
             ref={refs[0]}
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[28px] font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:text-4xl md:leading-[48px] xl:text-6xl xl:leading-[60px]"
+            className="relative mt-[-1.00px] self-stretch text-center text-[28px] font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-4xl xl:text-6xl xl:leading-[48px] xl:leading-[60px]"
           >
-            <span className="font-medium text-[#1c222f] md:leading-[56px] xl:leading-[68px]">
+            <span className="font-medium text-[#1c222f] xl:leading-[56px] xl:leading-[68px]">
               {t('hero.titleA')}
             </span>{' '}
-            <span className="font-medium text-[#3573fc] md:leading-[56px] xl:leading-[68px]">
+            <span className="font-medium text-[#3573fc] xl:leading-[56px] xl:leading-[68px]">
               {t('hero.titleB')}{' '}
             </span>
-            <span className="font-medium text-[#1c222f] md:leading-[56px] xl:leading-[68px]">
+            <span className="font-medium text-[#1c222f] xl:leading-[56px] xl:leading-[68px]">
               {t('hero.titleC')}
             </span>
           </motion.h1>
@@ -97,7 +97,7 @@ export const Frame = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-            className="w-full md:w-[786px] text-[#929cb3] text-xl text-center leading-7 relative [font-family:'Roboto',Helvetica] font-normal tracking-[0]"
+            className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] xl:w-[786px]"
           >
             {t('hero.description')}
           </motion.p>
@@ -113,7 +113,7 @@ export const Frame = () => {
             delay: delays[2] + 0.05,
             ease: 'easeOut',
           }}
-          className="absolute bottom-[-6px] left-[540px] hidden w-[400px] flex-col gap-4 rounded-t-[40px] border-[6px] border-solid border-gray-90 bg-white p-7 md:flex"
+          className="absolute bottom-[-6px] left-[540px] hidden w-[400px] flex-col gap-4 rounded-t-[40px] border-[6px] border-solid border-gray-90 bg-white p-7 xl:flex"
         >
           <div className="flex w-full items-center justify-between">
             <div className="text-[24px] font-semibold leading-[32px] text-gray-90 [font-family:'Inter',Helvetica]">
@@ -206,7 +206,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[5] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
-          className="absolute left-[894px] top-[730px] hidden items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 md:inline-flex"
+          className="absolute left-[894px] top-[730px] hidden items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 xl:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
             <svg
@@ -280,7 +280,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[140px] top-[559px] items-center justify-center gap-5 rounded-[32px] bg-white p-4 md:flex md:w-[472px]"
+          className="hiddenw-full absolute left-[140px] top-[559px] items-center justify-center gap-5 rounded-[32px] bg-white p-4 xl:flex xl:w-[472px]"
         >
           <Graph />
 
@@ -288,11 +288,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-blue-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.current')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 23,456₽
               </div>
             </div>
@@ -300,11 +300,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-green-60" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.main')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 42,000₽
               </div>
             </div>
@@ -312,11 +312,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-yellow-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.interest')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 4,000₽
               </div>
             </div>
@@ -324,11 +324,11 @@ export const Frame = () => {
             <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
               <div className="relative size-2 rounded bg-red-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 {t('chart.penalty')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] md:w-[72px]">
+              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
                 2,700₽
               </div>
             </div>
@@ -341,7 +341,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[957px] top-[458px] flex-col items-center justify-center gap-5 rounded-[32px] bg-white p-4 md:flex md:w-[324px]"
+          className="hiddenw-full absolute left-[957px] top-[458px] flex-col items-center justify-center gap-5 rounded-[32px] bg-white p-4 xl:flex xl:w-[324px]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-6 self-stretch p-4">
@@ -357,7 +357,7 @@ export const Frame = () => {
                 </div>
 
                 <div className="w/full relative h-3.5 self-stretch">
-                  <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
+                  <div className="h-3w-full relative -left-0.5 top-px xl:w-[260px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="260"
@@ -368,14 +368,14 @@ export const Frame = () => {
                       <path
                         d="M2 7L258 7.00002"
                         stroke="#F2F5FF"
-                        stroke-width="4"
-                        stroke-linecap="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
                       />
                       <path
                         d="M2 7L165 7.00001"
                         stroke="#3573FC"
-                        stroke-width="4"
-                        stroke-linecap="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
                       />
                       <circle cx="163" cy="7" r="6" fill="#3573FC" />
                     </svg>
@@ -393,7 +393,7 @@ export const Frame = () => {
                 </div>
 
                 <div className="w/full relative h-3.5 self-stretch">
-                  <div className="h-3w-full relative -left-0.5 top-px md:w-[260px]">
+                  <div className="h-3w-full relative -left-0.5 top-px xl:w-[260px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="260"
@@ -404,14 +404,14 @@ export const Frame = () => {
                       <path
                         d="M2 7H258"
                         stroke="#F2F5FF"
-                        stroke-width="4"
-                        stroke-linecap="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
                       />
                       <path
                         d="M2 7H91"
                         stroke="#3573FC"
-                        stroke-width="4"
-                        stroke-linecap="round"
+                        strokeWidth="4"
+                        strokeLinecap="round"
                       />
                       <circle cx="91" cy="7" r="6" fill="#3573FC" />
                     </svg>
