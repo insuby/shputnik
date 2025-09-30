@@ -257,7 +257,6 @@ export const Frame1 = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="relative size-14"
-                      alt="Clip path group"
                     >
                       <rect
                         width="56"

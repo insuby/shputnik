@@ -638,6 +638,44 @@ export const Autocredit = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
           className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl xl:w-[1376px] xl:!flex-row"
         >
+          <svg
+            className="absolute  inset-0 z-10"
+            width="676"
+            height="648"
+            viewBox="0 0 676 648"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.12" filter="url(#filter0_f_9261_1976)">
+              <path
+                d="M234.111 385.615C155.82 385.565 115.561 293.472 105.218 247.431C115.314 -26.3505 425.512 93.1163 499.396 214.847C573.279 336.578 528.019 590.54 425.196 590.474C322.372 590.409 331.973 385.677 234.111 385.615Z"
+                fill="#3573FC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9261_1976"
+                x="-94.7822"
+                y="-118.907"
+                width="830.641"
+                height="909.382"
+                filterUnits="userSpaceOnUse"
+                colorInterpolationFilters="sRGB"
+              >
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_9261_1976"
+                />
+              </filter>
+            </defs>
+          </svg>
           <Marquee
             fade
             className="relative flex w-full flex-1 grow  !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 xl:h-[609px] xl:p-0"

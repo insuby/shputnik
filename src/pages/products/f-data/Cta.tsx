@@ -26,7 +26,6 @@ export const Cta = ({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-14 top-[-306px] h-[590px] w-full xl:w-[620px]"
-          alt="Vector"
         >
           <g opacity="0.4" filter="url(#filter0_f_0_4)">
             <path
@@ -66,7 +65,6 @@ export const Cta = ({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[666px] top-[-109px] h-[675px] w-full xl:w-[727px]"
-          alt="Vector"
         >
           <g opacity="0.3" filter="url(#filter0_f_0_5)">
             <path
@@ -144,7 +142,6 @@ export const Cta = ({
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="relative mt-[-6.00px] h-[30px] w-full self-stretch"
-                  alt="Frame"
                 >
                   <path
                     d="M4 13L245 13"
@@ -241,7 +238,6 @@ export const Cta = ({
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="relative mb-[-10.00px] mt-[-6.00px] h-[30px] w-full self-stretch"
-                  alt="Frame"
                 >
                   <path
                     d="M4 13L243 13"
@@ -324,7 +320,6 @@ export const Cta = ({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[874px] top-6 h-[403px] w-full xl:w-[426px]"
-          alt="Vector"
         >
           <g opacity="0.16" filter="url(#filter0_f_0_76)">
             <path
@@ -379,7 +374,6 @@ export const Cta = ({
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="absolute left-0 top-0 size-[198px]"
-                alt="Ellipse"
               >
                 <path
                   d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5"

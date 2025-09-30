@@ -44,6 +44,10 @@ export const Dataunload = () => {
   const ref46 = useRef(null);
   const ref47 = useRef(null);
   const ref48 = useRef(null);
+  const ref49 = useRef(null);
+  const ref16 = useRef(null);
+  const ref20 = useRef(null);
+  const ref24 = useRef(null);
   const ref50 = useRef(null);
 
   const marginValue = isMobile ? '-10px' : '-100px';
@@ -81,6 +85,9 @@ export const Dataunload = () => {
   const inView46 = useInView(ref46, { once: true, margin: '-100px' });
   const inView47 = useInView(ref47, { once: true, margin: '-100px' });
   const inView48 = useInView(ref48, { once: true, margin: '-100px' });
+  const inView49 = useInView(ref49, { once: true, margin: '-100px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
   const inView50 = useInView(ref50, { once: true, margin: '-100px' });
 
   const { setIsOpen } = useFeedbackForm();
@@ -493,7 +500,15 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
           >
-            {/* Removed missing SVG motion.img: /img/dataunload/frame-18-3.svg */}
+            <motion.img
+              ref={ref16}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView16 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="/img/dataunload/frame-18-3.svg"
+            />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <motion.div
@@ -525,7 +540,15 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
             className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
           >
-            {/* Removed missing SVG motion.img: /img/dataunload/frame-18.svg */}
+            <motion.img
+              ref={ref20}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView19 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="/img/dataunload/frame-18.svg"
+            />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <motion.div
@@ -557,7 +580,15 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
             className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
           >
-            {/* Removed missing SVG motion.img: /img/dataunload/frame-19.svg */}
+            <motion.img
+              ref={ref24}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView24 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="/img/dataunload/frame-19.svg"
+            />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <motion.div
@@ -718,8 +749,13 @@ export const Dataunload = () => {
               </motion.div>
             </div>
           </div>
-
-          {/* Removed missing SVG motion.img: /img/dataunload/frame-21.svg */}
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] xl:gap-12">
+            <img
+              className="relative size-full self-stretch"
+              alt="Screenshot"
+              src="/img/dataunload/frame-21.svg"
+            />
+          </div>
         </div>
       </div>
       <motion.div
@@ -739,7 +775,15 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative flex w-full flex-col items-start gap-7 xl:w-[520px]"
           >
-            {/* Removed missing SVG motion.img: /img/dataunload/frame-18-6.svg */}
+            <motion.img
+              ref={ref20}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView19 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="/img/dataunload/frame-18-6.svg"
+            />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
@@ -861,7 +905,15 @@ export const Dataunload = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
             className="relative flex w-full flex-col items-start justify-center gap-7 xl:w-[520px]"
           >
-            {/* Removed missing SVG motion.img: /img/dataunload/frame-18-2.svg */}
+            <motion.img
+              ref={ref49}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView49 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+              className="relative flex-[0_0_auto]"
+              alt="Frame"
+              src="/img/dataunload/frame-18-2.svg"
+            />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:w-[520px]">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
@@ -943,7 +995,15 @@ export const Dataunload = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
           className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 xl:!flex-row xl:p-12"
         >
-          {/* Removed missing SVG motion.img: /img/dataunload/vector-1-3.svg */}
+          <motion.img
+            ref={ref49}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inView49 ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+            className="relative flex-[0_0_auto]"
+            alt="Frame"
+            src="/img/dataunload/frame-18-2.svg"
+          />
 
           <div className="relative flex flex-1 grow flex-col items-start gap-3">
             <motion.div

@@ -170,7 +170,7 @@ export const IslamFinance = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
-                  <div className="relative ml-[-18572.00px] mt-[-721.92px] size-5 bg-[100%_100%]">
+                  <div className="relative size-5 bg-[100%_100%]">
                     <svg
                       width="15"
                       height="16"
@@ -198,100 +198,49 @@ export const IslamFinance = () => {
                   <div className="relative size-5">
                     <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
                       <svg
-                        width="7"
-                        height="7"
-                        viewBox="0 0 7 7"
+                        width="20"
+                        height="21"
+                        viewBox="0 0 20 21"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-1.5 top-[3px] size-1.5"
                       >
                         <path
-                          d="M3.49959 6.3226C5.05847 6.3226 6.32219 5.05888 6.32219 3.5C6.32219 1.94112 5.05847 0.677397 3.49959 0.677397C1.94071 0.677397 0.676984 1.94112 0.676984 3.5C0.676984 5.05888 1.94071 6.3226 3.49959 6.3226Z"
-                          stroke="#55607A"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-
-                      <svg
-                        width="19"
-                        height="12"
-                        viewBox="0 0 19 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[11px] w-full xl:w-[19px]"
-                      >
-                        <path
-                          d="M18.3907 0.609626H0.609254V10.7705H18.3907V0.609626Z"
+                          d="M10 12.7951C11.3807 12.7951 12.5 11.6758 12.5 10.2951C12.5 8.91439 11.3807 7.7951 10 7.7951C8.61929 7.7951 7.5 8.91439 7.5 10.2951C7.5 11.6758 8.61929 12.7951 10 12.7951Z"
                           stroke="white"
                           strokeWidth="1.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
-                      </svg>
-
-                      <svg
-                        width="5"
-                        height="5"
-                        viewBox="0 0 5 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-3.5 top-0 size-1"
-                      >
                         <path
-                          d="M4.30571 4.30628C3.40319 4.15331 2.5706 3.7234 1.92332 3.07612C1.27604 2.42884 0.846126 1.59624 0.693159 0.693723"
+                          d="M18.75 5.2951H1.25V15.2951H18.75V5.2951Z"
                           stroke="white"
                           strokeWidth="1.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
-                      </svg>
-
-                      <svg
-                        width="5"
-                        height="5"
-                        viewBox="0 0 5 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-3.5 top-[7px] size-1"
-                      >
                         <path
-                          d="M0.693159 4.30628C0.846126 3.40376 1.27604 2.57116 1.92332 1.92388C2.5706 1.2766 3.40319 0.846691 4.30571 0.693723"
+                          d="M18.75 8.4201C17.9693 8.28778 17.2491 7.91589 16.6891 7.35597C16.1292 6.79605 15.7573 6.07582 15.625 5.2951"
                           stroke="white"
                           strokeWidth="1.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
-                      </svg>
-
-                      <svg
-                        width="5"
-                        height="5"
-                        viewBox="0 0 5 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-[7px] size-1"
-                      >
                         <path
-                          d="M0.693159 0.693723C1.59568 0.846691 2.42827 1.2766 3.07555 1.92388C3.72283 2.57116 4.15274 3.40376 4.30571 4.30628"
+                          d="M15.625 15.2951C15.7573 14.5144 16.1292 13.7942 16.6891 13.2342C17.2491 12.6743 17.9693 12.3024 18.75 12.1701"
                           stroke="white"
                           strokeWidth="1.2"
                           strokeLinecap="round"
                           strokeLinejoin="round"
                         />
-                      </svg>
-
-                      <svg
-                        width="5"
-                        height="5"
-                        viewBox="0 0 5 5"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 size-1"
-                      >
                         <path
-                          d="M4.30571 0.693723C4.15274 1.59624 3.72283 2.42884 3.07555 3.07612C2.42827 3.7234 1.59568 4.15331 0.693159 4.30628"
+                          d="M1.25 12.1701C2.03072 12.3024 2.75094 12.6743 3.31086 13.2342C3.87079 13.7942 4.24268 14.5144 4.375 15.2951"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M4.375 5.2951C4.24268 6.07582 3.87079 6.79605 3.31086 7.35597C2.75094 7.91589 2.03072 8.28778 1.25 8.4201"
                           stroke="white"
                           strokeWidth="1.2"
                           strokeLinecap="round"
@@ -928,17 +877,10 @@ export const IslamFinance = () => {
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
                   className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch"
                 >
-                  <motion.div
-                    ref={ref14}
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={inView14 ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, ease: 'easeOut', delay: 0.75 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
-                  >
+                  <motion.div className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7">
                     <motion.div
-                      ref={ref15}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView15 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',
@@ -954,16 +896,14 @@ export const IslamFinance = () => {
                   </motion.div>
 
                   <motion.div
-                    ref={ref16}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView16 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.85 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
-                      ref={ref17}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView17 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',
@@ -979,16 +919,14 @@ export const IslamFinance = () => {
                   </motion.div>
 
                   <motion.div
-                    ref={ref18}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView18 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.95 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
-                      ref={ref19}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView19 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',
@@ -1004,16 +942,15 @@ export const IslamFinance = () => {
                   </motion.div>
 
                   <motion.div
-                    ref={ref20}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView20 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.05 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
                       ref={ref21}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView21 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',
@@ -1029,16 +966,14 @@ export const IslamFinance = () => {
                   </motion.div>
 
                   <motion.div
-                    ref={ref22}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView22 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.15 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
-                      ref={ref23}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView23 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',
@@ -1054,16 +989,14 @@ export const IslamFinance = () => {
                   </motion.div>
 
                   <motion.div
-                    ref={ref24}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView24 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.25 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
-                      ref={ref25}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView25 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView13 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.3,
                         ease: 'easeOut',

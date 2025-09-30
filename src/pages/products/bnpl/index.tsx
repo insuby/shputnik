@@ -146,8 +146,7 @@ export const BNPL = () => {
           </svg>
 
           <HeroButtons>
-            <div
-              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
                 <motion.h1
                   ref={ref2}

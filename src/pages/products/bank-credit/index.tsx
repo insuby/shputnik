@@ -1,24 +1,18 @@
 import { motion, useInView } from 'framer-motion';
-import {
-  Advantages,
-  Analytics,
-  EmployeeWork,
-  Feedback,
-  Integrations,
-  RoleStructure,
-  Trust,
-  Zaim,
-  ZaimChecker,
-} from 'widgets';
+import { Advantages, Analytics, EmployeeWork, Feedback, Integrations, RoleStructure, Trust, Zaim, ZaimChecker } from 'widgets';
+
+
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
+
+
 import { HeroButtons } from 'shared/ui';
+
 
 export const BankCredit = () => {
   const { t } = useTranslation(['bankcredit']);
-  // {t('comments.configureProcess')}
   const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLDivElement>(null);
@@ -37,7 +31,6 @@ export const BankCredit = () => {
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
   const inView16 = useInView(ref16, { once: true, margin: '-100px' });
 
-  // {t('comments.automation')}
   const refAuto1 = useRef<HTMLDivElement>(null);
   const refAuto2 = useRef<HTMLDivElement>(null);
   const refAuto3 = useRef<HTMLDivElement>(null);
@@ -46,7 +39,6 @@ export const BankCredit = () => {
   const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-100px' });
   const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-100px' });
 
-  // {t('comments.systemTransactions')}
   const refSystem1 = useRef<HTMLDivElement>(null);
   const refSystem2 = useRef<HTMLDivElement>(null);
   const refSystem3 = useRef<HTMLDivElement>(null);
@@ -136,7 +128,6 @@ export const BankCredit = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
-            alt=""
             aria-hidden={true}
           >
             <g opacity="0.3" filter="url(#filter0_f_9326_98080)">
@@ -218,7 +209,6 @@ export const BankCredit = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-4w-full absolute left-[3px] top-0.5 xl:w-[15px]"
-                      alt="Vector"
                     >
                       <path
                         d="M5.61863 15.0263V10.0094H9.38137V15.0263H14.3984V7.50086C14.3984 7.41848 14.3823 7.3369 14.3508 7.26077C14.3193 7.18464 14.2731 7.11545 14.2149 7.05717L7.94369 0.78594C7.88545 0.727633 7.81628 0.681377 7.74015 0.649817C7.66402 0.618258 7.58241 0.602014 7.5 0.602014C7.41759 0.602014 7.33598 0.618258 7.25985 0.649817C7.18372 0.681377 7.11455 0.727633 7.05631 0.78594L0.78508 7.05717C0.726861 7.11545 0.680696 7.18464 0.649222 7.26077C0.617748 7.3369 0.601582 7.41848 0.601646 7.50086V15.0263H5.61863Z"
@@ -245,7 +235,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-1.5 top-[3px] size-1.5"
-                        alt="Vector"
                       >
                         <path
                           d="M3.49959 6.3226C5.05847 6.3226 6.32219 5.05888 6.32219 3.5C6.32219 1.94112 5.05847 0.677397 3.49959 0.677397C1.94071 0.677397 0.676984 1.94112 0.676984 3.5C0.676984 5.05888 1.94071 6.3226 3.49959 6.3226Z"
@@ -263,7 +252,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 h-[11px] w-full xl:w-[19px]"
-                        alt="Vector"
                       >
                         <path
                           d="M18.3907 0.609626H0.609254V10.7705H18.3907V0.609626Z"
@@ -281,7 +269,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-3.5 top-0 size-1"
-                        alt="Vector"
                       >
                         <path
                           d="M4.30571 4.30628C3.40319 4.15331 2.5706 3.7234 1.92332 3.07612C1.27604 2.42884 0.846126 1.59624 0.693159 0.693723"
@@ -299,7 +286,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-3.5 top-[7px] size-1"
-                        alt="Vector"
                       >
                         <path
                           d="M0.693159 4.30628C0.846126 3.40376 1.27604 2.57116 1.92332 1.92388C2.5706 1.2766 3.40319 0.846691 4.30571 0.693723"
@@ -317,7 +303,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-[7px] size-1"
-                        alt="Vector"
                       >
                         <path
                           d="M0.693159 0.693723C1.59568 0.846691 2.42827 1.2766 3.07555 1.92388C3.72283 2.57116 4.15274 3.40376 4.30571 4.30628"
@@ -335,7 +320,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 size-1"
-                        alt="Vector"
                       >
                         <path
                           d="M4.30571 0.693723C4.15274 1.59624 3.72283 2.42884 3.07555 3.07612C2.42827 3.7234 1.59568 4.15331 0.693159 4.30628"
@@ -363,7 +347,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-[11px] top-[9px] h-px w-1"
-                        alt="Vector"
                       >
                         <path
                           d="M0.677064 0.677477H6.32294"
@@ -381,7 +364,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-2 top-[9px] h-px w-0.5"
-                        alt="Vector"
                       >
                         <path
                           d="M0.73445 0.734898H2.26555"
@@ -399,7 +381,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-pxw-full absolute left-0 top-[3px] xl:w-[17px]"
-                        alt="Vector"
                       >
                         <path
                           d="M0.618536 0.618914H17.3815"
@@ -427,7 +408,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-2 top-[11px] h-1.5 w-px"
-                        alt="Vector"
                       >
                         <path
                           d="M0.645325 0.645719V5.35428"
@@ -445,7 +425,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 size-4"
-                        alt="Vector"
                       >
                         <path
                           d="M1.68366 4.56479C0.817411 6.06517 0.470437 7.80946 0.696547 9.52714C0.922657 11.2448 1.70922 12.8399 2.93424 14.065C4.15926 15.2901 5.75429 16.0767 7.47195 16.303C9.18962 16.5292 10.9339 16.1823 12.4344 15.3161C13.9348 14.45 15.1075 13.1129 15.7706 11.5124C16.4338 9.91181 16.5502 8.13716 16.102 6.46365C15.6537 4.79015 14.6658 3.31131 13.2914 2.25649C11.9171 1.20167 10.233 0.629812 8.50054 0.629604V5.22065C9.2224 5.22081 9.92404 5.45915 10.4966 5.8987C11.0692 6.33825 11.4808 6.95446 11.6675 7.65175C11.8542 8.34904 11.8057 9.08846 11.5293 9.75533C11.253 10.4222 10.7643 10.9793 10.1391 11.3401C9.51396 11.701 8.78717 11.8455 8.0715 11.7512C7.35582 11.6569 6.69125 11.3291 6.18085 10.8187C5.67044 10.3082 5.34273 9.6436 5.24853 8.92791C5.15433 8.21223 5.2989 7.48546 5.65983 6.86031L1.68366 4.56479Z"
@@ -463,7 +442,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-0.5w-full absolute left-0 top-2 xl:w-[5px]"
-                        alt="Vector"
                       >
                         <path
                           d="M5.33693 0.663674L0.663067 1.91551"
@@ -491,7 +469,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0.5 h-3 w-4"
-                        alt="Vector"
                       >
                         <path
                           d="M16.7367 0.618914H1.26326C0.90719 0.618914 0.618536 0.907568 0.618536 1.26364V11.5793C0.618536 11.9354 0.90719 12.224 1.26326 12.224H16.7367C17.0928 12.224 17.3815 11.9354 17.3815 11.5793V1.26364C17.3815 0.907568 17.0928 0.618914 16.7367 0.618914Z"
@@ -509,7 +486,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-1w-full absolute left-1 top-0 xl:w-[7px]"
-                        alt="Vector"
                       >
                         <path
                           d="M7.35606 3.32918V1.98676C7.35606 1.63073 7.21462 1.28928 6.96287 1.03752C6.71112 0.78577 6.36967 0.644337 6.01363 0.644337H1.98637C1.63033 0.644337 1.28888 0.78577 1.03713 1.03752C0.785377 1.28928 0.643943 1.63073 0.643943 1.98676V3.32918"
@@ -527,7 +503,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-[7px] h-[3px] w-4"
-                        alt="Vector"
                       >
                         <path
                           d="M16.3707 0.629762C13.9788 2.0137 11.2634 2.74036 8.5 2.73601C5.73667 2.74041 3.02132 2.01406 0.62925 0.630583"
@@ -545,7 +520,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-1.5 top-1.5 h-px w-1"
-                        alt="Vector"
                       >
                         <path
                           d="M0.677064 0.677477H6.32294"
@@ -573,7 +547,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-1 top-[5px] size-[7px]"
-                        alt="Vector"
                       >
                         <path
                           d="M3.49959 6.3226C5.05847 6.3226 6.32219 5.05888 6.32219 3.5C6.32219 1.94112 5.05847 0.677397 3.49959 0.677397C1.94071 0.677397 0.676984 1.94112 0.676984 3.5C0.676984 5.05888 1.94071 6.3226 3.49959 6.3226Z"
@@ -591,7 +564,6 @@ export const BankCredit = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 h-[17px] w-4"
-                        alt="Vector"
                       >
                         <path
                           d="M15.7572 13.4189L8.66498 17.3019C8.57009 17.3538 8.46367 17.381 8.35551 17.381C8.24734 17.381 8.14092 17.3538 8.04603 17.3019L0.953821 13.4189C0.852551 13.3635 0.768015 13.2819 0.70904 13.1827C0.650065 13.0834 0.618815 12.9702 0.618553 12.8547V5.1452C0.618815 5.02976 0.650065 4.91651 0.70904 4.81727C0.768015 4.71804 0.852551 4.63645 0.953821 4.58104L8.04603 0.698062C8.14092 0.646143 8.24734 0.618931 8.35551 0.618931C8.46367 0.618931 8.57009 0.646143 8.66498 0.698062L15.7572 4.58104C15.8585 4.63645 15.943 4.71804 16.002 4.81727C16.0609 4.91651 16.0922 5.02976 16.0925 5.1452V12.8531C16.0925 12.9688 16.0614 13.0824 16.0024 13.182C15.9434 13.2815 15.8587 13.3634 15.7572 13.4189Z"
@@ -796,7 +768,6 @@ export const BankCredit = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-[53px] top-0 h-[448px] w-full xl:w-[623px]"
-                  alt="Vector"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_9344_10626)">
                     <path
@@ -978,7 +949,6 @@ export const BankCredit = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-0 top-0 h-[488px] w-full xl:w-[608px]"
-                  alt="Vector"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_9344_10715)">
                     <path
@@ -1222,7 +1192,12 @@ export const BankCredit = () => {
               className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
-                {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-1.svg */}
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-1.svg"
+                />
 
                 <motion.div
                   variants={fadeInUp}
@@ -1242,6 +1217,12 @@ export const BankCredit = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-3.svg */}
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-3.svg"
+                />
 
                 <motion.div
                   variants={fadeInUp}
@@ -1264,7 +1245,6 @@ export const BankCredit = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="relative flex-[0_0_auto]"
-                  alt="Frame"
                 >
                   <rect
                     width="60"
@@ -1472,7 +1452,12 @@ export const BankCredit = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-6.svg */}
-
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-6.svg"
+                />
                 <motion.div
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
@@ -1494,7 +1479,12 @@ export const BankCredit = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-10.svg */}
-
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-10.svg"
+                />
                 <motion.p
                   variants={fadeInUp}
                   className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
@@ -1514,6 +1504,12 @@ export const BankCredit = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-5.svg */}
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-5.svg"
+                />
 
                 <motion.div
                   variants={fadeInUp}
@@ -1534,6 +1530,12 @@ export const BankCredit = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-4.svg */}
+                <motion.img
+                  variants={scaleIn}
+                  className="relative flex-[0_0_auto]"
+                  alt="Frame"
+                  src="/img/bankcredit/frame-19-4.svg"
+                />
 
                 <motion.div
                   variants={fadeInUp}

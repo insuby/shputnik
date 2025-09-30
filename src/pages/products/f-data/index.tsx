@@ -762,7 +762,14 @@ export const Fdata = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
-              {/* Removed missing SVG motion.img: /img/fdata/frame-18-4.svg */}
+              <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="/img/fdata/frame-18-4.svg"
+              />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref12}
@@ -793,6 +800,14 @@ export const Fdata = () => {
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-20.svg */}
+              <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="/img/fdata/frame-20.svg"
+              />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref16}
@@ -831,6 +846,14 @@ export const Fdata = () => {
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-19.svg */}
+              <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="/img/fdata/frame-19.svg"
+              />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref21}
@@ -861,6 +884,14 @@ export const Fdata = () => {
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-19-2.svg */}
+              <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="/img/fdata/frame-19-2.svg"
+              />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref25}
@@ -891,6 +922,14 @@ export const Fdata = () => {
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               {/* Removed missing SVG motion.img: /img/fdata/frame-18-5.svg */}
+              <motion.img
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
+                className="relative flex-[0_0_auto]"
+                alt="Frame"
+                src="/img/fdata/frame-18-5.svg"
+              />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref29}

@@ -41,11 +41,7 @@ export const Works = () => {
       </header>
 
       <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
-        <Accordion
-          type="single"
-          collapsible
-          className="w-full"
-        >
+        <Accordion type="single" collapsible className="w-full">
           {jobListings.map((job) => (
             <AccordionItem
               key={job.id}
