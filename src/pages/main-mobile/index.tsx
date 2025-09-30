@@ -258,214 +258,337 @@ export const MainMobile = () => {
               </defs>
             </svg>
 
-            <div className="absolute left-[23px] top-[47px] flex h-[261px] w-[220px] flex-col items-center justify-center gap-[16.28px] rounded-[21.71px] bg-white p-[10.86px]">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[5.43px] self-stretch">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[13.57px] self-stretch px-[10.86px] pb-[10.86px] pt-[8.14px]">
-                  <div className="relative mt-[-0.68px] self-stretch text-[16.3px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('microcredit.apply')}
-                  </div>
+            <div className="relative  left-[-23px] m-auto w-fit">
+              <div className="relative left-[-23px] top-[47px] flex h-[261px] w-[220px] flex-col items-center justify-center gap-[16.28px] rounded-[21.71px] bg-white p-[10.86px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[5.43px] self-stretch">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[13.57px] self-stretch px-[10.86px] pb-[10.86px] pt-[8.14px]">
+                    <div className="relative mt-[-0.68px] self-stretch text-[16.3px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      {t('microcredit.apply')}
+                    </div>
 
-                  <div className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
-                    <svg
-                      width="178"
-                      height="19"
-                      viewBox="0 0 178 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
-                    >
-                      <path
-                        d="M2.03574 6.78558L175.75 6.7856"
-                        stroke="#F2F5FF"
-                        strokeWidth="2.71392"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M2.03574 6.78558L112.643 6.78559"
-                        stroke="#00CB82"
-                        strokeWidth="4.07088"
-                        strokeLinecap="round"
-                      />
-                      <g filter="url(#filter0_d_9181_667)">
-                        <circle
-                          cx="111.286"
-                          cy="6.78566"
-                          r="4.07143"
-                          fill="#00CB82"
+                    <div className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
+                      <svg
+                        width="178"
+                        height="19"
+                        viewBox="0 0 178 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
+                      >
+                        <path
+                          d="M2.03574 6.78558L175.75 6.7856"
+                          stroke="#F2F5FF"
+                          strokeWidth="2.71392"
+                          strokeLinecap="round"
                         />
-                      </g>
-                      <defs>
-                        <filter
-                          id="filter0_d_9181_667"
-                          x="101.786"
-                          y="-5.26976e-05"
-                          width="19"
-                          height="19"
-                          filterUnits="userSpaceOnUse"
-                          colorInterpolationFilters="sRGB"
-                        >
-                          <feFlood
-                            floodOpacity="0"
-                            result="BackgroundImageFix"
+                        <path
+                          d="M2.03574 6.78558L112.643 6.78559"
+                          stroke="#00CB82"
+                          strokeWidth="4.07088"
+                          strokeLinecap="round"
+                        />
+                        <g filter="url(#filter0_d_9181_667)">
+                          <circle
+                            cx="111.286"
+                            cy="6.78566"
+                            r="4.07143"
+                            fill="#00CB82"
                           />
-                          <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha"
-                          />
-                          <feOffset dy="2.71392" />
-                          <feGaussianBlur stdDeviation="2.71392" />
-                          <feComposite in2="hardAlpha" operator="out" />
-                          <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0.0156863 0 0 0 0 0.792157 0 0 0 0 0.513726 0 0 0 0.2 0"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_9181_667"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_9181_667"
-                            result="shape"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
+                        </g>
+                        <defs>
+                          <filter
+                            id="filter0_d_9181_667"
+                            x="101.786"
+                            y="-5.26976e-05"
+                            width="19"
+                            height="19"
+                            filterUnits="userSpaceOnUse"
+                            colorInterpolationFilters="sRGB"
+                          >
+                            <feFlood
+                              floodOpacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feColorMatrix
+                              in="SourceAlpha"
+                              type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              result="hardAlpha"
+                            />
+                            <feOffset dy="2.71392" />
+                            <feGaussianBlur stdDeviation="2.71392" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix
+                              type="matrix"
+                              values="0 0 0 0 0.0156863 0 0 0 0 0.792157 0 0 0 0 0.513726 0 0 0 0.2 0"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in2="BackgroundImageFix"
+                              result="effect1_dropShadow_9181_667"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_dropShadow_9181_667"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
 
-                    <div className="relative h-[16.28px] w-full self-stretch">
-                      <div className="absolute left-0 top-0 whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        0
+                      <div className="relative h-[16.28px] w-full self-stretch">
+                        <div className="absolute left-0 top-0 whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          0
+                        </div>
+
+                        <div className="absolute left-[89px] top-0 whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          122 000
+                        </div>
                       </div>
+                    </div>
 
-                      <div className="absolute left-[89px] top-0 whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        122 000
+                    <div className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
+                      <svg
+                        width="178"
+                        height="19"
+                        viewBox="0 0 178 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
+                      >
+                        <path
+                          d="M2.03574 6.78583H175.75"
+                          stroke="#F2F5FF"
+                          strokeWidth="2.71392"
+                          strokeLinecap="round"
+                        />
+                        <path
+                          d="M2.03574 6.78583H62.4286"
+                          stroke="#00CB82"
+                          strokeWidth="4.07088"
+                          strokeLinecap="round"
+                        />
+                        <g filter="url(#filter0_d_9181_675)">
+                          <circle
+                            cx="62.4286"
+                            cy="6.78566"
+                            r="4.07143"
+                            fill="#00CB82"
+                          />
+                        </g>
+                        <defs>
+                          <filter
+                            id="filter0_d_9181_675"
+                            x="52.9286"
+                            y="-5.26976e-05"
+                            width="19"
+                            height="19"
+                            filterUnits="userSpaceOnUse"
+                            colorInterpolationFilters="sRGB"
+                          >
+                            <feFlood
+                              floodOpacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feColorMatrix
+                              in="SourceAlpha"
+                              type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              result="hardAlpha"
+                            />
+                            <feOffset dy="2.71392" />
+                            <feGaussianBlur stdDeviation="2.71392" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix
+                              type="matrix"
+                              values="0 0 0 0 0.0156863 0 0 0 0 0.792157 0 0 0 0 0.513726 0 0 0 0.2 0"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in2="BackgroundImageFix"
+                              result="effect1_dropShadow_9181_675"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_dropShadow_9181_675"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
+
+                      <div className="relative h-[16.28px] w-full self-stretch">
+                        <div className="absolute left-0 top-0 whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          0
+                        </div>
+
+                        <div className="absolute left-[54px] top-0 whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          14
+                        </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="relative mr-[-0.11px] flex w-[173.69px] flex-[0_0_auto] flex-col items-start gap-[5.43px]">
-                    <svg
-                      width="178"
-                      height="19"
-                      viewBox="0 0 178 19"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="relative ml-[-2.04px] mr-[-1.36px] mt-[-2.04px] h-[19px] w-full self-stretch"
-                    >
-                      <path
-                        d="M2.03574 6.78583H175.75"
-                        stroke="#F2F5FF"
-                        strokeWidth="2.71392"
-                        strokeLinecap="round"
-                      />
-                      <path
-                        d="M2.03574 6.78583H62.4286"
-                        stroke="#00CB82"
-                        strokeWidth="4.07088"
-                        strokeLinecap="round"
-                      />
-                      <g filter="url(#filter0_d_9181_675)">
-                        <circle
-                          cx="62.4286"
-                          cy="6.78566"
-                          r="4.07143"
-                          fill="#00CB82"
-                        />
-                      </g>
-                      <defs>
-                        <filter
-                          id="filter0_d_9181_675"
-                          x="52.9286"
-                          y="-5.26976e-05"
-                          width="19"
-                          height="19"
-                          filterUnits="userSpaceOnUse"
-                          colorInterpolationFilters="sRGB"
-                        >
-                          <feFlood
-                            floodOpacity="0"
-                            result="BackgroundImageFix"
-                          />
-                          <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha"
-                          />
-                          <feOffset dy="2.71392" />
-                          <feGaussianBlur stdDeviation="2.71392" />
-                          <feComposite in2="hardAlpha" operator="out" />
-                          <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0.0156863 0 0 0 0 0.792157 0 0 0 0 0.513726 0 0 0 0.2 0"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_9181_675"
-                          />
-                          <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_9181_675"
-                            result="shape"
-                          />
-                        </filter>
-                      </defs>
-                    </svg>
-
-                    <div className="relative h-[16.28px] w-full self-stretch">
-                      <div className="absolute left-0 top-0 whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        0
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[5.43px] self-stretch">
+                    <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
+                      <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        {t('microcredit.amount')}
                       </div>
 
-                      <div className="absolute left-[54px] top-0 whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        14
+                      <div className="relative mr-[-2.23px] w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        42 000₽
+                      </div>
+                    </div>
+
+                    <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
+                      <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        {t('microcredit.term')}
+                      </div>
+
+                      <div className="relative mr-[-0.23px] w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        {t('microcredit.termValue')}
+                      </div>
+                    </div>
+
+                    <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
+                      <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        {t('microcredit.rate')}
+                      </div>
+
+                      <div className="relative w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        2.5%
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-start gap-[5.43px] self-stretch">
-                  <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
-                    <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t('microcredit.amount')}
-                    </div>
-
-                    <div className="relative mr-[-2.23px] w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      42 000₽
-                    </div>
-                  </div>
-
-                  <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
-                    <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t('microcredit.term')}
-                    </div>
-
-                    <div className="relative mr-[-0.23px] w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('microcredit.termValue')}
-                    </div>
-                  </div>
-
-                  <div className="relative flex flex-1 grow flex-col items-start rounded-[13.57px] bg-[#f6f8ff] px-[10.86px] py-[8.14px]">
-                    <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[10.9px] font-normal leading-[16.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      {t('microcredit.rate')}
-                    </div>
-
-                    <div className="relative w-fit whitespace-nowrap text-[10.9px] font-medium leading-[16.3px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      2.5%
-                    </div>
+                <div className="relative flex h-[32.57px] w-full items-center justify-center gap-[21.71px] self-stretch rounded-[16.28px] bg-gray-90 px-[21.71px] py-[8.14px]">
+                  <div className="relative mt-[-0.68px] w-[111.27px] self-stretch whitespace-nowrap text-center text-[10.9px] font-medium leading-[16.3px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    {t('microcredit.applyLoan')}
                   </div>
                 </div>
               </div>
+              <div className="relative left-[115px] top-[-161px] flex h-[277px] w-[173px] flex-col items-center justify-center gap-[8.14px] rounded-[21.71px] bg-white p-[10.86px]">
+                <div className="relative mt-[-0.24px] inline-flex flex-[0_0_auto] items-center gap-[6.78px] rounded-[67.85px] p-[8.14px]">
+                  <div className="relative size-[124.84px]">
+                    <svg
+                      width="60"
+                      height="125"
+                      viewBox="0 0 60 125"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-0 top-0 h-[125px] w-[60px]"
+                    >
+                      <path
+                        d="M59.7827 2.67636C59.7827 4.1359 58.6378 5.33088 57.1899 5.46498C28.1633 8.15349 5.43479 32.6621 5.43479 62.5C5.43479 92.3378 28.1631 116.846 57.1896 119.534C58.6377 119.669 59.7827 120.864 59.7827 122.323C59.7827 123.879 58.4891 125.126 56.9456 124.99C25.0297 122.169 0 95.2692 0 62.5C4.84319e-06 29.7308 25.0299 2.83123 56.946 0.0102177C58.4893 -0.126193 59.7827 1.12123 59.7827 2.67636Z"
+                        fill="#00CB82"
+                      />
+                    </svg>
 
-              <div className="relative flex h-[32.57px] w-full items-center justify-center gap-[21.71px] self-stretch rounded-[16.28px] bg-gray-90 px-[21.71px] py-[8.14px]">
-                <div className="relative mt-[-0.68px] w-[111.27px] self-stretch whitespace-nowrap text-center text-[10.9px] font-medium leading-[16.3px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                  {t('microcredit.applyLoan')}
+                    <svg
+                      width="60"
+                      height="74"
+                      viewBox="0 0 60 74"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[65px] top-[51px] h-[74px] w-[60px]"
+                    >
+                      <path
+                        d="M56.0378 0.0944727C57.574 -0.318702 59.1419 0.664287 59.3668 2.24463C59.784 5.17705 60.0001 8.17458 60.0001 11.2228C60.0001 44.1111 34.8793 71.1084 2.84736 73.9398C1.29824 74.0767 0 72.8246 0 71.2636C0 69.7986 1.1491 68.5991 2.60245 68.4645C31.7345 65.7661 54.5455 41.1691 54.5455 11.2228C54.5455 8.51922 54.3591 5.85936 53.9991 3.25522C53.803 1.83622 54.6592 0.465258 56.0378 0.0944727Z"
+                        fill="#3573FC"
+                      />
+                    </svg>
+
+                    <svg
+                      width="15"
+                      height="23"
+                      viewBox="0 0 15 23"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[107px] top-[23px] h-[23px] w-[15px]"
+                    >
+                      <path
+                        d="M0.811765 0.807007C1.95374 -0.33928 3.83285 -0.262424 4.81444 1.02487C9.02123 6.54175 12.3453 12.7726 14.5755 19.5049C15.0595 20.9659 14.1837 22.5069 12.7021 22.9054C11.2524 23.2953 9.76571 22.4433 9.28618 21.0158C7.27702 15.0351 4.32098 9.49182 0.596858 4.56553C-0.263783 3.42706 -0.194981 1.81755 0.811765 0.807007Z"
+                        fill="#E74951"
+                      />
+                    </svg>
+
+                    <svg
+                      width="41"
+                      height="21"
+                      viewBox="0 0 41 21"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-[65px] top-0 h-[21px] w-10"
+                    >
+                      <path
+                        d="M0 2.70254C0 1.13225 1.30493 -0.127393 2.86329 0.0103117C17.048 1.26374 29.8854 7.22673 39.8139 16.3331C40.9341 17.3606 40.9317 19.1122 39.8587 20.1892C38.7884 21.2635 37.058 21.2599 35.9364 20.2396C26.9525 12.0673 15.3887 6.70098 2.61704 5.51825C1.15502 5.38286 0 4.1763 0 2.70254Z"
+                        fill="#FBAB00"
+                      />
+                    </svg>
+
+                    <div className="absolute left-[22px] top-[41px] inline-flex h-[42px] flex-col items-center gap-[1.36px]">
+                      <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                        {t('microcredit.total')}
+                      </div>
+
+                      <div className="relative mb-[-0.45px] w-fit whitespace-nowrap text-center text-[19px] font-medium leading-[27.1px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                        122,000₽
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[6.78px] rounded-[13.57px] bg-[#f6f8ff] p-[13.57px]">
+                  <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
+                    <div className="relative size-[5.43px] rounded-[2.71px] bg-blue-50" />
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      {t('chart.current')}
+                    </div>
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      48,456₽
+                    </div>
+                  </div>
+
+                  <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
+                    <div className="relative size-[5.43px] rounded-[2.71px] bg-green-50" />
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      {t('chart.main')}
+                    </div>
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      122,000₽
+                    </div>
+                  </div>
+
+                  <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
+                    <div className="relative size-[5.43px] rounded-[2.71px] bg-yellow-50" />
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      {t('chart.interest')}
+                    </div>
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      4,000₽
+                    </div>
+                  </div>
+
+                  <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
+                    <div className="relative size-[5.43px] rounded-[2.71px] bg-red-50" />
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      {t('chart.penalty')}
+                    </div>
+
+                    <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      2,700₽
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -508,130 +631,7 @@ export const MainMobile = () => {
                 </filter>
               </defs>
             </svg>
-
-            <div className="absolute left-[185px] top-[97px] flex h-[277px] w-[173px] flex-col items-center justify-center gap-[8.14px] rounded-[21.71px] bg-white p-[10.86px]">
-              <div className="relative mt-[-0.24px] inline-flex flex-[0_0_auto] items-center gap-[6.78px] rounded-[67.85px] p-[8.14px]">
-                <div className="relative size-[124.84px]">
-                  <svg
-                    width="60"
-                    height="125"
-                    viewBox="0 0 60 125"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[125px] w-[60px]"
-                  >
-                    <path
-                      d="M59.7827 2.67636C59.7827 4.1359 58.6378 5.33088 57.1899 5.46498C28.1633 8.15349 5.43479 32.6621 5.43479 62.5C5.43479 92.3378 28.1631 116.846 57.1896 119.534C58.6377 119.669 59.7827 120.864 59.7827 122.323C59.7827 123.879 58.4891 125.126 56.9456 124.99C25.0297 122.169 0 95.2692 0 62.5C4.84319e-06 29.7308 25.0299 2.83123 56.946 0.0102177C58.4893 -0.126193 59.7827 1.12123 59.7827 2.67636Z"
-                      fill="#00CB82"
-                    />
-                  </svg>
-
-                  <svg
-                    width="60"
-                    height="74"
-                    viewBox="0 0 60 74"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-[65px] top-[51px] h-[74px] w-[60px]"
-                  >
-                    <path
-                      d="M56.0378 0.0944727C57.574 -0.318702 59.1419 0.664287 59.3668 2.24463C59.784 5.17705 60.0001 8.17458 60.0001 11.2228C60.0001 44.1111 34.8793 71.1084 2.84736 73.9398C1.29824 74.0767 0 72.8246 0 71.2636C0 69.7986 1.1491 68.5991 2.60245 68.4645C31.7345 65.7661 54.5455 41.1691 54.5455 11.2228C54.5455 8.51922 54.3591 5.85936 53.9991 3.25522C53.803 1.83622 54.6592 0.465258 56.0378 0.0944727Z"
-                      fill="#3573FC"
-                    />
-                  </svg>
-
-                  <svg
-                    width="15"
-                    height="23"
-                    viewBox="0 0 15 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-[107px] top-[23px] h-[23px] w-[15px]"
-                  >
-                    <path
-                      d="M0.811765 0.807007C1.95374 -0.33928 3.83285 -0.262424 4.81444 1.02487C9.02123 6.54175 12.3453 12.7726 14.5755 19.5049C15.0595 20.9659 14.1837 22.5069 12.7021 22.9054C11.2524 23.2953 9.76571 22.4433 9.28618 21.0158C7.27702 15.0351 4.32098 9.49182 0.596858 4.56553C-0.263783 3.42706 -0.194981 1.81755 0.811765 0.807007Z"
-                      fill="#E74951"
-                    />
-                  </svg>
-
-                  <svg
-                    width="41"
-                    height="21"
-                    viewBox="0 0 41 21"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-[65px] top-0 h-[21px] w-10"
-                  >
-                    <path
-                      d="M0 2.70254C0 1.13225 1.30493 -0.127393 2.86329 0.0103117C17.048 1.26374 29.8854 7.22673 39.8139 16.3331C40.9341 17.3606 40.9317 19.1122 39.8587 20.1892C38.7884 21.2635 37.058 21.2599 35.9364 20.2396C26.9525 12.0673 15.3887 6.70098 2.61704 5.51825C1.15502 5.38286 0 4.1763 0 2.70254Z"
-                      fill="#FBAB00"
-                    />
-                  </svg>
-
-                  <div className="absolute left-[22px] top-[41px] inline-flex h-[42px] flex-col items-center gap-[1.36px]">
-                    <div className="relative mt-[-0.68px] w-fit whitespace-nowrap text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                      {t('microcredit.total')}
-                    </div>
-
-                    <div className="relative mb-[-0.45px] w-fit whitespace-nowrap text-center text-[19px] font-medium leading-[27.1px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                      122,000₽
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[6.78px] rounded-[13.57px] bg-[#f6f8ff] p-[13.57px]">
-                <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
-                  <div className="relative size-[5.43px] rounded-[2.71px] bg-blue-50" />
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    {t('chart.current')}
-                  </div>
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    48,456₽
-                  </div>
-                </div>
-
-                <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
-                  <div className="relative size-[5.43px] rounded-[2.71px] bg-green-50" />
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    {t('chart.main')}
-                  </div>
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    122,000₽
-                  </div>
-                </div>
-
-                <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
-                  <div className="relative size-[5.43px] rounded-[2.71px] bg-yellow-50" />
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    {t('chart.interest')}
-                  </div>
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    4,000₽
-                  </div>
-                </div>
-
-                <div className="relative inline-flex flex-[0_0_auto] items-center gap-[8.14px]">
-                  <div className="relative size-[5.43px] rounded-[2.71px] bg-red-50" />
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-[9.5px] font-normal leading-[13.6px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                    {t('chart.penalty')}
-                  </div>
-
-                  <div className="relative mt-[-0.68px] w-[48.85px] text-right text-[9.5px] font-medium leading-[13.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    2,700₽
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
-
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc] p-8">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
               <p className="relative mt-[-1.00px] self-stretch text-[28px] font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
