@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import { enUS, ru } from 'date-fns/locale';
 
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -13,7 +14,7 @@ import {
 import { Pagination } from 'shared/ui';
 
 export const BlogList = () => {
-  const { t } = useTranslation(['blog']);
+  const { t, i18n } = useTranslation(['blog']);
   const [page, setPage] = useState(1);
   const [categoryId, setCategoryId] = useState<number | null>(null);
   const [categories, setCategories] = useState<{ id: number; name: string }[]>(
@@ -104,7 +105,7 @@ export const BlogList = () => {
                   backgroundImage: `url(${buildMediaUrl(post.image?.url)})`,
                 }}
               >
-                <span className="!bg-white/10 absolute left-3 top-3 h-7 w-fit rounded-full px-3 py-1 text-sm !text-white backdrop-blur-2xl">
+                <span className="!bg-white/10 absolute left-3 top-3 h-7 w-fit rounded-full px-3 py-1 text-sm !text-white backdrop-blur-xl">
                   {post.category?.name}
                 </span>
               </Link>
@@ -153,7 +154,9 @@ export const BlogList = () => {
                       dateTime={new Date(post.createdAt).toISOString()}
                       className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                     >
-                      {format(new Date(post.createdAt), 'dd MMMM yyyy')}
+                      {format(new Date(post.createdAt), 'dd MMMM yyyy', {
+                        locale: i18n.language === 'ru' ? ru : enUS,
+                      })}
                     </time>
                   </div>
                   <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">

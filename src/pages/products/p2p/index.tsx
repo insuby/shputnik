@@ -1381,7 +1381,7 @@ export const P2P = () => {
             viewBox="0 0 560 1"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative h-px w-full self-stretch object-cover"
+            className="relative -mx-7 h-px w-full self-stretch object-cover xl:mr-[-68px]"
           >
             <path d="M0 0.5H560" stroke="#E3E5E8" />
           </svg>
@@ -1408,7 +1408,46 @@ export const P2P = () => {
         </div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative left-[33px] top-5 h-[490px] w-full bg-[100%_100%] xl:h-[714px] xl:w-[688px] xl:bg-gray-100">
+          <svg
+            className="absolute inset-0 m-auto"
+            width="676"
+            height="544"
+            viewBox="0 0 676 544"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.16" filter="url(#filter0_f_9281_1576)">
+              <path
+                d="M484.737 382.107C555.759 427.87 538.518 534.958 521.019 582.782C351.98 825.354 140.226 535.791 144.259 382.171C148.293 228.551 337.67 24.4999 430.948 84.6037C524.227 144.707 395.959 324.903 484.737 382.107Z"
+                fill="#3573FC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9281_1576"
+                x="-55.7969"
+                y="-126.171"
+                width="792.27"
+                height="1002.24"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_9281_1576"
+                />
+              </filter>
+            </defs>
+          </svg>
+
+          <div className="relative left-[33px]  h-[490px] w-full bg-[100%_100%] xl:h-[714px] xl:w-[688px]">
             <div className="relative top-4 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 xl:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 pb-2 pt-3 xl:w-[284px]">
@@ -2012,82 +2051,73 @@ export const P2P = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl xl:!flex-row">
+      <div className="relative flex h-[544px] w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch rounded-3xl xl:!flex-row">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl bg-[#f9fafd]">
-          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] xl:left-[33px] xl:w-[688px] xl:bg-gray-100">
-            <div className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 xl:left-[153px]">
+          <svg
+            className="absolute inset-0 m-auto"
+            width="676"
+            height="544"
+            viewBox="0 0 676 544"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g opacity="0.16" filter="url(#filter0_f_9281_1576)">
+              <path
+                d="M484.737 382.107C555.759 427.87 538.518 534.958 521.019 582.782C351.98 825.354 140.226 535.791 144.259 382.171C148.293 228.551 337.67 24.4999 430.948 84.6037C524.227 144.707 395.959 324.903 484.737 382.107Z"
+                fill="#3573FC"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_f_9281_1576"
+                x="-55.7969"
+                y="-126.171"
+                width="792.27"
+                height="1002.24"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="BackgroundImageFix"
+                  result="shape"
+                />
+                <feGaussianBlur
+                  stdDeviation="100"
+                  result="effect1_foregroundBlur_9281_1576"
+                />
+              </filter>
+            </defs>
+          </svg>
+          <div className="relative top-5 h-[714px] w-full bg-[100%_100%] xl:left-[33px] xl:w-[688px]">
+            <div
+              className="relative left-9 top-5 inline-flex flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px_32px_0px_0px] bg-[#ffffff] p-2 xl:left-[153px]">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
-                <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
+                <div
+                  className="relative flex w-[284px] flex-[0_0_auto] flex-col items-center justify-center gap-5 px-4 py-3">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('payments.title')}
-                    </div>
-
-                    <div className="relative size-6">
-                      <svg
-                        width="19"
-                        height="2"
-                        viewBox="0 0 19 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[3px] top-[11px] h-0.5 w-[18px]"
-                      >
-                        <path
-                          d="M1 1H17.5"
-                          stroke="#9FA7BC"
-                          strokeWidth="2"
-                          strokeLinecap="square"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-
-                      <svg
-                        width="19"
-                        height="2"
-                        viewBox="0 0 19 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[3px] top-[5px] h-0.5 w-[18px]"
-                      >
-                        <path
-                          d="M1 1H17.5"
-                          stroke="#9FA7BC"
-                          strokeWidth="2"
-                          strokeLinecap="square"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-
-                      <svg
-                        width="19"
-                        height="2"
-                        viewBox="0 0 19 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[3px] top-[17px] h-0.5 w-[18px]"
-                      >
-                        <path
-                          d="M1 1H17.5"
-                          stroke="#9FA7BC"
-                          strokeWidth="2"
-                          strokeLinecap="square"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
                     </div>
                   </div>
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-start self-stretch px-2.5 py-2">
                   <div className="relative flex w-[264px] items-center justify-between rounded-[100px] bg-[#f9fafd]">
-                    <div className="relative flex w-[132px] flex-col items-center justify-center gap-2 rounded-[100px] bg-gray-90 px-0 py-2">
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative flex w-[132px] flex-col items-center justify-center gap-2 rounded-[100px] bg-gray-90 px-0 py-2">
+                      <div
+                        className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         {t('payments.products')}
                       </div>
                     </div>
 
                     <div className="relative flex w-[132px] flex-col items-center justify-center gap-2 px-0 py-2">
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('payments.contracts')}
                       </div>
                     </div>
@@ -2096,78 +2126,102 @@ export const P2P = () => {
 
                 <div className="relative flex w-[284px] flex-[0_0_auto] flex-col items-start gap-4 rounded-3xl p-2.5">
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-3">
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                        <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                        <div
+                          className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
+                          <div
+                            className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
                             {t('payments.loanPro')}
                           </div>
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +30 580 ₽
                       </div>
                     </div>
 
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                      <div
+                        className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
+                        <div
+                          className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
                           {t('payments.preferential')}
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +8 000 ₽
                       </div>
                     </div>
 
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                      <div
+                        className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
+                        <div
+                          className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
                           {t('payments.preferential')}
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +12 600 ₽
                       </div>
                     </div>
 
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1.5">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                      <div
+                        className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1.5">
+                        <div
+                          className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
                           {t('payments.express')}
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +22 000 ₽
                       </div>
                     </div>
 
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
                       <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                        <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                        <div
+                          className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1.5">
+                          <div
+                            className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
                             {t('payments.loanPro')}
                           </div>
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +30 580 ₽
                       </div>
                     </div>
 
-                    <div className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative flex w-[264px] flex-[0_0_auto] items-center justify-between overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                      <div
+                        className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1.5">
+                        <div
+                          className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
                           {t('payments.preferential')}
                         </div>
                       </div>
 
-                      <div className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div
+                        className="relative flex-1 text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         +7 300 ₽
                       </div>
                     </div>
@@ -2178,8 +2232,10 @@ export const P2P = () => {
           </div>
         </div>
 
-        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]">
-          <div className="xl:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]">
+          <div
+            className="xl:w-[480px relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('payments.title')}
           </div>
 
@@ -2189,17 +2245,19 @@ export const P2P = () => {
             viewBox="0 0 560 1"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative h-px w-full self-stretch object-cover"
+            className="relative -mx-7 h-px w-full self-stretch object-cover xl:mr-[-68px]"
           >
             <path d="M0 0.5H560" stroke="#E3E5E8" />
           </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div
+              className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('intelligentPayments.automation.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+            <p
+              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               {t('intelligentPayments.automation.description')}
             </p>
           </div>

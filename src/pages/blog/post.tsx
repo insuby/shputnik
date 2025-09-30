@@ -1,4 +1,5 @@
 import { format } from 'date-fns';
+import { enUS, ru } from 'date-fns/locale';
 
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,7 +18,7 @@ import {
 } from 'shared/api/strapi';
 
 export const BlogPost = () => {
-  const { t } = useTranslation(['blog']);
+  const { t, i18n } = useTranslation(['blog']);
   const { id } = useParams();
   const [post, setPost] = useState<Post | null>(null);
   const [comments, setComments] = useState<Comment[]>([]);
@@ -160,7 +161,9 @@ export const BlogPost = () => {
                 dateTime={new Date(post.createdAt).toISOString()}
                 className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                {format(new Date(post.createdAt), 'dd MMMM yyyy')}
+                {format(new Date(post.createdAt), 'dd MMMM yyyy', {
+                  locale: i18n.language === 'ru' ? ru : enUS,
+                })}
               </time>
             </div>
             <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
@@ -355,6 +358,9 @@ export const BlogPost = () => {
                             {format(
                               new Date(c.createdAt),
                               'dd MMMM yyyy HH:mm',
+                              {
+                                locale: i18n.language === 'ru' ? ru : enUS,
+                              },
                             )}
                           </div>
                         </div>
@@ -433,6 +439,10 @@ export const BlogPost = () => {
                                       {format(
                                         new Date(r.createdAt),
                                         'dd MMMM yyyy HH:mm',
+                                        {
+                                          locale:
+                                            i18n.language === 'ru' ? ru : enUS,
+                                        },
                                       )}
                                     </div>
                                     <div className="mt-1">{r.content}</div>

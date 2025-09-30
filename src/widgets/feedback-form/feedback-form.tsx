@@ -6,6 +6,9 @@ import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import InputMask from 'react-input-mask';
+import { Link } from 'react-router-dom';
+
+import { RoutesPath } from 'shared/routes-path.tsx';
 
 import { useFeedbackForm } from './use-feedback-form.ts';
 
@@ -108,8 +111,9 @@ export const FeedbackForm = () => {
 
         <header className="relative flex h-10 w-full items-center justify-between self-stretch bg-transparent">
           <div className="relative hidden h-[22px] w-full xl:block xl:w-[170px]">
-            <div className="h-[22px] w-28">
+            <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
               <div className="relative h-[22px] w-full xl:w-[170px]">
+                <span className="sr-only">Sputnik</span>
                 <img
                   className="absolute  left-0 top-0"
                   alt=""
@@ -117,7 +121,7 @@ export const FeedbackForm = () => {
                   src="/img/logo.png"
                 />
               </div>
-            </div>
+            </Link>
           </div>
 
           <button

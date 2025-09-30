@@ -113,17 +113,16 @@ export const BNPL = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
-            aria-hidden={true}
           >
-            <g opacity="0.2" filter="url(#filter0_f_9163_1918)">
+            <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
               <path
                 d="M847.72 462.293C913.979 347.979 1082.53 367.028 1158.53 390.843C1549.9 637.044 1113.16 989.147 872.885 994.155C632.615 999.164 299.921 718.356 386.944 568.219C473.966 418.083 764.896 605.186 847.72 462.293Z"
-                fill="#FF2A9F"
+                fill="#3573FC"
               />
             </g>
             <defs>
               <filter
-                id="filter0_f_9163_1918"
+                id="filter0_f_9267_12262"
                 x="0.000579958"
                 y="-3.05241e-05"
                 width="1687.86"
@@ -140,14 +139,15 @@ export const BNPL = () => {
                 />
                 <feGaussianBlur
                   stdDeviation="186.349"
-                  result="effect1_foregroundBlur_9163_1918"
+                  result="effect1_foregroundBlur_9267_12262"
                 />
               </filter>
             </defs>
           </svg>
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
+            <div
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
                 <motion.h1
                   ref={ref2}
@@ -245,7 +245,7 @@ export const BNPL = () => {
               viewBox="0 0 329 62"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-[730px] h-24 w-full xl:top-[132px] xl:w-[328px]"
+              className="absolute left-0 top-[730px] hidden h-24 w-full xl:top-[132px] xl:block xl:w-[328px]"
             >
               <path
                 d="M0.247285 55.6177L24.7332 49.381C29.1947 48.2447 33.9294 49.0835 37.729 51.6833L46.9276 57.9775C54.0122 62.8252 63.6592 61.2242 68.7982 54.348L76.6352 43.8616C81.3036 37.615 89.793 35.6394 96.7397 39.1832L117.269 49.6559C125.75 53.9822 136.11 49.9982 139.506 41.1042L152.056 8.24266C156.121 -2.39923 171.61 -0.959623 173.644 10.249L175.739 21.7982C177.224 29.9871 188.598 30.9119 191.387 23.0705V23.0705C193.933 15.9143 204.031 15.853 206.663 22.9778L209.006 29.3212C211.913 37.1908 222.387 38.7048 227.404 31.9804L233.005 24.4727C238.302 17.3721 248.429 16.075 255.345 21.6113L261.435 26.4868C266.413 30.4717 273.281 31.1237 278.92 28.1469L328.533 1.95524"
@@ -269,7 +269,7 @@ export const BNPL = () => {
               </defs>
             </svg>
 
-            <div className="absolute left-[156px] top-[156px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
+            <div className="absolute left-[156px] top-[156px] hidden size-3 rounded-md border-2  border-solid border-[#00cb82] bg-[#ffffff] xl:block" />
           </motion.div>
 
           <svg

@@ -116,7 +116,6 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="absolute left-[53px] top-0 h-[448px] w-full xl:w-[623px]"
-              alt="Vector"
             >
               <g opacity="0.16" filter="url(#filter0_f_9163_2532)">
                 <path
@@ -509,7 +508,6 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="absolute left-0 top-0 h-[488px] w-full xl:w-[608px]"
-              alt="Vector"
             >
               <g opacity="0.16" filter="url(#filter0_f_9163_2595)">
                 <path

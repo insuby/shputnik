@@ -69,7 +69,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] self-stretch p-8 xl:p-10"
         >
           <svg
             width="64"
@@ -142,7 +142,7 @@ export const Advantages = () => {
           </div>
         </motion.div>
 
-        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+        <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] self-stretch p-8 xl:p-10">
           <svg
             width="64"
             height="64"
@@ -247,7 +247,7 @@ export const Advantages = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] self-stretch p-8 xl:p-10"
         >
           <svg
             width="64"
