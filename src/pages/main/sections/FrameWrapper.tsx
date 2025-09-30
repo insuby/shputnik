@@ -72,7 +72,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative flex cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-12"
+          className="relative flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-12"
         >
           <Link
             to={RoutesPath.MICROCREDIT}
@@ -123,9 +123,9 @@ export const FrameWrapper = () => {
         </motion.div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc]">
-          <div className="relative h-[548px] w-full xl:w-[690px]">
+          <div className="relative h-[548px] w-1/2">
             <svg
-              className="absolute left-0 top-0 h-[520px] w-full xl:w-[690px]"
+              className="absolute left-0 top-0 h-[520px] w-full "
               width="1077"
               height="1131"
               viewBox="0 0 1077 1131"
@@ -180,9 +180,9 @@ export const FrameWrapper = () => {
 
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
-                      <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
+                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
                         <svg
-                          className="h-1w-full absolute left-px top-1 xl:w-[260px]"
+                          className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
                           width="260"
                           height="4"
                           viewBox="0 0 260 4"
@@ -232,9 +232,9 @@ export const FrameWrapper = () => {
 
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
-                      <div className="h-3w-full relative left-[-3px] top-px xl:w-[261px]">
+                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
                         <svg
-                          className="h-1w-full absolute left-px top-1 xl:w-[260px]"
+                          className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
                           width="260"
                           height="4"
                           viewBox="0 0 260 4"
