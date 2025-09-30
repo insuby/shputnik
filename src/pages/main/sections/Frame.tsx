@@ -29,10 +29,10 @@ export const Frame = () => {
   const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
 
   return (
-    <section className="w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
-      <div className="relative flex min-h-[var(--size-520)] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
+    <section className="w-full !min-h-[800px] overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
+      <div className="relative flex !min-h-[var(--size-520)] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
         <svg
-          className="absolute left-1/2 top-[var(--pos-220)] hidden h-[var(--size-560)] w-full -translate-x-1/2 xl:left-[var(--pos-113)] xl:top-[var(--pos-272)] xl:block xl:h-[var(--size-1060)] xl:w-[var(--size-1108)] xl:translate-x-0"
+          className="absolute left-1/2 top-[var(--pos-220)] hidden h-[var(--size-560)] w-full -translate-x-1/2 lg:left-[var(--pos-113)] lg:top-[var(--pos-272)] lg:block lg:h-[var(--size-1060)] lg:w-[var(--size-1108)] lg:translate-x-0"
           width="1125"
           height="1073"
           viewBox="0 0 1125 1073"
@@ -113,7 +113,7 @@ export const Frame = () => {
             delay: delays[2] + 0.05,
             ease: 'easeOut',
           }}
-          className="absolute bottom-[-0.42vw] left-[var(--spacing-37-5)] hidden w-[var(--spacing-27-78)] flex-col gap-[var(--spacing-1-11)] rounded-t-[var(--spacing-2-78)] border-solid border-[var(--spacing-0-42)] border-gray-90 bg-white p-[var(--spacing-1-94)] xl:flex"
+          className="absolute bottom-[-0.42vw] left-[var(--spacing-37-5)] hidden w-[var(--spacing-27-78)] flex-col gap-[var(--spacing-1-11)] rounded-t-[var(--spacing-2-78)] border-solid border-[var(--spacing-0-42)] border-gray-90 bg-white p-[var(--spacing-1-94)] lg:flex"
         >
           <div className="flex w-full items-center justify-between">
             <div className="text-adaptive-24 leading-adaptive-32 font-semibold text-gray-90 [font-family:'Inter',Helvetica]">
@@ -206,7 +206,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[5] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
-          className="absolute left-[var(--spacing-62-08)] top-[var(--spacing-50-69)] hidden items-center gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-white py-[var(--spacing-1-11)] pl-[var(--spacing-1-11)] pr-[var(--spacing-1-67)] xl:inline-flex"
+          className="absolute left-[var(--spacing-62-08)] top-[var(--spacing-50-69)] hidden items-center gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-white py-[var(--spacing-1-11)] pl-[var(--spacing-1-11)] pr-[var(--spacing-1-67)] lg:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[var(--spacing-1-94)] rounded-[var(--spacing-1-67)] bg-[#f2f5ff] p-[var(--spacing-1-11)]">
             <svg
@@ -280,7 +280,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[var(--spacing-9-72)] top-[var(--spacing-38-82)] items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] xl:flex xl:w-[var(--spacing-32-78)]"
+          className="hiddenw-full absolute left-[var(--spacing-9-72)] top-[var(--spacing-38-82)] items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-32-78)]"
         >
           <Graph />
 
@@ -341,7 +341,7 @@ export const Frame = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[var(--spacing-66-46)] top-[var(--spacing-31-81)] flex-col items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] xl:flex xl:w-[var(--spacing-22-5)]"
+          className="hiddenw-full absolute left-[var(--spacing-66-46)] top-[var(--spacing-31-81)] flex-col items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-22-5)]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-67)] self-stretch p-[var(--spacing-1-11)]">

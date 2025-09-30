@@ -195,63 +195,148 @@ a {
   --radix-navigation-menu-trigger-delay: 999999ms !important;
 }
 
-/* Адаптивные единицы с ограничением на 1440px */
+/* Адаптивные единицы работают только в диапазоне 724px - 1440px */
+/* До 724px - минимальные фиксированные значения */
 :root {
-  --spacing-0-28: clamp(0px, 0.28vw, 4.032px);
-  --spacing-0-42: clamp(0px, 0.42vw, 6.048px);
-  --spacing-0-56: clamp(0px, 0.56vw, 8.064px);
-  --spacing-0-69: clamp(0px, 0.69vw, 9.936px);
-  --spacing-0-83: clamp(0px, 0.83vw, 11.952px);
-  --spacing-1-04: clamp(0px, 1.04vw, 14.976px);
-  --spacing-1-11: clamp(0px, 1.11vw, 15.984px);
-  --spacing-1-39: clamp(0px, 1.39vw, 20.016px);
-  --spacing-1-67: clamp(0px, 1.67vw, 24.048px);
-  --spacing-1-94: clamp(0px, 1.94vw, 27.936px);
-  --spacing-2-22: clamp(0px, 2.22vw, 31.968px);
-  --spacing-2-64: clamp(0px, 2.64vw, 38.016px);
-  --spacing-2-78: clamp(0px, 2.78vw, 40.032px);
-  --spacing-3-33: clamp(0px, 3.33vw, 47.952px);
-  --spacing-3-4: clamp(0px, 3.4vw, 48.96px);
-  --spacing-3-68: clamp(0px, 3.68vw, 52.992px);
-  --spacing-5-56: clamp(0px, 5.56vw, 80.064px);
-  --spacing-6-11: clamp(0px, 6.11vw, 87.984px);
-  --spacing-6-94: clamp(0px, 6.94vw, 99.936px);
-  --spacing-9-44: clamp(0px, 9.44vw, 135.936px);
-  --spacing-9-72: clamp(0px, 9.72vw, 139.968px);
-  --spacing-10-56: clamp(0px, 10.56vw, 152.064px);
-  --spacing-12-29: clamp(0px, 12.29vw, 176.976px);
-  --spacing-21-11: clamp(0px, 21.11vw, 303.984px);
-  --spacing-21-67: clamp(0px, 21.67vw, 312.048px);
-  --spacing-22-5: clamp(0px, 22.5vw, 324px);
-  --spacing-27-78: clamp(0px, 27.78vw, 400.032px);
-  --spacing-31-67: clamp(0px, 31.67vw, 456.048px);
-  --spacing-31-81: clamp(0px, 31.81vw, 458.064px);
-  --spacing-32-78: clamp(0px, 32.78vw, 472.032px);
-  --spacing-37-5: clamp(0px, 37.5vw, 540px);
-  --spacing-38-82: clamp(0px, 38.82vw, 559.008px);
-  --spacing-50-69: clamp(0px, 50.69vw, 729.936px);
-  --spacing-62-08: clamp(0px, 62.08vw, 893.952px);
-  --spacing-66-46: clamp(0px, 66.46vw, 957.024px);
+  --spacing-0-28: 2px;
+  --spacing-0-42: 3px;
+  --spacing-0-56: 4px;
+  --spacing-0-69: 5px;
+  --spacing-0-83: 6px;
+  --spacing-1-04: 8px;
+  --spacing-1-11: 8px;
+  --spacing-1-39: 10px;
+  --spacing-1-67: 12px;
+  --spacing-1-94: 14px;
+  --spacing-2-22: 16px;
+  --spacing-2-64: 18px;
+  --spacing-2-78: 20px;
+  --spacing-3-33: 24px;
+  --spacing-3-4: 24px;
+  --spacing-3-68: 26px;
+  --spacing-5-56: 40px;
+  --spacing-6-11: 45px;
+  --spacing-6-94: 50px;
+  --spacing-9-44: 70px;
+  --spacing-9-72: 70px;
+  --spacing-10-56: 75px;
+  --spacing-12-29: 90px;
+  --spacing-21-11: 150px;
+  --spacing-21-67: 155px;
+  --spacing-22-5: 160px;
+  --spacing-27-78: 200px;
+  --spacing-31-67: 230px;
+  --spacing-31-81: 230px;
+  --spacing-32-78: 235px;
+  --spacing-37-5: 270px;
+  --spacing-38-82: 280px;
+  --spacing-50-69: 370px;
+  --spacing-62-08: 450px;
+  --spacing-66-46: 480px;
+}
 
-  /* Адаптивные размеры текста с ограничением на 1440px */
-  --text-10-46: clamp(8px, 0.73vw, 10.46px);
-  --text-10-5: clamp(8px, 0.73vw, 10.5px);
-  --text-14-9: clamp(12px, 1.03vw, 14.9px);
-  --text-14-95: clamp(12px, 1.04vw, 14.95px);
-  --text-23-9: clamp(18px, 1.66vw, 23.9px);
-  --text-24: clamp(18px, 1.67vw, 24px);
-  --text-28: clamp(20px, 1.94vw, 28px);
-  --text-28-to-60: clamp(28px, 4.17vw, 60px);
-  --text-36: clamp(24px, 2.5vw, 36px);
-  --text-36-to-60: clamp(36px, 4.17vw, 60px);
-  --text-40: clamp(40px, 2.78vw, 40px);
+/* С 724px включается адаптивность (vw) */
+@media (min-width: 724px) {
+  :root {
+    --spacing-0-28: clamp(2px, 0.28vw, 4.032px);
+    --spacing-0-42: clamp(3px, 0.42vw, 6.048px);
+    --spacing-0-56: clamp(4px, 0.56vw, 8.064px);
+    --spacing-0-69: clamp(5px, 0.69vw, 9.936px);
+    --spacing-0-83: clamp(6px, 0.83vw, 11.952px);
+    --spacing-1-04: clamp(8px, 1.04vw, 14.976px);
+    --spacing-1-11: clamp(8px, 1.11vw, 15.984px);
+    --spacing-1-39: clamp(10px, 1.39vw, 20.016px);
+    --spacing-1-67: clamp(12px, 1.67vw, 24.048px);
+    --spacing-1-94: clamp(14px, 1.94vw, 27.936px);
+    --spacing-2-22: clamp(16px, 2.22vw, 31.968px);
+    --spacing-2-64: clamp(18px, 2.64vw, 38.016px);
+    --spacing-2-78: clamp(20px, 2.78vw, 40.032px);
+    --spacing-3-33: clamp(24px, 3.33vw, 47.952px);
+    --spacing-3-4: clamp(24px, 3.4vw, 48.96px);
+    --spacing-3-68: clamp(26px, 3.68vw, 52.992px);
+    --spacing-5-56: clamp(40px, 5.56vw, 80.064px);
+    --spacing-6-11: clamp(45px, 6.11vw, 87.984px);
+    --spacing-6-94: clamp(50px, 6.94vw, 99.936px);
+    --spacing-9-44: clamp(70px, 9.44vw, 135.936px);
+    --spacing-9-72: clamp(70px, 9.72vw, 139.968px);
+    --spacing-10-56: clamp(75px, 10.56vw, 152.064px);
+    --spacing-12-29: clamp(90px, 12.29vw, 176.976px);
+    --spacing-21-11: clamp(150px, 21.11vw, 303.984px);
+    --spacing-21-67: clamp(155px, 21.67vw, 312.048px);
+    --spacing-22-5: clamp(160px, 22.5vw, 324px);
+    --spacing-27-78: clamp(200px, 27.78vw, 400.032px);
+    --spacing-31-67: clamp(230px, 31.67vw, 456.048px);
+    --spacing-31-81: clamp(230px, 31.81vw, 458.064px);
+    --spacing-32-78: clamp(235px, 32.78vw, 472.032px);
+    --spacing-37-5: clamp(270px, 37.5vw, 540px);
+    --spacing-38-82: clamp(280px, 38.82vw, 559.008px);
+    --spacing-50-69: clamp(370px, 50.69vw, 729.936px);
+    --spacing-62-08: clamp(450px, 62.08vw, 893.952px);
+    --spacing-66-46: clamp(480px, 66.46vw, 957.024px);
+  }
+}
 
-  /* Адаптивные line-height с ограничением на 1440px */
-  --leading-32: clamp(28px, 2.22vw, 32px);
-  --leading-44: clamp(36px, 3.06vw, 44px);
-  --leading-48: clamp(40px, 3.33vw, 48px);
-  --leading-60: clamp(48px, 4.17vw, 60px);
-  --leading-68: clamp(56px, 4.72vw, 68px);
+/* С 1440px фиксируем максимальные значения */
+@media (min-width: 1440px) {
+  :root {
+    --spacing-0-28: 4.032px;
+    --spacing-0-42: 6.048px;
+    --spacing-0-56: 8.064px;
+    --spacing-0-69: 9.936px;
+    --spacing-0-83: 11.952px;
+    --spacing-1-04: 14.976px;
+    --spacing-1-11: 15.984px;
+    --spacing-1-39: 20.016px;
+    --spacing-1-67: 24.048px;
+    --spacing-1-94: 27.936px;
+    --spacing-2-22: 31.968px;
+    --spacing-2-64: 38.016px;
+    --spacing-2-78: 40.032px;
+    --spacing-3-33: 47.952px;
+    --spacing-3-4: 48.96px;
+    --spacing-3-68: 52.992px;
+    --spacing-5-56: 80.064px;
+    --spacing-6-11: 87.984px;
+    --spacing-6-94: 99.936px;
+    --spacing-9-44: 135.936px;
+    --spacing-9-72: 139.968px;
+    --spacing-10-56: 152.064px;
+    --spacing-12-29: 176.976px;
+    --spacing-21-11: 303.984px;
+    --spacing-21-67: 312.048px;
+    --spacing-22-5: 324px;
+    --spacing-27-78: 400.032px;
+    --spacing-31-67: 456.048px;
+    --spacing-31-81: 458.064px;
+    --spacing-32-78: 472.032px;
+    --spacing-37-5: 540px;
+    --spacing-38-82: 559.008px;
+    --spacing-50-69: 729.936px;
+    --spacing-62-08: 893.952px;
+    --spacing-66-46: 957.024px;
+  }
+}
+
+:root {
+  /* Текст: минимумы по умолчанию (< 724px) */
+  --text-10-46: 8px;
+  --text-10-5: 8px;
+  --text-14-9: 12px;
+  --text-14-95: 12px;
+  --text-23-9: 18px;
+  --text-24: 18px;
+  --text-28: 20px;
+  --text-28-to-60: 28px;
+  --text-36: 24px;
+  --text-36-to-60: 36px;
+  --text-40: 40px;
+
+  /* Line-height: минимумы */
+  --leading-32: 28px;
+  --leading-44: 36px;
+  --leading-48: 40px;
+  --leading-60: 48px;
+  --leading-68: 56px;
 
   /* Адаптивные позиции (left, top, etc) с ограничением на 1440px */
   --pos-3: clamp(0px, 0.21vw, 3px);
@@ -305,105 +390,147 @@ a {
   --pos-456: clamp(0px, 31.67vw, 456px);
 
   /* Адаптивные размеры (width, height) малые (до 200px) */
-  --size-29: clamp(0px, 2.01vw, 29px);
-  --size-39: clamp(0px, 2.71vw, 39px);
-  --size-58: clamp(0px, 4.03vw, 58px);
-  --size-62: clamp(0px, 4.31vw, 62px);
-  --size-68: clamp(0px, 4.72vw, 68px);
-  --size-72: clamp(0px, 5vw, 72px);
-  --size-76: clamp(0px, 5.28vw, 76px);
-  --size-86: clamp(0px, 5.97vw, 86px);
-  --size-88: clamp(0px, 6.11vw, 88px);
-  --size-91: clamp(0px, 6.32vw, 91px);
-  --size-95: clamp(0px, 6.6vw, 95px);
-  --size-98: clamp(0px, 6.81vw, 98px);
-  --size-104: clamp(0px, 7.22vw, 104px);
-  --size-105: clamp(0px, 7.29vw, 105px);
-  --size-120: clamp(0px, 8.33vw, 120px);
-  --size-140: clamp(0px, 9.72vw, 140px);
-  --size-142: clamp(0px, 9.86vw, 142px);
-  --size-148: clamp(0px, 10.28vw, 148px);
-  --size-149: clamp(0px, 10.35vw, 149px);
-  --size-154: clamp(0px, 10.69vw, 154px);
-  --size-164: clamp(0px, 11.39vw, 164px);
-  --size-169: clamp(0px, 11.74vw, 169px);
-  --size-180: clamp(0px, 12.5vw, 180px);
-  --size-198: clamp(0px, 13.75vw, 198px);
+  --size-29: clamp(20px, 2.01vw, 29px);
+  --size-39: clamp(28px, 2.71vw, 39px);
+  --size-58: clamp(40px, 4.03vw, 58px);
+  --size-62: clamp(45px, 4.31vw, 62px);
+  --size-68: clamp(50px, 4.72vw, 68px);
+  --size-72: clamp(52px, 5vw, 72px);
+  --size-76: clamp(55px, 5.28vw, 76px);
+  --size-86: clamp(60px, 5.97vw, 86px);
+  --size-88: clamp(60px, 6.11vw, 88px);
+  --size-91: clamp(65px, 6.32vw, 91px);
+  --size-95: clamp(68px, 6.6vw, 95px);
+  --size-98: clamp(70px, 6.81vw, 98px);
+  --size-104: clamp(75px, 7.22vw, 104px);
+  --size-105: clamp(75px, 7.29vw, 105px);
+  --size-120: clamp(85px, 8.33vw, 120px);
+  --size-140: clamp(100px, 9.72vw, 140px);
+  --size-142: clamp(100px, 9.86vw, 142px);
+  --size-148: clamp(105px, 10.28vw, 148px);
+  --size-149: clamp(105px, 10.35vw, 149px);
+  --size-154: clamp(110px, 10.69vw, 154px);
+  --size-164: clamp(115px, 11.39vw, 164px);
+  --size-169: clamp(120px, 11.74vw, 169px);
+  --size-180: clamp(130px, 12.5vw, 180px);
+  --size-198: clamp(140px, 13.75vw, 198px);
 
   /* Адаптивные размеры средние (200-500px) */
-  --size-212: clamp(0px, 14.72vw, 212px);
-  --size-260: clamp(0px, 18.06vw, 260px);
-  --size-261: clamp(0px, 18.13vw, 261px);
-  --size-264: clamp(0px, 18.33vw, 264px);
-  --size-304: clamp(0px, 21.11vw, 304px);
-  --size-324: clamp(0px, 22.5vw, 324px);
-  --size-328: clamp(0px, 22.78vw, 328px);
-  --size-330: clamp(0px, 22.92vw, 330px);
-  --size-345: clamp(0px, 23.96vw, 345px);
-  --size-368: clamp(0px, 25.56vw, 368px);
-  --size-371: clamp(0px, 25.76vw, 371px);
-  --size-372: clamp(0px, 25.83vw, 372px);
-  --size-388: clamp(0px, 26.94vw, 388px);
-  --size-401: clamp(0px, 27.85vw, 401px);
-  --size-415: clamp(0px, 28.82vw, 415px);
-  --size-416: clamp(0px, 28.89vw, 416px);
-  --size-446: clamp(0px, 30.97vw, 446px);
-  --size-458: clamp(0px, 31.81vw, 458px);
-  --size-472: clamp(0px, 32.78vw, 472px);
+  --size-212: clamp(150px, 14.72vw, 212px);
+  --size-260: clamp(180px, 18.06vw, 260px);
+  --size-261: clamp(180px, 18.13vw, 261px);
+  --size-264: clamp(185px, 18.33vw, 264px);
+  --size-304: clamp(220px, 21.11vw, 304px);
+  --size-324: clamp(240px, 22.5vw, 324px);
+  --size-328: clamp(240px, 22.78vw, 328px);
+  --size-330: clamp(245px, 22.92vw, 330px);
+  --size-345: clamp(255px, 23.96vw, 345px);
+  --size-368: clamp(270px, 25.56vw, 368px);
+  --size-371: clamp(275px, 25.76vw, 371px);
+  --size-372: clamp(275px, 25.83vw, 372px);
+  --size-388: clamp(285px, 26.94vw, 388px);
+  --size-401: clamp(300px, 27.85vw, 401px);
+  --size-415: clamp(310px, 28.82vw, 415px);
+  --size-416: clamp(310px, 28.89vw, 416px);
+  --size-446: clamp(335px, 30.97vw, 446px);
+  --size-458: clamp(345px, 31.81vw, 458px);
+  --size-472: clamp(355px, 32.78vw, 472px);
 
   /* Адаптивные размеры большие (500px+) */
-  --size-520: clamp(0px, 36.11vw, 520px);
-  --size-543: clamp(0px, 37.71vw, 543px);
-  --size-548: clamp(0px, 38.06vw, 548px);
-  --size-560: clamp(0px, 38.89vw, 560px);
-  --size-571: clamp(0px, 39.65vw, 571px);
-  --size-590: clamp(0px, 40.97vw, 590px);
-  --size-600: clamp(0px, 41.67vw, 600px);
-  --size-611: clamp(0px, 42.43vw, 611px);
-  --size-629: clamp(0px, 43.68vw, 629px);
-  --size-660: clamp(0px, 45.83vw, 660px);
-  --size-678: clamp(0px, 47.08vw, 678px);
-  --size-682: clamp(0px, 47.36vw, 682px);
-  --size-686: clamp(0px, 47.64vw, 686px);
-  --size-690: clamp(0px, 47.92vw, 690px);
-  --size-716: clamp(0px, 49.72vw, 716px);
-  --size-786: clamp(0px, 54.58vw, 786px);
-  --size-900: clamp(0px, 62.5vw, 900px);
-  --size-904: clamp(0px, 62.78vw, 904px);
-  --size-980: clamp(0px, 68.06vw, 980px);
-  --size-1060: clamp(0px, 73.61vw, 1060px);
-  --size-1108: clamp(0px, 76.94vw, 1108px);
-  --size-1265: clamp(0px, 87.85vw, 1265px);
-  --size-1376: clamp(0px, 95.56vw, 1376px);
-  --size-1440: clamp(0px, 100vw, 1440px);
+  --size-520: clamp(400px, 36.11vw, 520px);
+  --size-543: clamp(400px, 37.71vw, 543px);
+  --size-548: clamp(400px, 38.06vw, 548px);
+  --size-560: clamp(400px, 38.89vw, 560px);
+  --size-571: clamp(400px, 39.65vw, 571px);
+  --size-590: clamp(450px, 40.97vw, 590px);
+  --size-600: clamp(450px, 41.67vw, 600px);
+  --size-611: clamp(450px, 42.43vw, 611px);
+  --size-629: clamp(450px, 43.68vw, 629px);
+  --size-660: clamp(500px, 45.83vw, 660px);
+  --size-678: clamp(500px, 47.08vw, 678px);
+  --size-682: clamp(500px, 47.36vw, 682px);
+  --size-686: clamp(500px, 47.64vw, 686px);
+  --size-690: clamp(500px, 47.92vw, 690px);
+  --size-716: clamp(550px, 49.72vw, 716px);
+  --size-786: clamp(600px, 54.58vw, 786px);
+  --size-900: clamp(700px, 62.5vw, 900px);
+  --size-904: clamp(700px, 62.78vw, 904px);
+  --size-980: clamp(750px, 68.06vw, 980px);
+  --size-1060: clamp(800px, 73.61vw, 1060px);
+  --size-1108: clamp(850px, 76.94vw, 1108px);
+  --size-1265: clamp(950px, 87.85vw, 1265px);
+  --size-1376: clamp(1000px, 95.56vw, 1376px);
+  --size-1440: clamp(1000px, 100vw, 1440px);
 }
 
 /* Переопределение стандартных Tailwind spacing классов */
 /* Все отступы, gap, padding, margin теперь адаптивные */
 @layer utilities {
-  .p-0 { padding: 0 !important; }
-  .p-1 { padding: clamp(0px, 0.28vw, 4px) !important; }
-  .p-2 { padding: clamp(0px, 0.56vw, 8px) !important; }
-  .p-3 { padding: clamp(0px, 0.83vw, 12px) !important; }
-  .p-4 { padding: clamp(0px, 1.11vw, 16px) !important; }
-  .p-5 { padding: clamp(0px, 1.39vw, 20px) !important; }
-  .p-6 { padding: clamp(0px, 1.67vw, 24px) !important; }
-  .p-7 { padding: clamp(0px, 1.94vw, 28px) !important; }
-  .p-8 { padding: clamp(0px, 2.22vw, 32px) !important; }
-  .p-10 { padding: clamp(0px, 2.78vw, 40px) !important; }
-  .p-12 { padding: clamp(0px, 3.33vw, 48px) !important; }
-  .p-14 { padding: clamp(0px, 3.89vw, 56px) !important; }
+  .p-0 {
+    padding: 0 !important;
+  }
+  .p-1 {
+    padding: clamp(0px, 0.28vw, 4px) !important;
+  }
+  .p-2 {
+    padding: clamp(0px, 0.56vw, 8px) !important;
+  }
+  .p-3 {
+    padding: clamp(0px, 0.83vw, 12px) !important;
+  }
+  .p-4 {
+    padding: clamp(0px, 1.11vw, 16px) !important;
+  }
+  .p-5 {
+    padding: clamp(0px, 1.39vw, 20px) !important;
+  }
+  .p-6 {
+    padding: clamp(0px, 1.67vw, 24px) !important;
+  }
+  .p-7 {
+    padding: clamp(0px, 1.94vw, 28px) !important;
+  }
+  .p-8 {
+    padding: clamp(0px, 2.22vw, 32px) !important;
+  }
+  .p-10 {
+    padding: clamp(0px, 2.78vw, 40px) !important;
+  }
+  .p-12 {
+    padding: clamp(0px, 3.33vw, 48px) !important;
+  }
+  .p-14 {
+    padding: clamp(0px, 3.89vw, 56px) !important;
+  }
 
-  .gap-0 { gap: 0 !important; }
-  .gap-1 { gap: clamp(0px, 0.28vw, 4px) !important; }
-  .gap-2 { gap: clamp(0px, 0.56vw, 8px) !important; }
-  .gap-3 { gap: clamp(0px, 0.83vw, 12px) !important; }
-  .gap-4 { gap: clamp(0px, 1.11vw, 16px) !important; }
-  .gap-5 { gap: clamp(0px, 1.39vw, 20px) !important; }
-  .gap-6 { gap: clamp(0px, 1.67vw, 24px) !important; }
-  .gap-7 { gap: clamp(0px, 1.94vw, 28px) !important; }
+  .gap-0 {
+    gap: 0 !important;
+  }
+  .gap-1 {
+    gap: clamp(0px, 0.28vw, 4px) !important;
+  }
+  .gap-2 {
+    gap: clamp(0px, 0.56vw, 8px) !important;
+  }
+  .gap-3 {
+    gap: clamp(0px, 0.83vw, 12px) !important;
+  }
+  .gap-4 {
+    gap: clamp(0px, 1.11vw, 16px) !important;
+  }
+  .gap-5 {
+    gap: clamp(0px, 1.39vw, 20px) !important;
+  }
+  .gap-6 {
+    gap: clamp(0px, 1.67vw, 24px) !important;
+  }
+  .gap-7 {
+    gap: clamp(0px, 1.94vw, 28px) !important;
+  }
 
-  .m-0 { margin: 0 !important; }
+  .m-0 {
+    margin: 0 !important;
+  }
 }
 
 /* Переопределение стандартных Tailwind классов размеров текста */

@@ -56,7 +56,7 @@ export const DivWrapper = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
         >
-          <div className="relative left-[-222px] top-[-254px] hidden h-[var(--size-904)] w-full xl:block xl:w-[var(--size-1265)]">
+          <div className="relative left-[-222px] top-[-254px] hidden lg:block xl:w-[var(--size-1265)]">
             <svg
               className="absolute left-0 top-[var(--pos-333)] h-[var(--size-571)] w-full xl:w-[var(--size-611)]"
               width="808"

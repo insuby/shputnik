@@ -4,12 +4,10 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 
-import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { RoutesPath } from 'shared/routes-path.tsx';
 
 export const Frame1 = () => {
   const { t } = useTranslation(['home']);
-  const isMobile = useIsMobile();
   const ref37l = useRef<HTMLSpanElement>(null);
   const ref37r = useRef<HTMLSpanElement>(null);
   const ref38 = useRef<HTMLParagraphElement>(null);

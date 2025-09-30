@@ -169,14 +169,14 @@ export const MicroCredit = () => {
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="h-3 w-full relative left-[-3px] top-px xl:w-[261px]">
+                    <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
                       <svg
                         width="260"
                         height="4"
                         viewBox="0 0 260 4"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1 w-full absolute left-px top-1 xl:w-[260px]"
+                        className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
                       >
                         <path
                           d="M2 2H258"
@@ -219,14 +219,14 @@ export const MicroCredit = () => {
 
                 <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                   <div className="relative h-3.5 w-full self-stretch">
-                    <div className="h-3 w-full relative left-[-3px] top-px xl:w-[261px]">
+                    <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
                       <svg
                         width="260"
                         height="4"
                         viewBox="0 0 260 4"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1 w-full absolute left-px top-1 xl:w-[260px]"
+                        className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
                       >
                         <path
                           d="M2 2L258 2.00002"

@@ -1,15 +1,20 @@
 import { motion, useInView } from 'framer-motion';
-import { Advantages, Analytics, EmployeeWork, Feedback, Integrations, RoleStructure, Trust, Zaim, ZaimChecker } from 'widgets';
-
-
+import {
+  Advantages,
+  Analytics,
+  EmployeeWork,
+  Feedback,
+  Integrations,
+  RoleStructure,
+  Trust,
+  Zaim,
+  ZaimChecker,
+} from 'widgets';
 
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-
-
 import { HeroButtons } from 'shared/ui';
-
 
 export const BankCredit = () => {
   const { t } = useTranslation(['bankcredit']);
