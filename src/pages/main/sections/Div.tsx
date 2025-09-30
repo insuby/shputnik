@@ -69,7 +69,7 @@ export const Div = () => {
           {t('lendingStoreOnline.headingRight')}
         </motion.span>
       </h2>
-      <div className="relative flex min-h-[600px] w-full items-start gap-5 self-stretch">
+      <div className="relative flex min-h-[var(--size-600)] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
           <motion.div
             id="animate_24"
@@ -83,9 +83,9 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative h-[401px] w-full xl:w-[678px]">
+              <div className="relative h-[var(--size-401)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute left-[145px] top-[30px] h-[371px] w-full xl:w-[388px]"
+                  className="absolute left-[var(--pos-145)] top-[var(--pos-30)] h-[var(--size-371)] w-full xl:w-[var(--size-388)]"
                   width="1408"
                   height="1470"
                   viewBox="0 0 1408 1470"
@@ -133,7 +133,7 @@ export const Div = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-2.5 p-3">
                     <div className="relative flex size-40 items-start gap-3">
-                      <div className="relative size-[148px] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
+                      <div className="relative size-[var(--size-148)] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
                     </div>
                   </div>
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl bg-[#f6f8ff] p-6">
@@ -141,35 +141,35 @@ export const Div = () => {
                       {t('lendingStoreOnline.productName')}
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.cost')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           23,456₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.advancePayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           42,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('calculator.term')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           4,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[264px]">
+                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
                         <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.nextPayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           2,700₽
                         </div>
                       </div>
@@ -177,7 +177,7 @@ export const Div = () => {
                   </div>
                 </motion.div>
                 <svg
-                  className="absolute left-0 top-0 h-[368px] w-full xl:w-[678px]"
+                  className="absolute left-0 top-0 h-[var(--size-368)] w-full xl:w-[var(--size-678)]"
                   width="1101"
                   height="1009"
                   viewBox="0 0 1101 1009"
@@ -221,7 +221,7 @@ export const Div = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView27 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[363px] top-[238px] inline-flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
+                  className="absolute left-[var(--pos-363)] top-[var(--pos-238)] inline-flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
                     <svg
@@ -342,9 +342,9 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative left-[67px] top-6 h-[416px] w-full xl:w-[543px]">
+              <div className="relative left-[var(--pos-67)] top-6 h-[var(--size-416)] w-full xl:w-[var(--size-543)]">
                 <svg
-                  className="absolute left-[78px] top-1.5 h-[371px] w-full xl:w-[388px]"
+                  className="absolute left-[var(--pos-78)] top-1.5 h-[var(--size-371)] w-full xl:w-[var(--size-388)]"
                   width="1225"
                   height="986"
                   viewBox="0 0 1225 986"
@@ -388,56 +388,56 @@ export const Div = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView26 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[215px] top-[26px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
+                  className="absolute left-[var(--pos-215)] top-[var(--pos-26)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]">
+                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-264)]">
                       {t('lendingStoreOnline.paymentSchedule')}
                     </div>
-                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
+                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-180)]">
                       {t('lendingStoreOnline.contract')}
                     </div>
                   </div>
-                  <div className="relative inline-flex h-[154px] items-end">
+                  <div className="relative inline-flex h-[var(--size-154)] items-end">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[76px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="relative h-[var(--size-76)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.march')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[86px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="relative h-[var(--size-86)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.april')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[105px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="relative h-[var(--size-105)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.may')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[120px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="relative h-[var(--size-120)] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.june')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[91px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="relative h-[var(--size-91)] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.july')}
                       </div>
                     </div>
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="relative h-[var(--size-98)] w-2 rounded-3xl bg-[#f2f4fb]" />
                       <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.august')}
                       </div>
                     </div>
                   </div>
                   <svg
-                    className="absolute left-0 top-[109px] h-24 w-full xl:w-[328px]"
+                    className="absolute left-0 top-[var(--pos-109)] h-24 w-full xl:w-[var(--size-328)]"
                     width="329"
                     height="62"
                     viewBox="0 0 329 62"
@@ -466,10 +466,10 @@ export const Div = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <div className="absolute left-[156px] top-[133px] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
+                  <div className="absolute left-[var(--pos-156)] top-[var(--pos-133)] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
                 <svg
-                  className="absolute left-3 top-0 h-[416px] w-full xl:w-[388px]"
+                  className="absolute left-3 top-0 h-[var(--size-416)] w-full xl:w-[var(--size-388)]"
                   width="651"
                   height="764"
                   viewBox="0 0 651 764"
@@ -515,9 +515,9 @@ export const Div = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="absolute left-0 top-14 inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
                 >
-                  <div className="relative size-[212px] rounded-[100px]">
-                    <div className="relative left-[7px] top-[7px] size-[198px]">
-                      <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
+                  <div className="relative size-[var(--size-212)] rounded-[100px]">
+                    <div className="relative left-[var(--pos-7)] top-[var(--pos-7)] size-[var(--size-198)]">
+                      <div className="absolute left-10 top-[var(--pos-68)] inline-flex h-[var(--size-62)] flex-col items-center gap-0.5">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                           {t('lendingStoreOnline.currentBalance')}
                         </div>
@@ -525,9 +525,9 @@ export const Div = () => {
                           44,000₽
                         </div>
                       </div>
-                      <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
+                      <div className="absolute left-0 top-0 size-[var(--size-198)] rounded-[99px] border-[10px] border-solid border-neutral-50" />
                       <svg
-                        className="absolute left-0 top-0 size-[198px]"
+                        className="absolute left-0 top-0 size-[var(--size-198)]"
                         width="198"
                         height="198"
                         viewBox="0 0 198 198"

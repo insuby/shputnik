@@ -41,7 +41,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
-          className="relative mt-[-1.00px] w-full text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[590px]"
+          className="relative mt-[-1.00px] w-full text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[var(--size-590)]"
         >
           {t('specialize.weSpecialize')}
         </motion.div>
@@ -52,7 +52,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-          className="text-adaptive-36-to-60 leading-adaptive-68 relative w-full text-center font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[1376px]"
+          className="text-adaptive-36-to-60 leading-adaptive-68 relative w-full text-center font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-1376)]"
         >
           <span className="text-[#1c222f]">
             {t('specialize.software')}
@@ -97,7 +97,7 @@ export const FrameWrapper = () => {
 
             <p
               id="animate_13_left"
-              className="relative w-full text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[590px]"
+              className="relative w-full text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] xl:w-[var(--size-590)]"
             >
               {t('microcredit.desc')}
             </p>
@@ -123,9 +123,9 @@ export const FrameWrapper = () => {
         </motion.div>
 
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafc]">
-          <div className="relative h-[548px] w-1/2">
+          <div className="relative h-[var(--size-548)] w-1/2">
             <svg
-              className="absolute left-0 top-0 h-[520px] w-full "
+              className="absolute left-0 top-0 h-[var(--size-520)] w-full "
               width="1077"
               height="1131"
               viewBox="0 0 1077 1131"
@@ -170,7 +170,7 @@ export const FrameWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-              className="absolute left-[75px] top-[69px] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 xl:w-[324px]"
+              className="absolute left-[var(--pos-75)] top-[var(--pos-69)] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 xl:w-[var(--size-324)]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -180,9 +180,9 @@ export const FrameWrapper = () => {
 
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
-                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
+                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[var(--size-261)]">
                         <svg
-                          className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
+                          className="absolute left-px top-1 h-1 w-full xl:w-[var(--size-260)]"
                           width="260"
                           height="4"
                           viewBox="0 0 260 4"
@@ -199,7 +199,7 @@ export const FrameWrapper = () => {
                         </svg>
 
                         <svg
-                          className="h-1.5w-full absolute left-0 top-[3px] xl:w-[169px]"
+                          className="h-1.5w-full absolute left-0 top-[var(--pos-3)] xl:w-[var(--size-169)]"
                           width="169"
                           height="6"
                           viewBox="0 0 169 6"
@@ -215,7 +215,7 @@ export const FrameWrapper = () => {
                           />
                         </svg>
 
-                        <div className="absolute left-[158px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
+                        <div className="absolute left-[var(--pos-158)] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
                     </div>
 
@@ -224,7 +224,7 @@ export const FrameWrapper = () => {
                         0
                       </div>
 
-                      <div className="absolute -top-px left-[131px] whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="absolute -top-px left-[var(--pos-131)] whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         122 000
                       </div>
                     </div>
@@ -232,9 +232,9 @@ export const FrameWrapper = () => {
 
                   <div className="relative flex w-64 flex-[0_0_auto] flex-col items-start gap-2">
                     <div className="relative h-3.5 w-full self-stretch">
-                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[261px]">
+                      <div className="relative left-[-3px] top-px h-3 w-full xl:w-[var(--size-261)]">
                         <svg
-                          className="absolute left-px top-1 h-1 w-full xl:w-[260px]"
+                          className="absolute left-px top-1 h-1 w-full xl:w-[var(--size-260)]"
                           width="260"
                           height="4"
                           viewBox="0 0 260 4"
@@ -251,7 +251,7 @@ export const FrameWrapper = () => {
                         </svg>
 
                         <svg
-                          className="h-1.5w-full absolute left-0 top-[3px] xl:w-[95px]"
+                          className="h-1.5w-full absolute left-0 top-[var(--pos-3)] xl:w-[var(--size-95)]"
                           width="95"
                           height="6"
                           viewBox="0 0 95 6"
@@ -267,7 +267,7 @@ export const FrameWrapper = () => {
                           />
                         </svg>
 
-                        <div className="absolute left-[86px] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
+                        <div className="absolute left-[var(--pos-86)] top-0 size-3 rounded-md bg-green-60 shadow-[0px_4px_8px_#04ca8333]" />
                       </div>
                     </div>
 
@@ -320,14 +320,14 @@ export const FrameWrapper = () => {
                 onClick={onClick}
                 className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-7 self-stretch rounded-3xl bg-gray-90 px-8 py-3"
               >
-                <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[164px]">
+                <div className="relative mt-[-1.00px] w-full self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica] xl:w-[var(--size-164)]">
                   {t('microcredit.applyLoan')}
                 </div>
               </button>
             </motion.div>
 
             <svg
-              className="absolute left-0 top-0 h-[520px] w-full xl:w-[690px]"
+              className="absolute left-0 top-0 h-[var(--size-520)] w-full xl:w-[var(--size-690)]"
               width="1012"
               height="807"
               viewBox="0 0 1012 807"
@@ -372,7 +372,7 @@ export const FrameWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-              className="absolute left-[363px] top-[142px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
+              className="absolute left-[var(--pos-363)] top-[var(--pos-142)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
             >
               <Graph sum="122,000" />
 
@@ -380,11 +380,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-blue-50" />
 
-                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     {t('chart.current')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     48,456₽
                   </div>
                 </div>
@@ -392,11 +392,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-green-60" />
 
-                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     {t('chart.main')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     122,000₽
                   </div>
                 </div>
@@ -404,11 +404,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-yellow-50" />
 
-                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     {t('chart.interest')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     4,000₽
                   </div>
                 </div>
@@ -416,11 +416,11 @@ export const FrameWrapper = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-3">
                   <div className="relative size-2 rounded bg-red-50" />
 
-                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     {t('chart.penalty')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[72px]">
+                  <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                     2,700₽
                   </div>
                 </div>

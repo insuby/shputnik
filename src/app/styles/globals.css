@@ -252,6 +252,158 @@ a {
   --leading-48: clamp(40px, 3.33vw, 48px);
   --leading-60: clamp(48px, 4.17vw, 60px);
   --leading-68: clamp(56px, 4.72vw, 68px);
+
+  /* Адаптивные позиции (left, top, etc) с ограничением на 1440px */
+  --pos-3: clamp(0px, 0.21vw, 3px);
+  --pos-7: clamp(0px, 0.49vw, 7px);
+  --pos-13: clamp(0px, 0.9vw, 13px);
+  --pos-26: clamp(0px, 1.81vw, 26px);
+  --pos-29: clamp(0px, 2.01vw, 29px);
+  --pos-30: clamp(0px, 2.08vw, 30px);
+  --pos-38: clamp(0px, 2.64vw, 38px);
+  --pos-49: clamp(0px, 3.4vw, 49px);
+  --pos-57: clamp(0px, 3.96vw, 57px);
+  --pos-59: clamp(0px, 4.1vw, 59px);
+  --pos-62: clamp(0px, 4.31vw, 62px);
+  --pos-67: clamp(0px, 4.65vw, 67px);
+  --pos-68: clamp(0px, 4.72vw, 68px);
+  --pos-69: clamp(0px, 4.79vw, 69px);
+  --pos-75: clamp(0px, 5.21vw, 75px);
+  --pos-78: clamp(0px, 5.42vw, 78px);
+  --pos-80: clamp(0px, 5.56vw, 80px);
+  --pos-86: clamp(0px, 5.97vw, 86px);
+  --pos-91: clamp(0px, 6.32vw, 91px);
+  --pos-100: clamp(0px, 6.94vw, 100px);
+  --pos-106: clamp(0px, 7.36vw, 106px);
+  --pos-109: clamp(0px, 7.57vw, 109px);
+  --pos-113: clamp(0px, 7.85vw, 113px);
+  --pos-131: clamp(0px, 9.1vw, 131px);
+  --pos-133: clamp(0px, 9.24vw, 133px);
+  --pos-138: clamp(0px, 9.58vw, 138px);
+  --pos-142: clamp(0px, 9.86vw, 142px);
+  --pos-145: clamp(0px, 10.07vw, 145px);
+  --pos-156: clamp(0px, 10.83vw, 156px);
+  --pos-158: clamp(0px, 10.97vw, 158px);
+  --pos-177: clamp(0px, 12.29vw, 177px);
+  --pos-180: clamp(0px, 12.5vw, 180px);
+  --pos-184: clamp(0px, 12.78vw, 184px);
+  --pos-204: clamp(0px, 14.17vw, 204px);
+  --pos-215: clamp(0px, 14.93vw, 215px);
+  --pos-220: clamp(0px, 15.28vw, 220px);
+  --pos-223: clamp(0px, 15.49vw, 223px);
+  --pos-238: clamp(0px, 16.53vw, 238px);
+  --pos-262: clamp(0px, 18.19vw, 262px);
+  --pos-272: clamp(0px, 18.89vw, 272px);
+  --pos-279: clamp(0px, 19.38vw, 279px);
+  --pos-284: clamp(0px, 19.72vw, 284px);
+  --pos-298: clamp(0px, 20.69vw, 298px);
+  --pos-312: clamp(0px, 21.67vw, 312px);
+  --pos-319: clamp(0px, 22.15vw, 319px);
+  --pos-333: clamp(0px, 23.13vw, 333px);
+  --pos-363: clamp(0px, 25.21vw, 363px);
+  --pos-398: clamp(0px, 27.64vw, 398px);
+  --pos-456: clamp(0px, 31.67vw, 456px);
+
+  /* Адаптивные размеры (width, height) малые (до 200px) */
+  --size-29: clamp(0px, 2.01vw, 29px);
+  --size-39: clamp(0px, 2.71vw, 39px);
+  --size-58: clamp(0px, 4.03vw, 58px);
+  --size-62: clamp(0px, 4.31vw, 62px);
+  --size-68: clamp(0px, 4.72vw, 68px);
+  --size-72: clamp(0px, 5vw, 72px);
+  --size-76: clamp(0px, 5.28vw, 76px);
+  --size-86: clamp(0px, 5.97vw, 86px);
+  --size-88: clamp(0px, 6.11vw, 88px);
+  --size-91: clamp(0px, 6.32vw, 91px);
+  --size-95: clamp(0px, 6.6vw, 95px);
+  --size-98: clamp(0px, 6.81vw, 98px);
+  --size-104: clamp(0px, 7.22vw, 104px);
+  --size-105: clamp(0px, 7.29vw, 105px);
+  --size-120: clamp(0px, 8.33vw, 120px);
+  --size-140: clamp(0px, 9.72vw, 140px);
+  --size-142: clamp(0px, 9.86vw, 142px);
+  --size-148: clamp(0px, 10.28vw, 148px);
+  --size-149: clamp(0px, 10.35vw, 149px);
+  --size-154: clamp(0px, 10.69vw, 154px);
+  --size-164: clamp(0px, 11.39vw, 164px);
+  --size-169: clamp(0px, 11.74vw, 169px);
+  --size-180: clamp(0px, 12.5vw, 180px);
+  --size-198: clamp(0px, 13.75vw, 198px);
+
+  /* Адаптивные размеры средние (200-500px) */
+  --size-212: clamp(0px, 14.72vw, 212px);
+  --size-260: clamp(0px, 18.06vw, 260px);
+  --size-261: clamp(0px, 18.13vw, 261px);
+  --size-264: clamp(0px, 18.33vw, 264px);
+  --size-304: clamp(0px, 21.11vw, 304px);
+  --size-324: clamp(0px, 22.5vw, 324px);
+  --size-328: clamp(0px, 22.78vw, 328px);
+  --size-330: clamp(0px, 22.92vw, 330px);
+  --size-345: clamp(0px, 23.96vw, 345px);
+  --size-368: clamp(0px, 25.56vw, 368px);
+  --size-371: clamp(0px, 25.76vw, 371px);
+  --size-372: clamp(0px, 25.83vw, 372px);
+  --size-388: clamp(0px, 26.94vw, 388px);
+  --size-401: clamp(0px, 27.85vw, 401px);
+  --size-415: clamp(0px, 28.82vw, 415px);
+  --size-416: clamp(0px, 28.89vw, 416px);
+  --size-446: clamp(0px, 30.97vw, 446px);
+  --size-458: clamp(0px, 31.81vw, 458px);
+  --size-472: clamp(0px, 32.78vw, 472px);
+
+  /* Адаптивные размеры большие (500px+) */
+  --size-520: clamp(0px, 36.11vw, 520px);
+  --size-543: clamp(0px, 37.71vw, 543px);
+  --size-548: clamp(0px, 38.06vw, 548px);
+  --size-560: clamp(0px, 38.89vw, 560px);
+  --size-571: clamp(0px, 39.65vw, 571px);
+  --size-590: clamp(0px, 40.97vw, 590px);
+  --size-600: clamp(0px, 41.67vw, 600px);
+  --size-611: clamp(0px, 42.43vw, 611px);
+  --size-629: clamp(0px, 43.68vw, 629px);
+  --size-660: clamp(0px, 45.83vw, 660px);
+  --size-678: clamp(0px, 47.08vw, 678px);
+  --size-682: clamp(0px, 47.36vw, 682px);
+  --size-686: clamp(0px, 47.64vw, 686px);
+  --size-690: clamp(0px, 47.92vw, 690px);
+  --size-716: clamp(0px, 49.72vw, 716px);
+  --size-786: clamp(0px, 54.58vw, 786px);
+  --size-900: clamp(0px, 62.5vw, 900px);
+  --size-904: clamp(0px, 62.78vw, 904px);
+  --size-980: clamp(0px, 68.06vw, 980px);
+  --size-1060: clamp(0px, 73.61vw, 1060px);
+  --size-1108: clamp(0px, 76.94vw, 1108px);
+  --size-1265: clamp(0px, 87.85vw, 1265px);
+  --size-1376: clamp(0px, 95.56vw, 1376px);
+  --size-1440: clamp(0px, 100vw, 1440px);
+}
+
+/* Переопределение стандартных Tailwind spacing классов */
+/* Все отступы, gap, padding, margin теперь адаптивные */
+@layer utilities {
+  .p-0 { padding: 0 !important; }
+  .p-1 { padding: clamp(0px, 0.28vw, 4px) !important; }
+  .p-2 { padding: clamp(0px, 0.56vw, 8px) !important; }
+  .p-3 { padding: clamp(0px, 0.83vw, 12px) !important; }
+  .p-4 { padding: clamp(0px, 1.11vw, 16px) !important; }
+  .p-5 { padding: clamp(0px, 1.39vw, 20px) !important; }
+  .p-6 { padding: clamp(0px, 1.67vw, 24px) !important; }
+  .p-7 { padding: clamp(0px, 1.94vw, 28px) !important; }
+  .p-8 { padding: clamp(0px, 2.22vw, 32px) !important; }
+  .p-10 { padding: clamp(0px, 2.78vw, 40px) !important; }
+  .p-12 { padding: clamp(0px, 3.33vw, 48px) !important; }
+  .p-14 { padding: clamp(0px, 3.89vw, 56px) !important; }
+
+  .gap-0 { gap: 0 !important; }
+  .gap-1 { gap: clamp(0px, 0.28vw, 4px) !important; }
+  .gap-2 { gap: clamp(0px, 0.56vw, 8px) !important; }
+  .gap-3 { gap: clamp(0px, 0.83vw, 12px) !important; }
+  .gap-4 { gap: clamp(0px, 1.11vw, 16px) !important; }
+  .gap-5 { gap: clamp(0px, 1.39vw, 20px) !important; }
+  .gap-6 { gap: clamp(0px, 1.67vw, 24px) !important; }
+  .gap-7 { gap: clamp(0px, 1.94vw, 28px) !important; }
+
+  .m-0 { margin: 0 !important; }
 }
 
 /* Переопределение стандартных Tailwind классов размеров текста */

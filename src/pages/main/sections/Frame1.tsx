@@ -74,16 +74,16 @@ export const Frame1 = () => {
         </motion.span>
       </h2>
 
-      <div className="relative flex h-[600px] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
+      <div className="relative flex h-[var(--size-600)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
-              <div className="relative left-[59px] top-[-49px] h-[372px] w-full xl:w-[560px]">
+              <div className="relative left-[var(--pos-59)] top-[-49px] h-[var(--size-372)] w-full xl:w-[var(--size-560)]">
                 <svg
-                  className="absolute left-[91px] top-0 h-[372px] w-full xl:w-[415px]"
+                  className="absolute left-[var(--pos-91)] top-0 h-[var(--size-372)] w-full xl:w-[var(--size-415)]"
                   width="1078"
                   height="1072"
                   viewBox="0 0 1078 1072"
@@ -132,7 +132,7 @@ export const Frame1 = () => {
                 >
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
                     <div className="h-7w-full relative xl:w-[142.55px]">
-                      <div className="relative flex h-[29px] w-full items-center justify-center xl:w-[142px]">
+                      <div className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
                         <svg
                           width="112"
                           height="24"
@@ -178,7 +178,7 @@ export const Frame1 = () => {
                   </div>
                 </motion.div>
 
-                <div className="absolute left-0 top-[262px] h-[104px] w-full xl:w-[560px]">
+                <div className="absolute left-0 top-[var(--pos-262)] h-[var(--size-104)] w-full xl:w-[var(--size-560)]">
                   <motion.div
                     id="animate_41_left"
                     ref={ref41l}
@@ -193,7 +193,7 @@ export const Frame1 = () => {
                       viewBox="0 0 58 59"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[58px] w-full xl:w-[57.34px]"
+                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[var(--size-58)] w-full xl:w-[57.34px]"
                     >
                       <path
                         fillRule="evenodd"
@@ -376,7 +376,7 @@ export const Frame1 = () => {
                   viewBox="0 0 2 40"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[279px] top-[184px] h-10 w-0.5"
+                  className="absolute left-[var(--pos-279)] top-[var(--pos-184)] h-10 w-0.5"
                 >
                   <path d="M1 0V40" stroke="white" strokeWidth="2" />
                 </svg>
@@ -387,7 +387,7 @@ export const Frame1 = () => {
                   viewBox="0 0 458 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[49px] top-[223px] h-[39px] w-full xl:w-[458px]"
+                  className="absolute left-[var(--pos-49)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-458)]"
                 >
                   <path
                     d="M457 39V25C457 11.7452 446.255 1 433 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -402,7 +402,7 @@ export const Frame1 = () => {
                   viewBox="0 0 149 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[204px] top-[223px] h-[39px] w-full xl:w-[149px]"
+                  className="absolute left-[var(--pos-204)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-149)]"
                 >
                   <path
                     d="M148 39V25C148 11.7452 137.255 1 124 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -459,7 +459,7 @@ export const Frame1 = () => {
           </div>
           <div className="relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]">
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px]">
-              <div className="relative h-[446px] w-full">
+              <div className="relative h-[var(--size-446)] w-full">
                 <motion.div
                   id="animate_44"
                   ref={ref44}
@@ -470,7 +470,7 @@ export const Frame1 = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-[var(--spacing-0-28)] p-[var(--spacing-1-11)]">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-28)]">
-                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
+                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-180)]">
                         {t('decisionsModule.ui.id')}
                       </div>
 
@@ -601,7 +601,7 @@ export const Frame1 = () => {
                   viewBox="0 0 1435 1361"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-0 top-0 h-[368px] w-full xl:w-[678px]"
+                  className="absolute left-0 top-0 h-[var(--size-368)] w-full xl:w-[var(--size-678)]"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_36_2389)">
                     <path
@@ -643,8 +643,8 @@ export const Frame1 = () => {
                   className="absolute left-[var(--spacing-21-67)] top-[var(--spacing-2-64)] flex w-80 flex-col items-start justify-center gap-[var(--spacing-0-83)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-67)]"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[148px] w-full overflow-hidden rounded-[20px] bg-green-60 xl:w-[68px]">
-                      <div className="absolute left-3.5 top-[57px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    <div className="relative h-[var(--size-148)] w-full overflow-hidden rounded-[20px] bg-green-60 xl:w-[var(--size-68)]">
+                      <div className="absolute left-3.5 top-[var(--pos-57)] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         900
                       </div>
                     </div>
@@ -667,8 +667,8 @@ export const Frame1 = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 xl:w-[68px]">
-                      <div className="absolute left-[13px] top-[29px] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 xl:w-[var(--size-68)]">
+                      <div className="absolute left-[var(--pos-13)] top-[var(--pos-29)] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
                         100
                       </div>
                     </div>

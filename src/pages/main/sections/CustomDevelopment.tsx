@@ -22,7 +22,7 @@ export const CustomDevelopment = () => {
 
   return (
     <section className="relative w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
-      <div className="relative flex h-[600px] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
+      <div className="relative flex h-[var(--size-600)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
@@ -76,9 +76,10 @@ export const CustomDevelopment = () => {
 
           <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
             <div
-              className="relative flex size-full flex-[0_0_auto] flex-col gap-[var(--spacing-1-94)] self-stretch bg-contain bg-center bg-no-repeat p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]"
+              className="relative flex size-full flex-[0_0_auto] flex-col gap-[var(--spacing-1-94)] self-stretch bg-center bg-no-repeat p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]"
               style={{
-                backgroundImage: "url('/img/Frame 29.png')",
+                backgroundImage: "url('/img/group-107.png')",
+                backgroundSize: '80%',
               }}
             />
           </div>

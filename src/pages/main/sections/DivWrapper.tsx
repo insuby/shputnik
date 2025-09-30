@@ -47,7 +47,7 @@ export const DivWrapper = () => {
           {t('classicLending')}
         </span>
       </motion.h2>
-      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch xl:h-[660px] xl:grid-cols-2">
+      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch xl:h-[var(--size-660)] xl:grid-cols-2">
         <motion.div
           id="animate_15"
           ref={ref15}
@@ -56,9 +56,9 @@ export const DivWrapper = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
         >
-          <div className="relative left-[-222px] top-[-254px] hidden h-[904px] w-full xl:block xl:w-[1265px]">
+          <div className="relative left-[-222px] top-[-254px] hidden h-[var(--size-904)] w-full xl:block xl:w-[var(--size-1265)]">
             <svg
-              className="absolute left-0 top-[333px] h-[571px] w-full xl:w-[611px]"
+              className="absolute left-0 top-[var(--pos-333)] h-[var(--size-571)] w-full xl:w-[var(--size-611)]"
               width="808"
               height="874"
               viewBox="0 0 808 874"
@@ -97,7 +97,7 @@ export const DivWrapper = () => {
               </defs>
             </svg>
             <svg
-              className="absolute left-[398px] top-0 h-[682px] w-full xl:w-[716px]"
+              className="absolute left-[var(--pos-398)] top-0 h-[var(--size-682)] w-full xl:w-[var(--size-716)]"
               width="1012"
               height="807"
               viewBox="0 0 1012 807"
@@ -141,7 +141,7 @@ export const DivWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView16 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[284px] top-[319px] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
+              className="absolute left-[var(--pos-284)] top-[var(--pos-319)] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
             >
               <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] xl:w-full">
                 <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
