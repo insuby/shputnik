@@ -75,7 +75,7 @@ export const MainMobile = () => {
             </svg>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 self-stretch">
-              <p className="relative  max-w-[500px] mx-auto  mt-[-1.00px] self-stretch text-center text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <p className="relative  mx-auto mt-[-1.00px]  max-w-[500px] self-stretch text-center text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="font-medium leading-[44px] text-[#1c222f]">
                   {t('hero.titleA')}{' '}
                 </span>
@@ -89,7 +89,7 @@ export const MainMobile = () => {
                 </span>
               </p>
 
-              <p className="relative max-w-[500px] mx-auto self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
+              <p className="relative mx-auto max-w-[500px] self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
                 {t('hero.description')}
               </p>
             </div>
@@ -1359,7 +1359,7 @@ export const MainMobile = () => {
                   </defs>
                 </svg>
 
-                <div className="absolute left-[-19px] top-[57px] inline-flex items-center rounded-[24.8px] bg-white p-[12.4px]">
+                <div className="absolute left-[-19px] top-[57px] inline-flex scale-95 items-center rounded-[24.8px] bg-white p-[12.4px]">
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-[7.75px] p-[9.3px]">
                     <div className="relative flex size-[123.99px] items-start gap-[9.3px]">
                       <div className="relative size-[114.69px] [background:url(/img/main-mobile/frame-1948755020.png)_50%_50%_/_cover]" />
@@ -1454,7 +1454,7 @@ export const MainMobile = () => {
                   </defs>
                 </svg>
 
-                <div className="absolute left-[153px] top-[237px] inline-flex items-center gap-[14.72px] rounded-[29.43px] bg-white py-[14.72px] pl-[14.72px] pr-[22.08px]">
+                <div className="absolute left-[153px] top-[197px] inline-flex items-center gap-[14.72px] rounded-[29.43px] bg-white py-[14.72px] pl-[14.72px] pr-[22.08px]">
                   <svg
                     width="59"
                     height="59"
@@ -2381,9 +2381,9 @@ export const MainMobile = () => {
                 </svg>
 
                 <div className="relative w-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] xl:w-[233px]">
-                  {t('development.title')}
-                  <br />
-                  {t('development.fintech')}
+                  {
+                    'Программное обеспечение\nи разработка современных\nfintech-решений'
+                  }
                 </div>
               </div>
             </div>

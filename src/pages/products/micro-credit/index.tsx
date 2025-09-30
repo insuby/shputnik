@@ -449,7 +449,7 @@ export const MicroCredit = () => {
                 centerPadding="0px"
                 arrows={false}
               >
-                <div className="px-3">
+                <div className="px-0 md:px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
@@ -560,7 +560,7 @@ export const MicroCredit = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-3">
+                <div className="px-0 md:px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
@@ -717,7 +717,7 @@ export const MicroCredit = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-3">
+                <div className="px-0 md:px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
@@ -933,7 +933,7 @@ export const MicroCredit = () => {
                     </div>
                   </div>
                 </div>
-                <div className="px-3">
+                <div className="px-0 md:px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <svg
                       width="638"
@@ -1030,7 +1030,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
 
-                <div className="px-3">
+                <div className="px-0 md:px-3">
                   <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                     <div className="relative w-full flex-1 grow self-stretch">
                       <div className="relative -left-12 -top-12 w-[120%] xl:w-[443px]">

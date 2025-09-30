@@ -30,7 +30,7 @@ export const Frame = () => {
 
   return (
     <section className="w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
-      <div className="relative flex !min-h-[800px] pt-[88px] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
+      <div className="relative flex !min-h-[800px] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 pt-[88px] xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
         <svg
           className="absolute left-1/2 top-[var(--pos-220)] hidden h-[var(--size-560)] w-full -translate-x-1/2 lg:left-[var(--pos-113)] lg:top-[var(--pos-272)] lg:block lg:h-[var(--size-1060)] lg:w-[var(--size-1108)] lg:translate-x-0"
           width="1125"

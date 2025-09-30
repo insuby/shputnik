@@ -1,9 +1,8 @@
 import { motion, useInView } from 'framer-motion';
+import { useFeedbackForm } from 'widgets';
 
 import { ReactNode, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
-
-import { useFeedbackForm } from '../../widgets/feedback-form';
 
 type HeroButtonsProps = {
   buttonText?: string;
@@ -17,11 +16,9 @@ export const HeroButtons = ({
 }) => {
   const { t } = useTranslation('components');
   const { setIsOpen } = useFeedbackForm();
-  const ref1 = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
   const ref3 = useRef<HTMLButtonElement>(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
 
@@ -33,9 +30,8 @@ export const HeroButtons = ({
     <>
       <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
         <motion.div
-          ref={ref1}
           initial={{ opacity: 0, x: -50 }}
-          animate={inView1 ? { opacity: 1, x: 0 } : {}}
+          animate={inView2 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] px-5 py-2.5"
         >

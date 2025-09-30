@@ -583,7 +583,7 @@ export const Development = () => {
               centerPadding="0px"
               arrows={false}
             >
-              <div className="px-3">
+              <div className="px-0 md:px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
@@ -890,7 +890,7 @@ export const Development = () => {
                 </div>
               </div>
 
-              <div className="px-3">
+              <div className="px-0 md:px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[442px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
@@ -1062,7 +1062,7 @@ export const Development = () => {
                 </div>
               </div>
 
-              <div className="px-3">
+              <div className="px-0 md:px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
@@ -1236,7 +1236,7 @@ export const Development = () => {
                 </div>
               </div>
 
-              <div className="px-3">
+              <div className="px-0 md:px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
@@ -1413,7 +1413,7 @@ export const Development = () => {
                 </div>
               </div>
 
-              <div className="px-3">
+              <div className="px-0 md:px-3">
                 <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
                   <svg
                     width="638"
