@@ -33,7 +33,7 @@ export const MainMobile = () => {
   return (
     <>
       <div className="relative flex flex-col items-start">
-        <div className="relative flex  items-center gap-2.5 px-3 py-0">
+        <div className="relative flex w-full  items-center gap-2.5 px-3 py-0">
           <div className="relative flex flex-1 grow flex-col items-center self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-4 pt-9">
             <svg
               width="1688"
@@ -75,7 +75,7 @@ export const MainMobile = () => {
             </svg>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 self-stretch">
-              <p className="relative mt-[-1.00px] self-stretch text-center text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <p className="relative  max-w-[500px] mx-auto  mt-[-1.00px] self-stretch text-center text-4xl font-normal leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 <span className="font-medium leading-[44px] text-[#1c222f]">
                   {t('hero.titleA')}{' '}
                 </span>
@@ -89,7 +89,7 @@ export const MainMobile = () => {
                 </span>
               </p>
 
-              <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
+              <p className="relative max-w-[500px] mx-auto self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica]">
                 {t('hero.description')}
               </p>
             </div>

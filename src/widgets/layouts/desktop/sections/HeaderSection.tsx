@@ -48,7 +48,7 @@ export const HeaderSection = () => {
     >
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
-          <div className="relative h-[23px] w-full xl:w-[170px]">
+          <div className="relative h-[23px] w-[170px]">
             <span className="sr-only">Sputnik</span>
             <img
               className="absolute left-0 top-0 size-full"
@@ -62,7 +62,7 @@ export const HeaderSection = () => {
 
       <nav
         aria-label={t('products', { ns: 'nav' })}
-        className="relative hidden items-center gap-16 xl:flex"
+        className="relative flex items-center gap-16"
       >
         <div className="relative">
           <button
@@ -110,24 +110,6 @@ export const HeaderSection = () => {
       </nav>
 
       <div className="flex items-center gap-3">
-        <button
-          aria-label={t('openMenu', { ns: 'common' })}
-          onClick={() => setIsMenuOpen(true)}
-          className="inline-flex size-10 items-center justify-center rounded-full bg-gray-10 xl:hidden"
-        >
-          <svg
-            width="20"
-            height="14"
-            viewBox="0 0 20 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect x="0" y="0" width="20" height="2" rx="1" fill="#1c222f" />
-            <rect x="0" y="6" width="20" height="2" rx="1" fill="#1c222f" />
-            <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f" />
-          </svg>
-        </button>
-
         <button
           onClick={onClick}
           className={`all-[unset] box-border inline-flex flex-[0_0_auto] gap-2.5 px-6 py-2.5 transition-colors ${

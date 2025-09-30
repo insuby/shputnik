@@ -598,42 +598,42 @@ a {
   }
 }
 
-/* Базовые фиксированные текстовые классы для < 724px */
-@layer utilities {
-  .text-xs { font-size: 10px !important; line-height: 14px !important; }
-  .text-sm { font-size: 12px !important; line-height: 18px !important; }
-  .text-base { font-size: 14px !important; line-height: 20px !important; }
-  .text-xl { font-size: 16px !important; line-height: 22px !important; }
-  .text-2xl { font-size: 18px !important; line-height: 26px !important; }
-  .text-4xl { font-size: 28px !important; line-height: 36px !important; }
-  .text-6xl { font-size: 40px !important; line-height: 48px !important; }
-}
+/*!* Базовые фиксированные текстовые классы для < 724px *!*/
+/*@layer utilities {*/
+/*  .text-xs { font-size: 10px !important; line-height: 14px !important; }*/
+/*  .text-sm { font-size: 12px !important; line-height: 18px !important; }*/
+/*  .text-base { font-size: 14px !important; line-height: 20px !important; }*/
+/*  .text-xl { font-size: 16px !important; line-height: 22px !important; }*/
+/*  .text-2xl { font-size: 18px !important; line-height: 26px !important; }*/
+/*  .text-4xl { font-size: 28px !important; line-height: 36px !important; }*/
+/*  .text-6xl { font-size: 40px !important; line-height: 48px !important; }*/
+/*}*/
 
-/* С 724px до 1440px - адаптивные текстовые классы */
-@media (min-width: 724px) and (max-width: 1439px) {
-  @layer utilities {
-    .text-xs { font-size: 0.83vw !important; line-height: 1.11vw !important; }
-    .text-sm { font-size: 0.97vw !important; line-height: 1.39vw !important; }
-    .text-base { font-size: 1.11vw !important; line-height: 1.67vw !important; }
-    .text-xl { font-size: 1.39vw !important; line-height: 1.94vw !important; }
-    .text-2xl { font-size: 1.67vw !important; line-height: 2.22vw !important; }
-    .text-4xl { font-size: 2.5vw !important; line-height: 2.78vw !important; }
-    .text-6xl { font-size: 4.17vw !important; line-height: 4.44vw !important; }
-  }
-}
+/*!* С 724px до 1440px - адаптивные текстовые классы *!*/
+/*@media (min-width: 724px) and (max-width: 1439px) {*/
+/*  @layer utilities {*/
+/*    .text-xs { font-size: 0.83vw !important; line-height: 1.11vw !important; }*/
+/*    .text-sm { font-size: 0.97vw !important; line-height: 1.39vw !important; }*/
+/*    .text-base { font-size: 1.11vw !important; line-height: 1.67vw !important; }*/
+/*    .text-xl { font-size: 1.39vw !important; line-height: 1.94vw !important; }*/
+/*    .text-2xl { font-size: 1.67vw !important; line-height: 2.22vw !important; }*/
+/*    .text-4xl { font-size: 2.5vw !important; line-height: 2.78vw !important; }*/
+/*    .text-6xl { font-size: 4.17vw !important; line-height: 4.44vw !important; }*/
+/*  }*/
+/*}*/
 
-/* С 1440px - фиксированные максимумы текста */
-@media (min-width: 1440px) {
-  @layer utilities {
-    .text-xs { font-size: 12px !important; line-height: 16px !important; }
-    .text-sm { font-size: 14px !important; line-height: 20px !important; }
-    .text-base { font-size: 16px !important; line-height: 24px !important; }
-    .text-xl { font-size: 20px !important; line-height: 28px !important; }
-    .text-2xl { font-size: 24px !important; line-height: 32px !important; }
-    .text-4xl { font-size: 36px !important; line-height: 40px !important; }
-    .text-6xl { font-size: 60px !important; line-height: 64px !important; }
-  }
-}
+/*!* С 1440px - фиксированные максимумы текста *!*/
+/*@media (min-width: 1440px) {*/
+/*  @layer utilities {*/
+/*    .text-xs { font-size: 12px !important; line-height: 16px !important; }*/
+/*    .text-sm { font-size: 14px !important; line-height: 20px !important; }*/
+/*    .text-base { font-size: 16px !important; line-height: 24px !important; }*/
+/*    .text-xl { font-size: 20px !important; line-height: 28px !important; }*/
+/*    .text-2xl { font-size: 24px !important; line-height: 32px !important; }*/
+/*    .text-4xl { font-size: 36px !important; line-height: 40px !important; }*/
+/*    .text-6xl { font-size: 60px !important; line-height: 64px !important; }*/
+/*  }*/
+/*}*/
 
 /* Адаптивные базовые размеры для всех элементов без явных классов */
 html {

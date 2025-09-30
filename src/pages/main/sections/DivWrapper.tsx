@@ -47,7 +47,7 @@ export const DivWrapper = () => {
           {t('classicLending')}
         </span>
       </motion.h2>
-      <div className="relative grid w-full grid-cols-1 gap-4 self-stretch xl:h-[var(--size-660)] xl:grid-cols-2">
+      <div className="relative grid gap-4 self-stretch xl:h-[var(--size-660)] grid-cols-2">
         <motion.div
           id="animate_15"
           ref={ref15}
