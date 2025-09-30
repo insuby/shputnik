@@ -45,7 +45,7 @@ export const Div = () => {
     >
       <h2
         id="credit-in-store-online"
-        className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="text-adaptive-40 relative mt-[-1.00px] w-fit font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         <motion.span
           id="animate_20"
@@ -64,12 +64,12 @@ export const Div = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={inView21 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="font-medium leading-[48px] text-[#1c222f]"
+          className="leading-adaptive-48 font-medium text-[#1c222f]"
         >
           {t('lendingStoreOnline.headingRight')}
         </motion.span>
       </h2>
-      <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
+      <div className="relative flex min-h-[600px] w-full items-start gap-5 self-stretch">
         <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
           <motion.div
             id="animate_24"
@@ -307,7 +307,9 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <p className="w-10/12">{t('lendingStoreOnline.bnplDesc')}</p>
+                <span className="inline-block w-10/12">
+                  {t('lendingStoreOnline.bnplDesc')}
+                </span>
                 <div className="absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"
@@ -519,7 +521,7 @@ export const Div = () => {
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                           {t('lendingStoreOnline.currentBalance')}
                         </div>
-                        <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                        <div className="text-adaptive-28 relative w-fit whitespace-nowrap text-center font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                           44,000₽
                         </div>
                       </div>
@@ -589,7 +591,9 @@ export const Div = () => {
                 transition={{ duration: 0.7, ease: 'easeOut' }}
                 className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <p className="w-10/12">{t('lendingStoreOnline.posDesc')}</p>
+                <span className="inline-block w-10/12">
+                  {t('lendingStoreOnline.posDesc')}
+                </span>
                 <div className="absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"

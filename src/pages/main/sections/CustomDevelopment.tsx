@@ -21,21 +21,21 @@ export const CustomDevelopment = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden rounded-[24px] bg-[#ffffff] xl:rounded-[32px]">
-      <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
-        <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
+    <section className="relative w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
+      <div className="relative flex h-[600px] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
+        <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
-            <div className="relative flex size-full flex-[0_0_auto] flex-col gap-7 self-stretch p-8 xl:p-10">
+            <div className="relative flex size-full flex-[0_0_auto] flex-col gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h2
                   ref={titleRef}
                   initial={{ opacity: 0, y: 40 }}
                   animate={inViewTitle ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="text-[40px] font-medium leading-[48px] text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="text-adaptive-40 leading-adaptive-48 font-medium text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   <span className="text-[#1c222f]">
                     {t('other.development.title')}
@@ -54,7 +54,7 @@ export const CustomDevelopment = () => {
                 </motion.p>
               </div>
 
-              <div className="relative inline-flex w-fit flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+              <div className="relative inline-flex w-fit flex-[0_0_auto] items-center gap-[var(--spacing-0-69)] rounded-[100px] bg-white p-[var(--spacing-1-11)]">
                 <svg
                   width="32"
                   height="32"
@@ -74,9 +74,9 @@ export const CustomDevelopment = () => {
             </div>
           </div>
 
-          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]">
+          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
             <div
-              className="relative flex size-full flex-[0_0_auto] flex-col gap-7 self-stretch bg-contain bg-center p-8 xl:p-10"
+              className="relative flex size-full flex-[0_0_auto] flex-col gap-[var(--spacing-1-94)] self-stretch bg-contain bg-center bg-no-repeat p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]"
               style={{
                 backgroundImage: "url('/img/Frame 29.png')",
               }}

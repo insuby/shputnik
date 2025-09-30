@@ -52,7 +52,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-          className="relative w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[1376px] xl:text-6xl xl:leading-[68px]"
+          className="text-adaptive-36-to-60 leading-adaptive-68 relative w-full text-center font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[1376px]"
         >
           <span className="text-[#1c222f]">
             {t('specialize.software')}
@@ -80,14 +80,14 @@ export const FrameWrapper = () => {
           >
             <h3
               id="home-microcredit"
-              className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+              className="text-adaptive-40 relative mt-[-1.00px] w-fit font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
             >
               {t('microcredit.title')
                 .split('\n')
                 .map((line, idx) => (
                   <span
                     key={idx}
-                    className="font-medium leading-[48px] text-[#1c222f]"
+                    className="leading-adaptive-48 font-medium text-[#1c222f]"
                   >
                     {line}
                     <br />

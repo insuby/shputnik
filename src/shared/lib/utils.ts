@@ -1,5 +1,5 @@
 export const checkIfMobile = () => {
-  if (typeof window === 'undefined' || window.innerWidth >= 1400) return false;
+  if (typeof window === 'undefined' || window.innerWidth >= 1024) return false;
 
   return (
     /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(

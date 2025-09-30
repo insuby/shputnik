@@ -45,12 +45,12 @@ export const Frame1 = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-94)] self-stretch"
       aria-labelledby="other-software"
     >
       <h2
         id="other-software"
-        className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="text-adaptive-40 leading-adaptive-48 relative mt-[-1.00px] w-fit whitespace-nowrap font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         <motion.span
           id="animate_37_left"
@@ -74,13 +74,13 @@ export const Frame1 = () => {
         </motion.span>
       </h2>
 
-      <div className="relative flex h-[600px] w-full items-start gap-5 self-stretch">
-        <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
+      <div className="relative flex h-[600px] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
+        <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
-            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-gray-100 bg-[100%_100%]">
+            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
               <div className="relative left-[59px] top-[-49px] h-[372px] w-full xl:w-[560px]">
                 <svg
                   className="absolute left-[91px] top-0 h-[372px] w-full xl:w-[415px]"
@@ -128,9 +128,9 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView40 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[177px] top-[100px] inline-flex flex-col items-start gap-2.5 rounded-[32px] bg-[#ffffff5c] p-2"
+                  className="absolute left-[var(--spacing-12-29)] top-[var(--spacing-6-94)] inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-2-22)] bg-[#ffffff5c] p-[var(--spacing-0-56)]"
                 >
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2.5 self-stretch rounded-3xl bg-[#ffffff] p-6">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
                     <div className="h-7w-full relative xl:w-[142.55px]">
                       <div className="relative flex h-[29px] w-full items-center justify-center xl:w-[142px]">
                         <svg
@@ -185,7 +185,7 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, x: -40 }}
                     animate={inView41l ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-0 top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
+                    className="absolute left-0 top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="58"
@@ -248,7 +248,7 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, y: 40 }}
                     animate={inView41 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[152px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
+                    className="absolute left-[var(--spacing-10-56)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="56"
@@ -292,7 +292,7 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, x: 40 }}
                     animate={inView42 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[456px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
+                    className="absolute left-[var(--spacing-31-67)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="56"
@@ -328,7 +328,7 @@ export const Frame1 = () => {
                     initial={{ opacity: 0, x: 40 }}
                     animate={inView42r ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[304px] top-0 inline-flex flex-col items-start gap-2.5 rounded-3xl bg-[#ffffff] p-6"
+                    className="absolute left-[var(--spacing-21-11)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="57"
@@ -413,7 +413,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 xl:p-10">
+            <div className="relative flex w-full flex-[0_0_auto] items-end gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_38"
@@ -457,7 +457,7 @@ export const Frame1 = () => {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]">
+          <div className="relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]">
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px]">
               <div className="relative h-[446px] w-full">
                 <motion.div
@@ -466,20 +466,20 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, y: 40 }}
                   animate={inView44 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[49px] top-[15px] flex flex-col items-start justify-center gap-1 rounded-[32px] bg-white p-3"
+                  className="absolute left-[var(--spacing-3-4)] top-[var(--spacing-1-04)] flex flex-col items-start justify-center gap-[var(--spacing-0-28)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-0-83)]"
                 >
-                  <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-1 p-4">
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+                  <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-[var(--spacing-0-28)] p-[var(--spacing-1-11)]">
+                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-28)]">
                       <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
                         {t('decisionsModule.ui.id')}
                       </div>
 
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-3">
+                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[var(--spacing-0-83)]">
                         <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('decisionsModule.ui.name')}
                         </div>
 
-                        <div className="relative flex size-6 items-center justify-center gap-2.5 rounded-[20px] bg-green-60 p-2">
+                        <div className="relative flex size-[var(--spacing-1-67)] items-center justify-center gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-39)] bg-green-60 p-[var(--spacing-0-56)]">
                           <svg
                             width="16"
                             height="16"
@@ -501,14 +501,14 @@ export const Frame1 = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-3 self-stretch">
-                    <div className="relative flex flex-1 grow items-center gap-[53px] rounded-2xl bg-blue-50 p-4">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[var(--spacing-0-83)] self-stretch">
+                    <div className="relative flex flex-1 grow items-center gap-[var(--spacing-3-68)] rounded-[var(--spacing-1-11)] bg-blue-50 p-[var(--spacing-1-11)]">
                       <div className="relative flex flex-1 grow flex-col items-start gap-0.5">
                         <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-white opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('decisionsModule.ui.score')}
                         </div>
 
-                        <div className="relative self-stretch text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                        <div className="text-adaptive-28 relative self-stretch font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                           {t('decisionsModule.ui.scoreValue')}
                         </div>
                       </div>
@@ -552,7 +552,7 @@ export const Frame1 = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-4">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-83)] self-stretch p-[var(--spacing-1-11)]">
                     <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
                       <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                         {t('decisionsModule.ui.gender')}
@@ -640,7 +640,7 @@ export const Frame1 = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView43r ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[312px] top-[38px] flex w-80 flex-col items-start justify-center gap-3 rounded-[32px] bg-white p-6"
+                  className="absolute left-[var(--spacing-21-67)] top-[var(--spacing-2-64)] flex w-80 flex-col items-start justify-center gap-[var(--spacing-0-83)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-67)]"
                 >
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
                     <div className="relative h-[148px] w-full overflow-hidden rounded-[20px] bg-green-60 xl:w-[68px]">
@@ -693,7 +693,7 @@ export const Frame1 = () => {
               </div>
             </div>
 
-            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-7 self-stretch p-8 xl:p-10">
+            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <motion.h4
                   id="animate_46_left"

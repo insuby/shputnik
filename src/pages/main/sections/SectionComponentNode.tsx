@@ -38,7 +38,7 @@ export const SectionComponentNode = () => {
     >
       <h2
         id="alt-ethical-models"
-        className="relative mt-[-1.00px] w-fit text-[40px] font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="text-adaptive-40 relative mt-[-1.00px] w-fit font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         <motion.span
           id="animate_32"
@@ -57,14 +57,14 @@ export const SectionComponentNode = () => {
           initial={{ opacity: 0, x: 40 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="font-medium leading-[48px] text-[#1c222f]"
+          className="leading-adaptive-48 font-medium text-[#1c222f]"
         >
           {t('alternativeModels.title').split(' ').slice(1).join(' ')}
         </motion.span>
       </h2>
 
       <div className="relative flex h-[520px] w-full items-start gap-4">
-        <div className="relative w-full self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] xl:w-[686px]">
+        <div className="relative w-1/2 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] xl:w-[686px]">
           <div className="relative h-[682px]">
             <svg
               width="1077"
@@ -111,7 +111,7 @@ export const SectionComponentNode = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView34 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[62px] top-[80px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60 xl:w-[304px]"
+              className="absolute left-[62px] top-[80px] flex  min-w-[304px] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
                 <svg
@@ -173,7 +173,7 @@ export const SectionComponentNode = () => {
                     {t('alternativeModels.p2pUI.balance')}
                   </div>
 
-                  <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                  <div className="text-adaptive-28 relative w-fit whitespace-nowrap text-center font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                     {t('alternativeModels.p2pUI.balanceAmount')}
                   </div>
                 </div>
@@ -474,7 +474,7 @@ export const SectionComponentNode = () => {
           </div>
         </div>
 
-        <div className="relative flex flex-1 grow flex-col items-start justify-center gap-5 self-stretch">
+        <div className="relative flex w-1/2 flex-1 grow flex-col items-start justify-center gap-5 self-stretch">
           <motion.div
             id="animate_35_left"
             ref={ref35}
