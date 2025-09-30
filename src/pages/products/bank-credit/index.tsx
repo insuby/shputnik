@@ -1151,11 +1151,11 @@ export const BankCredit = () => {
           animate={inViewAuto4 ? 'visible' : 'hidden'}
           className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-6 self-stretch xl:!flex-row"
         >
-          <div className="relative flex flex-1 grow flex-col items-start gap-6 xl:!flex-row">
+          <div className="relative w-full xl:w-fit flex flex-1 grow flex-col items-start gap-6 xl:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
@@ -1194,7 +1194,7 @@ export const BankCredit = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.img
@@ -1214,11 +1214,11 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="relative flex flex-1 grow flex-col items-start gap-6 xl:!flex-row">
+          <div className="relative w-full xl:w-fit flex flex-1 grow flex-col items-start gap-6 xl:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-3.svg */}
@@ -1240,7 +1240,7 @@ export const BankCredit = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <svg
@@ -1407,7 +1407,7 @@ export const BankCredit = () => {
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.div
@@ -1480,7 +1480,7 @@ export const BankCredit = () => {
               animate={inView4 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex flex-1 grow items-start justify-center gap-7 overflow-hidden self-stretch rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-10.svg */}
