@@ -86,7 +86,7 @@ export const BlogList = () => {
         </nav>
       </header>
 
-      <div className="grid w-full grid-cols-1 gap-6 xl:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {loading ? (
           <div className="col-span-full flex items-center justify-center py-12 text-[#55607a]">
             {t('list.loading')}

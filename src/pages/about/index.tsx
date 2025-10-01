@@ -11,7 +11,7 @@ export const About = () => {
   };
   return (
     <section
-      className="relative -mx-5 inline-flex flex-col items-start justify-center"
+      className="relative -mx-5 inline-flex flex-col items-start justify-center max-w-[100vw]"
       aria-labelledby="about-title"
     >
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 xl:px-8 xl:pb-[88px] xl:pt-8">
