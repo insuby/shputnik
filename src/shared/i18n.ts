@@ -113,7 +113,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'ru',
-    supportedLngs: ['ru', 'en'],
+    supportedLngs: ['ru'],
     defaultNS: 'common',
     ns: [
       'common',
