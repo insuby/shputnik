@@ -54,8 +54,8 @@ export const Feedback = () => {
   const inView21 = useInView(ref21, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex size-full min-h-[349px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-[1376px]">
-      <div className="relative flex size-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
+    <div className="relative flex size-full min-h-[340px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-[1376px]">
+      <div className="relative flex size-full min-h-[340px] flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
         <svg
           width="939"
           height="763"
