@@ -1359,57 +1359,128 @@ export const MainMobile = () => {
                   </defs>
                 </svg>
 
-                <div className="absolute left-[-19px] top-[57px] inline-flex scale-95 items-center rounded-[24.8px] bg-white p-[12.4px]">
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-[7.75px] p-[9.3px]">
-                    <div className="relative flex size-[123.99px] items-start gap-[9.3px]">
-                      <div className="relative size-[114.69px] [background:url(/img/main-mobile/frame-1948755020.png)_50%_50%_/_cover]" />
+                <div className="scale-80 relative mx-auto w-fit scale-90">
+                  <div className="relative left-[-19px] top-[57px] inline-flex items-center rounded-[24.8px] bg-white p-[12.4px]">
+                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-[7.75px] p-[9.3px]">
+                      <div className="relative flex size-[123.99px] items-start gap-[9.3px]">
+                        <div className="relative size-[114.69px] [background:url(/img/main-mobile/frame-1948755020.png)_50%_50%_/_cover]" />
+                      </div>
+                    </div>
+
+                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[12.4px] self-stretch rounded-[18.6px] bg-[#f6f8ff] p-[18.6px]">
+                      <div className="relative mt-[-0.77px] self-stretch text-[15.5px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        {t('lendingStoreOnline.productName')}
+                      </div>
+
+                      <div className="relative flex w-[167.42px] flex-[0_0_auto] flex-col items-start gap-[7.75px]">
+                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
+                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                            {t('lendingStoreOnline.cost')}
+                          </div>
+
+                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            23,456₽
+                          </div>
+                        </div>
+
+                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
+                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                            {t('lendingStoreOnline.advancePayment')}
+                          </div>
+
+                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            42,000₽
+                          </div>
+                        </div>
+
+                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
+                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                            {t('calculator.term')}
+                          </div>
+
+                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            4,000₽
+                          </div>
+                        </div>
+
+                        <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
+                          <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                            {t('lendingStoreOnline.nextPayment')}
+                          </div>
+
+                          <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            2,700₽
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <div className="absolute left-[153px] top-[197px] inline-flex items-center gap-[14.72px] rounded-[29.43px] bg-white py-[14.72px] pl-[14.72px] pr-[22.08px]">
+                    <svg
+                      width="59"
+                      height="59"
+                      viewBox="0 0 59 59"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="relative flex-[0_0_auto]"
+                    >
+                      <rect
+                        width="58.9999"
+                        height="58.9999"
+                        rx="22.0759"
+                        fill="#F2F5FF"
+                      />
+                      <path
+                        d="M29.4999 33.1876C31.5365 33.1876 33.1874 31.5367 33.1874 29.5001C33.1874 27.4636 31.5365 25.8126 29.4999 25.8126C27.4634 25.8126 25.8124 27.4636 25.8124 29.5001C25.8124 31.5367 27.4634 33.1876 29.4999 33.1876Z"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M42.4062 22.1252H16.5938V36.8752H42.4062V22.1252Z"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M42.4061 26.7346C41.2546 26.5394 40.1923 25.9909 39.3664 25.165C38.5405 24.3391 37.992 23.2768 37.7968 22.1252"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M37.7968 36.8748C37.992 35.7232 38.5405 34.6609 39.3664 33.835C40.1923 33.0091 41.2546 32.4606 42.4061 32.2654"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M16.5938 32.2654C17.7453 32.4606 18.8076 33.0091 19.6335 33.835C20.4594 34.6609 21.0079 35.7232 21.2031 36.8748"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M21.2031 22.1252C21.0079 23.2768 20.4594 24.3391 19.6335 25.165C18.8076 25.9909 17.7453 26.5394 16.5938 26.7346"
+                        stroke="#3573FC"
+                        strokeWidth="1.47173"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
 
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[12.4px] self-stretch rounded-[18.6px] bg-[#f6f8ff] p-[18.6px]">
-                    <div className="relative mt-[-0.77px] self-stretch text-[15.5px] font-medium leading-[21.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      {t('lendingStoreOnline.productName')}
-                    </div>
-
-                    <div className="relative flex w-[167.42px] flex-[0_0_auto] flex-col items-start gap-[7.75px]">
-                      <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                        <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('lendingStoreOnline.cost')}
-                        </div>
-
-                        <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          23,456₽
-                        </div>
+                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[3.68px]">
+                      <div className="relative mt-[-0.92px] w-fit whitespace-nowrap text-[12.9px] font-normal leading-[18.4px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                        {t('lendingStoreOnline.monthlyPayment')}
                       </div>
 
-                      <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                        <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('lendingStoreOnline.advancePayment')}
-                        </div>
-
-                        <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          42,000₽
-                        </div>
-                      </div>
-
-                      <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                        <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('calculator.term')}
-                        </div>
-
-                        <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          4,000₽
-                        </div>
-                      </div>
-
-                      <div className="relative flex h-[15.5px] w-full items-center gap-[9.3px] self-stretch">
-                        <div className="relative mt-[-1.03px] flex-1 text-[10.8px] font-normal leading-[15.5px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('lendingStoreOnline.nextPayment')}
-                        </div>
-
-                        <div className="relative mt-[-1.03px] w-[55.79px] text-right text-[10.8px] font-medium leading-[15.5px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          2,700₽
-                        </div>
+                      <div className="relative w-fit whitespace-nowrap text-[18.4px] font-medium leading-[25.8px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        4 950₽
                       </div>
                     </div>
                   </div>
@@ -1453,76 +1524,6 @@ export const MainMobile = () => {
                     </filter>
                   </defs>
                 </svg>
-
-                <div className="absolute left-[153px] top-[197px] inline-flex items-center gap-[14.72px] rounded-[29.43px] bg-white py-[14.72px] pl-[14.72px] pr-[22.08px]">
-                  <svg
-                    width="59"
-                    height="59"
-                    viewBox="0 0 59 59"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="relative flex-[0_0_auto]"
-                  >
-                    <rect
-                      width="58.9999"
-                      height="58.9999"
-                      rx="22.0759"
-                      fill="#F2F5FF"
-                    />
-                    <path
-                      d="M29.4999 33.1876C31.5365 33.1876 33.1874 31.5367 33.1874 29.5001C33.1874 27.4636 31.5365 25.8126 29.4999 25.8126C27.4634 25.8126 25.8124 27.4636 25.8124 29.5001C25.8124 31.5367 27.4634 33.1876 29.4999 33.1876Z"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M42.4062 22.1252H16.5938V36.8752H42.4062V22.1252Z"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M42.4061 26.7346C41.2546 26.5394 40.1923 25.9909 39.3664 25.165C38.5405 24.3391 37.992 23.2768 37.7968 22.1252"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M37.7968 36.8748C37.992 35.7232 38.5405 34.6609 39.3664 33.835C40.1923 33.0091 41.2546 32.4606 42.4061 32.2654"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M16.5938 32.2654C17.7453 32.4606 18.8076 33.0091 19.6335 33.835C20.4594 34.6609 21.0079 35.7232 21.2031 36.8748"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M21.2031 22.1252C21.0079 23.2768 20.4594 24.3391 19.6335 25.165C18.8076 25.9909 17.7453 26.5394 16.5938 26.7346"
-                      stroke="#3573FC"
-                      strokeWidth="1.47173"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[3.68px]">
-                    <div className="relative mt-[-0.92px] w-fit whitespace-nowrap text-[12.9px] font-normal leading-[18.4px] tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('lendingStoreOnline.monthlyPayment')}
-                    </div>
-
-                    <div className="relative w-fit whitespace-nowrap text-[18.4px] font-medium leading-[25.8px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      4 950₽
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-end gap-8 self-stretch p-8">
@@ -1605,98 +1606,158 @@ export const MainMobile = () => {
                   </defs>
                 </svg>
 
-                <div className="absolute left-[161px] top-[34px] flex h-[247px] w-[283px] flex-col items-start justify-center gap-[13.8px] rounded-[27.6px] bg-white p-[27.6px]">
-                  <div className="relative mt-[-0.65px] inline-flex flex-[0_0_auto] flex-col items-start gap-[3.45px]">
-                    <div className="relative mt-[-0.86px] w-[227.73px] text-[17.3px] font-medium leading-[24.2px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      График платежей
+                <div className="relative left-[-81px] mx-auto w-fit scale-90">
+                  <div className="relative left-[161px] top-[34px] flex h-[247px] w-[283px] flex-col items-start justify-center gap-[13.8px] rounded-[27.6px] bg-white p-[27.6px]">
+                    <div className="relative mt-[-0.65px] inline-flex flex-[0_0_auto] flex-col items-start gap-[3.45px]">
+                      <div className="relative mt-[-0.86px] w-[227.73px] text-[17.3px] font-medium leading-[24.2px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        График платежей
+                      </div>
+
+                      <div className="relative w-[155.27px] text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        Договор: 12345456322
+                      </div>
                     </div>
 
-                    <div className="relative w-[155.27px] text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                      Договор: 12345456322
+                    <div className="relative mb-[-0.65px] inline-flex h-[132.84px] items-end">
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[65.56px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.march')}
+                        </div>
+                      </div>
+
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[74.19px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.april')}
+                        </div>
+                      </div>
+
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[90.57px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.may')}
+                        </div>
+                      </div>
+
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[103.51px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.june')}
+                        </div>
+                      </div>
+
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[78.5px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.july')}
+                        </div>
+                      </div>
+
+                      <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
+                        <div className="relative h-[84.54px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
+
+                        <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                          {t('lendingStoreOnline.months.august')}
+                        </div>
+                      </div>
                     </div>
+
+                    <svg
+                      width="284"
+                      height="54"
+                      viewBox="0 0 284 54"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="absolute left-0 top-[94px] h-[83px] w-[283px]"
+                    >
+                      <path
+                        d="M0.213225 48.0102L21.35 42.6266C25.2013 41.6457 29.2884 42.3697 32.5683 44.614L40.5087 50.0473C46.6243 54.2319 54.9518 52.8499 59.3879 46.9141L66.153 37.8621C70.1829 32.4698 77.5111 30.7645 83.5076 33.8236L101.229 42.8639C108.55 46.5984 117.493 43.1593 120.425 35.4819L131.258 7.11502C134.766 -2.07129 148.137 -0.828579 149.893 8.84694L151.701 18.8165C152.984 25.8853 162.802 26.6836 165.21 19.9148V19.9148C167.407 13.7374 176.124 13.6845 178.396 19.8348L180.419 25.3105C182.928 32.1037 191.969 33.4106 196.3 27.606L201.135 21.1252C205.707 14.9958 214.45 13.8761 220.419 18.6552L225.677 22.8638C229.974 26.3036 235.902 26.8665 240.769 24.2968L283.597 1.68759"
+                        stroke="url(#paint0_linear_9181_1180)"
+                        strokeWidth="1.72524"
+                      />
+                      <defs>
+                        <linearGradient
+                          id="paint0_linear_9181_1180"
+                          x1="0.213225"
+                          y1="34.3732"
+                          x2="283.597"
+                          y2="34.3732"
+                          gradientUnits="userSpaceOnUse"
+                        >
+                          <stop stopColor="white" />
+                          <stop offset="0.269231" stopColor="#00CB82" />
+                          <stop offset="0.692308" stopColor="#00CB82" />
+                          <stop offset="1" stopColor="white" />
+                        </linearGradient>
+                      </defs>
+                    </svg>
+
+                    <div className="absolute left-[135px] top-[115px] size-2.5 rounded-[5.18px] border-[1.73px] border-solid border-[#00cb82] bg-[#ffffff]" />
                   </div>
+                  <div className="absolute left-[18px] top-[105px] inline-flex flex-col items-center justify-center gap-[10.35px] rounded-[27.6px_27.6px_0px_0px] bg-white p-[13.8px]">
+                    <div className="relative size-[182.88px] rounded-[86.26px]">
+                      <div className="absolute left-[41px] top-[65px] inline-flex h-[54px] flex-col items-center gap-[1.73px]">
+                        <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                          Текущий остаток
+                        </div>
 
-                  <div className="relative mb-[-0.65px] inline-flex h-[132.84px] items-end">
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[65.56px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.march')}
+                        <div className="relative mb-[-0.18px] w-fit whitespace-nowrap text-center text-[24.2px] font-medium leading-[34.5px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                          44,000₽
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[74.19px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="absolute left-1.5 top-1.5 size-[171px] rounded-[85.4px] border-[8.63px] border-solid border-neutral-50" />
 
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.april')}
-                      </div>
-                    </div>
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[90.57px] w-[6.9px] rounded-[20.7px] bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.may')}
-                      </div>
-                    </div>
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[103.51px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.june')}
-                      </div>
-                    </div>
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[78.5px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.july')}
-                      </div>
-                    </div>
-
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-[8.63px]">
-                      <div className="relative h-[84.54px] w-[6.9px] rounded-[20.7px] bg-[#f2f4fb]" />
-
-                      <div className="relative w-[37.96px] text-center text-[10.4px] font-normal leading-[13.8px] tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                        {t('lendingStoreOnline.months.august')}
-                      </div>
-                    </div>
-                  </div>
-
-                  <svg
-                    width="284"
-                    height="54"
-                    viewBox="0 0 284 54"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-[94px] h-[83px] w-[283px]"
-                  >
-                    <path
-                      d="M0.213225 48.0102L21.35 42.6266C25.2013 41.6457 29.2884 42.3697 32.5683 44.614L40.5087 50.0473C46.6243 54.2319 54.9518 52.8499 59.3879 46.9141L66.153 37.8621C70.1829 32.4698 77.5111 30.7645 83.5076 33.8236L101.229 42.8639C108.55 46.5984 117.493 43.1593 120.425 35.4819L131.258 7.11502C134.766 -2.07129 148.137 -0.828579 149.893 8.84694L151.701 18.8165C152.984 25.8853 162.802 26.6836 165.21 19.9148V19.9148C167.407 13.7374 176.124 13.6845 178.396 19.8348L180.419 25.3105C182.928 32.1037 191.969 33.4106 196.3 27.606L201.135 21.1252C205.707 14.9958 214.45 13.8761 220.419 18.6552L225.677 22.8638C229.974 26.3036 235.902 26.8665 240.769 24.2968L283.597 1.68759"
-                      stroke="url(#paint0_linear_9181_1180)"
-                      strokeWidth="1.72524"
-                    />
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_9181_1180"
-                        x1="0.213225"
-                        y1="34.3732"
-                        x2="283.597"
-                        y2="34.3732"
-                        gradientUnits="userSpaceOnUse"
+                      <svg
+                        width="171"
+                        height="171"
+                        viewBox="0 0 171 171"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="absolute left-1.5 top-1.5 size-[171px]"
                       >
-                        <stop stopColor="white" />
-                        <stop offset="0.269231" stopColor="#00CB82" />
-                        <stop offset="0.692308" stopColor="#00CB82" />
-                        <stop offset="1" stopColor="white" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
+                        <path
+                          d="M4.3182 85.4999C4.3182 130.335 40.6645 166.682 85.5 166.682C130.335 166.682 166.682 130.335 166.682 85.4999C166.682 40.6644 130.335 4.31807 85.5 4.31807"
+                          stroke="url(#paint0_linear_9181_1189)"
+                          strokeWidth="8.62619"
+                          strokeLinecap="round"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_9181_1189"
+                            x1="85.5"
+                            y1="4.31807"
+                            x2="37.5682"
+                            y2="-7.77283"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stopColor="#3573FC" />
+                            <stop
+                              offset="1"
+                              stopColor="#3573FC"
+                              stopOpacity="0"
+                            />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
 
-                  <div className="absolute left-[135px] top-[115px] size-2.5 rounded-[5.18px] border-[1.73px] border-solid border-[#00cb82] bg-[#ffffff]" />
+                    <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[17.25px] bg-[#f6f8ff] px-[13.8px] py-[10.35px]">
+                      <div className="relative w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                        Сумма займа
+                      </div>
+
+                      <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[13.8px] font-medium leading-[20.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        122, 000₽
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <svg
@@ -1737,65 +1798,6 @@ export const MainMobile = () => {
                     </filter>
                   </defs>
                 </svg>
-
-                <div className="absolute left-[18px] top-[105px] inline-flex flex-col items-center justify-center gap-[10.35px] rounded-[27.6px_27.6px_0px_0px] bg-white p-[13.8px]">
-                  <div className="relative size-[182.88px] rounded-[86.26px]">
-                    <div className="absolute left-[41px] top-[65px] inline-flex h-[54px] flex-col items-center gap-[1.73px]">
-                      <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                        Текущий остаток
-                      </div>
-
-                      <div className="relative mb-[-0.18px] w-fit whitespace-nowrap text-center text-[24.2px] font-medium leading-[34.5px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
-                        44,000₽
-                      </div>
-                    </div>
-
-                    <div className="absolute left-1.5 top-1.5 size-[171px] rounded-[85.4px] border-[8.63px] border-solid border-neutral-50" />
-
-                    <svg
-                      width="171"
-                      height="171"
-                      viewBox="0 0 171 171"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-1.5 top-1.5 size-[171px]"
-                    >
-                      <path
-                        d="M4.3182 85.4999C4.3182 130.335 40.6645 166.682 85.5 166.682C130.335 166.682 166.682 130.335 166.682 85.4999C166.682 40.6644 130.335 4.31807 85.5 4.31807"
-                        stroke="url(#paint0_linear_9181_1189)"
-                        strokeWidth="8.62619"
-                        strokeLinecap="round"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_9181_1189"
-                          x1="85.5"
-                          y1="4.31807"
-                          x2="37.5682"
-                          y2="-7.77283"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="#3573FC" />
-                          <stop
-                            offset="1"
-                            stopColor="#3573FC"
-                            stopOpacity="0"
-                          />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-
-                  <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[17.25px] bg-[#f6f8ff] px-[13.8px] py-[10.35px]">
-                    <div className="relative w-fit whitespace-nowrap text-[12.1px] font-normal leading-[17.3px] tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
-                      Сумма займа
-                    </div>
-
-                    <div className="relative mt-[-0.86px] w-fit whitespace-nowrap text-[13.8px] font-medium leading-[20.7px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                      122, 000₽
-                    </div>
-                  </div>
-                </div>
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-end gap-8 self-stretch p-8">
