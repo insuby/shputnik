@@ -37,14 +37,9 @@ export const Development = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] lg:w-[1440px] lg:gap-[136px] lg:px-8 lg:lg:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] lg:gap-[136px] lg:px-8 lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className=" relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 lg:mt-0 lg:h-[628px] lg:p-12">
-          <img
-            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
-            src="/img/development/vector-1-5.svg"
-          />
-
           <HeroButtons>
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  lg:w-[624px] lg:gap-12">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">

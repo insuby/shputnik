@@ -25,13 +25,13 @@ export const Works = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch xl:gap-12">
-      <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch lg:gap-12">
+      <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
         {t('works.title')}
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto]  flex-col items-center gap-6 rounded-3xl xl:h-[648px] xl:w-[1376px] xl:!flex-row">
-        <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd]">
+      <div className="relative xl:h-[640px] flex w-full flex-[0_0_auto]  flex-col items-center gap-6 rounded-3xl lg:!flex-row">
+        <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] ">
           <Slider
             ref={sliderRef}
             dots={false}
@@ -40,51 +40,34 @@ export const Works = () => {
             centerMode={true}
             centerPadding="0px"
             arrows={false}
-            className="p2p-slider"
+            className="size-full"
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="overflow-hidden xl:px-3">
-              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] xl:left-[-231px] xl:top-[-98px] xl:h-[1035px]">
+            {[slide1, slide2, slide3].map((item, i) => (
+              <div className="overflow-hidden size-full lg:px-3">
                 <img
-                  className="absolute w-full xl:left-[291px] xl:top-[158px] xl:h-[588px]"
+                  key={i}
+                  className="size-full object-cover"
                   alt="Image"
-                  src={slide1}
+                  src={item}
                 />
               </div>
-            </div>
-            <div className="overflow-hidden xl:px-3">
-              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] xl:left-[-231px] xl:top-[-98px] xl:h-[1035px]">
-                <img
-                  className="absolute w-full xl:left-[291px] xl:top-[158px] xl:h-[588px]"
-                  alt="Image"
-                  src={slide2}
-                />
-              </div>
-            </div>
-            <div className="overflow-hidden xl:px-3">
-              <div className="relative h-[350px] w-full bg-gray-100 bg-[100%_100%] xl:left-[-231px] xl:top-[-98px] xl:h-[1035px]">
-                <img
-                  className="absolute w-full xl:left-[291px] xl:top-[158px] xl:h-[588px]"
-                  alt="Image"
-                  src={slide3}
-                />
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
 
-        <div className="relative flex h-[648px] flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 xl:py-12 xl:pl-12 xl:pr-[68px]">
+        <div className="relative h-full flex flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px]">
           {currentSlideIndex + 1 === 3 && (
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[480px]"
+                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('works.vpn.title')}
               </motion.p>
-              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[560px]">
                 {t('works.vpn.description')}
               </p>
             </div>
@@ -95,11 +78,11 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[480px]"
+                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('works.pax.title')}
               </motion.div>
-              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[560px]">
                 {t('works.pax.description')}
               </p>
             </div>
@@ -110,17 +93,17 @@ export const Works = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.7 }}
-                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[480px]"
+                className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('works.crypto.title')}
               </motion.p>
-              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[560px]">
+              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[560px]">
                 {t('works.crypto.description')}
               </p>
             </div>
           )}
 
-          <div className="bottom-[-80px] mt-5 flex w-full  flex-[0_0_auto] items-center justify-between self-stretch pr-10 xl:mt-20">
+          <div className="bottom-[-80px] mt-5 flex w-full  flex-[0_0_auto] items-center justify-between self-stretch pr-10 lg:mt-20">
             <div className="flex w-[120px] items-center justify-between rounded-full bg-[#f9fafd] p-1">
               <button
                 onClick={goToPrev}
