@@ -79,7 +79,6 @@ export const ZaimChecker = () => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute left-[339px] top-[-115px] h-[1060px] w-full xl:w-[1204px]"
-        alt="Vector"
       >
         <g opacity="0.16" filter="url(#filter0_f_9321_96528)">
           <path
@@ -112,7 +111,7 @@ export const ZaimChecker = () => {
         </defs>
       </svg>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch p-0 xl:!flex-row xl:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch p-0 lg:!flex-row xl:p-12">
         <div className="relative flex w-full flex-col items-start gap-7 xl:w-[520px]">
           <svg
             width="64"
@@ -121,7 +120,6 @@ export const ZaimChecker = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="relative flex-[0_0_auto]"
-            alt="Frame"
           >
             <rect
               width="64"
@@ -340,7 +338,6 @@ export const ZaimChecker = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="relative hidden w-px xl:block xl:h-[528px]"
-          alt="Vector"
         >
           <path d="M0.5 0V528" stroke="#E3E5E8" />
         </svg>
@@ -353,7 +350,6 @@ export const ZaimChecker = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="relative flex-[0_0_auto]"
-            alt="Frame"
           >
             <rect
               width="64"

@@ -389,7 +389,7 @@ a {
   --pos-142: clamp(0px, 9.86vw, 142px);
   --pos-145: clamp(0px, 10.07vw, 145px);
   --pos-156: clamp(0px, 10.83vw, 156px);
-  --pos-158: clamp(0px, 10.97vw, 158px);
+  --pos-158: 158px;
   --pos-177: clamp(0px, 12.29vw, 177px);
   --pos-180: clamp(0px, 12.5vw, 180px);
   --pos-184: clamp(0px, 12.78vw, 184px);

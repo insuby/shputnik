@@ -52,7 +52,7 @@ export const Analytics = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] xl:!flex-row"
+        className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-start self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] lg:!flex-row"
       >
         <svg
           width="1071"
@@ -61,7 +61,7 @@ export const Analytics = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[450px] top-0 h-[668px] w-full xl:w-[926px]"
-          alt="Vector"
+
         >
           <g opacity="0.16" filter="url(#filter0_f_9163_2232)">
             <path
@@ -211,7 +211,6 @@ export const Analytics = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute left-[29px] top-0 h-[253px] w-[152px]"
-                      alt="Subtract"
                     >
                       <path
                         d="M0 94.6916C0 61.4144 10.159 30.5099 27.5448 4.91039C31.5149 -0.935399 39.6922 -1.59216 44.9727 3.10376C49.9157 7.49956 50.4675 14.9768 46.7605 20.4554C32.3813 41.7066 24 67.2347 24 94.6916C24 161.914 74.2376 217.575 139.738 227.215C146.582 228.222 152 233.871 152 240.788C152 248.247 145.738 254.239 138.347 253.239C60.2225 242.669 0 175.713 0 94.6916Z"
@@ -226,7 +225,6 @@ export const Analytics = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute left-[197px] top-[103px] size-[151px]"
-                      alt="Subtract"
                     >
                       <path
                         d="M0 138.303C-4.37857e-06 145.773 6.26982 151.774 13.6722 150.773C85.1633 141.101 141.686 84.2824 150.908 12.6495C151.79 5.7986 146.244 0 139.337 0C132.943 0 127.715 4.99903 126.788 11.3256C118.231 69.7474 71.4792 115.998 12.278 124.71C5.42407 125.718 4.06083e-06 131.375 0 138.303Z"
@@ -264,7 +262,6 @@ export const Analytics = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-[295px] top-0 h-[94px] w-[53px]"
-                    alt="Subtract"
                   >
                     <path
                       d="M28.9318 82.6617C29.8596 88.9978 35.0949 94 41.4985 94C48.4163 94 53.9708 88.1992 53.0878 81.3381C49.3932 52.6285 38.1119 26.2948 21.3193 4.41219C16.9839 -1.23726 8.71824 -1.41731 3.68279 3.61814C-1.02951 8.33043 -1.14418 15.883 2.90633 21.175C16.3961 38.7993 25.584 59.8 28.9318 82.6617Z"
@@ -281,7 +278,6 @@ export const Analytics = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-[18px] h-[60px] w-[145px]"
-                    alt="Subtract"
                   >
                     <path
                       d="M144.753 18.2371C146.994 11.0992 142.802 3.48745 135.425 2.24234C126.688 0.767734 117.711 0 108.555 0C68.5936 0 32.0478 14.6232 3.97678 38.8105C-1.51509 43.5425 -1.20713 51.9545 4.20999 56.7719C9.16902 61.1819 16.6527 60.9671 21.7981 56.7759C45.3628 37.5809 75.5918 26.0473 108.555 26.0473C115.538 26.0473 122.398 26.5648 129.098 27.5632C135.902 28.5771 142.692 24.801 144.753 18.2371Z"
@@ -305,7 +301,6 @@ export const Analytics = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="absolute left-0 top-4 h-[41px] w-[51px]"
-                  alt="Subtract"
                 >
                   <path
                     d="M0.596022 8.8467C-1.47122 15.4312 2.02133 22.4221 8.25319 25.3875C15.7704 28.9645 22.9048 33.1995 29.5793 38.0165C35.0067 41.9335 42.5549 41.7102 47.2878 36.9773C52.4549 31.8102 52.2707 23.3272 46.4649 18.8896C37.4258 11.9806 27.6327 6.00817 17.2305 1.11719C10.5266 -2.03491 2.815 1.77884 0.596022 8.8467Z"

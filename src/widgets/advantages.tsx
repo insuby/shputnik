@@ -62,7 +62,7 @@ export const Advantages = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView5 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch xl:!flex-row"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row"
       >
         <motion.div
           ref={ref6}
@@ -78,7 +78,6 @@ export const Advantages = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="relative flex-[0_0_auto]"
-            alt="Frame"
           >
             <rect
               width="64"
@@ -150,7 +149,6 @@ export const Advantages = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="relative flex-[0_0_auto]"
-            alt="Frame"
           >
             <rect
               width="64"
@@ -256,7 +254,6 @@ export const Advantages = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="relative flex-[0_0_auto]"
-            alt="Frame"
           >
             <rect
               width="64"
