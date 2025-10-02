@@ -30,7 +30,7 @@ export const Works = () => {
         {t('works.title')}
       </div>
 
-      <div className="relative xl:h-[640px] flex w-full flex-[0_0_auto]  flex-col items-center gap-6 rounded-3xl lg:!flex-row">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col  items-center gap-6 rounded-3xl lg:!flex-row xl:h-[640px]">
         <div className="relative flex-1 grow self-stretch overflow-hidden rounded-[32px] ">
           <Slider
             ref={sliderRef}
@@ -44,7 +44,7 @@ export const Works = () => {
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
             {[slide1, slide2, slide3].map((item, i) => (
-              <div className="overflow-hidden size-full lg:px-3">
+              <div className="size-full overflow-hidden lg:px-3">
                 <img
                   key={i}
                   className="size-full object-cover"
@@ -56,7 +56,7 @@ export const Works = () => {
           </Slider>
         </div>
 
-        <div className="relative h-full flex flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px]">
+        <div className="relative flex h-full flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px]">
           {currentSlideIndex + 1 === 3 && (
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
