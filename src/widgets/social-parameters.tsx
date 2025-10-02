@@ -56,22 +56,21 @@ export const SocialParameters = () => {
           </div>
 
           <svg
-            className="relative size-6"
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M6 1.875V10.125"
+              d="M12 3.75V20.25"
               stroke="#9FA7BC"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M2.625 6.75L6 10.125L9.375 6.75"
+              d="M5.25 13.5L12 20.25L18.75 13.5"
               stroke="#9FA7BC"
               strokeWidth="2"
               strokeLinecap="round"
@@ -80,33 +79,31 @@ export const SocialParameters = () => {
           </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
-            <svg
-              className="relative flex-[0_0_auto]"
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 28 28"
-              fill="none"
-            >
-              <path
-                d="M0 14C0 6.26801 6.26801 0 14 0C21.732 0 28 6.26801 28 14C28 21.732 21.732 28 14 28C6.26801 28 0 21.732 0 14Z"
-                fill="white"
-              />
-              <path
-                d="M13.25 17C15.3211 17 17 15.3211 17 13.25C17 11.1789 15.3211 9.5 13.25 9.5C11.1789 9.5 9.5 11.1789 9.5 13.25C9.5 15.3211 11.1789 17 13.25 17Z"
-                stroke="#55607A"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M15.9014 15.9017L18.4996 18.5"
-                stroke="#55607A"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <div className="flex size-14 items-center justify-center rounded-[100px] bg-white p-4">
+              <svg
+                className="mx-auto size-6"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                  stroke="#55607A"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M15.8037 15.8032L21.0003 20.9998"
+                  stroke="#55607A"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
 
             <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
               Проверка кредитной истории
@@ -114,22 +111,21 @@ export const SocialParameters = () => {
           </div>
 
           <svg
-            className="relative size-6"
-            xmlns="http://www.w3.org/2000/svg"
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
             fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M6 1.875V10.125"
+              d="M12 3.75V20.25"
               stroke="#9FA7BC"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
             />
             <path
-              d="M2.625 6.75L6 10.125L9.375 6.75"
+              d="M5.25 13.5L12 20.25L18.75 13.5"
               stroke="#9FA7BC"
               strokeWidth="2"
               strokeLinecap="round"
@@ -138,6 +134,25 @@ export const SocialParameters = () => {
           </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6">
+            <div className="flex size-14 items-center justify-center rounded-[100px] bg-[#28d397] p-4">
+              <svg
+                className="mx-auto size-6"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.75 13.5L9 18.75L21 6.75"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+
             <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
               Одобрение заявки
             </div>
@@ -151,7 +166,7 @@ export const SocialParameters = () => {
         </p>
 
         <svg
-          className="relative h-px w-full max-w-[480px] mx-auto self-stretch"
+          className="relative mx-auto h-px w-full max-w-[480px] self-stretch"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 100 1"
           preserveAspectRatio="none"
@@ -164,7 +179,7 @@ export const SocialParameters = () => {
           />
         </svg>
 
-        <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 w-full">
+        <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
           <div className="text-adaptive-24  relative m-auto mt-[-1.00px] w-[500px] text-center font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
             Автоматизированное принятие решений
           </div>

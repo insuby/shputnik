@@ -1,7 +1,7 @@
 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="60" height="60" rx="30" fill="#725DD6" fill-opacity="0.08"/>
-<path d="M24.75 28.25C26.683 28.25 28.25 26.683 28.25 24.75C28.25 22.817 26.683 21.25 24.75 21.25C22.817 21.25 21.25 22.817 21.25 24.75C21.25 26.683 22.817 28.25 24.75 28.25Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.25 28.25C37.183 28.25 38.75 26.683 38.75 24.75C38.75 22.817 37.183 21.25 35.25 21.25C33.317 21.25 31.75 22.817 31.75 24.75C31.75 26.683 33.317 28.25 35.25 28.25Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.75 38.75C26.683 38.75 28.25 37.183 28.25 35.25C28.25 33.317 26.683 31.75 24.75 31.75C22.817 31.75 21.25 33.317 21.25 35.25C21.25 37.183 22.817 38.75 24.75 38.75Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.25 38.75C37.183 38.75 38.75 37.183 38.75 35.25C38.75 33.317 37.183 31.75 35.25 31.75C33.317 31.75 31.75 33.317 31.75 35.25C31.75 37.183 33.317 38.75 35.25 38.75Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.75 28.25C26.683 28.25 28.25 26.683 28.25 24.75C28.25 22.817 26.683 21.25 24.75 21.25C22.817 21.25 21.25 22.817 21.25 24.75C21.25 26.683 22.817 28.25 24.75 28.25Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M35.25 28.25C37.183 28.25 38.75 26.683 38.75 24.75C38.75 22.817 37.183 21.25 35.25 21.25C33.317 21.25 31.75 22.817 31.75 24.75C31.75 26.683 33.317 28.25 35.25 28.25Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M24.75 38.75C26.683 38.75 28.25 37.183 28.25 35.25C28.25 33.317 26.683 31.75 24.75 31.75C22.817 31.75 21.25 33.317 21.25 35.25C21.25 37.183 22.817 38.75 24.75 38.75Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M35.25 38.75C37.183 38.75 38.75 37.183 38.75 35.25C38.75 33.317 37.183 31.75 35.25 31.75C33.317 31.75 31.75 33.317 31.75 35.25C31.75 37.183 33.317 38.75 35.25 38.75Z" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
 </svg>

@@ -1,8 +1,8 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="64" height="64" rx="24" fill="#F9FAFD"/>
-<path d="M24 41C25.6569 41 27 39.6569 27 38C27 36.3431 25.6569 35 24 35C22.3431 35 21 36.3431 21 38C21 39.6569 22.3431 41 24 41Z" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M40 41C41.6569 41 43 39.6569 43 38C43 36.3431 41.6569 35 40 35C38.3431 35 37 36.3431 37 38C37 39.6569 38.3431 41 40 41Z" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M27 38H37" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43 38H46C46.2652 38 46.5196 37.8946 46.7071 37.7071C46.8946 37.5196 47 37.2652 47 37V32C47 31.7348 46.8946 31.4804 46.7071 31.2929C46.5196 31.1054 46.2652 31 46 31H42L36.2925 25.2925C36.1051 25.1053 35.8511 25.0001 35.5863 25H21.535C21.3705 25.0001 21.2086 25.0408 21.0636 25.1184C20.9186 25.196 20.795 25.3082 20.7038 25.445L17 31V37C17 37.2652 17.1054 37.5196 17.2929 37.7071C17.4804 37.8946 17.7348 38 18 38H21" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M42 31H17" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24 41C25.6569 41 27 39.6569 27 38C27 36.3431 25.6569 35 24 35C22.3431 35 21 36.3431 21 38C21 39.6569 22.3431 41 24 41Z" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M40 41C41.6569 41 43 39.6569 43 38C43 36.3431 41.6569 35 40 35C38.3431 35 37 36.3431 37 38C37 39.6569 38.3431 41 40 41Z" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M27 38H37" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M43 38H46C46.2652 38 46.5196 37.8946 46.7071 37.7071C46.8946 37.5196 47 37.2652 47 37V32C47 31.7348 46.8946 31.4804 46.7071 31.2929C46.5196 31.1054 46.2652 31 46 31H42L36.2925 25.2925C36.1051 25.1053 35.8511 25.0001 35.5863 25H21.535C21.3705 25.0001 21.2086 25.0408 21.0636 25.1184C20.9186 25.196 20.795 25.3082 20.7038 25.445L17 31V37C17 37.2652 17.1054 37.5196 17.2929 37.7071C17.4804 37.8946 17.7348 38 18 38H21" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M42 31H17" stroke="#3573FC" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
 </svg>

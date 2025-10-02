@@ -1,7 +1,7 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="64" height="64" rx="32" fill="#725DD6" fill-opacity="0.08"/>
-<path d="M37 28H43V22" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43 28L39.465 24.465C37.4178 22.4178 34.6461 21.2603 31.751 21.2435C28.8559 21.2266 26.0709 22.3518 24 24.375" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M27 36H21V42" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 36L24.535 39.535C26.5822 41.5821 29.3539 42.7396 32.249 42.7565C35.1441 42.7733 37.9291 41.6482 40 39.625" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M37 28H43V22" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M43 28L39.465 24.465C37.4178 22.4178 34.6461 21.2603 31.751 21.2435C28.8559 21.2266 26.0709 22.3518 24 24.375" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M27 36H21V42" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M21 36L24.535 39.535C26.5822 41.5821 29.3539 42.7396 32.249 42.7565C35.1441 42.7733 37.9291 41.6482 40 39.625" stroke="#725DD6" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
 </svg>

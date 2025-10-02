@@ -656,7 +656,7 @@ export const MicroCredit = () => {
                 dots={false}
                 infinite={true}
                 speed={500}
-                slidesToShow={isMobile ? 1 : 2}
+                slidesToShow={window.innerWidth < 700 ? 1 : 2}
                 slidesToScroll={1}
                 centerMode={true}
                 centerPadding="0px"

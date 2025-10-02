@@ -1,9 +1,9 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect width="64" height="64" rx="32" fill="#E74951" fill-opacity="0.08"/>
-<path d="M32 32H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32 24H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M32 40H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 24L23 26L27 22" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 32L23 34L27 30" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M21 40L23 42L27 38" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32 32H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M32 24H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M32 40H43" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M21 24L23 26L27 22" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M21 32L23 34L27 30" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
+<path d="M21 40L23 42L27 38" stroke="#E74951" stroke-width="1.6" stroke-linecap="round" strokeLinejoin="round"/>
 </svg>

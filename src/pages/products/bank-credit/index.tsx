@@ -6,6 +6,7 @@ import {
   Feedback,
   Integrations,
   RoleStructure,
+  SocialParameters,
   Trust,
   Zaim,
   ZaimChecker,
@@ -2122,6 +2123,7 @@ export const BankCredit = () => {
         </div>
       </motion.div>
 
+      <SocialParameters />
       <Zaim />
       <Feedback />
       <Integrations />
