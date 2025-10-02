@@ -73,7 +73,7 @@ export const Development = () => {
 
           <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center lg:left-0 lg:top-0 lg:translate-x-0">
             <div className="relative flex items-center justify-center">
-              <div className="relative size-[var(--size-738)] scale-75 lg:absolute lg:left-[var(--pos-590)] lg:top-[var(--pos-minus-41)] lg:scale-100">
+              <div className="relative left-[var(--pos-590)]  top-[var(--pos-minus-41)] size-[var(--size-738)] lg:absolute lg:scale-100">
                 <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
                   <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
