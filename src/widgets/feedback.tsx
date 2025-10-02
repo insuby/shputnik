@@ -54,8 +54,8 @@ export const Feedback = () => {
   const inView21 = useInView(ref21, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex size-full min-h-[340px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-[1376px]">
-      <div className="relative flex size-full min-h-[340px] flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
+    <div className="relative flex size-full min-h-[330px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-full">
+      <div className="relative flex size-full min-h-[330px] flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
         <svg
           width="939"
           height="763"
@@ -137,7 +137,7 @@ export const Feedback = () => {
         </svg>
 
         <div className="relative flex flex-col items-start gap-7 xl:w-[696px]">
-          <div className="relative flex w-full flex-col items-start gap-4 self-stretch">
+          <div className="relative flex w-full flex-col items-start gap-4 self-stretch max-w-[70%]">
             <motion.div
               ref={ref1}
               initial={{ opacity: 0, x: 80 }}
@@ -178,7 +178,7 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 xl:inline-flex"
+          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 lg:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
             <motion.div

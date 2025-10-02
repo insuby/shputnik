@@ -99,7 +99,7 @@ export const Analytics = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView3 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl px-8 pb-8 pt-0 xl:p-20"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-8 xl:p-20"
         >
           <motion.div
             ref={ref6}
@@ -193,7 +193,7 @@ export const Analytics = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative left-[-95px] top-[-73px] h-[574px] w-full scale-95 rounded-[287px] xl:left-[57px] xl:top-[17px] xl:!size-[574px] xl:scale-100">
+          <div className="relative  h-[574px] w-full scale-95 rounded-[287px] xl:left-[57px] xl:top-[17px] xl:!size-[574px] xl:scale-100">
             <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
 
             <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />

@@ -53,14 +53,14 @@ export const Integrations = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={inView2 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-[432px] flex-col items-start gap-12"
+        className="relative flex w-full flex-col items-start gap-12 xl:w-[432px]"
       >
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-          <div className="relative mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative text-center xl:text-start mt-[-1.00px] self-stretch text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Интеграции
           </div>
 
-          <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+          <p className="relative  text-center xl:text-start self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
             Кредитный конвейер тесно интегрирован <br />с большим количеством
             источников информации, государственных служб, платежных систем,
             лидогенераторов, рекламных и других сервисов
@@ -69,7 +69,7 @@ export const Integrations = () => {
 
         <button
           onClick={handleTryClick}
-          className="all-[unset] relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
+          className="all-[unset]  mx-auto xl:m-0 relative box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4"
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             Попробовать
