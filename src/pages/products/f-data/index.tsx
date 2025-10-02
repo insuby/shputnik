@@ -85,7 +85,7 @@ export const Fdata = () => {
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full xl:h-[636px] flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:p-12">
+        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:p-12 xl:h-[636px]">
           <svg
             width="1643"
             height="1443"
@@ -135,11 +135,11 @@ export const Fdata = () => {
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
-                  <h1 className="mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal w-10/12 text-white [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
+                  <h1 className="mx-auto mt-[-1.00px] w-3/5 text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
                     {t('hero.title')}
                   </h1>
 
-                  <p className="relative mx-auto lg:m-0 w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left">
+                  <p className="relative mx-auto w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left">
                     {t('static.heroDescription')}
                   </p>
                 </div>
@@ -466,7 +466,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute bottom-0 left-60 right-0 mx-auto mt-auto flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px]  bg-white p-6 lg:bottom-auto lg:left-[var(--pos-960)] lg:right-auto lg:top-[var(--pos-404)] lg:w-[368px]"
+            className="absolute bottom-0 left-60 right-0 mx-auto mt-auto flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 lg:bottom-auto lg:left-[var(--pos-960)] lg:right-auto lg:top-[var(--pos-404)] lg:w-[368px]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">

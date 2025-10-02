@@ -58,7 +58,7 @@ export const Development = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView16 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
+                  className="relative w-full text-center lg:text-start text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-leftw-10/12"
                 >
                   {t('hero.subtitle')}
                 </motion.p>

@@ -124,16 +124,16 @@ export const BankCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 xl:pb-[136px] xl:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:h-[620px] xl:gap-16 xl:p-12">
+        <div className="relative flex w-full flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:h-[620px] lg:gap-16 lg:p-12">
           <svg
             width="1643"
             height="1443"
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
+            className="absolute -top-16 left-[430px] h-[842px] w-full lg:w-[954px]"
             aria-hidden={true}
           >
             <g opacity="0.3" filter="url(#filter0_f_9326_98080)">
@@ -168,14 +168,14 @@ export const BankCredit = () => {
           </svg>
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
                 <motion.h1
                   ref={ref15}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView15 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                 >
                   {t('hero.title')}
                 </motion.h1>
@@ -185,7 +185,7 @@ export const BankCredit = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView16 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
+                  className="relative w-full text-center lg:text-start text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-leftw-10/12"
                 >
                   {t('hero.description')}
                 </motion.p>
@@ -195,7 +195,7 @@ export const BankCredit = () => {
 
           <motion.div
             variants={slideInRight}
-            className="relative left-0 top-[45px] hidden items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] xl:absolute xl:left-[720px] xl:top-[205px] xl:flex xl:w-full"
+            className="relative left-0 top-[45px] hidden items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] lg:absolute lg:left-[720px] lg:top-[205px] lg:flex lg:w-full"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -214,7 +214,7 @@ export const BankCredit = () => {
                       viewBox="0 0 15 16"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4w-full absolute left-[3px] top-0.5 xl:w-[15px]"
+                      className="h-4w-full absolute left-[3px] top-0.5 lg:w-[15px]"
                     >
                       <path
                         d="M5.61863 15.0263V10.0094H9.38137V15.0263H14.3984V7.50086C14.3984 7.41848 14.3823 7.3369 14.3508 7.26077C14.3193 7.18464 14.2731 7.11545 14.2149 7.05717L7.94369 0.78594C7.88545 0.727633 7.81628 0.681377 7.74015 0.649817C7.66402 0.618258 7.58241 0.602014 7.5 0.602014C7.41759 0.602014 7.33598 0.618258 7.25985 0.649817C7.18372 0.681377 7.11455 0.727633 7.05631 0.78594L0.78508 7.05717C0.726861 7.11545 0.680696 7.18464 0.649222 7.26077C0.617748 7.3369 0.601582 7.41848 0.601646 7.50086V15.0263H5.61863Z"
@@ -233,7 +233,7 @@ export const BankCredit = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                    <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                       <svg
                         width="7"
                         height="7"
@@ -257,7 +257,7 @@ export const BankCredit = () => {
                         viewBox="0 0 19 12"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[11px] w-full xl:w-[19px]"
+                        className="absolute left-0 top-0 h-[11px] w-full lg:w-[19px]"
                       >
                         <path
                           d="M18.3907 0.609626H0.609254V10.7705H18.3907V0.609626Z"
@@ -345,7 +345,7 @@ export const BankCredit = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5">
-                    <div className="h-3w-full relative left-px top-1 bg-gray-100 bg-[100%_100%] xl:w-[17px]">
+                    <div className="h-3w-full relative left-px top-1 bg-gray-100 bg-[100%_100%] lg:w-[17px]">
                       <svg
                         width="7"
                         height="2"
@@ -386,7 +386,7 @@ export const BankCredit = () => {
                         viewBox="0 0 18 2"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-pxw-full absolute left-0 top-[3px] xl:w-[17px]"
+                        className="h-pxw-full absolute left-0 top-[3px] lg:w-[17px]"
                       >
                         <path
                           d="M0.618536 0.618914H17.3815"
@@ -447,7 +447,7 @@ export const BankCredit = () => {
                         viewBox="0 0 6 3"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-0.5w-full absolute left-0 top-2 xl:w-[5px]"
+                        className="h-0.5w-full absolute left-0 top-2 lg:w-[5px]"
                       >
                         <path
                           d="M5.33693 0.663674L0.663067 1.91551"
@@ -491,7 +491,7 @@ export const BankCredit = () => {
                         viewBox="0 0 8 4"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-1w-full absolute left-1 top-0 xl:w-[7px]"
+                        className="h-1w-full absolute left-1 top-0 lg:w-[7px]"
                       >
                         <path
                           d="M7.35606 3.32918V1.98676C7.35606 1.63073 7.21462 1.28928 6.96287 1.03752C6.71112 0.78577 6.36967 0.644337 6.01363 0.644337H1.98637C1.63033 0.644337 1.28888 0.78577 1.03713 1.03752C0.785377 1.28928 0.643943 1.63073 0.643943 1.98676V3.32918"
@@ -604,9 +604,9 @@ export const BankCredit = () => {
                 </p>
               </div>
 
-              <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] xl:w-[429px]">
+              <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('offers.recommended')}
@@ -648,7 +648,7 @@ export const BankCredit = () => {
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                       <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('metrics.expenses')}
@@ -753,8 +753,8 @@ export const BankCredit = () => {
             </div>
           </motion.div>
 
-          <div className="relative h-[349px] xl:hidden"></div>
-          <div className="absolute bottom-0 w-full xl:hidden">
+          <div className="relative h-[349px] lg:hidden"></div>
+          <div className="absolute bottom-0 w-full lg:hidden">
             <motion.div
               variants={slideInRight}
               className="relative top-[45px] ml-auto flex max-w-[669px] items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd]"
@@ -776,7 +776,7 @@ export const BankCredit = () => {
                         viewBox="0 0 15 16"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-4w-full absolute left-[3px] top-0.5 xl:w-[15px]"
+                        className="h-4w-full absolute left-[3px] top-0.5 lg:w-[15px]"
                       >
                         <path
                           d="M5.61863 15.0263V10.0094H9.38137V15.0263H14.3984V7.50086C14.3984 7.41848 14.3823 7.3369 14.3508 7.26077C14.3193 7.18464 14.2731 7.11545 14.2149 7.05717L7.94369 0.78594C7.88545 0.727633 7.81628 0.681377 7.74015 0.649817C7.66402 0.618258 7.58241 0.602014 7.5 0.602014C7.41759 0.602014 7.33598 0.618258 7.25985 0.649817C7.18372 0.681377 7.11455 0.727633 7.05631 0.78594L0.78508 7.05717C0.726861 7.11545 0.680696 7.18464 0.649222 7.26077C0.617748 7.3369 0.601582 7.41848 0.601646 7.50086V15.0263H5.61863Z"
@@ -795,7 +795,7 @@ export const BankCredit = () => {
 
                   <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                     <div className="relative size-5">
-                      <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                      <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                         <svg
                           width="7"
                           height="7"
@@ -819,7 +819,7 @@ export const BankCredit = () => {
                           viewBox="0 0 19 12"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-0 top-0 h-[11px] w-full xl:w-[19px]"
+                          className="absolute left-0 top-0 h-[11px] w-full lg:w-[19px]"
                         >
                           <path
                             d="M18.3907 0.609626H0.609254V10.7705H18.3907V0.609626Z"
@@ -907,7 +907,7 @@ export const BankCredit = () => {
 
                   <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                     <div className="relative size-5">
-                      <div className="h-3w-full relative left-px top-1 bg-gray-100 bg-[100%_100%] xl:w-[17px]">
+                      <div className="h-3w-full relative left-px top-1 bg-gray-100 bg-[100%_100%] lg:w-[17px]">
                         <svg
                           width="7"
                           height="2"
@@ -948,7 +948,7 @@ export const BankCredit = () => {
                           viewBox="0 0 18 2"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-pxw-full absolute left-0 top-[3px] xl:w-[17px]"
+                          className="h-pxw-full absolute left-0 top-[3px] lg:w-[17px]"
                         >
                           <path
                             d="M0.618536 0.618914H17.3815"
@@ -1009,7 +1009,7 @@ export const BankCredit = () => {
                           viewBox="0 0 6 3"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-0.5w-full absolute left-0 top-2 xl:w-[5px]"
+                          className="h-0.5w-full absolute left-0 top-2 lg:w-[5px]"
                         >
                           <path
                             d="M5.33693 0.663674L0.663067 1.91551"
@@ -1053,7 +1053,7 @@ export const BankCredit = () => {
                           viewBox="0 0 8 4"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="h-1w-full absolute left-1 top-0 xl:w-[7px]"
+                          className="h-1w-full absolute left-1 top-0 lg:w-[7px]"
                         >
                           <path
                             d="M7.35606 3.32918V1.98676C7.35606 1.63073 7.21462 1.28928 6.96287 1.03752C6.71112 0.78577 6.36967 0.644337 6.01363 0.644337H1.98637C1.63033 0.644337 1.28888 0.78577 1.03713 1.03752C0.785377 1.28928 0.643943 1.63073 0.643943 1.98676V3.32918"
@@ -1166,9 +1166,9 @@ export const BankCredit = () => {
                   </p>
                 </div>
 
-                <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] xl:w-[429px]">
+                <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                         <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('offers.recommended')}
@@ -1210,7 +1210,7 @@ export const BankCredit = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
                         <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('metrics.expenses')}
@@ -1320,23 +1320,23 @@ export const BankCredit = () => {
 
       <Advantages />
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] xl:w-[1376px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] lg:w-[1376px]">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-[68px] self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch xl:!flex-row">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row">
             <motion.div
               ref={refSystem1}
               variants={slideInLeft}
               initial="hidden"
               animate={inViewSystem1 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] xl:gap-12 xl:p-12">
+              <div className="relative flex flex-1 grow flex-col items-center gap-7 overflow-hidden rounded-3xl bg-[#f9fafd] lg:gap-12 lg:p-12">
                 <svg
                   width="638"
                   height="682"
                   viewBox="0 0 638 682"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[53px] top-0 h-[448px] w-full xl:w-[623px]"
+                  className="absolute left-[53px] top-0 h-[448px] w-full lg:w-[623px]"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_9344_10626)">
                     <path
@@ -1369,9 +1369,9 @@ export const BankCredit = () => {
                   </defs>
                 </svg>
 
-                <div className="flex items-center p-3 xl:flex-col xl:p-0">
-                  <div className="relative w-full self-stretch xl:h-80">
-                    <div className="relative left-0 flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 xl:left-[98px] xl:top-[29px] xl:scale-100">
+                <div className="flex items-center p-3 lg:flex-col lg:p-0">
+                  <div className="relative w-full self-stretch lg:h-80">
+                    <div className="relative left-0 flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 lg:left-[98px] lg:top-[29px] lg:scale-100">
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                           <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
@@ -1402,7 +1402,7 @@ export const BankCredit = () => {
                                 {t('loans.period')}
                               </div>
 
-                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[120px]">
                                 30 580 ₽
                               </div>
                             </div>
@@ -1436,7 +1436,7 @@ export const BankCredit = () => {
                                 {t('loans.period')}
                               </div>
 
-                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[120px]">
                                 56 320 ₽
                               </div>
                             </div>
@@ -1470,7 +1470,7 @@ export const BankCredit = () => {
                                 {t('loans.period')}
                               </div>
 
-                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[120px]">
                                 120 850 ₽
                               </div>
                             </div>
@@ -1485,7 +1485,7 @@ export const BankCredit = () => {
                     variants={containerVariants}
                     initial="hidden"
                     animate={inViewSystem1 ? 'visible' : 'hidden'}
-                    className="relative flex w-full flex-[0_0_70%] flex-col items-start gap-6 self-stretch p-7 xl:p-0"
+                    className="relative flex w-full flex-[0_0_70%] flex-col items-start gap-6 self-stretch p-7 lg:p-0"
                   >
                     <motion.div
                       ref={refSystem2}
@@ -1513,14 +1513,14 @@ export const BankCredit = () => {
               initial="hidden"
               animate={inViewSystem4 ? 'visible' : 'hidden'}
             >
-              <div className="relative flex flex-1 grow flex-col items-center gap-7  self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-7 xl:gap-12 xl:p-12">
+              <div className="relative flex flex-1 grow flex-col items-center gap-7  self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-7 lg:gap-12 lg:p-12">
                 <svg
                   width="665"
                   height="714"
                   viewBox="0 0 665 714"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-0 top-0 h-[488px] w-full xl:w-[608px]"
+                  className="absolute left-0 top-0 h-[488px] w-full lg:w-[608px]"
                 >
                   <g opacity="0.16" filter="url(#filter0_f_9344_10715)">
                     <path
@@ -1553,9 +1553,9 @@ export const BankCredit = () => {
                   </defs>
                 </svg>
 
-                <div className="flex flex-row-reverse items-center xl:flex-col xl:p-0">
-                  <div className="relative w-full self-stretch px-7 xl:h-80">
-                    <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 xl:left-7 xl:top-[34px] xl:w-[524px] xl:scale-100">
+                <div className="flex flex-row-reverse items-center lg:flex-col lg:p-0">
+                  <div className="relative w-full self-stretch px-7 lg:h-80">
+                    <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 lg:left-7 lg:top-[34px] lg:w-[524px] lg:scale-100">
                       <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
                         <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('payments.title')}
@@ -1666,7 +1666,7 @@ export const BankCredit = () => {
                     variants={containerVariants}
                     initial="hidden"
                     animate={inViewSystem4 ? 'visible' : 'hidden'}
-                    className="relative flex w-full flex-col items-start gap-6 self-stretch xl:flex-[0_0_auto]"
+                    className="relative flex w-full flex-col items-start gap-6 self-stretch lg:flex-[0_0_auto]"
                   >
                     <motion.div
                       variants={itemVariants}
