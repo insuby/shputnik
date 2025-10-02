@@ -102,17 +102,17 @@ export const BNPL = () => {
   return (
     <section
       aria-labelledby="bnpl-title"
-      className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-full xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8"
     >
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[1060px] w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 xl:h-[620px] xl:p-12">
+        <div className="relative flex h-[1060px] w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12">
           <svg
             width="1688"
             height="1367"
             viewBox="0 0 1688 1367"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
+            className="absolute left-[441px] top-[-140px] h-[1060px] w-full lg:w-[1108px]"
           >
             <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
               <path
@@ -146,14 +146,14 @@ export const BNPL = () => {
           </svg>
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
                 <motion.h1
                   ref={ref2}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView2 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                 >
                   <span id="bnpl-title">{t('static.title')}</span>
                 </motion.h1>
@@ -163,7 +163,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
                 >
                   {t('static.description')}
                 </motion.p>
@@ -176,14 +176,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 xl:absolute"
+            className="left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 lg:absolute"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-              <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[264px]">
+              <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[264px]">
                 {t('installment.id')}
               </div>
 
-              <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
+              <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] lg:w-[180px]">
                 {t('installment.status')}
               </div>
             </div>
@@ -244,7 +244,7 @@ export const BNPL = () => {
               viewBox="0 0 329 62"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-[730px] hidden h-24 w-full xl:top-[132px] xl:block xl:w-[328px]"
+              className="absolute left-0 top-[730px] hidden h-24 w-full lg:top-[132px] lg:block lg:w-[328px]"
             >
               <path
                 d="M0.247285 55.6177L24.7332 49.381C29.1947 48.2447 33.9294 49.0835 37.729 51.6833L46.9276 57.9775C54.0122 62.8252 63.6592 61.2242 68.7982 54.348L76.6352 43.8616C81.3036 37.615 89.793 35.6394 96.7397 39.1832L117.269 49.6559C125.75 53.9822 136.11 49.9982 139.506 41.1042L152.056 8.24266C156.121 -2.39923 171.61 -0.959623 173.644 10.249L175.739 21.7982C177.224 29.9871 188.598 30.9119 191.387 23.0705V23.0705C193.933 15.9143 204.031 15.853 206.663 22.9778L209.006 29.3212C211.913 37.1908 222.387 38.7048 227.404 31.9804L233.005 24.4727C238.302 17.3721 248.429 16.075 255.345 21.6113L261.435 26.4868C266.413 30.4717 273.281 31.1237 278.92 28.1469L328.533 1.95524"
@@ -268,7 +268,7 @@ export const BNPL = () => {
               </defs>
             </svg>
 
-            <div className="absolute left-[156px] top-[156px] hidden size-3 rounded-md border-2  border-solid border-[#00cb82] bg-[#ffffff] xl:block" />
+            <div className="absolute left-[156px] top-[156px] hidden size-3 rounded-md border-2  border-solid border-[#00cb82] bg-[#ffffff] lg:block" />
           </motion.div>
 
           <svg
@@ -277,7 +277,7 @@ export const BNPL = () => {
             viewBox="0 0 847 929"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[615px] top-0 h-[620px] w-full xl:w-[761px]"
+            className="absolute left-[615px] top-0 h-[620px] w-full lg:w-[761px]"
           >
             <g opacity="0.24" filter="url(#filter0_f_9163_1971)">
               <path
@@ -315,7 +315,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView4 ? { opacity: isMobile ? 0.6 : 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-2 top-[730px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 xl:left-[800px] xl:top-[286px]"
+            className="absolute left-2 top-[730px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 lg:left-[800px] lg:top-[286px]"
           >
             <div className="relative size-[212px] rounded-[100px]">
               <div className="relative left-[7px] top-[7px] size-[198px]">
@@ -363,7 +363,7 @@ export const BNPL = () => {
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-between xl:w-[180px]">
+              <div className="relative flex w-full flex-[0_0_auto] items-center justify-between lg:w-[180px]">
                 <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                   {t('balance.loanAmount')}
                 </div>
@@ -392,16 +392,16 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12"
       >
         <motion.div
           ref={ref7}
           initial={{ opacity: 0, y: 50 }}
           animate={inView7 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
         >
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
             {t('suitableFor')}
           </div>
         </motion.div>
@@ -411,14 +411,14 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch xl:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row"
         >
           <motion.div
             ref={ref9}
             initial={{ opacity: 0, x: -50 }}
             animate={inView9 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
           >
             <svg
               width="60"
@@ -474,7 +474,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView10 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
           >
             <svg
               width="60"
@@ -539,14 +539,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView11 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl xl:h-[400px] xl:!flex-row"
+        className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl lg:h-[400px] lg:!flex-row"
       >
         <motion.div
           ref={ref12}
           initial={{ opacity: 0, x: -50 }}
           animate={inView12 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
             <motion.div
@@ -554,7 +554,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView13 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[480px]"
+              className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px]"
             >
               {t('process.bnpl')}
             </motion.div>
@@ -564,7 +564,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView14 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[480px]"
+              className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
             >
               {t('process.title')}
             </motion.div>
@@ -575,7 +575,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView15 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[500px]"
+            className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
           >
             {t('integration')}
           </motion.p>
@@ -589,7 +589,7 @@ export const BNPL = () => {
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
           <Marquee fade>
-            <div className="relative left-1 h-[400px] w-full xl:w-[752px]">
+            <div className="relative left-1 h-[400px] w-full lg:w-[752px]">
               <div className="absolute left-0 top-[39px] inline-flex items-center gap-4">
                 <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
                   <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
@@ -644,8 +644,8 @@ export const BNPL = () => {
         </motion.div>
       </motion.div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch overflow-hidden rounded-3xl xl:!flex-row">
-        <div className="relative hidden w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6 xl:flex xl:w-[676px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
+        <div className="relative hidden w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6 lg:flex lg:w-[676px]">
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
             <div className="relative flex flex-1 grow items-start gap-3">
               <motion.div
@@ -779,15 +779,15 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView17 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 xl:py-12 xl:pl-12 xl:pr-[68px]"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]"
         >
-          <div className="relative -mt-20 inline-flex flex-[0_0_auto] flex-col items-start gap-4 xl:mt-0">
+          <div className="relative -mt-20 inline-flex flex-[0_0_auto] flex-col items-start gap-4 lg:mt-0">
             <motion.div
               ref={ref18}
               initial={{ opacity: 0, y: 50 }}
               animate={inView18 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-              className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[480px]"
+              className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px]"
             >
               {t('static.posProcess')}
             </motion.div>
@@ -797,7 +797,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView19 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-              className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[480px]"
+              className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
             >
               {t('static.posProcessTitle')}
             </motion.p>
@@ -808,7 +808,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView20 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[500px]"
+            className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
           >
             {t('static.integration')}
           </motion.p>
@@ -820,14 +820,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView21 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 py-20 xl:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 py-20 lg:gap-12"
       >
         <motion.div
           ref={ref22}
           initial={{ opacity: 0, y: 50 }}
           animate={inView22 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
+          className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
         >
           {t('parameters.title')}
         </motion.div>
@@ -837,14 +837,14 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView23 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex w-full flex-col items-start justify-center gap-6 self-stretch xl:h-[228px] xl:!flex-row"
+          className="relative flex w-full flex-col items-start justify-center gap-6 self-stretch lg:h-[228px] lg:!flex-row"
         >
           <motion.div
             ref={ref24}
             initial={{ opacity: 0, x: -50 }}
             animate={inView24 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center xl:p-10 xl:text-left"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
           >
             <motion.div
               ref={ref34}
@@ -887,14 +887,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView25 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center xl:p-10 xl:text-left"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
           >
             <motion.div
               ref={ref35}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView35 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4 xl:m-0"
+              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4 lg:m-0"
             >
               <svg
                 width="28"
@@ -937,14 +937,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView26 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center xl:p-10 xl:text-left"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
           >
             <motion.div
               ref={ref36}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView36 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4 xl:m-0"
+              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4 lg:m-0"
             >
               <svg
                 width="28"
@@ -987,14 +987,14 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView27 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center xl:p-10 xl:text-left"
+            className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
           >
             <motion.div
               ref={ref37}
               initial={{ opacity: 0, scale: 0 }}
               animate={inView37 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4 xl:m-0"
+              className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4 lg:m-0"
             >
               <svg
                 width="28"
@@ -1032,14 +1032,14 @@ export const BNPL = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView28 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 xl:!flex-row xl:px-[88px] xl:py-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:!flex-row lg:px-[88px] lg:py-12"
       >
         <motion.div
           ref={ref29}
           initial={{ opacity: 0, x: -50 }}
           animate={inView29 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full flex-col items-start gap-7 xl:w-[530px]"
+          className="relative flex w-full flex-col items-start gap-7 lg:w-[530px]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
             <motion.div
@@ -1057,7 +1057,7 @@ export const BNPL = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView31 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[530px] xl:text-5xl xl:leading-[60px]"
+              className="relative w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[530px] lg:text-5xl lg:leading-[60px]"
             >
               {t('posIntegration.managePayments')}
             </motion.p>
@@ -1079,7 +1079,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative left-[-20px] mr-[-108.00px] flex h-[538px] w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] xl:left-0 xl:w-[871px]"
+          className="relative left-[-20px] mr-[-108.00px] flex h-[538px] w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:left-0 lg:w-[871px]"
         >
           <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
             <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1101,7 +1101,7 @@ export const BNPL = () => {
 
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                 <div className="relative size-5">
-                  <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                  <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                     {/* Removed broken SVG: /img/bnpl/vector-11.svg */}
 
                     {/* Removed broken SVG: /img/bnpl/vector-4.svg */}
@@ -1117,7 +1117,7 @@ export const BNPL = () => {
 
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                 <div className="relative size-5">
-                  <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                  <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                     {/* Removed broken SVG: /img/bnpl/vector-5.svg */}
 
                     {/* Removed broken SVG: /img/bnpl/vector-10.svg */}
@@ -1133,7 +1133,7 @@ export const BNPL = () => {
 
               <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                 <div className="relative size-5">
-                  <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                  <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                     {/* Removed broken SVG: /img/bnpl/vector-16.svg */}
 
                     {/* Removed broken SVG: /img/bnpl/vector-1.svg */}
@@ -1165,7 +1165,7 @@ export const BNPL = () => {
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                     <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('installment.id')}
@@ -1372,13 +1372,13 @@ export const BNPL = () => {
               <div className="relative w-48 self-stretch rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
               <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
-                <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] xl:w-[293px]">
+                <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]">
                   {t('social.title')}
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 xl:w-[293px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 lg:w-[293px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] xl:w-[34px]">
+                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
                       <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
@@ -1388,7 +1388,7 @@ export const BNPL = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] xl:w-[34px]">
+                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
                       <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
@@ -1398,7 +1398,7 @@ export const BNPL = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] xl:w-[34px]">
+                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
                       <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
@@ -1408,7 +1408,7 @@ export const BNPL = () => {
                   </div>
 
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] xl:w-[34px]">
+                    <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
                       <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                     </div>
 
@@ -1467,18 +1467,18 @@ export const BNPL = () => {
         </div>
 
         <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
-          <p className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] xl:w-[480px]">
+          <p className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[480px]">
             {t('backoffice.title')}
           </p>
 
           {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-            <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] xl:w-[500px]">
+            <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[500px]">
               {t('automation.title')}
             </div>
 
-            <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[500px]">
+            <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]">
               {t('automation.description')}
             </p>
           </div>

@@ -20,7 +20,7 @@ export const Trust = () => {
             {t('trust.title')}
           </div>
 
-          <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+          <p className="relative  mx-auto max-w-[85%] self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
             {t('trust.subtitle')}
           </p>
         </div>
