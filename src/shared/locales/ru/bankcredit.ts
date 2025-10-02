@@ -54,6 +54,7 @@ export const bankcredit = {
   },
   payments: {
     title: 'Выплаты',
+    statusTab: 'Статус',
     status: {
       accepted: 'Принято',
       rejected: 'Отклонено',
@@ -71,7 +72,7 @@ export const bankcredit = {
     products: {
       consumer: 'Потребительские кредиты',
       creditLine: 'Кредитная линия',
-      secured: 'Кредиты под залог имущества',
+      secured: 'Кредиты под\nзалог имущества',
       mortgage: 'Ипотечное кредитование',
     },
   },

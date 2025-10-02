@@ -123,7 +123,7 @@ export const BankCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-full xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 xl:pb-[136px] xl:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex w-full flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:h-[620px] xl:gap-16 xl:p-12">
           <svg
@@ -756,7 +756,7 @@ export const BankCredit = () => {
           <div className="absolute bottom-0 w-full xl:hidden">
             <motion.div
               variants={slideInRight}
-              className="relative !right-0 max-w-[669px] top-[45px] flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd]"
+              className="relative top-[45px] ml-auto flex max-w-[669px] items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd]"
             >
               <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
                 <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1368,141 +1368,144 @@ export const BankCredit = () => {
                   </defs>
                 </svg>
 
-                <div className="relative w-full self-stretch xl:h-80">
-                  <div className="relative left-0 top-[29px] flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 xl:left-[98px] xl:scale-100">
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                        <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
-                            <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                #123234555
+                <div className="flex items-center p-3 xl:flex-col xl:p-0">
+                  <div className="relative w-full self-stretch xl:h-80">
+                    <div className="relative left-0 flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 xl:left-[98px] xl:top-[29px] xl:scale-100">
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
+                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                          <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
+                              <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  #123234555
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  •
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  {t('loans.borrower')}
+                                </div>
                               </div>
 
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                •
-                              </div>
-
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                {t('loans.borrower')}
+                              <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                                  {t('loans.status.paid')}
+                                </div>
                               </div>
                             </div>
 
-                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                                {t('loans.status.paid')}
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                {t('loans.period')}
+                              </div>
+
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                                30 580 ₽
                               </div>
                             </div>
                           </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              {t('loans.period')}
+                          <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
+                              <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  #123234555
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  •
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  {t('loans.borrower')}
+                                </div>
+                              </div>
+
+                              <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
+                                  {t('loans.status.refinancing')}
+                                </div>
+                              </div>
                             </div>
 
-                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
-                              30 580 ₽
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
-                            <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
                               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                #123234555
+                                {t('loans.period')}
                               </div>
 
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                •
-                              </div>
-
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                {t('loans.borrower')}
-                              </div>
-                            </div>
-
-                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] px-2 py-1">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
-                                {t('loans.status.refinancing')}
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              {t('loans.period')}
-                            </div>
-
-                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
-                              56 320 ₽
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
-                            <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                #123234555
-                              </div>
-
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                •
-                              </div>
-
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                                {t('loans.borrower')}
-                              </div>
-                            </div>
-
-                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
-                                {t('loans.status.overdue')}
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                                56 320 ₽
                               </div>
                             </div>
                           </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                              {t('loans.period')}
+                          <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1.5">
+                              <div className="relative inline-flex flex-[0_0_auto] items-start gap-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  #123234555
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  •
+                                </div>
+
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                  {t('loans.borrower')}
+                                </div>
+                              </div>
+
+                              <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
+                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
+                                  {t('loans.status.overdue')}
+                                </div>
+                              </div>
                             </div>
 
-                            <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
-                              120 850 ₽
+                            <div className="relative inline-flex flex-[0_0_auto] flex-col items-end justify-between self-stretch">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                                {t('loans.period')}
+                              </div>
+
+                              <div className="relative w-full text-right text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[120px]">
+                                120 850 ₽
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
 
-                <motion.div
-                  ref={refSystem1}
-                  variants={containerVariants}
-                  initial="hidden"
-                  animate={inViewSystem1 ? 'visible' : 'hidden'}
-                  className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch p-7 xl:p-0"
-                >
                   <motion.div
-                    ref={refSystem2}
-                    variants={itemVariants}
-                    className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    ref={refSystem1}
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate={inViewSystem1 ? 'visible' : 'hidden'}
+                    className="relative flex w-full flex-[0_0_70%] flex-col items-start gap-6 self-stretch p-7 xl:p-0"
                   >
-                    {t('management.title')}
-                  </motion.div>
+                    <motion.div
+                      ref={refSystem2}
+                      variants={itemVariants}
+                      className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    >
+                      {t('management.title')}
+                    </motion.div>
 
-                  <motion.p
-                    ref={refSystem3}
-                    variants={fadeInUp}
-                    className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
-                  >
-                    {t('management.description')}
-                  </motion.p>
-                </motion.div>
+                    <motion.p
+                      ref={refSystem3}
+                      variants={fadeInUp}
+                      className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+                    >
+                      {t('management.description')}
+                    </motion.p>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
+
             <motion.div
               ref={refSystem4}
               variants={slideInRight}
@@ -1549,135 +1552,136 @@ export const BankCredit = () => {
                   </defs>
                 </svg>
 
-                <div className="relative w-full self-stretch xl:h-80">
-                  <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 xl:left-7 xl:top-[34px] xl:w-[524px] xl:scale-100">
-                    <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
-                      <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('payments.title')}
-                      </div>
-
-                      <div className="relative flex w-full flex-[0_0_auto] items-start gap-3 self-stretch">
-                        <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
-                          <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            ID
-                          </div>
-
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            12334
-                          </div>
-
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            23489
-                          </div>
-
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            34566
-                          </div>
-
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            89654
-                          </div>
+                <div className="flex flex-row-reverse items-center xl:flex-col xl:p-0">
+                  <div className="relative w-full self-stretch px-7 xl:h-80">
+                    <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 xl:left-7 xl:top-[34px] xl:w-[524px] xl:scale-100">
+                      <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
+                        <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          {t('payments.title')}
                         </div>
 
-                        <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
-                          <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            {t('payments.status')}
-                          </div>
+                        <div className="relative flex w-full flex-[0_0_auto] items-start gap-3 self-stretch">
+                          <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
+                            <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                              ID
+                            </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              {t('payments.status.accepted')}
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              12334
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              23489
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              34566
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              89654
                             </div>
                           </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              {t('payments.status.accepted')}
+                          <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
+                            <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                              {t('payments.statusTab')}
+                            </div>
+
+                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                                {t('payments.status.accepted')}
+                              </div>
+                            </div>
+
+                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                                {t('payments.status.accepted')}
+                              </div>
+                            </div>
+
+                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
+                                {t('payments.status.rejected')}
+                              </div>
+                            </div>
+
+                            <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
+                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
+                                {t('payments.status.accepted')}
+                              </div>
                             </div>
                           </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] px-2 py-1">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#e64850] [font-family:'Roboto',Helvetica]">
-                              {t('payments.status.rejected')}
+                          <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
+                            <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                              {t('payments.date')}
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              11.10.2025 16:45
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              09.10.2025 12:43
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              09.10.2025 10:34
+                            </div>
+
+                            <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              08.10.2025 09:05
                             </div>
                           </div>
 
-                          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] px-2 py-1">
-                            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#00ac6e] [font-family:'Roboto',Helvetica]">
-                              {t('payments.status.accepted')}
+                          <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
+                            <div className="relative mt-[-0.75px] self-stretch text-right text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                              {t('payments.amount')}
                             </div>
-                          </div>
-                        </div>
 
-                        <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
-                          <div className="relative mt-[-0.75px] self-stretch text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            {t('payments.date')}
-                          </div>
+                            <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              78 278 ₽
+                            </div>
 
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            11.10.2025 16:45
-                          </div>
+                            <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              30 580 ₽
+                            </div>
 
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            09.10.2025 12:43
-                          </div>
+                            <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              45 789 ₽
+                            </div>
 
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            09.10.2025 10:34
-                          </div>
-
-                          <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            08.10.2025 09:05
-                          </div>
-                        </div>
-
-                        <div className="relative flex flex-1 grow flex-col items-start gap-3.5">
-                          <div className="relative mt-[-0.75px] self-stretch text-right text-xs font-normal leading-4 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
-                            {t('payments.amount')}
-                          </div>
-
-                          <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            78 278 ₽
-                          </div>
-
-                          <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            30 580 ₽
-                          </div>
-
-                          <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            45 789 ₽
-                          </div>
-
-                          <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                            120 580 ₽
+                            <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              120 580 ₽
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <motion.div
-                  ref={refSystem4}
-                  variants={containerVariants}
-                  initial="hidden"
-                  animate={inViewSystem4 ? 'visible' : 'hidden'}
-                  className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch"
-                >
                   <motion.div
-                    variants={itemVariants}
-                    className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    ref={refSystem4}
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate={inViewSystem4 ? 'visible' : 'hidden'}
+                    className="relative flex w-full flex-col items-start gap-6 self-stretch xl:flex-[0_0_auto]"
                   >
-                    {t('transactions.title')}
-                  </motion.div>
+                    <motion.div
+                      variants={itemVariants}
+                      className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    >
+                      {t('transactions.title')}
+                    </motion.div>
 
-                  <motion.p
-                    variants={fadeInUp}
-                    className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
-                  >
-                    {t('transactions.description')}
-                  </motion.p>
-                </motion.div>
+                    <motion.p
+                      variants={fadeInUp}
+                      className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+                    >
+                      {t('transactions.description')}
+                    </motion.p>
+                  </motion.div>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -1691,17 +1695,17 @@ export const BankCredit = () => {
         variants={containerVariants}
         initial="hidden"
         animate={inViewAuto1 ? 'visible' : 'hidden'}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12"
       >
         <motion.div
           ref={refAuto2}
           variants={itemVariants}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
         >
           <motion.div
             ref={refAuto3}
             variants={fadeInUp}
-            className="relative mt-[-1.00px] self-stretch text-center text-[33px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
+            className="relative mx-auto  mt-[-1.00px] max-w-[80%] self-stretch text-center text-[33px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px] "
           >
             {t('automation.title')}
           </motion.div>
@@ -1712,13 +1716,13 @@ export const BankCredit = () => {
           variants={containerVariants}
           initial="hidden"
           animate={inViewAuto4 ? 'visible' : 'hidden'}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-6 self-stretch xl:!flex-row"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-6 self-stretch lg:!flex-row"
         >
-          <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 xl:w-fit xl:!flex-row">
+          <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 lg:w-fit lg:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
@@ -1748,16 +1752,17 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('automation.products.consumer')}
                 </motion.div>
               </div>
             </motion.div>
+
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.img
@@ -1769,7 +1774,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('automation.products.creditLine')}
                 </motion.div>
@@ -1777,11 +1782,11 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 xl:w-fit xl:!flex-row">
+          <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 lg:w-fit lg:!flex-row">
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-3.svg */}
@@ -1794,7 +1799,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('automation.products.secured')}
                 </motion.div>
@@ -1803,7 +1808,7 @@ export const BankCredit = () => {
             <motion.div
               variants={itemVariants}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <svg
@@ -1871,11 +1876,11 @@ export const BankCredit = () => {
 
       <motion.div
         variants={slideInRight}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 bg-[#ffffff]  xl:w-[1376px] xl:gap-12"
+        className="l:w-[1376px] l:gap-12 relative flex w-full flex-[0_0_auto] flex-col items-center justify-center  gap-7 bg-[#ffffff]"
       >
         <motion.div
           variants={fadeInUp}
-          className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[832px] xl:text-5xl xl:leading-[60px]"
+          className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[832px] lg:text-5xl lg:leading-[60px]"
         >
           {t('process.title')}
           <br />
@@ -1883,14 +1888,14 @@ export const BankCredit = () => {
         </motion.div>
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch xl:!flex-row">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row">
             <motion.div
               ref={ref1}
               variants={itemVariants}
               initial="hidden"
               animate={inView1 ? 'visible' : 'hidden'}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="lg :p-10 relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.div
@@ -1957,7 +1962,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.verification.title')}
                 </motion.div>
@@ -1970,7 +1975,7 @@ export const BankCredit = () => {
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="relative flex w-full flex-1 grow items-center justify-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 <motion.div
@@ -2003,7 +2008,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.blacklist.title')}
                 </motion.div>
@@ -2016,7 +2021,7 @@ export const BankCredit = () => {
               animate={inView3 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="lg :p-10 relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-6.svg */}
@@ -2028,7 +2033,7 @@ export const BankCredit = () => {
                 />
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.enrichment.title')}
                 </motion.div>
@@ -2036,14 +2041,14 @@ export const BankCredit = () => {
             </motion.div>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch xl:!flex-row">
+          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row">
             <motion.div
               ref={ref4}
               initial={{ opacity: 0, x: -50 }}
               animate={inView4 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="lg :p-10 relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-10.svg */}
@@ -2055,7 +2060,7 @@ export const BankCredit = () => {
                 />
                 <motion.p
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.scoring')}
                 </motion.p>
@@ -2068,7 +2073,7 @@ export const BankCredit = () => {
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="lg :p-10 relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-5.svg */}
@@ -2081,7 +2086,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.productSelection')}
                 </motion.div>
@@ -2094,7 +2099,7 @@ export const BankCredit = () => {
               animate={inView6 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               whileHover={{ scale: 1.02 }}
-              className="relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+              className="lg :p-10 relative flex flex-1 grow items-start justify-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8"
             >
               <div className="relative flex flex-1 grow flex-col items-center justify-center gap-7">
                 {/* Removed missing SVG motion.img: /img/bankcredit/frame-19-4.svg */}
@@ -2107,7 +2112,7 @@ export const BankCredit = () => {
 
                 <motion.div
                   variants={fadeInUp}
-                  className="relative flex min-h-[64px] items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative flex min-h-[64px] items-center justify-center self-stretch whitespace-pre-wrap text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('process.underwriting')}
                 </motion.div>

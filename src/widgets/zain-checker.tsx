@@ -206,7 +206,7 @@ export const ZaimChecker = () => {
                 <motion.div
                   ref={ref4}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView4 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
@@ -228,7 +228,7 @@ export const ZaimChecker = () => {
                 <motion.div
                   ref={ref6}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView6 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
@@ -243,14 +243,14 @@ export const ZaimChecker = () => {
               <motion.div
                 ref={ref7}
                 initial={{ opacity: 0, y: 50 }}
-                animate={inView7 ? { opacity: 1, y: 0 } : {}}
+                animate={inView18 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
                 className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
               >
                 <motion.div
                   ref={ref8}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView8 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
@@ -265,14 +265,14 @@ export const ZaimChecker = () => {
               <motion.div
                 ref={ref9}
                 initial={{ opacity: 0, y: 50 }}
-                animate={inView9 ? { opacity: 1, y: 0 } : {}}
+                animate={inView18 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
                 className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
               >
                 <motion.div
                   ref={ref10}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView10 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
@@ -294,7 +294,7 @@ export const ZaimChecker = () => {
                 <motion.div
                   ref={ref12}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView12 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 1.1 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
@@ -316,7 +316,7 @@ export const ZaimChecker = () => {
                 <motion.div
                   ref={ref14}
                   initial={{ opacity: 0, scale: 0 }}
-                  animate={inView14 ? { opacity: 1, scale: 1 } : {}}
+                  animate={inView18 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 1.3 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
