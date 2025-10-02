@@ -360,6 +360,8 @@ a {
   --pos-725: clamp(0px, 50.35vw, 725px);
   --pos-740: clamp(0px, 51.39vw, 740px);
   --pos-786: clamp(0px, 54.58vw, 786px);
+  --pos-789: clamp(0px, 54.79vw, 789px);
+  --pos-1046: clamp(0px, 72.63vw, 1046px);
   --pos-1062: clamp(0px, 73.75vw, 1062px);
   --pos-7: clamp(0px, 0.49vw, 7px);
   --pos-13: clamp(0px, 0.9vw, 13px);

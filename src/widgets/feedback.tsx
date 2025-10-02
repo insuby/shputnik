@@ -137,13 +137,13 @@ export const Feedback = () => {
         </svg>
 
         <div className="relative flex flex-col items-start gap-7 xl:w-[696px]">
-          <div className="relative flex w-full flex-col items-start gap-4 self-stretch max-w-[70%]">
+          <div className="relative flex w-full max-w-[70%] flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
               initial={{ opacity: 0, x: 80 }}
               animate={inView1 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
+              className="relative mt-[-1.00px] max-w-[70%] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
             >
               {t('feedback.title')}
             </motion.div>
@@ -178,7 +178,7 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute left-[789px] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 lg:inline-flex"
+          className="absolute left-[var(--pos-789)] top-[65px] hidden flex-col  items-start justify-center gap-4 rounded-[32px_32px_0px_0px] bg-white p-7 lg:inline-flex"
         >
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
             <motion.div
@@ -373,7 +373,7 @@ export const Feedback = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView14 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute left-[1046px] top-[90px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
+          className="absolute left-[var(--pos-1046)] top-[90px] hidden flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4 lg:inline-flex"
         >
           <motion.div
             ref={ref15}
