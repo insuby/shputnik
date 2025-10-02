@@ -58,7 +58,7 @@ export const Development = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView16 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative w-full text-center lg:text-start text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-leftw-10/12"
+                  className="lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
                 >
                   {t('hero.subtitle')}
                 </motion.p>
@@ -71,53 +71,58 @@ export const Development = () => {
             src={vector}
           />
 
-          <div className="relative h-[280px] w-full scale-75 overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[727px] lg:top-[188px] lg:w-[464px] lg:scale-100">
-            <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
-              <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
+          <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center justify-center lg:left-0 lg:top-0 lg:translate-x-0">
+            <div className="relative flex items-center justify-center">
+              <div className="relative size-[var(--size-738)] scale-75 lg:absolute lg:left-[var(--pos-590)] lg:top-[var(--pos-minus-41)] lg:scale-100">
+                <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
+                  <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
-              <div className="absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
+                  <div className="absolute left-[178px] top-[178px] size-[380px] rounded-[190px] border-2 border-solid border-[#ffffff] opacity-[0.12]" />
 
-              <div className="absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
-            </div>
+                  <div className="absolute left-[221px] top-[536px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-red-40 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      {t('technologies.fintech')}
+                    </div>
+                  </div>
 
-            <div className="absolute left-0 top-12 flex w-full flex-col items-start lg:w-[464px]">
-              <img className="size-full" src={code} />
-            </div>
-          </div>
-        </div>
-        <div className="absolute left-[-190px] top-[190px] size-[738px] scale-50 lg:left-[590px] lg:top-[-41px] lg:scale-100">
-          <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
-            <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
+                  <div className="absolute left-[232px] top-32 inline-flex items-center justify-center gap-2 rounded-[100px] bg-green-60 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      {t('technologies.blockchain')}
+                    </div>
+                  </div>
 
-            <div className="absolute left-[178px] top-[178px] size-[380px] rounded-[190px] border-2 border-solid border-[#ffffff] opacity-[0.12]" />
+                  <div className="absolute left-[469px] top-[569px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-blue-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      {t('technologies.medtech')}
+                    </div>
+                  </div>
 
-            <div className="absolute left-[221px] top-[536px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-red-40 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                {t('technologies.fintech')}
+                  <div className="absolute left-[577px] top-[341px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-violet-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      {t('technologies.martech')}
+                    </div>
+                  </div>
+
+                  <div className="absolute left-[34px] top-[276px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-yellow-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      {t('technologies.enterprise')}
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
 
-            <div className="absolute left-[232px] top-32 inline-flex items-center justify-center gap-2 rounded-[100px] bg-green-60 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                {t('technologies.blockchain')}
-              </div>
-            </div>
+              <div className="left-1/2 top-[var(--pos-190)] h-[280px] w-full -translate-x-1/2 scale-75 overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[var(--pos-727)] lg:top-[var(--pos-188)] lg:w-[464px] lg:translate-x-0 lg:scale-100">
+                <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
+                  <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 
-            <div className="absolute left-[469px] top-[569px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-blue-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                {t('technologies.medtech')}
-              </div>
-            </div>
+                  <div className="absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
 
-            <div className="absolute left-[577px] top-[341px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-violet-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                {t('technologies.martech')}
-              </div>
-            </div>
+                  <div className="absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
+                </div>
 
-            <div className="absolute left-[34px] top-[276px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-yellow-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
-                {t('technologies.enterprise')}
+                <div className="absolute left-0 top-12 flex w-full flex-col items-start lg:w-[464px]">
+                  <img className="size-full" src={code} />
+                </div>
               </div>
             </div>
           </div>
@@ -614,7 +619,7 @@ export const Development = () => {
                   </svg>
 
                   <div className="relative w-[382px] flex-1 grow self-stretch">
-                    <div className="relative -top-12 left-[-72px] w-full lg:-left-12 lg:w-[443px]">
+                    <div className="relative -top-12 w-full lg:-left-12 lg:w-[443px]">
                       <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg
                           width="44"
@@ -995,7 +1000,7 @@ export const Development = () => {
                       viewBox="0 0 144 144"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[179px] top-1 size-36"
+                      className="absolute left-[179px] top-1"
                     >
                       <rect width="144" height="144" rx="24" fill="white" />
                       <path

@@ -16,15 +16,15 @@ export const Technoligies = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]">
-        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
           {t('technologies.title')}
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 rounded-3xl xl:w-[1376px] ">
-        <div className="w-full xl:w-1/2">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 rounded-3xl ">
+        <div className="w-full lg:w-1/2">
           <Slider
             ref={sliderRef}
             dots={false}
@@ -35,9 +35,9 @@ export const Technoligies = () => {
             arrows={false}
             afterChange={(current) => setCurrentSlideIndex(current)}
           >
-            <div className="px-7 xl:px-3">
+            <div className="px-7 lg:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Figma
                   </div>
@@ -46,7 +46,7 @@ export const Technoligies = () => {
                     {t('technologies.figma.description')}
                   </p>
                 </div>
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React.js
                   </div>
@@ -55,7 +55,7 @@ export const Technoligies = () => {
                     {t('technologies.react.description')}
                   </p>
                 </div>
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     React Native
                   </div>
@@ -67,9 +67,9 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="px-7 xl:px-3">
+            <div className="px-7 lg:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Java
                   </div>
@@ -78,7 +78,7 @@ export const Technoligies = () => {
                     {t('technologies.java.description')}
                   </p>
                 </div>
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Python
                   </div>
@@ -90,9 +90,9 @@ export const Technoligies = () => {
               </div>
             </div>
 
-            <div className="px-7 xl:px-3">
+            <div className="px-7 lg:px-3">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     Blockchain / Web3
                   </div>
@@ -101,7 +101,7 @@ export const Technoligies = () => {
                     {t('technologies.blockchainTech.description')}
                   </p>
                 </div>
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 xl:w-[560px]">
+                <div className="lg::w-[560px] relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3">
                   <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('technologies.crypto.title')}
                   </div>
@@ -194,8 +194,7 @@ export const Technoligies = () => {
           viewBox="0 0 676 648"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="relative hidden flex-1 grow self-stretch xl:flex"
-          alt="Frame"
+          className="lg:flex relative hidden flex-1 grow self-stretch"
         >
           <g clipPath="url(#clip0_9535_12876)">
             <rect width="676" height="648" rx="32" fill="#F9FAFD" />
