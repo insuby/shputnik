@@ -148,100 +148,101 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               </defs>
             </svg>
 
-            <svg
-              width="580"
-              height="222"
-              viewBox="0 0 580 222"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="relative left-0 mt-[-11.00px] h-[222px] w-full scale-150 self-stretch xl:scale-100"
-              alt="Frame"
-            >
-              <circle
-                opacity="0.8"
-                cx="290"
-                cy="111"
-                r="64"
-                stroke="white"
-                strokeWidth="2"
-              />
-              <circle
-                opacity="0.8"
-                cx="290"
-                cy="111"
-                r="22"
-                stroke="white"
-                strokeWidth="2"
-              />
-              <circle
-                opacity="0.4"
-                cx="290"
-                cy="111"
-                r="110"
-                stroke="white"
-                strokeWidth="2"
-              />
-              <circle cx="185" cy="74" r="24" fill="white" />
-              <path
-                d="M185 77.25C188.59 77.25 191.5 74.3399 191.5 70.75C191.5 67.1601 188.59 64.25 185 64.25C181.41 64.25 178.5 67.1601 178.5 70.75C178.5 74.3399 181.41 77.25 185 77.25Z"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M175.25 82.9375C177.217 79.5382 180.79 77.25 185 77.25C189.21 77.25 192.783 79.5382 194.75 82.9375"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <circle cx="259" cy="175" r="24" fill="white" />
-              <path
-                d="M259 178.25C262.59 178.25 265.5 175.34 265.5 171.75C265.5 168.16 262.59 165.25 259 165.25C255.41 165.25 252.5 168.16 252.5 171.75C252.5 175.34 255.41 178.25 259 178.25Z"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M249.25 183.938C251.217 180.538 254.79 178.25 259 178.25C263.21 178.25 266.783 180.538 268.75 183.938"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <circle cx="307" cy="94" r="24" fill="#3573FC" />
-              <path
-                d="M307 97.25C310.59 97.25 313.5 94.3399 313.5 90.75C313.5 87.1601 310.59 84.25 307 84.25C303.41 84.25 300.5 87.1601 300.5 90.75C300.5 94.3399 303.41 97.25 307 97.25Z"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M297.25 102.938C299.217 99.5382 302.79 97.25 307 97.25C311.21 97.25 314.783 99.5382 316.75 102.938"
-                stroke="white"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <circle cx="383" cy="46" r="24" fill="white" />
-              <path
-                d="M383 49.25C386.59 49.25 389.5 46.3399 389.5 42.75C389.5 39.1601 386.59 36.25 383 36.25C379.41 36.25 376.5 39.1601 376.5 42.75C376.5 46.3399 379.41 49.25 383 49.25Z"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M373.25 54.9375C375.217 51.5382 378.79 49.25 383 49.25C387.21 49.25 390.783 51.5382 392.75 54.9375"
-                stroke="#9FA7BC"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <div className="h-[400px] relative lg:h-auto">
+              <svg
+                width="580"
+                height="222"
+                viewBox="0 0 580 222"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="relative m-auto size-full left-0 mt-[-11.00px] h-[222px] w-full scale-150 self-stretch xl:scale-100"
+              >
+                <circle
+                  opacity="0.8"
+                  cx="290"
+                  cy="111"
+                  r="64"
+                  stroke="white"
+                  strokeWidth="2"
+                />
+                <circle
+                  opacity="0.8"
+                  cx="290"
+                  cy="111"
+                  r="22"
+                  stroke="white"
+                  strokeWidth="2"
+                />
+                <circle
+                  opacity="0.4"
+                  cx="290"
+                  cy="111"
+                  r="110"
+                  stroke="white"
+                  strokeWidth="2"
+                />
+                <circle cx="185" cy="74" r="24" fill="white" />
+                <path
+                  d="M185 77.25C188.59 77.25 191.5 74.3399 191.5 70.75C191.5 67.1601 188.59 64.25 185 64.25C181.41 64.25 178.5 67.1601 178.5 70.75C178.5 74.3399 181.41 77.25 185 77.25Z"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M175.25 82.9375C177.217 79.5382 180.79 77.25 185 77.25C189.21 77.25 192.783 79.5382 194.75 82.9375"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="259" cy="175" r="24" fill="white" />
+                <path
+                  d="M259 178.25C262.59 178.25 265.5 175.34 265.5 171.75C265.5 168.16 262.59 165.25 259 165.25C255.41 165.25 252.5 168.16 252.5 171.75C252.5 175.34 255.41 178.25 259 178.25Z"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M249.25 183.938C251.217 180.538 254.79 178.25 259 178.25C263.21 178.25 266.783 180.538 268.75 183.938"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="307" cy="94" r="24" fill="#3573FC" />
+                <path
+                  d="M307 97.25C310.59 97.25 313.5 94.3399 313.5 90.75C313.5 87.1601 310.59 84.25 307 84.25C303.41 84.25 300.5 87.1601 300.5 90.75C300.5 94.3399 303.41 97.25 307 97.25Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M297.25 102.938C299.217 99.5382 302.79 97.25 307 97.25C311.21 97.25 314.783 99.5382 316.75 102.938"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <circle cx="383" cy="46" r="24" fill="white" />
+                <path
+                  d="M383 49.25C386.59 49.25 389.5 46.3399 389.5 42.75C389.5 39.1601 386.59 36.25 383 36.25C379.41 36.25 376.5 39.1601 376.5 42.75C376.5 46.3399 379.41 49.25 383 49.25Z"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M373.25 54.9375C375.217 51.5382 378.79 49.25 383 49.25C387.21 49.25 390.783 51.5382 392.75 54.9375"
+                  stroke="#9FA7BC"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
 
             <motion.div
               ref={ref8}
@@ -295,7 +296,8 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                       <Check10 className="!relative !h-4 !w-4" color={color} />
                     </motion.div>
 
-                    <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                    <div
+                      className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       {t('employeeWork.roles.creditManager')}
                     </div>
                   </motion.div>

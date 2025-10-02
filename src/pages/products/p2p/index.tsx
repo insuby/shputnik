@@ -70,7 +70,7 @@ export const P2P = () => {
             viewBox="0 0 1688 1367"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
+            className="absolute left-[var(--pos-441)] top-[var(--pos-minus-140)] h-[1060px] w-full xl:w-[1108px]"
           >
             <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
               <path
@@ -134,7 +134,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="top-[78px] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 xl:absolute xl:left-[802px] xl:w-[304px]"
+            className="top-[var(--pos-78)] flex w-full flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-50 xl:absolute xl:left-[var(--pos-802)] xl:w-[304px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
               <svg
@@ -426,7 +426,7 @@ export const P2P = () => {
             viewBox="0 0 675 745"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[739px] top-[46px] h-[554px] w-full xl:w-[637px]"
+            className="absolute left-[var(--pos-739)] top-[var(--pos-46)] h-[554px] w-full xl:w-[637px]"
             aria-hidden={true}
           >
             <g opacity="0.32" filter="url(#filter0_f_9267_13714)">
@@ -465,7 +465,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[100px] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 xl:left-[1000px] xl:top-[228px]"
+            className="absolute left-[var(--pos-100)] top-[800px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7 xl:left-[var(--pos-1000)] xl:top-[var(--pos-228)]"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[180px]">
@@ -1304,7 +1304,7 @@ export const P2P = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
+        <div className="absolute left-[var(--pos-725)] top-[var(--pos-542)] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
           <button
             aria-controls="p2p-slider"
             aria-label={t('navigation.previousSlide')}
@@ -2250,7 +2250,7 @@ export const P2P = () => {
           viewBox="0 0 1435 1361"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[386px] top-[15px] h-[1060px] w-full xl:w-[1204px]"
+          className="absolute left-[var(--pos-386)] top-[var(--pos-15)] h-[1060px] w-full xl:w-[1204px]"
         >
           <g opacity="0.12" filter="url(#filter0_f_9267_12444)">
             <path
@@ -2493,7 +2493,7 @@ export const P2P = () => {
           initial={{ opacity: 0, scale: 0 }}
           animate={inView20 ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-          className="absolute left-[810px] top-[102px] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 xl:w-[324px]"
+          className="absolute left-[var(--pos-810)] top-[var(--pos-102)] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 xl:w-[324px]"
         >
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -2651,7 +2651,7 @@ export const P2P = () => {
           viewBox="0 0 1037 1134"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[571px] top-0 h-[656px] w-full xl:w-[805px]"
+          className="absolute left-[var(--pos-571)] top-0 h-[656px] w-full xl:w-[805px]"
           aria-hidden={true}
         >
           <g opacity="0.24" filter="url(#filter0_f_9267_13819)">
@@ -2689,7 +2689,7 @@ export const P2P = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView20 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.25 }}
-          className="absolute left-[1054px] top-[165px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
+          className="absolute left-[var(--pos-1054)] top-[var(--pos-165)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
         >
           <Graph sum="122,000" />
 

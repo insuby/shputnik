@@ -92,7 +92,7 @@ export const Fdata = () => {
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
+            className="absolute -top-16 left-[var(--pos-430)] h-[842px] w-full xl:w-[954px]"
           >
             <g opacity="0.3" filter="url(#filter0_f_9604_10514)">
               <path
@@ -153,7 +153,7 @@ export const Fdata = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
+            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full xl:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9604_10535)">
@@ -192,7 +192,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="left-[704px] top-[208px] flex w-fit items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 xl:absolute xl:w-[576px]"
+            className="left-[var(--pos-704)] top-[var(--pos-208)] flex w-fit items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 xl:absolute xl:w-[576px]"
           >
             <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 xl:w-auto">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
@@ -428,7 +428,7 @@ export const Fdata = () => {
             viewBox="0 0 743 629"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[775px] top-[172px] h-[464px] w-full xl:w-[601px]"
+            className="absolute left-[var(--pos-775)] top-[var(--pos-172)] h-[464px] w-full xl:w-[601px]"
           >
             <g opacity="0.32" filter="url(#filter0_f_9608_11091)">
               <path
@@ -466,7 +466,7 @@ export const Fdata = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute left-[960px] top-[404px] flex w-full items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 xl:w-[368px]"
+            className="absolute left-[var(--pos-960)] top-[var(--pos-404)] flex w-full items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 xl:w-[368px]"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
@@ -593,7 +593,7 @@ export const Fdata = () => {
             viewBox="0 0 642 519"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[980px] top-[454px] h-[401px] w-full xl:w-[410px]"
+            className="absolute left-[var(--pos-980)] top-[var(--pos-454)] h-[401px] w-full xl:w-[410px]"
           >
             <g opacity="0.24" filter="url(#filter0_f_9608_11095)">
               <path
@@ -1233,7 +1233,7 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
+        <div className="absolute left-[var(--pos-725)] top-[var(--pos-542)] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
           <button
             aria-controls="fdata-slider"
             aria-label={t('details.navigation.previousSlide')}

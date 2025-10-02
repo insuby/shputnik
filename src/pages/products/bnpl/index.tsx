@@ -8,7 +8,7 @@ import {
   RoleStructure,
   Trust,
   Zaim,
-  useFeedbackForm,
+  useFeedbackForm, SocialParameters,
 } from 'widgets';
 
 import { useRef } from 'react';
@@ -105,7 +105,7 @@ export const BNPL = () => {
       className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8"
     >
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex h-[1060px] w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12">
+        <div className="relative flex w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12">
           <svg
             width="1688"
             height="1367"
@@ -176,7 +176,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="left-[968px] top-[168px] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 lg:absolute"
+            className="left-[var(--pos-968)] top-[var(--pos-168)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 lg:absolute"
           >
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
               <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[264px]">
@@ -313,9 +313,9 @@ export const BNPL = () => {
           <motion.div
             ref={ref4}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView4 ? { opacity: isMobile ? 0.6 : 1, x: 0 } : {}}
+            animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-2 top-[730px] inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 lg:left-[800px] lg:top-[286px]"
+            className="absolute bottom-0 mt-auto inline-flex h-[340px] flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 left-[var(--pos-800)] lg:top-[var(--pos-286)]"
           >
             <div className="relative size-[212px] rounded-[100px]">
               <div className="relative left-[7px] top-[7px] size-[198px]">
@@ -645,7 +645,7 @@ export const BNPL = () => {
       </motion.div>
 
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
-        <div className="relative hidden w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6 lg:flex lg:w-[676px]">
+        <div className="relative hidden w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6 lg:flex xl:w-[676px]">
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
             <div className="relative flex flex-1 grow items-start gap-3">
               <motion.div
@@ -779,7 +779,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView17 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]"
+          className="relative flex w-full grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px] xl:flex-1"
         >
           <div className="relative -mt-20 inline-flex flex-[0_0_auto] flex-col items-start gap-4 lg:mt-0">
             <motion.div
@@ -849,9 +849,9 @@ export const BNPL = () => {
             <motion.div
               ref={ref34}
               initial={{ opacity: 0, scale: 0 }}
-              animate={inView34 ? { opacity: 1, scale: 1 } : {}}
+              animate={inView24 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-              className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4"
+              className="relative mx-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4"
             >
               <svg
                 width="28"
@@ -1079,9 +1079,9 @@ export const BNPL = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView33 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative left-[-20px] mr-[-108.00px] flex h-[538px] w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:left-0 lg:w-[871px]"
+          className="relative mr-[-108.00px] flex w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:left-0 lg:w-[871px]"
         >
-          <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+          <div className="relative flex w-[242px] max-w-[850px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
             <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               <span className="text-[#1c222f]">{t('app.title')}</span>
 
@@ -1485,6 +1485,7 @@ export const BNPL = () => {
         </div>
       </div>
 
+      <SocialParameters/>
       <EmployeeWork />
       <RoleStructure />
       <Trust />

@@ -45,7 +45,7 @@ export const Autocredit = () => {
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[430px] h-[842px] w-full xl:w-[954px]"
+            className="absolute -top-16 left-[var(--pos-430)] h-[842px] w-full xl:w-[954px]"
             aria-hidden={true}
           >
             <g opacity="0.3" filter="url(#filter0_f_9245_977)">
@@ -110,7 +110,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute left-[704px] top-[154px] hidden items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:inline-flex"
+            className="absolute left-[var(--pos-704)] top-[var(--pos-154)] hidden items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:inline-flex"
           >
             <div className="relative mt-2 flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] xl:w-[393.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -558,7 +558,7 @@ export const Autocredit = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
+            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full xl:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9245_2387)">

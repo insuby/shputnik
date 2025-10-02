@@ -81,7 +81,7 @@ export const IslamFinance = () => {
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[539px] top-12 h-[842px] w-full xl:w-[954px]"
+            className="absolute left-[var(--pos-539)] top-12 h-[842px] w-full xl:w-[954px]"
           >
             <g opacity="0.3" filter="url(#filter0_f_9267_4629)">
               <path
@@ -157,7 +157,7 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="left-[745px] top-[136px] flex h-[538px] w-fit items-center overflow-hidden rounded-3xl bg-[#f6f8fd] xl:absolute xl:w-[871px]"
+            className="left-[var(--pos-745)] top-[var(--pos-136)] flex h-[538px] w-fit items-center overflow-hidden rounded-3xl bg-[#f6f8fd] xl:absolute xl:w-[871px]"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -787,7 +787,7 @@ export const IslamFinance = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
+            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full xl:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9267_9435)">

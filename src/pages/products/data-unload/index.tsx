@@ -109,7 +109,7 @@ export const Dataunload = () => {
             viewBox="0 0 1077 1131"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[441px] top-[-140px] h-[1060px] w-full xl:w-[1108px]"
+            className="absolute left-[var(--pos-441)] top-[var(--pos-minus-140)] h-[1060px] w-full xl:w-[1108px]"
           >
             <g opacity="0.32" filter="url(#filter0_f_9017_4482)">
               <path
@@ -164,14 +164,14 @@ export const Dataunload = () => {
             </motion.div>
           </HeroButtons>
 
-          <div className="left-[768px] h-[292px] w-full xl:absolute xl:top-20 xl:h-[462px] xl:w-[540px]">
+          <div className="left-[var(--pos-768)] h-[292px] w-full xl:absolute xl:top-20 xl:h-[462px] xl:w-[540px]">
             <div className="relative left-[-33px] top-[-65px] h-[527px] w-full xl:w-[606px]">
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, x: -150 }}
                 animate={inView3 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute left-[31px] flex w-full items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 xl:top-[152px] xl:w-[372px]"
+                className="absolute left-[var(--pos-31)] flex w-full items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 xl:top-[var(--pos-152)] xl:w-[372px]"
               >
                 <svg
                   width="64"
@@ -253,7 +253,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, y: -150 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="absolute left-12 top-[80px] flex w-full items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-7 xl:left-[173px] xl:top-[239px] xl:w-[400px]"
+                className="absolute left-12 top-[var(--pos-80)] flex w-full items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-7 xl:left-[var(--pos-173)] xl:top-[var(--pos-239)] xl:w-[400px]"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">

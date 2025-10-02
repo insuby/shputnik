@@ -11,3 +11,4 @@ export { Trust } from './trust';
 export { Zaim } from './zaim';
 export { ZaimChecker } from './zain-checker';
 export { ScrollToTop } from './scroll-to-top';
+export { SocialParameters } from './social-parameters.tsx';
