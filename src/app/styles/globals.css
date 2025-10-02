@@ -32,6 +32,8 @@ html,
 body {
   margin: 0;
   height: 100%;
+
+  overflow-x: hidden;
 }
 
 #app {
@@ -347,18 +349,29 @@ a {
   --pos-22: clamp(0px, 1.53vw, 22px);
   --pos-27: clamp(0px, 1.88vw, 27px);
   --pos-42: clamp(0px, 2.92vw, 42px);
+  --pos-45: clamp(0px, 3.13vw, 45px);
   --pos-55: clamp(0px, 3.82vw, 55px);
   --pos-77: clamp(0px, 5.35vw, 77px);
+  --pos-83: clamp(0px, 5.76vw, 83px);
+  --pos-91: clamp(0px, 6.32vw, 91px);
   --pos-101: clamp(0px, 7.01vw, 101px);
+  --pos-108: clamp(0px, 7.5vw, 108px);
   --pos-119: clamp(0px, 8.26vw, 119px);
   --pos-130: clamp(0px, 9.03vw, 130px);
   --pos-132: clamp(0px, 9.17vw, 132px);
+  --pos-139: clamp(0px, 9.65vw, 139px);
+  --pos-148: clamp(0px, 10.28vw, 148px);
+  --pos-158: clamp(0px, 10.97vw, 158px);
+  --pos-213: clamp(0px, 14.79vw, 213px);
   --pos-242: clamp(0px, 16.81vw, 242px);
+  --pos-272: clamp(0px, 18.89vw, 272px);
+  --pos-300: clamp(0px, 20.83vw, 300px);
   --pos-441: clamp(0px, 30.63vw, 441px);
   --pos-559: clamp(0px, 38.82vw, 559px);
   --pos-592: clamp(0px, 41.11vw, 592px);
   --pos-725: clamp(0px, 50.35vw, 725px);
   --pos-740: clamp(0px, 51.39vw, 740px);
+  --pos-745: clamp(0px, 51.74vw, 745px);
   --pos-786: clamp(0px, 54.58vw, 786px);
   --pos-789: clamp(0px, 54.79vw, 789px);
   --pos-1046: clamp(0px, 72.63vw, 1046px);
@@ -456,20 +469,25 @@ a {
   --size-401: clamp(300px, 27.85vw, 401px);
   --size-415: clamp(310px, 28.82vw, 415px);
   --size-416: clamp(310px, 28.89vw, 416px);
+  --size-443: clamp(330px, 30.76vw, 443px);
   --size-446: clamp(335px, 30.97vw, 446px);
   --size-458: clamp(345px, 31.81vw, 458px);
   --size-472: clamp(355px, 32.78vw, 472px);
+  --size-494: clamp(370px, 34.31vw, 494px);
 
   /* Адаптивные размеры большие (500px+) */
   --size-520: clamp(400px, 36.11vw, 520px);
+  --size-540: clamp(400px, 37.5vw, 540px);
   --size-543: clamp(400px, 37.71vw, 543px);
   --size-548: clamp(400px, 38.06vw, 548px);
   --size-560: clamp(400px, 38.89vw, 560px);
   --size-571: clamp(400px, 39.65vw, 571px);
+  --size-583: clamp(430px, 40.49vw, 583px);
   --size-590: clamp(450px, 40.97vw, 590px);
   --size-600: clamp(450px, 41.67vw, 600px);
   --size-611: clamp(450px, 42.43vw, 611px);
   --size-629: clamp(450px, 43.68vw, 629px);
+  --size-631: clamp(455px, 43.82vw, 631px);
   --size-660: clamp(500px, 45.83vw, 660px);
   --size-678: clamp(500px, 47.08vw, 678px);
   --size-682: clamp(500px, 47.36vw, 682px);

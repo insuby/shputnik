@@ -194,7 +194,7 @@ export const BankCredit = () => {
 
           <motion.div
             variants={slideInRight}
-            className="relative left-0 top-[45px] flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] xl:absolute xl:left-[720px] xl:top-[205px] xl:w-[669px]"
+            className="relative left-0 top-[45px] hidden items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] xl:absolute xl:left-[720px] xl:top-[205px] xl:flex xl:w-full"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -751,6 +751,569 @@ export const BankCredit = () => {
               </div>
             </div>
           </motion.div>
+
+          <div className="relative h-[349px] xl:hidden"></div>
+          <div className="absolute bottom-0 w-full xl:hidden">
+            <motion.div
+              variants={slideInRight}
+              className="relative !right-0 max-w-[669px] top-[45px] flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd]"
+            >
+              <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+                <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <span className="text-[#1c222f]">{t('bank.title')}</span>
+                  <span className="text-[#3573fc]">
+                    {t('bank.titleHighlight')}
+                  </span>
+                </p>
+
+                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
+                    <div className="relative size-5 bg-[100%_100%]">
+                      <svg
+                        width="15"
+                        height="16"
+                        viewBox="0 0 15 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4w-full absolute left-[3px] top-0.5 xl:w-[15px]"
+                      >
+                        <path
+                          d="M5.61863 15.0263V10.0094H9.38137V15.0263H14.3984V7.50086C14.3984 7.41848 14.3823 7.3369 14.3508 7.26077C14.3193 7.18464 14.2731 7.11545 14.2149 7.05717L7.94369 0.78594C7.88545 0.727633 7.81628 0.681377 7.74015 0.649817C7.66402 0.618258 7.58241 0.602014 7.5 0.602014C7.41759 0.602014 7.33598 0.618258 7.25985 0.649817C7.18372 0.681377 7.11455 0.727633 7.05631 0.78594L0.78508 7.05717C0.726861 7.11545 0.680696 7.18464 0.649222 7.26077C0.617748 7.3369 0.601582 7.41848 0.601646 7.50086V15.0263H5.61863Z"
+                          stroke="white"
+                          strokeWidth="1.2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                      {t('bank.main')}
+                    </div>
+                  </div>
+
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                    <div className="relative size-5">
+                      <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                        <svg
+                          width="7"
+                          height="7"
+                          viewBox="0 0 7 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-1.5 top-[3px] size-1.5"
+                        >
+                          <path
+                            d="M3.49959 6.3226C5.05847 6.3226 6.32219 5.05888 6.32219 3.5C6.32219 1.94112 5.05847 0.677397 3.49959 0.677397C1.94071 0.677397 0.676984 1.94112 0.676984 3.5C0.676984 5.05888 1.94071 6.3226 3.49959 6.3226Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="19"
+                          height="12"
+                          viewBox="0 0 19 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-0 h-[11px] w-full xl:w-[19px]"
+                        >
+                          <path
+                            d="M18.3907 0.609626H0.609254V10.7705H18.3907V0.609626Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="5"
+                          height="5"
+                          viewBox="0 0 5 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-3.5 top-0 size-1"
+                        >
+                          <path
+                            d="M4.30571 4.30628C3.40319 4.15331 2.5706 3.7234 1.92332 3.07612C1.27604 2.42884 0.846126 1.59624 0.693159 0.693723"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="5"
+                          height="5"
+                          viewBox="0 0 5 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-3.5 top-[7px] size-1"
+                        >
+                          <path
+                            d="M0.693159 4.30628C0.846126 3.40376 1.27604 2.57116 1.92332 1.92388C2.5706 1.2766 3.40319 0.846691 4.30571 0.693723"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="5"
+                          height="5"
+                          viewBox="0 0 5 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-[7px] size-1"
+                        >
+                          <path
+                            d="M0.693159 0.693723C1.59568 0.846691 2.42827 1.2766 3.07555 1.92388C3.72283 2.57116 4.15274 3.40376 4.30571 4.30628"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="5"
+                          height="5"
+                          viewBox="0 0 5 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-0 size-1"
+                        >
+                          <path
+                            d="M4.30571 0.693723C4.15274 1.59624 3.72283 2.42884 3.07555 3.07612C2.42827 3.7234 1.59568 4.15331 0.693159 4.30628"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      {t('navigation.finance')}
+                    </div>
+                  </div>
+
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                    <div className="relative size-5">
+                      <div className="h-3w-full relative left-px top-1 bg-gray-100 bg-[100%_100%] xl:w-[17px]">
+                        <svg
+                          width="7"
+                          height="2"
+                          viewBox="0 0 7 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-[11px] top-[9px] h-px w-1"
+                        >
+                          <path
+                            d="M0.677064 0.677477H6.32294"
+                            stroke="white"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="3"
+                          height="2"
+                          viewBox="0 0 3 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-2 top-[9px] h-px w-0.5"
+                        >
+                          <path
+                            d="M0.73445 0.734898H2.26555"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="18"
+                          height="2"
+                          viewBox="0 0 18 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-pxw-full absolute left-0 top-[3px] xl:w-[17px]"
+                        >
+                          <path
+                            d="M0.618536 0.618914H17.3815"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      {t('navigation.creditCards')}
+                    </div>
+                  </div>
+
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                    <div className="relative size-5">
+                      <div className="relative left-0.5 top-0.5 size-4">
+                        <svg
+                          width="2"
+                          height="6"
+                          viewBox="0 0 2 6"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-2 top-[11px] h-1.5 w-px"
+                        >
+                          <path
+                            d="M0.645325 0.645719V5.35428"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-0 size-4"
+                        >
+                          <path
+                            d="M1.68366 4.56479C0.817411 6.06517 0.470437 7.80946 0.696547 9.52714C0.922657 11.2448 1.70922 12.8399 2.93424 14.065C4.15926 15.2901 5.75429 16.0767 7.47195 16.303C9.18962 16.5292 10.9339 16.1823 12.4344 15.3161C13.9348 14.45 15.1075 13.1129 15.7706 11.5124C16.4338 9.91181 16.5502 8.13716 16.102 6.46365C15.6537 4.79015 14.6658 3.31131 13.2914 2.25649C11.9171 1.20167 10.233 0.629812 8.50054 0.629604V5.22065C9.2224 5.22081 9.92404 5.45915 10.4966 5.8987C11.0692 6.33825 11.4808 6.95446 11.6675 7.65175C11.8542 8.34904 11.8057 9.08846 11.5293 9.75533C11.253 10.4222 10.7643 10.9793 10.1391 11.3401C9.51396 11.701 8.78717 11.8455 8.0715 11.7512C7.35582 11.6569 6.69125 11.3291 6.18085 10.8187C5.67044 10.3082 5.34273 9.6436 5.24853 8.92791C5.15433 8.21223 5.2989 7.48546 5.65983 6.86031L1.68366 4.56479Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="6"
+                          height="3"
+                          viewBox="0 0 6 3"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-0.5w-full absolute left-0 top-2 xl:w-[5px]"
+                        >
+                          <path
+                            d="M5.33693 0.663674L0.663067 1.91551"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      {t('navigation.reports')}
+                    </div>
+                  </div>
+
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                    <div className="relative size-5">
+                      <div className="relative left-0.5 top-0.5 h-[15px] w-4">
+                        <svg
+                          width="18"
+                          height="13"
+                          viewBox="0 0 18 13"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-0.5 h-3 w-4"
+                        >
+                          <path
+                            d="M16.7367 0.618914H1.26326C0.90719 0.618914 0.618536 0.907568 0.618536 1.26364V11.5793C0.618536 11.9354 0.90719 12.224 1.26326 12.224H16.7367C17.0928 12.224 17.3815 11.9354 17.3815 11.5793V1.26364C17.3815 0.907568 17.0928 0.618914 16.7367 0.618914Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="8"
+                          height="4"
+                          viewBox="0 0 8 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-1w-full absolute left-1 top-0 xl:w-[7px]"
+                        >
+                          <path
+                            d="M7.35606 3.32918V1.98676C7.35606 1.63073 7.21462 1.28928 6.96287 1.03752C6.71112 0.78577 6.36967 0.644337 6.01363 0.644337H1.98637C1.63033 0.644337 1.28888 0.78577 1.03713 1.03752C0.785377 1.28928 0.643943 1.63073 0.643943 1.98676V3.32918"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="17"
+                          height="4"
+                          viewBox="0 0 17 4"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-[7px] h-[3px] w-4"
+                        >
+                          <path
+                            d="M16.3707 0.629762C13.9788 2.0137 11.2634 2.74036 8.5 2.73601C5.73667 2.74041 3.02132 2.01406 0.62925 0.630583"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="7"
+                          height="2"
+                          viewBox="0 0 7 2"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-1.5 top-1.5 h-px w-1"
+                        >
+                          <path
+                            d="M0.677064 0.677477H6.32294"
+                            stroke="white"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      {t('navigation.business')}
+                    </div>
+                  </div>
+
+                  <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                    <div className="relative size-5">
+                      <div className="relative left-0.5 top-px h-[17px] w-4">
+                        <svg
+                          width="7"
+                          height="7"
+                          viewBox="0 0 7 7"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-1 top-[5px] size-[7px]"
+                        >
+                          <path
+                            d="M3.49959 6.3226C5.05847 6.3226 6.32219 5.05888 6.32219 3.5C6.32219 1.94112 5.05847 0.677397 3.49959 0.677397C1.94071 0.677397 0.676984 1.94112 0.676984 3.5C0.676984 5.05888 1.94071 6.3226 3.49959 6.3226Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+
+                        <svg
+                          width="17"
+                          height="18"
+                          viewBox="0 0 17 18"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="absolute left-0 top-0 h-[17px] w-4"
+                        >
+                          <path
+                            d="M15.7572 13.4189L8.66498 17.3019C8.57009 17.3538 8.46367 17.381 8.35551 17.381C8.24734 17.381 8.14092 17.3538 8.04603 17.3019L0.953821 13.4189C0.852551 13.3635 0.768015 13.2819 0.70904 13.1827C0.650065 13.0834 0.618815 12.9702 0.618553 12.8547V5.1452C0.618815 5.02976 0.650065 4.91651 0.70904 4.81727C0.768015 4.71804 0.852551 4.63645 0.953821 4.58104L8.04603 0.698062C8.14092 0.646143 8.24734 0.618931 8.35551 0.618931C8.46367 0.618931 8.57009 0.646143 8.66498 0.698062L15.7572 4.58104C15.8585 4.63645 15.943 4.71804 16.002 4.81727C16.0609 4.91651 16.0922 5.02976 16.0925 5.1452V12.8531C16.0925 12.9688 16.0614 13.0824 16.0024 13.182C15.9434 13.2815 15.8587 13.3634 15.7572 13.4189Z"
+                            stroke="#55607A"
+                            strokeWidth="1.2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      {t('navigation.settings')}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch overflow-hidden p-6">
+                <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
+                  <div className="relative size-12 rounded-3xl [background:url(/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
+
+                  <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
+                    <span className="leading-6 text-[#9ea7bb]">
+                      {t('user.greeting')}
+                    </span>
+                    <span className="leading-6 text-[#1c222f]">
+                      {' '}
+                      {t('user.name')}
+                    </span>
+                  </p>
+                </div>
+
+                <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] xl:w-[429px]">
+                  <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
+                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          {t('offers.recommended')}
+                        </div>
+                      </div>
+
+                      <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
+                        <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                          <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            {t('metrics.rate')}
+                          </div>
+
+                          <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            187, 000 ₽
+                          </div>
+                        </div>
+
+                        <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                          <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            {t('metrics.earnings')}
+                          </div>
+
+                          <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            2, 560, 000 ₽
+                          </div>
+                        </div>
+
+                        <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                          <div className="relative mt-[-0.75px] self-stretch text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            {t('metrics.payback')}
+                          </div>
+
+                          <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                            {t('metrics.paybackPeriod')}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                    <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
+                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          {t('metrics.expenses')}
+                        </div>
+                      </div>
+
+                      <div className="relative flex h-40 w-full items-end justify-between self-stretch">
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[19px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[86px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            01
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-4 w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[67px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            02
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[29px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[95px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            03
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[29px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-12 w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            04
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[43px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[67px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            05
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[29px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[87px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            06
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[18px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[67px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            07
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[21px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[93px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            08
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[29px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-[67px] w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            09
+                          </div>
+                        </div>
+                        <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-end gap-2 self-stretch">
+                          <div className="relative flex w-2 flex-1 grow flex-col items-start justify-end gap-0.5 overflow-hidden rounded-[100px] bg-gray-10">
+                            <div className="relative h-[52px] w-full self-stretch rounded-[100px] bg-blue-30"></div>
+                            <div className="relative h-11 w-full self-stretch rounded-[100px] bg-blue-50"></div>
+                          </div>
+                          <div className="relative w-4 text-center text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                            10
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </div>
 
