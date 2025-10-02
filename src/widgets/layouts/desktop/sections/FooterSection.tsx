@@ -6,7 +6,7 @@ import { RoutesPath } from 'shared/routes-path.tsx';
 export const FooterSection = () => {
   const { t } = useTranslation(['footer', 'nav']);
   return (
-    <footer className="relative mx-auto mb-4 flex w-[calc(100%-32px)] flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 xl:mt-[136px] xl:p-12">
+    <footer className="relative mx-auto mb-4 flex w-[calc(100%-32px)] flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 lg:mt-[136px] xl:p-12">
       <nav
         aria-label={t('software', { ns: 'footer' })}
         className="relative flex w-full flex-[0_0_auto] items-start justify-around gap-7 self-stretch xl:gap-12"

@@ -80,14 +80,14 @@ export const Integrations = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={inView3 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-        className="relative flex flex-1 grow flex-col items-start gap-12 opacity-50"
+        className="w-full relative flex flex-1 grow flex-col items-start gap-12 opacity-50 mx-auto"
       >
         <motion.div
           ref={ref4}
           initial={{ opacity: 0, x: -80 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[31px] w-[145px]"
@@ -116,7 +116,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView5 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[30px] w-[144px]"
@@ -140,7 +140,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: -80 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[44px] w-[191px]"
@@ -164,7 +164,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[48px] w-[115px]"
@@ -193,7 +193,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: -80 }}
           animate={inView8 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[39px] w-[80px]"
@@ -217,7 +217,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView9 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[16px] w-[120px]"
@@ -246,7 +246,7 @@ export const Integrations = () => {
           initial={{ opacity: 0, x: -80 }}
           animate={inView10 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-          className="relative flex w-full items-center justify-between gap-8 self-stretch"
+          className="relative flex w-full flex-wrap items-center justify-around gap-8 self-stretch"
         >
           <img
             className="h-[47px] w-[177px]"

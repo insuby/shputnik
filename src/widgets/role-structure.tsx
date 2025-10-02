@@ -53,7 +53,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView15 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:!flex-row lg:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center  gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
             <svg
@@ -82,7 +82,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative flex items-center justify-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:items-start">
+          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('roleStructure.clientCabinet')}
           </div>
         </motion.div>
@@ -92,7 +92,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView16 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 md:!flex-row lg:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <svg
@@ -135,7 +135,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative flex items-center self-stretch  text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:items-start">
+          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('roleStructure.employeeCabinet')}
           </div>
         </motion.div>
@@ -145,7 +145,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView17 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="gro flex-colw md!flex-row relative flex flex-1 items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center  gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <svg
@@ -174,7 +174,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative flex items-center self-stretch  text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:items-start">
+          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             {t('roleStructure.adminCabinet')}
           </div>
         </motion.div>
