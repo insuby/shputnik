@@ -6,6 +6,7 @@ import {
   Feedback,
   Integrations,
   RoleStructure,
+  SocialParameters,
   Trust,
   Zaim,
   ZaimChecker,
@@ -69,11 +70,11 @@ export const IslamFinance = () => {
   const inView25 = useInView(ref25, { once: true, margin: marginValue });
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 xl:w-full xl:gap-[136px] xl:px-8 xl:pb-[136px] xl:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div
           ref={ref1}
-          className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 xl:h-[620px] xl:p-12"
+          className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12"
         >
           <svg
             width="1643"
@@ -81,7 +82,7 @@ export const IslamFinance = () => {
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[var(--pos-539)] top-12 h-[842px] w-full xl:w-[954px]"
+            className="absolute left-[var(--pos-539)] top-12 h-[842px] w-full lg:w-[954px]"
           >
             <g opacity="0.3" filter="url(#filter0_f_9267_4629)">
               <path
@@ -120,21 +121,21 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={inView1 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
-              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 xl:w-[624px]  xl:gap-12"
+              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12"
             >
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView1 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
-                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex"
+                className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex"
               >
                 <motion.h1
                   ref={ref4}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                 >
                   {t('hero.title')}
                 </motion.h1>
@@ -144,7 +145,7 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
+                  className="relative w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
                 >
                   {t('hero.description')}
                 </motion.p>
@@ -157,7 +158,7 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView1 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-            className="left-[var(--pos-745)] top-[var(--pos-136)] flex h-[538px] w-fit items-center overflow-hidden rounded-3xl bg-[#f6f8fd] xl:absolute xl:w-[871px]"
+            className="left-[var(--pos-745)] top-[var(--pos-136)] mx-auto flex h-[538px] w-fit items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:absolute lg:w-[871px]"
           >
             <div className="relative flex w-[242px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
               <p className="relative mt-[-0.75px] self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -177,7 +178,7 @@ export const IslamFinance = () => {
                       viewBox="0 0 15 16"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="h-4w-full absolute left-[3px] top-0.5 xl:w-[15px]"
+                      className="h-4w-full absolute left-[3px] top-0.5 lg:w-[15px]"
                     >
                       <path
                         d="M5.61863 15.0263V10.0094H9.38137V15.0263H14.3984V7.50086C14.3984 7.41848 14.3823 7.3369 14.3508 7.26077C14.3193 7.18464 14.2731 7.11545 14.2149 7.05717L7.94369 0.78594C7.88545 0.727633 7.81628 0.681377 7.74015 0.649817C7.66402 0.618258 7.58241 0.602014 7.5 0.602014C7.41759 0.602014 7.33598 0.618258 7.25985 0.649817C7.18372 0.681377 7.11455 0.727633 7.05631 0.78594L0.78508 7.05717C0.726861 7.11545 0.680696 7.18464 0.649222 7.26077C0.617748 7.3369 0.601582 7.41848 0.601646 7.50086V15.0263H5.61863Z"
@@ -196,7 +197,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-full xl:w-[19px]">
+                    <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
                       <svg
                         width="20"
                         height="21"
@@ -298,7 +299,7 @@ export const IslamFinance = () => {
                         viewBox="0 0 6 3"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-0.5w-full absolute left-0 top-2 xl:w-[5px]"
+                        className="h-0.5w-full absolute left-0 top-2 lg:w-[5px]"
                       >
                         <path
                           d="M5.33693 0.663674L0.663067 1.91551"
@@ -394,7 +395,7 @@ export const IslamFinance = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5 bg-[100%_100%]">
-                    <div className="h-4w-full relative left-[3px] top-0.5 xl:w-[15px]">
+                    <div className="h-4w-full relative left-[3px] top-0.5 lg:w-[15px]">
                       <svg
                         width="7"
                         height="4"
@@ -418,7 +419,7 @@ export const IslamFinance = () => {
                         viewBox="0 0 15 14"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-3.5w-full absolute left-0 top-0 xl:w-[15px]"
+                        className="h-3.5w-full absolute left-0 top-0 lg:w-[15px]"
                       >
                         <path
                           d="M1.85285 6.24857C1.85285 4.75107 2.44772 3.31491 3.50662 2.25602C4.56551 1.19713 6.00167 0.60225 7.49917 0.60225C8.99666 0.60225 10.4328 1.19713 11.4917 2.25602C12.5506 3.31491 13.1455 4.75107 13.1455 6.24857C13.1455 9.05761 13.7964 11.3146 14.314 12.2086C14.3689 12.3038 14.3979 12.4118 14.398 12.5217C14.3981 12.6316 14.3693 12.7397 14.3145 12.835C14.2597 12.9303 14.1808 13.0095 14.0858 13.0648C13.9907 13.12 13.8828 13.1492 13.7729 13.1496H1.22548C1.11567 13.149 1.00796 13.1195 0.913116 13.0642C0.818269 13.0088 0.739606 12.9296 0.684989 12.8343C0.630373 12.7391 0.601716 12.6311 0.601883 12.5213C0.60205 12.4115 0.631034 12.3037 0.68594 12.2086C1.20274 11.3146 1.85285 9.05683 1.85285 6.24857Z"
@@ -506,7 +507,7 @@ export const IslamFinance = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
                 <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] xl:w-auto">
+                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                     <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                       <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('app.financingId')}
@@ -787,7 +788,7 @@ export const IslamFinance = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full xl:w-[619px]"
+            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full lg:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9267_9435)">
@@ -851,7 +852,7 @@ export const IslamFinance = () => {
               initial={{ opacity: 0, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
-              className="relative flex flex-1 grow flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:gap-12 xl:p-12"
+              className="relative flex flex-1 grow flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:gap-12 lg:p-12"
             >
               <motion.div
                 ref={ref11}
@@ -877,7 +878,7 @@ export const IslamFinance = () => {
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
                   className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch"
                 >
-                  <motion.div className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7">
+                  <motion.div className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7">
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
                       animate={inView13 ? { opacity: 1, scale: 1 } : {}}
@@ -899,7 +900,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.85 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
@@ -922,7 +923,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.95 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
@@ -945,7 +946,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.05 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7"
                   >
                     <motion.div
                       ref={ref21}
@@ -969,7 +970,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.15 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
@@ -992,7 +993,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView10 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 1.25 }}
-                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
+                    className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch lg:h-7"
                   >
                     <motion.div
                       initial={{ opacity: 0, scale: 0 }}
@@ -1020,6 +1021,7 @@ export const IslamFinance = () => {
       </motion.div>
 
       <EmployeeWork />
+      <SocialParameters />
       <Zaim />
       <Feedback />
       <Analytics />

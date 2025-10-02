@@ -1,9 +1,39 @@
+import { motion, useInView } from 'framer-motion';
+
+import { useRef } from 'react';
+
+import { useIsMobile } from 'shared/lib/use-is-mobile';
+
 export const SocialParameters = () => {
+  const isMobile = useIsMobile();
+  const ref1 = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+  const ref4 = useRef(null);
+  const ref5 = useRef(null);
+  const ref6 = useRef(null);
+  const ref7 = useRef(null);
+
+  const marginValue = isMobile ? '-10px' : '-100px';
+  const inView1 = useInView(ref1, { once: true, margin: marginValue });
+  const inView2 = useInView(ref2, { once: true, margin: marginValue });
+  const inView3 = useInView(ref3, { once: true, margin: marginValue });
+  const inView4 = useInView(ref4, { once: true, margin: marginValue });
+  const inView5 = useInView(ref5, { once: true, margin: marginValue });
+  const inView6 = useInView(ref6, { once: true, margin: marginValue });
+  const inView7 = useInView(ref7, { once: true, margin: marginValue });
+
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff] lg:!flex-row">
       <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl ">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
-          <div className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
+          <motion.div
+            ref={ref1}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3"
+          >
             <div className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
             <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
@@ -53,9 +83,13 @@ export const SocialParameters = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <svg
+          <motion.svg
+            ref={ref2}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={inView2 ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.4, ease: 'easeOut', delay: 0.2 }}
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -76,9 +110,15 @@ export const SocialParameters = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-          </svg>
+          </motion.svg>
 
-          <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
+          <motion.div
+            ref={ref3}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView3 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.3 }}
+            className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-[#f9fafd] p-6"
+          >
             <div className="flex size-14 items-center justify-center rounded-[100px] bg-white p-4">
               <svg
                 className="mx-auto size-6"
@@ -108,9 +148,13 @@ export const SocialParameters = () => {
             <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
               Проверка кредитной истории
             </div>
-          </div>
+          </motion.div>
 
-          <svg
+          <motion.svg
+            ref={ref4}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={inView4 ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.4, ease: 'easeOut', delay: 0.4 }}
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -131,9 +175,15 @@ export const SocialParameters = () => {
               strokeLinecap="round"
               strokeLinejoin="round"
             />
-          </svg>
+          </motion.svg>
 
-          <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6">
+          <motion.div
+            ref={ref5}
+            initial={{ opacity: 0, y: 50 }}
+            animate={inView5 ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
+            className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6"
+          >
             <div className="flex size-14 items-center justify-center rounded-[100px] bg-[#28d397] p-4">
               <svg
                 className="mx-auto size-6"
@@ -156,14 +206,20 @@ export const SocialParameters = () => {
             <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
               Одобрение заявки
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] lg:w-auto">
-        <p className="text-adaptive-40 relative m-auto mt-[-1.00px] max-w-[480px] text-center font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
+        <motion.p
+          ref={ref6}
+          initial={{ opacity: 0, x: 80 }}
+          animate={inView6 ? { opacity: 1, x: 0 } : {}}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="text-adaptive-40 relative m-auto mt-[-1.00px] max-w-[480px] text-center font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start"
+        >
           Многофункциональный <br />
           бэк-офис для кредитных менеджеров
-        </p>
+        </motion.p>
 
         <svg
           className="relative mx-auto h-px w-full max-w-[480px] self-stretch"
@@ -179,7 +235,13 @@ export const SocialParameters = () => {
           />
         </svg>
 
-        <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
+        <motion.div
+          ref={ref7}
+          initial={{ opacity: 0, y: 80 }}
+          animate={inView7 ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
+          className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4"
+        >
           <div className="text-adaptive-24  relative m-auto mt-[-1.00px] w-[500px] text-center font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
             Автоматизированное принятие решений
           </div>
@@ -190,7 +252,7 @@ export const SocialParameters = () => {
             автоматизированный рабочий процесс, который отвечает потребностям
             заемщиков* и повышает операционную эффективность.
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
