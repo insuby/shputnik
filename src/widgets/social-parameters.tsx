@@ -1,13 +1,13 @@
 export const SocialParameters = () => {
   return (
-    <div className="relative flex flex-col lg:!flex-row w-full flex-[0_0_auto] items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff]">
-      <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl p-6">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff] lg:!flex-row">
+      <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl ">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
-            <div className="relative min-w-48 w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+            <div className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
             <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
-              <div className="relative mt-[-1.00px] w-[293px] text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+              <div className="text-adaptive-24 relative mt-[-1.00px] w-[293px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                 Социальные параметры
               </div>
 
@@ -17,7 +17,7 @@ export const SocialParameters = () => {
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Персональная информация
                   </div>
                 </div>
@@ -27,7 +27,7 @@ export const SocialParameters = () => {
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Банк и адрес
                   </div>
                 </div>
@@ -37,7 +37,7 @@ export const SocialParameters = () => {
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Банк и адрес
                   </div>
                 </div>
@@ -47,7 +47,7 @@ export const SocialParameters = () => {
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Документы
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export const SocialParameters = () => {
               />
             </svg>
 
-            <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+            <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
               Проверка кредитной истории
             </div>
           </div>
@@ -138,35 +138,38 @@ export const SocialParameters = () => {
           </svg>
 
           <div className="relative flex w-full flex-[0_0_auto] items-center gap-8 self-stretch rounded-[32px] bg-green-50 p-6">
-            <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+            <div className="text-adaptive-24 relative flex-1 font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
               Одобрение заявки
             </div>
           </div>
         </div>
       </div>
-      <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
-        <p className="relative mt-[-1.00px] w-[480px] text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+      <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] lg:w-auto">
+        <p className="text-adaptive-40 relative m-auto mt-[-1.00px] max-w-[480px] text-center font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
           Многофункциональный <br />
           бэк-офис для кредитных менеджеров
         </p>
 
         <svg
-          className="relative h-px w-full self-stretch object-cover"
+          className="relative h-px w-full max-w-[480px] mx-auto self-stretch"
           xmlns="http://www.w3.org/2000/svg"
-          width="129"
-          height="1"
-          viewBox="0 0 129 1"
+          viewBox="0 0 100 1"
+          preserveAspectRatio="none"
           fill="none"
         >
-          <path d="M0 0.251403H129" stroke="#E3E5E8" />
+          <path
+            d="M0 0.5H100"
+            stroke="#E3E5E8"
+            vectorEffect="non-scaling-stroke"
+          />
         </svg>
 
-        <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-          <div className="relative mt-[-1.00px] w-[500px] text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+        <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 w-full">
+          <div className="text-adaptive-24  relative m-auto mt-[-1.00px] w-[500px] text-center font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
             Автоматизированное принятие решений
           </div>
 
-          <p className="relative w-[500px] text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+          <p className="text-adaptive-20  relative m-auto w-[500px] text-center font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
             Программное обеспечение Buy Now Pay Later устраняет ручные процессы,
             специальные запросы и бумажные следы. Получите единый плавный
             автоматизированный рабочий процесс, который отвечает потребностям
