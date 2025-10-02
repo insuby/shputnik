@@ -24,7 +24,7 @@ export const Integrations = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-20 xl:!flex-row"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-20 lg:!flex-row"
     >
       <img
         className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
@@ -37,14 +37,14 @@ export const Integrations = () => {
         initial={{ opacity: 0, x: -50 }}
         animate={inView2 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-full flex-col items-start gap-12 xl:w-[432px]"
+        className="relative flex w-full flex-col items-start gap-12 lg:w-[432px]"
       >
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-start">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium leading-[60px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-start">
             Интеграции
           </div>
 
-          <p className="relative  self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:text-start">
+          <p className="relative  self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:text-start">
             Кредитный конвейер тесно интегрирован <br />с большим количеством
             источников информации, государственных служб, платежных систем,
             лидогенераторов, рекламных и других сервисов
@@ -53,7 +53,7 @@ export const Integrations = () => {
 
         <button
           onClick={handleTryClick}
-          className="all-[unset]  relative mx-auto box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:m-0"
+          className="all-[unset] w-full lg:w-fit relative mx-auto box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 lg:m-0"
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             Попробовать

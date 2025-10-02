@@ -13,6 +13,12 @@ export const SocialParameters = () => {
   const ref5 = useRef(null);
   const ref6 = useRef(null);
   const ref7 = useRef(null);
+  const ref8 = useRef(null);
+  const ref9 = useRef(null);
+  const ref10 = useRef(null);
+  const ref11 = useRef(null);
+  const ref12 = useRef(null);
+  const ref13 = useRef(null);
 
   const marginValue = isMobile ? '-10px' : '-100px';
   const inView1 = useInView(ref1, { once: true, margin: marginValue });
@@ -22,6 +28,12 @@ export const SocialParameters = () => {
   const inView5 = useInView(ref5, { once: true, margin: marginValue });
   const inView6 = useInView(ref6, { once: true, margin: marginValue });
   const inView7 = useInView(ref7, { once: true, margin: marginValue });
+  const inView8 = useInView(ref8, { once: true, margin: marginValue });
+  const inView9 = useInView(ref9, { once: true, margin: marginValue });
+  const inView10 = useInView(ref10, { once: true, margin: marginValue });
+  const inView11 = useInView(ref11, { once: true, margin: marginValue });
+  const inView12 = useInView(ref12, { once: true, margin: marginValue });
+  const inView13 = useInView(ref13, { once: true, margin: marginValue });
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff] lg:!flex-row">
@@ -34,15 +46,33 @@ export const SocialParameters = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3"
           >
-            <div className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]" />
+            <motion.div
+              ref={ref8}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={inView8 ? { opacity: 1, scale: 1 } : {}}
+              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
+              className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]"
+            />
 
             <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
-              <div className="text-adaptive-24 relative mt-[-1.00px] w-[293px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+              <motion.div
+                ref={ref9}
+                initial={{ opacity: 0, x: -30 }}
+                animate={inView9 ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
+                className="text-adaptive-24 relative mt-[-1.00px] w-[293px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]"
+              >
                 Социальные параметры
-              </div>
+              </motion.div>
 
               <div className="relative flex w-[293px] flex-[0_0_auto] flex-col items-start gap-2">
-                <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                <motion.div
+                  ref={ref10}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={inView10 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
+                  className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch"
+                >
                   <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
@@ -50,9 +80,15 @@ export const SocialParameters = () => {
                   <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Персональная информация
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                <motion.div
+                  ref={ref11}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={inView11 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
+                  className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch"
+                >
                   <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
@@ -60,9 +96,15 @@ export const SocialParameters = () => {
                   <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Банк и адрес
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                <motion.div
+                  ref={ref12}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={inView12 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
+                  className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch"
+                >
                   <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
@@ -70,9 +112,15 @@ export const SocialParameters = () => {
                   <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Банк и адрес
                   </div>
-                </div>
+                </motion.div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                <motion.div
+                  ref={ref13}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={inView13 ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
+                  className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch"
+                >
                   <div className="relative h-5 w-[34px] overflow-hidden rounded-[100px] bg-[#00cb82]">
                     <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                   </div>
@@ -80,7 +128,7 @@ export const SocialParameters = () => {
                   <div className="text-adaptive-16 relative mt-[-1.00px] flex-1 font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     Документы
                   </div>
-                </div>
+                </motion.div>
               </div>
             </div>
           </motion.div>

@@ -5,7 +5,6 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
-import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { HeroButtons } from 'shared/ui';
 
 // @ts-ignore
@@ -19,7 +18,6 @@ export const Development = () => {
   const { t } = useTranslation(['development']);
   const sliderRef = useRef<Slider>(null);
   const { setIsOpen } = useFeedbackForm();
-  const isMobile = useIsMobile();
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
 
@@ -39,20 +37,23 @@ export const Development = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] xl:w-[1440px] xl:gap-[136px] xl:px-8 xl:xl:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] lg:w-[1440px] lg:gap-[136px] lg:px-8 lg:lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className=" relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 xl:mt-0 xl:h-[628px] xl:p-12">
-          {/* Removed broken SVG: /img/development/vector-1-5.svg */}
+        <div className=" relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 lg:mt-0 lg:h-[628px] lg:p-12">
+          <img
+            className="absolute -top-16 left-[430px] h-[842px] w-full md:w-[954px]"
+            src="/img/development/vector-1-5.svg"
+          />
 
           <HeroButtons>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  xl:w-[624px] xl:gap-12">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  lg:w-[624px] lg:gap-12">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
                 <motion.h1
                   ref={ref15}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView15 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left xl:text-6xl xl:leading-[68px]"
+                  className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                 >
                   {t('hero.title')}
                 </motion.h1>
@@ -62,7 +63,7 @@ export const Development = () => {
                   initial={{ opacity: 0, x: 40 }}
                   animate={inView16 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.4, ease: 'easeOut' }}
-                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] xl:w-[624px] xl:text-left"
+                  className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
                 >
                   {t('hero.subtitle')}
                 </motion.p>
@@ -71,13 +72,12 @@ export const Development = () => {
           </HeroButtons>
 
           <img
-            className="absolute left-[1053px] top-44 h-[568px] w-full xl:w-[619px]"
-            alt="Vector"
+            className="absolute left-[1053px] top-44 h-[568px] w-full lg:w-[619px]"
             src={vector}
           />
 
-          <div className="relative h-[280px] w-full scale-75 overflow-hidden rounded-3xl bg-[#ffffff] xl:absolute xl:left-[727px] xl:top-[188px] xl:w-[464px] xl:scale-100">
-            <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] xl:w-[528px]">
+          <div className="relative h-[280px] w-full scale-75 overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[727px] lg:top-[188px] lg:w-[464px] lg:scale-100">
+            <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
               <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 
               <div className="absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
@@ -85,12 +85,12 @@ export const Development = () => {
               <div className="absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
             </div>
 
-            <div className="absolute left-0 top-12 flex w-full flex-col items-start xl:w-[464px]">
-              <img className="size-full" alt="Vector" src={code} />
+            <div className="absolute left-0 top-12 flex w-full flex-col items-start lg:w-[464px]">
+              <img className="size-full" src={code} />
             </div>
           </div>
         </div>
-        <div className="absolute left-[-190px] top-[190px] size-[738px] scale-50 xl:left-[590px] xl:top-[-41px] xl:scale-100">
+        <div className="absolute left-[-190px] top-[190px] size-[738px] scale-50 lg:left-[590px] lg:top-[-41px] lg:scale-100">
           <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
             <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
@@ -129,16 +129,16 @@ export const Development = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
             {t('projectDevelopment.title')}
           </div>
         </div>
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 xl:inline-flex">
-          <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 xl:flex xl:w-[1376px]">
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
+          <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -146,7 +146,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -189,7 +188,7 @@ export const Development = () => {
               </div>
             </div>
 
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -197,7 +196,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -289,7 +287,7 @@ export const Development = () => {
               </div>
             </div>
 
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -297,7 +295,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -376,8 +373,8 @@ export const Development = () => {
             </div>
           </div>
 
-          <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 xl:flex xl:w-[1376px]">
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+          <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -385,7 +382,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -442,7 +438,7 @@ export const Development = () => {
               </div>
             </div>
 
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -450,7 +446,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -493,7 +488,7 @@ export const Development = () => {
               </div>
             </div>
 
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
@@ -501,7 +496,6 @@ export const Development = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative flex-[0_0_auto]"
-                alt="Frame"
               >
                 <rect
                   width="64"
@@ -554,16 +548,16 @@ export const Development = () => {
         </div>
       </div>
 
-      <div className="relative flex w-full flex-col xl:h-[568px] xl:w-[1376px] xl:!flex-row">
-        <div className="flex w-full  flex-col items-center gap-[68px] xl:w-[1472px] xl:!flex-row">
-          <div className="relative flex w-full flex-col items-start justify-center gap-7 xl:w-[496px]">
-            <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-left xl:text-5xl xl:leading-[60px]">
+      <div className="relative flex w-full flex-col lg:h-[568px]  lg:!flex-row">
+        <div className="flex w-full  flex-col items-center gap-[68px] lg:!flex-row">
+          <div className="relative flex w-full flex-col items-start justify-center gap-7 lg:w-[496px]">
+            <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left lg:text-5xl lg:leading-[60px]">
               {t('platforms.title')}
             </p>
 
             <button
               onClick={onClick}
-              className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 xl:w-fit"
+              className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 lg:w-fit"
             >
               <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 {t('platforms.tryButton')}
@@ -571,7 +565,7 @@ export const Development = () => {
             </button>
           </div>
 
-          <div className="w-full xl:w-[915px]">
+          <div className="w-full lg:w-[915px]">
             <Slider
               ref={sliderRef}
               dots={false}
@@ -584,15 +578,14 @@ export const Development = () => {
               arrows={false}
             >
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[443px]"
-                    alt="Vector"
+                    className="absolute left-0 top-0 h-[406px] w-full lg:w-[443px]"
                   >
                     <g opacity="0.12" filter="url(#filter0_f_9535_12438)">
                       <path
@@ -626,7 +619,7 @@ export const Development = () => {
                   </svg>
 
                   <div className="relative w-[382px] flex-1 grow self-stretch">
-                    <div className="relative -top-12 left-[-72px] w-full xl:-left-12 xl:w-[443px]">
+                    <div className="relative -top-12 left-[-72px] w-full lg:-left-12 lg:w-[443px]">
                       <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg
                           width="44"
@@ -635,7 +628,6 @@ export const Development = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
                         >
                           <rect
                             width="44"
@@ -671,8 +663,7 @@ export const Development = () => {
                         viewBox="0 0 503 411"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[349px] w-full xl:w-[443px]"
-                        alt="Vector"
+                        className="absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
                       >
                         <g opacity="0.32" filter="url(#filter0_f_9537_10855)">
                           <path
@@ -716,7 +707,6 @@ export const Development = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
                         >
                           <rect
                             width="44"
@@ -780,8 +770,7 @@ export const Development = () => {
                         viewBox="0 0 503 411"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-0 top-0 h-[349px] w-full xl:w-[443px]"
-                        alt="Vector"
+                        className="absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
                       >
                         <g opacity="0.32" filter="url(#filter0_f_9537_10857)">
                           <path
@@ -825,7 +814,6 @@ export const Development = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
                         >
                           <rect
                             width="44"
@@ -891,15 +879,14 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 xl:w-[442px] xl:gap-12 xl:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full xl:w-[377px]"
-                    alt="Vector"
+                    className="absolute left-0 top-0 h-[406px] w-full lg:w-[377px]"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9535_12463)">
                       <path
@@ -944,7 +931,6 @@ export const Development = () => {
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
                               className="absolute left-0 top-0 h-[120px]  w-[57px]"
-                              alt="Subtract"
                             >
                               <path
                                 d="M57.3913 2.56931C57.3913 3.97047 56.2923 5.11764 54.9023 5.24638C27.0368 7.82735 5.2174 31.3556 5.21739 60C5.21739 88.6443 27.0366 112.172 54.902 114.753C56.2922 114.882 57.3913 116.029 57.3913 117.43C57.3913 118.924 56.1495 120.121 54.6678 119.99C24.0285 117.282 0 91.4584 0 60C4.64946e-06 28.5416 24.0287 2.71798 54.6681 0.00980902C56.1497 -0.121146 57.3913 1.07638 57.3913 2.56931Z"
@@ -959,7 +945,6 @@ export const Development = () => {
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
                               className="absolute left-[63px] top-[49px] h-[71px]  w-[57px]"
-                              alt="Subtract"
                             >
                               <path
                                 d="M53.8023 0.0907039C55.2772 -0.305988 56.7826 0.637786 56.9984 2.15508C57.399 4.97052 57.6065 7.84847 57.6065 10.775C57.6065 42.3513 33.4879 68.2716 2.73377 70.9901C1.24645 71.1216 0 69.9194 0 68.4207C0 67.0141 1.10326 65.8625 2.49863 65.7332C30.4685 63.1425 52.3695 39.5267 52.3695 10.775C52.3695 8.17936 52.1905 5.62561 51.8449 3.12536C51.6566 1.76297 52.4787 0.446698 53.8023 0.0907039Z"
@@ -985,7 +970,6 @@ export const Development = () => {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             className="absolute left-[103px] top-[22px] h-[22px] w-3.5"
-                            alt="Subtract"
                           >
                             <path
                               d="M0.77269 0.768161C1.8597 -0.322948 3.64835 -0.249792 4.5827 0.975536C8.58698 6.22685 11.7511 12.1577 13.8739 18.566C14.3346 19.9567 13.5009 21.4235 12.0906 21.8028C10.7108 22.1739 9.29563 21.3629 8.83918 20.0042C6.92674 14.3114 4.11299 9.03492 0.568127 4.34576C-0.251086 3.2621 -0.185595 1.73006 0.77269 0.768161Z"
@@ -1000,7 +984,6 @@ export const Development = () => {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                             className="absolute left-[63px] top-0 h-5 w-[39px]"
-                            alt="Subtract"
                           >
                             <path
                               d="M0 2.57386C0 1.07834 1.2428 -0.121327 2.72696 0.00982073C16.2362 1.20357 28.4624 6.88264 37.9182 15.5554C38.9851 16.534 38.9828 18.2021 37.9608 19.2279C36.9415 20.2511 35.2935 20.2476 34.2253 19.2759C25.6692 11.4927 14.656 6.38192 2.49243 5.2555C1.10003 5.12656 0 3.97745 0 2.57386Z"
@@ -1018,7 +1001,6 @@ export const Development = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="absolute left-[179px] top-1 size-36"
-                      alt="Frame"
                     >
                       <rect width="144" height="144" rx="24" fill="white" />
                       <path
@@ -1063,7 +1045,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1071,7 +1053,6 @@ export const Development = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
-                    alt="Vector"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9535_12496)">
                       <path
@@ -1111,7 +1092,6 @@ export const Development = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="relative w-full flex-1 grow self-stretch"
-                    alt="Frame"
                   >
                     <rect x="7" width="92" height="92" rx="24" fill="white" />
                     <rect
@@ -1237,7 +1217,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1245,7 +1225,6 @@ export const Development = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
-                    alt="Vector"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9535_12502)">
                       <path
@@ -1288,7 +1267,6 @@ export const Development = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
                         >
                           <rect
                             width="44"
@@ -1332,7 +1310,6 @@ export const Development = () => {
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
                         className="absolute left-0 top-0 h-[339px]  w-[442px]"
-                        alt="Vector"
                       >
                         <g opacity="0.32" filter="url(#filter0_f_9537_11048)">
                           <path
@@ -1376,7 +1353,6 @@ export const Development = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="relative flex-[0_0_auto]"
-                          alt="Frame"
                         >
                           <rect
                             width="44"
@@ -1414,7 +1390,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[443px] xl:gap-12 xl:p-12">
+                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1422,7 +1398,6 @@ export const Development = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="absolute left-0 top-0 h-[406px]  w-[442px]"
-                    alt="Vector"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9535_12508)">
                       <path
@@ -1462,7 +1437,6 @@ export const Development = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="relative w-full flex-1 grow self-stretch"
-                    alt="Frame"
                   >
                     <rect
                       x="49"
@@ -1622,7 +1596,7 @@ export const Development = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 xl:flex xl:w-[120px]">
+        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
           <button
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
@@ -1684,14 +1658,14 @@ export const Development = () => {
       <Feedback />
       <Technoligies />
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]">
-          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
+          <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
             {t('comfort.title')}
           </div>
         </div>
-        <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 xl:flex xl:w-[1376px]">
-          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+        <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
             <svg
               width="64"
               height="64"
@@ -1699,7 +1673,6 @@ export const Development = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="relative flex-[0_0_auto]"
-              alt="Frame"
             >
               <rect
                 width="64"
@@ -1760,7 +1733,7 @@ export const Development = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
             <svg
               width="64"
               height="64"
@@ -1768,7 +1741,6 @@ export const Development = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="relative flex-[0_0_auto]"
-              alt="Frame"
             >
               <rect
                 width="64"
@@ -1829,7 +1801,7 @@ export const Development = () => {
               </p>
             </div>
           </div>
-          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+          <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
             <svg
               width="64"
               height="64"
@@ -1837,7 +1809,6 @@ export const Development = () => {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
               className="relative flex-[0_0_auto]"
-              alt="Frame"
             >
               <rect
                 width="64"

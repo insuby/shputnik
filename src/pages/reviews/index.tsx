@@ -464,7 +464,7 @@ export const Reviews = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] p-0 xl:p-[88px]"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] xl:gap-12 xl:p-[88px]"
       aria-labelledby="reviews-title"
     >
       <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 xl:w-[560px]">

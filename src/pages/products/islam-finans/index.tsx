@@ -145,7 +145,7 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                  className="relative w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
+                  className="relative w-full max-w-[80%] mx-auto text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left"
                 >
                   {t('hero.description')}
                 </motion.p>
