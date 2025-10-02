@@ -7,3 +7,4 @@ export const MainPage = () => {
 
   return isMobile ? <MainMobile /> : <Main />;
 };
+

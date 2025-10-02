@@ -120,7 +120,6 @@ export const HeaderSection = () => {
             {t('actions.contactUs')}
           </div>
         </button>
-        {/*<LanguageSwitcher />*/}
       </div>
 
       {isMenuOpen && (
@@ -362,30 +361,6 @@ export const HeaderSection = () => {
                         ns: 'nav',
                         defaultValue: 'Выгрузка данных в кредитные бюро',
                       })}
-                    </span>
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7 4L13 10L7 16"
-                        stroke="#9FA7BC"
-                        strokeWidth="2"
-                      />
-                    </svg>
-                  </Link>
-                </li>
-                <li className="list-none">
-                  <Link
-                    to={RoutesPath.FDATA}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="flex items-center justify-between p-4"
-                  >
-                    <span className="text-gray-90">
-                      {t('decisions', { ns: 'footer' })}
                     </span>
                     <svg
                       width="20"

@@ -15,7 +15,7 @@ export default {
     islamFinance: 'Исламское\nфинансирование',
     dataUnloadFull: 'Выгрузка данных \nв кредитные бюро',
     decisionsModuleFull: 'Настраиваемый модуль принятия решений',
-    reconciliation: 'Реконсиляция данных',
+    reconciliation: 'ПО для реконсиляции данных',
     customDevelopment: 'Разработка на заказ',
   },
 };

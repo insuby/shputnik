@@ -121,7 +121,7 @@ export const mobile = {
   bnpl: 'BNPL',
   autoLending: 'Автокредитование',
   p2pLending: 'P2P-кредитование',
-  islamicFinance: 'Исламские финансы',
+  islamicFinance: 'Исламское финансирование',
   otherSoftware: 'Другое ПО',
-  dataUnload: 'Выгрузка данных',
+  dataUnload: 'Выгрузка данных в кредитные бюро',
 };

@@ -339,7 +339,28 @@ a {
   --leading-68: clamp(56px, 4.72vw, 68px);
 
   /* Позиции: используют clamp (уже ограничены до 1440px) */
+  --pos-minus-140: clamp(-100px, -9.72vw, -140px);
+  --pos-minus-3: clamp(-2px, -0.21vw, -3px);
   --pos-3: clamp(0px, 0.21vw, 3px);
+  --pos-5: clamp(0px, 0.35vw, 5px);
+  --pos-15: clamp(0px, 1.04vw, 15px);
+  --pos-22: clamp(0px, 1.53vw, 22px);
+  --pos-27: clamp(0px, 1.88vw, 27px);
+  --pos-42: clamp(0px, 2.92vw, 42px);
+  --pos-55: clamp(0px, 3.82vw, 55px);
+  --pos-77: clamp(0px, 5.35vw, 77px);
+  --pos-101: clamp(0px, 7.01vw, 101px);
+  --pos-119: clamp(0px, 8.26vw, 119px);
+  --pos-130: clamp(0px, 9.03vw, 130px);
+  --pos-132: clamp(0px, 9.17vw, 132px);
+  --pos-242: clamp(0px, 16.81vw, 242px);
+  --pos-441: clamp(0px, 30.63vw, 441px);
+  --pos-559: clamp(0px, 38.82vw, 559px);
+  --pos-592: clamp(0px, 41.11vw, 592px);
+  --pos-725: clamp(0px, 50.35vw, 725px);
+  --pos-740: clamp(0px, 51.39vw, 740px);
+  --pos-786: clamp(0px, 54.58vw, 786px);
+  --pos-1062: clamp(0px, 73.75vw, 1062px);
   --pos-7: clamp(0px, 0.49vw, 7px);
   --pos-13: clamp(0px, 0.9vw, 13px);
   --pos-26: clamp(0px, 1.81vw, 26px);
@@ -413,6 +434,7 @@ a {
   --size-164: clamp(115px, 11.39vw, 164px);
   --size-169: clamp(120px, 11.74vw, 169px);
   --size-180: clamp(130px, 12.5vw, 180px);
+  --size-184: clamp(135px, 12.78vw, 184px);
   --size-198: clamp(140px, 13.75vw, 198px);
 
   /* Адаптивные размеры средние (200-500px) */

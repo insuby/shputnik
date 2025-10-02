@@ -284,5 +284,5 @@ export default {
   bnpl: 'BNPL',
   autoLending: 'Автокредитование',
   p2pLending: 'P2P-кредитование',
-  islamicFinance: 'Исламские финансы',
+  islamicFinance: 'Исламское финансирование',
 };

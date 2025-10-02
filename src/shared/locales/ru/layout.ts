@@ -2,7 +2,7 @@ export const layout = {
   header: {
     services: 'Услуги',
     dataUnload: 'Выгрузка данных в кредитные бюро',
-    reconciliation: 'Реконсиляция данных',
+    reconciliation: 'ПО для реконсиляции данных',
     customDevelopment: 'Разработка на заказ',
   },
   footer: {
