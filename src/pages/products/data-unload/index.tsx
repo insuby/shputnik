@@ -164,14 +164,14 @@ export const Dataunload = () => {
             </motion.div>
           </HeroButtons>
 
-          <div className="mx-auto  mt-10 lg:left-[var(--pos-768)] h-[292px] lg:absolute lg:top-20 lg:h-[462px]">
+          <div className="mx-auto  mt-10 h-[292px] lg:absolute lg:left-[var(--pos-768)] lg:top-20 lg:h-[462px]">
             <div className="relative left-[-33px] top-[-65px] h-[527px]">
               <motion.div
                 ref={ref3}
                 initial={{ opacity: 0, x: -150 }}
                 animate={inView3 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="lg:absolute left-[var(--pos-31)]  flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 lg:top-[var(--pos-152)]"
+                className="left-[var(--pos-31)] flex  items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 lg:absolute lg:top-[var(--pos-152)]"
               >
                 <svg
                   width="64"
@@ -253,7 +253,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, y: -150 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="lg:absolute relative left-12 mx-auto flex  w-[400px] items-start justify-end gap-[14.04px] rounded-[32px] bg-white p-7 lg:left-[var(--pos-173)] lg:top-[var(--pos-239)]"
+                className="relative left-12 mx-auto flex w-[400px] items-start  justify-end gap-[14.04px] rounded-[32px] bg-white p-7 shadow lg:absolute lg:left-[var(--pos-173)] lg:top-[var(--pos-239)]"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -936,15 +936,6 @@ export const Dataunload = () => {
                   <span className="text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('pricing.description')}
                   </span>
-
-                  <a
-                    href="https://sptnk.co/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <span className="underline">SAAS</span>
-                  </a>
-
                   <span className="text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"></span>
                 </motion.p>
               </div>
@@ -962,7 +953,7 @@ export const Dataunload = () => {
                     >
                       <path
                         d="M2.5 9L6 12.5L14 4.5"
-                        stroke="#725DD6"
+                        stroke="#00CB82"
                         strokeWidth="2"
                         strokeLinecap="square"
                         strokeLinejoin="round"
