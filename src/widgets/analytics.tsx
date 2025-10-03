@@ -36,13 +36,13 @@ export const Analytics = () => {
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch xl:gap-12">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
       <motion.div
         ref={ref1}
         initial={{ opacity: 0, y: 50 }}
         animate={inView1 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
+        className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
       >
         {t('analytics.title')}
       </motion.div>
@@ -60,7 +60,7 @@ export const Analytics = () => {
           viewBox="0 0 1071 1128"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[450px] top-0 h-[668px] w-full xl:w-[926px]"
+          className="absolute left-[450px] top-0 h-[668px] w-full lg:w-[926px]"
 
         >
           <g opacity="0.16" filter="url(#filter0_f_9163_2232)">
@@ -99,7 +99,7 @@ export const Analytics = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView3 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-8 xl:p-20"
+          className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-8 lg:!p-20"
         >
           <motion.div
             ref={ref6}
@@ -193,7 +193,7 @@ export const Analytics = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative  h-[574px] w-full scale-95 rounded-[287px] xl:left-[57px] xl:top-[17px] xl:!size-[574px] xl:scale-100">
+          <div className="relative  h-[574px] w-full scale-95 rounded-[287px] lg:left-[57px] lg:top-[17px] lg:!size-[574px] lg:scale-100">
             <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
 
             <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />

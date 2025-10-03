@@ -67,26 +67,25 @@ export const SectionComponentNode = () => {
         <div className="relative w-1/2 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] xl:w-[var(--size-686)]">
           <div className="relative h-[var(--size-682)]">
             <svg
-              width="1077"
-              height="1131"
-              viewBox="0 0 1077 1131"
+              width="686"
+              height="520"
+              viewBox="0 0 686 520"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-0 top-0 h-[var(--size-520)] w-full xl:w-[var(--size-686)]"
             >
               <g opacity="0.32" filter="url(#filter0_f_9017_4482)">
                 <path
-                  d="M464.894 521.819C440.801 465.832 494.232 408.667 523.96 387.083C722.805 309.922 732.997 568.509 668.74 658.847C604.482 749.185 408.97 795.098 377.327 721.567C345.684 648.036 495.01 591.802 464.894 521.819Z"
+                  d="M283.005 234.855C258.925 178.898 312.328 121.763 342.04 100.191C540.779 23.0709 550.966 281.52 486.742 371.81C422.519 462.1 227.111 507.988 195.485 434.496C163.859 361.004 313.106 304.801 283.005 234.855Z"
                   fill="#3573FC"
                 />
               </g>
               <defs>
                 <filter
                   id="filter0_f_9017_4482"
-                  x="-3.05339e-05"
-                  y="-0.000152669"
-                  width="1076.87"
-                  height="1131"
+                  x="-181.64"
+                  y="-286.685"
+                  width="1076.3"
+                  height="1130.4"
                   filterUnits="userSpaceOnUse"
                   colorInterpolationFilters="sRGB"
                 >
@@ -114,45 +113,6 @@ export const SectionComponentNode = () => {
               className="absolute left-[var(--pos-62)] top-[var(--pos-80)] flex  min-w-[var(--size-304)] flex-col items-center justify-center overflow-hidden rounded-[32px] bg-green-60"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-5 self-stretch p-5">
-                <svg
-                  width="694"
-                  height="594"
-                  viewBox="0 0 694 594"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[-49px] top-3 h-[var(--size-330)] w-full xl:w-[var(--size-345)]"
-                >
-                  <g opacity="0.4" filter="url(#filter0_f_9017_4394)">
-                    <path
-                      d="M348.173 228.069C368.82 192.447 421.344 198.383 445.024 205.804C566.981 282.524 430.886 392.244 356.015 393.805C281.144 395.365 177.472 307.862 204.589 261.077C231.706 214.293 322.364 272.597 348.173 228.069Z"
-                      fill="#3573FC"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_9017_4394"
-                      x="0"
-                      y="0"
-                      width="693.986"
-                      height="594"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="100"
-                        result="effect1_foregroundBlur_9017_4394"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <p className="relative w-fit text-base font-semibold leading-4 tracking-normal text-gray-90 opacity-0 [font-family:'Inter',Helvetica]">
                     <span className="leading-6 text-[#9ea7bb]">
@@ -332,45 +292,6 @@ export const SectionComponentNode = () => {
               </div>
             </motion.div>
 
-            <svg
-              width="675"
-              height="745"
-              viewBox="0 0 675 745"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[var(--pos-57)] top-0 h-[var(--size-520)] w-full xl:w-[var(--size-629)]"
-            >
-              <g opacity="0.32" filter="url(#filter0_f_9018_4612)">
-                <path
-                  d="M399.512 346.545C450.592 351.671 470.87 414.38 474.623 445.094C450.225 623.077 255.595 524.946 215.306 440.711C175.017 356.477 221.07 193.713 288.157 200.445C355.245 207.177 335.661 340.138 399.512 346.545Z"
-                  fill="#9FA7BC"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_f_9018_4612"
-                  x="0"
-                  y="0"
-                  width="674.866"
-                  height="745"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
-                  />
-                  <feGaussianBlur
-                    stdDeviation="100"
-                    result="effect1_foregroundBlur_9018_4612"
-                  />
-                </filter>
-              </defs>
-            </svg>
-
             <motion.div
               id="animate_34_right"
               ref={ref34r}
@@ -482,7 +403,7 @@ export const SectionComponentNode = () => {
             animate={inView35 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleP2PClick}
-            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative mx-[-2.00px] mt-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -520,7 +441,7 @@ export const SectionComponentNode = () => {
             animate={inView36 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleIslamFinansClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-3xl border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

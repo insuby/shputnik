@@ -11,10 +11,10 @@ export const About = () => {
   };
   return (
     <section
-      className="relative -mx-5 inline-flex max-w-[100vw] flex-col items-start justify-center"
+      className="relative inline-flex flex-col items-start justify-center"
       aria-labelledby="about-title"
     >
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 xl:px-8 xl:pb-[88px] xl:pt-8">
+      <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 xl:px-8 xl:pb-[88px] xl:pt-8">
         <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] xl:inline-flex">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
             <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 pt-[88px] xl:gap-20 xl:px-20 xl:pb-20">
@@ -1444,7 +1444,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:w-fit"
+                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 xl:w-fit"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
@@ -1596,7 +1596,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 xl:w-fit"
+                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 xl:w-fit"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">

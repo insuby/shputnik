@@ -10,35 +10,31 @@ export const Frame1 = () => {
   const { t } = useTranslation(['home']);
   const ref37l = useRef<HTMLSpanElement>(null);
   const ref37r = useRef<HTMLSpanElement>(null);
-  const ref38 = useRef<HTMLParagraphElement>(null);
-  const ref39 = useRef<HTMLParagraphElement>(null);
   const ref40 = useRef<HTMLDivElement>(null);
   const ref41l = useRef<HTMLDivElement>(null);
   const ref41 = useRef<HTMLDivElement>(null);
   const ref42 = useRef<HTMLDivElement>(null);
   const ref42r = useRef<HTMLDivElement>(null);
-  const ref43r = useRef<HTMLDivElement>(null);
-  const ref44 = useRef<HTMLDivElement>(null);
-  const ref46l = useRef<HTMLDivElement>(null);
-  const ref47r = useRef<HTMLParagraphElement>(null);
   const inView37l = useInView(ref37l, { once: true, margin: '-100px' });
   const inView37r = useInView(ref37r, { once: true, margin: '-100px' });
-  const inView38 = useInView(ref38, { once: true, margin: '-100px' });
-  const inView39 = useInView(ref39, { once: true, margin: '-100px' });
   const inView40 = useInView(ref40, { once: true, margin: '-100px' });
   const inView41l = useInView(ref41l, { once: true, margin: '-100px' });
   const inView41 = useInView(ref41, { once: true, margin: '-100px' });
   const inView42 = useInView(ref42, { once: true, margin: '-100px' });
   const inView42r = useInView(ref42r, { once: true, margin: '-100px' });
-  const inView43r = useInView(ref43r, { once: true, margin: '-100px' });
-  const inView44 = useInView(ref44, { once: true, margin: '-100px' });
-  const inView46l = useInView(ref46l, { once: true, margin: '-100px' });
-  const inView47r = useInView(ref47r, { once: true, margin: '-100px' });
 
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate(RoutesPath.DATAUNLOAD);
+  };
+
+  const handleBankCreditClick = () => {
+    navigate(RoutesPath.BANKCREDIT);
+  };
+
+  const handleAutocreditClick = () => {
+    navigate(RoutesPath.AUTOCREDIT);
   };
 
   return (
@@ -75,51 +71,126 @@ export const Frame1 = () => {
       <div className="relative flex h-[var(--size-600)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
-            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
-              <div className="relative left-[var(--pos-59)] top-[-49px] h-[var(--size-372)] w-full xl:w-[var(--size-560)]">
-                <svg
-                  className="absolute left-[var(--pos-91)] top-0 h-[var(--size-372)] w-full xl:w-[var(--size-415)]"
-                  width="1078"
-                  height="1072"
-                  viewBox="0 0 1078 1072"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-label="Vector"
-                >
-                  <g opacity="0.4" filter="url(#filter0_f_9062_7)">
-                    <path
-                      d="M589.852 586.159C601.21 640.449 543.216 681.763 512.799 695.634C321.503 728.473 359.197 496.013 432.848 427.072C506.499 358.132 689.17 352.558 704.086 423.86C719.003 495.162 575.655 518.297 589.852 586.159Z"
-                      fill="#725DD6"
+            <div
+              className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
+              <svg
+                className="absolute"
+                width="700"
+                height="600"
+                viewBox="0 0 700 600"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.4" filter="url(#filter0_f_9569_17262)">
+                  <path
+                    d="M404.864 276.859C416.218 331.131 358.243 372.431 327.836 386.298C136.604 419.126 174.286 186.744 247.912 117.826C321.539 48.9089 504.148 43.3367 519.06 114.615C533.972 185.893 390.672 209.02 404.864 276.859Z"
+                    fill="#725DD6"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_9569_17262"
+                    x="-184.791"
+                    y="-309.103"
+                    width="1077.64"
+                    height="1071.26"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
                     />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_9062_7"
-                      x="0"
-                      y="0"
-                      width="1078"
-                      height="1071.62"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="186.349"
-                        result="effect1_foregroundBlur_9062_7"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-
+                    <feGaussianBlur
+                      stdDeviation="186.349"
+                      result="effect1_foregroundBlur_9569_17262"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <svg
+                className="absolute"
+                width="700"
+                height="600"
+                viewBox="0 0 700 600"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.4" filter="url(#filter0_f_9569_17261)">
+                  <path
+                    d="M317.955 330.483C309.888 275.626 370.244 237.89 401.431 225.88C594.292 204.622 542.691 434.315 465.049 498.675C387.408 563.036 204.795 557.606 194.2 485.559C183.606 413.513 328.038 399.054 317.955 330.483Z"
+                    fill="#3573FC"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_9569_17261"
+                    x="-179.054"
+                    y="-148.203"
+                    width="1086.48"
+                    height="1064.41"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="186.349"
+                      result="effect1_foregroundBlur_9569_17261"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <svg
+                className="absolute"
+                width="700"
+                height="522"
+                viewBox="0 0 700 522"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.32" filter="url(#filter0_f_9569_16926)">
+                  <path
+                    d="M506.421 -23.3876C547.596 -98.6156 657.267 -88.9357 706.955 -74.6922C964.817 78.8337 687.031 314.246 531.209 321.317C375.387 328.388 155.049 151.474 209.126 52.6723C263.204 -46.1295 454.953 70.6475 506.421 -23.3876Z"
+                    fill="white"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_9569_16926"
+                    x="0.775635"
+                    y="-284.559"
+                    width="1011.43"
+                    height="806.082"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="100"
+                      result="effect1_foregroundBlur_9569_16926"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <div className="relative inset-0 m-auto size-full xl:w-[var(--size-560)]">
                 <motion.div
                   id="animate_40"
                   ref={ref40}
@@ -128,9 +199,11 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="absolute left-[var(--spacing-12-29)] top-[var(--spacing-6-94)] inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-2-22)] bg-[#ffffff5c] p-[var(--spacing-0-56)]"
                 >
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
+                  <div
+                    className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
                     <div className="h-7w-full relative xl:w-[142.55px]">
-                      <div className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
+                      <div
+                        className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
                         <svg
                           width="112"
                           height="24"
@@ -410,310 +483,27 @@ export const Frame1 = () => {
                 </svg>
               </div>
             </div>
-
-            <div className="relative flex w-full flex-[0_0_auto] items-end gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
-              <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <motion.h4
-                  id="animate_38"
-                  ref={ref38}
-                  initial={{ opacity: 0, x: -40 }}
-                  animate={inView38 ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('dataUnload.title')}
-                </motion.h4>
-
-                <motion.p
-                  id="animate_39"
-                  ref={ref39}
-                  initial={{ opacity: 0, x: 40 }}
-                  animate={inView39 ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('dataUnload.desc')}
-                </motion.p>
-              </div>
-
-              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 32 32"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
-                >
-                  <path
-                    d="M12 6L22 16L12 26"
-                    strokeWidth="2"
-                    strokeLinecap="square"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
           </div>
-          <div className="relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]">
-            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[32px]">
-              <div className="relative h-[var(--size-446)] w-full">
-                <motion.div
-                  id="animate_44"
-                  ref={ref44}
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={inView44 ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[var(--spacing-3-4)] top-[var(--spacing-1-04)] flex flex-col items-start justify-center gap-[var(--spacing-0-28)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-0-83)]"
-                >
-                  <div className="relative inline-flex flex-[0_0_auto] items-end justify-end gap-[var(--spacing-0-28)] p-[var(--spacing-1-11)]">
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-28)]">
-                      <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-180)]">
-                        {t('decisionsModule.ui.id')}
-                      </div>
-
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[var(--spacing-0-83)]">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.name')}
-                        </div>
-
-                        <div className="relative flex size-[var(--spacing-1-67)] items-center justify-center gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-39)] bg-green-60 p-[var(--spacing-0-56)]">
-                          <svg
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="relative m-[-4.00px] size-4"
-                          >
-                            <path
-                              d="M2.5 9L6 12.5L14 4.5"
-                              stroke="white"
-                              strokeWidth="2"
-                              strokeLinecap="square"
-                              strokeLinejoin="round"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[var(--spacing-0-83)] self-stretch">
-                    <div className="relative flex flex-1 grow items-center gap-[var(--spacing-3-68)] rounded-[var(--spacing-1-11)] bg-blue-50 p-[var(--spacing-1-11)]">
-                      <div className="relative flex flex-1 grow flex-col items-start gap-0.5">
-                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-white opacity-50 [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.score')}
-                        </div>
-
-                        <div className="text-adaptive-28 relative self-stretch font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.scoreValue')}
-                        </div>
-                      </div>
-                    </div>
-
-                    <svg
-                      width="132"
-                      height="94"
-                      viewBox="0 0 132 94"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="relative flex-1 grow self-stretch"
-                    >
-                      <rect width="132" height="94" rx="16" fill="#F2F5FF" />
-                      <path
-                        d="M16 77V58.4045M27.1111 77V53.4865M38.2222 77V44.634M49.3333 77V17M60.4444 77V26.7297M82.6667 77V33.2162M93.7778 77V53.4865M104.889 77V40.5135M116 77V53.4865M71.5555 77V20.2432"
-                        stroke="url(#paint0_linear_9041_100)"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <defs>
-                        <linearGradient
-                          id="paint0_linear_9041_100"
-                          x1="12.5"
-                          y1="64.7"
-                          x2="119.996"
-                          y2="65.5333"
-                          gradientUnits="userSpaceOnUse"
-                        >
-                          <stop stopColor="#3573FC" stopOpacity="0" />
-                          <stop offset="0.29049" stopColor="#3573FC" />
-                          <stop offset="0.685619" stopColor="#3573FC" />
-                          <stop
-                            offset="1"
-                            stopColor="#3573FC"
-                            stopOpacity="0"
-                          />
-                        </linearGradient>
-                      </defs>
-                    </svg>
-                  </div>
-
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-83)] self-stretch p-[var(--spacing-1-11)]">
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
-                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.gender')}
-                      </div>
-
-                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.genderValue')}
-                      </div>
-                    </div>
-
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
-                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.birthDate')}
-                      </div>
-
-                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.birthDateValue')}
-                      </div>
-                    </div>
-
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
-                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.maritalStatus')}
-                      </div>
-
-                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.maritalStatusValue')}
-                      </div>
-                    </div>
-
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch">
-                      <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.salary')}
-                      </div>
-
-                      <div className="relative mt-[-1.00px] w-20 text-sm font-normal leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.salaryValue')}
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-
-                <svg
-                  width="1435"
-                  height="1361"
-                  viewBox="0 0 1435 1361"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-0 top-0 h-[var(--size-368)] w-full xl:w-[var(--size-678)]"
-                >
-                  <g opacity="0.16" filter="url(#filter0_f_36_2389)">
-                    <path
-                      d="M580.201 516.863C557.553 350.888 741.074 238.781 835.665 203.475C1418.97 145.308 1255.87 837.593 1019.3 1029.59C782.722 1221.59 231.215 1199.45 201.47 981.467C171.726 763.481 608.51 724.332 580.201 516.863Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_36_2389"
-                      x="0"
-                      y="0"
-                      width="1435"
-                      height="1360.42"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="100"
-                        result="effect1_foregroundBlur_36_2389"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
-
-                <motion.div
-                  id="animate_43_right"
-                  ref={ref43r}
-                  initial={{ opacity: 0, x: 40 }}
-                  animate={inView43r ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[var(--spacing-21-67)] top-[var(--spacing-2-64)] flex w-80 flex-col items-start justify-center gap-[var(--spacing-0-83)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-67)]"
-                >
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative h-[var(--size-148)] w-full overflow-hidden rounded-[20px] bg-green-60 xl:w-[var(--size-68)]">
-                      <div className="absolute left-3.5 top-[var(--pos-57)] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                        900
-                      </div>
-                    </div>
-
-                    <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                      <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.approval')}
-                      </div>
-
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
-                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.approvalReturned')}
-                        </div>
-
-                        <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.approvalNotReturned')}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 self-stretch rounded-3xl">
-                    <div className="relative w-full self-stretch overflow-hidden rounded-[20px] bg-red-50 xl:w-[var(--size-68)]">
-                      <div className="absolute left-[var(--pos-13)] top-[var(--pos-29)] whitespace-nowrap text-2xl font-medium leading-8 tracking-normal text-white [font-family:'Roboto',Helvetica]">
-                        100
-                      </div>
-                    </div>
-
-                    <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                      <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                        {t('decisionsModule.ui.rejection')}
-                      </div>
-
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
-                        <div className="relative mt-[-1.00px] self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.rejectionDefault')}
-                        </div>
-
-                        <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
-                          {t('decisionsModule.ui.rejectionPositive')}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-              </div>
-            </div>
-
-            <div className="group relative flex w-full flex-[0_0_auto] items-end gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
+          <div className="relative flex w-1/2 flex-col items-start justify-center gap-5 self-stretch">
+            <motion.div
+              id="animate_17"
+              initial={{ opacity: 0, y: 40 }}
+              animate={inView37l ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
+              className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            >
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <motion.h4
-                  id="animate_46_left"
-                  ref={ref46l}
-                  initial={{ opacity: 0, x: -40 }}
-                  animate={inView46l ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('decisionsModule.title')}
-                </motion.h4>
+                <h3
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  Выгрузка данных в кредитные бюро
+                </h3>
 
-                <motion.p
-                  id="animate_47_right"
-                  ref={ref47r}
-                  initial={{ opacity: 0, x: 40 }}
-                  animate={inView47r ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
-                >
-                  {t('decisionsModule.desc')}
-                </motion.p>
+                <p
+                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  Предоставление банком денежных средств физическим или
+                  юридическим лицам
+                </p>
               </div>
 
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
@@ -733,7 +523,45 @@ export const Frame1 = () => {
                   />
                 </svg>
               </div>
-            </div>
+            </motion.div>
+
+            <motion.div
+              id="animate_18"
+              initial={{ opacity: 0, y: 40 }}
+              animate={inView37l ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.7, ease: 'easeOut' }}
+              onClick={handleBankCreditClick}
+              className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            >
+              <div className="relative flex flex-1 grow flex-col items-start gap-2">
+                <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  ПО для реконсиляции данных
+                </h3>
+
+                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  Автоматизация всех ваших процессов обработки финансовых данных
+                  с минимальной зависимостью от персонала.
+                </p>
+              </div>
+
+              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                >
+                  <path
+                    d="M12 6L22 16L12 26"
+                    strokeWidth="2"
+                    strokeLinecap="square"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>

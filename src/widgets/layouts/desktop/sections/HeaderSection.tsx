@@ -42,7 +42,7 @@ export const HeaderSection = () => {
 
   return (
     <header
-      className={`mt-4 flex w-full items-center justify-between !rounded-[32px_32px_0_0] px-8 py-4 ${
+      className={`relative mt-4 flex w-full items-center justify-between !rounded-[32px_32px_0_0] px-8 py-4 ${
         isMenuOpen ? '!bg-white' : ''
       }`}
     >
@@ -446,7 +446,7 @@ export const HeaderSection = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.18, ease: 'easeOut' }}
-            className="fixed inset-x-0 top-20 z-50 mx-auto mt-1 hidden max-w-[1440px] justify-center py-2 xl:flex"
+            className="absolute inset-x-0 top-full z-50 hidden xl:flex"
             id="products-menu"
             role="region"
             aria-label={t('headings.lending', { ns: 'megamenu' })}
@@ -456,7 +456,7 @@ export const HeaderSection = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.98 }}
               transition={{ duration: 0.18, ease: 'easeOut' }}
-              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px] border-b-[32px] shadow-xl"
+              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px] shadow-xl"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[0px_0px_32px_32px] border border-[#F3F4F7] bg-white px-6 pb-6 pt-10">
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">

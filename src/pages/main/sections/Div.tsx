@@ -77,7 +77,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
@@ -85,27 +85,26 @@ export const Div = () => {
             >
               <div className="relative h-[var(--size-401)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute left-[var(--pos-145)] top-[var(--pos-30)] h-[var(--size-371)] w-full xl:w-[var(--size-388)]"
-                  width="1408"
-                  height="1470"
-                  viewBox="0 0 1408 1470"
+                  className="absolute"
+                  width="700"
+                  height="368"
+                  viewBox="0 0 700 368"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden={true}
                 >
-                  <g opacity="0.2" filter="url(#filter0_f_15_177)">
+                  <g opacity="0.24" filter="url(#filter0_f_9016_1953)">
                     <path
-                      d="M551.293 621.064C506.958 486.085 642.859 364.437 716.352 320.486C1194 182.548 1164.08 785.029 996.168 981.451C828.258 1177.87 364.818 1243.95 306.591 1066.68C248.363 889.399 606.711 789.787 551.293 621.064Z"
-                      fill="#3772FE"
+                      d="M470.658 360.722C458.687 410.579 393.891 422.177 362.989 421.744C190.149 373.561 313.547 194.205 402.348 165.711C491.149 137.217 646.003 204.774 630.28 270.256C614.558 335.737 485.622 298.4 470.658 360.722Z"
+                      fill="#9FA7BC"
                     />
                   </g>
                   <defs>
                     <filter
-                      id="filter0_f_15_177"
-                      x="0"
-                      y="0"
-                      width="1407.95"
-                      height="1470"
+                      id="filter0_f_9016_1953"
+                      x="-96.6599"
+                      y="-213.69"
+                      width="1100.75"
+                      height="1008.14"
                       filterUnits="userSpaceOnUse"
                       colorInterpolationFilters="sRGB"
                     >
@@ -117,8 +116,45 @@ export const Div = () => {
                         result="shape"
                       />
                       <feGaussianBlur
-                        stdDeviation="150"
-                        result="effect1_foregroundBlur_15_177"
+                        stdDeviation="186.349"
+                        result="effect1_foregroundBlur_9016_1953"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <svg
+                  width="700"
+                  height="368"
+                  viewBox="0 0 700 368"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.32" filter="url(#filter0_f_9016_1842)">
+                    <path
+                      d="M338.986 156.537C362.125 116.459 421.171 123.031 447.802 131.326C585.024 217.324 432.267 340.906 348.117 342.803C263.967 344.701 147.275 246.548 177.665 193.911C208.054 141.275 310.062 206.633 338.986 156.537Z"
+                      fill="#3573FC"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_f_9016_1842"
+                      x="-199.963"
+                      y="-247.627"
+                      width="1075.43"
+                      height="963.156"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="186.349"
+                        result="effect1_foregroundBlur_9016_1842"
                       />
                     </filter>
                   </defs>
@@ -176,45 +212,6 @@ export const Div = () => {
                     </div>
                   </div>
                 </motion.div>
-                <svg
-                  className="absolute left-0 top-0 h-[var(--size-368)] w-full xl:w-[var(--size-678)]"
-                  width="1101"
-                  height="1009"
-                  viewBox="0 0 1101 1009"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden={true}
-                >
-                  <g opacity="0.24" filter="url(#filter0_f_9016_1953)">
-                    <path
-                      d="M567.447 574.542C555.473 624.411 490.662 636.012 459.753 635.578C286.874 587.384 410.3 407.988 499.122 379.488C587.943 350.987 742.831 418.56 727.105 484.056C711.379 549.552 582.415 512.206 567.447 574.542Z"
-                      fill="#9FA7BC"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_9016_1953"
-                      x="0"
-                      y="0"
-                      width="1101"
-                      height="1008.37"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="186.349"
-                        result="effect1_foregroundBlur_9016_1953"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
                 <motion.div
                   id="animate_27"
                   ref={ref27}
@@ -336,35 +333,34 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#3573fc] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative left-[var(--pos-67)] top-6 h-[var(--size-416)] w-full xl:w-[var(--size-543)]">
+              <div className="relative left-[var(--pos-67)] h-[var(--size-401)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute left-[var(--pos-78)] top-1.5 h-[var(--size-371)] w-full xl:w-[var(--size-388)]"
-                  width="1225"
-                  height="986"
-                  viewBox="0 0 1225 986"
+                  className="absolute"
+                  width="700"
+                  height="368"
+                  viewBox="0 0 700 368"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden={true}
                 >
-                  <g opacity="0.08" filter="url(#filter0_f_0_9)">
+                  <g opacity="0.24" filter="url(#filter0_f_9016_1953)">
                     <path
-                      d="M585.778 320.414C622.466 208.96 772.426 194.708 842.821 201.513C1227.94 343.938 912.747 729.754 704.859 778.022C496.971 826.29 156.523 643.066 204.707 496.686C252.892 350.307 539.918 459.731 585.778 320.414Z"
-                      fill="#3573FC"
+                      d="M470.658 360.722C458.687 410.579 393.891 422.177 362.989 421.744C190.149 373.561 313.547 194.205 402.348 165.711C491.149 137.217 646.003 204.774 630.28 270.256C614.558 335.737 485.622 298.4 470.658 360.722Z"
+                      fill="#9FA7BC"
                     />
                   </g>
                   <defs>
                     <filter
-                      id="filter0_f_0_9"
-                      x="0"
-                      y="0"
-                      width="1224.62"
-                      height="986"
+                      id="filter0_f_9016_1953"
+                      x="-96.6599"
+                      y="-213.69"
+                      width="1100.75"
+                      height="1008.14"
                       filterUnits="userSpaceOnUse"
                       colorInterpolationFilters="sRGB"
                     >
@@ -376,8 +372,45 @@ export const Div = () => {
                         result="shape"
                       />
                       <feGaussianBlur
-                        stdDeviation="100"
-                        result="effect1_foregroundBlur_0_9"
+                        stdDeviation="186.349"
+                        result="effect1_foregroundBlur_9016_1953"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                <svg
+                  width="700"
+                  height="368"
+                  viewBox="0 0 700 368"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.32" filter="url(#filter0_f_9016_1842)">
+                    <path
+                      d="M338.986 156.537C362.125 116.459 421.171 123.031 447.802 131.326C585.024 217.324 432.267 340.906 348.117 342.803C263.967 344.701 147.275 246.548 177.665 193.911C208.054 141.275 310.062 206.633 338.986 156.537Z"
+                      fill="#3573FC"
+                    />
+                  </g>
+                  <defs>
+                    <filter
+                      id="filter0_f_9016_1842"
+                      x="-199.963"
+                      y="-247.627"
+                      width="1075.43"
+                      height="963.156"
+                      filterUnits="userSpaceOnUse"
+                      colorInterpolationFilters="sRGB"
+                    >
+                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                      <feBlend
+                        mode="normal"
+                        in="SourceGraphic"
+                        in2="BackgroundImageFix"
+                        result="shape"
+                      />
+                      <feGaussianBlur
+                        stdDeviation="186.349"
+                        result="effect1_foregroundBlur_9016_1842"
                       />
                     </filter>
                   </defs>
@@ -468,52 +501,13 @@ export const Div = () => {
                   </svg>
                   <div className="absolute left-[var(--pos-156)] top-[var(--pos-133)] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
-                <svg
-                  className="absolute left-3 top-0 h-[var(--size-416)] w-full xl:w-[var(--size-388)]"
-                  width="651"
-                  height="764"
-                  viewBox="0 0 651 764"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden={true}
-                >
-                  <g opacity="0.16" filter="url(#filter0_f_9016_2210)">
-                    <path
-                      d="M245.68 388.785C198.282 369.121 196.998 303.256 202.28 272.781C277.054 109.518 434.941 259.656 449.155 351.902C463.368 444.147 372.271 586.589 310.02 560.763C247.77 534.937 304.927 413.365 245.68 388.785Z"
-                      fill="#7C92C8"
-                    />
-                  </g>
-                  <defs>
-                    <filter
-                      id="filter0_f_9016_2210"
-                      x="0"
-                      y="0"
-                      width="650.795"
-                      height="764"
-                      filterUnits="userSpaceOnUse"
-                      colorInterpolationFilters="sRGB"
-                    >
-                      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                      <feBlend
-                        mode="normal"
-                        in="SourceGraphic"
-                        in2="BackgroundImageFix"
-                        result="shape"
-                      />
-                      <feGaussianBlur
-                        stdDeviation="100"
-                        result="effect1_foregroundBlur_9016_2210"
-                      />
-                    </filter>
-                  </defs>
-                </svg>
                 <motion.div
                   id="animate_23"
                   ref={ref23}
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView23 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-0 top-14 inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
+                  className="absolute left-0 top-14 inline-flex flex-col items-center justify-center gap-3 bottom-0 rounded-[32px_32px_0px_0px] bg-white p-4"
                 >
                   <div className="relative size-[var(--size-212)] rounded-[100px]">
                     <div className="relative left-[var(--pos-7)] top-[var(--pos-7)] size-[var(--size-198)]">

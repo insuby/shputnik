@@ -601,7 +601,7 @@ export const Autocredit = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView6 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch lg:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch lg:!gap-12"
       >
         <motion.div
           ref={ref7}
@@ -678,7 +678,7 @@ export const Autocredit = () => {
           </svg>
           <Marquee
             fade
-            className="relative flex w-full flex-1 grow  !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[609px] lg:p-0"
+            className="relative flex w-full flex-1 grow h-full !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[609px] lg:p-0"
             innerClassName="!gap-[1rem] !w-[750px]"
           >
             <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
@@ -686,16 +686,16 @@ export const Autocredit = () => {
                 <img
                   className="relative h-[120px] w-full self-stretch"
                   alt="Screenshot"
-                  src="/img/screenshot-11.png"
+                  src="/img/screenshot-12.png"
                 />
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                   <p className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    {t('examples.bmw7')}
+                    Новый BMW M4 Coupe
                   </p>
 
                   <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    8 876 000 ₽
+                    12 324 000 ₽
                   </div>
                 </div>
               </div>
@@ -711,11 +711,11 @@ export const Autocredit = () => {
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                   <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    {t('examples.bmwM4')}
+                    Новый BMW 218i Gran Coupe
                   </div>
 
                   <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                    12 324 000 ₽
+                    8 876 000 ₽
                   </div>
                 </div>
               </div>
@@ -726,12 +726,12 @@ export const Autocredit = () => {
                 <img
                   className="relative h-[120px] w-full self-stretch"
                   alt="Screenshot"
-                  src="/img/screenshot-12.png"
+                  src="/img/screenshot-11.png"
                 />
 
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
                   <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                    BMW 218i Gran Coupe
+                    Новый BMW 3 серии
                   </div>
 
                   <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">

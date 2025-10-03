@@ -72,7 +72,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-12"
+          className="relative flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-12"
         >
           <Link
             to={RoutesPath.MICROCREDIT}
@@ -327,27 +327,25 @@ export const FrameWrapper = () => {
             </motion.div>
 
             <svg
-              className="absolute left-0 top-0 h-[var(--size-520)] w-full xl:w-[var(--size-690)]"
-              width="1012"
-              height="807"
-              viewBox="0 0 1012 807"
+              width="690"
+              height="570"
+              viewBox="0 0 690 570"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              aria-label="Vector"
             >
-              <g opacity="0.32" filter="url(#filter0_f_9012_1641)">
+              <g opacity="0.32" filter="url(#filter0_f_9009_1120)">
                 <path
-                  d="M505.932 261.319C547.13 186.048 656.863 195.734 706.579 209.985C964.587 363.598 686.644 599.143 530.734 606.219C374.823 613.294 154.36 436.28 208.469 337.422C262.577 238.564 454.434 355.407 505.932 261.319Z"
-                  fill="white"
+                  d="M283.005 234.855C258.925 178.898 312.328 121.763 342.04 100.191C540.779 23.0708 550.966 281.52 486.742 371.81C422.519 462.1 227.111 507.988 195.485 434.496C163.859 361.004 313.106 304.801 283.005 234.855Z"
+                  fill="#3573FC"
                 />
               </g>
               <defs>
                 <filter
-                  id="filter0_f_9012_1641"
-                  x="0"
-                  y="0"
-                  width="1012"
-                  height="806.538"
+                  id="filter0_f_9009_1120"
+                  x="-181.64"
+                  y="-286.685"
+                  width="1076.3"
+                  height="1130.4"
                   filterUnits="userSpaceOnUse"
                   colorInterpolationFilters="sRGB"
                 >
@@ -359,8 +357,8 @@ export const FrameWrapper = () => {
                     result="shape"
                   />
                   <feGaussianBlur
-                    stdDeviation="100"
-                    result="effect1_foregroundBlur_9012_1641"
+                    stdDeviation="186.349"
+                    result="effect1_foregroundBlur_9009_1120"
                   />
                 </filter>
               </defs>
@@ -372,7 +370,7 @@ export const FrameWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-              className="absolute left-[var(--pos-363)] top-[var(--pos-142)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
+              className="absolute bottom-[-30px] left-[var(--pos-363)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4 drop-shadow-md"
             >
               <Graph sum="122,000" />
 

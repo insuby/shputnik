@@ -65,7 +65,7 @@ export const Works = () => {
                         {job.tags.map((tag, index) => (
                           <Badge
                             key={index}
-                            className="!h-8 !rounded-[52px] !bg-blue-10 px-3 py-2 !text-blue-50 shadow-none [font-family:var(--font-family)]"
+                            className="!h-8 !rounded-[52px] !bg-blue-10 px-3 py-2 !font-medium !text-blue-50 shadow-none [font-family:var(--font-family)]"
                           >
                             {tag}
                           </Badge>

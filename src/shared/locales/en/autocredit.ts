@@ -32,7 +32,7 @@ export const autocredit = {
       'A separate interface allows you to control the entire life cycle of collateral — from verification to deregistration.',
   },
   examples: {
-    bmw7: 'BMW 7 Series Long (electric)',
+    bmw3: 'BMW 3 Series',
     bmwM4: 'New BMW M4 Coupe',
   },
   verification: {

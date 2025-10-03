@@ -32,8 +32,11 @@ export const autocredit = {
       'Отдельный интерфейс позволяет контролировать весь жизненный цикл залогов — от проверки до снятия с учёта.',
   },
   examples: {
-    bmw7: 'BMW 7 серии Long (электрический)',
-    bmwM4: 'Новый BMW M4 Coupe',
+    bmw3: 'BMW 3 серии',
+    bmwM4: 'BMW 218i Gran Coupe',
+
+    bmw3: 'BMW 3 Series',
+    bmwM4: 'New BMW M4 Coupe',
   },
   verification: {
     title: 'Проверка',

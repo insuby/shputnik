@@ -3,7 +3,6 @@ import { motion, useInView } from 'framer-motion';
 import {
   Advantages,
   Analytics,
-  CrmCapabilities,
   EmployeeWork,
   Feedback,
   Integrations,
@@ -1471,7 +1470,6 @@ export const MicroCredit = () => {
         </div>
       </motion.div>
       <ZaimChecker />
-      <CrmCapabilities />
       <Zaim />
       <Analytics />
       <Integrations />

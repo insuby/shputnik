@@ -71,7 +71,7 @@ export const Development = () => {
             src={vector}
           />
 
-          <div className="relative left-[-100px] top-[var(--pos-minus-41)] mx-auto hidden size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
+          <div className="relative left-[-100px] top-[var(--pos-minus-41)] mx-auto hidden z-10 size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
             <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
               <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
@@ -108,7 +108,7 @@ export const Development = () => {
               </div>
             </div>
           </div>
-          <div className="relative inset-0 mx-auto h-[280px] w-full max-w-[464px] scale-75 overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[var(--pos-727)] lg:top-[var(--pos-190)]">
+          <div className="relative inset-0 mx-auto h-[280px] w-full max-w-[464px] overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[var(--pos-727)] lg:top-[var(--pos-190)]">
             <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
               <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 

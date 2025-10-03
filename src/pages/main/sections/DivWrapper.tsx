@@ -56,7 +56,7 @@ export const DivWrapper = () => {
           transition={{ duration: 0.7, ease: 'easeOut' }}
           className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
         >
-          <div className="relative left-[-222px] top-[-254px] hidden lg:block xl:w-[var(--size-1265)]">
+          <div className="relative bottom-0 left-[-222px] top-[-254px] hidden lg:block xl:w-[var(--size-1265)]">
             <svg
               className="absolute left-0 top-[var(--pos-333)] h-[var(--size-571)] w-full xl:w-[var(--size-611)]"
               width="808"
@@ -141,9 +141,9 @@ export const DivWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inView16 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[var(--pos-284)] top-[var(--pos-319)] inline-flex items-center overflow-hidden rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd]"
+              className="absolute left-[var(--pos-284)] top-[var(--pos-319)] inline-flex overflow-hidden  rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:min-h-[700px]"
             >
-              <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] xl:w-full">
+              <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] xl:min-w-[393px]">
                 <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
                   <div className="text-adaptive-23-9 relative self-stretch font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('calculator.title')}
@@ -425,7 +425,7 @@ export const DivWrapper = () => {
                       </div>
                       <div className="relative grid w-full grid-cols-3 gap-[17.94px]">
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -433,7 +433,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -441,7 +441,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -461,7 +461,7 @@ export const DivWrapper = () => {
                       </div>
                       <div className="w/full relative grid grid-cols-3 gap-[17.94px]">
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -469,7 +469,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -477,7 +477,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-[#00B336] [font-family:'Roboto',Helvetica]">
@@ -497,7 +497,7 @@ export const DivWrapper = () => {
                       </div>
                       <div className="w/full relative grid grid-cols-3 gap-[17.94px]">
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -505,7 +505,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -513,7 +513,7 @@ export const DivWrapper = () => {
                           </div>
                         </div>
                         <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
                           <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -537,7 +537,7 @@ export const DivWrapper = () => {
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -575,7 +575,7 @@ export const DivWrapper = () => {
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc]  hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -613,7 +613,7 @@ export const DivWrapper = () => {
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 hover:border-[#3573fc] hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

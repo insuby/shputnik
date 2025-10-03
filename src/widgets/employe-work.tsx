@@ -89,7 +89,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
-            className="max-w-[90%] relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[704px]"
+            className="relative w-full max-w-[90%] text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] xl:w-[704px]"
           >
             {t('employeeWork.subtitle')}
           </motion.p>
@@ -148,14 +148,14 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               </defs>
             </svg>
 
-            <div className="h-[400px] relative lg:h-auto">
+            <div className="relative h-[400px] lg:h-[210px]">
               <svg
                 width="580"
                 height="222"
                 viewBox="0 0 580 222"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative m-auto size-full left-0 mt-[-11.00px] h-[222px] w-full scale-150 self-stretch xl:scale-100"
+                className="relative left-0 m-auto mt-[-11.00px] size-full h-[222px] w-full scale-150 self-stretch xl:scale-100"
               >
                 <circle
                   opacity="0.8"
@@ -296,8 +296,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                       <Check10 className="!relative !h-4 !w-4" color={color} />
                     </motion.div>
 
-                    <div
-                      className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                       {t('employeeWork.roles.creditManager')}
                     </div>
                   </motion.div>
@@ -542,7 +541,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               </defs>
             </svg>
 
-            <div className="relative w-full self-stretch xl:h-[210px]">
+            <div className="relative h-[230px] w-full self-stretch">
               <div className="relative top-1 flex w-full flex-col items-start xl:left-[73px] xl:w-[456px]">
                 <div className="relative flex w-full flex-[0_0_auto] items-end justify-end self-stretch py-2 pl-0 pr-2 xl:left-0 xl:pl-16">
                   <div className="relative flex w-full flex-col items-start gap-1 xl:w-[296px]">
