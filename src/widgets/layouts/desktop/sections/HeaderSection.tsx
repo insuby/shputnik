@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -14,12 +14,58 @@ export const HeaderSection = () => {
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const originalOverflowRef = useRef<string>('');
+  const originalPaddingRightRef = useRef<string>('');
+  const originalHtmlOverflowRef = useRef<string>('');
+  const originalHtmlPaddingRightRef = useRef<string>('');
+  const originalPositionRef = useRef<string>('');
+  const originalTopRef = useRef<string>('');
+  const originalLeftRef = useRef<string>('');
+  const originalRightRef = useRef<string>('');
+  const originalWidthRef = useRef<string>('');
+  const savedScrollYRef = useRef<number>(0);
 
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      originalOverflowRef.current = document.body.style.overflow;
+      originalPaddingRightRef.current = document.body.style.paddingRight;
+      originalHtmlOverflowRef.current = document.documentElement.style.overflow;
+      originalHtmlPaddingRightRef.current = document.documentElement.style.paddingRight;
+      originalPositionRef.current = document.body.style.position;
+      originalTopRef.current = document.body.style.top;
+      originalLeftRef.current = document.body.style.left;
+      originalRightRef.current = document.body.style.right;
+      originalWidthRef.current = document.body.style.width;
+
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      savedScrollYRef.current = window.scrollY;
+
+      document.documentElement.style.overflow = 'hidden';
+      if (scrollbarWidth > 0) {
+        document.documentElement.style.paddingRight = `${scrollbarWidth}px`;
+      }
+
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${savedScrollYRef.current}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
     } else {
-      document.body.style.overflow = 'auto';
+      document.documentElement.style.overflow = originalHtmlOverflowRef.current || '';
+      document.documentElement.style.paddingRight = originalHtmlPaddingRightRef.current || '';
+
+      document.body.style.position = originalPositionRef.current || '';
+      document.body.style.top = originalTopRef.current || '';
+      document.body.style.left = originalLeftRef.current || '';
+      document.body.style.right = originalRightRef.current || '';
+      document.body.style.width = originalWidthRef.current || '';
+      document.body.style.overflow = originalOverflowRef.current || '';
+      document.body.style.paddingRight = originalPaddingRightRef.current || '';
+
+      const y = savedScrollYRef.current;
+      if (typeof y === 'number' && !Number.isNaN(y)) {
+        window.scrollTo(0, y);
+      }
     }
   }, [isMenuOpen]);
 
