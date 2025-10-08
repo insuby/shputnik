@@ -12,24 +12,12 @@ export const Feedback = () => {
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
-  const ref4 = useRef(null);
-  const ref5 = useRef(null);
-  const ref6 = useRef(null);
-  const ref7 = useRef(null);
-  const ref8 = useRef(null);
-  const ref9 = useRef(null);
-  const ref10 = useRef(null);
-  const ref11 = useRef(null);
-  const ref12 = useRef(null);
-  const ref13 = useRef(null);
+
   const ref14 = useRef(null);
   const ref15 = useRef(null);
   const ref16 = useRef(null);
   const ref17 = useRef(null);
   const ref18 = useRef(null);
-  const ref19 = useRef(null);
-  const ref20 = useRef(null);
-  const ref21 = useRef(null);
 
   const inView1 = useInView(ref1, { once: true, margin: '-100px' });
   const inView2 = useInView(ref2, { once: true, margin: '-100px' });
@@ -39,9 +27,6 @@ export const Feedback = () => {
   const inView16 = useInView(ref16, { once: true, margin: '-100px' });
   const inView17 = useInView(ref17, { once: true, margin: '-100px' });
   const inView18 = useInView(ref18, { once: true, margin: '-100px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
-  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
 
   return (
     <div className="relative flex size-full min-h-[330px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 lg:w-full">
@@ -127,7 +112,7 @@ export const Feedback = () => {
         </svg>
 
         <div className="relative flex flex-col items-start gap-7 lg:w-[696px]">
-          <div className="relative flex w-full max-w-[70%] flex-col items-start gap-4 self-stretch">
+          <div className="relative flex w-full max-w-[90%] flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
               initial={{ opacity: 0, x: 80 }}
@@ -163,7 +148,7 @@ export const Feedback = () => {
           </motion.button>
         </div>
 
-        <div className="absolute left-[var(--pos-789)] top-12 flex w-[328px] flex-col items-start gap-3 rounded-[32px] bg-[#ffffff] p-6">
+        <div className="absolute left-[var(--pos-789)] -bottom-6 flex w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6">
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Калькулятор
           </div>
@@ -211,11 +196,6 @@ export const Feedback = () => {
               </div>
             </div>
           </div>
-          <button className="all-[unset] relative box-border flex h-12 w-full items-center justify-center gap-8 self-stretch rounded-3xl bg-gray-90 px-8 py-3">
-            <div className="relative mt-[-1.00px] w-[164px] self-stretch whitespace-nowrap text-center text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]">
-              Оформить
-            </div>
-          </button>
         </div>
 
         <motion.div
@@ -292,34 +272,6 @@ export const Feedback = () => {
                 </defs>
               </svg>
             </div>
-          </motion.div>
-
-          <motion.div
-            ref={ref19}
-            initial={{ opacity: 0, y: 50 }}
-            animate={inView19 ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6, ease: 'easeOut', delay: 0.8 }}
-            className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3"
-          >
-            <motion.div
-              ref={ref20}
-              initial={{ opacity: 0, x: -50 }}
-              animate={inView20 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-              className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
-            >
-              {t('feedback.loanAmount')}
-            </motion.div>
-
-            <motion.div
-              ref={ref21}
-              initial={{ opacity: 0, x: 50 }}
-              animate={inView21 ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-              className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
-            >
-              122, 000₽
-            </motion.div>
           </motion.div>
         </motion.div>
       </div>
