@@ -2244,7 +2244,7 @@ export const P2P = () => {
       <Zaim />
       <Integrations />
 
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:p-20">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:!p-20">
         <svg
           width="1435"
           height="1361"

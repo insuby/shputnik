@@ -24,7 +24,7 @@ export const Integrations = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:!p-20 lg:!flex-row"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-20 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:!flex-row lg:!p-24"
     >
       <img
         className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
@@ -53,7 +53,7 @@ export const Integrations = () => {
 
         <button
           onClick={handleTryClick}
-          className="all-[unset] w-full lg:w-fit relative mx-auto box-border inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 lg:m-0"
+          className="all-[unset] relative mx-auto box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 lg:m-0 lg:w-fit"
         >
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             Попробовать

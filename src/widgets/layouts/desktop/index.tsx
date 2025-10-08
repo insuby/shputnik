@@ -27,9 +27,9 @@ export const DesktopLayout = () => {
       >
         {t('skipToContent')}
       </a>
-      <div className="m-auto flex size-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl px-3 ">
+      <div className="m-auto flex size-full max-w-[1440px] flex-col items-center overflow-hidden rounded-3xl">
         <HeaderSection />
-        <main id="content" className="size-full overflow-hidden">
+        <main id="content" className="size-full overflow-hidden md:pt-3">
           <Outlet />
         </main>
         <FooterSection />

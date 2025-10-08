@@ -83,12 +83,12 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative h-[var(--size-401)] w-full xl:w-[var(--size-678)]">
+              <div className="relative h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
                   className="absolute"
-                  width="700"
+                  width="720"
                   height="368"
-                  viewBox="0 0 700 368"
+                  viewBox="0 0 720 368"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -123,9 +123,9 @@ export const Div = () => {
                   </defs>
                 </svg>
                 <svg
-                  width="700"
+                  width="720"
                   height="368"
-                  viewBox="0 0 700 368"
+                  viewBox="0 0 720 368"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -339,7 +339,7 @@ export const Div = () => {
               to={RoutesPath.BNPL}
               className="relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative left-[var(--pos-67)] h-[var(--size-401)] w-full xl:w-[var(--size-678)]">
+              <div className="relative left-[var(--pos-67)] h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
                   className="absolute"
                   width="700"
