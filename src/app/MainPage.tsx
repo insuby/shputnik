@@ -6,3 +6,5 @@ export const MainPage = () => {
   const isMobile = useIsMobile();
   return isMobile ? <MainMobile /> : <Main />;
 };
+
+

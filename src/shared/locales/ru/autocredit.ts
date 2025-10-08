@@ -33,10 +33,7 @@ export const autocredit = {
   },
   examples: {
     bmw3: 'BMW 3 серии',
-    bmwM4: 'BMW 218i Gran Coupe',
-
-    bmw3: 'BMW 3 Series',
-    bmwM4: 'New BMW M4 Coupe',
+    bmwM4: 'Новый BMW M4 Coupe',
   },
   verification: {
     title: 'Проверка',

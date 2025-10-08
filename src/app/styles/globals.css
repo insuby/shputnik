@@ -6,33 +6,39 @@
 * {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-
-  &:hover {
-    transition: all ease-in 0.25s;
-  }
 }
 
-
-
-/* Скрытие скроллбара */
 body {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+}
+
+html {
+  overflow-y: overlay;
+  scrollbar-gutter: stable both-edges;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  width: 8px;
 }
 
-/* Скрытие скроллбара для всех элементов */
-* {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+body::-webkit-scrollbar-track {
+  background: transparent;
 }
 
-*::-webkit-scrollbar {
-  display: none;
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
+
+/*!* Скрытие скроллбара для всех элементов *!*/
+/** {*/
+/*  scrollbar-width: none;*/
+/*  -ms-overflow-style: none;*/
+/*}*/
+
+/**::-webkit-scrollbar {*/
+/*  display: none;*/
+/*}*/
 
 html,
 body {
