@@ -76,7 +76,7 @@ export const development = {
   },
   platforms: {
     title: 'Разработаем платформы и решения для вашего бизнеса',
-    tryButton: 'попробовать',
+    tryButton: 'Попробовать',
     enterprise: {
       title: 'Enterprise',
       description:
