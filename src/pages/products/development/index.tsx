@@ -867,7 +867,7 @@ export const Development = () => {
                     </div>
 
                     <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      {t('platforms.title')}
+                      {t('platforms.enterprise.description')}
                     </p>
                   </div>
                 </div>
