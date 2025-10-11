@@ -6,9 +6,10 @@ import {
   EmployeeWork,
   Integrations,
   RoleStructure,
+  SocialParameters,
   Trust,
   Zaim,
-  useFeedbackForm, SocialParameters,
+  useFeedbackForm,
 } from 'widgets';
 
 import { useRef } from 'react';
@@ -163,7 +164,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-full text-center lg:text-start text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-leftw-10/12"
+                  className="lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
                 >
                   {t('static.description')}
                 </motion.p>
@@ -315,7 +316,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="absolute bottom-0 mt-auto inline-flex h-[340px] flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 left-[var(--pos-800)] lg:top-[var(--pos-286)]"
+            className="absolute bottom-0 left-[var(--pos-800)] mt-auto inline-flex h-[340px] flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 lg:top-[var(--pos-286)]"
           >
             <div className="relative size-[212px] rounded-[100px]">
               <div className="relative left-[7px] top-[7px] size-[198px]">
@@ -590,54 +591,53 @@ export const BNPL = () => {
         >
           <Marquee fade>
             <div className="relative left-1 h-[400px] w-full lg:w-[752px]">
-              <div className="absolute left-0 top-[39px] inline-flex items-center gap-4">
-                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
-                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]" />
+              <div className="absolute left-0 top-[39px] inline-flex h-[calc(100%-39px)] items-stretch gap-4">
+                {[
+                  {
+                    name: t('products.product1'),
+                    price: '85 950',
+                    image: '/img/bnpl/frame-1948755020-3.png',
+                  },
+                  {
+                    name: t('products.product2'),
+                    price: '15 350',
+                    image: '/img/bnpl/Screenshot_11.png',
+                  },
+                  {
+                    name: t('products.product3'),
+                    price: '4 400',
+                    image: '/img/bnpl/Screenshot_12.png',
+                  },
+                  {
+                    name: t('products.product4'),
+                    price: '14 900',
+                    image: '/img/bnpl/Screenshot_13 1.png',
+                  },
+                ].map((product, idx) => (
+                  <div
+                    key={idx}
+                    className="relative flex h-80 w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4"
+                  >
+                    <div className="relative flex w-full flex-1 flex-col items-center self-stretch">
+                      <div
+                        className="relative size-40 h-40 bg-[50%_50%]"
+                        style={{
+                          background: `url(${product.image}) 50% 50% / contain no-repeat`,
+                        }}
+                      />
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('products.headphones1')}
-                      </div>
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                        <div className="relative h-20 mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                          {product.name}
+                        </div>
 
-                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        85 950₽
+                        <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                          {product.price}₽
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-
-                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
-                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
-
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('products.headphones2')}
-                      </div>
-
-                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        74 000₽
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="relative flex w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4">
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center self-stretch">
-                    <div className="relative size-40 [background:url(/img/bnpl/frame-1948755020-2.png)_50%_50%_/_cover]" />
-
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                        {t('products.headphones2')}
-                      </div>
-
-                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                        74 000₽
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </Marquee>
@@ -1485,7 +1485,7 @@ export const BNPL = () => {
         </div>
       </div>
 
-      <SocialParameters/>
+      <SocialParameters />
       <EmployeeWork />
       <RoleStructure />
       <Trust />

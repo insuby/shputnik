@@ -36,8 +36,10 @@ export const bnpl = {
     managePayments: 'Управляйте всеми платежами в одном месте',
   },
   products: {
-    headphones1: 'Наушники Beyerdynamic Amiron',
-    headphones2: 'Наушники Kennerton Gjallarhorn JM',
+    product1: 'Наушники Beyerdynamic Amiron',
+    product2: 'Мышь беспроводная Logitech',
+    product3: 'Микрофон\nFifine AM8\nчерный',
+    product4: 'Умная колонка Яндекс Станция Миди черный',
   },
   form: {
     cost: 'Стоимость',
