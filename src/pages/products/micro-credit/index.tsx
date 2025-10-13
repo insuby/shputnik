@@ -761,7 +761,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.applications')}
                       </div>
@@ -818,13 +818,13 @@ export const MicroCredit = () => {
 
                     <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
                       <div className="relative h-[200px] w-full lg:h-[170px] lg:w-[290px]">
-                        <div className="absolute left-7 top-9 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] lg:w-[235px]">
+                        <div className="absolute left-7 top-[46px] flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] lg:w-[235px]">
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
                             {t('processes.applicationApproved')}
                           </div>
                         </div>
 
-                        <div className="absolute left-3 top-7 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50 lg:w-[266px]">
+                        <div className="absolute left-3 top-[34px] flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50 lg:w-[266px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 lg:w-[18px]">
@@ -870,7 +870,7 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-0 top-0 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 lg:w-[290px]">
+                        <div className="absolute left-0 top-0 flex w-full h-[60px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 lg:w-[290px]">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 lg:w-[18px]">
@@ -918,7 +918,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.autoNotification')}
                       </div>
@@ -1144,7 +1144,7 @@ export const MicroCredit = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.bonusSystem')}
                       </div>
@@ -1240,7 +1240,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.personalAccount')}
                       </div>
@@ -1402,7 +1402,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.autoDocumentation')}
                       </div>
