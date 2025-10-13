@@ -11,20 +11,20 @@ export const About = () => {
   };
   return (
     <section
-      className="relative inline-flex flex-col items-start justify-center"
+      className="relative flex w-full max-w-full flex-col items-start justify-center overflow-hidden"
       aria-labelledby="about-title"
     >
       <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 lg:px-8 lg:pb-[88px] lg:pt-8">
-        <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] lg:inline-flex">
+        <div className="relative flex w-full max-w-full flex-[0_0_auto] flex-col items-center gap-[88px] lg:mx-[-8.00px] lg:inline-flex">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 pt-[88px] lg:!gap-20 lg:!px-20 lg:!pb-20">
+            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-1 pb-10 pt-16 lg:pt-[88px] lg:!gap-20 lg:!px-20 lg:!pb-20">
               <svg
                 width="1688"
                 height="1367"
                 viewBox="0 0 1688 1367"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-[143px] top-[37px] h-[1060px] lg:w-[1108px]"
+                className="absolute left-0 top-[37px] hidden h-[1060px] lg:left-[143px] lg:block lg:w-[1108px]"
                 aria-hidden={true}
               >
                 <g opacity="0.12" filter="url(#filter0_f_9263_2745)">
@@ -61,25 +61,25 @@ export const About = () => {
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 lg:w-[980px] lg:gap-8">
                 <h1
                   id="about-title"
-                  className="relative mt-[-1.00px] self-stretch text-center text-3xl font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-6xl lg:leading-[68px]"
+                  className="relative mt-[-1.00px] self-stretch text-center text-5xl font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-6xl lg:leading-[68px]"
                 >
                   {t('title', { ns: 'about' })}
                 </h1>
 
-                <p className="relative w-full px-2 text-center text-base font-normal leading-6 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] lg:w-[786px] lg:text-xl lg:leading-7">
+                <p className="relative w-full px-2 text-center font-normal tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] lg:w-[786px] text-xl lg:leading-7">
                   {t('subtitle', { ns: 'about' })}
                 </p>
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row ">
-                <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-10">
+                <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-6 lg:p-10">
                   <svg
                     width="753"
                     height="638"
                     viewBox="0 0 753 638"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-[-157px] top-[-141px] h-[386px] w-[409px]"
+                    className="absolute left-0 top-0 hidden h-[386px] w-[409px] lg:left-[-157px] lg:top-[-141px] lg:block"
                     aria-hidden={true}
                   >
                     <g opacity="0.4" filter="url(#filter0_f_9263_3599)">
@@ -119,7 +119,7 @@ export const About = () => {
                     viewBox="0 0 819 692"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute -top-2 left-[189px] h-[442px] w-[476px]"
+                    className="absolute left-0 top-0 hidden h-[442px] w-[476px] lg:-top-2 lg:left-[189px] lg:block"
                     aria-hidden={true}
                   >
                     <g opacity="0.3" filter="url(#filter0_f_9263_3600)">
@@ -154,7 +154,7 @@ export const About = () => {
                   </svg>
 
                   <div className="relative flex w-full flex-col items-start gap-4 lg:w-[340px]">
-                    <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] self-stretch text-5xl font-normal leading-tight tracking-normal text-white [font-family:'Roboto',Helvetica] lg:text-[68px] lg:leading-[72px]">
                       12
                     </div>
 
@@ -171,9 +171,9 @@ export const About = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-1 grow flex-col items-start gap-[60px] rounded-[32px] bg-[#ffffff] p-5 lg:!flex-row lg:p-10">
+                <div className="relative flex w-full flex-1 grow flex-col items-start gap-8 rounded-[32px] bg-[#ffffff] p-5 lg:!flex-row lg:gap-[60px] lg:p-10">
                   <div className="relative flex flex-1 grow flex-col items-start gap-4">
-                    <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-1.00px] self-stretch text-5xl font-normal leading-tight tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:text-[68px] lg:leading-[72px]">
                       200+
                     </div>
 
@@ -181,7 +181,7 @@ export const About = () => {
                       {t('projectsCompleted', { ns: 'about' })}
                     </p>
 
-                    <div className="relative mr-[-3.00px] inline-flex flex-[0_0_auto] items-center gap-2">
+                    <div className="relative inline-flex flex-[0_0_auto] flex-wrap items-center gap-2 lg:mr-[-3.00px]">
                       <div className="relative inline-flex h-8 flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[52px] bg-[#ff8068] px-3 py-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                         <div className="relative mb-[-1.50px] mt-[-2.50px] w-fit whitespace-nowrap text-sm font-medium leading-5 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                           Java
@@ -216,11 +216,11 @@ export const About = () => {
 
                   <div className="relative flex flex-1 grow flex-col items-start justify-between self-stretch">
                     <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-                      <div className="relative mt-[-1.00px] w-[286px] text-[68px] font-normal leading-[72px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                      <div className="relative mt-[-1.00px] w-full text-5xl font-normal leading-tight tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[286px] lg:text-[68px] lg:leading-[72px]">
                         30+
                       </div>
 
-                      <div className="relative w-[286px] text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                      <div className="relative w-full text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:w-[286px]">
                         {t('inHouseDevelopers', { ns: 'about' })}
                       </div>
                     </div>
@@ -281,7 +281,7 @@ export const About = () => {
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2
                     id="office-moscow"
-                    className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    className="relative mt-[-1.00px] w-fit text-3xl font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:whitespace-nowrap lg:text-[40px]"
                   >
                     {t('moscow', { ns: 'about' })}
                   </h2>
@@ -1461,7 +1461,7 @@ export const About = () => {
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
                   <h2
                     id="office-murmansk"
-                    className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                    className="relative mt-[-1.00px] w-fit text-3xl font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:whitespace-nowrap lg:text-[40px]"
                   >
                     {t('murmansk', { ns: 'about' })}
                   </h2>

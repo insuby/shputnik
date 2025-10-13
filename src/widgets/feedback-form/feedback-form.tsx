@@ -58,12 +58,12 @@ export const FeedbackForm = () => {
       aria-modal="true"
       aria-labelledby="feedback-dialog-title"
       onClick={onBackdropClick}
-      className={`fixed inset-0 z-50 flex h-screen w-screen items-center justify-center pt-8 transition-all duration-300 ease-in-out [font-family:var(--font-family)] xl:p-[40px] ${
+      className={`fixed inset-0 z-50 flex h-screen w-screen items-center justify-center pt-0 transition-all duration-300 ease-in-out [font-family:var(--font-family)] lg:!pt-8 xl:p-[40px] ${
         isVisible ? 'bg-[#000000CA] opacity-100' : 'bg-transparent opacity-0'
       }`}
     >
       <div
-        className={`relative flex size-fit h-fit max-w-[1376px] flex-col items-start gap-6 overflow-hidden rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out${
+        className={`relative flex size-fit h-screen max-w-[1376px] flex-col items-start gap-6 overflow-hidden lg:rounded-2xl bg-white p-6 transition-all duration-300 ease-in-out lg:h-auto${
           isVisible
             ? ' translate-y-0 scale-100 opacity-100'
             : ' translate-y-4 scale-95 opacity-0'
@@ -260,7 +260,7 @@ export const FeedbackForm = () => {
             >
               <button
                 type="submit"
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 cursor-pointer"
+                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600"
               >
                 <span className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-white [font-style:var(--body-1-r-font-style)]">
                   {t('feedbackForm.send')}

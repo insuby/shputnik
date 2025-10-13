@@ -96,12 +96,48 @@ export const HeaderSection = () => {
         <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
           <div className="relative h-[23px] w-[170px]">
             <span className="sr-only">Sputnik</span>
-            <img
+            <svg
               className="absolute left-0 top-0 size-full"
-              alt=""
               aria-hidden={true}
-              src="/img/logo.png"
-            />
+              width="112"
+              height="24"
+              viewBox="0 0 112 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g mask="url(#mask0_9587_14956)">
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M7.46875 12.0009C7.46875 7.01586 11.51 2.97336 16.4963 2.97336C17.215 2.97336 17.9163 3.05836 18.5875 3.21711C16.6238 1.60086 14.11 0.630859 11.3687 0.630859C5.09 0.630859 0 5.72211 0 12.0009C0 18.2796 5.09 23.3696 11.3687 23.3696C14.11 23.3696 16.6238 22.3996 18.5875 20.7846C17.9163 20.9434 17.215 21.0284 16.4963 21.0284C11.51 21.0284 7.46875 16.9859 7.46875 12.0009Z"
+                  fill="#1C222F"
+                />
+              </g>
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M23.7939 2.29688V6.68563C24.8814 8.17688 25.5239 10.0131 25.5239 12.0006C25.5239 13.9869 24.8814 15.8244 23.7939 17.3156V21.7169H29.8539V7.00438H36.0202V21.7169H42.0802V2.29688H23.7939Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M46.8403 2.29688V6.93188H52.4478V21.7169H58.5078V6.93188H64.1153V2.29688H46.8403Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M68.88 2.29688V21.7169H74.9413V13.8081H81.2138V21.7169H87.2738V2.29688H81.2138V9.03063H74.9413V2.29688H68.88Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M92.03 2.2627V11.9902V21.7177H98.09V14.0277H99.6788L104.274 21.7177H111.238L105.213 11.9902L111.238 2.2627H104.274L99.6788 9.95269H98.09V2.2627H92.03Z"
+                fill="#1C222F"
+              />
+            </svg>
           </div>
         </Link>
       </div>
@@ -138,7 +174,8 @@ export const HeaderSection = () => {
                       : 'border-transparent'
                   }`}
                 >
-                  <div className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
+                  <div
+                    className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
                     {item.label}
                   </div>
                 </div>
