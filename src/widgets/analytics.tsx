@@ -61,7 +61,6 @@ export const Analytics = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className="absolute left-[450px] top-0 h-[668px] w-full lg:w-[926px]"
-
         >
           <g opacity="0.16" filter="url(#filter0_f_9163_2232)">
             <path
@@ -191,10 +190,10 @@ export const Analytics = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView4 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
+          className="relative flex flex-1 grow items-center justify-center self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative h-[574px] w-full scale-95 rounded-[287px] lg:left-[57px] lg:top-[17px] lg:!size-[574px] lg:scale-100">
-            <div className="absolute left-32 top-[127px] size-[319px]">
+          <div className="relative flex h-[574px] w-full items-center justify-center">
+            <div className="relative size-[319px] scale-[0.85] lg:scale-100">
               <div className="absolute left-[-29px] top-[-18px] h-[337px] w-[356px]">
                 <div className="absolute left-0 top-[76px] h-[260px] w-[356px]">
                   <div className="absolute left-0 top-[7px] h-[253px] w-[356px]">
@@ -315,7 +314,7 @@ export const Analytics = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={inView5 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="absolute left-[143px] top-[497px] flex w-72 items-start rounded-[100px] bg-[#ffffff] p-1"
+              className="absolute bottom-8 flex w-72 scale-[0.55] items-start rounded-[100px] bg-[#ffffff] p-1 lg:scale-100"
             >
               <div className="relative flex flex-1 grow items-center justify-center gap-2 rounded-[100px] bg-[#1c222f] px-3 py-2">
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-2-r text-[length:var(--body-2-r-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-2-r-font-style)]">
