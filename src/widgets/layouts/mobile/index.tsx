@@ -294,7 +294,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-start text-[20px] text-gray-90">
+                      <span className="w-10/12 border-b text-xl border-solid border-[#eeeff2] py-6 text-start text-gray-90">
                         {t('productsTitle')}
                       </span>
                       <span className="absolute right-5">
@@ -316,7 +316,7 @@ export const MobileLayout = () => {
                     <Link
                       to={RoutesPath.ABOUT}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] items-center gap-4 p-4"
+                      className="flex h-[80px] text-xl items-center gap-4 p-4"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -336,14 +336,14 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                      <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                         {t('about')}
                       </span>
                     </Link>
                     <Link
                       to={RoutesPath.REVIEWS}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] items-center gap-4 p-4"
+                      className="flex h-[80px] text-xl  items-center gap-4 p-4"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -376,14 +376,14 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                      <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                         {t('reviews')}
                       </span>
                     </Link>
                     <Link
                       to={RoutesPath.WORK}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] items-center gap-4 p-4"
+                      className="flex h-[80px] text-xl items-center gap-4 p-4"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -437,7 +437,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                      <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90 text-xl">
                         {t('vacancies')}
                       </span>
                     </Link>
@@ -470,7 +470,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 py-6 text-[20px]  text-gray-90">
+                      <span className="w-10/12 py-6 text-xl text-gray-90">
                         {t('blog')}
                       </span>
                     </Link>
@@ -541,7 +541,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('microfinance')}
                         </span>
                       </span>
@@ -588,7 +588,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('businessLending')}
                         </span>
                       </span>
@@ -659,7 +659,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('bankLending')}
                         </span>
                       </span>
@@ -705,7 +705,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('bnpl')}
                         </span>
                       </span>
@@ -759,7 +759,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('autoLending')}
                         </span>
                       </span>
@@ -806,7 +806,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                        <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                           {t('p2pLending')}
                         </span>
                       </span>
@@ -839,7 +839,7 @@ export const MobileLayout = () => {
                             strokeLinejoin="round"
                           />
                         </svg>
-                        <span className="w-10/12 py-6 text-[20px]  text-gray-90">
+                        <span className="w-10/12 py-6  text-gray-90">
                           {t('islamicFinance')}
                         </span>
                       </span>
@@ -891,7 +891,7 @@ export const MobileLayout = () => {
                               strokeLinejoin="round"
                             />
                           </svg>
-                          <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-[20px] text-gray-90">
+                          <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                             {t('dataUnload')}
                           </span>
                         </span>
@@ -936,7 +936,7 @@ export const MobileLayout = () => {
                               strokeLinejoin="round"
                             />
                           </svg>
-                          <span className="w-10/12 text-[20px] text-gray-90">
+                          <span className="w-10/12 text-gray-90">
                             {t('fdata')}
                           </span>
                         </span>
@@ -989,7 +989,7 @@ export const MobileLayout = () => {
                               strokeLinejoin="round"
                             />
                           </svg>
-                          <span className="w-10/12 text-[20px] text-gray-90">
+                          <span className="w-10/12 text-gray-90">
                             {t('customDevelopment')}
                           </span>
                         </span>
