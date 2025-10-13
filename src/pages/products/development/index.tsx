@@ -71,7 +71,7 @@ export const Development = () => {
             src={vector}
           />
 
-          <div className="relative left-[-100px] top-[var(--pos-minus-41)] mx-auto hidden z-10 size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
+          <div className="relative left-[-100px] top-[var(--pos-minus-41)] z-10 mx-auto hidden size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
             <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
               <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
@@ -613,7 +613,7 @@ export const Development = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-[382px] flex-1 grow self-stretch">
+                  <div className="relative w-[382px] flex-[2] self-stretch">
                     <div className="relative -top-12 w-full lg:-left-12 lg:w-[443px]">
                       <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg
@@ -861,8 +861,8 @@ export const Development = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.enterprise.title')}
                     </div>
 
@@ -914,7 +914,7 @@ export const Development = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 grow self-stretch">
+                  <div className="relative w-full flex-[2] self-stretch">
                     <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
                       <div className="relative size-[120px]">
                         <div className="relative size-[120px]">
@@ -1027,8 +1027,8 @@ export const Development = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.fintech.title')}
                     </div>
 
@@ -1086,7 +1086,7 @@ export const Development = () => {
                     viewBox="0 0 346 124"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative w-full flex-1 grow self-stretch"
+                    className="relative w-full flex-[2] self-stretch"
                   >
                     <rect x="7" width="92" height="92" rx="24" fill="white" />
                     <rect
@@ -1199,8 +1199,8 @@ export const Development = () => {
                     <path d="M219 62L247 62" stroke="white" strokeWidth="2" />
                   </svg>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.blockchain.title')}
                     </div>
 
@@ -1252,7 +1252,7 @@ export const Development = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 grow self-stretch">
+                  <div className="relative w-full flex-[2] self-stretch">
                     <div className="relative -left-12 -top-12 w-[442px]">
                       <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                         <svg
@@ -1372,8 +1372,8 @@ export const Development = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.medtech.title')}
                     </div>
 
@@ -1431,7 +1431,7 @@ export const Development = () => {
                     viewBox="0 0 346 152"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative w-full flex-1 grow self-stretch"
+                    className="relative w-full flex-[2] self-stretch"
                   >
                     <rect
                       x="49"
@@ -1576,8 +1576,8 @@ export const Development = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.martech.title')}
                     </div>
 

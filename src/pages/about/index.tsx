@@ -14,17 +14,17 @@ export const About = () => {
       className="relative inline-flex flex-col items-start justify-center"
       aria-labelledby="about-title"
     >
-      <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 xl:px-8 xl:pb-[88px] xl:pt-8">
-        <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] xl:inline-flex">
+      <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 lg:px-8 lg:pb-[88px] lg:pt-8">
+        <div className="relative mx-[-8.00px] flex flex-[0_0_auto] flex-col items-center gap-[88px] lg:inline-flex">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 pt-[88px] xl:!gap-20 xl:!px-20 xl:!pb-20">
+            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-6 pb-10 pt-[88px] lg:!gap-20 lg:!px-20 lg:!pb-20">
               <svg
                 width="1688"
                 height="1367"
                 viewBox="0 0 1688 1367"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-[143px] top-[37px] h-[1060px] w-[1108px]"
+                className="absolute left-[143px] top-[37px] h-[1060px] lg:w-[1108px]"
                 aria-hidden={true}
               >
                 <g opacity="0.12" filter="url(#filter0_f_9263_2745)">
@@ -58,20 +58,20 @@ export const About = () => {
                 </defs>
               </svg>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 xl:w-[980px] xl:gap-8">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 lg:w-[980px] lg:gap-8">
                 <h1
                   id="about-title"
-                  className="relative mt-[-1.00px] self-stretch text-center text-3xl font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-6xl xl:leading-[68px]"
+                  className="relative mt-[-1.00px] self-stretch text-center text-3xl font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-6xl lg:leading-[68px]"
                 >
                   {t('title', { ns: 'about' })}
                 </h1>
 
-                <p className="relative w-full px-2 text-center text-base font-normal leading-6 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] xl:w-[786px] xl:text-xl xl:leading-7">
+                <p className="relative w-full px-2 text-center text-base font-normal leading-6 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] lg:w-[786px] lg:text-xl lg:leading-7">
                   {t('subtitle', { ns: 'about' })}
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch xl:!flex-row ">
+              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row ">
                 <div className="relative inline-flex flex-[0_0_auto] items-start gap-8 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-10">
                   <svg
                     width="753"
@@ -153,7 +153,7 @@ export const About = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative flex w-full flex-col items-start gap-4 xl:w-[340px]">
+                  <div className="relative flex w-full flex-col items-start gap-4 lg:w-[340px]">
                     <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                       12
                     </div>
@@ -171,7 +171,7 @@ export const About = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-1 grow flex-col items-start gap-[60px] rounded-[32px] bg-[#ffffff] p-5 xl:!flex-row xl:p-10">
+                <div className="relative flex w-full flex-1 grow flex-col items-start gap-[60px] rounded-[32px] bg-[#ffffff] p-5 lg:!flex-row lg:p-10">
                   <div className="relative flex flex-1 grow flex-col items-start gap-4">
                     <div className="relative mt-[-1.00px] self-stretch text-[68px] font-normal leading-[72px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                       200+
@@ -208,7 +208,7 @@ export const About = () => {
                     viewBox="0 0 1 220"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative hidden w-px self-stretch xl:block"
+                    className="relative hidden w-px self-stretch lg:block"
                     aria-hidden={true}
                   >
                     <path d="M0.5 0V220" stroke="#E3E5E8" />
@@ -262,8 +262,8 @@ export const About = () => {
             </section>
           </div>
 
-          <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 p-2 xl:p-0">
-            <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[1376px] xl:text-5xl xl:leading-[60px]">
+          <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 p-2 lg:p-0">
+            <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[1376px] lg:text-5xl lg:leading-[60px]">
               {t('offices', { ns: 'about' })}
             </h2>
 
@@ -272,10 +272,10 @@ export const About = () => {
             </p>
           </section>
 
-          <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 p-2 xl:!flex-row xl:p-0">
+          <section className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 p-2 lg:!flex-row lg:p-0">
             <article
               aria-labelledby="office-moscow"
-              className="relative flex w-full flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 xl:gap-12 xl:p-12"
+              className="relative flex w-full flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 lg:gap-12 lg:p-12"
             >
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
@@ -1444,7 +1444,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 xl:w-fit"
+                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 lg:w-fit"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
@@ -1455,7 +1455,7 @@ export const About = () => {
 
             <article
               aria-labelledby="office-murmansk"
-              className="relative flex w-full flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 xl:gap-12 xl:p-12"
+              className="relative flex w-full flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 lg:gap-12 lg:p-12"
             >
               <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-6">
                 <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
@@ -1472,7 +1472,7 @@ export const About = () => {
                     viewBox="0 0 37 48"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="h-12w-full relative xl:w-[37px]"
+                    className="h-12w-full relative lg:w-[37px]"
                     aria-hidden={true}
                   >
                     <g clipPath="url(#clip0_9263_4176)">
@@ -1596,7 +1596,7 @@ export const About = () => {
               </div>
 
               <button
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 xl:w-fit"
+                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600 lg:w-fit"
                 onClick={onClick}
               >
                 <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">

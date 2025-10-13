@@ -1028,7 +1028,7 @@ export const Fdata = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 grow self-stretch">
+                  <div className="relative w-full flex-1 self-stretch">
                     <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 lg:left-6 lg:w-[299px]">
                       <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         {t('details.features.rules')}
@@ -1056,8 +1056,8 @@ export const Fdata = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('details.dataProcessing.title')}
                     </div>
 
@@ -1108,7 +1108,7 @@ export const Fdata = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 grow self-stretch">
+                  <div className="relative w-full flex-1 self-stretch">
                     <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
                       <div className="relative size-[120px]">
                         <div className="relative size-[120px]">
@@ -1221,8 +1221,8 @@ export const Fdata = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex h-[188px] w-full flex-col items-start gap-3 self-stretch">
-                    <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
+                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('details.reporting.title')}
                     </div>
 
