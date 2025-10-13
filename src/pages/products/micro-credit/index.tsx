@@ -761,7 +761,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-[2] flex-col items-start gap-3 self-stretch lg:flex-[4]">
                       <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.applications')}
                       </div>
@@ -817,14 +817,14 @@ export const MicroCredit = () => {
                     </svg>
 
                     <div className="relative flex w-full flex-[2] items-center justify-center self-stretch">
-                      <div className="relative h-[200px] w-full lg:h-[170px] lg:w-[290px]">
-                        <div className="absolute left-7 top-[46px] flex w-[235px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
+                      <div className="relative w-full lg:h-[70px] lg:w-[290px]">
+                        <div className="absolute left-1/2 top-[46px] flex w-[235px] -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
                             {t('processes.applicationApproved')}
                           </div>
                         </div>
 
-                        <div className="absolute left-3 top-[34px] flex w-[266px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50">
+                        <div className="absolute left-1/2 top-[34px] flex w-[266px] -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-50">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative ml-[-7695.00px] mt-[-1954.00px] size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 lg:w-[18px]">
@@ -870,7 +870,7 @@ export const MicroCredit = () => {
                           </div>
                         </div>
 
-                        <div className="absolute left-0 top-0 flex h-[60px] w-[290px] items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2">
+                        <div className="absolute left-1/2 top-0 flex h-[60px] w-[290px] -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2">
                           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-2.5">
                             <div className="relative size-6 bg-[100%_100%]">
                               <div className="h-5w-full relative left-[3px] top-0.5 lg:w-[18px]">
@@ -918,7 +918,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="w-ful relative flex flex-[2] flex-col items-start gap-3 self-stretch lg:flex-[4]">
                       <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.autoNotification')}
                       </div>
@@ -1144,7 +1144,7 @@ export const MicroCredit = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="w-ful relative flex flex-[2] flex-col items-start gap-3 self-stretch lg:flex-[4]">
                       <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.bonusSystem')}
                       </div>
@@ -1240,7 +1240,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="w-ful relative flex flex-[2] flex-col items-start gap-3 self-stretch lg:flex-[4]">
                       <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.personalAccount')}
                       </div>
@@ -1256,7 +1256,7 @@ export const MicroCredit = () => {
                   <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <div className="relative flex w-full flex-[2] items-center justify-center self-stretch">
                       <div className="relative size-full max-w-[443px]">
-                        <div className="absolute left-[var(--pos-77)] top-[var(--pos-55)] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                        <div className="absolute left-[40%] top-[35px] inline-flex -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
@@ -1349,7 +1349,7 @@ export const MicroCredit = () => {
                           </defs>
                         </svg>
 
-                        <div className="absolute left-[var(--pos-119)] top-[var(--pos-101)] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                        <div className="absolute left-[57%] top-[80px] inline-flex -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
@@ -1402,7 +1402,7 @@ export const MicroCredit = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                    <div className="w-ful relative flex flex-[2] flex-col items-start gap-3 self-stretch lg:flex-[4]">
                       <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('processes.autoDocumentation')}
                       </div>
