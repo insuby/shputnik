@@ -1851,12 +1851,13 @@ export const MainMobile = () => {
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
           <svg
-            width="380"
-            height="420"
+            width="100%"
+            height="auto"
             viewBox="0 0 380 420"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative h-[420px] w-full self-stretch"
+            className="relative w-full self-stretch"
+            preserveAspectRatio="xMidYMid meet"
           >
             <g clipPath="url(#clip0_9587_15004)">
               <rect width="380" height="420" rx="32" fill="#F7F8FA" />
