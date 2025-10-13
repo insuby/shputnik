@@ -845,7 +845,7 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch"
+            className="relative flex w-full lg:!flex-row  flex-col flex-[0_0_auto] items-start gap-6 self-stretch"
           >
             <motion.div
               ref={ref10}
@@ -866,7 +866,7 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView12 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.65 }}
-                  className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl lg:text-[40px] font-medium lg:leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('features.title')}
                 </motion.p>

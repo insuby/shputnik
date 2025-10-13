@@ -1017,7 +1017,7 @@ export const MobileLayout = () => {
 
       <main
         id="content"
-        className={cx('-mt-20 w-full mx-auto', {
+        className={cx('-mt-20 w-full mx-auto !overflow-x-hidden', {
           'px-5': !isBgEnabled,
           'flex flex-col gap-[88px]': isBgEnabled,
         })}

@@ -44,7 +44,7 @@ export const SocialParameters = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3"
+            className="relative flex w-full flex-[0_0_auto] items-center gap-1 lg:gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3"
           >
             <motion.div
               ref={ref8}

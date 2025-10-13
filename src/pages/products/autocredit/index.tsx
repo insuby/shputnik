@@ -97,7 +97,7 @@ export const Autocredit = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView3 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                  className="relative w-full text-center lg:text-start text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-leftw-10/12"
+                  className="lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
                 >
                   {t('hero.description')}
                 </motion.p>
@@ -110,7 +110,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView5 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative right-[-80px] top-[45px]  ml-auto flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] lg:absolute lg:left-[720px] lg:right-auto lg:top-[205px] xl:w-full"
+            className="relative right-1.5 top-[45px] ml-auto  flex items-center overflow-hidden rounded-[24px_0px_0px_0px] bg-[#f6f8fd] lg:absolute lg:left-[720px] lg:right-[-80px] lg:right-auto lg:top-[205px] xl:w-full"
           >
             <div className="relative mt-2 flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] p-[29.9px] lg:w-[393.9px]">
               <div className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -639,7 +639,7 @@ export const Autocredit = () => {
           className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl lg:w-[1376px] lg:!flex-row"
         >
           <svg
-            className="absolute  inset-0 z-10"
+            className="absolute inset-0 z-10 hidden lg:flex"
             width="676"
             height="648"
             viewBox="0 0 676 648"
@@ -678,13 +678,13 @@ export const Autocredit = () => {
           </svg>
           <Marquee
             fade
-            className="relative flex w-full flex-1 grow h-full !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[609px] lg:p-0"
-            innerClassName="!gap-[1rem] !w-[750px]"
+            className="relative flex size-full flex-1 grow !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[609px] lg:p-0"
+            innerClassName="lg:!gap-[1rem] !w-[750px]"
           >
             <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
-                  className="relative h-[120px] w-full self-stretch"
+                  className="relative w-full self-stretch lg:h-[120px]"
                   alt="Screenshot"
                   src="/img/screenshot-12.png"
                 />
@@ -704,7 +704,7 @@ export const Autocredit = () => {
             <div className="top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
-                  className="relative h-[120px] w-full self-stretch"
+                  className="relative w-full self-stretch lg:h-[120px]"
                   alt="Screenshot"
                   src="/img/screenshot-13.png"
                 />
@@ -724,7 +724,7 @@ export const Autocredit = () => {
             <div className="right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff]  px-4 py-6 lg:absolute">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
                 <img
-                  className="relative h-[120px] w-full self-stretch"
+                  className="relative w-full self-stretch lg:h-[120px]"
                   alt="Screenshot"
                   src="/img/screenshot-11.png"
                 />
