@@ -193,13 +193,7 @@ export const Analytics = () => {
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
           className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
         >
-          <div className="relative  h-[574px] w-full scale-95 rounded-[287px] lg:left-[57px] lg:top-[17px] lg:!size-[574px] lg:scale-100">
-            <div className="absolute left-[140px] top-[140px] size-[294px] rounded-[147px] bg-[#ffffff] blur-[6px]" />
-
-            <div className="absolute left-[65px] top-[65px] size-[444px] rounded-[222px] border-2 border-solid border-[#ffffff] opacity-80" />
-
-            <div className="absolute left-0 top-0 size-[574px] rounded-[287px] border-2 border-solid border-[#ffffff] opacity-40" />
-
+          <div className="relative h-[574px] w-full scale-95 rounded-[287px] lg:left-[57px] lg:top-[17px] lg:!size-[574px] lg:scale-100">
             <div className="absolute left-32 top-[127px] size-[319px]">
               <div className="absolute left-[-29px] top-[-18px] h-[337px] w-[356px]">
                 <div className="absolute left-0 top-[76px] h-[260px] w-[356px]">
@@ -313,12 +307,6 @@ export const Analytics = () => {
                     8%
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div className="absolute left-[427px] top-[204px] inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
-                12%
               </div>
             </div>
 

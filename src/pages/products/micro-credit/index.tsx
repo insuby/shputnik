@@ -50,7 +50,7 @@ export const MicroCredit = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] overflow-x-hidden p-0 lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
         <div className="relative flex max-h-[857px] min-h-[600px] w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-violet-50 px-4 py-10 lg:h-auto lg:p-12">
           <svg

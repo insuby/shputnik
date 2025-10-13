@@ -36,6 +36,7 @@ export const bnpl = {
     managePayments: 'Управляйте всеми платежами в одном месте',
   },
   products: {
+    headphones1: 'Наушники Beyerdynamic Amiron',
     product1: 'Наушники Beyerdynamic Amiron',
     product2: 'Мышь беспроводная Logitech',
     product3: 'Микрофон\nFifine AM8\nчерный',
