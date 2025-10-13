@@ -38,6 +38,10 @@ export const Fdata = () => {
   const ref51 = useRef(null);
   const ref52 = useRef(null);
   const ref53 = useRef(null);
+  const ref54 = useRef(null);
+  const ref55 = useRef(null);
+  const ref56 = useRef(null);
+  const ref57 = useRef(null);
 
   const inView3 = useInView(ref3, { once: true, margin: '-100px' });
   const inView4 = useInView(ref4, { once: true, margin: '-100px' });
@@ -46,7 +50,7 @@ export const Fdata = () => {
   const inView7 = useInView(ref7, { once: true, margin: '-100px' });
   const inView8 = useInView(ref8, { once: true, margin: '-100px' });
   const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView1 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
   const inView12 = useInView(ref12, { once: true, margin: '-100px' });
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
@@ -63,7 +67,12 @@ export const Fdata = () => {
   const inView29 = useInView(ref29, { once: true, margin: '-100px' });
   const inView30 = useInView(ref30, { once: true, margin: '-100px' });
   const inView51 = useInView(ref51, { once: true, margin: '-100px' });
-  // const inView1 = useInView(ref53, { once: true, margin: '-100px' });
+  const inView52 = useInView(ref52, { once: true, margin: '-100px' });
+  const inView53 = useInView(ref53, { once: true, margin: '-100px' });
+  const inView54 = useInView(ref54, { once: true, margin: '-100px' });
+  const inView55 = useInView(ref55, { once: true, margin: '-100px' });
+  const inView56 = useInView(ref56, { once: true, margin: '-100px' });
+  const inView57 = useInView(ref57, { once: true, margin: '-100px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();
@@ -185,7 +194,7 @@ export const Fdata = () => {
           <motion.div
             ref={ref51}
             initial={{ opacity: 0, x: -50 }}
-            animate={inView19 ? { opacity: 1, x: 0 } : {}}
+            animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
             className="left-[var(--pos-704)] top-[var(--pos-208)] flex max-w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 lg:absolute lg:w-[576px]"
           >
@@ -459,7 +468,7 @@ export const Fdata = () => {
           <motion.div
             ref={ref52}
             initial={{ opacity: 0, y: 50 }}
-            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+            animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="absolute -bottom-8 left-60 right-0 mx-auto mt-auto flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 lg:!bottom-0 lg:bottom-auto lg:left-[var(--pos-960)] lg:right-auto lg:top-[var(--pos-404)] lg:w-[368px]"
           >
@@ -752,7 +761,7 @@ export const Fdata = () => {
             <motion.div
               ref={ref10}
               initial={{ opacity: 0, x: -50 }}
-              animate={inView1 ? { opacity: 1, x: 0 } : {}}
+              animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
@@ -1296,7 +1305,7 @@ export const Fdata = () => {
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+            animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
           >
@@ -1308,7 +1317,7 @@ export const Fdata = () => {
           <motion.div
             ref={ref53}
             initial={{ opacity: 0, y: -100 }}
-            animate={inView1 ? { opacity: 1, y: 0 } : {}}
+            animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-[60px]"
           >
@@ -1429,9 +1438,9 @@ export const Fdata = () => {
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
               <motion.div
-                ref={ref53}
+                ref={ref54}
                 initial={{ opacity: 0, y: 30 }}
-                animate={inView1 ? { opacity: 1, y: 0 } : {}}
+                animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
                 className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
@@ -1492,9 +1501,9 @@ export const Fdata = () => {
               </motion.div>
 
               <motion.div
-                ref={ref53}
+                ref={ref55}
                 initial={{ opacity: 0, y: 30 }}
-                animate={inView1 ? { opacity: 1, y: 0 } : {}}
+                animate={inView55 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
                 className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
@@ -1571,9 +1580,9 @@ export const Fdata = () => {
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
               <motion.div
-                ref={ref53}
+                ref={ref56}
                 initial={{ opacity: 0, x: 50 }}
-                animate={inView1 ? { opacity: 1, x: 0 } : {}}
+                animate={inView56 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
                 className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
@@ -1634,9 +1643,9 @@ export const Fdata = () => {
               </motion.div>
 
               <motion.div
-                ref={ref53}
+                ref={ref57}
                 initial={{ opacity: 0, x: -50 }}
-                animate={inView1 ? { opacity: 1, x: 0 } : {}}
+                animate={inView57 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
                 className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
