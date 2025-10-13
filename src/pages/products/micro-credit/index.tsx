@@ -635,7 +635,7 @@ export const MicroCredit = () => {
         <div className="relative h-fit w-full  lg:h-[568px]">
           <div className="flex w-full flex-col items-center gap-[68px] lg:!flex-row xl:w-fit">
             <div className="relative flex  w-full flex-col items-start justify-center gap-7 lg:w-[496px]">
-              <div className="relative mt-[-1.00px] min-w-[400px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left lg:text-5xl lg:leading-[60px]">
+              <div className="relative mt-[-1.00px] lg:min-w-[400px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left lg:text-5xl lg:leading-[60px]">
                 {t('mechanisms.title')}
               </div>
 
@@ -662,7 +662,7 @@ export const MicroCredit = () => {
                 arrows={false}
               >
                 <div className="px-0 lg:px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col flex-[] items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
@@ -705,8 +705,8 @@ export const MicroCredit = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-0 top-[var(--pos-27)] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 lg:left-10">
+                    <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
+                      <div className="relative inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4">
                         <div className="relative flex w-[230px] flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative h-3.5 w-full self-stretch">
@@ -773,7 +773,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-0 lg:px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col flex-[] items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
@@ -816,8 +816,8 @@ export const MicroCredit = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full self-stretch">
-                      <div className="relative left-0 top-[26px] h-[200px] w-full lg:left-7 lg:h-[170px] lg:w-[290px]">
+                    <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
+                      <div className="relative h-[200px] w-full lg:h-[170px] lg:w-[290px]">
                         <div className="absolute left-7 top-9 flex w-full items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24] lg:w-[235px]">
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
                             {t('processes.applicationApproved')}
@@ -930,7 +930,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-0 lg:px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col flex-[] items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
@@ -973,166 +973,176 @@ export const MicroCredit = () => {
                       </defs>
                     </svg>
 
-                    <svg
-                      width="347"
-                      height="136"
-                      viewBox="0 0 347 136"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="relative w-full flex-1 grow self-stretch"
-                    >
-                      <rect
-                        x="128"
-                        y="6"
-                        width="92"
-                        height="92"
-                        rx="24"
-                        fill="white"
-                      />
-                      <rect
-                        x="148"
-                        y="26"
-                        width="52"
-                        height="52"
-                        rx="26"
-                        fill="#3573FC"
-                        fillOpacity="0.08"
-                      />
-                      <path
-                        d="M174 56C176.209 56 178 54.2091 178 52C178 49.7909 176.209 48 174 48C171.791 48 170 49.7909 170 52C170 54.2091 171.791 56 174 56Z"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M188 44H160V60H188V44Z"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M188 49C186.751 48.7883 185.598 48.1933 184.703 47.2974C183.807 46.4015 183.212 45.2491 183 44"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M183 60C183.212 58.7509 183.807 57.5985 184.703 56.7026C185.598 55.8067 186.751 55.2117 188 55"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M160 55C161.249 55.2117 162.402 55.8067 163.297 56.7026C164.193 57.5985 164.788 58.7509 165 60"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M165 44C164.788 45.2491 164.193 46.4015 163.297 47.2974C162.402 48.1933 161.249 48.7883 160 49"
-                        stroke="#3573FC"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <rect
-                        x="8"
-                        y="38"
-                        width="92"
-                        height="92"
-                        rx="24"
-                        fill="white"
-                      />
-                      <rect
-                        x="28"
-                        y="58"
-                        width="52"
-                        height="52"
-                        rx="26"
-                        fill="#E74951"
-                        fillOpacity="0.08"
-                      />
-                      <path
-                        d="M63 75L45 93"
-                        stroke="#E74951"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M47.5 81C49.433 81 51 79.433 51 77.5C51 75.567 49.433 74 47.5 74C45.567 74 44 75.567 44 77.5C44 79.433 45.567 81 47.5 81Z"
-                        stroke="#E74951"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M60.5 94C62.433 94 64 92.433 64 90.5C64 88.567 62.433 87 60.5 87C58.567 87 57 88.567 57 90.5C57 92.433 58.567 94 60.5 94Z"
-                        stroke="#E74951"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <rect
-                        x="248"
-                        y="38"
-                        width="92"
-                        height="92"
-                        rx="24"
-                        fill="white"
-                      />
-                      <rect
-                        x="268"
-                        y="58"
-                        width="52"
-                        height="52"
-                        rx="26"
-                        fill="#725DD6"
-                        fillOpacity="0.08"
-                      />
-                      <path
-                        d="M305 78H283C282.448 78 282 78.4477 282 79V83C282 83.5523 282.448 84 283 84H305C305.552 84 306 83.5523 306 83V79C306 78.4477 305.552 78 305 78Z"
-                        stroke="#725DD6"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M304 84V93C304 93.2652 303.895 93.5196 303.707 93.7071C303.52 93.8946 303.265 94 303 94H285C284.735 94 284.48 93.8946 284.293 93.7071C284.105 93.5196 284 93.2652 284 93V84"
-                        stroke="#725DD6"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M294 78V94"
-                        stroke="#725DD6"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M300.099 71.9012C301.266 73.0687 301.335 75.0337 300.099 76.1287C297.985 78 294 78 294 78C294 78 294 74.015 295.875 71.9012C296.966 70.665 298.931 70.7337 300.099 71.9012Z"
-                        stroke="#725DD6"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M287.901 71.9012C286.734 73.0687 286.665 75.0337 287.901 76.1287C290.015 78 294 78 294 78C294 78 294 74.015 292.125 71.9012C291.034 70.665 289.069 70.7337 287.901 71.9012Z"
-                        stroke="#725DD6"
-                        strokeWidth="1.6"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path d="M100 68L128 68" stroke="white" strokeWidth="2" />
-                      <path d="M220 68L248 68" stroke="white" strokeWidth="2" />
-                    </svg>
+                    <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
+                      <svg
+                        width="347"
+                        height="136"
+                        viewBox="0 0 347 136"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="relative h-auto w-full max-w-[347px]"
+                      >
+                        <rect
+                          x="128"
+                          y="6"
+                          width="92"
+                          height="92"
+                          rx="24"
+                          fill="white"
+                        />
+                        <rect
+                          x="148"
+                          y="26"
+                          width="52"
+                          height="52"
+                          rx="26"
+                          fill="#3573FC"
+                          fillOpacity="0.08"
+                        />
+                        <path
+                          d="M174 56C176.209 56 178 54.2091 178 52C178 49.7909 176.209 48 174 48C171.791 48 170 49.7909 170 52C170 54.2091 171.791 56 174 56Z"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M188 44H160V60H188V44Z"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M188 49C186.751 48.7883 185.598 48.1933 184.703 47.2974C183.807 46.4015 183.212 45.2491 183 44"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M183 60C183.212 58.7509 183.807 57.5985 184.703 56.7026C185.598 55.8067 186.751 55.2117 188 55"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M160 55C161.249 55.2117 162.402 55.8067 163.297 56.7026C164.193 57.5985 164.788 58.7509 165 60"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M165 44C164.788 45.2491 164.193 46.4015 163.297 47.2974C162.402 48.1933 161.249 48.7883 160 49"
+                          stroke="#3573FC"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <rect
+                          x="8"
+                          y="38"
+                          width="92"
+                          height="92"
+                          rx="24"
+                          fill="white"
+                        />
+                        <rect
+                          x="28"
+                          y="58"
+                          width="52"
+                          height="52"
+                          rx="26"
+                          fill="#E74951"
+                          fillOpacity="0.08"
+                        />
+                        <path
+                          d="M63 75L45 93"
+                          stroke="#E74951"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M47.5 81C49.433 81 51 79.433 51 77.5C51 75.567 49.433 74 47.5 74C45.567 74 44 75.567 44 77.5C44 79.433 45.567 81 47.5 81Z"
+                          stroke="#E74951"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M60.5 94C62.433 94 64 92.433 64 90.5C64 88.567 62.433 87 60.5 87C58.567 87 57 88.567 57 90.5C57 92.433 58.567 94 60.5 94Z"
+                          stroke="#E74951"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <rect
+                          x="248"
+                          y="38"
+                          width="92"
+                          height="92"
+                          rx="24"
+                          fill="white"
+                        />
+                        <rect
+                          x="268"
+                          y="58"
+                          width="52"
+                          height="52"
+                          rx="26"
+                          fill="#725DD6"
+                          fillOpacity="0.08"
+                        />
+                        <path
+                          d="M305 78H283C282.448 78 282 78.4477 282 79V83C282 83.5523 282.448 84 283 84H305C305.552 84 306 83.5523 306 83V79C306 78.4477 305.552 78 305 78Z"
+                          stroke="#725DD6"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M304 84V93C304 93.2652 303.895 93.5196 303.707 93.7071C303.52 93.8946 303.265 94 303 94H285C284.735 94 284.48 93.8946 284.293 93.7071C284.105 93.5196 284 93.2652 284 93V84"
+                          stroke="#725DD6"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M294 78V94"
+                          stroke="#725DD6"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M300.099 71.9012C301.266 73.0687 301.335 75.0337 300.099 76.1287C297.985 78 294 78 294 78C294 78 294 74.015 295.875 71.9012C296.966 70.665 298.931 70.7337 300.099 71.9012Z"
+                          stroke="#725DD6"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M287.901 71.9012C286.734 73.0687 286.665 75.0337 287.901 76.1287C290.015 78 294 78 294 78C294 78 294 74.015 292.125 71.9012C291.034 70.665 289.069 70.7337 287.901 71.9012Z"
+                          stroke="#725DD6"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                        <path
+                          d="M100 68L128 68"
+                          stroke="white"
+                          strokeWidth="2"
+                        />
+                        <path
+                          d="M220 68L248 68"
+                          stroke="white"
+                          strokeWidth="2"
+                        />
+                      </svg>
+                    </div>
 
                     <div className="relative flex h-[300px] w-full flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -1146,7 +1156,7 @@ export const MicroCredit = () => {
                   </div>
                 </div>
                 <div className="px-0 lg:px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="relative flex h-[580px] w-full flex-col flex-[] items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
@@ -1189,8 +1199,8 @@ export const MicroCredit = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative left-[var(--pos-22)] top-1.5 flex w-full items-center gap-4 lg:left-[var(--pos-42)] lg:w-[264px]">
+                    <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
+                      <div className="relative flex w-full items-center justify-center gap-4 lg:w-[264px]">
                         <div className="relative size-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
 
                         <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
@@ -1243,9 +1253,9 @@ export const MicroCredit = () => {
                 </div>
 
                 <div className="px-0 md:px-3">
-                  <div className="relative flex h-[580px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
-                    <div className="relative w-full flex-1 grow self-stretch">
-                      <div className="relative -left-12 -top-12 w-[120%] lg:w-[443px]">
+                  <div className="relative flex h-[580px] w-full flex-col flex-[] items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                    <div className="relative flex w-full flex-1 items-center justify-center self-stretch">
+                      <div className="relative w-full max-w-[443px] h-full">
                         <div className="absolute left-[var(--pos-77)] top-[var(--pos-55)] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
