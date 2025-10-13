@@ -30,7 +30,7 @@ export const Feedback = () => {
 
   return (
     <div className="relative flex size-full min-h-[330px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 lg:w-full">
-      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-[60px]">
+      <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:!p-[60px]">
         <svg
           width="939"
           height="763"
@@ -148,7 +148,7 @@ export const Feedback = () => {
           </motion.button>
         </div>
 
-        <div className="absolute left-[var(--pos-789)] -bottom-6 flex w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6">
+        <div className="hidden lg:flex absolute left-[var(--pos-789)] -bottom-6 w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6">
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Калькулятор
           </div>

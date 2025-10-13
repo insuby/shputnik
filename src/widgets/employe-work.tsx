@@ -148,7 +148,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
               </defs>
             </svg>
 
-            <div className="relative h-[400px] lg:h-[210px]">
+            <div className="relative h-[230px]">
               <svg
                 width="580"
                 height="222"
@@ -156,6 +156,9 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative left-0 m-auto mt-[-11.00px] size-full h-[222px] w-full scale-150 self-stretch xl:scale-100"
+                style={{
+                  margin: 'auto'
+                }}
               >
                 <circle
                   opacity="0.8"
@@ -253,7 +256,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             >
               <motion.p
                 ref={ref9}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: -50 }}
                 animate={inView9 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.35 }}
                 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
@@ -500,7 +503,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView4 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="nd:p-12 relative flex flex-1 grow flex-col items-center  gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:gap-12"
+            className="relative flex flex-1 grow flex-col items-center gap-7  self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:!p-12 xl:gap-12"
           >
             <svg
               width="665"
@@ -606,21 +609,21 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 <motion.div
                   ref={ref40}
                   initial={{ opacity: 0, x: 50 }}
-                  animate={inView40 ? { opacity: 1, x: 0 } : {}}
+                  animate={inView30 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                   className="relative flex flex-1 grow flex-col items-start gap-4"
                 >
                   <motion.div
                     ref={ref41}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView41 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView30 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
                       ref={ref42}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView42 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView30 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',
@@ -642,14 +645,14 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                   <motion.div
                     ref={ref43}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView43 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView30 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 1.0 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
                       ref={ref44}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView44 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView30 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',
@@ -671,14 +674,14 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                   <motion.div
                     ref={ref45}
                     initial={{ opacity: 0, y: 50 }}
-                    animate={inView45 ? { opacity: 1, y: 0 } : {}}
+                    animate={inView30 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
                     className="relative flex h-fit w-full items-center justify-center gap-6 self-stretch xl:h-7"
                   >
                     <motion.div
                       ref={ref46}
                       initial={{ opacity: 0, scale: 0 }}
-                      animate={inView46 ? { opacity: 1, scale: 1 } : {}}
+                      animate={inView30 ? { opacity: 1, scale: 1 } : {}}
                       transition={{
                         duration: 0.5,
                         ease: 'easeOut',

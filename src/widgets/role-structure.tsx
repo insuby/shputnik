@@ -31,7 +31,7 @@ export const RoleStructure = () => {
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-20 self-stretch px-0 lg:!flex-row xl:py-20"
     >
-      <div className="relative flex  w-[432px] flex-col items-start gap-7 xl:gap-12">
+      <div className="relative flex w-full flex-col items-start gap-7 lg:w-[432px] xl:gap-12">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
           <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
             {t('roleStructure.title')}
@@ -53,7 +53,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={inView15 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center  gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
             <svg
@@ -82,7 +82,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.clientCabinet')}
           </div>
         </motion.div>
@@ -92,7 +92,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView16 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <svg
@@ -135,7 +135,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.employeeCabinet')}
           </div>
         </motion.div>
@@ -145,7 +145,7 @@ export const RoleStructure = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={inView17 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center lg:justify-start xl:justify-center  gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row xl:!flex-col xl:p-10"
+          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
           <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <svg
@@ -174,7 +174,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="lg:m-0 relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.adminCabinet')}
           </div>
         </motion.div>
