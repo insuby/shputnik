@@ -1,6 +1,6 @@
 export default {
   hero: {
-    titleA: 'Программное обеспечение для',
+    titleA: 'Программное обеспечение\nдля',
     titleB: 'автоматизации',
     titleC: 'кредитования',
     description:

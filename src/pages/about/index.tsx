@@ -14,10 +14,10 @@ export const About = () => {
       className="relative flex w-full max-w-full flex-col items-start justify-center overflow-hidden"
       aria-labelledby="about-title"
     >
-      <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] px-4 pt-0 lg:px-8 lg:pb-[88px] lg:pt-8">
+      <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] pt-0 lg:px-8 lg:pb-[88px] lg:pt-8">
         <div className="relative flex w-full max-w-full flex-[0_0_auto] flex-col items-center gap-[88px] lg:mx-[-8.00px] lg:inline-flex">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
-            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-1 pb-10 pt-16 lg:pt-[88px] lg:!gap-20 lg:!px-20 lg:!pb-20">
+            <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-1 pb-10 pt-16 lg:!gap-20 lg:!px-20 lg:!pb-20 lg:pt-[88px]">
               <svg
                 width="1688"
                 height="1367"
@@ -66,7 +66,7 @@ export const About = () => {
                   {t('title', { ns: 'about' })}
                 </h1>
 
-                <p className="relative w-full px-2 text-center font-normal tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] lg:w-[786px] text-xl lg:leading-7">
+                <p className="relative w-full px-2 text-center text-xl font-normal tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] lg:w-[786px] lg:leading-7">
                   {t('subtitle', { ns: 'about' })}
                 </p>
               </div>

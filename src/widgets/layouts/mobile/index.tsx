@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 import { FooterSection } from 'widgets/layouts/desktop/sections/FooterSection.tsx';
-import { HeaderSection } from 'widgets/layouts/desktop/sections/HeaderSection.tsx';
 
 import { RoutesPath } from 'shared/routes-path.tsx';
 
@@ -61,7 +60,11 @@ export const MobileLayout = () => {
             <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f" />
           </svg>
         </button>
-        <div className="relative mb-4 h-12">
+        <Link
+          to={RoutesPath.MAIN}
+          className="relative mb-4 block h-12"
+          aria-label={t('goToHome', 'Перейти на главную')}
+        >
           <svg
             className="absolute left-5 top-[12px] h-8 w-28"
             viewBox="0 0 112 24"
@@ -112,7 +115,7 @@ export const MobileLayout = () => {
               fill="#1C222F"
             />
           </svg>
-        </div>
+        </Link>
       </div>
 
       <AnimatePresence>
@@ -161,7 +164,13 @@ export const MobileLayout = () => {
                     </svg>
                   </motion.button>
                 ) : (
-                  <div key="logo" className="absolute left-5 top-2 h-8 w-28">
+                  <Link
+                    key="logo"
+                    to={RoutesPath.MAIN}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="absolute left-5 top-2 block h-8 w-28"
+                    aria-label={t('goToHome', 'Перейти на главную')}
+                  >
                     <svg
                       width="112"
                       height="24"
@@ -216,7 +225,7 @@ export const MobileLayout = () => {
                         fill="#1C222F"
                       />
                     </svg>
-                  </div>
+                  </Link>
                 )}
               </AnimatePresence>
               <button
@@ -294,7 +303,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="w-10/12 border-b text-xl border-solid border-[#eeeff2] py-6 text-start text-gray-90">
+                      <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-start text-xl text-gray-90">
                         {t('productsTitle')}
                       </span>
                       <span className="absolute right-5">
@@ -316,7 +325,7 @@ export const MobileLayout = () => {
                     <Link
                       to={RoutesPath.ABOUT}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] text-xl items-center gap-4 p-4"
+                      className="flex h-[80px] items-center gap-4 p-4 text-xl"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -343,7 +352,7 @@ export const MobileLayout = () => {
                     <Link
                       to={RoutesPath.REVIEWS}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] text-xl  items-center gap-4 p-4"
+                      className="flex h-[80px] items-center  gap-4 p-4 text-xl"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -383,7 +392,7 @@ export const MobileLayout = () => {
                     <Link
                       to={RoutesPath.WORK}
                       onClick={() => setIsMenuOpen(false)}
-                      className="flex h-[80px] text-xl items-center gap-4 p-4"
+                      className="flex h-[80px] items-center gap-4 p-4 text-xl"
                     >
                       <span className="flex size-12 items-center justify-center">
                         <svg
@@ -437,7 +446,7 @@ export const MobileLayout = () => {
                           />
                         </svg>
                       </span>
-                      <span className="border-b border-solid border-[#eeeff2] py-6 text-gray-90 text-xl">
+                      <span className="border-b border-solid border-[#eeeff2] py-6 text-xl text-gray-90">
                         {t('vacancies')}
                       </span>
                     </Link>

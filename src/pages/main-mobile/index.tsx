@@ -34,7 +34,7 @@ export const MainMobile = () => {
     <>
       <div className="relative flex flex-col items-start">
         <div className="relative flex w-full  items-center gap-2.5 px-3 py-0">
-          <div className="relative flex flex-1 grow flex-col items-center self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-4 pt-9">
+          <div className="relative flex flex-1 grow flex-col items-center self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-5 pt-9">
             <svg
               width="1688"
               height="1367"

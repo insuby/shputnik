@@ -46,10 +46,10 @@ export const BlogList = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] xl:gap-12 xl:p-[88px]"
+      className="relative flex min-h-[calc(100vh-200px)] w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] xl:gap-12 xl:p-[88px]"
       aria-labelledby="blog-title"
     >
-      <header className="relative flex flex-[0_0_auto] flex-col items-start gap-7">
+      <header className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7">
         <h1
           id="blog-title"
           className="relative mt-3 self-stretch text-[36px]  font-medium leading-[44px]  tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:mt-[-1.00px] xl:text-5xl xl:leading-[60px]"
@@ -58,11 +58,12 @@ export const BlogList = () => {
         </h1>
         <nav
           aria-label={t('list.categories')}
-          className="flex w-full items-center gap-2 overflow-x-auto"
+          className="flex w-full max-w-full items-center gap-2 overflow-x-auto overflow-y-hidden [-webkit-overflow-scrolling:touch]"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           <button
             onClick={() => setCategoryId(null)}
-            className={`h-10 whitespace-nowrap rounded-full px-5 ${
+            className={`h-10 shrink-0 whitespace-nowrap rounded-full px-5 ${
               categoryId === null
                 ? 'bg-blue-50 text-white'
                 : 'text-[#55607a] hover:bg-[#E8EAF2]'
@@ -74,7 +75,7 @@ export const BlogList = () => {
             <button
               key={c.id}
               onClick={() => setCategoryId(c.id)}
-              className={`h-10 whitespace-nowrap rounded-full px-5 ${
+              className={`h-10 shrink-0 whitespace-nowrap rounded-full px-5 ${
                 categoryId === c.id
                   ? 'bg-blue-50 text-white'
                   : 'text-[#55607a] hover:bg-[#E8EAF2]'
@@ -86,10 +87,14 @@ export const BlogList = () => {
         </nav>
       </header>
 
-      <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid w-full flex-1 grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
         {loading ? (
           <div className="col-span-full flex items-center justify-center py-12 text-[#55607a]">
             {t('list.loading')}
+          </div>
+        ) : posts.length === 0 ? (
+          <div className="col-span-full flex items-center justify-center py-24 text-xl text-[#55607a]">
+            {t('list.noPosts', 'Нет постов')}
           </div>
         ) : (
           posts.map((post) => (

@@ -983,3 +983,7 @@ p {
     line-height: var(--leading-68) !important;
   }
 }
+
+nav[aria-label]::-webkit-scrollbar {
+  display: none;
+}
