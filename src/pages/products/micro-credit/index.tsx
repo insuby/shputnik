@@ -817,7 +817,7 @@ export const MicroCredit = () => {
                     </svg>
 
                     <div className="relative flex w-full flex-[2] items-center justify-center self-stretch">
-                      <div className="relative w-full lg:h-[70px] lg:w-[290px]">
+                      <div className="relative top-[-50px] w-full lg:!top-0 lg:h-[70px] lg:w-[290px]">
                         <div className="absolute left-1/2 top-[46px] flex w-[235px] -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] p-2 opacity-[0.24]">
                           <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-gray-90 opacity-0 [font-family:'Roboto',Helvetica]">
                             {t('processes.applicationApproved')}
