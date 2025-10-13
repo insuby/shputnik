@@ -507,7 +507,7 @@ export const Div = () => {
                   initial={{ opacity: 0, x: -40 }}
                   animate={inView23 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-0 top-14 inline-flex flex-col items-center justify-center gap-3 bottom-0 rounded-[32px_32px_0px_0px] bg-white p-4"
+                  className="absolute bottom-0 left-0 top-14 inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
                 >
                   <div className="relative size-[var(--size-212)] rounded-[100px]">
                     <div className="relative left-[var(--pos-7)] top-[var(--pos-7)] size-[var(--size-198)]">

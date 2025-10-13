@@ -195,7 +195,7 @@ export const Analytics = () => {
           <div className="relative flex h-[574px] w-full items-center justify-center">
             <div className="relative size-[319px] scale-[0.85] lg:scale-100">
               <div className="absolute left-[-29px] top-[-18px] h-[337px] w-[356px]">
-                <div className="absolute left-[320px] z-10 top-[104px] inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                <div className="absolute left-[320px] top-[104px] z-10 inline-flex items-center justify-center gap-2 rounded-[100px] border-[none] bg-[#ffffff33] px-3 py-1.5 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Inter',Helvetica]">
                     12%
                   </div>

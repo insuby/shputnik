@@ -19,6 +19,3 @@ export const useIsMobile = () => {
 
   return isMobile;
 };
-
-
-

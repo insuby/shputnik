@@ -171,7 +171,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, x: -150 }}
                 animate={inView3 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="left-[var(--pos-31)] flex  items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 absolute lg:top-[var(--pos-152)]"
+                className="absolute left-[var(--pos-31)]  flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6 lg:top-[var(--pos-152)]"
               >
                 <svg
                   width="64"
@@ -253,7 +253,7 @@ export const Dataunload = () => {
                 initial={{ opacity: 0, y: -150 }}
                 animate={inView3 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className="relative top-20 left-12 mx-auto flex lg:w-[400px] items-start  justify-end gap-[14.04px] rounded-[32px] bg-white p-7 shadow lg:absolute lg:left-[var(--pos-173)] lg:top-[var(--pos-239)]"
+                className="relative left-12 top-20 mx-auto flex items-start justify-end  gap-[14.04px] rounded-[32px] bg-white p-7 shadow lg:absolute lg:left-[var(--pos-173)] lg:top-[var(--pos-239)] lg:w-[400px]"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-4">
                   <div className="relative mt-[-0.88px] self-stretch text-sm font-normal leading-5 tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -767,7 +767,7 @@ export const Dataunload = () => {
       >
         {/* Removed missing SVG motion.img: /img/dataunload/vector-1-1.svg */}
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 lg:!gap-[88px] self-stretch p-0 lg:!flex-row lg:p-12">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-12 self-stretch p-0 lg:!flex-row lg:!gap-[88px] lg:p-12">
           <motion.div
             ref={ref44}
             initial={{ opacity: 0, x: -50 }}

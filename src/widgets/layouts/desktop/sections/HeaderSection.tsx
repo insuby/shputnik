@@ -30,14 +30,16 @@ export const HeaderSection = () => {
       originalOverflowRef.current = document.body.style.overflow;
       originalPaddingRightRef.current = document.body.style.paddingRight;
       originalHtmlOverflowRef.current = document.documentElement.style.overflow;
-      originalHtmlPaddingRightRef.current = document.documentElement.style.paddingRight;
+      originalHtmlPaddingRightRef.current =
+        document.documentElement.style.paddingRight;
       originalPositionRef.current = document.body.style.position;
       originalTopRef.current = document.body.style.top;
       originalLeftRef.current = document.body.style.left;
       originalRightRef.current = document.body.style.right;
       originalWidthRef.current = document.body.style.width;
 
-      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      const scrollbarWidth =
+        window.innerWidth - document.documentElement.clientWidth;
       savedScrollYRef.current = window.scrollY;
 
       document.documentElement.style.overflow = 'hidden';
@@ -51,8 +53,10 @@ export const HeaderSection = () => {
       document.body.style.right = '0';
       document.body.style.width = '100%';
     } else {
-      document.documentElement.style.overflow = originalHtmlOverflowRef.current || '';
-      document.documentElement.style.paddingRight = originalHtmlPaddingRightRef.current || '';
+      document.documentElement.style.overflow =
+        originalHtmlOverflowRef.current || '';
+      document.documentElement.style.paddingRight =
+        originalHtmlPaddingRightRef.current || '';
 
       document.body.style.position = originalPositionRef.current || '';
       document.body.style.top = originalTopRef.current || '';
@@ -174,8 +178,7 @@ export const HeaderSection = () => {
                       : 'border-transparent'
                   }`}
                 >
-                  <div
-                    className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
+                  <div className="mt-[-1.00px] w-fit whitespace-nowrap text-gray-90 transition-colors group-hover:text-[#3573FC]">
                     {item.label}
                   </div>
                 </div>

@@ -194,7 +194,7 @@ export const Technoligies = () => {
           viewBox="0 0 676 648"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="lg:flex relative hidden flex-1 grow self-stretch"
+          className="relative hidden flex-1 grow self-stretch lg:flex"
         >
           <g clipPath="url(#clip0_9535_12876)">
             <rect width="676" height="648" rx="32" fill="#F9FAFD" />

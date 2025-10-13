@@ -148,7 +148,7 @@ export const Feedback = () => {
           </motion.button>
         </div>
 
-        <div className="hidden lg:flex absolute left-[var(--pos-789)] -bottom-6 w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6">
+        <div className="absolute -bottom-6 left-[var(--pos-789)] hidden w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6 lg:flex">
           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Калькулятор
           </div>

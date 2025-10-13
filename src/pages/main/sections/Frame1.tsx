@@ -74,8 +74,7 @@ export const Frame1 = () => {
             className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
-            <div
-              className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
+            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
               <svg
                 className="absolute"
                 width="700"
@@ -199,11 +198,9 @@ export const Frame1 = () => {
                   transition={{ duration: 0.7, ease: 'easeOut' }}
                   className="absolute left-[var(--spacing-12-29)] top-[var(--spacing-6-94)] inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-2-22)] bg-[#ffffff5c] p-[var(--spacing-0-56)]"
                 >
-                  <div
-                    className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
                     <div className="h-7w-full relative xl:w-[142.55px]">
-                      <div
-                        className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
+                      <div className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
                         <svg
                           width="112"
                           height="24"
@@ -494,13 +491,11 @@ export const Frame1 = () => {
               className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
             >
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <h3
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Выгрузка данных в кредитные бюро
                 </h3>
 
-                <p
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   Предоставление банком денежных средств физическим или
                   юридическим лицам
                 </p>

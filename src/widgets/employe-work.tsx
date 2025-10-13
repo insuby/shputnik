@@ -157,7 +157,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative left-0 m-auto mt-[-11.00px] size-full h-[222px] w-full scale-150 self-stretch xl:scale-100"
                 style={{
-                  margin: 'auto'
+                  margin: 'auto',
                 }}
               >
                 <circle

@@ -145,7 +145,7 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView1 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                  className="relative w-full max-w-[80%] mx-auto lg:m-0 text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px]"
+                  className="relative mx-auto w-full max-w-[80%] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px]"
                 >
                   {t('hero.description')}
                 </motion.p>
@@ -845,7 +845,7 @@ export const IslamFinance = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full lg:!flex-row  flex-col flex-[0_0_auto] items-start gap-6 self-stretch"
+            className="relative flex w-full flex-[0_0_auto]  flex-col items-start gap-6 self-stretch lg:!flex-row"
           >
             <motion.div
               ref={ref10}
@@ -866,7 +866,7 @@ export const IslamFinance = () => {
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView12 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, ease: 'easeOut', delay: 0.65 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl lg:text-[40px] font-medium lg:leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-[40px] lg:leading-[48px]"
                 >
                   {t('features.title')}
                 </motion.p>
