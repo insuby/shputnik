@@ -116,7 +116,6 @@ export const BusinessCredit = () => {
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
             className="absolute left-[559px] top-0 h-[600px] w-full lg:w-[817px]"
-            alt="Vector"
           >
             <g opacity="0.24" filter="url(#filter0_f_9321_96391)">
               <path
@@ -156,7 +155,7 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView4 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-3 top-0 flex w-full max-w-[460px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7 lg:left-[var(--pos-108)] lg:w-[var(--size-443)]"
+                className="absolute left-3 top-0 flex w-full items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7 lg:left-[var(--pos-108)] lg:w-[var(--size-443)] max-w-[440px]"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
@@ -284,7 +283,6 @@ export const BusinessCredit = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="absolute left-[var(--pos-45)] top-[var(--pos-83)] h-[50px] w-full lg:w-[var(--size-494)]"
-                alt="Vector"
               >
                 <g opacity="0.32" filter="url(#filter0_f_9321_97914)">
                   <path
@@ -322,11 +320,11 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: -50 }}
                 animate={inView5 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                className="absolute left-0 top-[213px] flex w-[var(--size-443)] min-w-[443px] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7"
+                className="absolute left-0 top-[213px] shadow flex w-[var(--size-443)] items-start justify-end gap-[14.04px] rounded-[32px] bg-[#ffffff] p-7 lg:min-w-[443px]"
               >
                 <div className="relative flex flex-1 grow flex-col items-center justify-center gap-[14.04px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[8.78px] self-stretch">
-                    <div className="relative mt-[-0.88px] flex-1 text-[17.6px] font-medium leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="relative mt-[-0.88px] flex-1  text-[17.6px] font-medium leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('calculator.recommendedOffer')}
                     </div>
                   </div>
@@ -337,7 +335,7 @@ export const BusinessCredit = () => {
                         {t('calculator.rate')}
                       </div>
 
-                      <div className="relative self-stretch whitespace-nowrap text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch whitespace-nowrap text-xs lg:text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         187, 000 ₽
                       </div>
                     </div>
@@ -347,7 +345,7 @@ export const BusinessCredit = () => {
                         {t('calculator.earnings')}
                       </div>
 
-                      <div className="relative self-stretch whitespace-nowrap text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch whitespace-nowrap text-xs lg:text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         2, 560, 000 ₽
                       </div>
                     </div>
@@ -357,7 +355,7 @@ export const BusinessCredit = () => {
                         {t('calculator.payback')}
                       </div>
 
-                      <div className="relative self-stretch whitespace-nowrap text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="relative self-stretch whitespace-nowrap text-xs lg:text-[17.6px] font-normal leading-[24.6px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('calculator.paybackPeriod')}
                       </div>
                     </div>
@@ -372,7 +370,6 @@ export const BusinessCredit = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="absolute left-[var(--pos-91)] top-[var(--pos-148)] h-[313px] w-full lg:w-[var(--size-540)]"
-                alt="Vector"
               >
                 <g opacity="0.32" filter="url(#filter0_f_9321_97929)">
                   <path
@@ -410,7 +407,7 @@ export const BusinessCredit = () => {
                 initial={{ opacity: 0, x: 50 }}
                 animate={inView6 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="absolute left-8 top-[320px] inline-flex items-center gap-4 rounded-[32px] bg-[#ffffff] py-4 pl-4 pr-6 lg:left-[var(--pos-272)] lg:top-[var(--pos-300)]"
+                className="absolute shadow left-8 top-[320px] inline-flex items-center gap-4 rounded-[32px] bg-[#ffffff] py-4 pl-4 pr-6 lg:left-[var(--pos-272)] lg:top-[var(--pos-300)]"
               >
                 <svg
                   width="64"
@@ -419,7 +416,6 @@ export const BusinessCredit = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                   className="relative flex-[0_0_auto]"
-                  alt="Frame"
                 >
                   <rect width="64" height="64" rx="24" fill="#F2F5FF" />
                   <path
