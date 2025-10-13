@@ -333,6 +333,7 @@ a {
   --text-10-5: clamp(8px, 0.73vw, 10.5px);
   --text-14-9: clamp(12px, 1.03vw, 14.9px);
   --text-14-95: clamp(12px, 1.04vw, 14.95px);
+  --text-16: clamp(14px, 1.11vw, 16px);
   --text-23-9: clamp(18px, 1.66vw, 23.9px);
   --text-24: clamp(18px, 1.67vw, 24px);
   --text-28: clamp(20px, 1.94vw, 28px);
@@ -633,6 +634,7 @@ a {
     --text-10-5: 8px;
     --text-14-9: 12px;
     --text-14-95: 12px;
+    --text-16: 14px;
     --text-23-9: 18px;
     --text-24: 18px;
     --text-28: 20px;
@@ -927,6 +929,10 @@ p {
 
   .text-adaptive-14-95 {
     font-size: var(--text-14-95) !important;
+  }
+
+  .text-adaptive-16 {
+    font-size: var(--text-16) !important;
   }
 
   .text-adaptive-23-9 {

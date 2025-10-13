@@ -627,7 +627,7 @@ export const BNPL = () => {
                       />
 
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                        <div className="relative h-20 mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-1.00px] h-20 self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                           {product.name}
                         </div>
 
@@ -1466,7 +1466,7 @@ export const BNPL = () => {
           </div>
         </div>
 
-        <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px]">
+        <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]">
           <p className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[480px]">
             {t('backoffice.title')}
           </p>

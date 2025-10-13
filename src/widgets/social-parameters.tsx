@@ -44,7 +44,7 @@ export const SocialParameters = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView1 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="relative flex w-full flex-[0_0_auto] items-center gap-1 lg:gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3"
+            className="relative flex w-full flex-[0_0_auto] items-center gap-1 self-stretch rounded-[32px] bg-[#f9fafd] p-3 lg:gap-5"
           >
             <motion.div
               ref={ref8}
@@ -60,12 +60,12 @@ export const SocialParameters = () => {
                 initial={{ opacity: 0, x: -30 }}
                 animate={inView9 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                className="text-adaptive-24 relative mt-[-1.00px] w-[293px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]"
+                className="text-adaptive-24 relative mt-[-1.00px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]"
               >
                 Социальные параметры
               </motion.div>
 
-              <div className="relative flex w-[293px] flex-[0_0_auto] flex-col items-start gap-2">
+              <div className="relative flex flex-[0_0_auto] flex-col items-start gap-2 lg:w-[293px]">
                 <motion.div
                   ref={ref10}
                   initial={{ opacity: 0, x: -30 }}
@@ -257,13 +257,13 @@ export const SocialParameters = () => {
           </motion.div>
         </div>
       </div>
-      <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] lg:w-auto">
+      <div className="relative flex w-full flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl p-7 lg:w-auto lg:py-12 lg:pl-12 lg:pr-[68px]">
         <motion.p
           ref={ref6}
           initial={{ opacity: 0, x: 80 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-adaptive-40 relative m-auto mt-[-1.00px] max-w-[480px] text-center font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start"
+          className="text-adaptive-40 relative m-auto mt-[-1.00px] text-center font-medium lg:leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 max-w-[480px] lg:text-start"
         >
           Многофункциональный <br />
           бэк-офис для кредитных менеджеров
@@ -290,11 +290,11 @@ export const SocialParameters = () => {
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
           className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4"
         >
-          <div className="text-adaptive-24  relative m-auto mt-[-1.00px] w-[500px] text-center font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
+          <div className="text-adaptive-24  relative m-auto mt-[-1.00px] text-center font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[500px] lg:text-start">
             Автоматизированное принятие решений
           </div>
 
-          <p className="text-adaptive-20  relative m-auto w-[500px] text-center font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start">
+          <p className="text-adaptive-20  relative m-auto text-center font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[500px] lg:text-start">
             Программное обеспечение Buy Now Pay Later устраняет ручные процессы,
             специальные запросы и бумажные следы. Получите единый плавный
             автоматизированный рабочий процесс, который отвечает потребностям

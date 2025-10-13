@@ -634,7 +634,7 @@ export const Dataunload = () => {
         </motion.div>
 
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl lg:!flex-row">
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] lg:gap-12">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:gap-12 lg:py-12 lg:pl-12 lg:pr-[68px]">
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.div
                 ref={ref29}
@@ -749,7 +749,7 @@ export const Dataunload = () => {
               </motion.div>
             </div>
           </div>
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl py-12 pl-12 pr-[68px] lg:gap-12">
+          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:gap-12 lg:py-12 lg:pl-12 lg:pr-[68px]">
             <img
               className="relative size-full self-stretch"
               alt="Screenshot"
