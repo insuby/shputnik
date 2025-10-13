@@ -340,7 +340,7 @@ a {
   --text-28-to-60: clamp(28px, 4.17vw, 60px);
   --text-36: clamp(24px, 2.5vw, 36px);
   --text-36-to-60: clamp(36px, 4.17vw, 60px);
-  --text-40: clamp(40px, 2.78vw, 40px);
+  --text-40: clamp(28px, 2.78vw, 40px);
 
   /* Адаптивные line-height с ограничением на 1440px */
   --leading-32: clamp(28px, 2.22vw, 32px);
@@ -641,7 +641,7 @@ a {
     --text-28-to-60: 28px;
     --text-36: 24px;
     --text-36-to-60: 36px;
-    --text-40: 40px;
+    --text-40: 28px;
     --leading-32: 28px;
     --leading-44: 36px;
     --leading-48: 40px;

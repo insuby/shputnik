@@ -60,7 +60,7 @@ export const SocialParameters = () => {
                 initial={{ opacity: 0, x: -30 }}
                 animate={inView9 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
-                className="text-adaptive-24 relative mt-[-1.00px] font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]"
+                className="text-adaptive-24 relative mt-[-1.00px] font-medium leading-tight leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]"
               >
                 Социальные параметры
               </motion.div>
@@ -263,7 +263,7 @@ export const SocialParameters = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="text-adaptive-40 relative m-auto mt-[-1.00px] text-center font-medium lg:leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 max-w-[480px] lg:text-start"
+          className="text-adaptive-40 relative m-auto mt-[-1.00px] text-center font-medium leading-tight lg:leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 max-w-[480px] lg:text-start"
         >
           Многофункциональный <br />
           бэк-офис для кредитных менеджеров
