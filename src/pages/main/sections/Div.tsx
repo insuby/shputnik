@@ -77,7 +77,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="group relative transition-colors flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
@@ -85,7 +85,7 @@ export const Div = () => {
             >
               <div className="relative h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute"
+                  className="absolute z-10"
                   width="720"
                   height="368"
                   viewBox="0 0 720 368"
@@ -333,7 +333,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="group relative transition-colors flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
@@ -341,7 +341,7 @@ export const Div = () => {
             >
               <div className="relative left-[var(--pos-67)] h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute"
+                  className="absolute z-10"
                   width="700"
                   height="368"
                   viewBox="0 0 700 368"

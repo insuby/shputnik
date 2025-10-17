@@ -25,7 +25,7 @@ export const CustomDevelopment = () => {
       <div className="relative flex h-[var(--size-600)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
             onClick={handleClick}
           >
             <div className="relative flex size-full flex-[0_0_auto] flex-col gap-[var(--spacing-1-94)] self-stretch p-[var(--spacing-2-22)] xl:p-[var(--spacing-2-78)]">
@@ -74,53 +74,53 @@ export const CustomDevelopment = () => {
             </div>
           </div>
 
-          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
+          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors">
+            <svg
+              className="absolute"
+              width="770"
+              height="770"
+              viewBox="0 0 770 770"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.22" filter="url(#filter0_f_9569_16873)">
+                <path
+                  d="M283.005 234.855C258.925 178.898 312.328 121.763 342.04 100.191C540.779 23.0709 550.966 281.52 486.742 371.81C422.519 462.1 227.111 507.988 195.485 434.496C163.859 361.004 313.106 304.801 283.005 234.855Z"
+                  fill="#3573FC"
+                />
+              </g>
+              <defs>
+                <filter
+                  id="filter0_f_9569_16873"
+                  x="-181.64"
+                  y="-286.685"
+                  width="1076.3"
+                  height="1130.4"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="BackgroundImageFix"
+                    result="shape"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="186.349"
+                    result="effect1_foregroundBlur_9569_16873"
+                  />
+                </filter>
+              </defs>
+            </svg>
+
             <div
-              className="relative size-full  bg-center bg-no-repeat"
+              className="relative  z-10 size-full  bg-center bg-no-repeat"
               style={{
                 backgroundImage: "url('/img/group-107.png')",
-                backgroundSize: '100%',
+                backgroundSize: '90%',
               }}
-            >
-              <svg
-                className="absolute"
-                width="700"
-                height="700"
-                viewBox="0 0 700 700"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g opacity="0.22" filter="url(#filter0_f_9569_16873)">
-                  <path
-                    d="M283.005 234.855C258.925 178.898 312.328 121.763 342.04 100.191C540.779 23.0709 550.966 281.52 486.742 371.81C422.519 462.1 227.111 507.988 195.485 434.496C163.859 361.004 313.106 304.801 283.005 234.855Z"
-                    fill="#3573FC"
-                  />
-                </g>
-                <defs>
-                  <filter
-                    id="filter0_f_9569_16873"
-                    x="-181.64"
-                    y="-286.685"
-                    width="1076.3"
-                    height="1130.4"
-                    filterUnits="userSpaceOnUse"
-                    colorInterpolationFilters="sRGB"
-                  >
-                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                    <feBlend
-                      mode="normal"
-                      in="SourceGraphic"
-                      in2="BackgroundImageFix"
-                      result="shape"
-                    />
-                    <feGaussianBlur
-                      stdDeviation="186.349"
-                      result="effect1_foregroundBlur_9569_16873"
-                    />
-                  </filter>
-                </defs>
-              </svg>
-            </div>
+            />
           </div>
         </div>
       </div>

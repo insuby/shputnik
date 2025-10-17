@@ -72,7 +72,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-12"
+          className="relative transition-colors flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-12"
         >
           <Link
             to={RoutesPath.MICROCREDIT}
@@ -370,7 +370,7 @@ export const FrameWrapper = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-              className="absolute bottom-[-30px] left-[var(--pos-363)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4 drop-shadow-md"
+              className="absolute bottom-[-30px] left-[var(--pos-363)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4 shadow-[-46px_14px_100px_-19px_rgba(34,60,80,0.13)]"
             >
               <Graph sum="122,000" />
 

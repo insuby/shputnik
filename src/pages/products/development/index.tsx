@@ -573,7 +573,7 @@ export const Development = () => {
               arrows={false}
             >
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -861,7 +861,7 @@ export const Development = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                  <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
                     <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.enterprise.title')}
                     </div>
@@ -874,7 +874,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
+                <div className="relative flex h-[550px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1027,7 +1027,7 @@ export const Development = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                  <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
                     <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.fintech.title')}
                     </div>
@@ -1040,7 +1040,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1199,7 +1199,7 @@ export const Development = () => {
                     <path d="M219 62L247 62" stroke="white" strokeWidth="2" />
                   </svg>
 
-                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                  <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
                     <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.blockchain.title')}
                     </div>
@@ -1212,7 +1212,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1372,7 +1372,7 @@ export const Development = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                  <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
                     <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.medtech.title')}
                     </div>
@@ -1385,7 +1385,7 @@ export const Development = () => {
               </div>
 
               <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
@@ -1576,7 +1576,7 @@ export const Development = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative flex w-full flex-[4] flex-col items-start gap-3 self-stretch">
+                  <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
                     <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('platforms.martech.title')}
                     </div>
@@ -1591,7 +1591,7 @@ export const Development = () => {
           </div>
         </div>
 
-        <div className="absolute left-[725px] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
+        <div className="absolute left-[725px] top-[582px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
           <button
             onClick={goToPrev}
             className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"

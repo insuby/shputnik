@@ -18,6 +18,7 @@ export const MobileLayout = () => {
   const { t } = useTranslation(['mobile']);
 
   const isBgEnabled = location.pathname === RoutesPath.MAIN;
+  const isDevelopmentPage = location.pathname === RoutesPath.DEVELOPMENT;
 
   useEffect(() => {
     document.body.style.overflow = isMenuOpen || isOpen ? 'hidden' : 'auto';
@@ -33,12 +34,6 @@ export const MobileLayout = () => {
           isBgEnabled,
       })}
     >
-      <a
-        href="#content"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-white focus:px-4 focus:py-2 focus:shadow"
-      >
-        {t('skipToContent')}
-      </a>
       <div className="relative flex w-full flex-col items-start">
         <button
           aria-label={t('openMenu')}
@@ -615,7 +610,6 @@ export const MobileLayout = () => {
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                           className="size-12"
-                          alt="icon"
                         >
                           <rect width="60" height="60" rx="24" fill="#F9FAFD" />
                           <path
@@ -1026,9 +1020,11 @@ export const MobileLayout = () => {
 
       <main
         id="content"
-        className={cx('-mt-20 w-full mx-auto !overflow-x-hidden', {
+        className={cx('-mt-20 w-full mx-auto', {
           'px-5': !isBgEnabled,
           'flex flex-col gap-[88px]': isBgEnabled,
+          '!-mt-16 ': isDevelopmentPage,
+          '!overflow-x-hidden': !isDevelopmentPage,
         })}
       >
         <Outlet />

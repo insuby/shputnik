@@ -268,7 +268,6 @@ export default {
   automation: {
     title: 'Автоматизация бизнес-процессов',
   },
-  skipToContent: 'Перейти к содержимому',
   openMenu: 'Открыть меню',
   about: 'О компании',
   reviews: 'Отзывы',

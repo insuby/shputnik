@@ -8,5 +8,4 @@ export const common = {
     openMenu: 'Открыть меню',
     closeMenu: 'Закрыть меню',
   },
-  skipToContent: 'Перейти к контенту',
 };
