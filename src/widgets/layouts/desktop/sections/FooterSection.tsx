@@ -222,15 +222,12 @@ export const FooterSection = () => {
                 {t('vacancies', { ns: 'nav' })}
               </Link>
 
-              <Link
-                to={RoutesPath.PRIVACY}
+              <a
+                href="#"
                 className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
-                {t('privacy', {
-                  ns: 'footer',
-                  defaultValue: 'Конфиденциальность',
-                })}
-              </Link>
+                Конфиденциальность
+              </a>
             </div>
           </div>
 
