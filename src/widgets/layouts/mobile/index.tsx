@@ -28,89 +28,105 @@ export const MobileLayout = () => {
   }, [isMenuOpen, isOpen]);
 
   return (
-    <div
-      className={cx('relative flex flex-col items-start gap-[88px]', {
-        'bg-[linear-gradient(356deg,rgba(255,255,255,1)_0%,rgba(243,244,250,1)_100%)]':
+    <>
+      <div
+        className={cx('relative flex flex-col items-start gap-[88px]', {
           isBgEnabled,
-      })}
-    >
-      <div className="relative flex w-full flex-col items-start">
-        <button
-          aria-label={t('openMenu')}
-          onClick={() => {
-            setMenuPanel('root');
-            setIsMenuOpen(true);
-          }}
-          className="absolute right-3 top-2 z-10 inline-flex size-12 items-center justify-center rounded-full"
-        >
-          <svg
-            width="20"
-            height="14"
-            viewBox="0 0 20 14"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+          '!hidden': isMenuOpen,
+        })}
+      >
+        <div className="relative flex w-full flex-col items-start">
+          <button
+            aria-label={t('openMenu')}
+            onClick={() => {
+              setMenuPanel('root');
+              setIsMenuOpen(true);
+            }}
+            className="absolute right-3 top-2 z-10 inline-flex size-12 items-center justify-center rounded-full"
           >
-            <rect x="0" y="0" width="20" height="2" rx="1" fill="#1c222f" />
-            <rect x="0" y="6" width="20" height="2" rx="1" fill="#1c222f" />
-            <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f" />
-          </svg>
-        </button>
-        <Link
-          to={RoutesPath.MAIN}
-          className="relative mb-4 block h-12"
-          aria-label={t('goToHome', 'Перейти на главную')}
-        >
-          <svg
-            className="absolute left-5 top-[12px] h-8 w-28"
-            viewBox="0 0 112 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <mask
-              id="logoMask"
-              maskUnits="userSpaceOnUse"
-              x="0"
-              y="0"
-              width="19"
-              height="24"
+            <svg
+              width="20"
+              height="14"
+              viewBox="0 0 20 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
+              <rect x="0" y="0" width="20" height="2" rx="1" fill="#1c222f" />
+              <rect x="0" y="6" width="20" height="2" rx="1" fill="#1c222f" />
+              <rect x="0" y="12" width="20" height="2" rx="1" fill="#1c222f" />
+            </svg>
+          </button>
+          <Link
+            to={RoutesPath.MAIN}
+            className="relative mb-4 block h-12"
+            aria-label={t('goToHome', 'Перейти на главную')}
+          >
+            <svg
+              className="absolute left-5 top-[12px] h-8 w-28"
+              viewBox="0 0 112 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <mask
+                id="logoMask"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="19"
+                height="24"
+              >
+                <path
+                  d="M0 0.630676H18.5875V23.3693H0V0.630676Z"
+                  fill="#1D2C62"
+                />
+              </mask>
               <path
-                d="M0 0.630676H18.5875V23.3693H0V0.630676Z"
-                fill="#1D2C62"
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M7.46875 12.0006C7.46875 7.01558 11.51 2.97308 16.4963 2.97308C17.215 2.97308 17.9163 3.05808 18.5875 3.21683C16.6238 1.60058 14.11 0.630585 11.3687 0.630585C5.09 0.630585 0 5.72184 0 12.0006C0 18.2793 5.09 23.3693 11.3687 23.3693C14.11 23.3693 16.6238 22.3993 18.5875 20.7843C17.9163 20.9431 17.215 21.0281 16.4963 21.0281C11.51 21.0281 7.46875 16.9856 7.46875 12.0006Z"
+                fill="#1C222F"
               />
-            </mask>
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M7.46875 12.0006C7.46875 7.01558 11.51 2.97308 16.4963 2.97308C17.215 2.97308 17.9163 3.05808 18.5875 3.21683C16.6238 1.60058 14.11 0.630585 11.3687 0.630585C5.09 0.630585 0 5.72184 0 12.0006C0 18.2793 5.09 23.3693 11.3687 23.3693C14.11 23.3693 16.6238 22.3993 18.5875 20.7843C17.9163 20.9431 17.215 21.0281 16.4963 21.0281C11.51 21.0281 7.46875 16.9856 7.46875 12.0006Z"
-              fill="#1C222F"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M23.7939 2.29712V6.68587C24.8814 8.17712 25.5239 10.0134 25.5239 12.0009C25.5239 13.9871 24.8814 15.8246 23.7939 17.3159V21.7171H29.8539V7.00462H36.0202V21.7171H42.0802V2.29712H23.7939Z"
-              fill="#1C222F"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M46.8403 2.29712V6.93212H52.4478V21.7171H58.5078V6.93212H64.1153V2.29712H46.8403Z"
-              fill="#1C222F"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M68.88 2.29712V21.7171H74.9413V13.8084H81.2138V21.7171H87.2738V2.29712H81.2138V9.03087H74.9413V2.29712H68.88Z"
-              fill="#1C222F"
-            />
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M92.03 2.26239V11.9899V21.7174H98.09V14.0274H99.6788L104.274 21.7174H111.238L105.213 11.9899L111.238 2.26239H104.274L99.6788 9.95239H98.09V2.26239H92.03Z"
-              fill="#1C222F"
-            />
-          </svg>
-        </Link>
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M23.7939 2.29712V6.68587C24.8814 8.17712 25.5239 10.0134 25.5239 12.0009C25.5239 13.9871 24.8814 15.8246 23.7939 17.3159V21.7171H29.8539V7.00462H36.0202V21.7171H42.0802V2.29712H23.7939Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M46.8403 2.29712V6.93212H52.4478V21.7171H58.5078V6.93212H64.1153V2.29712H46.8403Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M68.88 2.29712V21.7171H74.9413V13.8084H81.2138V21.7171H87.2738V2.29712H81.2138V9.03087H74.9413V2.29712H68.88Z"
+                fill="#1C222F"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M92.03 2.26239V11.9899V21.7174H98.09V14.0274H99.6788L104.274 21.7174H111.238L105.213 11.9899L111.238 2.26239H104.274L99.6788 9.95239H98.09V2.26239H92.03Z"
+                fill="#1C222F"
+              />
+            </svg>
+          </Link>
+        </div>
+
+        <main
+          id="content"
+          className={cx('-mt-20 w-full mx-auto', {
+            'px-5': !isBgEnabled,
+            'flex flex-col gap-[88px]': isBgEnabled,
+            '!-mt-16 ': isDevelopmentPage,
+            '!overflow-x-hidden': !isDevelopmentPage,
+          })}
+        >
+          <Outlet />
+        </main>
+        <FooterSection />
+        {isOpen && <FeedbackForm />}
       </div>
 
       <AnimatePresence>
@@ -1017,20 +1033,6 @@ export const MobileLayout = () => {
           </motion.div>
         )}
       </AnimatePresence>
-
-      <main
-        id="content"
-        className={cx('-mt-20 w-full mx-auto', {
-          'px-5': !isBgEnabled,
-          'flex flex-col gap-[88px]': isBgEnabled,
-          '!-mt-16 ': isDevelopmentPage,
-          '!overflow-x-hidden': !isDevelopmentPage,
-        })}
-      >
-        <Outlet />
-      </main>
-      <FooterSection />
-      {isOpen && <FeedbackForm />}
-    </div>
+    </>
   );
 };

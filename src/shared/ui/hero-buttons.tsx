@@ -53,7 +53,7 @@ export const HeroButtons = ({
 
   return (
     <>
-      <div className="relative z-50 flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+      <div className="relative z-10 flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={inView2 ? { opacity: 1, x: 0 } : {}}
