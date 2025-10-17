@@ -97,6 +97,7 @@ export const HeroButtons = ({
                 className="animate-spin"
                 style={{
                   animation: 'spin 1s linear infinite',
+                  transformOrigin: '10px 10px',
                 }}
               />
             </svg>
