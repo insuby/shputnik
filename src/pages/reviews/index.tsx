@@ -451,9 +451,7 @@ const companyLogos: Record<string, JSX.Element | null> = {
       </g>
     </svg>
   ),
-  'Алексей Яковлев': (
-    <div></div>
-  )
+  'Алексей Яковлев': <div></div>,
 };
 
 type Reviewer = {

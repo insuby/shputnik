@@ -537,7 +537,7 @@ export const DivWrapper = () => {
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group relative transition-colors flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -575,7 +575,7 @@ export const DivWrapper = () => {
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group relative transition-colors flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -613,7 +613,7 @@ export const DivWrapper = () => {
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group relative transition-colors mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid  border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
+            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent  bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
           >
             <div className="relative flex flex-1 grow flex-col items-start gap-2">
               <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">

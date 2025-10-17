@@ -555,7 +555,7 @@ export const HeaderSection = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.MICROCREDIT}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.MICROCREDIT) {
                           setIsMenuOpen(false);
@@ -628,7 +628,7 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.BUSINESSCREDIT}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.BUSINESSCREDIT) {
                           setIsMenuOpen(false);
@@ -692,7 +692,7 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.BANKCREDIT}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.BANKCREDIT) {
                           setIsMenuOpen(false);
@@ -779,7 +779,7 @@ export const HeaderSection = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.BNPL}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.BNPL) {
                           setIsMenuOpen(false);
@@ -829,7 +829,7 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.BNPL}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.BNPL) {
                           setIsMenuOpen(false);
@@ -886,7 +886,7 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.AUTOCREDIT}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.AUTOCREDIT) {
                           setIsMenuOpen(false);
@@ -1069,7 +1069,7 @@ export const HeaderSection = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-center gap-6 bg-[#ffffff] xl:w-[1392px]">
                     <Link
                       to={RoutesPath.DATAUNLOAD}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.DATAUNLOAD) {
                           setIsMenuOpen(false);
@@ -1126,7 +1126,7 @@ export const HeaderSection = () => {
 
                     <Link
                       to={RoutesPath.FDATA}
-                      className="group relative transition-colors flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 hover:bg-[#f9fafd]"
+                      className="group relative flex flex-1 grow cursor-pointer items-center gap-7 rounded-[32px] p-5 transition-colors hover:bg-[#f9fafd]"
                       onClick={() => {
                         if (pathname === RoutesPath.FDATA) {
                           setIsMenuOpen(false);

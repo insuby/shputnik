@@ -72,7 +72,7 @@ export const FrameWrapper = () => {
           initial={{ opacity: 0, x: -60 }}
           animate={inViews[2] ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[2], ease: 'easeOut' }}
-          className="relative transition-colors flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-12"
+          className="relative flex w-1/2 cursor-pointer flex-col items-start justify-between self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-7 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-12"
         >
           <Link
             to={RoutesPath.MICROCREDIT}

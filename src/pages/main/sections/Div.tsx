@@ -77,7 +77,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative transition-colors flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
@@ -333,7 +333,7 @@ export const Div = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative transition-colors flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd]  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
