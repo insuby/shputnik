@@ -24,13 +24,14 @@ const transporter = nodemailer.createTransport({
 });
 
 const sendTelegramNotification = async (data) => {
-  const { name, phone, email, comment } = data;
+  const { name, phone, email, comment, pageTitle } = data;
 
   const message = `🔔 *Новая заявка с сайта*\n\n` +
     `👤 *Имя:* ${name}\n` +
     `📞 *Телефон:* ${phone}\n` +
     `📧 *Email:* ${email}\n` +
     `💬 *Комментарий:* ${comment || 'Не указан'}\n\n` +
+    `🌐 *Страница:* ${pageTitle}\n` +
     `⏰ *Время:* ${new Date().toLocaleString('ru-RU')}`;
 
   const botToken = process.env.TELEGRAM_BOT_TOKEN;
@@ -50,8 +51,8 @@ const sendTelegramNotification = async (data) => {
 };
 
 app.post('/api/node/send-email', async (req, res) => {
-  const { name, phone, email, comment } = req.body;
-
+  const { name, phone, email, comment, pageTitle } = req.body;
+  console.log(pageTitle);
   const mailOptions = {
     from: process.env.SMTP_USERNAME,
     to: ['SALES@DZEN-PAY.COM', 'product@dzen-pay.com'],
@@ -61,6 +62,7 @@ app.post('/api/node/send-email', async (req, res) => {
       Телефон: ${phone}
       Email: ${email}
       Комментарий: ${comment}
+      Страница: ${pageTitle}
     `,
   };
 
@@ -94,7 +96,7 @@ app.post('/api/node/send-email', async (req, res) => {
 
   if (process.env.TELEGRAM_BOT_TOKEN && process.env.TELEGRAM_CHAT_ID) {
     try {
-      await sendTelegramNotification({ name, phone, email, comment });
+      await sendTelegramNotification({ name, phone, email, comment, pageTitle });
       results.telegram = { success: true, error: null };
     } catch (telegramError) {
       console.error('Ошибка при отправке Telegram уведомления:', telegramError);

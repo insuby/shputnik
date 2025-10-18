@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import InputMask from 'react-input-mask';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import { type FeedbackFormData, sendFeedback } from 'shared/api/feedback';
@@ -17,6 +17,7 @@ import { useFeedbackForm } from './use-feedback-form.ts';
 export const FeedbackForm = () => {
   const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
+  const location = useLocation();
 
   const schema = yup.object({
     name: yup
@@ -49,7 +50,15 @@ export const FeedbackForm = () => {
     setIsLoading(true);
 
     try {
-      await sendFeedback(data);
+      const pageTitle = document.title;
+      console.log('Заголовок страницы:', pageTitle);
+
+      const dataWithPage = {
+        ...data,
+        pageTitle,
+      };
+
+      await sendFeedback(dataWithPage);
 
       toast.success('Заявка успешно отправлена!', {
         autoClose: 3000,
