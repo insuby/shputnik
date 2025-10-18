@@ -74,6 +74,7 @@ export const Frame = () => {
         <div className="relative flex w-full max-w-[var(--size-980)] flex-col items-center justify-center gap-[var(--spacing-1-11)] px-0 xl:gap-[var(--spacing-1-94)] xl:px-0">
           <motion.h1
             id="animate_1"
+            ref={refs[0]}
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
@@ -92,6 +93,7 @@ export const Frame = () => {
 
           <motion.p
             id="animate_2"
+            ref={refs[1]}
             initial={{ opacity: 0, y: 40 }}
             animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
@@ -103,6 +105,7 @@ export const Frame = () => {
 
         <motion.div
           id="animate_phone"
+          ref={refs[2]}
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{
@@ -199,6 +202,7 @@ export const Frame = () => {
 
         <motion.div
           id="animate_6"
+          ref={refs[5]}
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
@@ -272,6 +276,7 @@ export const Frame = () => {
 
         <motion.div
           id="animate_4"
+          ref={refs[3]}
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
@@ -332,6 +337,7 @@ export const Frame = () => {
 
         <motion.div
           id="animate_5"
+          ref={refs[4]}
           initial={{ opacity: 0, y: 40 }}
           animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}

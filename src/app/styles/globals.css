@@ -987,3 +987,12 @@ p {
 nav[aria-label]::-webkit-scrollbar {
   display: none;
 }
+
+
+button {
+  outline: none !important;
+
+  &:focus-visible {
+    outline: none !important;
+  }
+}
