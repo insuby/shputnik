@@ -14,6 +14,7 @@ export const HeaderSection = () => {
   const { setIsOpen } = useFeedbackForm();
   const [indicatorStyle] = useState({ left: 0, width: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
   const originalOverflowRef = useRef<string>('');
   const originalPaddingRightRef = useRef<string>('');
   const originalHtmlOverflowRef = useRef<string>('');
@@ -86,6 +87,37 @@ export const HeaderSection = () => {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current && 
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsMenuOpen(false);
+      }
+    };
+
+    if (isMenuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMenuOpen]);
+
   const onClick = () => {
     setIsOpen(true);
   };
@@ -152,13 +184,18 @@ export const HeaderSection = () => {
       >
         <div className="relative">
           <button
+            ref={buttonRef}
             className={`mt-[-1.00px] flex w-fit cursor-pointer items-center whitespace-nowrap border-b-2 border-solid py-2.5 text-gray-90 outline-0 hover:text-[#3573FC] ${
               isProductActive ? 'border-[#3573FC]' : 'border-transparent'
             }`}
             aria-haspopup="true"
             aria-expanded={isMenuOpen}
             aria-controls="products-menu"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            onClick={() => {
+              if (!isMenuOpen) {
+                setIsMenuOpen(true);
+              }
+            }}
           >
             {t('products', { ns: 'nav' })}
           </button>
@@ -528,6 +565,7 @@ export const HeaderSection = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
+            ref={menuRef}
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
@@ -542,7 +580,7 @@ export const HeaderSection = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.98 }}
               transition={{ duration: 0.18, ease: 'easeOut' }}
-              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px] shadow-xl"
+              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px] shadow"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[0px_0px_32px_32px] border border-[#F3F4F7] bg-white px-6 pb-6 pt-10">
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">

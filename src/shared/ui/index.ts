@@ -21,3 +21,5 @@ export { Table } from './table';
 export { Toggle } from './toggle';
 export { ToggleGroup } from './toggle-group';
 export { InlineSvg } from './inline-svg';
+export { LoadingSpinner } from './loading-spinner';
+export { PreloadIndicator } from './preload-indicator';

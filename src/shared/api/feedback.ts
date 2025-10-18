@@ -1,3 +1,5 @@
+import { API_BASE_URL } from '../lib/api-config';
+
 export type FeedbackFormData = {
   name: string;
   phone: string;
@@ -11,8 +13,6 @@ export type FeedbackResponse = {
   error?: string;
   emailResponse?: string;
 };
-
-import { API_BASE_URL } from '../lib/api-config';
 
 export const sendFeedback = async (
   data: FeedbackFormData,
