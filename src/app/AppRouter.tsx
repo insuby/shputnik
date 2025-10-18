@@ -2,6 +2,8 @@ import { About, BlogList, Reviews, Works } from 'pages';
 import { ScrollToTop } from 'widgets';
 
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { BlogPost } from 'pages/blog';
 import {
@@ -30,6 +32,18 @@ export const AppRouter = () => {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <Routes>
         <Route path="*" element={<Navigate replace to={RoutesPath.MAIN} />} />
         <Route element={isMobile ? <MobileLayout /> : <DesktopLayout />}>

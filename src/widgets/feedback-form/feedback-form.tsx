@@ -7,7 +7,9 @@ import { useTranslation } from 'react-i18next';
 // @ts-ignore
 import InputMask from 'react-input-mask';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
+import { type FeedbackFormData, sendFeedback } from 'shared/api/feedback';
 import { RoutesPath } from 'shared/routes-path.tsx';
 
 import { useFeedbackForm } from './use-feedback-form.ts';
@@ -17,18 +19,24 @@ export const FeedbackForm = () => {
   const { setIsOpen } = useFeedbackForm();
 
   const schema = yup.object({
-    name: yup.string().trim().required(t('feedbackForm.name')),
+    name: yup
+      .string()
+      .trim()
+      .required(t('feedbackForm.name'))
+      .matches(/^[а-яёА-ЯЁa-zA-Z\s]+$/, 'Имя может содержать только буквы'),
     email: yup.string().trim().required(t('feedbackForm.email')),
     phone: yup.string().trim().required(t('feedbackForm.phone')),
   });
 
   const [isVisible, setIsVisible] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+    reset,
+  } = useForm<FeedbackFormData>({
     mode: 'onSubmit',
     resolver: yupResolver(schema),
   });
@@ -37,7 +45,41 @@ export const FeedbackForm = () => {
     setIsVisible(true);
   }, []);
 
-  const onSubmit = () => {};
+  const onSubmit = async (data: FeedbackFormData) => {
+    setIsLoading(true);
+
+    try {
+      await sendFeedback(data);
+
+      toast.success('Заявка успешно отправлена!', {
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      reset();
+
+      setIsVisible(false);
+      setTimeout(() => {
+        setIsOpen(false);
+      }, 300);
+    } catch (error) {
+      // Показываем уведомление об ошибке
+      toast.error('Ошибка при отправке. Попробуйте еще раз.', {
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+      });
+
+      console.error('Ошибка при отправке формы:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   const onClick = () => {
     setIsVisible(false);
@@ -201,6 +243,8 @@ export const FeedbackForm = () => {
                   {...register('name')}
                   aria-label={t('feedbackForm.name')}
                   autoComplete="name"
+                  pattern="[а-яёА-ЯЁa-zA-Z\s]+"
+                  title="Имя может содержать только буквы"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
                   placeholder={t('feedbackForm.namePlaceholder')}
                 />
@@ -247,6 +291,7 @@ export const FeedbackForm = () => {
                 )}
               </div>
               <textarea
+                {...register('comment')}
                 placeholder={t('feedbackForm.commentPlaceholder')}
                 maxLength={100}
                 aria-label={t('feedbackForm.comment')}
@@ -260,12 +305,18 @@ export const FeedbackForm = () => {
             >
               <button
                 type="submit"
-                className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 hover:bg-blue-600"
+                disabled={isLoading}
+                className={`all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] px-8 py-4 ${
+                  isLoading
+                    ? 'cursor-not-allowed bg-gray-400'
+                    : 'bg-blue-50 hover:bg-blue-600'
+                }`}
               >
                 <span className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-white [font-style:var(--body-1-r-font-style)]">
-                  {t('feedbackForm.send')}
+                  {isLoading ? 'Отправка...' : t('feedbackForm.send')}
                 </span>
               </button>
+
               <p className="relative self-stretch text-center font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-40 [font-style:var(--body-3-r-font-style)]">
                 {t('feedbackForm.privacy')}
               </p>
