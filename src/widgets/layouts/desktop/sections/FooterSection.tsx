@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
 
 import { RoutesPath } from 'shared/routes-path.tsx';
+import { ScrollLink } from 'shared/ui';
 
 export const FooterSection = () => {
   const { t } = useTranslation(['footer', 'nav']);
@@ -14,7 +14,7 @@ export const FooterSection = () => {
         <div className="relative flex w-full flex-col items-start justify-between gap-10 xl:h-[324px] xl:w-[268px] xl:gap-0">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 !text-[16px]">
             <div className="relative h-[22px] w-28">
-              <Link
+              <ScrollLink
                 to={RoutesPath.MAIN}
                 className="relative block h-[23px] w-full !text-[16px] xl:w-[170px]"
               >
@@ -59,7 +59,7 @@ export const FooterSection = () => {
                     fill="#1C222F"
                   />
                 </svg>
-              </Link>
+              </ScrollLink>
             </div>
 
             <div className="relativew w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
@@ -107,60 +107,60 @@ export const FooterSection = () => {
 
           <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.MICROCREDIT}
                 className="relative mt-[-1.00px] self-stretch whitespace-pre-wrap font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 Микрофинансовое кредитование
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.BUSINESSCREDIT}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 Кредитование бизнеса
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.BANKCREDIT}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 Банковское кредитование
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.P2P}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 BNPl и PoS-кредитование
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.AUTOCREDIT}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 Автокредитование
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.P2P}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 P2P-кредитование
-              </Link>
+              </ScrollLink>
             </li>
             <li className="list-none">
-              <Link
+              <ScrollLink
                 to={RoutesPath.ISLAMFINANCE}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 Исламское финансирование
-              </Link>
+              </ScrollLink>
             </li>
           </ul>
         </div>
@@ -173,28 +173,28 @@ export const FooterSection = () => {
 
             <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
               <li className="list-none">
-                <Link
+                <ScrollLink
                   to={RoutesPath.DATAUNLOAD}
                   className="relative mt-[-1.00px] self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                 >
                   Выгрузка данных в КБ
-                </Link>
+                </ScrollLink>
               </li>
               <li className="list-none">
-                <Link
+                <ScrollLink
                   to={RoutesPath.FDATA}
                   className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                 >
                   ПО для реконсиляции данных
-                </Link>
+                </ScrollLink>
               </li>
               <li className="list-none">
-                <Link
+                <ScrollLink
                   to={RoutesPath.DEVELOPMENT}
                   className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
                 >
                   Разработка на заказ
-                </Link>
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -207,26 +207,26 @@ export const FooterSection = () => {
             </div>
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 xl:w-[268px]">
-              <Link
+              <ScrollLink
                 to={RoutesPath.ABOUT}
                 className="relative mt-[-1.00px] w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('about', { ns: 'nav' })}
-              </Link>
+              </ScrollLink>
 
-              <Link
+              <ScrollLink
                 to={RoutesPath.REVIEWS}
                 className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('reviews', { ns: 'nav' })}
-              </Link>
+              </ScrollLink>
 
-              <Link
+              <ScrollLink
                 to={RoutesPath.WORK}
                 className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
                 {t('vacancies', { ns: 'nav' })}
-              </Link>
+              </ScrollLink>
 
               <a
                 href="#"

@@ -23,3 +23,4 @@ export { ToggleGroup } from './toggle-group';
 export { InlineSvg } from './inline-svg';
 export { LoadingSpinner } from './loading-spinner';
 export { PreloadIndicator } from './preload-indicator';
+export { ScrollLink } from './scroll-link';

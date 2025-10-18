@@ -256,9 +256,21 @@ export const About = () => {
                               />
                             </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 size-[54px] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-2.png)_50%_50%_/_cover]" />
+                            <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                              <img
+                                className="absolute left-0 top-0 size-12 object-cover"
+                                alt="Woman with tablet"
+                                src="/img/woman-tablet-3.jpg"
+                              />
+                            </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 size-[54px] rounded-[52px] border-[3px] border-solid border-[#ffffff] backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)] [background:url(/img/about-frame-6.png)_50%_50%_/_cover]" />
+                            <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                              <img
+                                className="absolute left-0 top-0 size-12 object-cover"
+                                alt="Woman with tablet"
+                                src="/img/woman-tablet-4.png"
+                              />
+                            </div>
 
                             <div className="relative my-[-3.00px] -ml-1 mr-[-3.00px] flex size-[54px] items-center justify-center gap-2.5 rounded-[52px] border-[3px] border-solid border-[#ffffff] bg-[#f7f8f9] p-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                               <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Inter',Helvetica]">
