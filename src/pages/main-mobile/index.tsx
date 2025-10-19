@@ -2249,44 +2249,6 @@ export const MainMobile = () => {
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('other.decisionModule.title')}
-                </div>
-
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                  {t('other.decisionModule.description')}
-                </p>
-              </div>
-
-              <Link
-                to={RoutesPath.DEVELOPMENT}
-                className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-white p-4"
-              >
-                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-medium leading-6 tracking-normal text-blue-50 [font-family:'Roboto',Helvetica] xl:text-xl">
-                  {t('other.decisionModule.more')}
-                </div>
-
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="relative size-5 xl:size-12"
-                >
-                  <path
-                    d="M7.5 3.75L13.75 10L7.5 16.25"
-                    stroke="#3573FC"
-                    strokeWidth="2"
-                    strokeLinecap="square"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </Link>
-            </div>
-
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[32px] bg-[#f6f7f9] p-7">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-[28px] font-medium leading-9 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('other.fdata.title')}
                 </div>
 
