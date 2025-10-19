@@ -1,19 +1,8 @@
 import { useLocation } from 'react-router-dom';
 
-import { RoutesPath } from '../routes-path';
+import { ProductType } from 'shared/lib/get-specification-path.ts';
 
-type ProductType =
-  | 'bnpl'
-  | 'p2p'
-  | 'credit-conveyor'
-  | 'microcredit'
-  | 'autocredit'
-  | 'bank-credit'
-  | 'islam-finance'
-  | 'business-credit'
-  | 'development'
-  | 'data-unload'
-  | 'f-data';
+import { RoutesPath } from '../routes-path';
 
 export const useCurrentProduct = (): ProductType | null => {
   const location = useLocation();
@@ -29,6 +18,8 @@ export const useCurrentProduct = (): ProductType | null => {
     case RoutesPath.ISLAMFINANCE:
     case RoutesPath.BUSINESSCREDIT:
       return 'credit-conveyor';
+    case RoutesPath.FDATA:
+      return 'reconciliation';
     default:
       return null;
   }

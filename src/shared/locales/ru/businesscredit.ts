@@ -5,7 +5,7 @@ export const businesscredit = {
   },
   calculator: {
     expenses: 'Расходы',
-    recommendedOffer: 'Рекомендуемый оффер',
+    recommendedOffer: 'Оффер',
     rate: 'Ставка',
     earnings: 'Заработок',
     payback: 'Окупаемость',

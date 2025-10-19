@@ -129,7 +129,7 @@ export const BankCredit = () => {
   return (
     <>
       {pageMeta}
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] overflow-x-hidden p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
           <div className="relative flex w-full flex-col items-start gap-10 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:h-[620px] lg:gap-16 lg:p-12">
             <svg
@@ -609,11 +609,11 @@ export const BankCredit = () => {
                   </p>
                 </div>
 
-                <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
+                <div className="relative mb-[-24.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('offers.recommended')}
                         </div>
                       </div>
@@ -655,7 +655,7 @@ export const BankCredit = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('metrics.expenses')}
                         </div>
                       </div>
@@ -1171,11 +1171,11 @@ export const BankCredit = () => {
                     </p>
                   </div>
 
-                  <div className="relative mb-[-24.00px] mr-[-50.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
+                  <div className="relative mb-[-24.00px] flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] lg:w-[429px]">
                     <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                       <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                         <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                          <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('offers.recommended')}
                           </div>
                         </div>
@@ -1217,7 +1217,7 @@ export const BankCredit = () => {
                     <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
                       <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                         <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                          <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('metrics.expenses')}
                           </div>
                         </div>
@@ -1374,9 +1374,9 @@ export const BankCredit = () => {
                     </defs>
                   </svg>
 
-                  <div className="flex items-center p-3 lg:flex-col lg:p-0">
+                  <div className="flex flex-col items-center p-3 md:!flex-row lg:!flex-col lg:p-0">
                     <div className="relative w-full self-stretch lg:h-80">
-                      <div className="relative left-0 flex w-96 scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 lg:left-[98px] lg:top-[29px] lg:scale-100">
+                      <div className="relative left-0 flex scale-95 flex-col items-center justify-center gap-1 overflow-hidden rounded-[32px] bg-[#ffffff] p-2 md:w-96 lg:left-[98px] lg:top-[29px] lg:scale-100">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl p-2">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                             <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch overflow-hidden rounded-2xl bg-[#f9fafd] p-3">
@@ -1558,9 +1558,9 @@ export const BankCredit = () => {
                     </defs>
                   </svg>
 
-                  <div className="flex flex-row-reverse items-center lg:flex-col lg:p-0">
-                    <div className="relative w-full self-stretch px-7 lg:h-80">
-                      <div className="relative left-[-30px] top-[-10px] flex w-[120%] scale-90 items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 lg:left-7 lg:top-[34px] lg:w-[524px] lg:scale-100">
+                  <div className="flex flex-col items-center md:!flex-row-reverse lg:!flex-col  lg:p-0">
+                    <div className="relative w-full self-stretch md:px-7 lg:h-80">
+                      <div className="relative left-0 top-[-10px] m-auto flex w-full items-start justify-end gap-[11.96px] rounded-[32px] bg-[#ffffff] p-6 md:left-[-30px] md:scale-90 lg:left-7 lg:top-[34px] lg:w-[524px] lg:scale-100">
                         <div className="relative flex flex-1 grow flex-col items-center justify-center gap-3">
                           <div className="relative mt-[-0.75px] self-stretch text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('payments.title')}
@@ -1572,19 +1572,19 @@ export const BankCredit = () => {
                                 ID
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 12334
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 23489
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 34566
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 89654
                               </div>
                             </div>
@@ -1624,19 +1624,19 @@ export const BankCredit = () => {
                                 {t('payments.date')}
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 11.10.2025 16:45
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 09.10.2025 12:43
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 09.10.2025 10:34
                               </div>
 
-                              <div className="relative self-stretch text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 08.10.2025 09:05
                               </div>
                             </div>
@@ -1646,19 +1646,19 @@ export const BankCredit = () => {
                                 {t('payments.amount')}
                               </div>
 
-                              <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 78 278 ₽
                               </div>
 
-                              <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 30 580 ₽
                               </div>
 
-                              <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 45 789 ₽
                               </div>
 
-                              <div className="relative self-stretch text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                              <div className="relative self-stretch whitespace-nowrap text-right text-sm font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                                 120 580 ₽
                               </div>
                             </div>
@@ -1671,7 +1671,7 @@ export const BankCredit = () => {
                       variants={containerVariants}
                       initial="hidden"
                       animate={inViewSystem4 ? 'visible' : 'hidden'}
-                      className="relative flex w-full flex-col items-start gap-6 self-stretch lg:flex-[0_0_auto]"
+                      className="relative flex w-full flex-col items-start gap-6 self-stretch py-6 lg:flex-[0_0_auto] lg:!py-0"
                     >
                       <motion.div
                         variants={itemVariants}

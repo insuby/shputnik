@@ -319,7 +319,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                         </span>
-                        <span className="w-10/12 border-b border-solid border-[#eeeff2] py-6 text-start text-xl text-gray-90">
+                        <span className="w-10/12 w-full border-b border-solid border-[#eeeff2] py-6 text-start text-xl text-gray-90">
                           {t('productsTitle')}
                         </span>
                         <span className="absolute right-5">
@@ -401,7 +401,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                         </span>
-                        <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-gray-90">
+                        <span className="w-full border-b border-solid border-[#eeeff2]  py-6 text-gray-90">
                           {t('reviews')}
                         </span>
                       </Link>
@@ -462,7 +462,7 @@ export const MobileLayout = () => {
                             />
                           </svg>
                         </span>
-                        <span className="border-b border-solid border-[#eeeff2] py-6 text-xl text-gray-90">
+                        <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-xl text-gray-90">
                           {t('vacancies')}
                         </span>
                       </Link>
@@ -710,13 +710,6 @@ export const MobileLayout = () => {
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                           >
-                            <rect
-                              width="64"
-                              height="64"
-                              rx="24"
-                              fill="none"
-                              fillOpacity="0.08"
-                            />
                             <path
                               d="M43 22H21C20.4477 22 20 22.4477 20 23V41C20 41.5523 20.4477 42 21 42H43C43.5523 42 44 41.5523 44 41V23C44 22.4477 43.5523 22 43 22Z"
                               stroke="#01AD7C"
@@ -741,6 +734,60 @@ export const MobileLayout = () => {
                           </svg>
                           <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                             {t('bnpl')}
+                          </span>
+                        </span>
+                      </Link>
+                      <Link
+                        to={RoutesPath.BNPL}
+                        onClick={() => setIsMenuOpen(false)}
+                        className="flex h-20 items-center gap-4 rounded-2xl p-4 text-xl leading-[140%]"
+                      >
+                        <span className="flex w-full items-center gap-3">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="size-12"
+                            width="48"
+                            height="48"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <rect
+                              width="48"
+                              height="48"
+                              rx="24"
+                              fill="#F9FAFD"
+                            />
+                            <path
+                              d="M29.625 29.25H20.5472C20.1959 29.2499 19.8558 29.1266 19.5861 28.9015C19.3165 28.6764 19.1344 28.3637 19.0716 28.0181L16.5684 14.25H14.25"
+                              stroke="#E74951"
+                              strokeWidth="1.6"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M20.625 33C21.6605 33 22.5 32.1605 22.5 31.125C22.5 30.0895 21.6605 29.25 20.625 29.25C19.5895 29.25 18.75 30.0895 18.75 31.125C18.75 32.1605 19.5895 33 20.625 33Z"
+                              stroke="#E74951"
+                              strokeWidth="1.6"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M29.625 33C30.6605 33 31.5 32.1605 31.5 31.125C31.5 30.0895 30.6605 29.25 29.625 29.25C28.5895 29.25 27.75 30.0895 27.75 31.125C27.75 32.1605 28.5895 33 29.625 33Z"
+                              stroke="#E74951"
+                              strokeWidth="1.6"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                            <path
+                              d="M18.6141 25.5H30.3844C30.7357 25.4999 31.0758 25.3766 31.3454 25.1515C31.6151 24.9264 31.7972 24.6137 31.86 24.2681L33 18H17.25"
+                              stroke="#E74951"
+                              strokeWidth="1.6"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                          <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-gray-90">
+                            PoS-кредитование
                           </span>
                         </span>
                       </Link>
@@ -985,7 +1032,7 @@ export const MobileLayout = () => {
                                 strokeLinejoin="round"
                               />
                             </svg>
-                            <span className="w-10/12 text-gray-90">
+                            <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-gray-90">
                               {t('fdata')}
                             </span>
                           </span>

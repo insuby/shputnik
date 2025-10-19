@@ -29,7 +29,7 @@ export const bankcredit = {
     name: 'Давид',
   },
   offers: {
-    recommended: 'Рекомендуемый оффер',
+    recommended: 'Оффер',
   },
   metrics: {
     rate: 'Ставка',

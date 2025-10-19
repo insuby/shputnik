@@ -621,8 +621,8 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-[382px] flex-[2] self-stretch">
-                      <div className="relative -top-12 w-full lg:-left-12 lg:w-[443px]">
+                    <div className="relative w-full lg:w-[382px] flex-[2] self-stretch">
+                      <div className="relative -top-12 w-full -left-12 lg:-left-12 lg:w-[443px]">
                         <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
@@ -926,7 +926,7 @@ export const Development = () => {
                     </svg>
 
                     <div className="relative w-full flex-[2] self-stretch">
-                      <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="absolute left-0 lg:left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
                         <div className="relative size-[120px]">
                           <div className="relative size-[120px]">
                             <div className="absolute left-0 top-0 size-[120px]">
@@ -936,7 +936,7 @@ export const Development = () => {
                                 viewBox="0 0 58 120"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="absolute left-0 top-0 h-[120px]  w-[57px]"
+                                className="absolute left-0 top-0 h-[120px] w-[57px]"
                               >
                                 <path
                                   d="M57.3913 2.56931C57.3913 3.97047 56.2923 5.11764 54.9023 5.24638C27.0368 7.82735 5.2174 31.3556 5.21739 60C5.21739 88.6443 27.0366 112.172 54.902 114.753C56.2922 114.882 57.3913 116.029 57.3913 117.43C57.3913 118.924 56.1495 120.121 54.6678 119.99C24.0285 117.282 0 91.4584 0 60C4.64946e-06 28.5416 24.0287 2.71798 54.6681 0.00980902C56.1497 -0.121146 57.3913 1.07638 57.3913 2.56931Z"
@@ -950,7 +950,7 @@ export const Development = () => {
                                 viewBox="0 0 58 71"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="absolute left-[63px] top-[49px] h-[71px]  w-[57px]"
+                                className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
                               >
                                 <path
                                   d="M53.8023 0.0907039C55.2772 -0.305988 56.7826 0.637786 56.9984 2.15508C57.399 4.97052 57.6065 7.84847 57.6065 10.775C57.6065 42.3513 33.4879 68.2716 2.73377 70.9901C1.24645 71.1216 0 69.9194 0 68.4207C0 67.0141 1.10326 65.8625 2.49863 65.7332C30.4685 63.1425 52.3695 39.5267 52.3695 10.775C52.3695 8.17936 52.1905 5.62561 51.8449 3.12536C51.6566 1.76297 52.4787 0.446698 53.8023 0.0907039Z"
@@ -1006,7 +1006,7 @@ export const Development = () => {
                         viewBox="0 0 144 144"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[179px] top-1"
+                        className="absolute left-[156px] lg:left-[179px] top-1"
                       >
                         <rect width="144" height="144" rx="24" fill="white" />
                         <path

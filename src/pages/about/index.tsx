@@ -2,6 +2,7 @@ import { Feedback, Trust, useFeedbackForm } from 'widgets';
 
 import { useTranslation } from 'react-i18next';
 
+import { isMobile } from 'shared/lib/is-mobile.ts';
 import { PAGE_META } from 'shared/lib/page-meta-config';
 import { usePageMeta } from 'shared/lib/use-page-meta';
 
@@ -239,40 +240,36 @@ export const About = () => {
 
                       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
                         <div className="relative inline-flex flex-[0_0_auto] items-center gap-1">
-                          <div className="relative inline-flex flex-[0_0_auto] items-center">
-                            <div className="relative my-[-3.00px] ml-[-3.00px] size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                          <div className="relative mt-3 inline-flex flex-[0_0_auto] items-center">
+                            <div className="relative my-[-3.00px] ml-[-3.00px] size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
-                                className="absolute left-0 top-0 size-12 object-cover"
                                 alt="Woman with tablet"
                                 src="/img/woman-tablet.png"
                               />
                             </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                            <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
-                                className="absolute left-0 top-0 size-12 object-cover"
                                 alt="Woman with tablet"
                                 src="/img/woman-tablet-2.png"
                               />
                             </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                            <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
-                                className="absolute left-0 top-0 size-12 object-cover"
                                 alt="Woman with tablet"
                                 src="/img/woman-tablet-3.jpg"
                               />
                             </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 size-[54px] overflow-hidden rounded-3xl border-[3px] border-solid border-[#ffffff]">
+                            <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
-                                className="absolute left-0 top-0 size-12 object-cover"
                                 alt="Woman with tablet"
                                 src="/img/woman-tablet-4.png"
                               />
                             </div>
 
-                            <div className="relative my-[-3.00px] -ml-1 mr-[-3.00px] flex size-[54px] items-center justify-center gap-2.5 rounded-[52px] border-[3px] border-solid border-[#ffffff] bg-[#f7f8f9] p-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
+                            <div className="relative my-[-3.00px] -ml-2.5 mr-[-3.00px] flex size-[54px] items-center justify-center gap-2.5 rounded-[52px] border-[3px] border-solid border-[#ffffff] bg-[#f7f8f9] p-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                               <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Inter',Helvetica]">
                                 +3
                               </div>
@@ -291,9 +288,17 @@ export const About = () => {
                 {t('offices', { ns: 'about' })}
               </h2>
 
-              <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                {t('officesSubtitle', { ns: 'about' })}
-              </p>
+              {!isMobile ? (
+                <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  {'По любым вопросам вы можете обратиться в один из наших \n' +
+                    'офисов или связаться с нашей командой'}
+                </p>
+              ) : (
+                <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  По любым вопросам вы можете обратиться в один из наших офисов
+                  или связаться с нашей командой
+                </p>
+              )}
             </section>
 
             <section className="relative flex flex-[0_0_auto] flex-col items-stretch gap-4 self-stretch p-2 lg:!flex-row lg:p-0">

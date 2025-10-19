@@ -9,7 +9,7 @@ export const FooterSection = () => {
     <footer className="relative mx-auto mb-4 flex w-[calc(100%-32px)] flex-[0_0_auto] flex-col items-start gap-[60px] self-stretch overflow-hidden rounded-[32px] bg-white p-7 lg:mt-[136px] xl:p-12">
       <nav
         aria-label={t('software', { ns: 'footer' })}
-        className="relative flex w-full flex-[0_0_auto]  flex-col items-start justify-around gap-7 self-stretch md:!flex-row xl:gap-12"
+        className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-around gap-7 self-stretch md:!flex-row xl:gap-12"
       >
         <div className="relative flex w-full flex-col items-start justify-between gap-10 xl:h-[324px] xl:w-[268px] xl:gap-0">
           <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 !text-[16px]">
@@ -74,33 +74,13 @@ export const FooterSection = () => {
             </div>
           </div>
 
-          {/*<div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch xl:!hidden">*/}
-          {/*  <div className="relative mt-[-1.00px] self-stretch font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">*/}
-          {/*    {t('contacts', { ns: 'footer' })}*/}
-          {/*  </div>*/}
-
-          {/*  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch !text-[16px]">*/}
-          {/*    <a*/}
-          {/*      href="tel:+74950062157"*/}
-          {/*      className="relative mt-[-1.00px] w-full text-xl font-bold leading-7 tracking-normal text-gray-90 [font-family:'Inter',Helvetica] hover:text-[#3573FC] xl:w-[233px]"*/}
-          {/*    >*/}
-          {/*      +7 (495) 006-21-57*/}
-          {/*    </a>*/}
-
-          {/*    <address className="relative  self-stretch font-body-2-r !text-[16px] font-[number:var(--body-2-r-font-weight)] not-italic leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">*/}
-          {/*      {t('address', { ns: 'footer' })}*/}
-          {/*      <br />*/}
-          {/*    </address>*/}
-          {/*  </div>*/}
-          {/*</div>*/}
-
           <p className="relativeww-full font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
             © 2013 - {new Date().getFullYear()} Sputnik – <br />
             {t('copyrightSuffix', { ns: 'footer' })}
           </p>
         </div>
 
-        <div className="relative flex h-[312px] w-full flex-col items-center gap-4 xl:w-[268px]">
+        <div className="relative flex w-full flex-col items-center gap-4 md:h-[312px] xl:w-[268px]">
           <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
             Кредитование
           </div>
@@ -132,7 +112,7 @@ export const FooterSection = () => {
             </li>
             <li className="list-none">
               <ScrollLink
-                to={RoutesPath.P2P}
+                to={RoutesPath.BNPL}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
                 BNPl и PoS-кредитование

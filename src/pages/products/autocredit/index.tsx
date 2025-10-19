@@ -41,7 +41,7 @@ export const Autocredit = () => {
   return (
     <>
       {pageMeta}
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] overflow-x-hidden p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
           <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:h-[620px] lg:p-12">
             <svg
@@ -412,7 +412,7 @@ export const Autocredit = () => {
                   <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px] lg:w-[337.09px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.yourConditions')}
                         </div>
 
@@ -473,7 +473,7 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] lg:w-[334.11px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.increasedFirstPayment')}
                         </div>
                       </div>
@@ -515,7 +515,7 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] lg:w-[334.11px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.increasedTerm')}
                         </div>
                       </div>

@@ -1,4 +1,4 @@
-type ProductType =
+export type ProductType =
   | 'bnpl'
   | 'p2p'
   | 'credit-conveyor'
@@ -9,7 +9,8 @@ type ProductType =
   | 'business-credit'
   | 'development'
   | 'data-unload'
-  | 'f-data';
+  | 'f-data'
+  | 'reconciliation';
 
 export const getSpecificationPath = (
   productType: ProductType | null,
@@ -23,6 +24,8 @@ export const getSpecificationPath = (
       return '/docs/P2P-кредитование.pdf';
     case 'credit-conveyor':
       return '/docs/Кредитный конвейер.pdf';
+    case 'reconciliation':
+      return '/docs/ПО для реконсиляции данных.pdf';
     default:
       return null;
   }

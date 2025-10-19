@@ -76,7 +76,6 @@ export const BNPL = () => {
   const inView13 = useInView(ref13, { once: true, margin: '-100px' });
   const inView14 = useInView(ref14, { once: true, margin: '-100px' });
   const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
   const inView17 = useInView(ref17, { once: true, margin: '-100px' });
   const inView18 = useInView(ref18, { once: true, margin: '-100px' });
   const inView19 = useInView(ref19, { once: true, margin: '-100px' });
@@ -94,7 +93,6 @@ export const BNPL = () => {
   const inView31 = useInView(ref31, { once: true, margin: '-100px' });
   const inView32 = useInView(ref32, { once: true, margin: '-100px' });
   const inView33 = useInView(ref33, { once: true, margin: '-100px' });
-  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
   const inView35 = useInView(ref35, { once: true, margin: '-100px' });
   const inView36 = useInView(ref36, { once: true, margin: '-100px' });
   const inView37 = useInView(ref37, { once: true, margin: '-100px' });
@@ -590,75 +588,73 @@ export const BNPL = () => {
           <motion.div
             ref={ref16}
             initial={{ opacity: 0, x: 50 }}
-            animate={inView16 ? { opacity: 1, x: 0 } : {}}
+            animate={inView15 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex-1 grow self-stretch overflow-hidden rounded-3xl"
+            className="relative flex flex-1 grow self-stretch overflow-hidden rounded-3xl"
           >
             <Marquee fade>
-              <div className="relative left-1 h-[400px] w-full lg:w-[752px]">
-                <div className="absolute left-0 top-[39px] inline-flex h-[calc(100%-39px)] items-stretch gap-4">
-                  {[
-                    {
-                      name: t('products.product1'),
-                      price: '85 950',
-                      image: '/img/bnpl/frame-1948755020-3.png',
-                    },
-                    {
-                      name: t('products.product2'),
-                      price: '15 350',
-                      image: '/img/bnpl/Screenshot_11.png',
-                    },
-                    {
-                      name: t('products.product3'),
-                      price: '4 400',
-                      image: '/img/bnpl/Screenshot_12.png',
-                    },
-                    {
-                      name: t('products.product4'),
-                      price: '14 900',
-                      image: '/img/bnpl/Screenshot_13 1.png',
-                    },
-                  ].map((product, idx) => (
-                    <div
-                      key={idx}
-                      className="relative flex h-80 w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4"
-                    >
-                      <div className="relative flex w-full flex-1 flex-col items-center self-stretch">
-                        <div
-                          className="relative size-40 h-40 bg-[50%_50%]"
-                          style={{
-                            background: `url(${product.image}) 50% 50% / contain no-repeat`,
-                          }}
-                        />
+              <div className="m-auto inline-flex items-stretch gap-4">
+                {[
+                  {
+                    name: t('products.product1'),
+                    price: '85 950',
+                    image: '/img/bnpl/frame-1948755020-3.png',
+                  },
+                  {
+                    name: t('products.product2'),
+                    price: '15 350',
+                    image: '/img/bnpl/Screenshot_11.png',
+                  },
+                  {
+                    name: t('products.product3'),
+                    price: '4 400',
+                    image: '/img/bnpl/Screenshot_12.png',
+                  },
+                  {
+                    name: t('products.product4'),
+                    price: '14 900',
+                    image: '/img/bnpl/Screenshot_13 1.png',
+                  },
+                ].map((product, idx) => (
+                  <div
+                    key={idx}
+                    className="relative flex h-80 w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4"
+                  >
+                    <div className="relative flex w-full flex-1 flex-col items-center self-stretch">
+                      <div
+                        className="relative size-40 h-40 bg-[50%_50%]"
+                        style={{
+                          background: `url(${product.image}) 50% 50% / contain no-repeat`,
+                        }}
+                      />
 
-                        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                          <div className="relative mt-[-1.00px] h-20 self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                            {product.name}
-                          </div>
+                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                        <div className="relative mt-[-1.00px] h-20 self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                          {product.name}
+                        </div>
 
-                          <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                            {product.price}₽
-                          </div>
+                        <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                          {product.price}₽
                         </div>
                       </div>
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             </Marquee>
           </motion.div>
         </motion.div>
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
-          <div className="relative hidden w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] p-6 lg:flex xl:w-[676px]">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
+          <div className="relative  flex w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] md:p-6 xl:w-[676px]">
             <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
-              <div className="relative flex flex-1 grow items-start gap-3">
+              <div className="relative flex flex-1 xl:!flex-row flex-col grow items-start gap-3">
                 <motion.div
                   ref={ref16}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                  className="relative size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
+                  className="relative m-auto size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover] flex"
                 />
 
                 <motion.div
@@ -666,7 +662,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative flex flex-1 grow flex-col items-start gap-5 p-3"
+                  className="relative flex flex-1 grow flex-col items-start gap-5 p-3 w-full"
                 >
                   <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                     {t('products.headphones1')}
@@ -676,7 +672,7 @@ export const BNPL = () => {
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: 50 }}
-                      animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
@@ -698,7 +694,7 @@ export const BNPL = () => {
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: -50 }}
-                      animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
@@ -720,7 +716,7 @@ export const BNPL = () => {
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: 50 }}
-                      animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
@@ -742,7 +738,7 @@ export const BNPL = () => {
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: -50 }}
-                      animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
@@ -764,7 +760,7 @@ export const BNPL = () => {
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: 50 }}
-                      animate={inView16 ? { opacity: 1, x: 0 } : {}}
+                      animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
@@ -786,7 +782,7 @@ export const BNPL = () => {
                     onClick={onClick}
                     ref={ref16}
                     initial={{ opacity: 0, scale: 0 }}
-                    animate={inView16 ? { opacity: 1, scale: 1 } : {}}
+                    animate={inView15 ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.25 }}
                     className="all-[unset] relative box-border flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-gray-90 px-6 py-3"
                   >
@@ -845,7 +841,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView21 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 py-20 lg:gap-12"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 lg:py-20 lg:gap-12"
         >
           <motion.div
             ref={ref22}

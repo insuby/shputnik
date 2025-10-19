@@ -2,11 +2,11 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-// @ts-ignore
-import InputMask from 'react-input-mask';
-import { Link, useLocation } from 'react-router-dom';
+import { IMaskInput } from 'react-imask';
+import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import { type FeedbackFormData, sendFeedback } from 'shared/api/feedback';
@@ -17,7 +17,6 @@ import { useFeedbackForm } from './use-feedback-form.ts';
 export const FeedbackForm = () => {
   const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
-  const location = useLocation();
 
   const schema = yup.object({
     name: yup
@@ -27,6 +26,9 @@ export const FeedbackForm = () => {
       .matches(/^[а-яёА-ЯЁa-zA-Z\s]+$/, 'Имя может содержать только буквы'),
     email: yup.string().trim().required(t('feedbackForm.email')),
     phone: yup.string().trim().required(t('feedbackForm.phone')),
+    comment: yup.string().trim().optional(),
+    page: yup.string().trim().required(),
+    pageTitle: yup.string().trim().required(),
   });
 
   const [isVisible, setIsVisible] = useState(false);
@@ -55,6 +57,7 @@ export const FeedbackForm = () => {
 
       const dataWithPage = {
         ...data,
+        page: '',
         pageTitle,
       };
 
@@ -103,7 +106,7 @@ export const FeedbackForm = () => {
     }
   };
 
-  return (
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
@@ -264,20 +267,14 @@ export const FeedbackForm = () => {
                 )}
               </div>
               <div className="relative w-full">
-                <InputMask
+                <IMaskInput
+                  mask="+7 (000) 000-00-00"
                   {...register('phone')}
-                  mask="+7 (999) 999-99-99"
                   aria-label={t('feedbackForm.phone')}
+                  placeholder="+7 (999) 999-99-99"
+                  autoComplete="tel"
                   className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
-                >
-                  {(props: any) => (
-                    <input
-                      {...props}
-                      placeholder="+7 (999) 999-99-99"
-                      autoComplete="tel"
-                    />
-                  )}
-                </InputMask>
+                />
                 {errors['phone'] && (
                   <span className=" absolute -bottom-6 text-rose-700">
                     {errors['phone'].message}
@@ -333,6 +330,7 @@ export const FeedbackForm = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

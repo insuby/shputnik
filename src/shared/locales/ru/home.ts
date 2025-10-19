@@ -272,7 +272,7 @@ export default {
   about: 'О компании',
   reviews: 'Отзывы',
   services: 'Услуги',
-  customDevelopment: 'Индивидуальная разработка',
+  customDevelopment: 'Разработка на заказ',
   fdata: 'ПО для реконсиляции данных',
   vacancies: 'Вакансии',
   blog: 'Блог',

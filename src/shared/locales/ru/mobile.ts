@@ -109,7 +109,7 @@ export const mobile = {
   about: 'О компании',
   reviews: 'Отзывы',
   services: 'Услуги',
-  customDevelopment: 'Индивидуальная разработка',
+  customDevelopment: 'Разработка на заказ',
   fdata: 'ПО для реконсиляции данных',
   vacancies: 'Вакансии',
   blog: 'Блог',
@@ -122,5 +122,5 @@ export const mobile = {
   p2pLending: 'P2P-кредитование',
   islamicFinance: 'Исламское финансирование',
   otherSoftware: 'Другое ПО',
-  dataUnload: 'Выгрузка данных в кредитные бюро',
+  dataUnload: 'Выгрузка данных в КБ',
 };

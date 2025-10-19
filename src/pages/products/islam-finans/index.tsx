@@ -202,7 +202,7 @@ export const IslamFinance = () => {
 
                   <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                     <div className="relative size-5">
-                      <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
+                      <div className="relative">
                         <svg
                           width="20"
                           height="21"
