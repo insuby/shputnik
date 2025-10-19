@@ -25,7 +25,7 @@ export const FrameWrapper = () => {
     useRef(null),
   ];
   const inViews = refs.map((ref) =>
-    useInView(ref, { once: true, margin: '-100px' }),
+    useInView(ref, { once: true, margin: '-30px' }),
   );
   const delays = [0, 0.15, 0.3, 0.45, 0.6];
 

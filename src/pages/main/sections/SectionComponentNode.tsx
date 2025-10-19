@@ -25,12 +25,12 @@ export const SectionComponentNode = () => {
   const ref34r = useRef<HTMLDivElement>(null);
   const ref35 = useRef<HTMLDivElement>(null);
   const ref36 = useRef<HTMLDivElement>(null);
-  const inView32 = useInView(ref32, { once: true, margin: '-100px' });
-  const inView33 = useInView(ref33, { once: true, margin: '-100px' });
-  const inView34 = useInView(ref34, { once: true, margin: '-100px' });
-  const inView34r = useInView(ref34r, { once: true, margin: '-100px' });
-  const inView35 = useInView(ref35, { once: true, margin: '-100px' });
-  const inView36 = useInView(ref36, { once: true, margin: '-100px' });
+  const inView32 = useInView(ref32, { once: true, margin: '-30px' });
+  const inView33 = useInView(ref33, { once: true, margin: '-30px' });
+  const inView34 = useInView(ref34, { once: true, margin: '-30px' });
+  const inView34r = useInView(ref34r, { once: true, margin: '-30px' });
+  const inView35 = useInView(ref35, { once: true, margin: '-30px' });
+  const inView36 = useInView(ref36, { once: true, margin: '-30px' });
   return (
     <section
       className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7"

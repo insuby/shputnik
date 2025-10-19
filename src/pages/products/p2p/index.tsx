@@ -44,10 +44,10 @@ export const P2P = () => {
   const ref20 = useRef(null);
   const sliderRef = useRef<Slider>(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
-  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-30px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();

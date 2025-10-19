@@ -20,20 +20,20 @@ export const Analytics = () => {
   const ref13 = useRef(null);
   const ref14 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-30px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-30px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-30px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-30px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-30px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">

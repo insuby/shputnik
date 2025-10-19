@@ -10,10 +10,10 @@ export const Zaim = () => {
   const ref12 = useRef<HTMLDivElement>(null);
   const ref13 = useRef<HTMLDivElement>(null);
 
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-100px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-100px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-100px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-30px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-30px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-30px' });
 
   return (
     <motion.div

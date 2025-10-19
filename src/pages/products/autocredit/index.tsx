@@ -29,14 +29,14 @@ export const Autocredit = () => {
   const ref9 = useRef(null);
   const ref10 = useRef(null);
 
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-30px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-30px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
 
   return (
     <>

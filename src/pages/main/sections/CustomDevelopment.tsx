@@ -11,10 +11,10 @@ export const CustomDevelopment = () => {
   const navigate = useNavigate();
 
   const titleRef = useRef<HTMLHeadingElement>(null);
-  const inViewTitle = useInView(titleRef, { once: true, margin: '-100px' });
+  const inViewTitle = useInView(titleRef, { once: true, margin: '-30px' });
 
   const ref39 = useRef<HTMLParagraphElement>(null);
-  const inView39 = useInView(ref39, { once: true, margin: '-100px' });
+  const inView39 = useInView(ref39, { once: true, margin: '-30px' });
 
   const handleClick = () => {
     navigate(RoutesPath.DEVELOPMENT);

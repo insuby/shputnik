@@ -31,29 +31,29 @@ export const BankCredit = () => {
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
 
   const refAuto1 = useRef<HTMLDivElement>(null);
   const refAuto2 = useRef<HTMLDivElement>(null);
   const refAuto3 = useRef<HTMLDivElement>(null);
   const refAuto4 = useRef<HTMLDivElement>(null);
 
-  const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-100px' });
-  const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-100px' });
+  const inViewAuto1 = useInView(refAuto1, { once: true, margin: '-30px' });
+  const inViewAuto4 = useInView(refAuto4, { once: true, margin: '-30px' });
 
   const refSystem1 = useRef<HTMLDivElement>(null);
   const refSystem2 = useRef<HTMLDivElement>(null);
   const refSystem3 = useRef<HTMLDivElement>(null);
   const refSystem4 = useRef<HTMLDivElement>(null);
-  const inViewSystem1 = useInView(refSystem1, { once: true, margin: '-100px' });
-  const inViewSystem4 = useInView(refSystem4, { once: true, margin: '-100px' });
+  const inViewSystem1 = useInView(refSystem1, { once: true, margin: '-30px' });
+  const inViewSystem4 = useInView(refSystem4, { once: true, margin: '-30px' });
 
   const containerVariants = {
     hidden: { opacity: 0 },

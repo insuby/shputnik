@@ -19,14 +19,14 @@ export const Feedback = () => {
   const ref17 = useRef(null);
   const ref18 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
 
   return (
     <div className="relative flex size-full min-h-[330px] !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 lg:w-full">

@@ -24,12 +24,12 @@ export const DivWrapper = () => {
   const ref17 = useRef<HTMLDivElement>(null);
   const ref18 = useRef<HTMLDivElement>(null);
   const ref19 = useRef<HTMLDivElement>(null);
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-100px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-100px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-30px' });
   return (
     <section
       className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 xl:gap-7 xl:px-0"

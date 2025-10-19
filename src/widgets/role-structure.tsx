@@ -14,10 +14,10 @@ export const RoleStructure = () => {
   const ref16 = useRef<HTMLDivElement>(null);
   const ref17 = useRef<HTMLDivElement>(null);
 
-  const inView14 = useInView(ref14, { once: true, margin: '-100px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-100px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
 
   const onClick = () => {
     setIsOpen(true);

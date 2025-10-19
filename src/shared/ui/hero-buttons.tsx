@@ -25,8 +25,8 @@ export const HeroButtons = ({
   const ref2 = useRef<HTMLButtonElement>(null);
   const ref3 = useRef<HTMLButtonElement>(null);
 
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
 
   const currentProduct = useCurrentProduct();
   const specificationPath = getSpecificationPath(currentProduct);

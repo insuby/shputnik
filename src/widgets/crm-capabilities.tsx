@@ -8,7 +8,7 @@ import { useFeedbackForm } from './feedback-form';
 export const CrmCapabilities = () => {
   const { t } = useTranslation('widgets');
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: '-100px' });
+  const inView = useInView(ref, { once: true, margin: '-30px' });
 
   const { setIsOpen } = useFeedbackForm();
 

@@ -46,23 +46,23 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
   const ref45 = useRef(null);
   const ref46 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-100px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-100px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-100px' });
-  const inView30 = useInView(ref30, { once: true, margin: '-100px' });
-  const inView40 = useInView(ref40, { once: true, margin: '-100px' });
-  const inView41 = useInView(ref41, { once: true, margin: '-100px' });
-  const inView42 = useInView(ref42, { once: true, margin: '-100px' });
-  const inView43 = useInView(ref43, { once: true, margin: '-100px' });
-  const inView44 = useInView(ref44, { once: true, margin: '-100px' });
-  const inView45 = useInView(ref45, { once: true, margin: '-100px' });
-  const inView46 = useInView(ref46, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-30px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-30px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-30px' });
+  const inView40 = useInView(ref40, { once: true, margin: '-30px' });
+  const inView41 = useInView(ref41, { once: true, margin: '-30px' });
+  const inView42 = useInView(ref42, { once: true, margin: '-30px' });
+  const inView43 = useInView(ref43, { once: true, margin: '-30px' });
+  const inView44 = useInView(ref44, { once: true, margin: '-30px' });
+  const inView45 = useInView(ref45, { once: true, margin: '-30px' });
+  const inView46 = useInView(ref46, { once: true, margin: '-30px' });
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 self-stretch">

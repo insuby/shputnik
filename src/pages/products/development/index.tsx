@@ -24,8 +24,8 @@ export const Development = () => {
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
 
-  const inView15 = useInView(ref15, { once: true, margin: '-100px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-100px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
 
   const onClick = () => {
     setIsOpen(true);

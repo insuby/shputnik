@@ -15,11 +15,11 @@ export const Integrations = () => {
     setIsOpen(true);
   };
 
-  const inView1 = useInView(ref1, { once: true, margin: '-100px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-100px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
   const imgInView = imgRefs.map((ref) =>
-    useInView(ref, { once: true, margin: '-50px' }),
+    useInView(ref, { once: true, margin: '-30px' }),
   );
 
   return (

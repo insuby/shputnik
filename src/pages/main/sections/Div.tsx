@@ -26,18 +26,18 @@ export const Div = () => {
   const ref29 = useRef<HTMLDivElement>(null);
   const ref30 = useRef<HTMLParagraphElement>(null);
   const ref31 = useRef<HTMLParagraphElement>(null);
-  const inView20 = useInView(ref20, { once: true, margin: '-100px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-100px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-100px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-100px' });
-  const inView24 = useInView(ref24, { once: true, margin: '-100px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-100px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-100px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-100px' });
-  const inView28 = useInView(ref28, { once: true, margin: '-100px' });
-  const inView29 = useInView(ref29, { once: true, margin: '-100px' });
-  const inView30 = useInView(ref30, { once: true, margin: '-100px' });
-  const inView31 = useInView(ref31, { once: true, margin: '-100px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-30px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-30px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-30px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-30px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-30px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-30px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-30px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-30px' });
+  const inView28 = useInView(ref28, { once: true, margin: '-30px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-30px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-30px' });
+  const inView31 = useInView(ref31, { once: true, margin: '-30px' });
   return (
     <section
       className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"

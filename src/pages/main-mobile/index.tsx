@@ -27,7 +27,7 @@ export const MainMobile = () => {
     useRef(null),
   ];
   const inViews = refs.map((ref) =>
-    useInView(ref, { once: true, margin: '-100px' }),
+    useInView(ref, { once: true, margin: '-30px' }),
   );
 
   return (

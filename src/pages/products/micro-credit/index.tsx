@@ -35,10 +35,10 @@ export const MicroCredit = () => {
   const ref5 = useRef<HTMLDivElement>(null);
   const ref6 = useRef<HTMLDivElement>(null);
 
-  const inView3 = useInView(ref3, { once: true, margin: '-100px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-100px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-100px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-100px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();

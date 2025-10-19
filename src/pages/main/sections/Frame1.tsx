@@ -15,13 +15,13 @@ export const Frame1 = () => {
   const ref41 = useRef<HTMLDivElement>(null);
   const ref42 = useRef<HTMLDivElement>(null);
   const ref42r = useRef<HTMLDivElement>(null);
-  const inView37l = useInView(ref37l, { once: true, margin: '-100px' });
-  const inView37r = useInView(ref37r, { once: true, margin: '-100px' });
-  const inView40 = useInView(ref40, { once: true, margin: '-100px' });
-  const inView41l = useInView(ref41l, { once: true, margin: '-100px' });
-  const inView41 = useInView(ref41, { once: true, margin: '-100px' });
-  const inView42 = useInView(ref42, { once: true, margin: '-100px' });
-  const inView42r = useInView(ref42r, { once: true, margin: '-100px' });
+  const inView37l = useInView(ref37l, { once: true, margin: '-30px' });
+  const inView37r = useInView(ref37r, { once: true, margin: '-30px' });
+  const inView40 = useInView(ref40, { once: true, margin: '-30px' });
+  const inView41l = useInView(ref41l, { once: true, margin: '-30px' });
+  const inView41 = useInView(ref41, { once: true, margin: '-30px' });
+  const inView42 = useInView(ref42, { once: true, margin: '-30px' });
+  const inView42r = useInView(ref42r, { once: true, margin: '-30px' });
 
   const navigate = useNavigate();
 
