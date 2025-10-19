@@ -1,4 +1,5 @@
 export { FeedbackForm, useFeedbackForm } from './feedback-form';
+export { CookieBanner } from './cookie-banner';
 export { Advantages } from './advantages';
 export { Analytics } from './analytics';
 export { CrmCapabilities } from './crm-capabilities';
