@@ -18,7 +18,7 @@ export const Technoligies = () => {
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-        <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
+        <div className="relative mt-[-1.00px] self-stretch px-6 text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:px-0 lg:text-center lg:text-5xl lg:leading-[60px]">
           {t('technologies.title')}
         </div>
       </div>

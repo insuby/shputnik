@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
-import { HeroButtons } from 'shared/ui';
+import { HeroButtons, VideoPlayer, VideoPlayerSimple } from 'shared/ui';
 
 export const Fdata = () => {
   const { t } = useTranslation(['fdata']);
@@ -645,63 +645,10 @@ export const Fdata = () => {
             </div>
           </div>
 
-          <svg
-            height="404"
-            viewBox="0 0 676 404"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="relative h-[404px] flex-1 grow self-stretch"
-          >
-            <g clipPath="url(#clip0_9604_10769)">
-              <rect width="676" height="404" rx="32" fill="#F9FAFD" />
-              <rect
-                width="910"
-                height="607"
-                transform="matrix(-1 0 0 1 676 -42)"
-                fill="url(#pattern0_9604_10769)"
-              />
-              <rect
-                x="306"
-                y="170"
-                width="64"
-                height="64"
-                rx="32"
-                fill="white"
-                fillOpacity="0.6"
-              />
-              <path
-                d="M352 202C352.001 202.34 351.914 202.674 351.747 202.969C351.581 203.265 351.341 203.513 351.05 203.689L333.04 214.706C332.736 214.892 332.389 214.994 332.033 215C331.677 215.007 331.325 214.918 331.015 214.744C330.708 214.572 330.452 214.321 330.273 214.018C330.095 213.714 330.001 213.368 330 213.016V190.984C330.001 190.632 330.095 190.286 330.273 189.982C330.452 189.679 330.708 189.428 331.015 189.256C331.325 189.082 331.677 188.993 332.033 189C332.389 189.006 332.736 189.108 333.04 189.294L351.05 200.311C351.341 200.487 351.581 200.735 351.747 201.031C351.914 201.327 352.001 201.66 352 202Z"
-                fill="url(#paint0_linear_9604_10769)"
-              />
-            </g>
-            <defs>
-              <pattern
-                id="pattern0_9604_10769"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  href="#image0_9604_10769"
-                  transform="scale(0.000244245 0.000366166)"
-                />
-              </pattern>
-              <linearGradient
-                id="paint0_linear_9604_10769"
-                x1="329.547"
-                y1="221.176"
-                x2="356.279"
-                y2="219.821"
-                gradientUnits="userSpaceOnUse"
-              >
-                <stop stopColor="#1C222F" />
-                <stop offset="1" stopColor="#223562" />
-              </linearGradient>
-              <clipPath id="clip0_9604_10769">
-                <rect width="676" height="404" rx="32" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
+          <VideoPlayerSimple
+            videoSrc="/video.mp4"
+            className="h-[404px] flex-1 grow self-stretch"
+          />
         </div>
       </div>
       <motion.div

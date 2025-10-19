@@ -82,7 +82,7 @@ export const FooterSection = () => {
 
         <div className="relative flex w-full flex-col items-center gap-4 md:h-[312px] xl:w-[268px]">
           <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
-            Кредитование
+            Программное обеспечение
           </div>
 
           <ul className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">

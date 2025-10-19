@@ -3,18 +3,33 @@ import { useTranslation } from 'react-i18next';
 import { PAGE_META } from 'shared/lib/page-meta-config';
 import { usePageMeta } from 'shared/lib/use-page-meta';
 
+// const videoSrcsYoutube = [
+//   'https://www.youtube.com/embed/pBK6P-9HUR0',
+//   'https://www.youtube.com/embed/0p3Krz95uyc',
+//   'https://www.youtube.com/embed/Odglk79gesU',
+//   'https://www.youtube.com/embed/B2_nG_72i6o',
+//   'https://www.youtube.com/embed/IZBows11kRw',
+//   'https://www.youtube.com/embed/HoNOToVDGVY',
+//   'https://www.youtube.com/embed/4vhVRjokCl8',
+//   'https://www.youtube.com/embed/9m9b8wtaIik',
+//   'https://www.youtube.com/embed/LRVHUwyQw4U',
+//   'https://www.youtube.com/embed/GdWE2_7GHKA',
+//   'https://www.youtube.com/embed/6OqO-4q4r_g',
+// ];
+
 const videoSrcs = [
-  'https://www.youtube.com/embed/pBK6P-9HUR0',
-  'https://www.youtube.com/embed/0p3Krz95uyc',
-  'https://www.youtube.com/embed/Odglk79gesU',
-  'https://www.youtube.com/embed/B2_nG_72i6o',
-  'https://www.youtube.com/embed/IZBows11kRw',
-  'https://www.youtube.com/embed/HoNOToVDGVY',
-  'https://www.youtube.com/embed/4vhVRjokCl8',
-  'https://www.youtube.com/embed/9m9b8wtaIik',
-  'https://www.youtube.com/embed/LRVHUwyQw4U',
-  'https://www.youtube.com/embed/GdWE2_7GHKA',
-  'https://www.youtube.com/embed/6OqO-4q4r_g',
+  'https://rutube.ru/play/embed/fb2b59fe7cbe389a23fecb5555953108/',
+  'https://rutube.ru/play/embed/f5fab6ce0e0203387fd43cb48b29d9ee/',
+  'https://rutube.ru/play/embed/80888b97185077f5ab924735837e5806/',
+  'https://rutube.ru/play/embed/003234e4dc2dcd997c169cfdd83b2a42',
+  'https://rutube.ru/play/embed/bbaa0caafb1685d8c54e8844d33b9a89/',
+  'https://rutube.ru/play/embed/66669a20502952bb69e2bffeb6003275/',
+  'https://rutube.ru/play/embed/fba163c00b1c7b38aa9d33cb80227a70/',
+  'https://rutube.ru/play/embed/9c7ae8fdd502fd751c0b18057c346448/',
+  'https://rutube.ru/play/embed/a97460f72c6d93b8f52aafb39c473017/',
+  'https://rutube.ru/play/embed/8516524fa129b7123d2800ff51edb1c5/',
+  'https://rutube.ru/play/embed/59a0a8b57d043a0ce3685323287897b5/',
+  'https://rutube.ru/play/embed/5dec4f2e21c9445abb4c7a008007ebe7/'
 ];
 
 const companyLogos: Record<string, JSX.Element | null> = {
@@ -457,7 +472,7 @@ const companyLogos: Record<string, JSX.Element | null> = {
   'Алексей Яковлев': (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="40"
       height="40"
       viewBox="0 0 40 40"
@@ -495,7 +510,7 @@ const companyLogos: Record<string, JSX.Element | null> = {
   'Евгений Иевлев': (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
       width="70"
       height="40"
       viewBox="0 0 70 40"
@@ -565,8 +580,7 @@ export const Reviews = () => {
                     title={`${reviewer.name}: ${t('reviewLabel')}`}
                     width="100%"
                     height="100%"
-                    src={`${videoSrcs[idx]}?autoplay=0&controls=1`}
-                    frameBorder="0"
+                    src={`${videoSrcs[idx]}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     loading="lazy"
