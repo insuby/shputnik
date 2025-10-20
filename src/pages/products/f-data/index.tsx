@@ -646,8 +646,9 @@ export const Fdata = () => {
           </div>
 
           <VideoPlayerSimple
-            videoSrc="/video.mp4"
+            src="https://rutube.ru/play/embed/e1b7c43b3c4a047149a5f034117953cb/"
             className="h-[404px] flex-1 grow self-stretch"
+            fit="cover" // или 'contain'
           />
         </div>
       </div>

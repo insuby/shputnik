@@ -24,7 +24,7 @@ export const CookieBanner = () => {
       {/* Backdrop для блокировки взаимодействия с остальной страницей */}
       <div className="fixed inset-0 z-40 bg-black/50" />
 
-      <div className="animate-in slide-in-from-bottom fixed inset-x-0 bottom-0 z-50 rounded-t-3xl  border-gray-100 bg-white shadow-lg duration-300">
+      <div className="animate-in slide-in-from-bottom fixed inset-x-0 bottom-1 z-50 mx-auto max-w-[98%] rounded-3xl  border-gray-100 bg-white shadow-lg duration-300">
         <div className="mx-auto max-w-7xl p-4 lg:px-8">
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
             <div className="text-center lg:text-left">
