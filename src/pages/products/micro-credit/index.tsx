@@ -654,14 +654,14 @@ export const MicroCredit = () => {
                 </button>
               </div>
 
-              <div className="w-full lg:w-[915px]" id="microcredit-slider">
+              <div className="w-full lg:w-[1415px]" id="microcredit-slider">
                 <Slider
                   ref={sliderRef}
                   dots={false}
                   infinite={true}
                   speed={500}
-                  slidesToShow={window.innerWidth < 700 ? 1 : 2}
-                  slidesToScroll={1}
+                  slidesToShow={window.innerWidth < 700 ? 1 : 3}
+                  slidesToScroll={2}
                   centerMode={true}
                   centerPadding="0px"
                   arrows={false}

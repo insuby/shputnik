@@ -10,7 +10,7 @@ export default {
     bankCredit: 'Банковское\nкредитование',
     bnpl: 'BNPL',
     pos: 'POS-кредитование',
-    autocredit: 'Автокредитование',
+    autocredit: 'Кредитование под залог',
     p2p: 'P2P-кредитование',
     islamFinance: 'Исламское\nфинансирование',
     dataUnloadFull: 'Выгрузка данных \nв кредитные бюро',

@@ -266,7 +266,7 @@ export const SocialParameters = () => {
           className="text-adaptive-40 relative m-auto mt-[-1.00px] max-w-[480px] text-center font-medium leading-tight tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:m-0 lg:text-start lg:leading-[48px]"
         >
           Многофункциональный <br />
-          бэк-офис для кредитных менеджеров
+          бэк-офис для банков
         </motion.p>
 
         <svg
@@ -295,10 +295,10 @@ export const SocialParameters = () => {
           </div>
 
           <p className="text-adaptive-20  relative m-auto text-center font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[500px] lg:text-start">
-            Программное обеспечение Buy Now Pay Later устраняет ручные процессы,
-            специальные запросы и бумажные следы. Получите единый плавный
-            автоматизированный рабочий процесс, который отвечает потребностям
-            заемщиков* и повышает операционную эффективность.
+            Система упрощает обработку заявок, проверку данных и коммуникацию
+            между подразделениями. Поддерживает автоматические сценарии принятия
+            решений, контроль статусов и формирование отчётности в реальном
+            времени.
           </p>
         </motion.div>
       </div>

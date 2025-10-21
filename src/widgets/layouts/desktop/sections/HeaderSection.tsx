@@ -580,7 +580,7 @@ export const HeaderSection = () => {
               animate={{ scale: 1 }}
               exit={{ scale: 0.98 }}
               transition={{ duration: 0.18, ease: 'easeOut' }}
-              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px] shadow"
+              className="origin-top-center relative w-full overflow-hidden rounded-b-[32px]"
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch overflow-hidden rounded-[0px_0px_32px_32px] border border-[#F3F4F7] bg-white px-6 pb-6 pt-10">
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2">

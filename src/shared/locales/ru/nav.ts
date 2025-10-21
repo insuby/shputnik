@@ -10,7 +10,7 @@ export default {
   businessCredit: 'Кредитование бизнеса',
   bankCredit: 'Банковское кредитование',
   bnpl: 'BNPL',
-  autocredit: 'Автокредитование',
+  autocredit: 'Кредитование под залог',
   p2p: 'P2P-кредитование',
   islamFinance: 'Исламское финансирование',
 };

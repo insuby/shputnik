@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
-import { HeroButtons, VideoPlayer, VideoPlayerSimple } from 'shared/ui';
+import { HeroButtons, VideoPlayerSimple } from 'shared/ui';
 
 export const Fdata = () => {
   const { t } = useTranslation(['fdata']);
@@ -139,7 +139,7 @@ export const Fdata = () => {
             >
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
                 <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
-                  <h1 className="mx-auto mt-[-1.00px] md:w-3/5 text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
+                  <h1 className="mx-auto mt-[-1.00px] text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-3/5 lg:m-0 lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
                     {t('hero.title')}
                   </h1>
 
@@ -648,7 +648,6 @@ export const Fdata = () => {
           <VideoPlayerSimple
             src="https://rutube.ru/play/embed/e1b7c43b3c4a047149a5f034117953cb/"
             className="h-[404px] flex-1 grow self-stretch"
-            fit="cover" // или 'contain'
           />
         </div>
       </div>

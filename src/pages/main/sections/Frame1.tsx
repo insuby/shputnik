@@ -71,8 +71,7 @@ export const Frame1 = () => {
       <div className="relative flex h-[var(--size-520)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
           <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
-            onClick={handleClick}
+            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]"
           >
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
               <svg
@@ -492,12 +491,11 @@ export const Frame1 = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  Выгрузка данных в кредитные бюро
+                  {t('other.dataUnload.title')}
                 </h3>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  Предоставление банком денежных средств физическим или
-                  юридическим лицам
+                  {t('other.dataUnload.description')}
                 </p>
               </div>
 
@@ -530,12 +528,11 @@ export const Frame1 = () => {
             >
               <div className="relative flex flex-1 grow flex-col items-start gap-2">
                 <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  ПО для реконсиляции данных
+                  {t('other.fdata.title')}
                 </h3>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  Автоматизация всех ваших процессов обработки финансовых данных
-                  с минимальной зависимостью от персонала.
+                  {t('other.fdata.title')}
                 </p>
               </div>
 

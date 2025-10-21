@@ -62,7 +62,7 @@ export const FooterSection = () => {
               </ScrollLink>
             </div>
 
-            <div className="relativew w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
+            <div className="relative w-full font-body-3-r  tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
               {t('description', { ns: 'footer' })
                 .split('\n')
                 .map((line, idx) => (
@@ -74,14 +74,14 @@ export const FooterSection = () => {
             </div>
           </div>
 
-          <p className="relativeww-full font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
-            © 2013 - {new Date().getFullYear()} Sputnik – <br />
+          <p className="relative w-full font-body-3-r !text-[16px] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[233px]">
+            © 2013 - {new Date().getFullYear()} SPTNK – <br />
             {t('copyrightSuffix', { ns: 'footer' })}
           </p>
         </div>
 
         <div className="relative flex w-full flex-col items-center gap-4 md:h-[312px] xl:w-[268px]">
-          <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
+          <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
             Программное обеспечение
           </div>
 
@@ -115,7 +115,7 @@ export const FooterSection = () => {
                 to={RoutesPath.BNPL}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
-                BNPl и PoS-кредитование
+                BNPL и PoS-кредитование
               </ScrollLink>
             </li>
             <li className="list-none">
@@ -123,7 +123,7 @@ export const FooterSection = () => {
                 to={RoutesPath.AUTOCREDIT}
                 className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC]"
               >
-                Автокредитование
+                Кредитование под залог
               </ScrollLink>
             </li>
             <li className="list-none">
@@ -147,7 +147,7 @@ export const FooterSection = () => {
 
         <div className="relative flex w-full flex-col items-start gap-7 xl:w-[268px]">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
+            <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               {t('software', { ns: 'footer' })}
             </div>
 
@@ -182,7 +182,7 @@ export const FooterSection = () => {
 
         <div className="relative flex h-[324px] w-full flex-col items-center gap-7 md:justify-center xl:w-[268px]">
           <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
-            <div className="relative mt-[-1.00px] w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[268px]">
+            <div className="relative mt-[-1.00px] w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[268px]">
               {t('company', { ns: 'footer' })}
             </div>
 
@@ -212,13 +212,13 @@ export const FooterSection = () => {
                 href="#"
                 className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
               >
-                Конфиденциальность
+                Документы
               </a>
             </div>
           </div>
 
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-4 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
+            <div className="relative mt-[-1.00px] self-stretch font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)]">
               {t('contacts', { ns: 'footer' })}
             </div>
 
@@ -230,7 +230,7 @@ export const FooterSection = () => {
                 +7 (495) 006-21-57
               </a>
 
-              <address className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] not-italic leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
+              <address className="relative self-stretch font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-2-r-font-style)]">
                 {t('address', { ns: 'footer' })}
                 <br />
               </address>

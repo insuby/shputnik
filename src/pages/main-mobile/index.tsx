@@ -4,19 +4,13 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { useFeedbackForm } from 'widgets/feedback-form';
 import { Feedback } from 'widgets/feedback.tsx';
 
 import { RoutesPath } from 'shared/routes-path';
 import { CheckIcon } from 'shared/ui';
 
 export const MainMobile = () => {
-  const { t } = useTranslation(['home']);
-  const { setIsOpen } = useFeedbackForm();
-
-  const onClick = () => {
-    setIsOpen(true);
-  };
+  const { t } = useTranslation(['home', 'footer']);
 
   const refs = [
     useRef(null),
@@ -2346,9 +2340,7 @@ export const MainMobile = () => {
                 </svg>
 
                 <div className="relative w-full text-base font-normal leading-6 tracking-normal text-gray-90 opacity-40 [font-family:'Roboto',Helvetica] xl:w-[233px]">
-                  {
-                    'Программное обеспечение\nи разработка современных\nfintech-решений'
-                  }
+                  {t('description', { ns: 'footer' })}
                 </div>
               </div>
             </div>

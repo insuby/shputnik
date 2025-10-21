@@ -35,10 +35,6 @@ export const ZaimChecker = () => {
   const ref22 = useRef(null);
   const ref23 = useRef(null);
   const ref24 = useRef(null);
-  const ref25 = useRef(null);
-  const ref26 = useRef(null);
-  const ref27 = useRef(null);
-  const ref28 = useRef(null);
 
   const marginValue = isMobile ? '-10px' : '-100px';
   const inView1 = useInView(ref1, { once: true, margin: marginValue });
@@ -56,10 +52,6 @@ export const ZaimChecker = () => {
   const inView22 = useInView(ref22, { once: true, margin: marginValue });
   const inView23 = useInView(ref23, { once: true, margin: marginValue });
   const inView24 = useInView(ref24, { once: true, margin: marginValue });
-  const inView25 = useInView(ref25, { once: true, margin: marginValue });
-  const inView26 = useInView(ref26, { once: true, margin: marginValue });
-  const inView27 = useInView(ref27, { once: true, margin: marginValue });
-  const inView28 = useInView(ref28, { once: true, margin: marginValue });
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[1376px]">
@@ -102,7 +94,7 @@ export const ZaimChecker = () => {
         </defs>
       </svg>
 
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch p-0 lg:!flex-row xl:p-12">
+      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-[88px] self-stretch p-0 lg:!flex-row xl:p-12">
         <div className="relative flex w-full flex-col items-start gap-7 xl:w-[520px]">
           <svg
             width="64"
@@ -333,7 +325,7 @@ export const ZaimChecker = () => {
           <path d="M0.5 0V528" stroke="#E3E5E8" />
         </svg>
 
-        <div className="relative flex w-full flex-col items-start justify-center gap-7 xl:w-[520px]">
+        <div className="relative flex size-full flex-col items-start justify-center gap-7 xl:w-[520px]">
           <svg
             width="64"
             height="64"
@@ -386,7 +378,7 @@ export const ZaimChecker = () => {
                 initial={{ opacity: 0, x: 80 }}
                 animate={inView15 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] self-stretch whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 {t('zainChecker.paymentSystems.title')}
               </motion.div>
@@ -488,50 +480,6 @@ export const ZaimChecker = () => {
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('zainChecker.paymentSystems.cancelPayments')}
-                </div>
-              </motion.div>
-
-              <motion.div
-                ref={ref25}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView25 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-                className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
-              >
-                <motion.div
-                  ref={ref26}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={inView26 ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.6, ease: 'easeOut', delay: 1.1 }}
-                  className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
-                >
-                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
-                </motion.div>
-
-                <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.cashWork')}
-                </div>
-              </motion.div>
-
-              <motion.div
-                ref={ref27}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView27 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, ease: 'easeOut', delay: 1.2 }}
-                className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
-              >
-                <motion.div
-                  ref={ref28}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={inView28 ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.6, ease: 'easeOut', delay: 1.3 }}
-                  className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-1.5"
-                >
-                  <Check10 className="!relative !h-4 !w-4" color="#00CB82" />
-                </motion.div>
-
-                <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.accountIntegration')}
                 </div>
               </motion.div>
             </div>

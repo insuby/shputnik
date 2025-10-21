@@ -648,13 +648,13 @@ export const BNPL = () => {
         <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
           <div className="relative  flex w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] md:p-6 xl:w-[676px]">
             <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
-              <div className="relative flex flex-1 xl:!flex-row flex-col grow items-start gap-3">
+              <div className="relative flex flex-1 grow flex-col items-start gap-3 xl:!flex-row">
                 <motion.div
                   ref={ref16}
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                  className="relative m-auto size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover] flex"
+                  className="relative m-auto flex size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
                 />
 
                 <motion.div
@@ -662,7 +662,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative flex flex-1 grow flex-col items-start gap-5 p-3 w-full"
+                  className="relative flex w-full flex-1 grow flex-col items-start gap-5 p-3"
                 >
                   <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                     {t('products.headphones1')}
@@ -841,7 +841,7 @@ export const BNPL = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={inView21 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 lg:py-20 lg:gap-12"
+          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 lg:gap-12 lg:py-20"
         >
           <motion.div
             ref={ref22}
@@ -872,7 +872,7 @@ export const BNPL = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={inView24 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="relative mx-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4"
+                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4 lg:m-0"
               >
                 <svg
                   width="28"
@@ -915,7 +915,7 @@ export const BNPL = () => {
                 initial={{ opacity: 0, scale: 0 }}
                 animate={inView35 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4 lg:m-0"
+                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573FC14] p-4 lg:m-0"
               >
                 <svg
                   width="28"

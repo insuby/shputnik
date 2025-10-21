@@ -2,13 +2,10 @@ import { motion, useInView } from 'framer-motion';
 import {
   Advantages,
   Analytics,
-  EmployeeWork,
   Feedback,
   Integrations,
-  RoleStructure,
   SocialParameters,
   Trust,
-  Zaim,
   ZaimChecker,
 } from 'widgets';
 
@@ -2129,11 +2126,8 @@ export const BankCredit = () => {
         </motion.div>
 
         <SocialParameters />
-        <Zaim />
         <Feedback />
         <Integrations />
-        <RoleStructure />
-        <EmployeeWork />
         <Trust />
       </div>
     </>

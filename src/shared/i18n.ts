@@ -16,7 +16,6 @@ import { fdata as ruFdata } from './locales/ru/fdata';
 import ruFooter from './locales/ru/footer';
 import ruHome from './locales/ru/home';
 import { islamfinance as ruIslamfinance } from './locales/ru/islamfinance';
-import { layout as ruLayout } from './locales/ru/layout';
 import ruMegamenu from './locales/ru/megamenu';
 import { microcredit as ruMicrocredit } from './locales/ru/microcredit';
 import { mobile as ruMobile } from './locales/ru/mobile';
@@ -46,7 +45,6 @@ export const resources = {
     fdata: ruFdata,
     development: ruDevelopment,
     mobile: ruMobile,
-    layout: ruLayout,
     businesscredit: ruBusinesscredit,
     privacy: ruPrivacy,
     reviews: ruReviews,
@@ -80,7 +78,6 @@ i18n.use(initReactI18next).init({
     'fdata',
     'development',
     'mobile',
-    'layout',
     'businesscredit',
     'privacy',
     'reviews',
