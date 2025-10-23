@@ -16,7 +16,7 @@ export const Cta = ({
   const { t } = useTranslation('fdata');
   return (
     <div
-      className={`relative flex w-full flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 xl:w-[1376px] ${className}`}
+      className={`relative flex w-full flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3  ${className}`}
     >
       <div className="relative flex w-full flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 xl:p-[60px]">
         <svg

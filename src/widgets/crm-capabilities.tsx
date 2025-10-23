@@ -5,8 +5,12 @@ import { useTranslation } from 'react-i18next';
 
 import { useFeedbackForm } from './feedback-form';
 
-export const CrmCapabilities = () => {
-  const { t } = useTranslation('widgets');
+type CrmCapabilitiesProps = {
+  namespace?: string;
+};
+
+export const CrmCapabilities = ({ namespace = 'widgets' }: CrmCapabilitiesProps) => {
+  const { t } = useTranslation(namespace);
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-30px' });
 

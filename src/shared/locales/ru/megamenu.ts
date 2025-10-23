@@ -16,6 +16,6 @@ export default {
     dataUnloadFull: 'Выгрузка данных \nв кредитные бюро',
     decisionsModuleFull: 'Настраиваемый модуль принятия решений',
     reconciliation: 'ПО для реконсиляции данных',
-    customDevelopment: 'Разработка на заказ',
+    customDevelopment: 'Индивидуальная разработка',
   },
 };

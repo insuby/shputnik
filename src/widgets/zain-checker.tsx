@@ -56,7 +56,7 @@ export const ZaimChecker = ({ namespace = 'widgets' }: ZaimCheckerProps) => {
   const inView24 = useInView(ref24, { once: true, margin: marginValue });
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:w-[1376px]">
+    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 ">
       <svg
         width="1435"
         height="1361"
@@ -491,7 +491,7 @@ export const ZaimChecker = ({ namespace = 'widgets' }: ZaimCheckerProps) => {
         </div>
       </div>
 
-      <CrmCapabilities />
+      <CrmCapabilities namespace={namespace} />
     </div>
   );
 };

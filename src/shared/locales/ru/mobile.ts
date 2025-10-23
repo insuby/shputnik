@@ -109,7 +109,7 @@ export const mobile = {
   about: 'О компании',
   reviews: 'Отзывы',
   services: 'Услуги',
-  customDevelopment: 'Разработка на заказ',
+  customDevelopment: 'Индивидуальная разработка',
   fdata: 'ПО для реконсиляции данных',
   vacancies: 'Вакансии',
   blog: 'Блог',

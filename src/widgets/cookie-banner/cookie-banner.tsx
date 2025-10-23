@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 
 export const CookieBanner = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    const cookieConsent = localStorage.getItem('cookie-consent');
-    if (!cookieConsent) {
-      setIsVisible(true);
-    }
+    // const cookieConsent = localStorage.getItem('cookie-consent');
+    // if (!cookieConsent) {
+    //   setIsVisible(true);
+    // }
   }, []);
 
   const handleAccept = () => {
@@ -28,7 +28,7 @@ export const CookieBanner = () => {
         <div className="mx-auto max-w-7xl p-4 lg:px-8">
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
             <div className="text-center lg:text-left">
-              <p className="text-sm leading-6 text-gray-90 [font-family:'Roboto',Helvetica]">
+              <p className="text-sm leading-6 text-gray-90 [font-family:'Roboto',Helvetica] text-center">
                 Продолжая просмотр сайта sptnk.co, я соглашаюсь с использованием
                 файлов cookie владельцем сайта в соответствии с «Политикой в
                 отношении файлов cookie», в том числе на передачу данных,
