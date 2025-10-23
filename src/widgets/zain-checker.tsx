@@ -4,12 +4,17 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useIsMobile } from 'shared/lib/use-is-mobile';
+import { RoutesPath } from 'shared/routes-path.tsx';
 import { Check10 } from 'shared/ui';
 
 import { CrmCapabilities } from './crm-capabilities.tsx';
 
-export const ZaimChecker = () => {
-  const { t } = useTranslation('widgets');
+type ZaimCheckerProps = {
+  namespace?: string;
+};
+
+export const ZaimChecker = ({ namespace = 'widgets' }: ZaimCheckerProps) => {
+  const { t } = useTranslation(namespace);
   const isMobile = useIsMobile();
   const ref1 = useRef(null);
   const ref2 = useRef(null);
@@ -21,8 +26,6 @@ export const ZaimChecker = () => {
   const ref8 = useRef(null);
   const ref9 = useRef(null);
   const ref10 = useRef(null);
-  const ref11 = useRef(null);
-  const ref12 = useRef(null);
   const ref13 = useRef(null);
   const ref14 = useRef(null);
   const ref15 = useRef(null);
@@ -41,7 +44,6 @@ export const ZaimChecker = () => {
   const inView2 = useInView(ref2, { once: true, margin: marginValue });
   const inView3 = useInView(ref3, { once: true, margin: marginValue });
   const inView5 = useInView(ref5, { once: true, margin: marginValue });
-  const inView11 = useInView(ref11, { once: true, margin: marginValue });
   const inView13 = useInView(ref13, { once: true, margin: marginValue });
   const inView15 = useInView(ref15, { once: true, margin: marginValue });
   const inView16 = useInView(ref16, { once: true, margin: marginValue });
@@ -197,7 +199,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.services.antifraud')}
+                  {t('zainChecker.services.identification')}
                 </div>
               </motion.div>
 
@@ -219,7 +221,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.services.identification')}
+                  {t('zainChecker.services.reliability')}
                 </div>
               </motion.div>
 
@@ -241,7 +243,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.services.creditBureau')}
+                  {t('zainChecker.services.governmentSources')}
                 </div>
               </motion.div>
 
@@ -257,28 +259,6 @@ export const ZaimChecker = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView3 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.9 }}
-                  className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
-                >
-                  <Check10 className="!relative !h-4 !w-4" />
-                </motion.div>
-
-                <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.services.governmentServices')}
-                </div>
-              </motion.div>
-
-              <motion.div
-                ref={ref11}
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView11 ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.6, ease: 'easeOut', delay: 1.0 }}
-                className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
-              >
-                <motion.div
-                  ref={ref12}
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={inView3 ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ duration: 0.6, ease: 'easeOut', delay: 1.1 }}
                   className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
                 >
                   <Check10 className="!relative !h-4 !w-4" />
@@ -310,6 +290,30 @@ export const ZaimChecker = () => {
                   {t('zainChecker.services.additionalSources')}
                 </div>
               </motion.div>
+
+              {location.pathname !== RoutesPath.ISLAMFINANCE && (
+                <motion.div
+                  ref={ref15}
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={inView15 ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.6, ease: 'easeOut', delay: 1.4 }}
+                  className="relative flex h-fit w-full items-center justify-center gap-6 xl:h-7 xl:w-[520px]"
+                >
+                  <motion.div
+                    ref={ref16}
+                    initial={{ opacity: 0, scale: 0 }}
+                    animate={inView3 ? { opacity: 1, scale: 1 } : {}}
+                    transition={{ duration: 0.6, ease: 'easeOut', delay: 1.5 }}
+                    className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-[#725dd614] p-1.5"
+                  >
+                    <Check10 className="!relative !h-4 !w-4" />
+                  </motion.div>
+
+                  <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    {t('zainChecker.services.extraSources')}
+                  </div>
+                </motion.div>
+              )}
             </div>
           </div>
         </div>
@@ -413,7 +417,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.onlineIssuance')}
+                  {t('zainChecker.paymentSystems.services.distribution')}
                 </div>
               </motion.div>
 
@@ -435,7 +439,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <p className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.repayment')}
+                  {t('zainChecker.paymentSystems.services.repayment')}
                 </p>
               </motion.div>
 
@@ -457,7 +461,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.paymentStatus')}
+                  {t('zainChecker.paymentSystems.services.statusCheck')}
                 </div>
               </motion.div>
 
@@ -479,7 +483,7 @@ export const ZaimChecker = () => {
                 </motion.div>
 
                 <div className="relative mt-[-1.00px] flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  {t('zainChecker.paymentSystems.cancelPayments')}
+                  {t('zainChecker.paymentSystems.services.assetManagement')}
                 </div>
               </motion.div>
             </div>

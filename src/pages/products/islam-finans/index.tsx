@@ -1028,7 +1028,7 @@ export const IslamFinance = () => {
         <Feedback />
         <Analytics />
 
-        <ZaimChecker />
+        <ZaimChecker namespace="islamfinance" />
         <Integrations />
         <RoleStructure />
         <Trust />

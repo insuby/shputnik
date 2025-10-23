@@ -139,23 +139,23 @@ export default {
     subtitle:
       'Система включает интеграции с внешними источниками данных и внутренними сервисами банка для комплексной проверки заёмщика:',
     services: {
-      antifraud: 'Антимошеннические сервисы',
-      identification: 'Идентификация клиента',
-      creditBureau: 'Бюро кредитных историй',
-      governmentServices: 'Государственные сервисы',
-      socialNetworks: 'Социальные сети',
-      additionalSources: 'Дополнительные источники информации',
+      identification: 'Антимошеннические сервисы',
+      reliability: 'Идентификация клиента',
+      governmentSources: 'Бюро кредитных историй',
+      socialNetworks: 'Государственные сервисы',
+      additionalSources: 'Социальные сети',
+      extraSources: 'Дополнительные источники информации',
     },
     paymentSystems: {
       title: 'Платёжная инфраструктура',
       subtitle:
         'Интеграции с банковскими и платёжными решениями обеспечивают работу как с безналичными, так и с наличными операциями:',
-      onlineIssuance: 'Выдача',
-      repayment: 'Погашение',
-      paymentStatus: 'Проверка статусов',
-      cancelPayments: 'Отмена',
-      // cashWork: 'Работа с наличными',
-      // accountIntegration: 'Интеграция с расчетным счетом',
+      services: {
+        distribution: 'Выдача',
+        repayment: 'Погашение',
+        statusCheck: 'Проверка статусов',
+        assetManagement: 'Отмена',
+      },
     },
   },
   roleStructure: {
