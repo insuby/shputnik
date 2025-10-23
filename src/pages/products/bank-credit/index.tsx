@@ -1322,7 +1322,7 @@ export const BankCredit = () => {
 
         <Advantages />
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] lg:w-[1376px]">
+        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-9 bg-[#ffffff] ">
           <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-[68px] self-stretch">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row">
               <motion.div

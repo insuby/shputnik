@@ -118,7 +118,7 @@ export const Feedback = () => {
               initial={{ opacity: 0, x: 80 }}
               animate={inView1 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="relative mt-[-1.00px] max-w-[70%] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica]"
+              className="relative mt-[-1.00px] max-w-[70%] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica] lg:whitespace-nowrap"
             >
               {t('feedback.title')}
             </motion.div>

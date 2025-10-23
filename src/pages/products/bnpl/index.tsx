@@ -6,7 +6,6 @@ import {
   EmployeeWork,
   Integrations,
   RoleStructure,
-  SocialParameters,
   Trust,
   Zaim,
   useFeedbackForm,
@@ -464,7 +463,7 @@ export const BNPL = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                  E-commerce (BNPL)
+                  Рассрочка (BNPL)
                 </div>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
@@ -1060,9 +1059,9 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView29 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex w-full flex-col items-start gap-7 lg:w-[530px]"
+            className="lg:w-[530px ] relative flex w-full flex-col items-start gap-7 p-8 lg:!p-20"
           >
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 self-stretch">
+            <div className="relative flex w-full flex-[0_0_auto] flex-col justify-center gap-3 self-stretch">
               <motion.div
                 ref={ref30}
                 initial={{ opacity: 0, y: 50 }}
@@ -1508,7 +1507,6 @@ export const BNPL = () => {
           </div>
         </div>
 
-        <SocialParameters />
         <EmployeeWork />
         <RoleStructure />
         <Trust />

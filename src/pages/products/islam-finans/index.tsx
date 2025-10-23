@@ -37,18 +37,7 @@ export const IslamFinance = () => {
   const ref11 = useRef(null);
   const ref12 = useRef(null);
   const ref13 = useRef(null);
-  const ref14 = useRef(null);
-  const ref15 = useRef(null);
-  const ref16 = useRef(null);
-  const ref17 = useRef(null);
-  const ref18 = useRef(null);
-  const ref19 = useRef(null);
-  const ref20 = useRef(null);
   const ref21 = useRef(null);
-  const ref22 = useRef(null);
-  const ref23 = useRef(null);
-  const ref24 = useRef(null);
-  const ref25 = useRef(null);
 
   const marginValue = isMobile ? '-10px' : '-100px';
   const inView1 = useInView(ref1, { once: true, margin: marginValue });
@@ -59,18 +48,6 @@ export const IslamFinance = () => {
   const inView11 = useInView(ref11, { once: true, margin: marginValue });
   const inView12 = useInView(ref12, { once: true, margin: marginValue });
   const inView13 = useInView(ref13, { once: true, margin: marginValue });
-  const inView14 = useInView(ref14, { once: true, margin: marginValue });
-  const inView15 = useInView(ref15, { once: true, margin: marginValue });
-  const inView16 = useInView(ref16, { once: true, margin: marginValue });
-  const inView17 = useInView(ref17, { once: true, margin: marginValue });
-  const inView18 = useInView(ref18, { once: true, margin: marginValue });
-  const inView19 = useInView(ref19, { once: true, margin: marginValue });
-  const inView20 = useInView(ref20, { once: true, margin: marginValue });
-  const inView21 = useInView(ref21, { once: true, margin: marginValue });
-  const inView22 = useInView(ref22, { once: true, margin: marginValue });
-  const inView23 = useInView(ref23, { once: true, margin: marginValue });
-  const inView24 = useInView(ref24, { once: true, margin: marginValue });
-  const inView25 = useInView(ref25, { once: true, margin: marginValue });
 
   return (
     <>
@@ -79,7 +56,7 @@ export const IslamFinance = () => {
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
           <div
             ref={ref1}
-            className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12"
+            className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[670px] lg:p-12"
           >
             <svg
               width="1643"

@@ -284,7 +284,7 @@ export const About = () => {
             </div>
 
             <section className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5 p-2 lg:p-0">
-              <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[1376px] lg:text-5xl lg:leading-[60px]">
+              <h2 className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]  lg:text-5xl lg:leading-[60px]">
                 {t('offices', { ns: 'about' })}
               </h2>
 

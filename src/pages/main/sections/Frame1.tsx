@@ -532,7 +532,7 @@ export const Frame1 = () => {
                 </h3>
 
                 <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  {t('other.fdata.title')}
+                  {t('other.fdata.description')}
                 </p>
               </div>
 

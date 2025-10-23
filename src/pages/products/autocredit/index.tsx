@@ -43,7 +43,7 @@ export const Autocredit = () => {
       {pageMeta}
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] overflow-x-hidden p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-          <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:h-[620px] lg:p-12">
+          <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:h-[670px] lg:p-12">
             <svg
               width="1643"
               height="1443"
@@ -641,7 +641,7 @@ export const Autocredit = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={inView10 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl lg:w-[1376px] lg:!flex-row"
+            className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl  lg:!flex-row"
           >
             <svg
               className="absolute inset-0 z-10 hidden lg:flex"
@@ -683,7 +683,7 @@ export const Autocredit = () => {
             </svg>
             <Marquee
               fade
-              className="relative flex size-full flex-1 grow !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[609px] lg:p-0"
+              className="relative flex size-full flex-1 grow !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[588px] lg:p-0"
               innerClassName="lg:!gap-[1rem] !w-[750px]"
             >
               <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
@@ -747,7 +747,7 @@ export const Autocredit = () => {
               </div>
             </Marquee>
 
-            <div className="flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:relative lg:py-12 lg:pl-12 lg:pr-[68px]">
+            <div className="flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:relative lg:!py-12 lg:!pl-12 lg:!pr-[68px]">
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView10 ? { opacity: 1, y: 0 } : {}}

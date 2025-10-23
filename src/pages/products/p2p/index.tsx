@@ -641,7 +641,7 @@ export const P2P = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="relative w-full flex-[2] grow self-stretch">
                       <div className="relative -left-12 -top-12 w-[120%] lg:w-[443px]">
                         <div className="absolute left-[58px] top-[69px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-white py-2 pl-2 pr-5">
                           <svg
@@ -780,7 +780,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-[1] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('services.title')}
                       </div>
@@ -836,7 +836,7 @@ export const P2P = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="relative w-full flex-[2] grow self-stretch">
                       <div className="relative left-0 top-5 mx-auto h-[114px] w-[313px] lg:left-4">
                         <div className="absolute left-px top-0 flex w-full items-center justify-between opacity-[0.08] lg:w-[311px]">
                           <svg
@@ -1032,7 +1032,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-[1] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('investorFunctions.title')}
                       </div>
@@ -1046,7 +1046,7 @@ export const P2P = () => {
 
                 <div className="px-0 md:px-3">
                   <div className="relative flex h-[500px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
-                    <div className="relative w-full flex-1 grow self-stretch">
+                    <div className="relative w-full flex-[2] grow self-stretch">
                       <div className="relative left-0 top-[27px] inline-flex flex-col items-center justify-center gap-6 rounded-[32px] bg-[#ffffff] p-4 lg:left-10">
                         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 px-4 pb-0 pt-3 lg:w-[230px]">
                           <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -1129,7 +1129,7 @@ export const P2P = () => {
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                    <div className="relative flex w-full flex-[1] flex-col items-start gap-3 self-stretch">
                       <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('borrowerFunctions.title')}
                       </div>
@@ -1143,7 +1143,7 @@ export const P2P = () => {
 
                 <div className="px-0 md:px-3">
                   <div className="relative flex h-[500px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
-                    <div className="relative flex h-[500px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
+                    <div className="relative flex size-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
                       <svg
                         width="638"
                         height="682"
@@ -1186,8 +1186,8 @@ export const P2P = () => {
                         </defs>
                       </svg>
 
-                      <div className="relative w-full flex-1 grow self-stretch">
-                        <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="relative w-full flex-[2] grow self-stretch">
+                        <div className="absolute left-[23px] top-[-30px] inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
                           <div className="relative size-[120px]">
                             <div className="relative size-[120px]">
                               <div className="absolute left-0 top-0 size-[120px]">
@@ -1267,7 +1267,7 @@ export const P2P = () => {
                           viewBox="0 0 144 144"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-[179px] top-1 "
+                          className="absolute left-[179px] top-[-30px]"
                         >
                           <rect width="144" height="144" rx="24" fill="white" />
                           <path
@@ -1299,7 +1299,7 @@ export const P2P = () => {
                         </svg>
                       </div>
 
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                      <div className="relative flex w-full flex-[1] flex-col items-start gap-3 self-stretch">
                         <div className="relative mt-[-1.00px] self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('modules.title')}
                         </div>
