@@ -1,4 +1,4 @@
-import { ScrollToTop, CookieBanner } from 'widgets';
+import { CookieBanner, ScrollToTop } from 'widgets';
 
 import { Suspense } from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';

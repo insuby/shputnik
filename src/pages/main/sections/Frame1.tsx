@@ -70,9 +70,7 @@ export const Frame1 = () => {
 
       <div className="relative flex h-[var(--size-520)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
         <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
-          <div
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]"
-          >
+          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
             <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
               <svg
                 className="absolute"

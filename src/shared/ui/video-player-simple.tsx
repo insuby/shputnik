@@ -18,7 +18,10 @@ export const VideoPlayerSimple = ({
   width = 676,
   height = 404,
 }: VideoIframeProps) => {
-  const iframeSrc = src ?? videoSrc ?? 'https://rutube.ru/play/embed/e1b7c43b3c4a047149a5f034117953cb/';
+  const iframeSrc =
+    src ??
+    videoSrc ??
+    'https://rutube.ru/play/embed/e1b7c43b3c4a047149a5f034117953cb/';
 
   return (
     <div

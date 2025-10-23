@@ -28,7 +28,7 @@ export const CookieBanner = () => {
         <div className="mx-auto max-w-7xl p-4 lg:px-8">
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
             <div className="text-center lg:text-left">
-              <p className="text-sm leading-6 text-gray-90 [font-family:'Roboto',Helvetica] text-center">
+              <p className="text-center text-sm leading-6 text-gray-90 [font-family:'Roboto',Helvetica]">
                 Продолжая просмотр сайта sptnk.co, я соглашаюсь с использованием
                 файлов cookie владельцем сайта в соответствии с «Политикой в
                 отношении файлов cookie», в том числе на передачу данных,

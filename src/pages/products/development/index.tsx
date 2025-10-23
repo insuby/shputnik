@@ -621,8 +621,8 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full lg:w-[382px] flex-[2] self-stretch">
-                      <div className="relative -top-12 w-full -left-12 lg:-left-12 lg:w-[443px]">
+                    <div className="relative w-full flex-[2] self-stretch lg:w-[382px]">
+                      <div className="relative -left-12 -top-12 w-full lg:-left-12 lg:w-[443px]">
                         <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
@@ -926,7 +926,7 @@ export const Development = () => {
                     </svg>
 
                     <div className="relative w-full flex-[2] self-stretch">
-                      <div className="absolute left-0 lg:left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="absolute left-0 top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 lg:left-[23px]">
                         <div className="relative size-[120px]">
                           <div className="relative size-[120px]">
                             <div className="absolute left-0 top-0 size-[120px]">
@@ -1006,7 +1006,7 @@ export const Development = () => {
                         viewBox="0 0 144 144"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[156px] lg:left-[179px] top-1"
+                        className="absolute left-[156px] top-1 lg:left-[179px]"
                       >
                         <rect width="144" height="144" rx="24" fill="white" />
                         <path

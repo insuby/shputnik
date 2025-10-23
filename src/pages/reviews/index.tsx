@@ -29,7 +29,7 @@ const videoSrcs = [
   'https://rutube.ru/play/embed/a97460f72c6d93b8f52aafb39c473017/',
   'https://rutube.ru/play/embed/8516524fa129b7123d2800ff51edb1c5/',
   'https://rutube.ru/play/embed/59a0a8b57d043a0ce3685323287897b5/',
-  'https://rutube.ru/play/embed/5dec4f2e21c9445abb4c7a008007ebe7/'
+  'https://rutube.ru/play/embed/5dec4f2e21c9445abb4c7a008007ebe7/',
 ];
 
 const companyLogos: Record<string, JSX.Element | null> = {

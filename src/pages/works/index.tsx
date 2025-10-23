@@ -81,7 +81,7 @@ export const Works = () => {
 
                     <AccordionContent>
                       <CardContent className="mb-4 flex flex-col items-start gap-7 rounded-b-[32px] border-t border-solid border-gray-20 bg-gray-10 p-6">
-                        <div className="flex flex-col items-start gap-6 md:px-3 pt-6">
+                        <div className="flex flex-col items-start gap-6 pt-6 md:px-3">
                           <div className="flex flex-col items-start gap-3">
                             <h3 className="w-full text-base font-normal leading-6 tracking-normal text-gray-40 [font-family:'Inter',Helvetica]">
                               {t('sections.responsibilities')}

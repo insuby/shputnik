@@ -9,7 +9,9 @@ type CrmCapabilitiesProps = {
   namespace?: string;
 };
 
-export const CrmCapabilities = ({ namespace = 'widgets' }: CrmCapabilitiesProps) => {
+export const CrmCapabilities = ({
+  namespace = 'widgets',
+}: CrmCapabilitiesProps) => {
   const { t } = useTranslation(namespace);
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: '-30px' });

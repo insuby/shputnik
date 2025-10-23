@@ -331,6 +331,6 @@ export const FeedbackForm = () => {
         </div>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 };
