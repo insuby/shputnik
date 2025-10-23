@@ -654,7 +654,7 @@ export const MicroCredit = () => {
                 </button>
               </div>
 
-              <div className="w-full lg:w-[1415px]" id="microcredit-slider">
+              <div className="w-full lg:w-[1315px]" id="microcredit-slider">
                 <Slider
                   ref={sliderRef}
                   dots={false}
@@ -666,8 +666,8 @@ export const MicroCredit = () => {
                   centerPadding="0px"
                   arrows={false}
                 >
-                  <div className="px-0 lg:px-3">
-                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="">
+                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[433px] lg:gap-12 lg:p-12">
                       <svg
                         width="638"
                         height="682"
@@ -777,8 +777,8 @@ export const MicroCredit = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="px-0 lg:px-3">
-                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="">
+                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[433px] lg:gap-12 lg:p-12">
                       <svg
                         width="638"
                         height="682"
@@ -934,8 +934,8 @@ export const MicroCredit = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="px-0 lg:px-3">
-                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="">
+                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[433px] lg:gap-12 lg:p-12">
                       <svg
                         width="638"
                         height="682"
@@ -1160,8 +1160,8 @@ export const MicroCredit = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="px-0 lg:px-3">
-                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="">
+                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[433px] lg:gap-12 lg:p-12">
                       <svg
                         width="638"
                         height="682"
@@ -1257,8 +1257,8 @@ export const MicroCredit = () => {
                     </div>
                   </div>
 
-                  <div className="px-0 md:px-3">
-                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                  <div className="">
+                    <div className="relative flex h-[580px] w-full flex-[] flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[433px] lg:gap-12 lg:p-12">
                       <div className="relative flex w-full flex-[2] items-center justify-center self-stretch">
                         <div className="relative size-full max-w-[443px]">
                           <div className="absolute left-[40%] top-[35px] inline-flex -translate-x-1/2 items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
