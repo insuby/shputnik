@@ -806,7 +806,7 @@ export const IslamFinance = () => {
           </div>
         </div>
 
-        <Advantages />
+        <Advantages namespace="islamfinance" />
 
         <motion.div
           ref={ref7}

@@ -3,8 +3,12 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const Advantages = () => {
-  const { t } = useTranslation('widgets');
+type AdvantagesProps = {
+  namespace?: string;
+};
+
+export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
+  const { t } = useTranslation(namespace);
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
