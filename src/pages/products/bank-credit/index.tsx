@@ -1691,7 +1691,7 @@ export const BankCredit = () => {
           </div>
         </div>
 
-        <Analytics />
+        <Analytics useBankcreditTranslations={true} />
 
         <motion.div
           ref={refAuto1}

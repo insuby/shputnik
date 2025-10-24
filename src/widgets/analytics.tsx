@@ -5,10 +5,20 @@ import { useTranslation } from 'react-i18next';
 
 type AnalyticsProps = {
   useMicrocreditTranslations?: boolean;
+  useBankcreditTranslations?: boolean;
 };
 
-export const Analytics = ({ useMicrocreditTranslations = false }: AnalyticsProps) => {
-  const { t } = useTranslation(useMicrocreditTranslations ? 'microcredit' : 'widgets');
+export const Analytics = ({ 
+  useMicrocreditTranslations = false, 
+  useBankcreditTranslations = false 
+}: AnalyticsProps) => {
+  const getTranslationNamespace = () => {
+    if (useMicrocreditTranslations) return 'microcredit';
+    if (useBankcreditTranslations) return 'bankcredit';
+    return 'widgets';
+  };
+  
+  const { t } = useTranslation(getTranslationNamespace());
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
