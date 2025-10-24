@@ -6,15 +6,18 @@ import { useTranslation } from 'react-i18next';
 type AnalyticsProps = {
   useMicrocreditTranslations?: boolean;
   useBankcreditTranslations?: boolean;
+  useBnplTranslations?: boolean;
 };
 
 export const Analytics = ({ 
   useMicrocreditTranslations = false, 
-  useBankcreditTranslations = false 
+  useBankcreditTranslations = false,
+  useBnplTranslations = false
 }: AnalyticsProps) => {
   const getTranslationNamespace = () => {
     if (useMicrocreditTranslations) return 'microcredit';
     if (useBankcreditTranslations) return 'bankcredit';
+    if (useBnplTranslations) return 'bnpl';
     return 'widgets';
   };
   

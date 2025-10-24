@@ -1059,7 +1059,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView29 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="lg:w-[530px ] relative flex w-full flex-col items-start gap-7 p-8 lg:!p-20"
+            className="relative flex w-full flex-col items-start gap-7 p-8 lg:w-[530px] lg:!p-20"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col justify-center gap-3 self-stretch">
               <motion.div
@@ -1112,8 +1112,22 @@ export const BNPL = () => {
 
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
-                  <div className="relative ml-[-10470.00px] mt-[-3731.92px] size-5 bg-[100%_100%]">
-                    {/* Removed broken SVG: /img/bnpl/vector-14.svg */}
+                  <div className="relative size-5 bg-[100%_100%]">
+                    <svg
+                      width="15"
+                      height="16"
+                      viewBox="0 0 15 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.59961 14.9756V9.97559H9.34961V14.9756H14.3496V7.47559C14.3497 7.39349 14.3336 7.31218 14.3022 7.23631C14.2708 7.16044 14.2248 7.09149 14.1668 7.0334L7.9168 0.783402C7.85875 0.725291 7.78982 0.679192 7.71395 0.647739C7.63807 0.616287 7.55674 0.600098 7.47461 0.600098C7.39247 0.600098 7.31115 0.616287 7.23527 0.647739C7.1594 0.679192 7.09047 0.725291 7.03242 0.783402L0.782422 7.0334C0.724401 7.09149 0.678392 7.16044 0.647024 7.23631C0.615657 7.31218 0.599545 7.39349 0.59961 7.47559V14.9756H5.59961Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
@@ -1123,13 +1137,56 @@ export const BNPL = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
-                      {/* Removed broken SVG: /img/bnpl/vector-11.svg */}
-
-                      {/* Removed broken SVG: /img/bnpl/vector-4.svg */}
-
-                      {/* Removed broken SVG: /img/bnpl/vector-8.svg */}
-                    </div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 12.5C11.3807 12.5 12.5 11.3807 12.5 10C12.5 8.61929 11.3807 7.5 10 7.5C8.61929 7.5 7.5 8.61929 7.5 10C7.5 11.3807 8.61929 12.5 10 12.5Z"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M18.75 5H1.25V15H18.75V5Z"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M18.75 8.125C17.9693 7.99268 17.2491 7.62079 16.6891 7.06086C16.1292 6.50094 15.7573 5.78072 15.625 5"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M15.625 15C15.7573 14.2193 16.1292 13.4991 16.6891 12.9391C17.2491 12.3792 17.9693 12.0073 18.75 11.875"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M1.25 11.875C2.03072 12.0073 2.75094 12.3792 3.31086 12.9391C3.87079 13.4991 4.24268 14.2193 4.375 15"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M4.375 5C4.24268 5.78072 3.87079 6.50094 3.31086 7.06086C2.75094 7.62079 2.03072 7.99268 1.25 8.125"
+                        stroke="white"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
@@ -1139,13 +1196,35 @@ export const BNPL = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
-                      {/* Removed broken SVG: /img/bnpl/vector-5.svg */}
-
-                      {/* Removed broken SVG: /img/bnpl/vector-10.svg */}
-
-                      {/* Removed broken SVG: /img/bnpl/vector-3.svg */}
-                    </div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10 13.125V17.5"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M3.50384 6.25C2.67836 7.67978 2.34771 9.34199 2.56318 10.9788C2.77865 12.6157 3.5282 14.1357 4.69557 15.3031C5.86295 16.4706 7.38292 17.2202 9.01975 17.4358C10.6566 17.6514 12.3188 17.3208 13.7486 16.4954C15.1785 15.67 16.296 14.3959 16.9279 12.8706C17.5598 11.3454 17.6708 9.65426 17.2437 8.05951C16.8165 6.46476 15.8751 5.05551 14.5654 4.05033C13.2557 3.04515 11.6509 2.5002 9.99994 2.5V6.875C10.6878 6.87515 11.3564 7.10228 11.9021 7.52114C12.4478 7.94001 12.84 8.52722 13.0179 9.1917C13.1958 9.85618 13.1495 10.5608 12.8862 11.1963C12.6229 11.8318 12.1572 12.3626 11.5614 12.7065C10.9657 13.0504 10.2731 13.1881 9.59108 13.0982C8.90908 13.0084 8.27579 12.696 7.7894 12.2096C7.30302 11.7231 6.99073 11.0898 6.90096 10.4078C6.81119 9.7258 6.94896 9.03323 7.29291 8.4375L3.50384 6.25Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M6.98047 10.8093L2.75391 11.9414"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
@@ -1155,11 +1234,42 @@ export const BNPL = () => {
 
                 <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
                   <div className="relative size-5">
-                    <div className="relative left-px top-1 h-[11px] w-full lg:w-[19px]">
-                      {/* Removed broken SVG: /img/bnpl/vector-16.svg */}
-
-                      {/* Removed broken SVG: /img/bnpl/vector-1.svg */}
-                    </div>
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6.25 8.75C7.63071 8.75 8.75 7.63071 8.75 6.25C8.75 4.86929 7.63071 3.75 6.25 3.75C4.86929 3.75 3.75 4.86929 3.75 6.25C3.75 7.63071 4.86929 8.75 6.25 8.75Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M13.75 8.75C15.1307 8.75 16.25 7.63071 16.25 6.25C16.25 4.86929 15.1307 3.75 13.75 3.75C12.3693 3.75 11.25 4.86929 11.25 6.25C11.25 7.63071 12.3693 8.75 13.75 8.75Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M6.25 16.25C7.63071 16.25 8.75 15.1307 8.75 13.75C8.75 12.3693 7.63071 11.25 6.25 11.25C4.86929 11.25 3.75 12.3693 3.75 13.75C3.75 15.1307 4.86929 16.25 6.25 16.25Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M13.75 16.25C15.1307 16.25 16.25 15.1307 16.25 13.75C16.25 12.3693 15.1307 11.25 13.75 11.25C12.3693 11.25 11.25 12.3693 11.25 13.75C11.25 15.1307 12.3693 16.25 13.75 16.25Z"
+                        stroke="#55607A"
+                        strokeWidth="1.2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
                   </div>
 
                   <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
@@ -1382,7 +1492,7 @@ export const BNPL = () => {
           </motion.div>
         </motion.div>
 
-        <Analytics />
+        <Analytics useBnplTranslations={true} />
         <Advantages />
         <Integrations />
         <Zaim />
