@@ -1489,7 +1489,7 @@ export const MicroCredit = () => {
         </motion.div>
         <ZaimChecker />
         <Zaim />
-        <Analytics />
+        <Analytics useMicrocreditTranslations={true} />
         <Integrations />
         <Feedback />
         <EmployeeWork />

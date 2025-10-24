@@ -3,8 +3,12 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
-export const Analytics = () => {
-  const { t } = useTranslation('widgets');
+type AnalyticsProps = {
+  useMicrocreditTranslations?: boolean;
+};
+
+export const Analytics = ({ useMicrocreditTranslations = false }: AnalyticsProps) => {
+  const { t } = useTranslation(useMicrocreditTranslations ? 'microcredit' : 'widgets');
   const ref1 = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
