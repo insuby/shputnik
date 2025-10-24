@@ -30,11 +30,13 @@ const buildUrl = (
   params?: Record<string, string | number | boolean | undefined>,
 ) => {
   const base = STRAPI_URL?.replace(/\/$/, '') ?? '';
-  
+
   if (!base) {
-    throw new Error('STRAPI_API_URL не настроен. Проверьте переменную окружения VITE_STRAPI_API_URL');
+    throw new Error(
+      'STRAPI_API_URL не настроен. Проверьте переменную окружения VITE_STRAPI_API_URL',
+    );
   }
-  
+
   const url = new URL(`${base}${path}`);
 
   if (params) {

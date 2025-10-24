@@ -19,7 +19,7 @@ export const CookieBanner = () => {
 
   const handleAccept = () => {
     if (!isChecked) return;
-    
+
     setIsAnimating(false);
 
     // Ждем завершения анимации исчезновения
@@ -58,7 +58,7 @@ export const CookieBanner = () => {
                     id="cookie-consent"
                     checked={isChecked}
                     onChange={(e) => setIsChecked(e.target.checked)}
-                    className="h-4 w-4 rounded border-2 border-blue-50 bg-white text-blue-50 focus:ring-2 focus:ring-blue-50 focus:ring-offset-0 cursor-pointer"
+                    className="size-4 cursor-pointer rounded border-2 border-blue-50 bg-white text-blue-50 focus:ring-2 focus:ring-blue-50 focus:ring-offset-0"
                   />
                 </div>
                 <div className="flex-1">
@@ -87,8 +87,8 @@ export const CookieBanner = () => {
                 disabled={!isChecked}
                 className={`flex-1 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 [font-family:'Roboto',Helvetica] lg:flex-none ${
                   isChecked
-                    ? 'bg-blue-50 text-white hover:bg-blue-600 hover:shadow-lg active:scale-95 cursor-pointer'
-                    : 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                    ? 'cursor-pointer bg-blue-50 text-white hover:bg-blue-600 hover:shadow-lg active:scale-95'
+                    : 'cursor-not-allowed bg-gray-200 text-gray-400'
                 }`}
               >
                 ПОДТВЕРЖДАЮ

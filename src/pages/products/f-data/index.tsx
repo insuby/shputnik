@@ -1588,8 +1588,6 @@ export const Fdata = () => {
                   </p>
                 </div>
               </motion.div>
-
-           
             </div>
           </div>
         </div>

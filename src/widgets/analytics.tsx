@@ -9,10 +9,10 @@ type AnalyticsProps = {
   useBnplTranslations?: boolean;
 };
 
-export const Analytics = ({ 
-  useMicrocreditTranslations = false, 
+export const Analytics = ({
+  useMicrocreditTranslations = false,
   useBankcreditTranslations = false,
-  useBnplTranslations = false
+  useBnplTranslations = false,
 }: AnalyticsProps) => {
   const getTranslationNamespace = () => {
     if (useMicrocreditTranslations) return 'microcredit';
@@ -20,7 +20,7 @@ export const Analytics = ({
     if (useBnplTranslations) return 'bnpl';
     return 'widgets';
   };
-  
+
   const { t } = useTranslation(getTranslationNamespace());
   const ref1 = useRef(null);
   const ref2 = useRef(null);

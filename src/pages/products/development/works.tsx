@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import { useRef, useState, useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
@@ -38,7 +38,7 @@ export const Works = () => {
 
   const handleTouchEnd = useCallback(() => {
     if (!touchStart || !touchEnd) return;
-    
+
     const distance = touchStart - touchEnd;
     const isLeftSwipe = distance > 50;
     const isRightSwipe = distance < -50;
@@ -60,11 +60,14 @@ export const Works = () => {
     setMouseStart(e.clientX);
   }, []);
 
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (mouseStart !== null) {
-      setMouseEnd(e.clientX);
-    }
-  }, [mouseStart]);
+  const handleMouseMove = useCallback(
+    (e: React.MouseEvent) => {
+      if (mouseStart !== null) {
+        setMouseEnd(e.clientX);
+      }
+    },
+    [mouseStart],
+  );
 
   const handleMouseUp = useCallback(() => {
     if (mouseStart !== null && mouseEnd !== null) {
@@ -115,8 +118,8 @@ export const Works = () => {
           </Slider>
         </div>
 
-        <div 
-          className="relative flex h-full flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px] cursor-grab active:cursor-grabbing select-none"
+        <div
+          className="relative flex h-full flex-1 grow cursor-grab select-none flex-col items-start justify-between overflow-hidden rounded-3xl px-3 active:cursor-grabbing lg:py-12 lg:pl-12 lg:pr-[68px]"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
