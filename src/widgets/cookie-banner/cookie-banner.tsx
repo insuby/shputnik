@@ -5,12 +5,11 @@ export const CookieBanner = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
-    // const cookieConsent = localStorage.getItem('cookie-consent');
-    // if (!cookieConsent) {
-    //   setIsVisible(true);
-    // }
+    const cookieConsent = localStorage.getItem('cookie-consent');
+    if (!cookieConsent) {
+      setIsVisible(true);
+    }
 
-    // Анимация появления
     const timer = setTimeout(() => {
       setIsVisible(true);
       setIsAnimating(true);
@@ -35,7 +34,6 @@ export const CookieBanner = () => {
 
   return (
     <>
-      {/* Backdrop для блокировки взаимодействия с остальной страницей */}
       <div
         className={`fixed inset-0 z-40 bg-black/50 transition-opacity duration-300 ${
           isAnimating ? 'opacity-100' : 'opacity-0'

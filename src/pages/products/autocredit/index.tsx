@@ -412,7 +412,7 @@ export const Autocredit = () => {
                   <div className="relative mx-[-1.49px] mt-[-1.49px] flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] border-[1.49px] border-solid border-[#3573fc] bg-[#ffffff] p-[17.94px] lg:w-[337.09px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] self-stretch lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.yourConditions')}
                         </div>
 
@@ -473,7 +473,7 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] lg:w-[334.11px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.increasedFirstPayment')}
                         </div>
                       </div>
@@ -515,7 +515,7 @@ export const Autocredit = () => {
                   <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] rounded-[11.96px] bg-[#ffffff] p-[17.94px] lg:w-[334.11px]">
                     <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
                       <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-[7.47px] self-stretch">
-                        <div className="relative mt-[-0.75px] flex-1 text-center text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="relative mt-[-0.75px] flex-1 text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.increasedTerm')}
                         </div>
                       </div>
@@ -643,109 +643,111 @@ export const Autocredit = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl  lg:!flex-row"
           >
-            <svg
-              className="absolute inset-0 z-10 hidden lg:flex"
-              width="676"
-              height="648"
-              viewBox="0 0 676 648"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.12" filter="url(#filter0_f_9261_1976)">
-                <path
-                  d="M234.111 385.615C155.82 385.565 115.561 293.472 105.218 247.431C115.314 -26.3505 425.512 93.1163 499.396 214.847C573.279 336.578 528.019 590.54 425.196 590.474C322.372 590.409 331.973 385.677 234.111 385.615Z"
-                  fill="#3573FC"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_f_9261_1976"
-                  x="-94.7822"
-                  y="-118.907"
-                  width="830.641"
-                  height="909.382"
-                  filterUnits="userSpaceOnUse"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="BackgroundImageFix"
-                    result="shape"
+            <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd]   p-7 lg:h-[560px] lg:p-0">
+              <svg
+                width="676"
+                height="648"
+                viewBox="0 0 676 648"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute"
+              >
+                <g opacity="0.12" filter="url(#filter0_f_9261_1976)">
+                  <path
+                    d="M234.111 385.615C155.82 385.565 115.561 293.472 105.218 247.431C115.314 -26.3505 425.512 93.1163 499.396 214.847C573.279 336.578 528.019 590.54 425.196 590.474C322.372 590.409 331.973 385.677 234.111 385.615Z"
+                    fill="#3573FC"
                   />
-                  <feGaussianBlur
-                    stdDeviation="100"
-                    result="effect1_foregroundBlur_9261_1976"
-                  />
-                </filter>
-              </defs>
-            </svg>
-            <Marquee
-              fade
-              className="relative flex size-full flex-1 grow !gap-4 self-stretch rounded-[32px] bg-[#f9fafd] p-7 lg:h-[588px] lg:p-0"
-              innerClassName="lg:!gap-[1rem] !w-[750px]"
-            >
-              <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
-                  <img
-                    className="relative w-full self-stretch lg:h-[120px]"
-                    alt="Screenshot"
-                    src="/img/screenshot-12.png"
-                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_f_9261_1976"
+                    x="-94.7812"
+                    y="-118.907"
+                    width="830.639"
+                    height="909.382"
+                    filterUnits="userSpaceOnUse"
+                    colorInterpolationFilters="sRGB"
+                  >
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="BackgroundImageFix"
+                      result="shape"
+                    />
+                    <feGaussianBlur
+                      stdDeviation="100"
+                      result="effect1_foregroundBlur_9261_1976"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+              <Marquee
+                fade
+                className="relative flex size-full flex-1 grow !gap-4 self-stretch"
+                innerClassName="lg:!gap-[1rem] !w-[750px]"
+              >
+                <div className="left-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
+                    <img
+                      className="relative w-full self-stretch lg:h-[120px]"
+                      alt="Screenshot"
+                      src="/img/screenshot-12.png"
+                    />
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                    <p className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                      Новый BMW M4 Coupe
-                    </p>
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <p className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                        Новый BMW M4 Coupe
+                      </p>
 
-                    <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      12 324 000 ₽
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                        12 324 000 ₽
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div className="top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
-                  <img
-                    className="relative w-full self-stretch lg:h-[120px]"
-                    alt="Screenshot"
-                    src="/img/screenshot-13.png"
-                  />
+                <div className="top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff] px-4 py-6 lg:absolute">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
+                    <img
+                      className="relative w-full self-stretch lg:h-[120px]"
+                      alt="Screenshot"
+                      src="/img/screenshot-13.png"
+                    />
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                    <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                      Новый BMW 218i Gran Coupe
-                    </div>
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                        Новый BMW 218i Gran Coupe
+                      </div>
 
-                    <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      8 876 000 ₽
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff]  px-4 py-6 lg:absolute">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
-                  <img
-                    className="relative w-full self-stretch lg:h-[120px]"
-                    alt="Screenshot"
-                    src="/img/screenshot-11.png"
-                  />
-
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                    <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
-                      Новый BMW 3 серии
-                    </div>
-
-                    <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
-                      9 453 000 ₽
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                        8 876 000 ₽
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Marquee>
+
+                <div className="right-0 top-44 flex w-60 flex-col items-center justify-center gap-5 rounded-[32px] bg-[#ffffff]  px-4 py-6 lg:absolute">
+                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 self-stretch">
+                    <img
+                      className="relative w-full self-stretch lg:h-[120px]"
+                      alt="Screenshot"
+                      src="/img/screenshot-11.png"
+                    />
+
+                    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                      <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                        Новый BMW 3 серии
+                      </div>
+
+                      <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                        9 453 000 ₽
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Marquee>
+            </div>
 
             <div className="flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:relative lg:!py-12 lg:!pl-12 lg:!pr-[68px]">
               <motion.div
