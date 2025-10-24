@@ -1589,58 +1589,7 @@ export const Fdata = () => {
                 </div>
               </motion.div>
 
-              <motion.div
-                ref={ref57}
-                initial={{ opacity: 0, x: -50 }}
-                animate={inView57 ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
-              >
-                <svg
-                  width="64"
-                  height="64"
-                  viewBox="0 0 64 64"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
-                >
-                  <rect
-                    width="64"
-                    height="64"
-                    rx="32"
-                    fill="#E74951"
-                    fillOpacity="0.08"
-                  />
-                  <path
-                    d="M33.7994 21.0275L44.7319 40.0112C45.4982 41.3487 44.5082 43 42.9307 43H21.0657C19.4882 43 18.4982 41.3487 19.2644 40.0112L30.1969 21.0275C30.9844 19.6575 33.0119 19.6575 33.7994 21.0275Z"
-                    stroke="#E74951"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M32 34V29"
-                    stroke="#E74951"
-                    strokeWidth="1.6"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M32 40C32.8284 40 33.5 39.3284 33.5 38.5C33.5 37.6716 32.8284 37 32 37C31.1716 37 30.5 37.6716 30.5 38.5C30.5 39.3284 31.1716 40 32 40Z"
-                    fill="#E74951"
-                  />
-                </svg>
-
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                    {t('howWeHelp.errorReduction.title')}
-                  </div>
-
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                    {t('howWeHelp.errorReduction.description')}
-                  </p>
-                </div>
-              </motion.div>
+           
             </div>
           </div>
         </div>

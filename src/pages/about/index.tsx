@@ -14,6 +14,7 @@ export const About = () => {
   const onClick = () => {
     setIsOpen(true);
   };
+
   return (
     <>
       {pageMeta}
@@ -288,15 +289,11 @@ export const About = () => {
                 {t('offices', { ns: 'about' })}
               </h2>
 
-              {!isMobile ? (
-                <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  {t('officesSubtitle', { ns: 'about' })}
-                </p>
-              ) : (
-                <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  {t('officesSubtitle', { ns: 'about' })}
-                </p>
-              )}
+              <p className="relative whitespace-pre-line text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                {t(isMobile ? 'officesSubtitleMobile' : 'officesSubtitle', {
+                  ns: 'about',
+                })}
+              </p>
             </section>
 
             <section className="relative flex flex-[0_0_auto] flex-col items-stretch gap-4 self-stretch p-2 lg:!flex-row lg:p-0">

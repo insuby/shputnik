@@ -10,7 +10,18 @@ export default defineConfig({
     host: '0.0.0.0', // Добавьте эту строку
     port: 5173
   },
-  plugins: [react()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [
+          ['babel-plugin-react-compiler', {
+            // Загружаем конфигурацию из файла
+            configFile: './react-compiler.config.js',
+          }]
+        ]
+      }
+    })
+  ],
   base: "./",
   css: {
     postcss: {
