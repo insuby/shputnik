@@ -180,7 +180,7 @@ export const FooterSection = () => {
           </div>
         </div>
 
-        <div className="relative flex h-[324px] w-full flex-col items-center gap-7 md:justify-center xl:w-[268px]">
+        <div className="relative flex w-full flex-col items-center gap-7 md:justify-center xl:w-[268px]">
           <div className="relative inline-flex w-full flex-[0_0_auto] flex-col items-start gap-4">
             <div className="relative mt-[-1.00px] w-full font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] tracking-[var(--body-3-r-letter-spacing)] text-gray-90 opacity-40 [font-style:var(--body-3-r-font-style)] xl:w-[268px]">
               {t('company', { ns: 'footer' })}
@@ -207,13 +207,6 @@ export const FooterSection = () => {
               >
                 {t('vacancies', { ns: 'nav' })}
               </ScrollLink>
-
-              <a
-                href="#"
-                className="relative w-full font-body-2-r text-[length:var(--body-2-r-footer-font-size)] font-[number:var(--body-2-r-font-weight)] leading-[var(--body-2-r-line-height)] tracking-[var(--body-2-r-letter-spacing)] text-gray-90 [font-style:var(--body-2-r-font-style)] hover:text-[#3573FC] xl:w-[233px]"
-              >
-                Документы
-              </a>
             </div>
           </div>
 

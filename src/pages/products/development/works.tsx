@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 
-import { useRef, useState } from 'react';
+import { useRef, useState, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick';
 
@@ -15,6 +15,8 @@ export const Works = () => {
   const { t } = useTranslation('development');
   const sliderRef = useRef<Slider>(null);
   const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
+  const [touchEnd, setTouchEnd] = useState<number | null>(null);
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();
@@ -23,6 +25,63 @@ export const Works = () => {
   const goToNext = () => {
     sliderRef.current?.slickNext();
   };
+
+  // Обработка свайпов для правого блока
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  }, []);
+
+  const handleTouchEnd = useCallback(() => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      goToNext();
+    }
+    if (isRightSwipe) {
+      goToPrev();
+    }
+  }, [touchStart, touchEnd]);
+
+  // Обработка мыши для правого блока
+  const [mouseStart, setMouseStart] = useState<number | null>(null);
+  const [mouseEnd, setMouseEnd] = useState<number | null>(null);
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    setMouseEnd(null);
+    setMouseStart(e.clientX);
+  }, []);
+
+  const handleMouseMove = useCallback((e: React.MouseEvent) => {
+    if (mouseStart !== null) {
+      setMouseEnd(e.clientX);
+    }
+  }, [mouseStart]);
+
+  const handleMouseUp = useCallback(() => {
+    if (mouseStart !== null && mouseEnd !== null) {
+      const distance = mouseStart - mouseEnd;
+      const isLeftSwipe = distance > 50;
+      const isRightSwipe = distance < -50;
+
+      if (isLeftSwipe) {
+        goToNext();
+      }
+      if (isRightSwipe) {
+        goToPrev();
+      }
+    }
+    setMouseStart(null);
+    setMouseEnd(null);
+  }, [mouseStart, mouseEnd]);
 
   return (
     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch lg:gap-12">
@@ -56,7 +115,16 @@ export const Works = () => {
           </Slider>
         </div>
 
-        <div className="relative flex h-full flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px]">
+        <div 
+          className="relative flex h-full flex-1 grow flex-col items-start justify-between overflow-hidden rounded-3xl px-3 lg:py-12 lg:pl-12 lg:pr-[68px] cursor-grab active:cursor-grabbing select-none"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+        >
           {currentSlideIndex + 1 === 3 && (
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-7">
               <motion.p
