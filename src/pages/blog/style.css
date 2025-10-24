@@ -2,4 +2,29 @@
     img {
         margin: 0 auto !important;
     }
+
+    span {
+        position: relative;
+        align-self: stretch;
+        font-size: 1.25rem;    /* 20px - эквивалент text-xl */
+        font-weight: 400;      /* normal */
+        line-height: 1.75;     /* 28px - эквивалент leading-7 */
+        letter-spacing: 0;     /* normal */
+        font-family: 'Roboto', Helvetica, sans-serif;
+        color: #9ea7bb;
+
+    }
+
+    ul {
+        margin-top: 1rem;
+        list-style: disc;
+
+        li {
+            margin-left: 2rem;
+        }
+    }
+
+    strong {
+        color: #1c222f;        /* text-[#9ea7bb] */
+    }
 }

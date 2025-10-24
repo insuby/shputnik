@@ -108,8 +108,10 @@ export const BlogList = () => {
           ) : error ? (
             <div className="col-span-full flex flex-col items-center justify-center py-24 text-center">
               <div className="mb-4 text-6xl">⚠️</div>
-              <div className="text-xl text-[#55607a] mb-2">{error}</div>
-              <div className="text-sm text-[#9FA7BC]">Попробуйте обновить страницу позже</div>
+              <div className="mb-2 text-xl text-[#55607a]">{error}</div>
+              <div className="text-sm text-[#9FA7BC]">
+                Попробуйте обновить страницу позже
+              </div>
             </div>
           ) : posts.length === 0 ? (
             <div className="col-span-full flex items-center justify-center py-24 text-xl text-[#55607a]">
@@ -182,57 +184,6 @@ export const BlogList = () => {
                           locale: i18n.language === 'ru' ? ru : enUS,
                         })}
                       </time>
-                    </div>
-                    <div className="relative inline-flex h-6 flex-[0_0_auto] items-center justify-center gap-2">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="relative size-4"
-                        aria-hidden={true}
-                      >
-                        <path
-                          d="M8 3.5C3 3.5 1 8 1 8C1 8 3 12.5 8 12.5C13 12.5 15 8 15 8C15 8 13 3.5 8 3.5Z"
-                          stroke="#9FA7BC"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M8 10.5C9.38071 10.5 10.5 9.38071 10.5 8C10.5 6.61929 9.38071 5.5 8 5.5C6.61929 5.5 5.5 6.61929 5.5 8C5.5 9.38071 6.61929 10.5 8 10.5Z"
-                          stroke="#9FA7BC"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                        {post.views ?? 0}
-                      </div>
-                    </div>
-                    <div className="justify_center relative inline-flex h-6 flex-[0_0_auto] items-center gap-2">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="relative size-4"
-                        aria-hidden={true}
-                      >
-                        <path
-                          d="M8 14C8 14 1.5 10.5 1.5 6.375C1.5 5.47989 1.85558 4.62145 2.48851 3.98851C3.12145 3.35558 3.97989 3 4.875 3C6.28688 3 7.49625 3.76937 8 5C8.50375 3.76937 9.71312 3 11.125 3C12.0201 3 12.8785 3.35558 13.5115 3.98851C14.1444 4.62145 14.5 5.47989 14.5 6.375C14.5 10.5 8 14 8 14Z"
-                          stroke="#9FA7BC"
-                          strokeWidth="1.2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
-                      <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                        {post.likes ?? 0}
-                      </div>
                     </div>
                   </div>
                   <h2

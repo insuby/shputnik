@@ -382,7 +382,7 @@ export const ZaimChecker = ({ namespace = 'widgets' }: ZaimCheckerProps) => {
                 initial={{ opacity: 0, x: 80 }}
                 animate={inView15 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.8, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch whitespace-nowrap text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="relative mt-[-1.00px] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:whitespace-nowrap"
               >
                 {t('zainChecker.paymentSystems.title')}
               </motion.div>
