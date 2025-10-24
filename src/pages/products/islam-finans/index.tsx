@@ -117,7 +117,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView1 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
-                    className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
+                    className="relative mt-[-1.00px] w-full  text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                   >
                     {t('hero.title')}
                   </motion.h1>
@@ -127,7 +127,7 @@ export const IslamFinance = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView1 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
-                    className="relative mx-auto w-full max-w-[80%] text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px]"
+                    className="relative mx-auto w-full text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:!max-w-[80%]"
                   >
                     {t('hero.description')}
                   </motion.p>

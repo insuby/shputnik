@@ -1059,7 +1059,7 @@ export const BNPL = () => {
             initial={{ opacity: 0, x: -50 }}
             animate={inView29 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex w-full flex-col items-start gap-7 p-8 lg:w-[530px] lg:!p-20"
+            className="relative flex w-full flex-col items-start gap-7 lg:w-[530px] lg:!p-20"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col justify-center gap-3 self-stretch">
               <motion.div

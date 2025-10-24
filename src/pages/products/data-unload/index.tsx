@@ -77,8 +77,6 @@ export const Dataunload = () => {
   const inView35 = useInView(ref35, { once: true, margin: '-30px' });
   const inView36 = useInView(ref36, { once: true, margin: '-30px' });
   const inView37 = useInView(ref37, { once: true, margin: '-30px' });
-  const inView38 = useInView(ref38, { once: true, margin: '-30px' });
-  const inView39 = useInView(ref39, { once: true, margin: '-30px' });
   const inView40 = useInView(ref40, { once: true, margin: '-30px' });
   const inView42 = useInView(ref42, { once: true, margin: '-30px' });
   const inView44 = useInView(ref44, { once: true, margin: '-30px' });
@@ -723,14 +721,14 @@ export const Dataunload = () => {
               <motion.div
                 ref={ref38}
                 initial={{ opacity: 0, y: 50 }}
-                animate={inView38 ? { opacity: 1, y: 0 } : {}}
+                animate={inView37 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 1.1 }}
                 className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-3 lg:w-[560px]"
               >
                 <motion.div
                   ref={ref39}
                   initial={{ opacity: 0, y: 30 }}
-                  animate={inView39 ? { opacity: 1, y: 0 } : {}}
+                  animate={inView37 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 1.2 }}
                   className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
@@ -740,7 +738,7 @@ export const Dataunload = () => {
                 <motion.p
                   ref={ref40}
                   initial={{ opacity: 0, y: 30 }}
-                  animate={inView40 ? { opacity: 1, y: 0 } : {}}
+                  animate={inView37 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
                   className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >

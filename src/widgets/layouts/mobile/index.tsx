@@ -1032,7 +1032,7 @@ export const MobileLayout = () => {
                                 strokeLinejoin="round"
                               />
                             </svg>
-                            <span className="w-full border-b border-solid border-[#eeeff2] py-6 text-gray-90">
+                            <span className="w-full py-6 text-gray-90">
                               {t('fdata')}
                             </span>
                           </span>

@@ -290,13 +290,11 @@ export const About = () => {
 
               {!isMobile ? (
                 <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  {'По любым вопросам вы можете обратиться в один из наших \n' +
-                    'офисов или связаться с нашей командой'}
+                  {t('officesSubtitle', { ns: 'about' })}
                 </p>
               ) : (
                 <p className="relative text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
-                  По любым вопросам вы можете обратиться в один из наших офисов
-                  или связаться с нашей командой
+                  {t('officesSubtitle', { ns: 'about' })}
                 </p>
               )}
             </section>
@@ -304,7 +302,7 @@ export const About = () => {
             <section className="relative flex flex-[0_0_auto] flex-col items-stretch gap-4 self-stretch p-2 lg:!flex-row lg:p-0">
               <article
                 aria-labelledby="office-murmansk"
-                className="relative flex size-full h-[412px] flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 lg:gap-12 lg:p-12"
+                className="relative flex size-full flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafc] p-7 lg:!h-[412px] lg:gap-12 lg:p-12"
               >
                 <div className="relative inline-flex w-full flex-[1_0_auto] flex-col items-start gap-6">
                   <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">

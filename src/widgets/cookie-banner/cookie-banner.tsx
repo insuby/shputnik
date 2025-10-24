@@ -39,13 +39,13 @@ export const CookieBanner = () => {
       />
 
       <div
-        className={`fixed inset-x-0 bottom-1 z-50 mx-auto w-fit max-w-[98%] rounded-3xl border-gray-100 bg-white shadow-lg transition-all duration-300 ease-in-out ${
+        className={`fixed inset-x-0 bottom-3 z-50 mx-auto w-fit max-w-[94%] rounded-3xl border-gray-100 bg-white shadow-lg transition-all duration-300 ease-in-out ${
           isAnimating
             ? 'translate-y-0 opacity-100'
             : 'translate-y-full opacity-0'
         }`}
       >
-        <div className="mx-auto max-w-7xl pb-4 pt-10 lg:px-8 ">
+        <div className="mx-auto max-w-7xl p-4 lg:px-8 lg:pt-10">
           <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:gap-8">
             <div className="text-center lg:text-left">
               <p className="text-center text-sm leading-6 text-gray-90 [font-family:'Roboto',Helvetica]">
