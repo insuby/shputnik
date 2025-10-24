@@ -1,3 +1,5 @@
+import './style.css';
+
 import { format } from 'date-fns';
 import { enUS, ru } from 'date-fns/locale';
 
@@ -53,7 +55,7 @@ export const BlogPost = () => {
     if (!id) return;
     setLoading(true);
     setError(null);
-    
+
     getPostById(id)
       .then((data) => {
         setPost(data);
@@ -64,7 +66,7 @@ export const BlogPost = () => {
         setError('Статья не найдена или сервер недоступен');
         setPost(null);
       });
-      
+
     getComments(id)
       .then(setComments)
       .catch(() => {
@@ -129,11 +131,13 @@ export const BlogPost = () => {
     return (
       <div className="flex w-full flex-col items-center justify-center py-24 text-center">
         <div className="mb-4 text-6xl">⚠️</div>
-        <div className="text-xl text-[#55607a] mb-2">{error}</div>
-        <div className="text-sm text-[#9FA7BC] mb-4">Попробуйте обновить страницу позже</div>
-        <Link 
-          to="/blog" 
-          className="rounded-full bg-blue-50 px-6 py-3 text-white hover:bg-blue-600 transition-colors"
+        <div className="mb-2 text-xl text-[#55607a]">{error}</div>
+        <div className="mb-4 text-sm text-[#9FA7BC]">
+          Попробуйте обновить страницу позже
+        </div>
+        <Link
+          to="/blog"
+          className="rounded-full bg-blue-50 px-6 py-3 text-white transition-colors hover:bg-blue-600"
         >
           Вернуться к блогу
         </Link>
@@ -150,7 +154,10 @@ export const BlogPost = () => {
   }
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch rounded-[32px] xl:gap-12 xl:px-20 xl:pb-0 xl:pt-20">
+    <div
+      id="blog-post"
+      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch rounded-[32px] xl:gap-12 xl:px-20 xl:pb-0 xl:pt-20"
+    >
       <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-10 self-stretch">
         <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 xl:w-[1216px]">
           <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
