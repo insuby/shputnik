@@ -26,6 +26,7 @@ export const BlogList = () => {
   const [loading, setLoading] = useState(false);
   const [posts, setPosts] = useState<Post[]>([]);
   const [total, setTotal] = useState(1);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     getCategories()
@@ -37,10 +38,17 @@ export const BlogList = () => {
 
   useEffect(() => {
     setLoading(true);
+    setError(null);
     getPosts(page, categoryId)
       .then((res) => {
         setPosts(res.data);
         setTotal(res.meta.pagination.total);
+        setError(null);
+      })
+      .catch(() => {
+        setError('Сервер временно недоступен');
+        setPosts([]);
+        setTotal(0);
       })
       .finally(() => setLoading(false));
   }, [page, categoryId]);
@@ -96,6 +104,12 @@ export const BlogList = () => {
           {loading ? (
             <div className="col-span-full flex items-center justify-center py-12 text-[#55607a]">
               {t('list.loading')}
+            </div>
+          ) : error ? (
+            <div className="col-span-full flex flex-col items-center justify-center py-24 text-center">
+              <div className="mb-4 text-6xl">⚠️</div>
+              <div className="text-xl text-[#55607a] mb-2">{error}</div>
+              <div className="text-sm text-[#9FA7BC]">Попробуйте обновить страницу позже</div>
             </div>
           ) : posts.length === 0 ? (
             <div className="col-span-full flex items-center justify-center py-24 text-xl text-[#55607a]">

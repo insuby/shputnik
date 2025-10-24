@@ -26,6 +26,8 @@ export const BlogPost = () => {
   const [authorName, setAuthorName] = useState<string>('');
   const [replyTo, setReplyTo] = useState<number | null>(null);
   const [replyText, setReplyText] = useState<string>('');
+  const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(true);
 
   const pageUrl = typeof window !== 'undefined' ? window.location.href : '';
   const vkShare = useMemo(
@@ -49,15 +51,26 @@ export const BlogPost = () => {
 
   useEffect(() => {
     if (!id) return;
+    setLoading(true);
+    setError(null);
+    
     getPostById(id)
       .then((data) => {
         setPost(data);
+        setError(null);
         viewPost(id).catch(() => {});
       })
-      .catch(() => {});
+      .catch(() => {
+        setError('Статья не найдена или сервер недоступен');
+        setPost(null);
+      });
+      
     getComments(id)
       .then(setComments)
-      .catch(() => {});
+      .catch(() => {
+        setComments([]);
+      })
+      .finally(() => setLoading(false));
   }, [id]);
 
   const handleSend = async () => {
@@ -104,6 +117,30 @@ export const BlogPost = () => {
     setReplyTo(null);
   };
 
+  if (loading) {
+    return (
+      <div className="items_center justify_center flex w-full py-12 text-[#55607a]">
+        {t('post.loading')}
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex w-full flex-col items-center justify-center py-24 text-center">
+        <div className="mb-4 text-6xl">⚠️</div>
+        <div className="text-xl text-[#55607a] mb-2">{error}</div>
+        <div className="text-sm text-[#9FA7BC] mb-4">Попробуйте обновить страницу позже</div>
+        <Link 
+          to="/blog" 
+          className="rounded-full bg-blue-50 px-6 py-3 text-white hover:bg-blue-600 transition-colors"
+        >
+          Вернуться к блогу
+        </Link>
+      </div>
+    );
+  }
+
   if (!post) {
     return (
       <div className="items_center justify_center flex w-full py-12 text-[#55607a]">
@@ -125,7 +162,6 @@ export const BlogPost = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative size-4"
-                alt=""
                 aria-hidden={true}
               >
                 <path
@@ -174,7 +210,6 @@ export const BlogPost = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative size-4"
-                alt=""
                 aria-hidden={true}
               >
                 <path
@@ -204,7 +239,6 @@ export const BlogPost = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
                 className="relative size-4"
-                alt=""
                 aria-hidden={true}
               >
                 <path
@@ -264,7 +298,6 @@ export const BlogPost = () => {
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     className="relative size-8"
-                    alt="Heart"
                   >
                     <path
                       d="M14 24.5C14 24.5 2.625 18.375 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5Z"
@@ -387,7 +420,6 @@ export const BlogPost = () => {
                                   fill="none"
                                   xmlns="http://www.w3.org/2000/svg"
                                   className="relative size-7"
-                                  alt="Heart"
                                 >
                                   <path
                                     d="M14 24.5C14 24.5 2.625 18.375 2.625 11.1562C2.625 9.58982 3.24726 8.08754 4.3549 6.9799C5.46254 5.87226 6.96482 5.25 8.53125 5.25C11.002 5.25 13.1184 6.59641 14 8.75C14.8816 6.59641 16.998 5.25 19.4688 5.25C21.0352 5.25 22.5375 5.87226 23.6451 6.9799C24.7527 8.08754 25.375 9.58982 25.375 11.1562C25.375 18.375 14 24.5 14 24.5Z"
