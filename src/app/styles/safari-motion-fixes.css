@@ -1,0 +1,143 @@
+/* Дополнительные Safari-исправления для Framer Motion */
+
+/* Принудительное создание композитного слоя для всех motion элементов */
+[data-framer-motion] {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Исправление для SVG внутри motion элементов */
+[data-framer-motion] svg {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Предотвращение "пропадания" элементов при скролле */
+.motion-container {
+  contain: layout style paint;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Оптимизация для больших SVG с фильтрами */
+svg[filter] {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Исправление для элементов с overflow: hidden */
+.overflow-container {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  contain: layout style paint;
+}
+
+/* Безопасные анимации для Safari */
+.safari-safe-opacity {
+  opacity: 0.01; /* Вместо 0 */
+}
+
+/* Исправление для элементов с position: absolute */
+.absolute-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Оптимизация для элементов с background-image */
+.background-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Исправление для элементов с border-radius */
+.rounded-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  contain: layout style paint;
+}
+
+/* Предотвращение мерцания при анимации scale */
+.scale-motion {
+  transform: translateZ(0) scale(1);
+  -webkit-transform: translateZ(0) scale(1);
+  will-change: transform;
+}
+
+/* Исправление для элементов с градиентами */
+.gradient-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Оптимизация для элементов с box-shadow */
+.shadow-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, opacity;
+}
+
+/* Исправление для элементов с clip-path */
+.clip-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  contain: layout style paint;
+}
+
+/* Предотвращение проблем с z-index в Safari */
+.z-index-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  isolation: isolate;
+}
+
+/* Исправление для элементов с transform-origin */
+.origin-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Оптимизация для элементов с perspective */
+.perspective-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Исправление для элементов с filter */
+.filter-motion {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform, filter;
+}
+
+/* Предотвращение проблем с анимацией в Safari на мобильных устройствах */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .motion-container {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+}
+
+/* Дополнительные исправления для iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  .motion-container {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+  }
+}

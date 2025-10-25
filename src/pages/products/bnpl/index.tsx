@@ -15,7 +15,6 @@ import { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { PAGE_META } from 'shared/lib/page-meta-config';
-import { useIsMobile } from 'shared/lib/use-is-mobile';
 import { usePageMeta } from 'shared/lib/use-page-meta';
 import { HeroButtons } from 'shared/ui';
 
@@ -23,7 +22,6 @@ export const BNPL = () => {
   const { t } = useTranslation(['bnpl']);
   const pageMeta = usePageMeta(PAGE_META.bnpl);
   const { setIsOpen } = useFeedbackForm();
-  const isMobile = useIsMobile();
   const ref2 = useRef(null);
   const ref3 = useRef(null);
   const ref4 = useRef(null);
@@ -61,40 +59,40 @@ export const BNPL = () => {
   const ref36 = useRef(null);
   const ref37 = useRef(null);
 
-  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-30px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-30px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-30px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-30px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-30px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-30px' });
-  const inView20 = useInView(ref20, { once: true, margin: '-30px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-30px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-30px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-30px' });
-  const inView24 = useInView(ref24, { once: true, margin: '-30px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-30px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-30px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-30px' });
-  const inView28 = useInView(ref28, { once: true, margin: '-30px' });
-  const inView29 = useInView(ref29, { once: true, margin: '-30px' });
-  const inView30 = useInView(ref30, { once: true, margin: '-30px' });
-  const inView31 = useInView(ref31, { once: true, margin: '-30px' });
-  const inView32 = useInView(ref32, { once: true, margin: '-30px' });
-  const inView33 = useInView(ref33, { once: true, margin: '-30px' });
-  const inView35 = useInView(ref35, { once: true, margin: '-30px' });
-  const inView36 = useInView(ref36, { once: true, margin: '-30px' });
-  const inView37 = useInView(ref37, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-50px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-50px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-50px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-50px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-50px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-50px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-50px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-50px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-50px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-50px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-50px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-50px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-50px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-50px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-50px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-50px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-50px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-50px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-50px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-50px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-50px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-50px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-50px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-50px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-50px' });
+  const inView28 = useInView(ref28, { once: true, margin: '-50px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-50px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-50px' });
+  const inView31 = useInView(ref31, { once: true, margin: '-50px' });
+  const inView32 = useInView(ref32, { once: true, margin: '-50px' });
+  const inView33 = useInView(ref33, { once: true, margin: '-50px' });
+  const inView35 = useInView(ref35, { once: true, margin: '-50px' });
+  const inView36 = useInView(ref36, { once: true, margin: '-50px' });
+  const inView37 = useInView(ref37, { once: true, margin: '-50px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -105,17 +103,17 @@ export const BNPL = () => {
       {pageMeta}
       <section
         aria-labelledby="bnpl-title"
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8"
+        className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8"
       >
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-          <div className="relative flex w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+          <div className="motion-container relative flex w-full flex-col items-start gap-12 self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:h-[620px] lg:p-12">
             <svg
               width="1688"
               height="1367"
               viewBox="0 0 1688 1367"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[441px] top-[-140px] h-[1060px] w-full lg:w-[1108px]"
+              className="motion-container absolute left-[441px] top-[-140px] h-[1060px] w-full lg:w-[1108px]"
             >
               <g opacity="0.2" filter="url(#filter0_f_9267_12262)">
                 <path
@@ -149,24 +147,24 @@ export const BNPL = () => {
             </svg>
 
             <HeroButtons>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
                   <motion.h1
                     ref={ref2}
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0.01, y: 50 }}
                     animate={inView2 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                    className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
+                    className="motion-container relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px] motion-container"
                   >
                     <span id="bnpl-title">{t('static.title')}</span>
                   </motion.h1>
 
                   <motion.p
                     ref={ref3}
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0.01, y: 50 }}
                     animate={inView3 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                    className="lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
+                    className="motion-container lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start motion-container"
                   >
                     {t('static.description')}
                   </motion.p>
@@ -176,66 +174,66 @@ export const BNPL = () => {
 
             <motion.div
               ref={ref5}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0.01, x: 50 }}
               animate={inView5 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="left-[var(--pos-968)] top-[var(--pos-168)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 lg:absolute"
+              className="motion-container left-[var(--pos-968)] top-[var(--pos-168)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-[#ffffff] p-7 lg:absolute motion-container"
             >
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[264px]">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+                <div className="motion-container relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[264px]">
                   {t('installment.id')}
                 </div>
 
-                <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] lg:w-[180px]">
+                <div className="motion-container relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] lg:w-[180px]">
                   {t('installment.status')}
                 </div>
               </div>
 
-              <div className="relative inline-flex h-[175px] items-end">
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[92px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+              <div className="motion-container relative inline-flex h-[175px] items-end">
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[92px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.march')}
                   </div>
                 </div>
 
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[104px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[104px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.april')}
                   </div>
                 </div>
 
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[127px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[127px] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.may')}
                   </div>
                 </div>
 
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[145px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[145px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.june')}
                   </div>
                 </div>
 
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[110px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[110px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.july')}
                   </div>
                 </div>
 
-                <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                  <div className="relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
+                <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                  <div className="motion-container relative h-[98px] w-2 rounded-3xl bg-[#f2f4fb]" />
 
-                  <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('months.august')}
                   </div>
                 </div>
@@ -247,7 +245,7 @@ export const BNPL = () => {
                 viewBox="0 0 329 62"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-0 top-[730px] hidden h-24 w-full lg:top-[132px] lg:block lg:w-[328px]"
+                className="motion-container absolute left-0 top-[730px] hidden h-24 w-full lg:top-[132px] lg:block lg:w-[328px]"
               >
                 <path
                   d="M0.247285 55.6177L24.7332 49.381C29.1947 48.2447 33.9294 49.0835 37.729 51.6833L46.9276 57.9775C54.0122 62.8252 63.6592 61.2242 68.7982 54.348L76.6352 43.8616C81.3036 37.615 89.793 35.6394 96.7397 39.1832L117.269 49.6559C125.75 53.9822 136.11 49.9982 139.506 41.1042L152.056 8.24266C156.121 -2.39923 171.61 -0.959623 173.644 10.249L175.739 21.7982C177.224 29.9871 188.598 30.9119 191.387 23.0705V23.0705C193.933 15.9143 204.031 15.853 206.663 22.9778L209.006 29.3212C211.913 37.1908 222.387 38.7048 227.404 31.9804L233.005 24.4727C238.302 17.3721 248.429 16.075 255.345 21.6113L261.435 26.4868C266.413 30.4717 273.281 31.1237 278.92 28.1469L328.533 1.95524"
@@ -271,7 +269,7 @@ export const BNPL = () => {
                 </defs>
               </svg>
 
-              <div className="absolute left-[156px] top-[156px] hidden size-3 rounded-md border-2  border-solid border-[#00cb82] bg-[#ffffff] lg:block" />
+              <div className="motion-container absolute left-[156px] top-[156px] hidden size-3 rounded-md border-2  border-solid border-[#00cb82] bg-[#ffffff] lg:block" />
             </motion.div>
 
             <svg
@@ -280,7 +278,7 @@ export const BNPL = () => {
               viewBox="0 0 847 929"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[615px] top-0 h-[620px] w-full lg:w-[761px]"
+              className="motion-container absolute left-[615px] top-0 h-[620px] w-full lg:w-[761px]"
             >
               <g opacity="0.24" filter="url(#filter0_f_9163_1971)">
                 <path
@@ -315,24 +313,24 @@ export const BNPL = () => {
 
             <motion.div
               ref={ref4}
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0.01, x: -50 }}
               animate={inView4 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="absolute bottom-0 left-[var(--pos-800)] mt-auto inline-flex h-[340px] flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 lg:top-[var(--pos-286)]"
+              className="motion-container absolute bottom-0 left-[var(--pos-800)] mt-auto inline-flex h-[340px] flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-[#ffffff] p-4 lg:top-[var(--pos-286)] motion-container"
             >
-              <div className="relative size-[212px] rounded-[100px]">
-                <div className="relative left-[7px] top-[7px] size-[198px]">
-                  <div className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+              <div className="motion-container relative size-[212px] rounded-[100px]">
+                <div className="motion-container relative left-[7px] top-[7px] size-[198px]">
+                  <div className="motion-container absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5">
+                    <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                       {t('balance.currentBalance')}
                     </div>
 
-                    <div className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                       44,000₽
                     </div>
                   </div>
 
-                  <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
+                  <div className="motion-container absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
                   <svg
                     width="198"
@@ -340,7 +338,7 @@ export const BNPL = () => {
                     viewBox="0 0 198 198"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 size-[198px]"
+                    className="motion-container absolute left-0 top-0 size-[198px]"
                   >
                     <path
                       d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5"
@@ -365,23 +363,23 @@ export const BNPL = () => {
                 </div>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
-                <div className="relative flex w-full flex-[0_0_auto] items-center justify-between lg:w-[180px]">
-                  <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-between lg:w-[180px]">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                     {t('balance.loanAmount')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     122, 000₽
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
-                  <div className="relative flex-1 text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                  <div className="motion-container relative flex-1 text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                     {t('balance.interest')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     4, 000₽
                   </div>
                 </div>
@@ -392,36 +390,36 @@ export const BNPL = () => {
 
         <motion.div
           ref={ref6}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView6 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12 motion-container"
         >
           <motion.div
             ref={ref7}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
+            className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px] motion-container"
           >
-            <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
               {t('suitableFor')}
             </div>
           </motion.div>
 
           <motion.div
             ref={ref8}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView8 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row"
+            className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row motion-container"
           >
             <motion.div
               ref={ref9}
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0.01, x: -50 }}
               animate={inView9 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10 motion-container"
             >
               <svg
                 width="60"
@@ -429,7 +427,7 @@ export const BNPL = () => {
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
               >
                 <rect
                   width="60"
@@ -461,12 +459,12 @@ export const BNPL = () => {
                 />
               </svg>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   Рассрочка (BNPL)
                 </div>
 
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                   {t('description.bnpl')}
                 </p>
               </div>
@@ -474,10 +472,10 @@ export const BNPL = () => {
 
             <motion.div
               ref={ref10}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0.01, x: 50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10 motion-container"
             >
               <svg
                 width="60"
@@ -485,7 +483,7 @@ export const BNPL = () => {
                 viewBox="0 0 60 60"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
               >
                 <rect
                   width="60"
@@ -524,12 +522,12 @@ export const BNPL = () => {
                 />
               </svg>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('static.posTitle')}
                 </div>
 
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                   {t('static.posDescription')}
                 </p>
               </div>
@@ -539,35 +537,35 @@ export const BNPL = () => {
 
         <motion.div
           ref={ref11}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView11 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl lg:h-[400px] lg:!flex-row"
+          className="motion-container relative flex w-full flex-col items-center gap-6 self-stretch rounded-3xl lg:h-[400px] lg:!flex-row motion-container"
         >
           <motion.div
             ref={ref12}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0.01, x: -50 }}
             animate={inView12 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]"
+            className="motion-container relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px] motion-container"
           >
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
               <motion.div
                 ref={ref13}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView13 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px]"
+                className="motion-container relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px] motion-container"
               >
                 {t('process.bnpl')}
               </motion.div>
 
               <motion.div
                 ref={ref14}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView14 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
+                className="motion-container relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('process.title')}
               </motion.div>
@@ -575,10 +573,10 @@ export const BNPL = () => {
 
             <motion.p
               ref={ref15}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView15 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
+              className="motion-container relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
             >
               {t('integration')}
             </motion.p>
@@ -586,13 +584,13 @@ export const BNPL = () => {
 
           <motion.div
             ref={ref16}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0.01, x: 50 }}
             animate={inView15 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex flex-1 grow self-stretch overflow-hidden rounded-3xl"
+            className="motion-container relative flex flex-1 grow self-stretch overflow-hidden rounded-3xl"
           >
             <Marquee fade>
-              <div className="m-auto inline-flex items-stretch gap-4">
+              <div className="motion-container m-auto inline-flex items-stretch gap-4">
                 {[
                   {
                     name: t('products.product1'),
@@ -617,22 +615,22 @@ export const BNPL = () => {
                 ].map((product, idx) => (
                   <div
                     key={idx}
-                    className="relative flex h-80 w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4"
+                    className="motion-container relative flex h-80 w-60 flex-col items-center justify-center gap-3 rounded-[32px] bg-[#f9fafd] p-4"
                   >
-                    <div className="relative flex w-full flex-1 flex-col items-center self-stretch">
+                    <div className="motion-container relative flex w-full flex-1 flex-col items-center self-stretch">
                       <div
-                        className="relative size-40 h-40 bg-[50%_50%]"
+                        className="motion-container relative size-40 h-40 bg-[50%_50%]"
                         style={{
                           background: `url(${product.image}) 50% 50% / contain no-repeat`,
                         }}
                       />
 
-                      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
-                        <div className="relative mt-[-1.00px] h-20 self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
+                        <div className="motion-container relative mt-[-1.00px] h-20 self-stretch text-xl font-medium leading-[26px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                           {product.name}
                         </div>
 
-                        <div className="relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative self-stretch text-base font-semibold leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                           {product.price}₽
                         </div>
                       </div>
@@ -644,126 +642,126 @@ export const BNPL = () => {
           </motion.div>
         </motion.div>
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
-          <div className="relative  flex w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] md:p-6 xl:w-[676px]">
-            <div className="relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
-              <div className="relative flex flex-1 grow flex-col items-start gap-3 xl:!flex-row">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col-reverse items-center gap-6 self-stretch overflow-hidden rounded-3xl lg:!flex-row">
+          <div className="motion-container relative  flex w-full flex-col items-start gap-2.5 overflow-hidden rounded-[32px] md:p-6 xl:w-[676px]">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-3 self-stretch rounded-[32px] bg-[#f9fafd] p-7">
+              <div className="motion-container relative flex flex-1 grow flex-col items-start gap-3 xl:!flex-row">
                 <motion.div
                   ref={ref16}
-                  initial={{ opacity: 0, scale: 0 }}
+                  initial={{ opacity: 0.01, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                  className="relative m-auto flex size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
+                  className="motion-container relative m-auto flex size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
                 />
 
                 <motion.div
                   ref={ref16}
-                  initial={{ opacity: 0, scale: 0 }}
+                  initial={{ opacity: 0.01, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="relative flex w-full flex-1 grow flex-col items-start gap-5 p-3"
+                  className="motion-container relative flex w-full flex-1 grow flex-col items-start gap-5 p-3"
                 >
-                  <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-xl font-medium leading-[26px] tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                     {t('products.headphones1')}
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                     <motion.div
                       ref={ref16}
-                      initial={{ opacity: 0, x: 50 }}
+                      initial={{ opacity: 0.01, x: 50 }}
                       animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
                         delay: 0.4,
                       }}
-                      className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
+                      className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
                     >
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('form.cost')}
                       </div>
 
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         85 950 ₽
                       </div>
                     </motion.div>
 
                     <motion.div
                       ref={ref16}
-                      initial={{ opacity: 0, x: -50 }}
+                      initial={{ opacity: 0.01, x: -50 }}
                       animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
                         delay: 0.5,
                       }}
-                      className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
+                      className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
                     >
-                      <div className="relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('form.advancePayment')}
                       </div>
 
-                      <div className="relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit !whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         14 500 ₽
                       </div>
                     </motion.div>
 
                     <motion.div
                       ref={ref16}
-                      initial={{ opacity: 0, x: 50 }}
+                      initial={{ opacity: 0.01, x: 50 }}
                       animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
                         delay: 0.6,
                       }}
-                      className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
+                      className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
                     >
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('form.term')}
                       </div>
 
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('form.termValue')}
                       </div>
                     </motion.div>
 
                     <motion.div
                       ref={ref16}
-                      initial={{ opacity: 0, x: -50 }}
+                      initial={{ opacity: 0.01, x: -50 }}
                       animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
                         delay: 0.7,
                       }}
-                      className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
+                      className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
                     >
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('form.nextPayment')}
                       </div>
 
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         2 500 ₽
                       </div>
                     </motion.div>
 
                     <motion.div
                       ref={ref16}
-                      initial={{ opacity: 0, x: 50 }}
+                      initial={{ opacity: 0.01, x: 50 }}
                       animate={inView15 ? { opacity: 1, x: 0 } : {}}
                       transition={{
                         duration: 0.7,
                         ease: 'easeOut',
                         delay: 0.5,
                       }}
-                      className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
+                      className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2"
                     >
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('form.date')}
                       </div>
 
-                      <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('form.dateValue')}
                       </div>
                     </motion.div>
@@ -772,12 +770,12 @@ export const BNPL = () => {
                   <motion.button
                     onClick={onClick}
                     ref={ref16}
-                    initial={{ opacity: 0, scale: 0 }}
+                    initial={{ opacity: 0.01, scale: 0 }}
                     animate={inView15 ? { opacity: 1, scale: 1 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.25 }}
-                    className="all-[unset] relative box-border flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-gray-90 px-6 py-3"
+                    className="motion-container all-[unset] relative box-border flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch rounded-[100px] bg-gray-90 px-6 py-3"
                   >
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-semibold leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-semibold leading-6 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                       {t('form.payFullAmount')}
                     </div>
                   </motion.button>
@@ -788,28 +786,28 @@ export const BNPL = () => {
 
           <motion.div
             ref={ref17}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative flex w-full grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px] xl:flex-1"
+            className="motion-container relative flex w-full grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px] xl:flex-1"
           >
-            <div className="relative -mt-20 inline-flex flex-[0_0_auto] flex-col items-start gap-4 lg:mt-0">
+            <div className="motion-container relative -mt-20 inline-flex flex-[0_0_auto] flex-col items-start gap-4 lg:mt-0">
               <motion.div
                 ref={ref18}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView18 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-                className="relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px]"
+                className="motion-container relative mt-[-1.00px] w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('static.posProcess')}
               </motion.div>
 
               <motion.p
                 ref={ref19}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView19 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                className="relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
+                className="motion-container relative w-full text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:w-[480px]"
               >
                 {t('static.posProcessTitle')}
               </motion.p>
@@ -817,10 +815,10 @@ export const BNPL = () => {
 
             <motion.p
               ref={ref20}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView20 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
+              className="motion-container relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]"
             >
               {t('static.integration')}
             </motion.p>
@@ -829,41 +827,41 @@ export const BNPL = () => {
 
         <motion.div
           ref={ref21}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView21 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 lg:gap-12 lg:py-20"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch px-0 lg:gap-12 lg:py-20"
         >
           <motion.div
             ref={ref22}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
+            className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
           >
             {t('parameters.title')}
           </motion.div>
 
           <motion.div
             ref={ref23}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView23 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative flex w-full flex-col items-start justify-center gap-6 self-stretch lg:h-[228px] lg:!flex-row"
+            className="motion-container relative flex w-full flex-col items-start justify-center gap-6 self-stretch lg:h-[228px] lg:!flex-row"
           >
             <motion.div
               ref={ref24}
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0.01, x: -50 }}
               animate={inView24 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
             >
               <motion.div
                 ref={ref34}
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0.01, scale: 0 }}
                 animate={inView24 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
-                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4 lg:m-0"
+                className="motion-container relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4 lg:m-0"
               >
                 <svg
                   width="28"
@@ -889,24 +887,24 @@ export const BNPL = () => {
                 </svg>
               </motion.div>
 
-              <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('parameters.personalInfo')}
               </div>
             </motion.div>
 
             <motion.div
               ref={ref25}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView25 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
             >
               <motion.div
                 ref={ref35}
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0.01, scale: 0 }}
                 animate={inView35 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
-                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573FC14] p-4 lg:m-0"
+                className="motion-container relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573FC14] p-4 lg:m-0"
               >
                 <svg
                   width="28"
@@ -939,24 +937,24 @@ export const BNPL = () => {
                 </svg>
               </motion.div>
 
-              <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('parameters.history')}
               </div>
             </motion.div>
 
             <motion.div
               ref={ref26}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView26 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
             >
               <motion.div
                 ref={ref36}
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0.01, scale: 0 }}
                 animate={inView36 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
-                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4 lg:m-0"
+                className="motion-container relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4 lg:m-0"
               >
                 <svg
                   width="28"
@@ -989,24 +987,24 @@ export const BNPL = () => {
                 </svg>
               </motion.div>
 
-              <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('parameters.thirdPartyData')}
               </div>
             </motion.div>
 
             <motion.div
               ref={ref27}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0.01, x: 50 }}
               animate={inView27 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 text-center lg:p-10 lg:text-left"
             >
               <motion.div
                 ref={ref37}
-                initial={{ opacity: 0, scale: 0 }}
+                initial={{ opacity: 0.01, scale: 0 }}
                 animate={inView37 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
-                className="relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4 lg:m-0"
+                className="motion-container relative m-auto inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4 lg:m-0"
               >
                 <svg
                   width="28"
@@ -1032,7 +1030,7 @@ export const BNPL = () => {
                 </svg>
               </motion.div>
 
-              <div className="relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative mb-[-7.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('parameters.documentCheck')}
               </div>
             </motion.div>
@@ -1041,35 +1039,35 @@ export const BNPL = () => {
 
         <motion.div
           ref={ref28}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView28 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:!flex-row lg:px-[88px] lg:py-12"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] self-stretch overflow-hidden rounded-[32px] bg-green-60 p-7 lg:!flex-row lg:px-[88px] lg:py-12"
         >
           <motion.div
             ref={ref29}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0.01, x: -50 }}
             animate={inView29 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-            className="relative flex w-full flex-col items-start gap-7 lg:w-[530px] lg:!p-20"
+            className="motion-container relative flex w-full flex-col items-start gap-7 lg:w-[530px] lg:!p-20"
           >
-            <div className="relative flex w-full flex-[0_0_auto] flex-col justify-center gap-3 self-stretch">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col justify-center gap-3 self-stretch">
               <motion.div
                 ref={ref30}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView30 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                className="relative mt-[-1.00px] self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+                className="motion-container relative mt-[-1.00px] self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
               >
                 {t('backoffice.title')}
               </motion.div>
 
               <motion.p
                 ref={ref31}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView31 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[530px] lg:text-5xl lg:leading-[60px]"
+                className="motion-container relative w-full text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[530px] lg:text-5xl lg:leading-[60px]"
               >
                 {t('posIntegration.managePayments')}
               </motion.p>
@@ -1077,10 +1075,10 @@ export const BNPL = () => {
 
             <motion.p
               ref={ref32}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView32 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
+              className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica]"
             >
               {t('posIntegration.description')}
             </motion.p>
@@ -1088,23 +1086,23 @@ export const BNPL = () => {
 
           <motion.div
             ref={ref33}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0.01, x: 50 }}
             animate={inView33 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative mr-[-108.00px] flex w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:left-0 lg:w-[871px]"
+            className="motion-container relative mr-[-108.00px] flex w-[120%] items-center overflow-hidden rounded-3xl bg-[#f6f8fd] lg:left-0 lg:w-[871px]"
           >
-            <div className="relative flex w-[242px] max-w-[850px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
-              <p className="relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
-                <span className="text-[#1c222f]">{t('app.title')}</span>
+            <div className="motion-container relative flex w-[242px] max-w-[850px] flex-col items-start gap-[23.92px] self-stretch bg-[#ffffff] p-6">
+              <p className="motion-container relative self-stretch text-[23.9px] font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <span className="motion-container text-[#1c222f]">{t('app.title')}</span>
 
-                <span className="text-[#00cb82]">
+                <span className="motion-container text-[#00cb82]">
                   {t('app.titleHighlight')}
                 </span>
               </p>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
-                <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
-                  <div className="relative size-5 bg-[100%_100%]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                <div className="motion-container relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                  <div className="motion-container relative size-5 bg-[100%_100%]">
                     <svg
                       width="15"
                       height="16"
@@ -1122,13 +1120,13 @@ export const BNPL = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                     {t('app.main')}
                   </div>
                 </div>
 
-                <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
-                  <div className="relative size-5">
+                <div className="motion-container relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl bg-gray-90 p-2.5">
+                  <div className="motion-container relative size-5">
                     <svg
                       width="20"
                       height="20"
@@ -1181,13 +1179,13 @@ export const BNPL = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                     {t('app.applications')}
                   </div>
                 </div>
 
-                <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
-                  <div className="relative size-5">
+                <div className="motion-container relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                  <div className="motion-container relative size-5">
                     <svg
                       width="20"
                       height="20"
@@ -1219,13 +1217,13 @@ export const BNPL = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                     {t('app.clients')}
                   </div>
                 </div>
 
-                <div className="relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
-                  <div className="relative size-5">
+                <div className="motion-container relative flex h-[44.92px] w-full items-center gap-3 self-stretch rounded-xl p-2.5">
+                  <div className="motion-container relative size-5">
                     <svg
                       width="20"
                       height="20"
@@ -1264,81 +1262,81 @@ export const BNPL = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex-1 text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-70 [font-family:'Roboto',Helvetica]">
                     {t('app.reports')}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch p-6">
-              <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
-                <div className="relative size-12 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
+            <div className="motion-container relative flex flex-1 grow flex-col items-start gap-5 self-stretch p-6">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-4">
+                <div className="motion-container relative size-12 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
 
-                <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
-                  <span className="leading-6 text-[#9ea7bb]">
+                <p className="motion-container relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
+                  <span className="motion-container leading-6 text-[#9ea7bb]">
                     {t('app.greeting')}
                   </span>
 
-                  <span className="leading-6 text-[#1c222f]">
+                  <span className="motion-container leading-6 text-[#1c222f]">
                     {' '}
                     {t('app.userName')}
                   </span>
                 </p>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
-                <div className="relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
-                    <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
-                      <div className="relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-[20.5px] self-stretch">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                  <div className="motion-container relative flex w-full flex-1 grow flex-col items-center justify-center gap-[11.96px] lg:w-auto">
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch">
+                      <div className="motion-container relative mt-[-0.75px] w-fit whitespace-nowrap text-[14.9px] font-medium leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('installment.id')}
                       </div>
 
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                      <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-xl bg-green-60 px-1.5 py-[3px]">
+                        <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-[10px] font-semibold leading-[14px] tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                           {t('installment.status')}
                         </div>
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
-                      <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-[17.94px] self-stretch">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('form.cost')}
                         </div>
 
-                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           187,000 ₽
                         </div>
                       </div>
 
-                      <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('form.advancePayment')}
                         </div>
 
-                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           14 500 ₽
                         </div>
                       </div>
 
-                      <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('form.term')}
                         </div>
 
-                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('form.termValue')}
                         </div>
                       </div>
 
-                      <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container relative mt-[-0.75px] self-stretch whitespace-nowrap text-[10.5px] font-normal leading-[14.9px] tracking-normal text-gray-90 opacity-50 [font-family:'Roboto',Helvetica]">
                           {t('form.nextPayment')}
                         </div>
 
-                        <div className="relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative self-stretch whitespace-nowrap text-[14.9px] font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           2,500 ₽
                         </div>
                       </div>
@@ -1346,116 +1344,116 @@ export const BNPL = () => {
                   </div>
                 </div>
 
-                <div className="relative flex w-[130%] flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
-                  <div className="relative flex flex-1 grow flex-col items-start gap-3">
-                    <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-[130%] flex-[0_0_auto] items-start justify-end gap-[11.96px] self-stretch rounded-[11.96px] bg-[#ffffff] p-[17.94px]">
+                  <div className="motion-container relative flex flex-1 grow flex-col items-start gap-3">
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                         {t('installment.details')}
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-start gap-7 self-stretch">
-                      <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-7 self-stretch">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-1.5">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('form.cost')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             85 950 ₽
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.interestRate')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             12%
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
                             {t('form.term')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             {t('form.termValue')}
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.accountBalance')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             2 500 ₽
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.overduePrincipal')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             0 ₽
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.overduePayment')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             0 ₽
                           </div>
                         </div>
                       </div>
 
-                      <div className="relative flex flex-1 grow flex-col items-start gap-1.5">
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-1.5">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.installmentEndDate')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             20.09.2025
                           </div>
                         </div>
 
                         {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.nextPaymentDate')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             20.04.2025
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.productName')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             {t('installment.headphones')}
                           </div>
                         </div>
 
-                        <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.loan')}
                           </div>
 
-                          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                             {t('installment.first')}
                           </div>
                         </div>
@@ -1473,54 +1471,54 @@ export const BNPL = () => {
         <Integrations />
         <Zaim />
 
-        <div className="dhidden relative hidden w-full flex-[0_0_auto] items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff]">
-          <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl p-6">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
-              <div className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
-                <div className="relative w-48 self-stretch rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
+        <div className="motion-container dhidden relative hidden w-full flex-[0_0_auto] items-start gap-6 self-stretch overflow-hidden rounded-3xl bg-[#ffffff]">
+          <div className="motion-container relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl p-6">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
+                <div className="motion-container relative w-48 self-stretch rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
 
-                <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
-                  <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]">
+                <div className="motion-container relative flex flex-1 grow flex-col items-start gap-4 p-3">
+                  <div className="motion-container relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]">
                     {t('social.title')}
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 lg:w-[293px]">
-                    <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                      <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
-                        <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 lg:w-[293px]">
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                      <div className="motion-container h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
+                        <div className="motion-container relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                       </div>
 
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('parameters.personalInfo')}
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                      <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
-                        <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                      <div className="motion-container h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
+                        <div className="motion-container relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                       </div>
 
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('social.bankAndAddress')}
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                      <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
-                        <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                      <div className="motion-container h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
+                        <div className="motion-container relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                       </div>
 
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('social.bankAndAddress')}
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
-                      <div className="h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
-                        <div className="relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
+                    <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-4 self-stretch">
+                      <div className="motion-container h-5w-full relative overflow-hidden rounded-[100px] bg-[#00cb82] lg:w-[34px]">
+                        <div className="motion-container relative left-4 top-0.5 size-4 rounded-lg bg-[#ffffff]" />
                       </div>
 
-                      <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('social.documents')}
                       </div>
                     </div>
@@ -1528,18 +1526,18 @@ export const BNPL = () => {
                 </div>
               </div>
 
-              <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
-                <div className="relative left-1 top-[3px] h-[18px] w-4">
+              <div className="motion-container relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
+                <div className="motion-container relative left-1 top-[3px] h-[18px] w-4">
                   {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
 
                   {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
                 </div>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
-                <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
-                  <div className="relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
-                    <div className="relative left-0.5 top-0.5 size-5">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-[#f9fafd] p-6">
+                <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
+                  <div className="motion-container relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
+                    <div className="motion-container relative left-0.5 top-0.5 size-5">
                       {/* Removed broken SVG: /img/bnpl/vector-25.svg */}
 
                       {/* Removed broken SVG: /img/bnpl/vector-29.svg */}
@@ -1547,46 +1545,46 @@ export const BNPL = () => {
                   </div>
                 </div>
 
-                <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                   {t('verification.creditHistory')}
                 </div>
               </div>
 
-              <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
-                <div className="relative left-1 top-[3px] h-[18px] w-4">
+              <div className="motion-container relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
+                <div className="motion-container relative left-1 top-[3px] h-[18px] w-4">
                   {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
 
                   {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
                 </div>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-green-60 p-6">
-                <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
-                  <div className="relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-green-60 p-6">
+                <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
+                  <div className="motion-container relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
                     {/* Removed broken SVG: /img/bnpl/vector-30.svg */}
                   </div>
                 </div>
 
-                <div className="relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex-1 text-2xl font-medium leading-8 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   {t('verification.applicationApproval')}
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]">
-            <p className="relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[480px]">
+          <div className="motion-container relative flex flex-1 grow flex-col items-start justify-center gap-9 overflow-hidden rounded-3xl p-7 lg:py-12 lg:pl-12 lg:pr-[68px]">
+            <p className="motion-container relative mt-[-1.00px] w-full text-[40px] font-medium leading-[48px] tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[480px]">
               {t('backoffice.title')}
             </p>
 
             {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-              <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[500px]">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
+              <div className="motion-container relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[500px]">
                 {t('automation.title')}
               </div>
 
-              <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]">
+              <p className="motion-container relative w-full text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica] lg:w-[500px]">
                 {t('automation.description')}
               </p>
             </div>

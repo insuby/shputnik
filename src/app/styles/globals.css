@@ -2,6 +2,8 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 @import 'app/styles/tailwind.css';
 @import 'app/styles/pagination.css';
+@import 'app/styles/safari-fixes.css';
+@import 'app/styles/safari-motion-fixes.css';
 
 * {
   -webkit-font-smoothing: antialiased;
