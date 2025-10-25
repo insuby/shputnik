@@ -15,8 +15,8 @@ export const MobileLayout = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [menuPanel, setMenuPanel] = useState<'root' | 'products'>('root');
-  const { isOpen } = useFeedbackForm();
-  const { t } = useTranslation(['mobile']);
+  const { isOpen, setIsOpen } = useFeedbackForm();
+  const { t } = useTranslation(['mobile', 'common']);
 
   const isBgEnabled = location.pathname === RoutesPath.MAIN;
   const isDevelopmentPage = location.pathname === RoutesPath.DEVELOPMENT;
@@ -1096,12 +1096,50 @@ export const MobileLayout = () => {
                 )}
               </nav>
               {menuPanel === 'root' && (
-                <div className="absolute inset-x-3 bottom-2 m-auto h-[136px] rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
-                  <div className="size-full p-[16px_24px]">
-                    <p className="text-xl font-bold leading-[140%] text-gray-90 ">
+                <div className="absolute inset-x-3 bottom-2 m-auto rounded-[32px] bg-[#f9fafd] p-[8px_8px_8px_0]">
+                  <div className="p-[16px_24px]">
+                    <div className="mb-4 flex items-center gap-3">
+                      <a
+                        href="https://t.me/sputniks"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Telegram"
+                        className="flex size-12 items-center justify-center rounded-full bg-white p-2 transition-colors hover:bg-[#e8f7fd] active:bg-[#d3f0fb]"
+                      >
+                        <svg
+                          width="23"
+                          height="20"
+                          viewBox="0 0 23 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M1.57478 8.62584C7.74753 5.81226 11.8568 3.94271 13.9203 3.0357C19.7932 0.46276 21.0278 0.0185104 21.8214 0C21.9978 0 22.3858 0.037021 22.6503 0.259146C22.8619 0.444249 22.9148 0.684885 22.9501 0.869989C22.9854 1.05509 23.0207 1.44381 22.9854 1.73998C22.6679 5.25695 21.2923 13.7902 20.5868 17.7144C20.287 19.3804 19.705 19.9357 19.1407 19.9912C17.9061 20.1023 16.9714 19.1397 15.7897 18.3253C13.9203 17.0481 12.8797 16.2521 11.0632 14.9934C8.96444 13.5496 10.3224 12.7537 11.5217 11.4579C11.8392 11.1247 17.2536 5.94183 17.3594 5.47907C17.377 5.42354 17.377 5.20142 17.2536 5.09035C17.1301 4.97929 16.9537 5.01631 16.8126 5.05333C16.6186 5.09035 13.6557 7.16352 7.88862 11.2543C7.04207 11.8652 6.2837 12.1613 5.59588 12.1428C4.83752 12.1243 3.39133 11.6986 2.29787 11.3283C0.975142 10.8841 -0.0830433 10.6435 0.00513875 9.86603C0.058048 9.4588 0.58714 9.05157 1.57478 8.62584Z"
+                            fill="#019AE3"
+                          />
+                        </svg>
+                      </a>
+                      <button
+                        onClick={() => {
+                          setIsMenuOpen(false);
+                          setIsOpen(true);
+                        }}
+                        className="flex flex-1 items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-base font-medium text-[#3573fc] transition-colors hover:bg-gray-10"
+                      >
+                        {t('actions.contactUs', { ns: 'common' })}
+                      </button>
+                    </div>
+                    <p className="text-xl font-bold leading-[140%] text-gray-90">
                       +7 (495) 006-21-57
                     </p>
-                    <p className="relative w-full pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] xl:w-[240px]">
+                    <a
+                      href="mailto:S@sptnk.co"
+                      className="underline mt-2 pb-2 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
+                        Напишите нам
+                    </a>
+                    <p className="relative w-full whitespace-pre-wrap pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] xl:w-[240px]">
                       {t('address', { ns: 'footer' })}
                     </p>
                   </div>
