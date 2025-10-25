@@ -1,0 +1,51 @@
+/* Safari-совместимые стили для SVG анимаций */
+
+/* Принудительное создание GPU-слоя для анимированных элементов */
+svg,
+[data-motion],
+.motion-layer {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Оптимизация рендеринга SVG в Safari */
+svg {
+  shape-rendering: geometricPrecision;
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Предотвращение "пропадания" элементов при скролле */
+.motion-container {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Исправление для Framer Motion анимаций */
+[data-framer-motion] {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Безопасные анимации для Safari */
+.safari-safe-animation {
+  opacity: 0.01; /* Вместо 0 для предотвращения пропадания */
+  transform: translateZ(0) translateY(50px);
+  -webkit-transform: translateZ(0) translateY(50px);
+}
+
+/* Исправление для overflow: hidden контейнеров */
+.overflow-container {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* Оптимизация для больших SVG */
+.large-svg {
+  contain: layout style paint;
+  will-change: transform;
+}
