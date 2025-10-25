@@ -15,13 +15,13 @@ export const Frame1 = () => {
   const ref41 = useRef<HTMLDivElement>(null);
   const ref42 = useRef<HTMLDivElement>(null);
   const ref42r = useRef<HTMLDivElement>(null);
-  const inView37l = useInView(ref37l, { once: true, margin: '-30px' });
-  const inView37r = useInView(ref37r, { once: true, margin: '-30px' });
-  const inView40 = useInView(ref40, { once: true, margin: '-30px' });
-  const inView41l = useInView(ref41l, { once: true, margin: '-30px' });
-  const inView41 = useInView(ref41, { once: true, margin: '-30px' });
-  const inView42 = useInView(ref42, { once: true, margin: '-30px' });
-  const inView42r = useInView(ref42r, { once: true, margin: '-30px' });
+  const inView37l = useInView(ref37l, { once: true, margin: '-50px' });
+  const inView37r = useInView(ref37r, { once: true, margin: '-50px' });
+  const inView40 = useInView(ref40, { once: true, margin: '-50px' });
+  const inView41l = useInView(ref41l, { once: true, margin: '-50px' });
+  const inView41 = useInView(ref41, { once: true, margin: '-50px' });
+  const inView42 = useInView(ref42, { once: true, margin: '-50px' });
+  const inView42r = useInView(ref42r, { once: true, margin: '-50px' });
 
   const navigate = useNavigate();
 
@@ -39,41 +39,41 @@ export const Frame1 = () => {
 
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-94)] self-stretch"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-94)] self-stretch"
       aria-labelledby="other-software"
     >
       <h2
         id="other-software"
-        className="text-adaptive-40 leading-adaptive-48 relative mt-[-1.00px] w-fit whitespace-nowrap font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="motion-container text-adaptive-40 leading-adaptive-48 relative mt-[-1.00px] w-fit whitespace-nowrap font-medium tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         <motion.span
           id="animate_37_left"
           ref={ref37l}
-          initial={{ opacity: 0, x: -40 }}
+          initial={{ opacity: 0.01, x: -40 }}
           animate={inView37l ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-[#1c222f]"
+          className="motion-container text-[#1c222f]"
         >
           {t('otherSoftware').split(' ')[0]}{' '}
         </motion.span>
         <motion.span
           id="animate_37_right"
           ref={ref37r}
-          initial={{ opacity: 0, x: 40 }}
+          initial={{ opacity: 0.01, x: 40 }}
           animate={inView37r ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="text-[#9ea7bb]"
+          className="motion-container text-[#9ea7bb]"
         >
           {t('otherSoftware').split(' ').slice(1).join(' ')}
         </motion.span>
       </h2>
 
-      <div className="relative flex h-[var(--size-520)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
-        <div className="relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
-          <div className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
-            <div className="relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
+      <div className="motion-container relative flex h-[var(--size-520)] w-full items-start gap-[var(--spacing-1-39)] self-stretch">
+        <div className="motion-container relative flex flex-1 grow items-center gap-[var(--spacing-1-39)] self-stretch">
+          <div className="motion-container group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[var(--spacing-2-22)] border-2 border-solid border-transparent bg-[#f9fafd]">
+            <div className="motion-container relative w-full flex-1 grow self-stretch overflow-hidden rounded-[var(--spacing-2-22)] bg-gray-100 bg-[100%_100%]">
               <svg
-                className="absolute"
+                className="motion-container absolute"
                 width="700"
                 height="600"
                 viewBox="0 0 700 600"
@@ -111,7 +111,7 @@ export const Frame1 = () => {
                 </defs>
               </svg>
               <svg
-                className="absolute"
+                className="motion-container absolute"
                 width="700"
                 height="600"
                 viewBox="0 0 700 600"
@@ -149,7 +149,7 @@ export const Frame1 = () => {
                 </defs>
               </svg>
               <svg
-                className="absolute"
+                className="motion-container absolute"
                 width="700"
                 height="522"
                 viewBox="0 0 700 522"
@@ -186,18 +186,18 @@ export const Frame1 = () => {
                   </filter>
                 </defs>
               </svg>
-              <div className="relative inset-0 m-auto size-full xl:w-[var(--size-560)]">
+              <div className="motion-container relative inset-0 m-auto size-full xl:w-[var(--size-560)]">
                 <motion.div
                   id="animate_40"
                   ref={ref40}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0.01, y: 40 }}
                   animate={inView40 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[var(--spacing-12-29)] top-[var(--spacing-6-94)] inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-2-22)] bg-[#ffffff5c] p-[var(--spacing-0-56)]"
+                  className="motion-container absolute left-[var(--spacing-12-29)] top-[var(--spacing-6-94)] inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-2-22)] bg-[#ffffff5c] p-[var(--spacing-0-56)]"
                 >
-                  <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
-                    <div className="h-7w-full relative xl:w-[142.55px]">
-                      <div className="relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-[var(--spacing-0-69)] self-stretch rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]">
+                    <div className="motion-container h-7w-full relative xl:w-[142.55px]">
+                      <div className="motion-container relative flex h-[var(--size-29)] w-full items-center justify-center xl:w-[var(--size-142)]">
                         <svg
                           width="112"
                           height="24"
@@ -243,14 +243,14 @@ export const Frame1 = () => {
                   </div>
                 </motion.div>
 
-                <div className="absolute left-0 top-[var(--pos-262)] h-[var(--size-104)] w-full xl:w-[var(--size-560)]">
+                <div className="motion-container absolute left-0 top-[var(--pos-262)] h-[var(--size-104)] w-full xl:w-[var(--size-560)]">
                   <motion.div
                     id="animate_41_left"
                     ref={ref41l}
-                    initial={{ opacity: 0, x: -40 }}
+                    initial={{ opacity: 0.01, x: -40 }}
                     animate={inView41l ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-0 top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
+                    className="motion-container absolute left-0 top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="58"
@@ -258,7 +258,7 @@ export const Frame1 = () => {
                       viewBox="0 0 58 59"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[var(--size-58)] w-full xl:w-[57.34px]"
+                      className="motion-container relative mx-[-0.67px] mb-[-0.67px] mt-[-1.32px] h-[var(--size-58)] w-full xl:w-[57.34px]"
                     >
                       <path
                         fillRule="evenodd"
@@ -310,10 +310,10 @@ export const Frame1 = () => {
                   <motion.div
                     id="animate_41"
                     ref={ref41}
-                    initial={{ opacity: 0, y: 40 }}
+                    initial={{ opacity: 0.01, y: 40 }}
                     animate={inView41 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[var(--spacing-10-56)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
+                    className="motion-container absolute left-[var(--spacing-10-56)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="56"
@@ -321,7 +321,7 @@ export const Frame1 = () => {
                       viewBox="0 0 56 56"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative size-14"
+                      className="motion-container relative size-14"
                     >
                       <rect
                         width="56"
@@ -354,10 +354,10 @@ export const Frame1 = () => {
                   <motion.div
                     id="animate_42"
                     ref={ref42}
-                    initial={{ opacity: 0, x: 40 }}
+                    initial={{ opacity: 0.01, x: 40 }}
                     animate={inView42 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[var(--spacing-31-67)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
+                    className="motion-container absolute left-[var(--spacing-31-67)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="56"
@@ -365,7 +365,7 @@ export const Frame1 = () => {
                       viewBox="0 0 56 56"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative size-14"
+                      className="motion-container relative size-14"
                     >
                       <mask
                         id="mask0_9569_17288"
@@ -390,10 +390,10 @@ export const Frame1 = () => {
                   <motion.div
                     id="animate_42_right"
                     ref={ref42r}
-                    initial={{ opacity: 0, x: 40 }}
+                    initial={{ opacity: 0.01, x: 40 }}
                     animate={inView42r ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut' }}
-                    className="absolute left-[var(--spacing-21-11)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
+                    className="motion-container absolute left-[var(--spacing-21-11)] top-0 inline-flex flex-col items-start gap-[var(--spacing-0-69)] rounded-[var(--spacing-1-67)] bg-[#ffffff] p-[var(--spacing-1-67)]"
                   >
                     <svg
                       width="57"
@@ -401,7 +401,7 @@ export const Frame1 = () => {
                       viewBox="0 0 57 53"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative size-14"
+                      className="motion-container relative size-14"
                     >
                       <g clipPath="url(#clip0_9569_17295)">
                         <path
@@ -441,7 +441,7 @@ export const Frame1 = () => {
                   viewBox="0 0 2 40"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[var(--pos-279)] top-[var(--pos-184)] h-10 w-0.5"
+                  className="motion-container absolute left-[var(--pos-279)] top-[var(--pos-184)] h-10 w-0.5"
                 >
                   <path d="M1 0V40" stroke="white" strokeWidth="2" />
                 </svg>
@@ -452,7 +452,7 @@ export const Frame1 = () => {
                   viewBox="0 0 458 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[var(--pos-49)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-458)]"
+                  className="motion-container absolute left-[var(--pos-49)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-458)]"
                 >
                   <path
                     d="M457 39V25C457 11.7452 446.255 1 433 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -467,7 +467,7 @@ export const Frame1 = () => {
                   viewBox="0 0 149 39"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="absolute left-[var(--pos-204)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-149)]"
+                  className="motion-container absolute left-[var(--pos-204)] top-[var(--pos-223)] h-[var(--size-39)] w-full xl:w-[var(--size-149)]"
                 >
                   <path
                     d="M148 39V25C148 11.7452 137.255 1 124 1H25C11.7452 1 1 11.7452 1 25V39"
@@ -478,33 +478,33 @@ export const Frame1 = () => {
               </div>
             </div>
           </div>
-          <div className="relative flex w-1/2 flex-col items-start justify-center gap-5 self-stretch">
+          <div className="motion-container relative flex w-1/2 flex-col items-start justify-center gap-5 self-stretch">
             <motion.div
               id="animate_17"
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0.01, y: 40 }}
               animate={inView37l ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
               onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-              className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+              className="motion-container group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
             >
-              <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+                <h3 className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('other.dataUnload.title')}
                 </h3>
 
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   {t('other.dataUnload.description')}
                 </p>
               </div>
 
-              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                 <svg
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
                 >
                   <path
                     d="M12 6L22 16L12 26"
@@ -518,30 +518,30 @@ export const Frame1 = () => {
 
             <motion.div
               id="animate_18"
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0.01, y: 40 }}
               animate={inView37l ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
               onClick={handleBankCreditClick}
-              className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+              className="motion-container group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
             >
-              <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+                <h3 className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('other.fdata.title')}
                 </h3>
 
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                   {t('other.fdata.description')}
                 </p>
               </div>
 
-              <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                 <svg
                   width="32"
                   height="32"
                   viewBox="0 0 32 32"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                  className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
                 >
                   <path
                     d="M12 6L22 16L12 26"

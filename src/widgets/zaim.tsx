@@ -10,36 +10,36 @@ export const Zaim = () => {
   const ref12 = useRef<HTMLDivElement>(null);
   const ref13 = useRef<HTMLDivElement>(null);
 
-  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
-  const inView11 = useInView(ref11, { once: true, margin: '-30px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-30px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-30px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-50px' });
+  const inView11 = useInView(ref11, { once: true, margin: '-50px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-50px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-50px' });
 
   return (
     <motion.div
       ref={ref10}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0.01, y: 50 }}
       animate={inView10 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch xl:gap-12"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch xl:gap-12"
     >
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]">
-        <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]">
+        <div className="motion-container relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
           {t('zaim.title')}
         </div>
       </div>
 
-      <div className="relative grid w-full grid-cols-1  items-start gap-6 self-stretch lg:grid-cols-3">
+      <div className="motion-container relative grid w-full grid-cols-1  items-start gap-6 self-stretch lg:grid-cols-3">
         <motion.div
           ref={ref11}
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0.01, x: -50 }}
           animate={inView11 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#fbab0014] p-4">
             <svg
-              className="relative size-8"
+              className="motion-container relative size-8"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -78,12 +78,12 @@ export const Zaim = () => {
             </svg>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('zaim.editConditions.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('zaim.editConditions.description')}
             </p>
           </div>
@@ -91,14 +91,14 @@ export const Zaim = () => {
 
         <motion.div
           ref={ref12}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView12 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <svg
-              className="relative size-8"
+              className="motion-container relative size-8"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -129,12 +129,12 @@ export const Zaim = () => {
             </svg>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('zaim.createAndSetup.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('zaim.createAndSetup.description')}
             </p>
           </div>
@@ -142,14 +142,14 @@ export const Zaim = () => {
 
         <motion.div
           ref={ref13}
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0.01, x: 50 }}
           animate={inView13 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <svg
-              className="relative size-8"
+              className="motion-container relative size-8"
               width="32"
               height="32"
               viewBox="0 0 32 32"
@@ -181,12 +181,12 @@ export const Zaim = () => {
             </svg>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('zaim.interestAndPenalties.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('zaim.interestAndPenalties.description')}
             </p>
           </div>

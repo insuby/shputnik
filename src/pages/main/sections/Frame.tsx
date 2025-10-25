@@ -24,15 +24,15 @@ export const Frame = () => {
     useRef(null),
   ];
   const inViews = refs.map((ref) =>
-    useInView(ref, { once: true, margin: '-30px' }),
+    useInView(ref, { once: true, margin: '-50px' }),
   );
   const delays = [0, 0.15, 0.3, 0.45, 0.6, 0.75];
 
   return (
-    <section className="w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
-      <div className="relative flex !min-h-[800px] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 pt-[88px] xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
+    <section className="motion-container w-full overflow-hidden rounded-[var(--spacing-1-67)] bg-[#ffffff] xl:rounded-[var(--spacing-2-22)]">
+      <div className="motion-container relative flex !min-h-[800px] w-full flex-col items-center gap-[var(--spacing-1-94)] overflow-hidden rounded-[var(--spacing-1-67)] px-[var(--spacing-1-11)] pb-0 pt-[88px] xl:h-[var(--size-900)] xl:gap-[var(--spacing-5-56)] xl:rounded-[var(--spacing-2-22)] xl:px-[var(--spacing-5-56)] xl:pt-[var(--spacing-6-11)]">
         <svg
-          className="absolute left-1/2 top-[var(--pos-220)] hidden h-[var(--size-560)] w-full -translate-x-1/2 lg:left-[var(--pos-113)] lg:top-[var(--pos-272)] lg:block lg:h-[var(--size-1060)] lg:w-[var(--size-1108)] lg:translate-x-0"
+          className="motion-container absolute left-1/2 top-[var(--pos-220)] hidden h-[var(--size-560)] w-full -translate-x-1/2 lg:left-[var(--pos-113)] lg:top-[var(--pos-272)] lg:block lg:h-[var(--size-1060)] lg:w-[var(--size-1108)] lg:translate-x-0"
           width="1125"
           height="1073"
           viewBox="0 0 1125 1073"
@@ -71,22 +71,22 @@ export const Frame = () => {
           </defs>
         </svg>
 
-        <div className="relative flex w-full max-w-[var(--size-980)] flex-col items-center justify-center gap-[var(--spacing-1-11)] px-0 xl:gap-[var(--spacing-1-94)] xl:px-0">
+        <div className="motion-container relative flex w-full max-w-[var(--size-980)] flex-col items-center justify-center gap-[var(--spacing-1-11)] px-0 xl:gap-[var(--spacing-1-94)] xl:px-0">
           <motion.h1
             id="animate_1"
             ref={refs[0]}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inViews[0] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[0], ease: 'easeOut' }}
-            className="text-adaptive-28-to-60 leading-adaptive-68 relative mt-[-1.00px] self-stretch text-center font-normal tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+            className="motion-container text-adaptive-28-to-60 leading-adaptive-68 relative mt-[-1.00px] self-stretch text-center font-normal tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
           >
-            <span className="font-medium text-[#1c222f]">
+            <span className="motion-container font-medium text-[#1c222f]">
               {t('hero.titleA')}
             </span>{' '}
-            <span className="font-medium text-[#3573fc]">
+            <span className="motion-container font-medium text-[#3573fc]">
               {t('hero.titleB')}{' '}
             </span>
-            <span className="font-medium text-[#1c222f]">
+            <span className="motion-container font-medium text-[#1c222f]">
               {t('hero.titleC')}
             </span>
           </motion.h1>
@@ -94,10 +94,10 @@ export const Frame = () => {
           <motion.p
             id="animate_2"
             ref={refs[1]}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: delays[1], ease: 'easeOut' }}
-            className="relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] xl:w-[var(--size-786)]"
+            className="motion-container relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#929cb3] [font-family:'Roboto',Helvetica] xl:w-[var(--size-786)]"
           >
             {t('hero.description')}
           </motion.p>
@@ -106,65 +106,65 @@ export const Frame = () => {
         <motion.div
           id="animate_phone"
           ref={refs[2]}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0.01, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{
             duration: 0.7,
             delay: delays[2] + 0.05,
             ease: 'easeOut',
           }}
-          className="absolute bottom-[-0.42vw] left-[var(--spacing-37-5)] hidden w-[var(--spacing-27-78)] flex-col gap-[var(--spacing-1-11)] rounded-t-[var(--spacing-2-78)] border-solid border-[var(--spacing-0-42)] border-gray-90 bg-white p-[var(--spacing-1-94)] lg:flex"
+          className="motion-container absolute bottom-[-0.42vw] left-[var(--spacing-37-5)] hidden w-[var(--spacing-27-78)] flex-col gap-[var(--spacing-1-11)] rounded-t-[var(--spacing-2-78)] border-solid border-[var(--spacing-0-42)] border-gray-90 bg-white p-[var(--spacing-1-94)] lg:flex"
         >
-          <div className="flex w-full items-center justify-between">
-            <div className="text-adaptive-24 leading-adaptive-32 font-semibold text-gray-90 [font-family:'Inter',Helvetica]">
+          <div className="motion-container flex w-full items-center justify-between">
+            <div className="motion-container text-adaptive-24 leading-adaptive-32 font-semibold text-gray-90 [font-family:'Inter',Helvetica]">
               {t('heroCards.greeting')} {t('heroCards.userName')}
             </div>
 
-            <div className="relative size-8">
-              <div className="absolute left-1 top-4 h-0.5 w-5 rounded bg-gray-40" />
-              <div className="absolute left-1 top-2 h-0.5 w-5 rounded bg-gray-40" />
-              <div className="absolute left-1 top-6 h-0.5 w-5 rounded bg-gray-40" />
+            <div className="motion-container relative size-8">
+              <div className="motion-container absolute left-1 top-4 h-0.5 w-5 rounded bg-gray-40" />
+              <div className="motion-container absolute left-1 top-2 h-0.5 w-5 rounded bg-gray-40" />
+              <div className="motion-container absolute left-1 top-6 h-0.5 w-5 rounded bg-gray-40" />
             </div>
           </div>
 
-          <div className="flex w-full flex-col gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-[#F2F5FF] p-[var(--spacing-1-67)]">
-            <div className="flex w-full items-stretch gap-[var(--spacing-1-11)]">
+          <div className="motion-container flex w-full flex-col gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-[#F2F5FF] p-[var(--spacing-1-67)]">
+            <div className="motion-container flex w-full items-stretch gap-[var(--spacing-1-11)]">
               <div
-                className="flex size-[var(--size-140)] items-center justify-center rounded-2xl bg-white bg-cover bg-center p-4"
+                className="motion-container flex size-[var(--size-140)] items-center justify-center rounded-2xl bg-white bg-cover bg-center p-4"
                 style={{
                   backgroundImage: "url('/img/Frame-1948755022.png')",
                 }}
               />
-              <div className="relative flex  size-[var(--size-140)] items-center justify-center gap-4 rounded-2xl bg-white p-4">
-                <div className="absolute -top-2 right-0 ">
+              <div className="motion-container relative flex  size-[var(--size-140)] items-center justify-center gap-4 rounded-2xl bg-white p-4">
+                <div className="motion-container absolute -top-2 right-0 ">
                   <CheckIcon
-                    className="inline-flex items-center justify-center rounded-[100px] p-1.5"
+                    className="motion-container inline-flex items-center justify-center rounded-[100px] p-1.5"
                     bgColor="#00CB82"
                     iconColor="#FFFFFF"
                   />
                 </div>
 
-                <div className="flex w-full flex-col items-center justify-around gap-[var(--spacing-0-83)]">
-                  <div className="text-center text-sm text-gray-40 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container flex w-full flex-col items-center justify-around gap-[var(--spacing-0-83)]">
+                  <div className="motion-container text-center text-sm text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('heroCards.approvalTitle')}
                   </div>
-                  <div className="text-adaptive-28 text-center font-medium leading-10 text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container text-adaptive-28 text-center font-medium leading-10 text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('heroCards.approvalAmount')}
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="flex w-full items-stretch gap-[var(--spacing-1-11)]">
-              <div className="flex size-[var(--spacing-9-72)] flex-col justify-center gap-[var(--spacing-0-56)] rounded-[var(--spacing-1-11)] bg-white p-[var(--spacing-1-11)]">
-                <div className="text-center text-sm text-gray-40 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container flex w-full items-stretch gap-[var(--spacing-1-11)]">
+              <div className="motion-container flex size-[var(--spacing-9-72)] flex-col justify-center gap-[var(--spacing-0-56)] rounded-[var(--spacing-1-11)] bg-white p-[var(--spacing-1-11)]">
+                <div className="motion-container text-center text-sm text-gray-40 [font-family:'Roboto',Helvetica]">
                   {t('heroCards.scoreTitle')}
                 </div>
-                <div className="text-adaptive-28 text-center font-medium leading-10 text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container text-adaptive-28 text-center font-medium leading-10 text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('heroCards.scoreValue')}
                 </div>
               </div>
-              <div className="flex size-[var(--spacing-9-72)] items-center justify-center rounded-[var(--spacing-1-11)] bg-white p-[var(--spacing-1-11)]">
+              <div className="motion-container flex size-[var(--spacing-9-72)] items-center justify-center rounded-[var(--spacing-1-11)] bg-white p-[var(--spacing-1-11)]">
                 <svg
                   width="112"
                   height="92"
@@ -203,14 +203,14 @@ export const Frame = () => {
         <motion.div
           id="animate_6"
           ref={refs[5]}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0.01, y: 40 }}
           animate={inViews[1] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[5], ease: 'easeOut' }}
-          className="absolute left-[var(--spacing-62-08)] top-[var(--spacing-50-69)] hidden items-center gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-white py-[var(--spacing-1-11)] pl-[var(--spacing-1-11)] pr-[var(--spacing-1-67)] lg:inline-flex"
+          className="motion-container absolute left-[var(--spacing-62-08)] top-[var(--spacing-50-69)] hidden items-center gap-[var(--spacing-1-11)] rounded-[var(--spacing-2-22)] bg-white py-[var(--spacing-1-11)] pl-[var(--spacing-1-11)] pr-[var(--spacing-1-67)] lg:inline-flex"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[var(--spacing-1-94)] rounded-[var(--spacing-1-67)] bg-[#f2f5ff] p-[var(--spacing-1-11)]">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-[var(--spacing-1-94)] rounded-[var(--spacing-1-67)] bg-[#f2f5ff] p-[var(--spacing-1-11)]">
             <svg
-              className="relative size-8"
+              className="motion-container relative size-8"
               width="28"
               height="28"
               viewBox="0 0 28 28"
@@ -263,12 +263,12 @@ export const Frame = () => {
             </svg>
           </div>
 
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+            <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
               {t('hero.monthlyPayment')}
             </div>
 
-            <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               4 950₽
             </div>
           </div>
@@ -277,58 +277,58 @@ export const Frame = () => {
         <motion.div
           id="animate_4"
           ref={refs[3]}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0.01, y: 40 }}
           animate={inViews[3] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[3], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[var(--spacing-9-72)] top-[var(--spacing-38-82)] items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-32-78)]"
+          className="motion-container hiddenw-full absolute left-[var(--spacing-9-72)] top-[var(--spacing-38-82)] items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-32-78)]"
         >
           <Graph />
 
-          <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-between self-stretch rounded-[var(--spacing-1-39)] bg-[#f6f8ff] p-[var(--spacing-1-39)]">
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
-              <div className="relative size-2 rounded bg-blue-50" />
+          <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start justify-between self-stretch rounded-[var(--spacing-1-39)] bg-[#f6f8ff] p-[var(--spacing-1-39)]">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
+              <div className="motion-container relative size-2 rounded bg-blue-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 {t('chart.current')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 23,456₽
               </div>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
-              <div className="relative size-2 rounded bg-green-60" />
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
+              <div className="motion-container relative size-2 rounded bg-green-60" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 {t('chart.main')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 42,000₽
               </div>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
-              <div className="relative size-2 rounded bg-yellow-50" />
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
+              <div className="motion-container relative size-2 rounded bg-yellow-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 {t('chart.interest')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 4,000₽
               </div>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
-              <div className="relative size-2 rounded bg-red-50" />
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-[var(--spacing-0-83)]">
+              <div className="motion-container relative size-2 rounded bg-red-50" />
 
-              <div className="relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 {t('chart.penalty')}
               </div>
 
-              <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+              <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                 2,700₽
               </div>
             </div>
@@ -338,26 +338,26 @@ export const Frame = () => {
         <motion.div
           id="animate_5"
           ref={refs[4]}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0.01, y: 40 }}
           animate={inViews[4] ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: delays[4], ease: 'easeOut' }}
-          className="hiddenw-full absolute left-[var(--spacing-66-46)] top-[var(--spacing-31-81)] flex-col items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-22-5)]"
+          className="motion-container hiddenw-full absolute left-[var(--spacing-66-46)] top-[var(--spacing-31-81)] flex-col items-center justify-center gap-[var(--spacing-1-39)] rounded-[var(--spacing-2-22)] bg-white p-[var(--spacing-1-11)] lg:flex lg:w-[var(--spacing-22-5)]"
         >
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-67)] self-stretch p-[var(--spacing-1-11)]">
-              <div className="w/full relative flex flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
-                <div className="w/full relative flex h-6 items-center justify-between self-stretch">
-                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container w/full relative flex flex-[0_0_auto] flex-col items-start gap-[var(--spacing-1-67)] self-stretch p-[var(--spacing-1-11)]">
+              <div className="motion-container w/full relative flex flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                <div className="motion-container w/full relative flex h-6 items-center justify-between self-stretch">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('calculator.amount')}
                   </div>
 
-                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     42 000₽
                   </div>
                 </div>
 
-                <div className="w/full relative h-3.5 self-stretch">
-                  <div className="h-3w-full relative -left-0.5 top-px xl:w-[var(--size-260)]">
+                <div className="motion-container w/full relative h-3.5 self-stretch">
+                  <div className="motion-container h-3w-full relative -left-0.5 top-px xl:w-[var(--size-260)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="260"
@@ -382,18 +382,18 @@ export const Frame = () => {
                   </div>
                 </div>
 
-                <div className="w/full relative flex items-center justify-between self-stretch">
-                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container w/full relative flex items-center justify-between self-stretch">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('calculator.term')}
                   </div>
 
-                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('calculator.termValue')}
                   </div>
                 </div>
 
-                <div className="w/full relative h-3.5 self-stretch">
-                  <div className="h-3w-full relative -left-0.5 top-px xl:w-[var(--size-260)]">
+                <div className="motion-container w/full relative h-3.5 self-stretch">
+                  <div className="motion-container h-3w-full relative -left-0.5 top-px xl:w-[var(--size-260)]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="260"
@@ -418,12 +418,12 @@ export const Frame = () => {
                   </div>
                 </div>
 
-                <div className="w/full relative flex items-center justify-between self-stretch">
-                  <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container w/full relative flex items-center justify-between self-stretch">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                     {t('calculator.rate')}
                   </div>
 
-                  <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     8%
                   </div>
                 </div>
@@ -431,7 +431,7 @@ export const Frame = () => {
 
               <button
                 onClick={onClick}
-                className="inline-flex items-center justify-center gap-[var(--spacing-0-56)] rounded-[var(--spacing-2-22)] bg-gray-90 px-[var(--spacing-1-11)] py-[var(--spacing-0-83)] text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]"
+                className="motion-container inline-flex items-center justify-center gap-[var(--spacing-0-56)] rounded-[var(--spacing-2-22)] bg-gray-90 px-[var(--spacing-1-11)] py-[var(--spacing-0-83)] text-base font-medium leading-6 tracking-normal text-white [font-family:'Roboto',Helvetica]"
               >
                 {t('calculator.calculate')}
               </button>

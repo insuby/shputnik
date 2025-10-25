@@ -24,41 +24,41 @@ export const DivWrapper = () => {
   const ref17 = useRef<HTMLDivElement>(null);
   const ref18 = useRef<HTMLDivElement>(null);
   const ref19 = useRef<HTMLDivElement>(null);
-  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-30px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-50px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-50px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-50px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-50px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-50px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-50px' });
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 xl:gap-7 xl:px-0"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch px-4 xl:gap-7 xl:px-0"
       aria-labelledby="classic-crediting"
     >
       <motion.h2
         ref={ref14}
-        initial={{ opacity: 0, x: -40 }}
+        initial={{ opacity: 0.01, x: -40 }}
         animate={inView14 ? { opacity: 1, x: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="text-adaptive-40 relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-fit xl:leading-10"
+        className="motion-container text-adaptive-40 relative mt-[-1.00px] w-full text-2xl font-normal leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-fit xl:leading-10"
         id="classic-crediting"
       >
-        <span className="xl:leading-adaptive-48 font-medium text-[#1c222f]">
+        <span className="motion-container xl:leading-adaptive-48 font-medium text-[#1c222f]">
           {t('classicLending')}
         </span>
       </motion.h2>
-      <div className="relative grid grid-cols-2 gap-4 self-stretch xl:h-[var(--size-660)]">
+      <div className="motion-container relative grid grid-cols-2 gap-4 self-stretch xl:h-[var(--size-660)]">
         <motion.div
           id="animate_15"
           ref={ref15}
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0.01, y: 40 }}
           animate={inView15 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
+          className="motion-container relative w-full self-stretch overflow-hidden rounded-[24px] bg-blue-50 xl:rounded-[32px]"
         >
-          <div className="relative bottom-0 left-[-222px] top-[-254px] hidden lg:block xl:w-[var(--size-1265)]">
+          <div className="motion-container relative bottom-0 left-[-222px] top-[-254px] hidden lg:block xl:w-[var(--size-1265)]">
             <svg
-              className="absolute left-0 top-[var(--pos-333)] h-[var(--size-571)] w-full xl:w-[var(--size-611)]"
+              className="motion-container absolute left-0 top-[var(--pos-333)] h-[var(--size-571)] w-full xl:w-[var(--size-611)]"
               width="808"
               height="874"
               viewBox="0 0 808 874"
@@ -97,7 +97,7 @@ export const DivWrapper = () => {
               </defs>
             </svg>
             <svg
-              className="absolute left-[var(--pos-398)] top-0 h-[var(--size-682)] w-full xl:w-[var(--size-716)]"
+              className="motion-container absolute left-[var(--pos-398)] top-0 h-[var(--size-682)] w-full xl:w-[var(--size-716)]"
               width="1012"
               height="807"
               viewBox="0 0 1012 807"
@@ -138,24 +138,24 @@ export const DivWrapper = () => {
             <motion.div
               id="animate_16"
               ref={ref16}
-              initial={{ opacity: 0, y: 40 }}
+              initial={{ opacity: 0.01, y: 40 }}
               animate={inView16 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="absolute left-[var(--pos-284)] top-[var(--pos-319)] inline-flex overflow-hidden  rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:min-h-[700px]"
+              className="motion-container absolute left-[var(--pos-284)] top-[var(--pos-319)] inline-flex overflow-hidden  rounded-[23.92px_23.92px_0px_0px] bg-[#f6f8fd] xl:min-h-[700px]"
             >
-              <div className="relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] xl:min-w-[393px]">
-                <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
-                  <div className="text-adaptive-23-9 relative self-stretch font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-col items-start gap-[23.92px] bg-[#ffffff] xl:min-w-[393px]">
+                <div className="motion-container relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
+                  <div className="motion-container text-adaptive-23-9 relative self-stretch font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('calculator.title')}
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-center gap-[11.96px] self-stretch rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                    <div className="relative flex flex-1 grow flex-col items-start gap-[1.49px]">
-                      <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-[11.96px] self-stretch rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                    <div className="motion-container relative flex flex-1 grow flex-col items-start gap-[1.49px]">
+                      <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                         {t('calculator.dealer')}
                       </div>
 
-                      <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('calculator.dealerName')}
                       </div>
                     </div>
@@ -166,7 +166,7 @@ export const DivWrapper = () => {
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative size-[17.94px]"
+                      className="motion-container relative size-[17.94px]"
                     >
                       <path
                         d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
@@ -178,50 +178,50 @@ export const DivWrapper = () => {
                     </svg>
                   </div>
 
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-[11.96px]">
-                    <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
-                        <div className="text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-[11.96px]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
+                      <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
+                        <div className="motion-container text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                           {t('calculator.condition.new')}
                         </div>
                       </div>
 
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
-                        <div className="text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
+                        <div className="motion-container text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('calculator.condition.used')}
                         </div>
                       </div>
                     </div>
 
-                    <div className="relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
-                        <div className="text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] items-start gap-[8.97px]">
+                      <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-[#f7f9ff] px-[14.95px] py-[7.47px]">
+                        <div className="motion-container text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('calculator.collateral.with')}
                         </div>
                       </div>
 
-                      <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
-                        <div className="text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-[7.47px] rounded-[74.74px] bg-gray-90 px-[14.95px] py-[7.47px]">
+                        <div className="motion-container text-adaptive-14-9 relative mt-[-0.75px] w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-white [font-family:'Roboto',Helvetica]">
                           {t('calculator.collateral.without')}
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.brand')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           Audi
                         </div>
                       </div>
 
                       <svg
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                         width="18"
                         height="18"
                         viewBox="0 0 18 18"
@@ -239,19 +239,19 @@ export const DivWrapper = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.model')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           A7 Sportback
                         </div>
                       </div>
 
                       <svg
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                         width="18"
                         height="18"
                         viewBox="0 0 18 18"
@@ -270,20 +270,20 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.year')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           2004
                         </div>
                       </div>
 
                       <svg
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                         width="18"
                         height="18"
                         viewBox="0 0 18 18"
@@ -301,19 +301,19 @@ export const DivWrapper = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.initialPayment')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           150 000
                         </div>
                       </div>
 
                       <svg
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                         width="18"
                         height="18"
                         viewBox="0 0 18 18"
@@ -332,14 +332,14 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-[14.95px] self-stretch">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px]">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.termMonths')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           24
                         </div>
                       </div>
@@ -350,7 +350,7 @@ export const DivWrapper = () => {
                         viewBox="0 0 18 18"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                       >
                         <path
                           d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
@@ -362,13 +362,13 @@ export const DivWrapper = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
-                      <div className="relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
-                        <div className="text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex h-[61.29px] flex-1 grow items-center gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#dbe1f0] p-[11.96px] opacity-0">
+                      <div className="motion-container relative my-[-0.06px] flex flex-1 grow flex-col items-start gap-[1.49px]">
+                        <div className="motion-container text-adaptive-10-5 relative mt-[-0.75px] self-stretch font-normal leading-[14.9px] tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                           {t('calculator.initialPayment')}
                         </div>
 
-                        <div className="text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-14-9 relative self-stretch whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           150 000
                         </div>
                       </div>
@@ -379,7 +379,7 @@ export const DivWrapper = () => {
                         viewBox="0 0 18 18"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="relative size-[17.94px]"
+                        className="motion-container relative size-[17.94px]"
                       >
                         <path
                           d="M14.625 6.7501L9.00001 12.3751L3.37502 6.7501"
@@ -393,20 +393,20 @@ export const DivWrapper = () => {
                   </div>
                 </div>
               </div>
-              <div className="relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
-                <div className="text-adaptive-23-9 relative self-stretch font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-col gap-[23.92px] self-stretch p-[29.9px]">
+                <div className="motion-container text-adaptive-23-9 relative self-stretch font-medium leading-[29.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('calculator.selectConditions')}
                 </div>
 
-                <div className="relative flex w-full flex-col gap-[20.5px]">
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
-                    <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
-                      <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
-                        <div className="text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-col gap-[20.5px]">
+                  <div className="motion-container relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
+                    <div className="motion-container relative flex flex-1 flex-col items-start gap-[11.96px]">
+                      <div className="motion-container relative inline-flex w-full items-center justify-between gap-[7.47px]">
+                        <div className="motion-container text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('calculator.optionYour.title')}
                         </div>
                         <svg
-                          className="relative size-[20.93px]"
+                          className="motion-container relative size-[20.93px]"
                           width="16"
                           height="16"
                           viewBox="0 0 16 16"
@@ -423,28 +423,28 @@ export const DivWrapper = () => {
                           />
                         </svg>
                       </div>
-                      <div className="relative grid w-full grid-cols-3 gap-[17.94px]">
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative grid w-full grid-cols-3 gap-[17.94px]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             187, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             2, 560, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             3,5%
                           </div>
                         </div>
@@ -452,35 +452,35 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
-                    <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
-                      <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
-                        <div className="text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
+                    <div className="motion-container relative flex flex-1 flex-col items-start gap-[11.96px]">
+                      <div className="motion-container relative inline-flex w-full items-center justify-between gap-[7.47px]">
+                        <div className="motion-container text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('calculator.optionYour.title')}
                         </div>
                       </div>
-                      <div className="w/full relative grid grid-cols-3 gap-[17.94px]">
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container w/full relative grid grid-cols-3 gap-[17.94px]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             166, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             2, 450, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-[#00B336] [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-[#00B336] [font-family:'Roboto',Helvetica]">
                             3,2%
                           </div>
                         </div>
@@ -488,35 +488,35 @@ export const DivWrapper = () => {
                     </div>
                   </div>
 
-                  <div className="relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
-                    <div className="relative flex flex-1 flex-col items-start gap-[11.96px]">
-                      <div className="relative inline-flex w-full items-center justify-between gap-[7.47px]">
-                        <div className="text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-[334.11px] items-start gap-[11.96px] rounded-[11.96px] border-[0.75px] border-solid border-[#DBE2F0] bg-white p-[17.94px]">
+                    <div className="motion-container relative flex flex-1 flex-col items-start gap-[11.96px]">
+                      <div className="motion-container relative inline-flex w-full items-center justify-between gap-[7.47px]">
+                        <div className="motion-container text-adaptive-14-95 relative w-fit whitespace-nowrap font-normal leading-[20.9px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('calculator.optionYour.title')}
                         </div>
                       </div>
-                      <div className="w/full relative grid grid-cols-3 gap-[17.94px]">
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container w/full relative grid grid-cols-3 gap-[17.94px]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.monthlyPayment')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             96, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.sum')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             2, 640, 000 ₽
                           </div>
                         </div>
-                        <div className="relative inline-flex flex-col items-start gap-[1.49px]">
-                          <div className="text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container relative inline-flex flex-col items-start gap-[1.49px]">
+                          <div className="motion-container text-adaptive-10-46 relative whitespace-nowrap leading-[14.9px] text-gray-40 [font-family:'Roboto',Helvetica]">
                             {t('calculator.interestShort')}
                           </div>
-                          <div className="text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container text-adaptive-14-95 relative leading-[20.9px] text-gray-90 [font-family:'Roboto',Helvetica]">
                             3,6%
                           </div>
                         </div>
@@ -529,34 +529,34 @@ export const DivWrapper = () => {
           </div>
         </motion.div>
 
-        <div className="relative flex w-full flex-col items-start justify-center gap-5 self-stretch">
+        <div className="motion-container relative flex w-full flex-col items-start justify-center gap-5 self-stretch">
           <motion.div
             id="animate_17"
             ref={ref17}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inView17 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={() => navigate(RoutesPath.BUSINESSCREDIT)}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            className="motion-container group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
-            <div className="relative flex flex-1 grow flex-col items-start gap-2">
-              <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+              <h3 className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('cards.businessCredit.title')}
               </h3>
 
-              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {t('cards.businessCredit.desc')}
               </p>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
               >
                 <path
                   d="M12 6L22 16L12 26"
@@ -571,30 +571,30 @@ export const DivWrapper = () => {
           <motion.div
             id="animate_18"
             ref={ref18}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleBankCreditClick}
-            className="group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
+            className="motion-container group relative flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff]  hover:bg-[#f5f7ff] xl:p-10"
           >
-            <div className="relative flex flex-1 grow flex-col items-start gap-2">
-              <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+              <h3 className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('cards.bankCredit.title')}
               </h3>
 
-              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {t('cards.bankCredit.desc')}
               </p>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
               >
                 <path
                   d="M12 6L22 16L12 26"
@@ -609,30 +609,30 @@ export const DivWrapper = () => {
           <motion.div
             id="animate_19"
             ref={ref19}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inView19 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             onClick={handleAutocreditClick}
-            className="group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent  bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
+            className="motion-container group relative mx-[-2.00px] mb-[-2.00px] flex w-full flex-1 grow cursor-pointer items-center gap-7 self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent  bg-[#f9fafd] p-8 transition-colors hover:border-[#acc5ff] hover:bg-[#f5f7ff] xl:p-10"
           >
-            <div className="relative flex flex-1 grow flex-col items-start gap-2">
-              <h3 className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+              <h3 className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                 {t('cards.autocredit.title')}
               </h3>
 
-              <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                 {t('cards.autocredit.desc')}
               </p>
             </div>
 
-            <div className="relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+            <div className="motion-container relative inline-flex flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
               <svg
                 width="32"
                 height="32"
                 viewBox="0 0 32 32"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
               >
                 <path
                   d="M12 6L22 16L12 26"

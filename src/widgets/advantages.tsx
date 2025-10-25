@@ -17,45 +17,45 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
   const ref6 = useRef(null);
   const ref7 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-50px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-50px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-50px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-50px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-50px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-50px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-50px' });
 
   return (
     <motion.div
       ref={ref1}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0.01, y: 50 }}
       animate={inView1 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7  self-stretch xl:gap-12"
+      className="motion-container relative mx-auto flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7  self-stretch xl:gap-12"
     >
       <motion.div
         ref={ref2}
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0.01, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
+        className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 xl:w-[656px]"
       >
         <motion.div
           ref={ref3}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView3 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
+          className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]"
         >
           {t('advantages.title')}
         </motion.div>
 
         <motion.p
           ref={ref4}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView4 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative self-stretch text-center text-xl  font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
+          className="motion-container relative self-stretch text-center text-xl  font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]"
         >
           {t('advantages.subtitle')}
         </motion.p>
@@ -63,17 +63,17 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
 
       <motion.div
         ref={ref5}
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0.01, y: 50 }}
         animate={inView5 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row"
+        className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start  gap-6 self-stretch lg:!flex-row"
       >
         <motion.div
           ref={ref6}
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0.01, x: -50 }}
           animate={inView6 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
         >
           <svg
             width="64"
@@ -81,7 +81,7 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
             viewBox="0 0 64 64"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative flex-[0_0_auto]"
+            className="motion-container relative flex-[0_0_auto]"
           >
             <rect
               width="64"
@@ -134,25 +134,25 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
             />
           </svg>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('advantages.flexibleSetup.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('advantages.flexibleSetup.description')}
             </p>
           </div>
         </motion.div>
 
-        <div className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
+        <div className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10">
           <svg
             width="64"
             height="64"
             viewBox="0 0 64 64"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative flex-[0_0_auto]"
+            className="motion-container relative flex-[0_0_auto]"
           >
             <rect
               width="64"
@@ -233,12 +233,12 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
             />
           </svg>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('advantages.fullAutomation.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('advantages.fullAutomation.description')}
             </p>
           </div>
@@ -246,10 +246,10 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
 
         <motion.div
           ref={ref7}
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0.01, x: 50 }}
           animate={inView7 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-          className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 xl:p-10"
         >
           <svg
             width="64"
@@ -257,7 +257,7 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
             viewBox="0 0 64 64"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="relative flex-[0_0_auto]"
+            className="motion-container relative flex-[0_0_auto]"
           >
             <rect
               width="64"
@@ -289,12 +289,12 @@ export const Advantages = ({ namespace = 'widgets' }: AdvantagesProps) => {
             />
           </svg>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('advantages.costOptimization.title')}
             </div>
 
-            <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+            <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
               {t('advantages.costOptimization.description')}
             </p>
           </div>

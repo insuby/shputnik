@@ -26,34 +26,34 @@ export const Div = () => {
   const ref29 = useRef<HTMLDivElement>(null);
   const ref30 = useRef<HTMLParagraphElement>(null);
   const ref31 = useRef<HTMLParagraphElement>(null);
-  const inView20 = useInView(ref20, { once: true, margin: '-30px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-30px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-30px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-30px' });
-  const inView24 = useInView(ref24, { once: true, margin: '-30px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-30px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-30px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-30px' });
-  const inView28 = useInView(ref28, { once: true, margin: '-30px' });
-  const inView29 = useInView(ref29, { once: true, margin: '-30px' });
-  const inView30 = useInView(ref30, { once: true, margin: '-30px' });
-  const inView31 = useInView(ref31, { once: true, margin: '-30px' });
+  const inView20 = useInView(ref20, { once: true, margin: '-50px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-50px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-50px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-50px' });
+  const inView24 = useInView(ref24, { once: true, margin: '-50px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-50px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-50px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-50px' });
+  const inView28 = useInView(ref28, { once: true, margin: '-50px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-50px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-50px' });
+  const inView31 = useInView(ref31, { once: true, margin: '-50px' });
   return (
     <section
-      className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch"
       aria-labelledby="credit-in-store-online"
     >
       <h2
         id="credit-in-store-online"
-        className="text-adaptive-40 relative mt-[-1.00px] w-fit font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+        className="motion-container text-adaptive-40 relative mt-[-1.00px] w-fit font-normal leading-10 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
       >
         <motion.span
           id="animate_20"
           ref={ref20}
-          initial={{ opacity: 0, x: -40 }}
+          initial={{ opacity: 0.01, x: -40 }}
           animate={inView20 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="font-medium leading-[0.1px] text-[#9ea7bb]"
+          className="motion-container font-medium leading-[0.1px] text-[#9ea7bb]"
         >
           {t('lendingStoreOnline.headingLeft')}
           <br />
@@ -61,31 +61,31 @@ export const Div = () => {
         <motion.span
           id="animate_21"
           ref={ref21}
-          initial={{ opacity: 0, x: 40 }}
+          initial={{ opacity: 0.01, x: 40 }}
           animate={inView21 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="leading-adaptive-48 font-medium text-[#1c222f]"
+          className="motion-container leading-adaptive-48 font-medium text-[#1c222f]"
         >
           {t('lendingStoreOnline.headingRight')}
         </motion.span>
       </h2>
-      <div className="relative flex min-h-[var(--size-600)] w-full items-start gap-5 self-stretch">
-        <div className="relative flex flex-1 grow items-center gap-5 self-stretch">
+      <div className="motion-container relative flex min-h-[var(--size-600)] w-full items-start gap-5 self-stretch">
+        <div className="motion-container relative flex flex-1 grow items-center gap-5 self-stretch">
           <motion.div
             id="animate_24"
             ref={ref24}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inView24 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="motion-container group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
-              className="relative w-full flex-1 grow self-stretch rounded-[32px]"
+              className="motion-container relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
+              <div className="motion-container relative h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute z-10"
+                  className="motion-container absolute z-10"
                   width="720"
                   height="368"
                   viewBox="0 0 720 368"
@@ -162,50 +162,50 @@ export const Div = () => {
                 <motion.div
                   id="animate_25"
                   ref={ref25}
-                  initial={{ opacity: 0, x: -40 }}
+                  initial={{ opacity: 0.01, x: -40 }}
                   animate={inView25 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-12 top-12 inline-flex items-center rounded-[32px] bg-white p-4"
+                  className="motion-container absolute left-12 top-12 inline-flex items-center rounded-[32px] bg-white p-4"
                 >
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-2.5 p-3">
-                    <div className="relative flex size-40 items-start gap-3">
-                      <div className="relative size-[var(--size-148)] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-2.5 p-3">
+                    <div className="motion-container relative flex size-40 items-start gap-3">
+                      <div className="motion-container relative size-[var(--size-148)] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
                     </div>
                   </div>
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl bg-[#f6f8ff] p-6">
-                    <div className="relative mt-[-1.00px] self-stretch text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl bg-[#f6f8ff] p-6">
+                    <div className="motion-container relative mt-[-1.00px] self-stretch text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('lendingStoreOnline.productName')}
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
-                        <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-2.5">
+                      <div className="motion-container h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.cost')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+                        <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           23,456₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
-                        <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.advancePayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+                        <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           42,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
-                        <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('calculator.term')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+                        <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           4,000₽
                         </div>
                       </div>
-                      <div className="h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
-                        <div className="relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container h-5w-full relative flex items-center gap-3 xl:w-[var(--size-264)]">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                           {t('lendingStoreOnline.nextPayment')}
                         </div>
-                        <div className="relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
+                        <div className="motion-container relative mt-[-1.00px] w-full text-right text-sm font-medium leading-5 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-72)]">
                           2,700₽
                         </div>
                       </div>
@@ -215,14 +215,14 @@ export const Div = () => {
                 <motion.div
                   id="animate_27"
                   ref={ref27}
-                  initial={{ opacity: 0, y: 40 }}
+                  initial={{ opacity: 0.01, y: 40 }}
                   animate={inView27 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[var(--pos-363)] top-[var(--pos-238)] inline-flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
+                  className="motion-container absolute left-[var(--pos-363)] top-[var(--pos-238)] inline-flex items-center gap-4 rounded-[32px] bg-white py-4 pl-4 pr-6"
                 >
-                  <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-7 rounded-3xl bg-[#f2f5ff] p-4">
                     <svg
-                      className="relative size-8"
+                      className="motion-container relative size-8"
                       width="28"
                       height="28"
                       viewBox="0 0 28 28"
@@ -274,47 +274,47 @@ export const Div = () => {
                       />
                     </svg>
                   </div>
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+                    <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {t('hero.monthlyPayment')}
                     </div>
-                    <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       4 950₽
                     </div>
                   </div>
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
               <motion.div
                 id="animate_28"
                 ref={ref28}
-                initial={{ opacity: 0, x: -40 }}
+                initial={{ opacity: 0.01, x: -40 }}
                 animate={inView28 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 {t('lendingStoreOnline.bnplTitle')}
               </motion.div>
               <motion.div
                 id="animate_30"
                 ref={ref30}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0.01, y: 40 }}
                 animate={inView30 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <span className="inline-block w-10/12">
+                <span className="motion-container inline-block w-10/12">
                   {t('lendingStoreOnline.bnplDesc')}
                 </span>
-                <div className="absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+                <div className="motion-container absolute bottom-0 right-0 inline-flex h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                    className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
                   >
                     <path
                       d="M12 6L22 16L12 26"
@@ -330,18 +330,18 @@ export const Div = () => {
           <motion.div
             id="animate_22"
             ref={ref22}
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0.01, y: 40 }}
             animate={inView22 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
+            className="motion-container group relative flex flex-1 grow cursor-pointer flex-col items-start justify-center self-stretch overflow-hidden rounded-[32px] border-2 border-solid border-transparent bg-[#f9fafd] transition-colors  hover:border-[#acc5ff] hover:bg-[#f5f7ff]"
           >
             <Link
               to={RoutesPath.BNPL}
-              className="relative w-full flex-1 grow self-stretch rounded-[32px]"
+              className="motion-container relative w-full flex-1 grow self-stretch rounded-[32px]"
             >
-              <div className="relative left-[var(--pos-67)] h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
+              <div className="motion-container relative left-[var(--pos-67)] h-[var(--size-368)] w-full xl:w-[var(--size-678)]">
                 <svg
-                  className="absolute z-10"
+                  className="motion-container absolute z-10"
                   width="700"
                   height="368"
                   viewBox="0 0 700 368"
@@ -418,59 +418,59 @@ export const Div = () => {
                 <motion.div
                   id="animate_26"
                   ref={ref26}
-                  initial={{ opacity: 0, x: 40 }}
+                  initial={{ opacity: 0.01, x: 40 }}
                   animate={inView26 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute left-[var(--pos-215)] top-[var(--pos-26)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
+                  className="motion-container absolute left-[var(--pos-215)] top-[var(--pos-26)] inline-flex flex-col items-start justify-center gap-4 rounded-[32px] bg-white p-7"
                 >
-                  <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
-                    <div className="relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-264)]">
+                  <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start gap-1">
+                    <div className="motion-container relative mt-[-1.00px] w-full text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:w-[var(--size-264)]">
                       {t('lendingStoreOnline.paymentSchedule')}
                     </div>
-                    <div className="relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-180)]">
+                    <div className="motion-container relative w-full text-sm font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica] xl:w-[var(--size-180)]">
                       {t('lendingStoreOnline.contract')}
                     </div>
                   </div>
-                  <div className="relative inline-flex h-[var(--size-154)] items-end">
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-76)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative inline-flex h-[var(--size-154)] items-end">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-76)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.march')}
                       </div>
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-86)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-86)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.april')}
                       </div>
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-105)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-105)] w-2 rounded-3xl bg-[linear-gradient(0deg,rgba(255,255,255,1)_0%,rgba(0,203,130,1)_100%)]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.may')}
                       </div>
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-120)] w-2 rounded-3xl bg-[#f2f4fb]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-120)] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.june')}
                       </div>
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-91)] w-2 rounded-3xl bg-[#f2f4fb]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-91)] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.july')}
                       </div>
                     </div>
-                    <div className="relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
-                      <div className="relative h-[var(--size-98)] w-2 rounded-3xl bg-[#f2f4fb]" />
-                      <div className="relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-center justify-center gap-2.5">
+                      <div className="motion-container relative h-[var(--size-98)] w-2 rounded-3xl bg-[#f2f4fb]" />
+                      <div className="motion-container relative w-11 text-center text-xs font-normal leading-4 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                         {t('lendingStoreOnline.months.august')}
                       </div>
                     </div>
                   </div>
                   <svg
-                    className="absolute left-0 top-[var(--pos-109)] h-24 w-full xl:w-[var(--size-328)]"
+                    className="motion-container absolute left-0 top-[var(--pos-109)] h-24 w-full xl:w-[var(--size-328)]"
                     width="329"
                     height="62"
                     viewBox="0 0 329 62"
@@ -499,29 +499,29 @@ export const Div = () => {
                       </linearGradient>
                     </defs>
                   </svg>
-                  <div className="absolute left-[var(--pos-156)] top-[var(--pos-133)] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
+                  <div className="motion-container absolute left-[var(--pos-156)] top-[var(--pos-133)] size-3 rounded-md border-2 border-solid border-[#00cb82] bg-[#ffffff]" />
                 </motion.div>
                 <motion.div
                   id="animate_23"
                   ref={ref23}
-                  initial={{ opacity: 0, x: -40 }}
+                  initial={{ opacity: 0.01, x: -40 }}
                   animate={inView23 ? { opacity: 1, x: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut' }}
-                  className="absolute bottom-0 left-0 top-14 inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
+                  className="motion-container absolute bottom-0 left-0 top-14 inline-flex flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4"
                 >
-                  <div className="relative size-[var(--size-212)] rounded-[100px]">
-                    <div className="relative left-[var(--pos-7)] top-[var(--pos-7)] size-[var(--size-198)]">
-                      <div className="absolute left-10 top-[var(--pos-68)] inline-flex h-[var(--size-62)] flex-col items-center gap-0.5">
-                        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                  <div className="motion-container relative size-[var(--size-212)] rounded-[100px]">
+                    <div className="motion-container relative left-[var(--pos-7)] top-[var(--pos-7)] size-[var(--size-198)]">
+                      <div className="motion-container absolute left-10 top-[var(--pos-68)] inline-flex h-[var(--size-62)] flex-col items-center gap-0.5">
+                        <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                           {t('lendingStoreOnline.currentBalance')}
                         </div>
-                        <div className="text-adaptive-28 relative w-fit whitespace-nowrap text-center font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                        <div className="motion-container text-adaptive-28 relative w-fit whitespace-nowrap text-center font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                           44,000₽
                         </div>
                       </div>
-                      <div className="absolute left-0 top-0 size-[var(--size-198)] rounded-[99px] border-[10px] border-solid border-neutral-50" />
+                      <div className="motion-container absolute left-0 top-0 size-[var(--size-198)] rounded-[99px] border-[10px] border-solid border-neutral-50" />
                       <svg
-                        className="absolute left-0 top-0 size-[var(--size-198)]"
+                        className="motion-container absolute left-0 top-0 size-[var(--size-198)]"
                         width="198"
                         height="198"
                         viewBox="0 0 198 198"
@@ -555,47 +555,47 @@ export const Div = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
-                    <div className="relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-between self-stretch rounded-[20px] bg-[#f6f8ff] px-4 py-3">
+                    <div className="motion-container relative w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                       {t('lendingStoreOnline.loanAmount')}
                     </div>
-                    <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       122, 000₽
                     </div>
                   </div>
                 </motion.div>
               </div>
             </Link>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-end gap-7 self-stretch p-8 pt-0 xl:p-10">
               <motion.div
                 id="animate_29"
                 ref={ref29}
-                initial={{ opacity: 0, x: 40 }}
+                initial={{ opacity: 0.01, x: 40 }}
                 animate={inView29 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
               >
                 {t('lendingStoreOnline.posTitle')}
               </motion.div>
               <motion.div
                 id="animate_31"
                 ref={ref31}
-                initial={{ opacity: 0, y: 40 }}
+                initial={{ opacity: 0.01, y: 40 }}
                 animate={inView31 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut' }}
-                className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
               >
-                <span className="inline-block w-10/12">
+                <span className="motion-container inline-block w-10/12">
                   {t('lendingStoreOnline.posDesc')}
                 </span>
-                <div className="absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
+                <div className="motion-container absolute bottom-0 right-0 inline-flex  h-[-99px] flex-[0_0_auto] items-center gap-2.5 rounded-[100px] bg-white p-4">
                   <svg
                     width="32"
                     height="32"
                     viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
+                    className="motion-container stroke-[#9FA7BC] group-hover:stroke-[#3573FC]"
                   >
                     <path
                       d="M12 6L22 16L12 26"

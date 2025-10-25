@@ -19,25 +19,25 @@ export const Feedback = () => {
   const ref17 = useRef(null);
   const ref18 = useRef(null);
 
-  const inView1 = useInView(ref1, { once: true, margin: '-30px' });
-  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
+  const inView1 = useInView(ref1, { once: true, margin: '-50px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-50px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-50px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-50px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-50px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-50px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-50px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-50px' });
 
   return (
-    <div className="relative flex size-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 lg:w-full">
-      <div className="relative flex min-h-[330px] w-full  flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:!p-[60px]">
+    <div className="motion-container relative flex size-full !flex-[0_0_auto] flex-col items-start gap-2.5 rounded-[40px] bg-[#3573fc1f] p-3 lg:w-full">
+      <div className="motion-container relative flex min-h-[330px] w-full  flex-[0_0_auto] items-center gap-2.5 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:!p-[60px]">
         <svg
           width="939"
           height="763"
           viewBox="0 0 939 763"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-14 top-[-306px] h-[590px] w-full lg:w-[620px]"
+          className="motion-container absolute left-14 top-[-306px] h-[590px] w-full lg:w-[620px]"
           aria-hidden={true}
         >
           <g opacity="0.4" filter="url(#filter0_f_0_4)">
@@ -77,7 +77,7 @@ export const Feedback = () => {
           viewBox="0 0 1040 846"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute left-[666px] top-[-109px] h-[675px] w-full lg:w-[727px]"
+          className="motion-container absolute left-[666px] top-[-109px] h-[675px] w-full lg:w-[727px]"
           aria-hidden={true}
         >
           <g opacity="0.3" filter="url(#filter0_f_0_5)">
@@ -111,24 +111,24 @@ export const Feedback = () => {
           </defs>
         </svg>
 
-        <div className="relative flex flex-col items-start gap-7 lg:w-[696px]">
-          <div className="relative flex w-full max-w-[90%] flex-col items-start gap-4 self-stretch">
+        <div className="motion-container relative flex flex-col items-start gap-7 lg:w-[696px]">
+          <div className="motion-container relative flex w-full max-w-[90%] flex-col items-start gap-4 self-stretch">
             <motion.div
               ref={ref1}
-              initial={{ opacity: 0, x: 80 }}
+              initial={{ opacity: 0.01, x: 80 }}
               animate={inView1 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="relative mt-[-1.00px] max-w-[70%] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica] lg:whitespace-nowrap"
+              className="motion-container relative mt-[-1.00px] max-w-[70%] self-stretch text-[40px] font-medium leading-[48px] tracking-normal text-white [font-family:'Roboto',Helvetica] lg:whitespace-nowrap"
             >
               {t('feedback.title')}
             </motion.div>
 
             <motion.p
               ref={ref2}
-              initial={{ opacity: 0, y: 80 }}
+              initial={{ opacity: 0.01, y: 80 }}
               animate={inView2 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: 'easeOut', delay: 0.1 }}
-              className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-white opacity-60 [font-family:'Roboto',Helvetica]"
+              className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-white opacity-60 [font-family:'Roboto',Helvetica]"
             >
               {t('feedback.subtitle')}
             </motion.p>
@@ -136,60 +136,60 @@ export const Feedback = () => {
 
           <motion.button
             ref={ref3}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView3 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.2 }}
             onClick={() => setIsOpen(true)}
-            className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:w-fit"
+            className="motion-container all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-white px-8 py-4 md:w-fit"
           >
-            <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
               {t('feedback.contactButton')}
             </div>
           </motion.button>
         </div>
 
-        <div className="absolute -bottom-6 left-[var(--pos-789)] hidden w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6 lg:flex">
-          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="motion-container absolute -bottom-6 left-[var(--pos-789)] hidden w-[328px] flex-col items-start gap-3 rounded-t-[32px] bg-[#ffffff] p-6 lg:flex">
+          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-center text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
             Калькулятор
           </div>
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
-                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start">
+                <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                   Сумма
                 </div>
-                <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   160 000 ₽
                 </div>
               </div>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <img
-                  className="relative mt-[-6.00px] h-[30px] w-full self-stretch"
+                  className="motion-container relative mt-[-6.00px] h-[30px] w-full self-stretch"
                   alt="Frame"
                   src="/img/frame-83-2.svg"
                 />
-                <div className="relative flex h-4 w-full items-start justify-between self-stretch">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex h-4 w-full items-start justify-between self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                     10 000 ₽
                   </div>
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                     200 000 ₽
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start">
-                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch overflow-hidden rounded-2xl bg-[#f2f5ff] p-4">
+              <div className="motion-container relative inline-flex flex-[0_0_auto] flex-col items-start">
+                <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
                   Период
                 </div>
-                <div className="relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   8 месяцев
                 </div>
               </div>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
                 <img
-                  className="relative mb-[-10.00px] mt-[-6.00px] h-[30px] w-full self-stretch"
+                  className="motion-container relative mb-[-10.00px] mt-[-6.00px] h-[30px] w-full self-stretch"
                   alt="Frame"
                   src="/img/frame-83-4.svg"
                 />
@@ -200,48 +200,48 @@ export const Feedback = () => {
 
         <motion.div
           ref={ref14}
-          initial={{ opacity: 0, x: 80 }}
+          initial={{ opacity: 0.01, x: 80 }}
           animate={inView14 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
-          className="absolute bottom-0 left-[var(--pos-1046)] hidden flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4 lg:inline-flex"
+          className="motion-container absolute bottom-0 left-[var(--pos-1046)] hidden flex-col items-center justify-center gap-3 rounded-[32px_32px_0px_0px] bg-white p-4 lg:inline-flex"
         >
           <motion.div
             ref={ref15}
-            initial={{ opacity: 0, scale: 0 }}
+            initial={{ opacity: 0.01, scale: 0 }}
             animate={inView15 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.4 }}
-            className="relative size-[212px] rounded-[100px]"
+            className="motion-container relative size-[212px] rounded-[100px]"
           >
-            <div className="relative left-[7px] top-[7px] size-[198px]">
+            <div className="motion-container relative left-[7px] top-[7px] size-[198px]">
               <motion.div
                 ref={ref16}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0.01, y: 50 }}
                 animate={inView16 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, ease: 'easeOut', delay: 0.5 }}
-                className="absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5"
+                className="motion-container absolute left-10 top-[68px] inline-flex h-[62px] flex-col items-center gap-0.5"
               >
                 <motion.div
                   ref={ref17}
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={{ opacity: 0.01, y: 50 }}
                   animate={inView17 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.6 }}
-                  className="relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]"
                 >
                   {t('feedback.currentBalance')}
                 </motion.div>
 
                 <motion.div
                   ref={ref18}
-                  initial={{ opacity: 0, y: 50 }}
+                  initial={{ opacity: 0.01, y: 50 }}
                   animate={inView18 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6, ease: 'easeOut', delay: 0.7 }}
-                  className="relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative w-fit whitespace-nowrap text-center text-[28px] font-medium leading-10 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]"
                 >
                   86,000₽
                 </motion.div>
               </motion.div>
 
-              <div className="absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
+              <div className="motion-container absolute left-0 top-0 size-[198px] rounded-[99px] border-[10px] border-solid border-neutral-50" />
 
               <svg
                 width="198"
@@ -249,7 +249,7 @@ export const Feedback = () => {
                 viewBox="0 0 198 198"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="absolute left-0 top-0 size-[198px]"
+                className="motion-container absolute left-0 top-0 size-[198px]"
               >
                 <path
                   d="M5 99C5 150.915 47.0852 193 99 193C150.915 193 193 150.915 193 99C193 47.0852 150.915 5 99 5"

@@ -25,8 +25,8 @@ export const HeroButtons = ({
   const ref2 = useRef<HTMLButtonElement>(null);
   const ref3 = useRef<HTMLButtonElement>(null);
 
-  const inView2 = useInView(ref2, { once: true, margin: '-30px' });
-  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
+  const inView2 = useInView(ref2, { once: true, margin: '-50px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-50px' });
 
   const currentProduct = useCurrentProduct();
   const specificationPath = getSpecificationPath(currentProduct);
@@ -60,14 +60,14 @@ export const HeroButtons = ({
 
   return (
     <>
-      <div className="relative z-10 flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
+      <div className="motion-container relative z-10 flex w-full flex-[0_0_auto] items-start justify-between self-stretch">
         <motion.div
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0.01, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7, ease: 'easeOut' }}
-          className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] px-5 py-2.5"
+          className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff14] px-5 py-2.5"
         >
-          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
+          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
             {t('heroButtons.aboutProduct')}
           </div>
         </motion.div>
@@ -75,17 +75,17 @@ export const HeroButtons = ({
         {isSpecificationVisible && (
           <motion.button
             ref={ref2}
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0.01, x: 50 }}
             animate={inView2 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
             whileHover={{ scale: isDownloading ? 1 : 1.05 }}
             onClick={handleSpecificationClick}
             disabled={!specificationPath || isDownloading}
-            className="relative inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2 rounded-[100px] bg-[#ffffff14] px-5 py-2.5 transition-opacity hover:scale-105 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
+            className="motion-container relative inline-flex flex-[0_0_auto] cursor-pointer items-center justify-center gap-2 rounded-[100px] bg-[#ffffff14] px-5 py-2.5 transition-opacity hover:scale-105 hover:opacity-80 disabled:cursor-not-allowed disabled:opacity-50"
           >
             {isDownloading ? (
               <svg
-                className="relative size-5 animate-spin"
+                className="motion-container relative size-5 animate-spin"
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -102,7 +102,7 @@ export const HeroButtons = ({
                   strokeLinecap="round"
                   strokeDasharray="31.416"
                   strokeDashoffset="31.416"
-                  className="animate-spin"
+                  className="motion-container animate-spin"
                   style={{
                     animation: 'spin 1s linear infinite',
                     transformOrigin: '10px 10px',
@@ -111,7 +111,7 @@ export const HeroButtons = ({
               </svg>
             ) : (
               <svg
-                className="relative size-5"
+                className="motion-container relative size-5"
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
@@ -150,7 +150,7 @@ export const HeroButtons = ({
               </svg>
             )}
 
-            <div className="relative mt-[-1.00px] w-[120px] text-center font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
+            <div className="motion-container relative mt-[-1.00px] w-[120px] text-center font-body-3-r text-[length:var(--body-3-r-font-size)] font-[number:var(--body-3-r-font-weight)] leading-[var(--body-3-r-line-height)] tracking-[var(--body-3-r-letter-spacing)] text-[#ffffff] [font-style:var(--body-3-r-font-style)]">
               {isDownloading ? 'Скачивание...' : t('heroButtons.specification')}
             </div>
           </motion.button>
@@ -161,15 +161,15 @@ export const HeroButtons = ({
 
       <motion.button
         ref={ref3}
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0.01, scale: 0.8 }}
         animate={inView3 ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 0.25, ease: 'easeOut' }}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={handleButtonClick}
-        className="all-[unset] relative box-border hidden flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 xl:inline-flex"
+        className="motion-container all-[unset] relative box-border hidden flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 xl:inline-flex"
       >
-        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           {buttonText || t('heroButtons.signUpPresentation')}
         </div>
       </motion.button>

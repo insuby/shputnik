@@ -14,10 +14,10 @@ export const RoleStructure = () => {
   const ref16 = useRef<HTMLDivElement>(null);
   const ref17 = useRef<HTMLDivElement>(null);
 
-  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
-  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-50px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-50px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-50px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-50px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -26,38 +26,38 @@ export const RoleStructure = () => {
   return (
     <motion.div
       ref={ref14}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0.01, y: 50 }}
       animate={inView14 ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-20 self-stretch px-0 lg:!flex-row xl:py-20"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-20 self-stretch px-0 lg:!flex-row xl:py-20"
     >
-      <div className="relative flex w-full flex-col items-start gap-7 lg:w-[432px] xl:gap-12">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
-          <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
+      <div className="motion-container relative flex w-full flex-col items-start gap-7 lg:w-[432px] xl:gap-12">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-4 self-stretch">
+          <div className="motion-container relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] xl:text-5xl xl:leading-[60px]">
             {t('roleStructure.title')}
           </div>
         </div>
 
         <button
           onClick={onClick}
-          className="all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 xl:w-fit"
+          className="motion-container all-[unset]  relative box-border  inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 xl:w-fit"
         >
-          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+          <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
             {t('roleStructure.demo')}
           </div>
         </button>
       </div>
-      <div className="relative flex flex-1 grow flex-col items-start justify-center gap-6 self-stretch xl:!flex-row">
+      <div className="motion-container relative flex flex-1 grow flex-col items-start justify-center gap-6 self-stretch xl:!flex-row">
         <motion.div
           ref={ref15}
-          initial={{ opacity: 0, x: -50 }}
+          initial={{ opacity: 0.01, x: -50 }}
           animate={inView15 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#00cb8214] p-4">
             <svg
-              className="relative size-7"
+              className="motion-container relative size-7"
               width="28"
               height="28"
               viewBox="0 0 28 28"
@@ -82,21 +82,21 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
+          <div className="motion-container relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.clientCabinet')}
           </div>
         </motion.div>
 
         <motion.div
           ref={ref16}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView16 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#3573fc14] p-4">
             <svg
-              className="relative size-7"
+              className="motion-container relative size-7"
               width="28"
               height="28"
               viewBox="0 0 28 28"
@@ -135,21 +135,21 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
+          <div className="motion-container relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.employeeCabinet')}
           </div>
         </motion.div>
 
         <motion.div
           ref={ref17}
-          initial={{ opacity: 0, x: 50 }}
+          initial={{ opacity: 0.01, x: 50 }}
           animate={inView17 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-          className="relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
+          className="motion-container relative flex flex-1 grow flex-col items-center justify-center gap-7 self-stretch  overflow-hidden rounded-3xl bg-[#f9fafd] p-8 lg:!flex-row lg:justify-start xl:!flex-col xl:justify-center xl:p-10"
         >
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
+          <div className="motion-container relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#e6485014] p-4">
             <svg
-              className="relative size-7"
+              className="motion-container relative size-7"
               width="28"
               height="28"
               viewBox="0 0 28 28"
@@ -174,7 +174,7 @@ export const RoleStructure = () => {
             </svg>
           </div>
 
-          <div className="relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
+          <div className="motion-container relative mx-auto flex items-center self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:m-0">
             {t('roleStructure.adminCabinet')}
           </div>
         </motion.div>

@@ -14,7 +14,7 @@ export const CrmCapabilities = ({
 }: CrmCapabilitiesProps) => {
   const { t } = useTranslation(namespace);
   const ref = useRef<HTMLDivElement>(null);
-  const inView = useInView(ref, { once: true, margin: '-30px' });
+  const inView = useInView(ref, { once: true, margin: '-50px' });
 
   const { setIsOpen } = useFeedbackForm();
 
@@ -25,10 +25,10 @@ export const CrmCapabilities = ({
   return (
     <motion.div
       ref={ref}
-      initial={{ opacity: 0, y: 50 }}
+      initial={{ opacity: 0.01, y: 50 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.7, ease: 'easeOut' }}
-      className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 pb-10 xl:!flex-row xl:gap-2.5 xl:p-12"
+      className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-violet-50 p-7 pb-10 xl:!flex-row xl:gap-2.5 xl:p-12"
     >
       <svg
         width="1225"
@@ -36,7 +36,7 @@ export const CrmCapabilities = ({
         viewBox="0 0 1225 986"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className="absolute left-[420px] top-[-385px] h-[1060px] w-full xl:w-[1108px]"
+        className="motion-container absolute left-[420px] top-[-385px] h-[1060px] w-full xl:w-[1108px]"
         alt="Vector"
       >
         <g opacity="0.08" filter="url(#filter0_f_0_9)">
@@ -70,21 +70,21 @@ export const CrmCapabilities = ({
         </defs>
       </svg>
 
-      <div className="relative flex flex-1 grow flex-col items-start gap-3">
-        <div className="relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+      <div className="motion-container relative flex flex-1 grow flex-col items-start gap-3">
+        <div className="motion-container relative mt-[-1.00px] self-stretch text-[32px] font-medium leading-10 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
           {t('crmCapabilities.title')}
         </div>
 
-        <p className="relative w-full text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica] xl:w-[752px]">
+        <p className="motion-container relative w-full text-xl font-normal leading-7 tracking-normal text-[#ffffff] opacity-60 [font-family:'Roboto',Helvetica] xl:w-[752px]">
           {t('crmCapabilities.subtitle')}
         </p>
       </div>
 
       <button
         onClick={onClick}
-        className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 xl:w-fit"
+        className="motion-container all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] cursor-pointer items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] px-8 py-4 transition-opacity hover:opacity-90 xl:w-fit"
       >
-        <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+        <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
           {t('crmCapabilities.demo')}
         </div>
       </button>

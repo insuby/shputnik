@@ -43,36 +43,36 @@ export const Fdata = () => {
   const ref56 = useRef(null);
   const ref57 = useRef(null);
 
-  const inView3 = useInView(ref3, { once: true, margin: '-30px' });
-  const inView4 = useInView(ref4, { once: true, margin: '-30px' });
-  const inView5 = useInView(ref5, { once: true, margin: '-30px' });
-  const inView6 = useInView(ref6, { once: true, margin: '-30px' });
-  const inView7 = useInView(ref7, { once: true, margin: '-30px' });
-  const inView8 = useInView(ref8, { once: true, margin: '-30px' });
-  const inView9 = useInView(ref9, { once: true, margin: '-30px' });
-  const inView10 = useInView(ref10, { once: true, margin: '-30px' });
-  const inView12 = useInView(ref12, { once: true, margin: '-30px' });
-  const inView13 = useInView(ref13, { once: true, margin: '-30px' });
-  const inView14 = useInView(ref14, { once: true, margin: '-30px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
-  const inView17 = useInView(ref17, { once: true, margin: '-30px' });
-  const inView18 = useInView(ref18, { once: true, margin: '-30px' });
-  const inView19 = useInView(ref19, { once: true, margin: '-30px' });
-  const inView21 = useInView(ref21, { once: true, margin: '-30px' });
-  const inView22 = useInView(ref22, { once: true, margin: '-30px' });
-  const inView23 = useInView(ref23, { once: true, margin: '-30px' });
-  const inView25 = useInView(ref25, { once: true, margin: '-30px' });
-  const inView26 = useInView(ref26, { once: true, margin: '-30px' });
-  const inView27 = useInView(ref27, { once: true, margin: '-30px' });
-  const inView29 = useInView(ref29, { once: true, margin: '-30px' });
-  const inView30 = useInView(ref30, { once: true, margin: '-30px' });
-  const inView51 = useInView(ref51, { once: true, margin: '-30px' });
-  const inView52 = useInView(ref52, { once: true, margin: '-30px' });
-  const inView53 = useInView(ref53, { once: true, margin: '-30px' });
-  const inView54 = useInView(ref54, { once: true, margin: '-30px' });
-  const inView55 = useInView(ref55, { once: true, margin: '-30px' });
-  const inView56 = useInView(ref56, { once: true, margin: '-30px' });
-  const inView57 = useInView(ref57, { once: true, margin: '-30px' });
+  const inView3 = useInView(ref3, { once: true, margin: '-50px' });
+  const inView4 = useInView(ref4, { once: true, margin: '-50px' });
+  const inView5 = useInView(ref5, { once: true, margin: '-50px' });
+  const inView6 = useInView(ref6, { once: true, margin: '-50px' });
+  const inView7 = useInView(ref7, { once: true, margin: '-50px' });
+  const inView8 = useInView(ref8, { once: true, margin: '-50px' });
+  const inView9 = useInView(ref9, { once: true, margin: '-50px' });
+  const inView10 = useInView(ref10, { once: true, margin: '-50px' });
+  const inView12 = useInView(ref12, { once: true, margin: '-50px' });
+  const inView13 = useInView(ref13, { once: true, margin: '-50px' });
+  const inView14 = useInView(ref14, { once: true, margin: '-50px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-50px' });
+  const inView17 = useInView(ref17, { once: true, margin: '-50px' });
+  const inView18 = useInView(ref18, { once: true, margin: '-50px' });
+  const inView19 = useInView(ref19, { once: true, margin: '-50px' });
+  const inView21 = useInView(ref21, { once: true, margin: '-50px' });
+  const inView22 = useInView(ref22, { once: true, margin: '-50px' });
+  const inView23 = useInView(ref23, { once: true, margin: '-50px' });
+  const inView25 = useInView(ref25, { once: true, margin: '-50px' });
+  const inView26 = useInView(ref26, { once: true, margin: '-50px' });
+  const inView27 = useInView(ref27, { once: true, margin: '-50px' });
+  const inView29 = useInView(ref29, { once: true, margin: '-50px' });
+  const inView30 = useInView(ref30, { once: true, margin: '-50px' });
+  const inView51 = useInView(ref51, { once: true, margin: '-50px' });
+  const inView52 = useInView(ref52, { once: true, margin: '-50px' });
+  const inView53 = useInView(ref53, { once: true, margin: '-50px' });
+  const inView54 = useInView(ref54, { once: true, margin: '-50px' });
+  const inView55 = useInView(ref55, { once: true, margin: '-50px' });
+  const inView56 = useInView(ref56, { once: true, margin: '-50px' });
+  const inView57 = useInView(ref57, { once: true, margin: '-50px' });
 
   const goToPrev = () => {
     sliderRef.current?.slickPrev();
@@ -87,16 +87,16 @@ export const Fdata = () => {
   };
 
   return (
-    <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-        <div className="relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:p-12 xl:h-[636px]">
+    <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] p-0 lg:w-full lg:gap-[136px] lg:px-8 lg:pb-[136px] lg:pt-8">
+      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+        <div className="motion-container relative flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-7 lg:p-12 xl:h-[636px]">
           <svg
             width="1643"
             height="1443"
             viewBox="0 0 1643 1443"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute -top-16 left-[var(--pos-430)] h-[842px] w-full lg:w-[954px]"
+            className="motion-container absolute -top-16 left-[var(--pos-430)] h-[842px] w-full lg:w-[954px]"
           >
             <g opacity="0.3" filter="url(#filter0_f_9604_10514)">
               <path
@@ -132,18 +132,18 @@ export const Fdata = () => {
           <HeroButtons buttonText={t('hero.buttonText')}>
             <motion.div
               ref={ref3}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0.01, y: 50 }}
               animate={inView3 ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut' }}
-              className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12"
+              className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12"
             >
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
-                  <h1 className="mx-auto mt-[-1.00px] text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-3/5 lg:m-0 lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7 lg:w-[624px]  lg:gap-12">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
+                  <h1 className="motion-container mx-auto mt-[-1.00px] text-center text-[36px] font-medium leading-[44px] tracking-normal text-white [font-family:'Roboto',Helvetica] md:w-3/5 lg:m-0 lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]">
                     {t('hero.title')}
                   </h1>
 
-                  <p className="relative mx-auto w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left">
+                  <p className="motion-container relative mx-auto w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left">
                     {t('static.heroDescription')}
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export const Fdata = () => {
             viewBox="0 0 847 880"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full lg:w-[619px]"
+            className="motion-container absolute left-[var(--pos-1053)] top-[var(--pos-176)] h-[568px] w-full lg:w-[619px]"
             aria-hidden={true}
           >
             <g opacity="0.12" filter="url(#filter0_f_9604_10535)">
@@ -193,15 +193,15 @@ export const Fdata = () => {
 
           <motion.div
             ref={ref51}
-            initial={{ opacity: 0, x: -50 }}
+            initial={{ opacity: 0.01, x: -50 }}
             animate={inView51 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="left-[var(--pos-704)] top-[var(--pos-208)] flex max-w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 lg:absolute lg:w-[576px]"
+            className="motion-container left-[var(--pos-704)] top-[var(--pos-208)] flex max-w-[576px] items-start justify-end gap-[11.96px] rounded-[32px] bg-white p-6 lg:absolute lg:w-[576px]"
           >
-            <div className="relative flex w-full flex-1 grow flex-col items-start gap-6 lg:w-auto">
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
-                <div className="relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
-                  <div className="relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex w-full flex-1 grow flex-col items-start gap-6 lg:w-auto">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch">
+                <div className="motion-container relative flex h-8 w-full items-center justify-center gap-3 self-stretch">
+                  <div className="motion-container relative flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                     {t('dashboard.title')}
                   </div>
 
@@ -211,7 +211,7 @@ export const Fdata = () => {
                     viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative flex-[0_0_auto]"
+                    className="motion-container relative flex-[0_0_auto]"
                   >
                     <rect width="32" height="32" rx="16" fill="#F9FAFD" />
                     <path
@@ -229,7 +229,7 @@ export const Fdata = () => {
                     viewBox="0 0 32 32"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative flex-[0_0_auto]"
+                    className="motion-container relative flex-[0_0_auto]"
                   >
                     <rect width="32" height="32" rx="16" fill="#F9FAFD" />
                     <path
@@ -263,8 +263,8 @@ export const Fdata = () => {
                   </svg>
                 </div>
 
-                <div className="relative flex h-9 w-full items-center gap-4 self-stretch rounded-[100px] border border-solid border-[#e3e4e7] py-2 pl-4 pr-3">
-                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex h-9 w-full items-center gap-4 self-stretch rounded-[100px] border border-solid border-[#e3e4e7] py-2 pl-4 pr-3">
+                  <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.search')}
                   </div>
 
@@ -274,7 +274,7 @@ export const Fdata = () => {
                     viewBox="0 0 16 16"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="relative size-4"
+                    className="motion-container relative size-4"
                   >
                     <path
                       d="M7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12Z"
@@ -294,130 +294,130 @@ export const Fdata = () => {
                 </div>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
-                <div className="relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch px-3 py-1">
-                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-1 self-stretch">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-4 self-stretch px-3 py-1">
+                  <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.status')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.reconciliation')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.operator')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.lastRunTime')}
                   </div>
 
-                  <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('dashboard.mismatches')}
                   </div>
                 </div>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
-                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-red-50" />
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="motion-container relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="motion-container relative size-2 rounded bg-red-50" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('dashboard.unreconciled')}
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.dp1vsDp2')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.johnSmith')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       25 may 07:16
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       54
                     </div>
                   </div>
 
-                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
-                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-green-60" />
+                  <div className="motion-container relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="motion-container relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="motion-container relative size-2 rounded bg-green-60" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         Reconciled
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.dp1vsDp2')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.johnSmith')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.may24')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       0
                     </div>
                   </div>
 
-                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
-                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-green-60" />
+                  <div className="motion-container relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="motion-container relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="motion-container relative size-2 rounded bg-green-60" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.reconciled')}
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.dp1vsDp2')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.johnSmith')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.may23')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       2
                     </div>
                   </div>
 
-                  <div className="relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
-                    <div className="relative flex flex-1 grow items-center justify-center gap-2">
-                      <div className="relative size-2 rounded bg-red-50" />
+                  <div className="motion-container relative flex h-11 w-full items-start gap-4 self-stretch rounded-xl bg-[#f9fafd] p-3">
+                    <div className="motion-container relative flex flex-1 grow items-center justify-center gap-2">
+                      <div className="motion-container relative size-2 rounded bg-red-50" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('dashboard.unreconciled')}
                       </div>
                     </div>
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.dp1vsDp2')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.johnSmith')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.may22')}
                     </div>
 
-                    <div className="relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] w-20 text-center text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       12
                     </div>
                   </div>
@@ -432,7 +432,7 @@ export const Fdata = () => {
             viewBox="0 0 743 629"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[var(--pos-775)] top-[var(--pos-172)] h-[464px] w-full lg:w-[601px]"
+            className="motion-container absolute left-[var(--pos-775)] top-[var(--pos-172)] h-[464px] w-full lg:w-[601px]"
           >
             <g opacity="0.32" filter="url(#filter0_f_9608_11091)">
               <path
@@ -467,121 +467,121 @@ export const Fdata = () => {
 
           <motion.div
             ref={ref52}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView52 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="absolute -bottom-10 left-60 right-0 mx-auto mt-auto flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 lg:!bottom-0 lg:bottom-auto lg:left-[var(--pos-960)] lg:right-auto lg:top-[var(--pos-404)] lg:w-[368px]"
+            className="motion-container absolute -bottom-10 left-60 right-0 mx-auto mt-auto flex w-[368px] items-start justify-end gap-[11.96px] rounded-[32px_32px_0px_0px] bg-white p-6 lg:!bottom-0 lg:bottom-auto lg:left-[var(--pos-960)] lg:right-auto lg:top-[var(--pos-404)] lg:w-[368px]"
           >
-            <div className="relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
-              <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
-                <div className="relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+            <div className="motion-container relative flex flex-1 grow flex-col items-start gap-3 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-center gap-4 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-medium leading-6 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                   {t('filter.title')}
                 </div>
               </div>
 
-              <div className="relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
-                <div className="relative flex flex-1 grow flex-col items-start gap-2">
-                  <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] items-start gap-6 self-stretch">
+                <div className="motion-container relative flex flex-1 grow flex-col items-start gap-2">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('filter.status')}
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('filter.waiting')}
                     </div>
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('filter.inProgress')}
                     </div>
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('filter.reconciled')}
                     </div>
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('dashboard.unreconciled')}
                     </div>
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('filter.created')}
                     </div>
                   </div>
 
-                  <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                    <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                  <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                    <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                    <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                       {t('filter.failed')}
                     </div>
                   </div>
                 </div>
 
-                <div className="relative flex flex-1 grow flex-col items-start justify-center gap-3">
-                  <div className="relative mr-[-28.00px] flex h-[76px] w-44 flex-col items-start gap-2">
-                    <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex flex-1 grow flex-col items-start justify-center gap-3">
+                  <div className="motion-container relative mr-[-28.00px] flex h-[76px] w-44 flex-col items-start gap-2">
+                    <div className="motion-container relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {t('filter.users')}
                     </div>
 
-                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                    <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.byMe')}
                       </div>
                     </div>
 
-                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                    <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.byOthers')}
                       </div>
                     </div>
                   </div>
 
-                  <div className="relative mr-[-28.00px] flex w-44 flex-[0_0_auto] flex-col items-start gap-2">
-                    <div className="relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative mr-[-28.00px] flex w-44 flex-[0_0_auto] flex-col items-start gap-2">
+                    <div className="motion-container relative mt-[-1.00px] self-stretch text-xs font-normal leading-5 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {t('filter.projects')}
                     </div>
 
-                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                    <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.payments')}
                       </div>
                     </div>
 
-                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                    <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.finance')}
                       </div>
                     </div>
 
-                    <div className="relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
-                      <div className="relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
+                    <div className="motion-container relative flex h-5 w-full items-center justify-center gap-2 self-stretch">
+                      <div className="motion-container relative size-4 rounded border border-solid border-[#bdc7e0] bg-[#ffffff]" />
 
-                      <div className="relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative mt-[-1.00px] flex-1 whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica]">
                         {t('filter.trading')}
                       </div>
                     </div>
@@ -597,7 +597,7 @@ export const Fdata = () => {
             viewBox="0 0 642 519"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute left-[var(--pos-980)] top-[var(--pos-454)] h-[401px] w-full lg:w-[410px]"
+            className="motion-container absolute left-[var(--pos-980)] top-[var(--pos-454)] h-[401px] w-full lg:w-[410px]"
           >
             <g opacity="0.24" filter="url(#filter0_f_9608_11095)">
               <path
@@ -631,15 +631,15 @@ export const Fdata = () => {
           </svg>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl lg:!flex-row">
-          <div className="relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 lg:gap-12 lg:pl-12 lg:pr-[68px]">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 lg:w-[560px]">
-              <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-start lg:text-5xl lg:leading-[60px]">
+      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-6 rounded-3xl lg:!flex-row">
+          <div className="motion-container relative flex flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-3xl p-7 py-12 lg:gap-12 lg:pl-12 lg:pr-[68px]">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-6 lg:w-[560px]">
+              <div className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-start lg:text-5xl lg:leading-[60px]">
                 {t('details.title')}
               </div>
 
-              <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
+              <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
                 {t('details.description')}
               </p>
             </div>
@@ -647,30 +647,30 @@ export const Fdata = () => {
 
           <VideoPlayerSimple
             src="https://rutube.ru/play/embed/e1b7c43b3c4a047149a5f034117953cb/"
-            className="h-[404px] flex-1 grow self-stretch"
+            className="motion-container h-[404px] flex-1 grow self-stretch"
           />
         </div>
       </div>
       <motion.div
         ref={ref4}
-        initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0.01, y: 50 }}
         animate={inView4 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12"
+        className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12"
       >
         <motion.div
           ref={ref5}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView5 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
         >
           <motion.div
             ref={ref6}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 30 }}
             animate={inView6 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
+            className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
           >
             {t('details.helpTitle')}
           </motion.div>
@@ -682,10 +682,10 @@ export const Fdata = () => {
           />
           <motion.p
             ref={ref7}
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 30 }}
             animate={inView7 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+            className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
           >
             {t('details.philosophy')}
           </motion.p>
@@ -693,49 +693,49 @@ export const Fdata = () => {
 
         <motion.div
           ref={ref8}
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0.01, y: 50 }}
           animate={inView8 ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex"
         >
           <motion.div
             ref={ref9}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView9 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:!flex-row"
+            className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:!flex-row"
           >
             <motion.div
               ref={ref10}
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0.01, x: -50 }}
               animate={inView10 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.01, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
                 alt="Frame"
                 src="/img/fdata/frame-18-4.svg"
               />
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref12}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView12 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('details.lossReduction')}
                 </motion.div>
                 <motion.p
                   ref={ref13}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView13 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   {t('details.confidence')}
                 </motion.p>
@@ -744,35 +744,35 @@ export const Fdata = () => {
 
             <motion.div
               ref={ref14}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0.01, x: 50 }}
               animate={inView14 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.01, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
                 alt="Frame"
                 src="/img/fdata/frame-20.svg"
               />
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref16}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView16 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('howWeHelp.resourceOptimization.title')}
                 </motion.div>
                 <motion.p
                   ref={ref17}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView17 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   {t('details.automation')}
                 </motion.p>
@@ -782,42 +782,42 @@ export const Fdata = () => {
 
           <motion.div
             ref={ref18}
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0.01, y: 50 }}
             animate={inView18 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
-            className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:!flex-row"
+            className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:!flex-row"
           >
             <motion.div
               ref={ref19}
-              initial={{ opacity: 0, x: -50 }}
+              initial={{ opacity: 0.01, x: -50 }}
               animate={inView19 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.01, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
                 alt="Frame"
                 src="/img/fdata/frame-19.svg"
               />
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref21}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView21 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('howWeHelp.transparentAnalytics.title')}
                 </motion.div>
                 <motion.p
                   ref={ref22}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView22 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   {t('details.accuratePicture')}
                 </motion.p>
@@ -826,35 +826,35 @@ export const Fdata = () => {
 
             <motion.div
               ref={ref23}
-              initial={{ opacity: 0, x: 0 }}
+              initial={{ opacity: 0.01, x: 0 }}
               animate={inView23 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.01, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
                 alt="Frame"
                 src="/img/fdata/frame-19-2.svg"
               />
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref25}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView25 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('howWeHelp.adaptability.title')}
                 </motion.div>
                 <motion.p
                   ref={ref26}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView26 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   {t('details.easyCreation')}
                 </motion.p>
@@ -863,35 +863,35 @@ export const Fdata = () => {
 
             <motion.div
               ref={ref27}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0.01, x: 50 }}
               animate={inView27 ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-              className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+              className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
               <motion.img
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0.01, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
                 alt="Frame"
                 src="/img/fdata/frame-18-5.svg"
               />
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
                   ref={ref29}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView29 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.8 }}
-                  className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]"
                 >
                   {t('howWeHelp.errorReduction.title')}
                 </motion.div>
                 <motion.p
                   ref={ref30}
-                  initial={{ opacity: 0, y: 30 }}
+                  initial={{ opacity: 0.01, y: 30 }}
                   animate={inView30 ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
-                  className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
+                  className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]"
                 >
                   {t('howWeHelp.errorReduction.description')}
                 </motion.p>
@@ -901,24 +901,24 @@ export const Fdata = () => {
         </motion.div>
       </motion.div>
       <Feedback />
-      <div className="relative flex w-full flex-col lg:h-[568px] lg:!flex-row">
-        <div className="flex w-full flex-col items-center gap-[68px] lg:!flex-row">
-          <div className="relative flex flex-col items-start justify-center gap-7 lg:w-[496px]">
-            <div className="relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
+      <div className="motion-container relative flex w-full flex-col lg:h-[568px] lg:!flex-row">
+        <div className="motion-container flex w-full flex-col items-center gap-[68px] lg:!flex-row">
+          <div className="motion-container relative flex flex-col items-start justify-center gap-7 lg:w-[496px]">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
               {t('details.features.title')}
             </div>
 
             <button
               onClick={onClick}
-              className="all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 lg:w-fit"
+              className="motion-container all-[unset] relative box-border inline-flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-blue-50 px-8 py-4 lg:w-fit"
             >
-              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                 {t('details.features.try')}
               </div>
             </button>
           </div>
 
-          <div className="w-full lg:w-[915px]" id="fdata-slider">
+          <div className="motion-container w-full lg:w-[915px]" id="fdata-slider">
             <Slider
               ref={sliderRef}
               dots={false}
@@ -930,15 +930,15 @@ export const Fdata = () => {
               centerPadding="0px"
               arrows={false}
             >
-              <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+              <div className="motion-container px-0 md:px-3">
+                <div className="motion-container relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full lg:w-[443px]"
+                    className="motion-container absolute left-0 top-0 h-[406px] w-full lg:w-[443px]"
                   >
                     <g opacity="0.12" filter="url(#filter0_f_9604_10676)">
                       <path
@@ -971,54 +971,54 @@ export const Fdata = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 self-stretch">
-                    <div className="relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 lg:left-6 lg:w-[299px]">
-                      <div className="relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                  <div className="motion-container relative w-full flex-1 self-stretch">
+                    <div className="motion-container relative left-0 top-1 flex w-full flex-col items-center justify-center gap-2.5 rounded-[32px] bg-white p-6 lg:left-6 lg:w-[299px]">
+                      <div className="motion-container relative self-stretch text-sm font-normal leading-5 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                         {t('details.features.rules')}
                       </div>
 
-                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
-                        <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('details.features.autoUpload')}
                         </div>
 
-                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-[#e8ebf4]">
-                          <div className="relative left-0.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
+                        <div className="motion-container relative h-4 w-7 overflow-hidden rounded-[100px] bg-[#e8ebf4]">
+                          <div className="motion-container relative left-0.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
                         </div>
                       </div>
 
-                      <div className="relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
-                        <div className="relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                      <div className="motion-container relative flex w-full flex-[0_0_auto] items-center justify-center gap-2.5 self-stretch">
+                        <div className="motion-container relative mt-[-1.00px] flex-1 text-base font-normal leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                           {t('details.features.fileStorage')}
                         </div>
 
-                        <div className="relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-60">
-                          <div className="relative left-3.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
+                        <div className="motion-container relative h-4 w-7 overflow-hidden rounded-[100px] bg-green-60">
+                          <div className="motion-container relative left-3.5 top-0.5 size-3 rounded-md bg-[#ffffff]" />
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
-                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
+                    <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('details.dataProcessing.title')}
                     </div>
 
-                    <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {t('details.dataProcessing.description')}
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="px-0 md:px-3">
-                <div className="relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
+              <div className="motion-container px-0 md:px-3">
+                <div className="motion-container relative flex h-[480px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
                   <svg
                     width="638"
                     height="682"
                     viewBox="0 0 638 682"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    className="absolute left-0 top-0 h-[406px] w-full lg:w-[377px]"
+                    className="motion-container absolute left-0 top-0 h-[406px] w-full lg:w-[377px]"
                   >
                     <g opacity="0.2" filter="url(#filter0_f_9604_10711)">
                       <path
@@ -1051,18 +1051,18 @@ export const Fdata = () => {
                     </defs>
                   </svg>
 
-                  <div className="relative w-full flex-1 self-stretch">
-                    <div className="absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
-                      <div className="relative size-[120px]">
-                        <div className="relative size-[120px]">
-                          <div className="absolute left-0 top-0 size-[120px]">
+                  <div className="motion-container relative w-full flex-1 self-stretch">
+                    <div className="motion-container absolute left-[23px] top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3">
+                      <div className="motion-container relative size-[120px]">
+                        <div className="motion-container relative size-[120px]">
+                          <div className="motion-container absolute left-0 top-0 size-[120px]">
                             <svg
                               width="58"
                               height="120"
                               viewBox="0 0 58 120"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute left-0 top-0 h-[120px] w-[57px]"
+                              className="motion-container absolute left-0 top-0 h-[120px] w-[57px]"
                             >
                               <path
                                 d="M57.3913 2.56931C57.3913 3.97047 56.2923 5.11764 54.9023 5.24638C27.0368 7.82735 5.2174 31.3556 5.21739 60C5.21739 88.6443 27.0366 112.172 54.902 114.753C56.2922 114.882 57.3913 116.029 57.3913 117.43C57.3913 118.924 56.1495 120.121 54.6678 119.99C24.0285 117.282 0 91.4584 0 60C4.64946e-06 28.5416 24.0287 2.71798 54.6681 0.00980902C56.1497 -0.121146 57.3913 1.07638 57.3913 2.56931Z"
@@ -1076,7 +1076,7 @@ export const Fdata = () => {
                               viewBox="0 0 58 71"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
+                              className="motion-container absolute left-[63px] top-[49px] h-[71px] w-[57px]"
                             >
                               <path
                                 d="M53.8023 0.0907039C55.2772 -0.305988 56.7826 0.637786 56.9984 2.15508C57.399 4.97052 57.6065 7.84847 57.6065 10.775C57.6065 42.3513 33.4879 68.2716 2.73377 70.9901C1.24645 71.1216 0 69.9194 0 68.4207C0 67.0141 1.10326 65.8625 2.49863 65.7332C30.4685 63.1425 52.3695 39.5267 52.3695 10.775C52.3695 8.17936 52.1905 5.62561 51.8449 3.12536C51.6566 1.76297 52.4787 0.446698 53.8023 0.0907039Z"
@@ -1084,12 +1084,12 @@ export const Fdata = () => {
                               />
                             </svg>
 
-                            <div className="absolute left-[29px] top-[37px] inline-flex flex-col items-center">
-                              <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                            <div className="motion-container absolute left-[29px] top-[37px] inline-flex flex-col items-center">
+                              <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                                 {t('dataLoading.total')}
                               </div>
 
-                              <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                              <div className="motion-container relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                                 88,000
                               </div>
                             </div>
@@ -1101,7 +1101,7 @@ export const Fdata = () => {
                             viewBox="0 0 14 22"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="absolute left-[103px] top-[22px] h-[22px] w-3.5"
+                            className="motion-container absolute left-[103px] top-[22px] h-[22px] w-3.5"
                           >
                             <path
                               d="M0.77269 0.768161C1.8597 -0.322948 3.64835 -0.249792 4.5827 0.975536C8.58698 6.22685 11.7511 12.1577 13.8739 18.566C14.3346 19.9567 13.5009 21.4235 12.0906 21.8028C10.7108 22.1739 9.29563 21.3629 8.83918 20.0042C6.92674 14.3114 4.11299 9.03492 0.568127 4.34576C-0.251086 3.2621 -0.185595 1.73006 0.77269 0.768161Z"
@@ -1115,7 +1115,7 @@ export const Fdata = () => {
                             viewBox="0 0 39 20"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="absolute left-[63px] top-0 h-5 w-[39px]"
+                            className="motion-container absolute left-[63px] top-0 h-5 w-[39px]"
                           >
                             <path
                               d="M0 2.57386C0 1.07834 1.2428 -0.121327 2.72696 0.00982073C16.2362 1.20357 28.4624 6.88264 37.9182 15.5554C38.9851 16.534 38.9828 18.2021 37.9608 19.2279C36.9415 20.2511 35.2935 20.2476 34.2253 19.2759C25.6692 11.4927 14.656 6.38192 2.49243 5.2555C1.10003 5.12656 0 3.97745 0 2.57386Z"
@@ -1132,7 +1132,7 @@ export const Fdata = () => {
                       viewBox="0 0 144 144"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-[179px] top-1"
+                      className="motion-container absolute left-[179px] top-1"
                     >
                       <rect width="144" height="144" rx="24" fill="white" />
                       <path
@@ -1164,12 +1164,12 @@ export const Fdata = () => {
                     </svg>
                   </div>
 
-                  <div className="relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
-                    <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                  <div className="motion-container relative flex w-full flex-1 flex-col items-start gap-3 self-stretch">
+                    <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                       {t('details.reporting.title')}
                     </div>
 
-                    <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                    <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                       {t('details.reporting.description')}
                     </p>
                   </div>
@@ -1179,12 +1179,12 @@ export const Fdata = () => {
           </div>
         </div>
 
-        <div className="absolute left-[var(--pos-725)] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
+        <div className="motion-container absolute left-[var(--pos-725)] top-[542px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
           <button
             aria-controls="fdata-slider"
             aria-label={t('details.navigation.previousSlide')}
             onClick={goToPrev}
-            className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
+            className="motion-container active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
             <svg
               width="24"
@@ -1214,7 +1214,7 @@ export const Fdata = () => {
             aria-controls="fdata-slider"
             aria-label={t('details.navigation.nextSlide')}
             onClick={goToNext}
-            className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
+            className="motion-container active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
           >
             <svg
               width="24"
@@ -1241,40 +1241,40 @@ export const Fdata = () => {
           </button>
         </div>
       </div>
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
         <div
           ref={ref53}
-          className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
+          className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]"
         >
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0.01, y: 30 }}
             animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut' }}
-            className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
+            className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]"
           >
             {t('details.testimonials.title')}
           </motion.div>
         </div>
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
           <motion.div
             ref={ref53}
-            initial={{ opacity: 0, y: -100 }}
+            initial={{ opacity: 0.01, y: -100 }}
             animate={inView53 ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-            className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:!p-[60px]"
+            className="motion-container relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:!p-[60px]"
           >
-            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:block" />
+            <div className="motion-container relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:block" />
 
-            <motion.div className="relative flex flex-1 grow flex-col items-center gap-7 lg:!flex-row  lg:gap-12">
-              <div className="relative flex w-full flex-col items-start gap-4 lg:w-[421px]">
-                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:hidden" />
+            <motion.div className="motion-container relative flex flex-1 grow flex-col items-center gap-7 lg:!flex-row  lg:gap-12">
+              <div className="motion-container relative flex w-full flex-col items-start gap-4 lg:w-[421px]">
+                <div className="motion-container relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:hidden" />
 
-                <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left">
                   {t('details.testimonials.author')}
                 </div>
 
-                <div className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
+                <div className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
                   {t('details.testimonials.position')}
                   <br />
                   {t('details.testimonials.company')}
@@ -1287,12 +1287,12 @@ export const Fdata = () => {
                 viewBox="0 0 1 140"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative hidden w-px self-stretch lg:block"
+                className="motion-container relative hidden w-px self-stretch lg:block"
               >
                 <path d="M0.5 0V140" stroke="#E3E5E8" />
               </svg>
 
-              <p className="relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
+              <p className="motion-container relative mt-[-1.00px] flex-1 text-center text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica] lg:text-left">
                 {t('details.testimonials.quote')}
 
                 <br />
@@ -1305,7 +1305,7 @@ export const Fdata = () => {
               viewBox="0 0 670 640"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[178px] top-[-105px] h-[348px] w-full lg:w-[323px]"
+              className="motion-container absolute left-[178px] top-[-105px] h-[348px] w-full lg:w-[323px]"
             >
               <g opacity="0.12" filter="url(#filter0_f_9606_11018)">
                 <path
@@ -1344,7 +1344,7 @@ export const Fdata = () => {
               viewBox="0 0 670 640"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute left-[1005px] top-[11px] h-[348px] w-full lg:w-[323px]"
+              className="motion-container absolute left-[1005px] top-[11px] h-[348px] w-full lg:w-[323px]"
             >
               <g opacity="0.12" filter="url(#filter0_f_9606_11020)">
                 <path
@@ -1378,14 +1378,14 @@ export const Fdata = () => {
             </svg>
           </motion.div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
               <motion.div
                 ref={ref54}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0.01, y: 30 }}
                 animate={inView54 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+                className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
                 <svg
                   width="64"
@@ -1393,7 +1393,7 @@ export const Fdata = () => {
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -1432,12 +1432,12 @@ export const Fdata = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <p className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <p className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('details.final.title')}
                   </p>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('details.final.description')}
                   </p>
                 </div>
@@ -1445,10 +1445,10 @@ export const Fdata = () => {
 
               <motion.div
                 ref={ref55}
-                initial={{ opacity: 0, y: 30 }}
+                initial={{ opacity: 0.01, y: 30 }}
                 animate={inView55 ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+                className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
                 <svg
                   width="64"
@@ -1456,7 +1456,7 @@ export const Fdata = () => {
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -1509,25 +1509,25 @@ export const Fdata = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('details.risks.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('details.risks.description')}
                   </p>
                 </div>
               </motion.div>
             </div>
 
-            <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
+            <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 self-stretch lg:!flex-row">
               <motion.div
                 ref={ref56}
-                initial={{ opacity: 0, x: 50 }}
+                initial={{ opacity: 0.01, x: 50 }}
                 animate={inView56 ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-                className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
+                className="motion-container relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
               >
                 <svg
                   width="64"
@@ -1535,7 +1535,7 @@ export const Fdata = () => {
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -1574,12 +1574,12 @@ export const Fdata = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('details.speed.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-gray-40 [font-family:'Roboto',Helvetica]">
                     {t('details.speed.description')}
                   </p>
                 </div>

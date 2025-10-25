@@ -24,8 +24,8 @@ export const Development = () => {
   const ref15 = useRef<HTMLDivElement>(null);
   const ref16 = useRef<HTMLDivElement>(null);
 
-  const inView15 = useInView(ref15, { once: true, margin: '-30px' });
-  const inView16 = useInView(ref16, { once: true, margin: '-30px' });
+  const inView15 = useInView(ref15, { once: true, margin: '-50px' });
+  const inView16 = useInView(ref16, { once: true, margin: '-50px' });
 
   const onClick = () => {
     setIsOpen(true);
@@ -42,28 +42,28 @@ export const Development = () => {
   return (
     <>
       {pageMeta}
-      <div className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] lg:gap-[136px] lg:px-8 lg:pt-8">
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
-          <div className=" relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 lg:mt-0 lg:h-[628px] lg:p-12">
+      <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center gap-[88px] pb-[136px] lg:gap-[136px] lg:px-8 lg:pt-8">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-7 self-stretch">
+          <div className="motion-container  relative -mt-7 flex w-full flex-col items-start gap-20 self-stretch overflow-hidden rounded-[32px] bg-blue-50 p-4 py-10 lg:mt-0 lg:h-[628px] lg:p-12">
             <HeroButtons>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  lg:w-[624px] lg:gap-12">
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start justify-center gap-7  lg:w-[624px] lg:gap-12">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
                   <motion.h1
                     ref={ref15}
-                    initial={{ opacity: 0, x: -40 }}
+                    initial={{ opacity: 0.01, x: -40 }}
                     animate={inView15 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.4, ease: 'easeOut' }}
-                    className="relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
+                    className="motion-container relative mt-[-1.00px] w-full text-center text-[36px] font-medium leading-[44px] tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-left lg:text-6xl lg:leading-[68px]"
                   >
                     {t('hero.title')}
                   </motion.h1>
 
                   <motion.p
                     ref={ref16}
-                    initial={{ opacity: 0, x: 40 }}
+                    initial={{ opacity: 0.01, x: 40 }}
                     animate={inView16 ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.4, ease: 'easeOut' }}
-                    className="lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
+                    className="motion-container lg:text-leftw-10/12 relative w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:w-[624px] lg:text-start"
                   >
                     {t('hero.subtitle')}
                   </motion.p>
@@ -72,80 +72,80 @@ export const Development = () => {
             </HeroButtons>
 
             <img
-              className="absolute left-[1053px] top-44 h-[568px] w-full lg:w-[619px]"
+              className="motion-container absolute left-[1053px] top-44 h-[568px] w-full lg:w-[619px]"
               src={vector}
             />
 
-            <div className="relative left-[-100px] top-[var(--pos-minus-41)] z-10 mx-auto hidden size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
-              <div className="relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
-                <div className="absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
+            <div className="motion-container relative left-[-100px] top-[var(--pos-minus-41)] z-10 mx-auto hidden size-[var(--size-738)] lg:absolute lg:left-[var(--pos-590)] lg:m-0 lg:flex lg:scale-100">
+              <div className="motion-container relative -left-px -top-px size-[740px] rounded-[370px] border-2 border-solid border-[#ffffff0a]">
+                <div className="motion-container absolute left-[82px] top-[82px] size-[572px] rounded-[286px] border-2 border-solid border-[#ffffff] opacity-[0.08]" />
 
-                <div className="absolute left-[178px] top-[178px] size-[380px] rounded-[190px] border-2 border-solid border-[#ffffff] opacity-[0.12]" />
+                <div className="motion-container absolute left-[178px] top-[178px] size-[380px] rounded-[190px] border-2 border-solid border-[#ffffff] opacity-[0.12]" />
 
-                <div className="absolute left-[221px] top-[536px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-red-40 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                <div className="motion-container absolute left-[221px] top-[536px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-red-40 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                     {t('technologies.fintech')}
                   </div>
                 </div>
 
-                <div className="absolute left-[232px] top-32 inline-flex items-center justify-center gap-2 rounded-[100px] bg-green-60 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                <div className="motion-container absolute left-[232px] top-32 inline-flex items-center justify-center gap-2 rounded-[100px] bg-green-60 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                     {t('technologies.blockchain')}
                   </div>
                 </div>
 
-                <div className="absolute left-[469px] top-[569px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-blue-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                <div className="motion-container absolute left-[469px] top-[569px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-blue-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                     {t('technologies.medtech')}
                   </div>
                 </div>
 
-                <div className="absolute left-[577px] top-[341px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-violet-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                <div className="motion-container absolute left-[577px] top-[341px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-violet-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                     {t('technologies.martech')}
                   </div>
                 </div>
 
-                <div className="absolute left-[34px] top-[276px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-yellow-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
-                  <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
+                <div className="motion-container absolute left-[34px] top-[276px] inline-flex items-center justify-center gap-2 rounded-[100px] bg-yellow-50 px-4 py-2 backdrop-blur-[10px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(10px)_brightness(100%)]">
+                  <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Inter',Helvetica]">
                     {t('technologies.enterprise')}
                   </div>
                 </div>
               </div>
             </div>
-            <div className="relative inset-0 mx-auto h-[280px] w-full max-w-[464px] overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[var(--pos-727)] lg:top-[var(--pos-190)]">
-              <div className="h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
-                <div className="absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
+            <div className="motion-container relative inset-0 mx-auto h-[280px] w-full max-w-[464px] overflow-hidden rounded-3xl bg-[#ffffff] lg:absolute lg:left-[var(--pos-727)] lg:top-[var(--pos-190)]">
+              <div className="motion-container h-10w-full absolute left-0 top-0 bg-[#f9fafd] lg:w-[528px]">
+                <div className="motion-container absolute left-[15px] top-[15px] size-2.5 rounded-[5px] bg-[#e64850]" />
 
-                <div className="absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
+                <div className="motion-container absolute left-[31px] top-[15px] size-2.5 rounded-[5px] bg-[#fbab00]" />
 
-                <div className="absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
+                <div className="motion-container absolute left-[47px] top-[15px] size-2.5 rounded-[5px] bg-[#00cb82]" />
               </div>
 
-              <div className="absolute left-0 top-12 flex w-full flex-col items-start lg:w-[464px]">
-                <img className="size-full" src={code} />
+              <div className="motion-container absolute left-0 top-12 flex w-full flex-col items-start lg:w-[464px]">
+                <img className="motion-container size-full" src={code} />
               </div>
             </div>
           </div>
         </div>
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
-            <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
               {t('projectDevelopment.title')}
             </div>
           </div>
 
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
-            <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
+            <div className="motion-container relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -177,25 +177,25 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.analysis.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.analysis.description')}
                   </p>
                 </div>
               </div>
 
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -276,25 +276,25 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     MVP
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.mvp.description')}
                   </p>
                 </div>
               </div>
 
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -361,27 +361,27 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.scalability.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.scalability.description')}
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+            <div className="motion-container relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -427,25 +427,25 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.crossPlatform.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.crossPlatform.description')}
                   </p>
                 </div>
               </div>
 
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -477,25 +477,25 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.highLoad.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.highLoad.description')}
                   </p>
                 </div>
               </div>
 
-              <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+              <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
                 <svg
                   width="64"
                   height="64"
                   viewBox="0 0 64 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="relative flex-[0_0_auto]"
+                  className="motion-container relative flex-[0_0_auto]"
                 >
                   <rect
                     width="64"
@@ -534,12 +534,12 @@ export const Development = () => {
                   />
                 </svg>
 
-                <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                  <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                  <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.design.title')}
                   </div>
 
-                  <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                  <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                     {t('projectDevelopment.design.description')}
                   </p>
                 </div>
@@ -548,24 +548,24 @@ export const Development = () => {
           </div>
         </div>
 
-        <div className="relative flex w-full flex-col lg:h-[568px]  lg:!flex-row">
-          <div className="flex w-full  flex-col items-center gap-[68px] lg:!flex-row">
-            <div className="relative flex w-full flex-col items-start justify-center gap-7 lg:w-[496px]">
-              <p className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left lg:text-5xl lg:leading-[60px]">
+        <div className="motion-container relative flex w-full flex-col lg:h-[568px]  lg:!flex-row">
+          <div className="motion-container flex w-full  flex-col items-center gap-[68px] lg:!flex-row">
+            <div className="motion-container relative flex w-full flex-col items-start justify-center gap-7 lg:w-[496px]">
+              <p className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left lg:text-5xl lg:leading-[60px]">
                 {t('platforms.title')}
               </p>
 
               <button
                 onClick={onClick}
-                className="all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 lg:w-fit"
+                className="motion-container all-[unset] box-border inline-flex w-full cursor-pointer items-center justify-center gap-2.5  rounded-[100px] bg-blue-50 px-8 py-4 transition-opacity hover:opacity-90 lg:w-fit"
               >
-                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
+                <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xl font-medium leading-7 tracking-normal text-[#ffffff] [font-family:'Roboto',Helvetica]">
                   {t('platforms.tryButton')}
                 </div>
               </button>
             </div>
 
-            <div className="w-full lg:w-[915px]">
+            <div className="motion-container w-full lg:w-[915px]">
               <Slider
                 ref={sliderRef}
                 dots={false}
@@ -577,15 +577,15 @@ export const Development = () => {
                 centerPadding="0px"
                 arrows={false}
               >
-                <div className="px-0 md:px-3">
-                  <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="motion-container px-0 md:px-3">
+                  <div className="motion-container relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px] w-full lg:w-[443px]"
+                      className="motion-container absolute left-0 top-0 h-[406px] w-full lg:w-[443px]"
                     >
                       <g opacity="0.12" filter="url(#filter0_f_9535_12438)">
                         <path
@@ -621,16 +621,16 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-[2] self-stretch lg:w-[382px]">
-                      <div className="relative -left-12 -top-12 w-full lg:-left-12 lg:w-[443px]">
-                        <div className="absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                    <div className="motion-container relative w-full flex-[2] self-stretch lg:w-[382px]">
+                      <div className="motion-container relative -left-12 -top-12 w-full lg:-left-12 lg:w-[443px]">
+                        <div className="motion-container absolute left-[140px] top-[46px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
                             viewBox="0 0 44 44"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative flex-[0_0_auto]"
+                            className="motion-container relative flex-[0_0_auto]"
                           >
                             <rect
                               width="44"
@@ -655,7 +655,7 @@ export const Development = () => {
                             />
                           </svg>
 
-                          <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             landing page
                           </div>
                         </div>
@@ -666,7 +666,7 @@ export const Development = () => {
                           viewBox="0 0 503 411"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
+                          className="motion-container absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
                         >
                           <g opacity="0.32" filter="url(#filter0_f_9537_10855)">
                             <path
@@ -702,14 +702,14 @@ export const Development = () => {
                           </defs>
                         </svg>
 
-                        <div className="absolute left-[58px] top-[92px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                        <div className="motion-container absolute left-[58px] top-[92px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
                             viewBox="0 0 44 44"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative flex-[0_0_auto]"
+                            className="motion-container relative flex-[0_0_auto]"
                           >
                             <rect
                               width="44"
@@ -762,7 +762,7 @@ export const Development = () => {
                             />
                           </svg>
 
-                          <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             corporate portal
                           </div>
                         </div>
@@ -773,7 +773,7 @@ export const Development = () => {
                           viewBox="0 0 503 411"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
+                          className="motion-container absolute left-0 top-0 h-[349px] w-full lg:w-[443px]"
                         >
                           <g opacity="0.32" filter="url(#filter0_f_9537_10857)">
                             <path
@@ -809,14 +809,14 @@ export const Development = () => {
                           </defs>
                         </svg>
 
-                        <div className="absolute left-32 top-[138px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                        <div className="motion-container absolute left-32 top-[138px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
                             viewBox="0 0 44 44"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative flex-[0_0_auto]"
+                            className="motion-container relative flex-[0_0_auto]"
                           >
                             <rect
                               width="44"
@@ -862,34 +862,34 @@ export const Development = () => {
                             />
                           </svg>
 
-                          <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             multifunctional system
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
-                      <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
+                      <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('platforms.enterprise.title')}
                       </div>
 
-                      <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('platforms.enterprise.description')}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="px-0 md:px-3">
-                  <div className="relative flex h-[550px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
+                <div className="motion-container px-0 md:px-3">
+                  <div className="motion-container relative flex h-[550px] w-full flex-col items-center gap-7 overflow-hidden  rounded-[32px] bg-[#f9fafd] p-7 lg:w-[442px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px] w-full lg:w-[377px]"
+                      className="motion-container absolute left-0 top-0 h-[406px] w-full lg:w-[377px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9535_12463)">
                         <path
@@ -925,18 +925,18 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-[2] self-stretch">
-                      <div className="absolute left-0 top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 lg:left-[23px]">
-                        <div className="relative size-[120px]">
-                          <div className="relative size-[120px]">
-                            <div className="absolute left-0 top-0 size-[120px]">
+                    <div className="motion-container relative w-full flex-[2] self-stretch">
+                      <div className="motion-container absolute left-0 top-1 inline-flex items-center gap-2.5 rounded-[32px] bg-[#ffffff] p-3 lg:left-[23px]">
+                        <div className="motion-container relative size-[120px]">
+                          <div className="motion-container relative size-[120px]">
+                            <div className="motion-container absolute left-0 top-0 size-[120px]">
                               <svg
                                 width="58"
                                 height="120"
                                 viewBox="0 0 58 120"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="absolute left-0 top-0 h-[120px] w-[57px]"
+                                className="motion-container absolute left-0 top-0 h-[120px] w-[57px]"
                               >
                                 <path
                                   d="M57.3913 2.56931C57.3913 3.97047 56.2923 5.11764 54.9023 5.24638C27.0368 7.82735 5.2174 31.3556 5.21739 60C5.21739 88.6443 27.0366 112.172 54.902 114.753C56.2922 114.882 57.3913 116.029 57.3913 117.43C57.3913 118.924 56.1495 120.121 54.6678 119.99C24.0285 117.282 0 91.4584 0 60C4.64946e-06 28.5416 24.0287 2.71798 54.6681 0.00980902C56.1497 -0.121146 57.3913 1.07638 57.3913 2.56931Z"
@@ -950,7 +950,7 @@ export const Development = () => {
                                 viewBox="0 0 58 71"
                                 fill="none"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="absolute left-[63px] top-[49px] h-[71px] w-[57px]"
+                                className="motion-container absolute left-[63px] top-[49px] h-[71px] w-[57px]"
                               >
                                 <path
                                   d="M53.8023 0.0907039C55.2772 -0.305988 56.7826 0.637786 56.9984 2.15508C57.399 4.97052 57.6065 7.84847 57.6065 10.775C57.6065 42.3513 33.4879 68.2716 2.73377 70.9901C1.24645 71.1216 0 69.9194 0 68.4207C0 67.0141 1.10326 65.8625 2.49863 65.7332C30.4685 63.1425 52.3695 39.5267 52.3695 10.775C52.3695 8.17936 52.1905 5.62561 51.8449 3.12536C51.6566 1.76297 52.4787 0.446698 53.8023 0.0907039Z"
@@ -958,12 +958,12 @@ export const Development = () => {
                                 />
                               </svg>
 
-                              <div className="absolute left-[22px] top-[37px] inline-flex flex-col items-center">
-                                <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
+                              <div className="motion-container absolute left-[22px] top-[37px] inline-flex flex-col items-center">
+                                <div className="motion-container relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-[#9ea7bb] [font-family:'Inter',Helvetica]">
                                   {t('platforms.enterprise.totalAmount')}
                                 </div>
 
-                                <div className="relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
+                                <div className="motion-container relative -mt-0.5 w-fit whitespace-nowrap text-center text-xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica]">
                                   88,000₽
                                 </div>
                               </div>
@@ -975,7 +975,7 @@ export const Development = () => {
                               viewBox="0 0 14 22"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute left-[103px] top-[22px] h-[22px] w-3.5"
+                              className="motion-container absolute left-[103px] top-[22px] h-[22px] w-3.5"
                             >
                               <path
                                 d="M0.77269 0.768161C1.8597 -0.322948 3.64835 -0.249792 4.5827 0.975536C8.58698 6.22685 11.7511 12.1577 13.8739 18.566C14.3346 19.9567 13.5009 21.4235 12.0906 21.8028C10.7108 22.1739 9.29563 21.3629 8.83918 20.0042C6.92674 14.3114 4.11299 9.03492 0.568127 4.34576C-0.251086 3.2621 -0.185595 1.73006 0.77269 0.768161Z"
@@ -989,7 +989,7 @@ export const Development = () => {
                               viewBox="0 0 39 20"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
-                              className="absolute left-[63px] top-0 h-5 w-[39px]"
+                              className="motion-container absolute left-[63px] top-0 h-5 w-[39px]"
                             >
                               <path
                                 d="M0 2.57386C0 1.07834 1.2428 -0.121327 2.72696 0.00982073C16.2362 1.20357 28.4624 6.88264 37.9182 15.5554C38.9851 16.534 38.9828 18.2021 37.9608 19.2279C36.9415 20.2511 35.2935 20.2476 34.2253 19.2759C25.6692 11.4927 14.656 6.38192 2.49243 5.2555C1.10003 5.12656 0 3.97745 0 2.57386Z"
@@ -1006,7 +1006,7 @@ export const Development = () => {
                         viewBox="0 0 144 144"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        className="absolute left-[156px] top-1 lg:left-[179px]"
+                        className="motion-container absolute left-[156px] top-1 lg:left-[179px]"
                       >
                         <rect width="144" height="144" rx="24" fill="white" />
                         <path
@@ -1038,27 +1038,27 @@ export const Development = () => {
                       </svg>
                     </div>
 
-                    <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
-                      <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
+                      <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('platforms.fintech.title')}
                       </div>
 
-                      <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('platforms.fintech.description')}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="px-0 md:px-3">
-                  <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="motion-container px-0 md:px-3">
+                  <div className="motion-container relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px]  w-[442px]"
+                      className="motion-container absolute left-0 top-0 h-[406px]  w-[442px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9535_12496)">
                         <path
@@ -1100,7 +1100,7 @@ export const Development = () => {
                       viewBox="0 0 346 124"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative w-full flex-[2] self-stretch"
+                      className="motion-container relative w-full flex-[2] self-stretch"
                     >
                       <rect x="7" width="92" height="92" rx="24" fill="white" />
                       <rect
@@ -1213,27 +1213,27 @@ export const Development = () => {
                       <path d="M219 62L247 62" stroke="white" strokeWidth="2" />
                     </svg>
 
-                    <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
-                      <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
+                      <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('platforms.blockchain.title')}
                       </div>
 
-                      <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('platforms.blockchain.description')}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="px-0 md:px-3">
-                  <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="motion-container px-0 md:px-3">
+                  <div className="motion-container relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px]  w-[442px]"
+                      className="motion-container absolute left-0 top-0 h-[406px]  w-[442px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9535_12502)">
                         <path
@@ -1269,16 +1269,16 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative w-full flex-[2] self-stretch">
-                      <div className="relative -left-12 -top-12 w-[442px]">
-                        <div className="absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                    <div className="motion-container relative w-full flex-[2] self-stretch">
+                      <div className="motion-container relative -left-12 -top-12 w-[442px]">
+                        <div className="motion-container absolute left-[77px] top-[55px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
                             viewBox="0 0 44 44"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative flex-[0_0_auto]"
+                            className="motion-container relative flex-[0_0_auto]"
                           >
                             <rect
                               width="44"
@@ -1310,7 +1310,7 @@ export const Development = () => {
                             />
                           </svg>
 
-                          <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('platforms.medtech.drugSelection')}
                           </div>
                         </div>
@@ -1321,7 +1321,7 @@ export const Development = () => {
                           viewBox="0 0 524 422"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
-                          className="absolute left-0 top-0 h-[339px]  w-[442px]"
+                          className="motion-container absolute left-0 top-0 h-[339px]  w-[442px]"
                         >
                           <g opacity="0.32" filter="url(#filter0_f_9537_11048)">
                             <path
@@ -1357,14 +1357,14 @@ export const Development = () => {
                           </defs>
                         </svg>
 
-                        <div className="absolute left-[119px] top-[101px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
+                        <div className="motion-container absolute left-[119px] top-[101px] inline-flex items-center justify-center gap-4 rounded-[32px] bg-[#ffffff] py-2 pl-2 pr-5">
                           <svg
                             width="44"
                             height="44"
                             viewBox="0 0 44 44"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
-                            className="relative flex-[0_0_auto]"
+                            className="motion-container relative flex-[0_0_auto]"
                           >
                             <rect
                               width="44"
@@ -1382,34 +1382,34 @@ export const Development = () => {
                             />
                           </svg>
 
-                          <div className="relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                          <div className="motion-container relative w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                             {t('platforms.medtech.orderProcessing')}
                           </div>
                         </div>
                       </div>
                     </div>
 
-                    <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
-                      <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
+                      <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('platforms.medtech.title')}
                       </div>
 
-                      <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('platforms.medtech.description')}
                       </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="px-0 md:px-3">
-                  <div className="relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
+                <div className="motion-container px-0 md:px-3">
+                  <div className="motion-container relative flex h-[550px] w-full flex-col items-center gap-7  overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 lg:w-[443px] lg:gap-12 lg:p-12">
                     <svg
                       width="638"
                       height="682"
                       viewBox="0 0 638 682"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="absolute left-0 top-0 h-[406px]  w-[442px]"
+                      className="motion-container absolute left-0 top-0 h-[406px]  w-[442px]"
                     >
                       <g opacity="0.2" filter="url(#filter0_f_9535_12508)">
                         <path
@@ -1451,7 +1451,7 @@ export const Development = () => {
                       viewBox="0 0 346 152"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
-                      className="relative w-full flex-[2] self-stretch"
+                      className="motion-container relative w-full flex-[2] self-stretch"
                     >
                       <rect
                         x="49"
@@ -1600,12 +1600,12 @@ export const Development = () => {
                       </defs>
                     </svg>
 
-                    <div className="relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
-                      <div className="relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+                    <div className="motion-container relative flex w-full flex-[3] flex-col items-start gap-3 self-stretch">
+                      <div className="motion-container relative self-stretch text-center text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                         {t('platforms.martech.title')}
                       </div>
 
-                      <p className="relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                      <p className="motion-container relative self-stretch text-center text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                         {t('platforms.martech.description')}
                       </p>
                     </div>
@@ -1615,10 +1615,10 @@ export const Development = () => {
             </div>
           </div>
 
-          <div className="absolute left-[725px] top-[582px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
+          <div className="motion-container absolute left-[725px] top-[582px] hidden h-14 w-full items-center justify-between rounded-full bg-[#f9fafd] p-1 lg:flex lg:w-[120px]">
             <button
               onClick={goToPrev}
-              className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
+              className="motion-container active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >
               <svg
                 width="24"
@@ -1646,7 +1646,7 @@ export const Development = () => {
 
             <button
               onClick={goToNext}
-              className="active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
+              className="motion-container active:bg-white/90 flex size-12 cursor-pointer items-center justify-center rounded-full bg-white transition-colors duration-200"
             >
               <svg
                 width="24"
@@ -1677,21 +1677,21 @@ export const Development = () => {
         <Feedback />
         <Technoligies />
 
-        <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
-          <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
-            <div className="relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
+        <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-7 self-stretch lg:gap-12">
+          <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-center justify-center gap-2.5 lg:w-[656px]">
+            <div className="motion-container relative mt-[-1.00px] self-stretch text-center text-[36px] font-medium leading-[44px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-5xl lg:leading-[60px]">
               {t('comfort.title')}
             </div>
           </div>
-          <div className="relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+          <div className="motion-container relative grid w-full flex-[0_0_auto] grid-cols-1 items-start gap-6 lg:flex ">
+            <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
               >
                 <rect
                   width="64"
@@ -1743,23 +1743,23 @@ export const Development = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('comfort.workPlan.title')}
                 </div>
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                   {t('comfort.workPlan.description')}
                 </p>
               </div>
             </div>
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+            <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
               >
                 <rect
                   width="64"
@@ -1811,23 +1811,23 @@ export const Development = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('comfort.team.title')}
                 </div>
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                   {t('comfort.team.description')}
                 </p>
               </div>
             </div>
-            <div className="relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
+            <div className="motion-container relative flex h-[355px] flex-1 grow flex-col items-start gap-7 overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10">
               <svg
                 width="64"
                 height="64"
                 viewBox="0 0 64 64"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className="relative flex-[0_0_auto]"
+                className="motion-container relative flex-[0_0_auto]"
               >
                 <rect
                   width="64"
@@ -1879,11 +1879,11 @@ export const Development = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
-                <div className="relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
+              <div className="motion-container relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
+                <div className="motion-container relative mt-[-1.00px] self-stretch text-2xl font-medium leading-8 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
                   {t('comfort.reliablePartner.title')}
                 </div>
-                <p className="relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
+                <p className="motion-container relative self-stretch text-xl font-normal leading-7 tracking-normal text-[#9ea7bb] [font-family:'Roboto',Helvetica]">
                   {t('comfort.reliablePartner.description')}
                 </p>
               </div>
