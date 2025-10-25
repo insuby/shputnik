@@ -22,7 +22,7 @@ export const About = () => {
         className="relative flex w-full max-w-full flex-col items-start justify-center overflow-hidden"
         aria-labelledby="about-title"
       >
-        <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] pt-0 lg:px-8 lg:pb-[88px] lg:pt-8">
+        <div className="relative flex w-full max-w-[1440px] flex-[0_0_auto] flex-col items-center gap-[72px] pt-0 lg:px-8 lg:pb-[88px]">
           <div className="relative flex w-full max-w-full flex-[0_0_auto] flex-col items-center gap-[88px] lg:mx-[-8.00px] lg:inline-flex">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-8 self-stretch">
               <section className="relative flex w-full flex-[0_0_auto] flex-col items-center gap-10 self-stretch overflow-hidden rounded-[32px] bg-[#ffffff] px-1 pb-10 pt-16 lg:!gap-20 lg:!px-20 lg:!pb-20 lg:pt-[88px]">
@@ -272,7 +272,7 @@ export const About = () => {
 
                             <div className="relative my-[-3.00px] -ml-2.5 mr-[-3.00px] flex size-[54px] items-center justify-center gap-2.5 rounded-[52px] border-[3px] border-solid border-[#ffffff] bg-[#f7f8f9] p-2 backdrop-blur-[4.55px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(4.55px)_brightness(100%)]">
                               <div className="relative w-fit whitespace-nowrap text-base font-normal leading-6 tracking-normal text-[#55607a] [font-family:'Inter',Helvetica]">
-                                +3
+                                +20
                               </div>
                             </div>
                           </div>

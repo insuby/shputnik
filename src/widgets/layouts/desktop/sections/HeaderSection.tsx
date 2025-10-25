@@ -238,7 +238,7 @@ export const HeaderSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Telegram"
-          className="flex size-11 items-center justify-center rounded-full  p-2 transition-colors hover:bg-white"
+          className="flex size-11 items-center justify-center rounded-full bg-white  transition-all duration-300 ease-in-out p-2 hover:scale-105"
         >
           <svg
             width="23"
@@ -257,12 +257,11 @@ export const HeaderSection = () => {
         </a>
         <button
           onClick={onClick}
-          className={`all-[unset] box-border inline-flex flex-[0_0_auto] gap-2.5 px-6 py-2.5 transition-colors ${
+          className={`all-[unset] box-border inline-flex flex-[0_0_auto] gap-2.5  transition-all duration-300 ease-in-out px-6 py-2.5   hover:scale-105 ${
             !isMenuOpen ? 'bg-[#ffffff]' : 'bg-gray-10'
           } relative cursor-pointer items-center justify-center rounded-[100px]`}
         >
-          <div
-            className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
+          <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-base font-medium leading-6 tracking-normal text-[#3573fc] [font-family:'Roboto',Helvetica]">
             {t('actions.contactUs')}
           </div>
         </button>

@@ -1131,13 +1131,17 @@ export const MobileLayout = () => {
                         {t('actions.contactUs', { ns: 'common' })}
                       </button>
                     </div>
-                    <p className="text-xl font-bold leading-[140%] text-gray-90">
+                    <a
+                      href="tel:+74950062157"
+                      className="text-xl font-bold leading-[140%] text-gray-90"
+                    >
                       +7 (495) 006-21-57
-                    </p>
+                    </a>
                     <a
                       href="mailto:S@sptnk.co"
-                      className="underline mt-2 pb-2 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] text-gray-40 [font-style:var(--body-1-r-font-style)]">
-                        Напишите нам
+                      className="mt-1 block text-xl font-bold leading-[140%] text-gray-90"
+                    >
+                      s@sptnk.co
                     </a>
                     <p className="relative w-full whitespace-pre-wrap pt-4 font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] xl:w-[240px]">
                       {t('address', { ns: 'footer' })}
