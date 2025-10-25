@@ -166,7 +166,7 @@ export const Feedback = () => {
                 <img
                   className="relative mt-[-6.00px] h-[30px] w-full self-stretch"
                   alt="Frame"
-                  src="/landings/img/frame-83-2.svg"
+                  src="/img/frame-83-2.svg"
                 />
                 <div className="relative flex h-4 w-full items-start justify-between self-stretch">
                   <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-4 tracking-normal text-gray-70 opacity-50 [font-family:'Roboto',Helvetica]">
@@ -191,7 +191,7 @@ export const Feedback = () => {
                 <img
                   className="relative mb-[-10.00px] mt-[-6.00px] h-[30px] w-full self-stretch"
                   alt="Frame"
-                  src="/landings/img/frame-83-4.svg"
+                  src="/img/frame-83-4.svg"
                 />
               </div>
             </div>

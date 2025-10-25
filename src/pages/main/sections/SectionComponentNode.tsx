@@ -125,7 +125,7 @@ export const SectionComponentNode = () => {
                     </span>
                   </p>
 
-                  <div className="relative size-8 rounded-3xl [background:url(/landings/img/frame-1948755022.png)_50%_50%_/_cover]" />
+                  <div className="relative size-8 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-center">

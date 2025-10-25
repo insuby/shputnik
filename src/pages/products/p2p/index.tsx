@@ -126,7 +126,7 @@ export const P2P = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView1 ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-                    className="relative mx-auto w-full max-w-[80%] text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:text-left"
+                    className="relative mx-auto w-full text-center text-xl font-normal leading-7 tracking-normal text-[#ffffffcc] [font-family:'Roboto',Helvetica] lg:m-0 lg:w-[624px] lg:!max-w-[80%] lg:text-left"
                   >
                     {t('hero.subtitle')}
                   </motion.p>
@@ -193,7 +193,7 @@ export const P2P = () => {
                     </span>
                   </p>
 
-                  <div className="relative size-8 rounded-3xl [background:url(/landings/img/p2p/frame-1948755022.png)_50%_50%_/_cover]" />
+                  <div className="relative size-8 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-center">
@@ -2505,7 +2505,7 @@ export const P2P = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={inView20 ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-            className="absolute left-[var(--pos-810)] top-[var(--pos-102)] flex w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 lg:w-[324px]"
+            className="absolute left-[var(--pos-810)] top-[var(--pos-102)] hidden w-full flex-col items-center justify-center gap-6 rounded-[32px] bg-white p-4 lg:!flex lg:w-[324px]"
           >
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-5 self-stretch px-4 pb-4 pt-3">
@@ -2701,7 +2701,7 @@ export const P2P = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={inView20 ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, ease: 'easeOut', delay: 0.25 }}
-            className="absolute left-[var(--pos-1054)] top-[var(--pos-165)] inline-flex flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4"
+            className="absolute left-[var(--pos-1054)] top-[var(--pos-165)] hidden flex-col items-center justify-center gap-3 rounded-[32px] bg-white p-4 lg:!inline-flex"
           >
             <Graph sum="122,000" />
 

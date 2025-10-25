@@ -593,7 +593,7 @@ export const BankCredit = () => {
 
               <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch overflow-hidden p-6">
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
-                  <div className="relative size-12 rounded-3xl [background:url(/landings/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                  <div className="relative size-12 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
 
                   <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
                     <span className="leading-6 text-[#9ea7bb]">
@@ -1155,7 +1155,7 @@ export const BankCredit = () => {
 
                 <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch overflow-hidden p-6">
                   <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
-                    <div className="relative size-12 rounded-3xl [background:url(/landings/img/bankcredit/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                    <div className="relative size-12 rounded-3xl [background:url(/img/Frame-1948755022.png)_50%_50%_/_cover]" />
 
                     <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
                       <span className="leading-6 text-[#9ea7bb]">
@@ -1772,7 +1772,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-1.svg"
+                    src="/img/bankcredit/frame-19-1.svg"
                   />
 
                   <motion.div
@@ -1796,7 +1796,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-3.svg"
+                    src="/img/bankcredit/frame-19-3.svg"
                   />
 
                   <motion.div
@@ -2030,7 +2030,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-6.svg"
+                    src="/img/bankcredit/frame-19-6.svg"
                   />
                   <motion.div
                     variants={fadeInUp}
@@ -2056,7 +2056,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-10.svg"
+                    src="/img/bankcredit/frame-19-10.svg"
                   />
                   <motion.p
                     variants={fadeInUp}
@@ -2080,7 +2080,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-5.svg"
+                    src="/img/bankcredit/frame-19-5.svg"
                   />
 
                   <motion.div
@@ -2105,7 +2105,7 @@ export const BankCredit = () => {
                     variants={scaleIn}
                     className="relative flex-[0_0_auto]"
                     alt="Frame"
-                    src="/landings/img/bankcredit/frame-19-4.svg"
+                    src="/img/bankcredit/frame-19-4.svg"
                   />
 
                   <motion.div

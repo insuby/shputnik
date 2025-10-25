@@ -82,7 +82,7 @@ const companyLogos: Record<string, JSX.Element | null> = {
   ),
   'Денис Алексеев': (
     <img
-      src="/landings/img/company-logos/russian-standard-2fff7c.png"
+      src="/img/company-logos/russian-standard-2fff7c.png"
       alt="Русский Стандарт"
       className="h-7 w-auto"
     />

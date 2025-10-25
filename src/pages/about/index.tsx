@@ -245,28 +245,28 @@ export const About = () => {
                             <div className="relative my-[-3.00px] ml-[-3.00px] size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
                                 alt="Woman with tablet"
-                                src="/landings/img/woman-tablet.png"
+                                src="/img/woman-tablet.png"
                               />
                             </div>
 
                             <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
                                 alt="Woman with tablet"
-                                src="/landings/img/woman-tablet-2.png"
+                                src="/img/woman-tablet-2.png"
                               />
                             </div>
 
                             <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
                                 alt="Woman with tablet"
-                                src="/landings/img/woman-tablet-3.jpg"
+                                src="/img/woman-tablet-3.jpg"
                               />
                             </div>
 
                             <div className="relative my-[-3.00px] -ml-2.5 size-[54px] overflow-hidden rounded-full border-[3px] border-solid border-[#ffffff]">
                               <img
                                 alt="Woman with tablet"
-                                src="/landings/img/woman-tablet-4.png"
+                                src="/img/woman-tablet-4.png"
                               />
                             </div>
 
@@ -453,7 +453,7 @@ export const About = () => {
                 className="size-full h-[412px] self-stretch rounded-[32px] bg-cover bg-center bg-no-repeat p-7 lg:gap-12 lg:p-12"
                 style={{
                   backgroundImage:
-                    "url('/landings/img/about/photo_2025-08-01_16-05-04 1.png')",
+                    "url('/img/about/photo_2025-08-01_16-05-04 1.png')",
                 }}
               />
             </section>

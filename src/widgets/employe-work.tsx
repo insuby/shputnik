@@ -563,7 +563,7 @@ export const EmployeeWork = ({ color }: { color?: string }) => {
                 </div>
 
                 <div className="relative flex w-full flex-[0_0_auto] items-end self-stretch py-2 pl-2 pr-20">
-                  <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-[100px] p-5 [background:url(/landings/img/widgets/frame-3.png)_50%_50%_/_cover]" />
+                  <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2 rounded-[100px] p-5 [background:url(/img/widgets/frame-3.png)_50%_50%_/_cover]" />
 
                   <Subtract className="relative size-3" color="#00CB82" />
 

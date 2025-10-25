@@ -238,7 +238,7 @@ export const HeaderSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Telegram"
-          className="flex size-11 items-center justify-center rounded-full bg-white  transition-all duration-300 ease-in-out p-2 hover:scale-105"
+          className="flex size-11 items-center justify-center rounded-full bg-white p-2 transition-all  duration-300 ease-in-out hover:scale-105 hover:bg-[#d3f0fb] hover:active:bg-[#d3f0fb]"
         >
           <svg
             width="23"
@@ -246,6 +246,7 @@ export const HeaderSection = () => {
             viewBox="0 0 23 20"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="ml-[-3px] mt-[2px]"
           >
             <path
               fillRule="evenodd"
@@ -257,7 +258,7 @@ export const HeaderSection = () => {
         </a>
         <button
           onClick={onClick}
-          className={`all-[unset] box-border inline-flex flex-[0_0_auto] gap-2.5  transition-all duration-300 ease-in-out px-6 py-2.5   hover:scale-105 ${
+          className={`all-[unset] box-border inline-flex flex-[0_0_auto] gap-2.5  px-6 py-2.5 transition-all duration-300 ease-in-out   hover:scale-105 ${
             !isMenuOpen ? 'bg-[#ffffff]' : 'bg-gray-10'
           } relative cursor-pointer items-center justify-center rounded-[100px]`}
         >
@@ -284,7 +285,7 @@ export const HeaderSection = () => {
                 <img
                   className="absolute left-0 top-0 size-full"
                   alt="Group"
-                  src="/landings/img/logo.png"
+                  src="/img/logo.png"
                 />
               </div>
             </Link>

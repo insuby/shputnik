@@ -269,6 +269,7 @@ export const BlogPost = () => {
                     viewBox="0 0 23 20"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
+                    className="ml-[-3px] mt-[2px]"
                   >
                     <path
                       fillRule="evenodd"

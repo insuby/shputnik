@@ -117,8 +117,7 @@ export const MainMobile = () => {
                   <div
                     className="flex size-[102px] items-center justify-center rounded-2xl bg-white bg-cover bg-center p-4 xl:size-[140px]"
                     style={{
-                      backgroundImage:
-                        "url('/landings/img/Frame 1948755022.png')",
+                      backgroundImage: "url('/img/Frame-1948755022.png')",
                     }}
                   />
                   <div className="relative flex size-[102px] items-center justify-center gap-4 rounded-2xl bg-white p-4 xl:size-[140px]">

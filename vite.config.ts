@@ -1,28 +1,33 @@
-import react from "@vitejs/plugin-react";
-import tailwind from "tailwindcss";
-import { defineConfig } from "vite";
+import tailwind from 'tailwindcss';
+
 import nodePath from 'node:path';
+import { defineConfig } from 'vite';
+
+import react from '@vitejs/plugin-react';
 
 const pathResolve = (path: string) => nodePath.resolve(__dirname, path);
 
 export default defineConfig({
   server: {
     host: '0.0.0.0', // Добавьте эту строку
-    port: 5173
+    port: 5173,
   },
   plugins: [
     react({
       babel: {
         plugins: [
-          ['babel-plugin-react-compiler', {
-            // Загружаем конфигурацию из файла
-            configFile: './react-compiler.config.js',
-          }]
-        ]
-      }
-    })
+          [
+            'babel-plugin-react-compiler',
+            {
+              // Загружаем конфигурацию из файла
+              configFile: './react-compiler.config.js',
+            },
+          ],
+        ],
+      },
+    }),
   ],
-  base: "./",
+  base: '/',
   css: {
     postcss: {
       plugins: [tailwind()],

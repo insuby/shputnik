@@ -182,7 +182,7 @@ export const FeedbackForm = () => {
                   className="absolute  left-0 top-0"
                   alt=""
                   aria-hidden={true}
-                  src="/landings/img/logo.png"
+                  src="/img/logo.png"
                 />
               </div>
             </Link>
@@ -238,15 +238,21 @@ export const FeedbackForm = () => {
 
             <div className="relative mt-[105px] hidden flex-[0_0_auto] flex-col items-start gap-5 xl:inline-flex">
               <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
-                <div className="font-header-2-m relative mt-[-1.00px] w-full text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)] xl:w-[233px]">
+                <a
+                  href="tel:+74950062157"
+                  className="font-header-2-m relative  mt-[-1.00px] w-full text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] text-gray-40 [font-style:var(--header-2-m-font-style)] hover:underline xl:w-[233px]"
+                >
                   +7 (495) 006-21-57
-                </div>
+                </a>
 
-                <p className="relative w-full text-2xl font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica] xl:w-[233px]">
+                <a
+                  href="mailto:S@sptnk.co"
+                  className="relative w-full text-2xl  font-normal leading-6 tracking-normal text-gray-40 [font-family:'Geometria-Medium',Helvetica] hover:underline xl:w-[233px]"
+                >
                   <span className="font-header-2-m text-[length:var(--header-2-m-font-size)] font-[number:var(--header-2-m-font-weight)] leading-[var(--header-2-m-line-height)] tracking-[var(--header-2-m-letter-spacing)] [font-style:var(--header-2-m-font-style)]">
                     s@sptnk.co
                   </span>
-                </p>
+                </a>
               </div>
 
               <p className="relative w-full font-body-1-r text-[length:var(--body-1-r-font-size)] font-[number:var(--body-1-r-font-weight)] leading-[var(--body-1-r-line-height)] tracking-[var(--body-1-r-letter-spacing)] text-gray-40 [font-style:var(--body-1-r-font-style)] xl:w-[233px]">

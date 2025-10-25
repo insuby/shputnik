@@ -117,7 +117,7 @@ export const CustomDevelopment = () => {
             <div
               className="relative  z-10 size-full  bg-center bg-no-repeat"
               style={{
-                backgroundImage: "url('/landings/img/group-107.png')",
+                backgroundImage: "url('/img/group-107.png')",
                 backgroundSize: '90%',
               }}
             />
