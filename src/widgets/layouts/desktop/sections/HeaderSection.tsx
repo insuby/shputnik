@@ -262,7 +262,7 @@ export const HeaderSection = () => {
                 <img
                   className="absolute left-0 top-0 size-full"
                   alt="Group"
-                  src="/img/logo.png"
+                  src="/landings/img/logo.png"
                 />
               </div>
             </Link>

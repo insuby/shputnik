@@ -718,7 +718,7 @@ export const Fdata = () => {
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="/img/fdata/frame-18-4.svg"
+                src="/landings/img/fdata/frame-18-4.svg"
               />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
@@ -749,14 +749,13 @@ export const Fdata = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
-              {/* Removed missing SVG motion.img: /img/fdata/frame-20.svg */}
               <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="/img/fdata/frame-20.svg"
+                src="/landings/img/fdata/frame-20.svg"
               />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
@@ -795,14 +794,13 @@ export const Fdata = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
-              {/* Removed missing SVG motion.img: /img/fdata/frame-19.svg */}
               <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="/img/fdata/frame-19.svg"
+                src="/landings/img/fdata/frame-19.svg"
               />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
@@ -833,14 +831,13 @@ export const Fdata = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
-              {/* Removed missing SVG motion.img: /img/fdata/frame-19-2.svg */}
               <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="/img/fdata/frame-19-2.svg"
+                src="/landings/img/fdata/frame-19-2.svg"
               />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
@@ -871,14 +868,13 @@ export const Fdata = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
               className="relative flex flex-1 grow flex-col items-start gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-8 lg:p-10"
             >
-              {/* Removed missing SVG motion.img: /img/fdata/frame-18-5.svg */}
               <motion.img
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={inView12 ? { opacity: 1, scale: 1 } : {}}
                 transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
                 className="relative flex-[0_0_auto]"
                 alt="Frame"
-                src="/img/fdata/frame-18-5.svg"
+                src="/landings/img/fdata/frame-18-5.svg"
               />
               <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
                 <motion.div
@@ -1268,11 +1264,11 @@ export const Fdata = () => {
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
             className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch overflow-hidden rounded-[32px] bg-[#f9fafd] p-7 xl:!p-[60px]"
           >
-            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:block" />
+            <div className="relative hidden size-[140px] rounded-[100px] [background:url(/landings/img/fdata/frame-18.png)_50%_50%_/_cover] lg:block" />
 
             <motion.div className="relative flex flex-1 grow flex-col items-center gap-7 lg:!flex-row  lg:gap-12">
               <div className="relative flex w-full flex-col items-start gap-4 lg:w-[421px]">
-                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/img/fdata/frame-18.png)_50%_50%_/_cover] lg:hidden" />
+                <div className="relative m-auto size-[140px] rounded-[100px] [background:url(/landings/img/fdata/frame-18.png)_50%_50%_/_cover] lg:hidden" />
 
                 <div className="relative mt-[-1.00px] self-stretch text-center text-[40px] font-medium leading-[48px] tracking-normal text-gray-90 [font-family:'Roboto',Helvetica] lg:text-left">
                   {t('details.testimonials.author')}

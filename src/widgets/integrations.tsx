@@ -33,7 +33,7 @@ export const Integrations = () => {
       <img
         className="absolute left-[339px] top-[-115px] h-[1060px] w-[1204px]"
         alt="Vector"
-        src="/img/widgets/vector-1-2.svg"
+        src="/landings/img/widgets/vector-1-2.svg"
       />
 
       <motion.div
@@ -80,7 +80,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="h-[31px] w-[145px]"
           alt="Odnoklassniki"
-          src="/img/integrations/row1/odnoklassniki.svg"
+          src="/landings/img/integrations/row1/odnoklassniki.svg"
         />
         <motion.img
           ref={imgRefs[1]}
@@ -89,7 +89,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.05 }}
           className="h-[44px] w-[114px]"
           alt="NSPK"
-          src="/img/integrations/row1/nspk.svg"
+          src="/landings/img/integrations/row1/nspk.svg"
         />
         <motion.img
           ref={imgRefs[2]}
@@ -98,7 +98,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.1 }}
           className="h-[22px] w-[133px]"
           alt="Footer Logo"
-          src="/img/integrations/row1/footer-logo.svg"
+          src="/landings/img/integrations/row1/footer-logo.svg"
         />
         <motion.img
           ref={imgRefs[3]}
@@ -107,7 +107,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.15 }}
           className="h-[26px] w-[138px]"
           alt="JuicyScore"
-          src="/img/integrations/row1/juicyscore.svg"
+          src="/landings/img/integrations/row1/juicyscore.svg"
         />
         <motion.img
           ref={imgRefs[4]}
@@ -116,7 +116,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.2 }}
           className="h-[30px] w-[144px]"
           alt="DreamKas"
-          src="/img/integrations/row2/dreamkas.svg"
+          src="/landings/img/integrations/row2/dreamkas.svg"
         />
         <motion.img
           ref={imgRefs[5]}
@@ -125,7 +125,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.25 }}
           className="h-[18px] w-[164px]"
           alt="YCLIENTS"
-          src="/img/integrations/row2/yclients.svg"
+          src="/landings/img/integrations/row2/yclients.svg"
         />
         <motion.img
           ref={imgRefs[6]}
@@ -134,7 +134,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.3 }}
           className="h-[48px] w-[167px]"
           alt="BKI"
-          src="/img/integrations/row2/bki.svg"
+          src="/landings/img/integrations/row2/bki.svg"
         />
         <motion.img
           ref={imgRefs[7]}
@@ -143,7 +143,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.35 }}
           className="h-[44px] w-[191px]"
           alt="Деньги Mail.ru"
-          src="/img/integrations/row3/dengi-mail.svg"
+          src="/landings/img/integrations/row3/dengi-mail.svg"
         />
         <motion.img
           ref={imgRefs[8]}
@@ -152,7 +152,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.4 }}
           className="h-[32px] w-[206px]"
           alt="Foza"
-          src="/img/integrations/row3/foza.svg"
+          src="/landings/img/integrations/row3/foza.svg"
         />
         <motion.img
           ref={imgRefs[9]}
@@ -161,7 +161,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.45 }}
           className="h-[24px] w-[84px]"
           alt="ESIA"
-          src="/img/integrations/row3/esia.svg"
+          src="/landings/img/integrations/row3/esia.svg"
         />
         <motion.img
           ref={imgRefs[10]}
@@ -170,7 +170,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.5 }}
           className="h-[48px] w-[115px]"
           alt="OKB"
-          src="/img/integrations/row4/okb.svg"
+          src="/landings/img/integrations/row4/okb.svg"
         />
         <motion.img
           ref={imgRefs[11]}
@@ -179,7 +179,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.55 }}
           className="h-[36px] w-[215px]"
           alt="Russian Standard"
-          src="/img/integrations/row4/russian-standard.svg"
+          src="/landings/img/integrations/row4/russian-standard.svg"
         />
         <motion.img
           ref={imgRefs[12]}
@@ -188,7 +188,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.6 }}
           className="h-[24px] w-[41px]"
           alt="VK"
-          src="/img/integrations/row4/vk.svg"
+          src="/landings/img/integrations/row4/vk.svg"
         />
         <motion.img
           ref={imgRefs[13]}
@@ -197,7 +197,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.65 }}
           className="h-[43px] w-[80px]"
           alt="CRT"
-          src="/img/integrations/row4/crt.svg"
+          src="/landings/img/integrations/row4/crt.svg"
         />
         <motion.img
           ref={imgRefs[14]}
@@ -206,7 +206,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.7 }}
           className="h-[39px] w-[80px]"
           alt="Золотая Корона"
-          src="/img/integrations/row5/zolotaya-korona.svg"
+          src="/landings/img/integrations/row5/zolotaya-korona.svg"
         />
         <motion.img
           ref={imgRefs[15]}
@@ -215,7 +215,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.75 }}
           className="h-[28px] w-[170px]"
           alt="Финкарта"
-          src="/img/integrations/row5/finkarta.svg"
+          src="/landings/img/integrations/row5/finkarta.svg"
         />
         <motion.img
           ref={imgRefs[16]}
@@ -224,7 +224,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.8 }}
           className="h-[32px] w-[112px]"
           alt="Мир Денег"
-          src="/img/integrations/row5/mir-deneg.svg"
+          src="/landings/img/integrations/row5/mir-deneg.svg"
         />
         <motion.img
           ref={imgRefs[17]}
@@ -233,7 +233,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.85 }}
           className="h-[16px] w-[120px]"
           alt="Яндекс"
-          src="/img/integrations/row6/yandex.svg"
+          src="/landings/img/integrations/row6/yandex.svg"
         />
         <motion.img
           ref={imgRefs[18]}
@@ -242,7 +242,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.9 }}
           className="h-[34px] w-[118px]"
           alt="Телепорт"
-          src="/img/integrations/row6/teleport.svg"
+          src="/landings/img/integrations/row6/teleport.svg"
         />
         <motion.img
           ref={imgRefs[19]}
@@ -251,7 +251,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 0.95 }}
           className="h-[30px] w-[103px]"
           alt="NBKI"
-          src="/img/integrations/row6/nbki.svg"
+          src="/landings/img/integrations/row6/nbki.svg"
         />
         <motion.img
           ref={imgRefs[20]}
@@ -260,7 +260,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 1.0 }}
           className="h-[26px] w-[99px]"
           alt="CityAds"
-          src="/img/integrations/row6/cityads.svg"
+          src="/landings/img/integrations/row6/cityads.svg"
         />
         <motion.img
           ref={imgRefs[21]}
@@ -269,7 +269,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 1.05 }}
           className="h-[47px] w-[177px]"
           alt="FSSP"
-          src="/img/integrations/row7/fssp.svg"
+          src="/landings/img/integrations/row7/fssp.svg"
         />
         <motion.img
           ref={imgRefs[22]}
@@ -278,7 +278,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 1.1 }}
           className="h-[48px] w-[156px]"
           alt="FMS"
-          src="/img/integrations/row7/fms.svg"
+          src="/landings/img/integrations/row7/fms.svg"
         />
         <motion.img
           ref={imgRefs[23]}
@@ -287,7 +287,7 @@ export const Integrations = () => {
           transition={{ duration: 0.5, ease: 'easeOut', delay: 1.15 }}
           className="h-[48px] w-[154px]"
           alt="FNS"
-          src="/img/integrations/row7/fns.svg"
+          src="/landings/img/integrations/row7/fns.svg"
         />
       </motion.div>
     </motion.div>

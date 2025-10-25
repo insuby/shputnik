@@ -3,10 +3,10 @@ import * as yup from 'yup';
 
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import { IMaskInput } from 'react-imask';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import { type FeedbackFormData, sendFeedback } from 'shared/api/feedback';
@@ -17,6 +17,7 @@ import { useFeedbackForm } from './use-feedback-form.ts';
 export const FeedbackForm = () => {
   const { t } = useTranslation('widgets');
   const { setIsOpen } = useFeedbackForm();
+  const location = useLocation();
 
   const schema = yup.object({
     name: yup
@@ -25,9 +26,14 @@ export const FeedbackForm = () => {
       .required(t('feedbackForm.name'))
       .matches(/^[а-яёА-ЯЁa-zA-Z\s]+$/, 'Имя может содержать только буквы'),
     email: yup.string().trim().required(t('feedbackForm.email')),
-    phone: yup.string().trim().required(t('feedbackForm.phone')),
+    phone: yup
+      .string()
+      .trim()
+      .required(t('feedbackForm.phone'))
+      .test('phone-length', t('feedbackForm.phone'), (value) => {
+        return !!value && value.length >= 17;
+      }),
     comment: yup.string().trim().optional(),
-    page: yup.string().trim().required(),
     pageTitle: yup.string().trim().required(),
   });
 
@@ -37,31 +43,35 @@ export const FeedbackForm = () => {
   const {
     register,
     handleSubmit,
+    control,
     formState: { errors },
     reset,
+    setValue,
   } = useForm<FeedbackFormData>({
     mode: 'onSubmit',
     resolver: yupResolver(schema),
+    defaultValues: {
+      name: '',
+      email: '',
+      phone: '',
+      comment: '',
+      pageTitle: document.title,
+    },
   });
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
+  useEffect(() => {
+    setValue('pageTitle', document.title);
+  }, [location.pathname, setValue]);
+
   const onSubmit = async (data: FeedbackFormData) => {
     setIsLoading(true);
 
     try {
-      const pageTitle = document.title;
-      console.log('Заголовок страницы:', pageTitle);
-
-      const dataWithPage = {
-        ...data,
-        page: '',
-        pageTitle,
-      };
-
-      await sendFeedback(dataWithPage);
+      await sendFeedback(data);
 
       toast.success('Заявка успешно отправлена!', {
         autoClose: 3000,
@@ -172,7 +182,7 @@ export const FeedbackForm = () => {
                   className="absolute  left-0 top-0"
                   alt=""
                   aria-hidden={true}
-                  src="/img/logo.png"
+                  src="/landings/img/logo.png"
                 />
               </div>
             </Link>
@@ -267,13 +277,22 @@ export const FeedbackForm = () => {
                 )}
               </div>
               <div className="relative w-full">
-                <IMaskInput
-                  mask="+7 (000) 000-00-00"
-                  {...register('phone')}
-                  aria-label={t('feedbackForm.phone')}
-                  placeholder="+7 (999) 999-99-99"
-                  autoComplete="tel"
-                  className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
+                <Controller
+                  name="phone"
+                  control={control}
+                  render={({ field }) => (
+                    <IMaskInput
+                      mask="+7 (000) 000-00-00"
+                      value={field.value || ''}
+                      onAccept={(value) => field.onChange(value)}
+                      onBlur={field.onBlur}
+                      ref={field.ref}
+                      aria-label={t('feedbackForm.phone')}
+                      placeholder="+7 (999) 999-99-99"
+                      autoComplete="tel"
+                      className="relative !mx-[-1.00px] !mt-[-1.00px] flex !h-[62px] !w-full items-center justify-center !self-stretch rounded-2xl border-2 border-solid bg-white px-5 py-4 outline-[#acc6ff]"
+                    />
+                  )}
                 />
                 {errors['phone'] && (
                   <span className=" absolute -bottom-6 text-rose-700">

@@ -467,11 +467,11 @@ export const IslamFinance = () => {
 
               <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch p-6">
                 <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
-                  <div className="relative size-12 overflow-hidden rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]">
+                  <div className="relative size-12 overflow-hidden rounded-3xl [background:url(/landings/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]">
                     <img
                       className="absolute left-0 top-0 size-12 object-cover"
                       alt="Side view business"
-                      src="/img/islamfinans/business-man.png"
+                      src="/landings/img/islamfinans/business-man.png"
                     />
                   </div>
 
@@ -1017,7 +1017,7 @@ export const IslamFinance = () => {
                 </motion.div>
               </motion.div>
 
-              <div className="relative flex-1 grow self-stretch rounded-[32px] [background:url(/img/frame-21.png)_50%_50%_/_cover]" />
+              <div className="relative flex-1 grow self-stretch rounded-[32px] [background:url(/landings/img/frame-21.png)_50%_50%_/_cover]" />
             </motion.div>
           </motion.div>
         </motion.div>

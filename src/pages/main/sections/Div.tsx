@@ -169,7 +169,7 @@ export const Div = () => {
                 >
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start justify-center gap-2.5 p-3">
                     <div className="relative flex size-40 items-start gap-3">
-                      <div className="relative size-[var(--size-148)] [background:url(/img/frame-1948755020.png)_50%_50%_/_cover]" />
+                      <div className="relative size-[var(--size-148)] [background:url(/landings/img/frame-1948755020.png)_50%_50%_/_cover]" />
                     </div>
                   </div>
                   <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4 self-stretch rounded-3xl bg-[#f6f8ff] p-6">

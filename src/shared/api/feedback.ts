@@ -5,7 +5,6 @@ export type FeedbackFormData = {
   phone: string;
   email: string;
   comment?: string;
-  page: string;
   pageTitle: string;
 };
 

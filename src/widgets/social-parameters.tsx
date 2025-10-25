@@ -51,7 +51,7 @@ export const SocialParameters = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView8 ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.1 }}
-              className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(https://c.animaapp.com/mg3z86xg65zImm/img/frame-1948755022-1.png)_50%_50%_/_cover]"
+              className="relative w-48 min-w-48 self-stretch rounded-3xl [background:url(/landings/img/frame-1948755022-1.png)_50%_50%_/_cover]"
             />
 
             <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">

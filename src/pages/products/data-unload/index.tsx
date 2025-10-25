@@ -325,7 +325,7 @@ export const Dataunload = () => {
                       <img
                         className="relative size-8"
                         alt="Okb logo"
-                        src="/img/dataunload/okb-logo-1.png"
+                        src="/landings/img/dataunload/okb-logo-1.png"
                       />
 
                       <div className="relative flex-1 text-xl font-normal leading-7 tracking-normal text-gray-90 [font-family:'Roboto',Helvetica]">
@@ -505,7 +505,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.5 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="/img/dataunload/frame-18-3.svg"
+              src="/landings/img/dataunload/frame-18-3.svg"
             />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -545,7 +545,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="/img/dataunload/frame-18.svg"
+              src="/landings/img/dataunload/frame-18.svg"
             />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -585,7 +585,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 1.3 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="/img/dataunload/frame-19.svg"
+              src="/landings/img/dataunload/frame-19.svg"
             />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-2 self-stretch">
@@ -1179,7 +1179,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.9 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="/img/dataunload/frame-18-6.svg"
+              src="/landings/img/dataunload/frame-18-6.svg"
             />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:inline-flex">
@@ -1309,7 +1309,7 @@ export const Dataunload = () => {
               transition={{ duration: 0.7, ease: 'easeOut', delay: 0.7 }}
               className="relative flex-[0_0_auto]"
               alt="Frame"
-              src="/img/dataunload/frame-18-2.svg"
+              src="/landings/img/dataunload/frame-18-2.svg"
             />
 
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-6 lg:w-[520px]">

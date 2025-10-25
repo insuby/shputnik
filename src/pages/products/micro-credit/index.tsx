@@ -1206,7 +1206,7 @@ export const MicroCredit = () => {
 
                       <div className="relative flex w-full flex-[2] items-center justify-center self-stretch">
                         <div className="relative flex w-full items-center justify-center gap-4 lg:w-[264px]">
-                          <div className="relative size-[124px] rounded-3xl [background:url(/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
+                          <div className="relative size-[124px] rounded-3xl [background:url(/landings/img/microcredit/frame-1948755022.png)_50%_50%_/_cover]" />
 
                           <div className="relative flex size-[124px] items-center gap-[53px] rounded-3xl bg-[#ffffff] px-4 py-6">
                             <div className="relative flex flex-1 grow flex-col items-start justify-between self-stretch">

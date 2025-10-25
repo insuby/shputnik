@@ -132,7 +132,7 @@ export const Frame = () => {
               <div
                 className="flex size-[var(--size-140)] items-center justify-center rounded-2xl bg-white bg-cover bg-center p-4"
                 style={{
-                  backgroundImage: "url('/img/Frame 1948755022.png')",
+                  backgroundImage: "url('/landings/img/Frame 1948755022.png')",
                 }}
               />
               <div className="relative flex  size-[var(--size-140)] items-center justify-center gap-4 rounded-2xl bg-white p-4">

@@ -597,22 +597,22 @@ export const BNPL = () => {
                   {
                     name: t('products.product1'),
                     price: '85 950',
-                    image: '/img/bnpl/frame-1948755020-3.png',
+                    image: '/landings/img/bnpl/frame-1948755020-3.png',
                   },
                   {
                     name: t('products.product2'),
                     price: '15 350',
-                    image: '/img/bnpl/Screenshot_11.png',
+                    image: '/landings/img/bnpl/Screenshot_11.png',
                   },
                   {
                     name: t('products.product3'),
                     price: '4 400',
-                    image: '/img/bnpl/Screenshot_12.png',
+                    image: '/landings/img/bnpl/Screenshot_12.png',
                   },
                   {
                     name: t('products.product4'),
                     price: '14 900',
-                    image: '/img/bnpl/Screenshot_13 1.png',
+                    image: '/landings/img/bnpl/Screenshot_13 1.png',
                   },
                 ].map((product, idx) => (
                   <div
@@ -653,7 +653,7 @@ export const BNPL = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={inView14 ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.7, ease: 'easeOut', delay: 0.3 }}
-                  className="relative m-auto flex size-40 [background:url(/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
+                  className="relative m-auto flex size-40 [background:url(/landings/img/bnpl/frame-1948755020-3.png)_50%_50%_/_cover]"
                 />
 
                 <motion.div
@@ -688,8 +688,6 @@ export const BNPL = () => {
                       </div>
                     </motion.div>
 
-                    {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: -50 }}
@@ -709,8 +707,6 @@ export const BNPL = () => {
                         14 500 ₽
                       </div>
                     </motion.div>
-
-                    {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                     <motion.div
                       ref={ref16}
@@ -732,8 +728,6 @@ export const BNPL = () => {
                       </div>
                     </motion.div>
 
-                    {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                     <motion.div
                       ref={ref16}
                       initial={{ opacity: 0, x: -50 }}
@@ -753,8 +747,6 @@ export const BNPL = () => {
                         2 500 ₽
                       </div>
                     </motion.div>
-
-                    {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                     <motion.div
                       ref={ref16}
@@ -1281,7 +1273,7 @@ export const BNPL = () => {
 
             <div className="relative flex flex-1 grow flex-col items-start gap-5 self-stretch p-6">
               <div className="relative inline-flex flex-[0_0_auto] items-center gap-4">
-                <div className="relative size-12 rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                <div className="relative size-12 rounded-3xl [background:url(/landings/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
                 <p className="relative w-fit whitespace-nowrap text-xl font-semibold leading-5 tracking-normal text-gray-90 [font-family:'Inter',Helvetica]">
                   <span className="leading-6 text-[#9ea7bb]">
@@ -1374,8 +1366,6 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.interestRate')}
@@ -1385,8 +1375,6 @@ export const BNPL = () => {
                             12%
                           </div>
                         </div>
-
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-medium leading-5 tracking-normal text-[#7a86a2] [font-family:'Inter',Helvetica]">
@@ -1398,8 +1386,6 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.accountBalance')}
@@ -1410,8 +1396,6 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.overduePrincipal')}
@@ -1421,8 +1405,6 @@ export const BNPL = () => {
                             0 ₽
                           </div>
                         </div>
-
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1446,7 +1428,7 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
+                        {/* Removed broken SVG: /landings/img/bnpl/vector-140.svg */}
 
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
@@ -1458,8 +1440,6 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.productName')}
@@ -1470,8 +1450,6 @@ export const BNPL = () => {
                           </div>
                         </div>
 
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
-
                         <div className="relative flex w-full flex-[0_0_auto] items-start justify-between self-stretch border-b border-solid border-[#E3E5E8] pb-2">
                           <div className="relative mt-[-1.00px] w-fit whitespace-nowrap text-xs font-normal leading-5 tracking-normal text-[#7a86a2] [font-family:'Roboto',Helvetica]">
                             {t('installment.loan')}
@@ -1481,8 +1459,6 @@ export const BNPL = () => {
                             {t('installment.first')}
                           </div>
                         </div>
-
-                        {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
                       </div>
                     </div>
                   </div>
@@ -1501,7 +1477,7 @@ export const BNPL = () => {
           <div className="relative flex flex-1 grow flex-col items-center justify-center self-stretch overflow-hidden rounded-3xl p-6">
             <div className="relative flex w-full flex-[0_0_auto] flex-col items-center justify-center self-stretch">
               <div className="relative flex w-full flex-[0_0_auto] items-center gap-5 self-stretch rounded-[32px] bg-[#f9fafd] p-3">
-                <div className="relative w-48 self-stretch rounded-3xl [background:url(/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
+                <div className="relative w-48 self-stretch rounded-3xl [background:url(/landings/img/bnpl/frame-1948755022-1.png)_50%_50%_/_cover]" />
 
                 <div className="relative flex flex-1 grow flex-col items-start gap-4 p-3">
                   <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#55607a] [font-family:'Roboto',Helvetica] lg:w-[293px]">
@@ -1554,9 +1530,9 @@ export const BNPL = () => {
 
               <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
                 <div className="relative left-1 top-[3px] h-[18px] w-4">
-                  {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
+                  {/* Removed broken SVG: /landings/img/bnpl/vector-26.svg */}
 
-                  {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
+                  {/* Removed broken SVG: /landings/img/bnpl/vector-28.svg */}
                 </div>
               </div>
 
@@ -1564,9 +1540,9 @@ export const BNPL = () => {
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff] p-4">
                   <div className="relative ml-[-9794.00px] mt-[-6988.00px] size-6 bg-[100%_100%]">
                     <div className="relative left-0.5 top-0.5 size-5">
-                      {/* Removed broken SVG: /img/bnpl/vector-25.svg */}
+                      {/* Removed broken SVG: /landings/img/bnpl/vector-25.svg */}
 
-                      {/* Removed broken SVG: /img/bnpl/vector-29.svg */}
+                      {/* Removed broken SVG: /landings/img/bnpl/vector-29.svg */}
                     </div>
                   </div>
                 </div>
@@ -1578,16 +1554,16 @@ export const BNPL = () => {
 
               <div className="relative ml-[-9754.00px] mt-[-6708.00px] size-6 bg-[100%_100%]">
                 <div className="relative left-1 top-[3px] h-[18px] w-4">
-                  {/* Removed broken SVG: /img/bnpl/vector-26.svg */}
+                  {/* Removed broken SVG: /landings/img/bnpl/vector-26.svg */}
 
-                  {/* Removed broken SVG: /img/bnpl/vector-28.svg */}
+                  {/* Removed broken SVG: /landings/img/bnpl/vector-28.svg */}
                 </div>
               </div>
 
               <div className="relative flex w-full flex-[0_0_auto] items-center gap-7 self-stretch rounded-[32px] bg-green-60 p-6">
                 <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-2.5 rounded-[100px] bg-[#ffffff29] p-4">
                   <div className="relative ml-[-9794.00px] mt-[-7116.00px] size-6 bg-[100%_100%]">
-                    {/* Removed broken SVG: /img/bnpl/vector-30.svg */}
+                    {/* Removed broken SVG: /landings/img/bnpl/vector-30.svg */}
                   </div>
                 </div>
 
@@ -1603,7 +1579,7 @@ export const BNPL = () => {
               {t('backoffice.title')}
             </p>
 
-            {/* Removed broken SVG: /img/bnpl/vector-140.svg */}
+            {/* Removed broken SVG: /landings/img/bnpl/vector-140.svg */}
 
             <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-4">
               <div className="relative mt-[-1.00px] w-full text-2xl font-medium leading-8 tracking-normal text-[#1c222f] [font-family:'Roboto',Helvetica] lg:w-[500px]">

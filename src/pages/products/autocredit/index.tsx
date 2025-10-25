@@ -692,7 +692,7 @@ export const Autocredit = () => {
                     <img
                       className="relative w-full self-stretch lg:h-[120px]"
                       alt="Screenshot"
-                      src="/img/screenshot-12.png"
+                      src="/landings/img/screenshot-12.png"
                     />
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
@@ -712,7 +712,7 @@ export const Autocredit = () => {
                     <img
                       className="relative w-full self-stretch lg:h-[120px]"
                       alt="Screenshot"
-                      src="/img/screenshot-13.png"
+                      src="/landings/img/screenshot-13.png"
                     />
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">
@@ -732,7 +732,7 @@ export const Autocredit = () => {
                     <img
                       className="relative w-full self-stretch lg:h-[120px]"
                       alt="Screenshot"
-                      src="/img/screenshot-11.png"
+                      src="/landings/img/screenshot-11.png"
                     />
 
                     <div className="relative flex w-full flex-[0_0_auto] flex-col items-start gap-3 self-stretch p-2">

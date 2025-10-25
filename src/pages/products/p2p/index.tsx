@@ -193,7 +193,7 @@ export const P2P = () => {
                     </span>
                   </p>
 
-                  <div className="relative size-8 rounded-3xl [background:url(/img/p2p/frame-1948755022.png)_50%_50%_/_cover]" />
+                  <div className="relative size-8 rounded-3xl [background:url(/landings/img/p2p/frame-1948755022.png)_50%_50%_/_cover]" />
                 </div>
 
                 <div className="relative inline-flex flex-[0_0_auto] flex-col items-center">
