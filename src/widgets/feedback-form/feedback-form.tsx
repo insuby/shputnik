@@ -177,7 +177,7 @@ export const FeedbackForm = () => {
           <div className="relative hidden h-[22px] w-full xl:block xl:w-[170px]">
             <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
               <div className="relative h-[22px] w-full xl:w-[170px]">
-                <span className="sr-only">Sputnik</span>
+                <span className="sr-only">SPTNK</span>
                 <img
                   className="absolute  left-0 top-0"
                   alt=""

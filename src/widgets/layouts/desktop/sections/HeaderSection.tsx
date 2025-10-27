@@ -131,7 +131,7 @@ export const HeaderSection = () => {
       <div className="relative h-[22px]">
         <Link to={RoutesPath.MAIN} className="h-[22px] w-28">
           <div className="relative h-[23px] w-[170px]">
-            <span className="sr-only">Sputnik</span>
+            <span className="sr-only">SPTNK</span>
             <svg
               className="absolute left-0 top-0 size-full"
               aria-hidden={true}
@@ -238,7 +238,7 @@ export const HeaderSection = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Telegram"
-          className="flex size-11 items-center justify-center rounded-full bg-white p-2 transition-all  duration-300 ease-in-out hover:scale-105 hover:bg-[#d3f0fb] hover:active:bg-[#d3f0fb]"
+          className="flex size-11 items-center justify-center rounded-full bg-white p-2 transition-all duration-300 ease-in-out hover:scale-105"
         >
           <svg
             width="23"

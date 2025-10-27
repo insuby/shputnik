@@ -241,7 +241,7 @@ export const BlogPost = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={t('post.shareVk')}
-                  className="flex size-12 items-center justify-center rounded-full p-2 transition-colors hover:bg-[#e9efff] active:bg-[#dbe7ff]"
+                  className="flex size-12 items-center justify-center rounded-full p-2 transition-transform hover:scale-105"
                 >
                   <svg
                     width="28"
@@ -261,7 +261,7 @@ export const BlogPost = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={t('post.shareTelegram')}
-                  className="flex size-12 items-center justify-center rounded-full p-2 transition-colors hover:bg-[#e8f7fd] active:bg-[#d3f0fb]"
+                  className="flex size-12 items-center justify-center rounded-full p-2 transition-transform hover:scale-105"
                 >
                   <svg
                     width="23"

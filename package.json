@@ -1,7 +1,7 @@
 {
-  "name": "sputnik-project",
+  "name": "SPTNK-project",
   "version": "1.0.0",
-  "description": "Sputnik",
+  "description": "SPTNK",
   "source": "./index.html",
   "type": "module",
   "scripts": {

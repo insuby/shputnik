@@ -1104,7 +1104,7 @@ export const MobileLayout = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Telegram"
-                        className="flex size-12 items-center justify-center rounded-full bg-white p-2 transition-colors hover:bg-[#e8f7fd] active:bg-[#d3f0fb]"
+                        className="flex size-12 items-center justify-center rounded-full bg-white p-2"
                       >
                         <svg
                           width="23"
@@ -1112,6 +1112,7 @@ export const MobileLayout = () => {
                           viewBox="0 0 23 20"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
+                          className="ml-[-3px] mt-[2px]"
                         >
                           <path
                             fillRule="evenodd"

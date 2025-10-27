@@ -1,6 +1,6 @@
 export const common = {
   brand: {
-    name: 'Sputnik',
+    name: 'SPTNK',
   },
   actions: {
     contact: 'Связаться',

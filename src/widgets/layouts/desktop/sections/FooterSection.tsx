@@ -18,7 +18,7 @@ export const FooterSection = () => {
                 to={RoutesPath.MAIN}
                 className="relative block h-[23px] w-full !text-[16px] xl:w-[170px]"
               >
-                <span className="sr-only">Sputnik</span>
+                <span className="sr-only">SPTNK</span>
                 <svg
                   width="112"
                   height="24"
